@@ -1,6 +1,6 @@
 = Introduction =
 
-=SECOORASourceCode=
+=Relational Database Schema used by SECOORA=
 
 = Details =
 
