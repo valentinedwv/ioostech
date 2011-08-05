@@ -2,4 +2,4 @@
 
 =Xenia: Relational Database Schema used by SECOORA=
 
-=link to Google Code page: http://code.google.com/p/xenia/=
+=Link to Google Code page: http://code.google.com/p/xenia/=
