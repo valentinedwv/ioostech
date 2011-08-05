@@ -1,13 +1,6 @@
 = Introduction =
 
-=Relational Database Schema used by SECOORA=
+=Xenia: Relational Database Schema used by SECOORA=
 
-= Details =
+=link to Google Code page: http://code.google.com/p/xenia/
 
-http://code.google.com/p/xenia/
-
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
