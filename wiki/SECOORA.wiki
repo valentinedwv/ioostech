@@ -1,5 +1,6 @@
+#labels SECOORA,SOS
 = Introduction =
 
-=Xenia: Relational Database Schema used by SECOORA=
+Xenia: Relational Database Schema used by SECOORA
 
-=Link to Google Code page: http://code.google.com/p/xenia/=
+Link to Google Code page: http://code.google.com/p/xenia/
