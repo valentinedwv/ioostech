@@ -1,11 +1,11 @@
-#summary Information about selecting and using Controlled Vocabulareis for developers of IOOS services.
+#summary Information about selecting and using Controlled Vocabularies for developers of IOOS services.
 #labels Phase-Requirements,Phase-Design
 
 = Introduction =
 
 Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to chose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.  
 
-The closest thing to policy we currently have is that IOOS data providers should use the [ http://cf-pcmdi.llnl.gov/ Climate and Forecast Standard Names] when refering to variables (used synonymously with parameters here).  This applies to both netCDF files and to the various outputs of an SOS service (i.e. as column headings in a CSV file). [Requirement Requirement]
+The closest thing to policy we currently have is that IOOS data providers should use the [http://cf-pcmdi.llnl.gov Climate and Forecast Standard Names] when referring to variables (used synonymously with parameters here).  This applies to both netCDF files and to the various outputs of an SOS service (i.e. as column headings in a CSV file). [Requirement Requirement]
 
 However, there is also a vocabulary developed during the Data Integration Framework project by Matt Howard, Sara Haines and others which has been titled the IOOS Parameter Vocabulary.  Both the [http://mmisw.org/orr/#http://mmisw.org/ont/cf/parameter CF table] and version 1.0 of the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary] are currently hosted (v1.0) at the [http://mmisw.org/orr/#b MMI Ontology Registry and Repository].  
 
