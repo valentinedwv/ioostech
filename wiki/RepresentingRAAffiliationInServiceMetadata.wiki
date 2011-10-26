@@ -1,0 +1,20 @@
+#summary Ideas and a few examples showing how to annotate RA affiliation in service metadata.
+
+= Introduction =
+
+We have a need to have each service in IOOS (SOS, THREDDS/OPeNDAP, ERDDAP etc) self documented in such a way that their affiliation with one of the Regional Associations and/or Federal Partners is clear and machine readable.  We need to do this in such a way as to allow a many to many relationship between a server and a region/federal partner.
+
+_*Question*:  Is the statement above (many to many) true? Are there cases where a server belongs to both a region and a federal or other type of entity?  The example that comes to mind is NERRS and SECOORA but there may be others.  Jeremy/Vembu?_
+
+One use case for this need is having the [DataCatalog IOOS Data Catalog] regularly harvest service metadata from a server and properly attribute the server to a region for plotting or another summary purpose.  Finally, an intermediate term goal for all of us is to have the Annual Non-Federal Observation Asset Inventory automated.  [Requirement Requirement].
+
+= SOS Capabilities XML=
+In the `<ServiceIdentification>` section of the SOS capabilities response, include the following keyword markup.
+
+<code language="xml">
+<ows:Keywords>
+<ows:Keyword>aoos, Alaska, ocean, observing, system, climate, Axiom, temp, temperature, air, level, height, water, wind, speed</ows:Keyword>
+</ows:Keywords>
+</code>
+
+NOTE: the RA acronym should appear as one of the keywords.  The DataCatalog will parse the keywords list looking for the 11 RA acronyms.  Ideally the RA acronym would be the first keyword but that may not be necessary.  
