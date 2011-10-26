@@ -22,7 +22,7 @@ In the `<ServiceIdentification>` section of the SOS capabilities response, inclu
 </ows:Keywords>
 </code>
 
-The RA acronym should appear as one of the keywords and each keyword should appear as a separate `<ows:Keyword></ows:Keyword> element.  The DataCatalog will parse the keywords list looking for the 11 RA acronyms.  Ideally the RA acronym would be the first keyword but that may not be necessary.  This search is not case sensitive.
+The RA acronym should appear as one of the keywords and each keyword should appear as a separate `<ows:Keyword></ows:Keyword>` element.  The DataCatalog will parse the keywords list looking for the 11 RA acronyms.  Ideally the RA acronym would be the first keyword but that may not be necessary.  This search is not case sensitive.
 
 
 = ISO 19119/19139 Service Metadata =
