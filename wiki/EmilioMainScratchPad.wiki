@@ -1,0 +1,13 @@
+#summary Emilio's main scratch pad of topics and ideas
+#labels NANOOS,SOS
+
+= Introduction =
+
+This will be my main public brain dump, to help me guide the crafting of more organized wiki pages addressing a range of issues relevant to the IOOS DMAC Reference Implementation focus. Most of this material will be based on recent discussions, and in challenges and solutions that have come up in the development of the new NANOOS "NVS" SOS service.
+
+= To-Do's =
+
+  # IOOS conventions we've re-discovered or agreed on recently, including links to important documents (eg, IOOS CSV profile, station & sensor urn conventions, adoption of CF names for measurements)
+  # Semantics of GetObservations requests: meaning and usage of _offering, procedure, observedProperties_, etc
+  # Development of a reasonable but unofficial DescribeSensor SensorML response
+  # Use of "defaults" to simplify requests
