@@ -37,10 +37,16 @@ The following shows how a publisher element in THREDDS catalog metadata can be u
 http://www.ngdc.noaa.gov/thredds/ncisoExamplesCatalog.xml and http://www.ngdc.noaa.gov/thredds/ncisoExamplesCatalog.html?dataset=oceanSitesAntaresImprovedTDS   
 
 {{{
+<dataset name="OceanSITES Antares Improved TDS Metadata" ID="oceanSitesAntaresImprovedTDS" urlPath="oceansites/OS_ANTARES-1_200509_D_CTDImprovedTDS.nc">
+<serviceName>allMetadata</serviceName>
+<documentation type="Rights">These data were collected and made freely available by the OceanSITES project and the national programs that contribute to it.</documentation>
+<contributor role="Principal Investigator">Christian Tamburini</contributor>
+<project>EuroSITES</project>
 <publisher>
 	<name vocabulary="">EuroSITES</name>
 	<contact url="http://www.noc.soton.ac.uk" email="postmaster@noc.soton.ac.uk"/>
 </publisher>
+</dataset>
 }}}
 
 Questions:  
