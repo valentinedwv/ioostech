@@ -31,6 +31,8 @@ The ISO service metadata describes geospatial web services.  It is general and c
 == Mapping from NetCDF to ISO via ncISO ==
 
 Unidata Attribute Conventions for Dataset Discovery (ACDD) ([https://geo-ide.noaa.gov/wiki/index.php?title=NetCDF_Attribute_Convention_for_Dataset_Discovery ACDD on the GEO-IDE wiki])
+http://www.ngdc.noaa.gov/thredds/ncisoExamplesCatalog.xml and http://www.ngdc.noaa.gov/thredds/ncisoExamplesCatalog.html?dataset=oceanSitesAntaresImprovedTDS   
+
 {{{
 variable.attribute = 'AOOS'
 }}}
