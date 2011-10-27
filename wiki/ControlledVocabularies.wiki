@@ -1,5 +1,5 @@
 #summary Information about selecting and using Controlled Vocabularies for developers of IOOS services.
-#labels Phase-Requirements,Phase-Design
+#labels Phase-Requirements,Phase-Design,Vocabularies
 
 = Introduction =
 
