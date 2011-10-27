@@ -53,7 +53,9 @@ Questions:
   * Where is this mapped to in the ISO?
   * What is the `vocabulary` attribute and how should we use it?
   * Are there other "roles" we should use?
-  
+http://www.unidata.ucar.edu/projects/THREDDS/tech/catalog/v1.0.2/InvCatalogSpec.html
+https://geo-ide.noaa.gov/wiki/index.php?title=NetCDF_Attribute_Convention_for_Dataset_Discovery#Determining_an_Order_of_Precedence
+
   
 ===Using netCDF global attributes===
 {{{
