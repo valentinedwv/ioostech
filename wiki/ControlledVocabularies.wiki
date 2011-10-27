@@ -22,3 +22,22 @@ However, there is also a vocabulary developed during the Data Integration Framew
 
 ==Semantic Web Maturity and Examples==
 Whats the status and how do we use it?
+
+=Links and yet to be organized errata=
+
+==CMSP Discovery Vocabularies Workshop==
+December 1-3, 2010
+WHOI (With USGS/NOAA sponsorship)
+http://www.whoi.edu/page.do?pid=49656
+Workshop report is available from the page above or directly from http://www.whoi.edu/fileserver.do?id=77984&pt=2&p=84468
+
+There was useful information gathered prior to the meeting and included in the appendices of the report on existing Crosswalks, Repositories, Metadtaa Standards, Tools, and Vocabularies in use.  Most important for IOOS, are some firm recommendations on how to choose vocabularies and the importance of a mature process for extending/updating vocabularies when they do not meet our exact needs.  
+
+Matt Howard and some others from the IOOS community are exploring how best to extend IOOS vocabularies into the biogeochemical and water quality domains.
+
+==IOOS Biological Data Project==
+Hassan Moustahfid from the IOOS PO led a project with three agencies in Hawaii aimed at developing a common exchange data format for exchanging reef fish survey data (presence, absence, abundance of reef fish as determined by visual sampling procedures).  A large part of that development involved agreeing on vocabularies to be used by all three agencies.  The solution was an extension of the Darwin Core standard for biological observations and was developed in conjunction with OBIS USA.  
+[http://www.ioos.gov/ecosystem_observations/welcome.html Click Projects tab on this page]
+How do we use this?  Is it extensible?  What about the overlap with existing standards like CF and the IOOS Param Voc?  
+
+Biodiversity Information Standards (formerly known as Taxonomic Data Working Group) http://www.tdwg.org/
