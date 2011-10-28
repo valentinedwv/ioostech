@@ -7,7 +7,7 @@ This will be my main public brain dump, to help me guide the crafting of more or
 
 = To-Do's =
 
-  # IOOS conventions we've re-discovered or agreed on recently, including links to important documents (eg, IOOS CSV profile, station & sensor urn conventions, adoption of CF names for measurements)
+  # IOOS conventions we've re-discovered or agreed on recently, including links to important documents (eg, [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_CSV_Encoding_v101.doc IOOS Conventions for CSV Encoding], [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx IOOS Conventions for Asset Identifiers (including station & sensor urn conventions)], adoption of CF names for measurements)
   # Semantics of GetObservations requests: meaning and usage of _offering, procedure, observedProperties_, etc
   # Development of a reasonable but unofficial DescribeSensor SensorML response
   # Use of "defaults" to simplify requests
