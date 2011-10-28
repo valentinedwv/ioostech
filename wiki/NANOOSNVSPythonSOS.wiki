@@ -28,3 +28,7 @@ Here are some sample requests and responses. Note that all these examples are cu
 Our intent is to release the code, eventually, when we've cleaned it up and documented it just enough.
 
 I also intend to document conventions used (IOOS conventions), with links to where they're specified; when something seemed ambiguous, I'll try to describe the rationale behind decisions made.
+
+= Miscellaneous Notes =
+
+  * The NANOOS SOS GET requests are exhaustively case-insensitive. All keys and some values are case insensitive; eg, request=GetObservation and REQUEST=getobservation will both work. [https://groups.google.com/forum/#!msg/ioostech_dev/xMp3zuXcLHQ/BwnMWRIu-BQJ See this email thread with Eric Bridger for context.]
