@@ -1,0 +1,5 @@
+#summary Dumping ground for Derrick's half baked ideas and TODO items.
+
+
+  # Address the ideas in the following thread about in situ sampling features in netCDF.  What should we do about this? In general, I like the idea and support it.  Not sure yet how to push this forward or how it should be prioritized.  Maybe Jim Potemra would be interested in pursuing this as they are implementing this?  Steven at CeNCOOS re their glider data on THREDDS???https://groups.google.com/d/topic/ioostech_dev/7J6JXj_9u7U/discussion
+  # 
