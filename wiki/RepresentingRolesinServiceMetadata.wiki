@@ -8,7 +8,7 @@ There are numerous roles people organizations and objects play across the IOOS e
 = List of Roles =
 
 This list originated in the following conversation: https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/4075RctQb0UJ
-[DescribeSensorMetadataForIOOSSOS Note that the wiki page DescribeSensorMetadataForIOOSSOS also follows up on some of the SensorML implementation discussions brought up in that email thread.]
+. Note that [DescribeSensorMetadataForIOOSSOS the wiki page DescribeSensorMetadataForIOOSSOS also follows up on some of the SensorML implementation discussions] brought up in that email thread.
 
 
   # platform owner
