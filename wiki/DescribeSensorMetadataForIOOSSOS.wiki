@@ -1,0 +1,37 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Options to consider for how to represent RA affiliation and other metadata in DescribeSensor responses.
+
+
+=SensorML Specification=
+
+OGC SensorML spec doesn't restrict the naming of identifier or classifier elements within the SensorML 'Metadata Group' section.  More info, see SensorML spec (section 10.5.1): http://portal.opengeospatial.org/files/?artifact_id=21273.
+
+The  _identifier@name_ or _classifier@name_ can be any value, currently those in use for identifier (from CO-OPS) include 'Station ID', 'Short Name', and 'Long Name'.  For classifier, they include (CO-OPS) 'Parent Network', 'System Type Name', 'System Type Identifier', and (NANOOS/NDBC) 'Platform Type'.  
+
+SensorML defines sub-elements of _identifier_ and _classifier_ a _Term_ element with an optional _@definition_ attribute.  _Term_ contains a _value_ element to represent the actual value.  _Term_ can optionally include a _codeSpace_ element to reference a dictionary or ontology to constrain the choices for the _value_ element.  The same is true for the _KeywordList_ element, which optionally includes a _@codespace_ attribute and can include unconstrained _keyword_ sub-elements or a constrained set of keywords defined within an ontology or dictionary referenced by _@codespace_.  
+
+Presently, the _@codespace_ restriction is used by CO-OPS and NANOOS for the 'System Type Identifier' classifier to refer to the Marine Metadata Initiative 'platform' ontology at http://mmisw.org/ont/mmi/platform. 
+
+Example:
+{{{
+<sml:classifier name="System Type Identifier">
+<sml:Term definition="urn:ioos:def:classifier:NOAA::systemTypeID">
+        <sml:codeSpace xlink:href="http://mmisw.org/ont/mmi/platform/"/>
+	<sml:value>Platform</sml:value>
+</sml:Term>
+</sml:classifier>
+}}}
+
+Example of _KeywordList_ using _@codeSpace_ GCMD ontology/dictionary reference from CO-OPS:
+
+{{{
+<sml:keywords>
+	<sml:KeywordList codeSpace="http://gcmd.nasa.gov/Resources/valids/archives/keyword_list.html">
+		<sml:keyword>OCEAN PLATFORMS</sml:keyword>
+		<sml:keyword>Oceans > Tides > Tidal Currents</sml:keyword>
+	</sml:KeywordList>
+</sml:keywords>
+}}}
