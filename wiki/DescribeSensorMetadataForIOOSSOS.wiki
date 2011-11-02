@@ -13,7 +13,7 @@ The  _identifier@name_ or _classifier@name_ can be any value, currently those in
 
 SensorML defines sub-elements of _identifier_ and _classifier_ a _Term_ element with an optional _@definition_ attribute.  _Term_ contains a _value_ element to represent the actual value.  _Term_ can optionally include a _codeSpace_ element to reference a dictionary or ontology to constrain the choices for the _value_ element.  The same is true for the _KeywordList_ element, which optionally includes a _@codespace_ attribute and can include unconstrained _keyword_ sub-elements or a constrained set of keywords defined within an ontology or dictionary referenced by _@codespace_.  
 
-==Use in Existing IOOS SOS Services==
+==Use of _classifier_ and _keywords_ in IOOS SOS Services==
 
 Presently, the _@codespace_ restriction is used by CO-OPS and NANOOS for the 'System Type Identifier' classifier to refer to the Marine Metadata Initiative 'platform' ontology at http://mmisw.org/ont/mmi/platform. 
 
@@ -41,7 +41,7 @@ Example of _KeywordList_ using _@codeSpace_ GCMD ontology/dictionary reference f
 I don't think any validation is provided against any ontologies or dictionaries referenced in _KeywordList_ or _Term_ elements in SensorML (the GCMD codeSpace referenced above in the CO-OPS response is not a structured document), however creating a dictionary (or codeList in ISO terminology) might have some value in solving issues of identifying RA or other affiliation within DescribeSensor SensorML responses.  At least if they were accessible by URL they could be referenced by clients in parsing DescribeSensor responses to obtain a list of valid values.
 
 
-=Suggested Solution:=
+=Suggested Solution:= (comments welcome)
 
 If the working group could define a set of classifiers (ie _@name_ s) to use for IOOS SOS services and a list of acceptable values, and this could be hosted at an appropriate web host (ie ioos.gov), the DescribeSensor responses could uniformly refer to this dictionary.  Or, where appropriate, extending or working within the Marine Metadata Interoperability ontology platform to use established ontologies for classifiers.
 
@@ -63,6 +63,16 @@ Examples:
 <classifier name=”systemTypeIdentifier”>
 <classifier name=”systemTypeName”>
 … … 
+}}}
+
+Detail:
+{{{
+<sml:classifier name="parentNetwork">
+      <sml:Term definition="urn:ioos:def:classifier:NOAA::parentNetwork">
+            <sml:codeSpace xlink:href="http://ioos.gov/ont/ra_abbrev/"/>
+            <sml:value>AOOS</sml:value>
+      </sml:Term>
+</sml:classifier>
 }}}
 
 
