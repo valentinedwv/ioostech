@@ -43,7 +43,7 @@ I don't think any validation is provided against any ontologies or dictionaries 
 
 =Suggested Solution:= 
 
-_(comments welcome)_
+*_(comments welcome)_*
 
 If the working group could define a set of classifiers (ie _@name_ s) to use for IOOS SOS services and a list of acceptable values, and this could be hosted at an appropriate web host (ie ioos.gov), the DescribeSensor responses could uniformly refer to this dictionary.  Or, where appropriate, extending or working within the Marine Metadata Interoperability ontology platform to use established ontologies for classifiers.
 
