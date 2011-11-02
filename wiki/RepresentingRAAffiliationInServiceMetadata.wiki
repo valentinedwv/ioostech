@@ -28,7 +28,7 @@ The RA acronym should appear as one of the keywords and each keyword should appe
 
 = SensorML Example =
 
-TODO
+See discussion here: DescribeSensorMetadataForIOOSSOS  
 
 = ISO 19119/19139 Service Metadata =
 The ISO service metadata describes geospatial web services.  It is general and can encompass many of the elements in the SOS capabilities XML as well as many more elements capabilities XML cannot describe.  Currently (circa 2001) it is most often used in IOOS to describe servers which have the ability to automatically provide ISO service metadata through ncISO ([https://groups.google.com/forum/#!forum/ncisometadata Google Group], [http://www.ngdc.noaa.gov/eds/tds/ Home page]).  This plugin can be enabled in any THREDDS server newer than v 4.2.8 although 4.2.9 is preferred.  Additionally, both Hyrax and ERDDAP are working on porting the ncISO plugin to their environments.  ncISO can be run as a command line client tool in addition to a server side plugin.
