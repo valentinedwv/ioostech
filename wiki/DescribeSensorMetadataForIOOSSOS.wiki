@@ -66,4 +66,4 @@ Examples:
 }}}
 
 
-These values might be used in conjunction with the _contact_ elements in SensorML, which have more options for providing detailed contact info following roughly the ISO 19115 _ResponsibleParty_ , _Person_ , and _ContactList_ models.  I don't know the best way to go about making this association, because the contact element can only be qualified by using the existing 'xlink:role' URN attribution currently used across the IOOS SOS services.  
+These values might be used in conjunction with the _contact_ elements in SensorML, which have more options for providing detailed contact info following roughly the ISO 19115 _ResponsibleParty_, _Person_, and _ContactList_ models.  I don't know the best way to go about making this association, because the contact element can only be qualified by using the existing 'xlink:role' URN attribution currently used across the IOOS SOS services.  
