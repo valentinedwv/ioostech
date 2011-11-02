@@ -1,0 +1,19 @@
+#summary List of the various _roles_ we need to describe in service metadata with definitions.
+#labels Phase-Requirements,Phase-Design
+
+= Introduction =
+
+There are numerous roles people organizations and objects play across the IOOS enterprise.  This page attempts to list them, define them, and point to suggestions for ways to represent them in service metadata describing IOOS services.
+
+= List of Roles =
+
+This list originated in the following conversation: https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/4075RctQb0UJ
+
+1. platform owner
+2. online data provider
+3. principal investigator
+4. person you call when the data stops arriving
+5. person you call when the data looks suspicious
+6. Regional Association with which the platorm (or person) is affiliated
+7. Other program affiliations (GLOBEC, GOOS, Southern California Association of Window Tinters)
+8.  ???
