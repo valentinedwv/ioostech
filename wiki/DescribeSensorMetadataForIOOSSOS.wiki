@@ -41,7 +41,9 @@ Example of _KeywordList_ using _@codeSpace_ GCMD ontology/dictionary reference f
 I don't think any validation is provided against any ontologies or dictionaries referenced in _KeywordList_ or _Term_ elements in SensorML (the GCMD codeSpace referenced above in the CO-OPS response is not a structured document), however creating a dictionary (or codeList in ISO terminology) might have some value in solving issues of identifying RA or other affiliation within DescribeSensor SensorML responses.  At least if they were accessible by URL they could be referenced by clients in parsing DescribeSensor responses to obtain a list of valid values.
 
 
-=Suggested Solution:= (comments welcome)
+=Suggested Solution:= 
+
+_(comments welcome)_
 
 If the working group could define a set of classifiers (ie _@name_ s) to use for IOOS SOS services and a list of acceptable values, and this could be hosted at an appropriate web host (ie ioos.gov), the DescribeSensor responses could uniformly refer to this dictionary.  Or, where appropriate, extending or working within the Marine Metadata Interoperability ontology platform to use established ontologies for classifiers.
 
