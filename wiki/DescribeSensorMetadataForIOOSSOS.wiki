@@ -68,7 +68,7 @@ Examples:
 Detail:
 {{{
 <sml:classifier name="parentNetwork">
-      <sml:Term definition="urn:ioos:def:classifier:NOAA::parentNetwork">
+      <sml:Term definition="urn:ioos:def:classifier:NOAA:parentNetwork">
             <sml:codeSpace xlink:href="http://ioos.gov/ont/ra_abbrev/"/>
             <sml:value>AOOS</sml:value>
       </sml:Term>
