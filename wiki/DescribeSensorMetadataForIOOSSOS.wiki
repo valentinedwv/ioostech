@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Discussion of options for metadata in IOOS SOS DescribeSensor responses
 
 = Introduction =
 
