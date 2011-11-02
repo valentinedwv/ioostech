@@ -9,7 +9,7 @@ Options to consider for how to represent RA affiliation and other metadata in De
 
 OGC SensorML spec doesn't restrict the naming of _identifier_ or _classifier_ elements within the SensorML 'Metadata Group' section.  More info, see SensorML spec (section 10.5.1): http://portal.opengeospatial.org/files/?artifact_id=21273.
 
-The  _identifier@name_ or _classifier@name_ can be any value, currently those in use for identifier (from CO-OPS) include 'Station ID', 'Short Name', and 'Long Name'.  For classifier, they include (CO-OPS) 'Parent Network', 'System Type Name', 'System Type Identifier', and (NANOOS/NDBC) 'Platform Type'.  
+The  _identifier@name_ or _classifier@name_ can be any value, currently those in use for _identifier_ (from CO-OPS) include 'Station ID', 'Short Name', and 'Long Name'.  For classifier, they include (CO-OPS) 'Parent Network', 'System Type Name', 'System Type Identifier', and (NANOOS/NDBC) 'Platform Type'.  
 
 SensorML defines sub-elements of _identifier_ and _classifier_ a _Term_ element with an optional _@definition_ attribute.  _Term_ contains a _value_ element to represent the actual value.  _Term_ can optionally include a _codeSpace_ element to reference a dictionary or ontology to constrain the choices for the _value_ element.  The same is true for the _KeywordList_ element, which optionally includes a _@codespace_ attribute and can include unconstrained _keyword_ sub-elements or a constrained set of keywords defined within an ontology or dictionary referenced by _@codespace_.  
 
