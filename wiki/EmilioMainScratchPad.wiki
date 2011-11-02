@@ -3,7 +3,7 @@
 
 = Introduction =
 
-This will be my main public brain dump, to help me guide the crafting of more organized wiki pages addressing a range of issues relevant to the IOOS DMAC Reference Implementation focus. Most of this material will be based on recent discussions, and in challenges and solutions that have come up in the development of the new NANOOS "NVS" SOS service.
+This will be my main public brain dump, to help me guide the crafting of more organized wiki pages addressing a range of issues relevant to the IOOS DMAC Reference Implementation focus. Most of this material will be based on recent discussions, and in challenges and solutions that have come up in the development of the [NANOOSNVSPythonSOS new NANOOS "NVS" SOS service].
 
 = To-Do's =
 
