@@ -1,0 +1,13 @@
+#summary Information about accessing data from the USGS WaterServices
+
+= Alaska (AOOS) =
+= Caribbean (CaRA) =
+= Central and Northern California (CeNCOOS) =
+= Gulf of Mexico (GCOOS) =
+= Great Lakes Observing System (GLOS) =
+= Mid-Atlantic (MARACOOS) =
+= Northwest Pacific (NANOOS) =
+= Northeastern Atlantic (NERACOOS) =
+= Pacific Islands (PacIOOS) =
+= Southern California (SCCOOS) =
+= Southeast Atlantic (SECOORA) =
