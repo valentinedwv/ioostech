@@ -13,5 +13,5 @@
 = Southeast Atlantic (SECOORA) =
 
 = OOI =
-== Java ==
-The implementation is all wrapped up in the overall EOI Agent codebase - but the majority of the code for actually dealing with the USGS services is here: https://github.com/ooici-eoi/eoi-agents/blob/develop/src/net/ooici/eoi/datasetagent/impl/UsgsAgent.java
+  == Java ==
+  The implementation is all wrapped up in the overall EOI Agent codebase - but the majority of the code for actually dealing with the USGS services is here: https://github.com/ooici-eoi/eoi-agents/blob/develop/src/net/ooici/eoi/datasetagent/impl/UsgsAgent.java
