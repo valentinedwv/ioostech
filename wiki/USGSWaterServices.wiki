@@ -12,6 +12,10 @@
 = Southern California (SCCOOS) =
 = Southeast Atlantic (SECOORA) =
 
+Still using the earlier NWIS service(like http://waterdata.usgs.gov/nwis/ ...) documented at 
+
+http://nautilus.baruch.sc.edu/twiki_dmcc/bin/view/Main/CarolinasCoastGetData#USGS
+
 = OOI =
   == Java ==
   The implementation is all wrapped up in the overall EOI Agent codebase - but the majority of the code for actually dealing with the USGS services is here: https://github.com/ooici-eoi/eoi-agents/blob/develop/src/net/ooici/eoi/datasetagent/impl/UsgsAgent.java
