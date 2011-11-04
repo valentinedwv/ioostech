@@ -7,6 +7,8 @@
 = Great Lakes Observing System (GLOS) =
 = Mid-Atlantic (MARACOOS) =
 = Northwest Pacific (NANOOS) =
+Ingesting USGS data for [http://nvs.nanoos.org NVS] with Python, by using the WaterML 1.1 encoding option from the USGS water services. Done via the [http://hiscentral.cuahsi.org/ CUAHSI HIS catalog] and its SOAP services, but could also do this directly from the USGS REST WaterML web services.
+
 = Northeastern Atlantic (NERACOOS) =
 = Pacific Islands (PacIOOS) =
 = Southern California (SCCOOS) =
@@ -19,3 +21,7 @@ http://nautilus.baruch.sc.edu/twiki_dmcc/bin/view/Main/CarolinasCoastGetData#USG
 = OOI =
   == Java ==
   The implementation is all wrapped up in the overall EOI Agent codebase - but the majority of the code for actually dealing with the USGS services is here: https://github.com/ooici-eoi/eoi-agents/blob/develop/src/net/ooici/eoi/datasetagent/impl/UsgsAgent.java
+
+= CUAHSI HIS ("WaterML" XML encoding and "WaterOneFlow" web services) =
+
+Folks at the the [http://www.twdb.state.tx.us/ Texas Water Development Board, TWDB] have developed a comprehensive Python package ([https://github.com/swtools/pyhis pyHIS]) to ingest WaterML data using [http://his.cuahsi.org/ HIS web services ("WaterOneFlow")]. The TWDB team lead for this project is Dharhas Pothina; [http://www.cuahsi.org/his-webinars.html Dharhas will give a webinar on pyHIS on Nov 15th, hosted by CUAHSI HIS,] that will be recorded and available afterwards.
