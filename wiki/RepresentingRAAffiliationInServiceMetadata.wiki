@@ -27,7 +27,7 @@ In the `<ServiceIdentification>` section of the SOS capabilities response, inclu
 
 The RA acronym should appear as one of the keywords and each keyword should appear as a separate `<ows:Keyword></ows:Keyword>` element.  Also, the acronym IOOS must appear as one of the keywords.  This will enable several metadata aggregation engines like ESRI Geoportal to be searched for IOOS related services.  The DataCatalog will parse the keywords list looking for the 11 RA acronyms and select other acronyms like IOOS, NDBC, CO-OPS.  
 
-_Ideally the RA acronym would be the first keyword but that is not be necessary.  This search is not case sensitive.  (*Comment from EMILIO*: I don't think there should be any expectation about the order in which the RA acronym appears; that's an unnecessary burden, that's probably only handy for *people* reading the GetCapabilities XML response directly. Also, while the search indeed should be case insensitive, we should recommend that the acronym be entered as all-uppercase so it does like an acronym.)_
+_Ideally the RA acronym would be the first keyword but that is not necessary.  This search is not case sensitive.  (*Comment from EMILIO*: I don't think there should be any expectation about the order in which the RA acronym appears; that's an unnecessary burden, that's probably only handy for *people* reading the GetCapabilities XML response directly. Also, while the search indeed should be case insensitive, we should recommend that the acronym be entered as all-uppercase so it does look like an acronym.)_
 
 = SensorML Example =
 
