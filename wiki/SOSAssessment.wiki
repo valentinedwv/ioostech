@@ -1,5 +1,5 @@
 #summary Thoughts on evaluating current SOS services in preparation for the meeting in Jan/Feb.
-#labels Phase-Requirements
+#labels Phase-Requirements,SOS
 
 = Objective =
 
@@ -25,5 +25,4 @@ How will we collect and/or compile the information?
   * A linked spreadsheet?
   * ???
 
-Place holder for the work Jeremy started.
-https://groups.google.com/d/topic/ioostech_dev/rnngO1AK0Ug/discussion
+Place holder for the work Jeremy started: [https://groups.google.com/d/topic/ioostech_dev/rnngO1AK0Ug/discussion "Thanks for posting the Catalog service endpoints document, from that I went through and tried to choose one SOS from each of the 11 RA's and federal backbone (ndbc,coop,ace) to start some analysis on. Worked up an initial perl script to get the GetCapabilites document... "].
