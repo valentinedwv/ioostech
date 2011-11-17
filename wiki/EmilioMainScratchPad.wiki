@@ -5,7 +5,7 @@
 
 This will be my main public brain dump, to help me guide the crafting of more organized wiki pages addressing a range of issues relevant to the IOOS DMAC Reference Implementation focus. Most of this material will be based on recent discussions, and in challenges and solutions that have come up in the development of the [NANOOSNVSPythonSOS new NANOOS "NVS" SOS service].
 
-= Platform types =
+= Platform/Station types =
 
 Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use of Classification terms from http://mmisw.org/ont/mmi/platform/ . Consequences for IOOS Catalog, including the use of NVS asset-type map icons. _Note to self_: Describe and make the NVS asset-type map icons available through this wiki later on.
 
