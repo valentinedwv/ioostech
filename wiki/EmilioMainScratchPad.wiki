@@ -14,13 +14,13 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 <sml:classifier name="System Type Identifier">
     <sml:Term definition="urn:ioos:def:classifier:NOAA::systemTypeID">
         <sml:codeSpace xlink:href="http://mmisw.org/ont/mmi/platform/" />
-            <sml:value>Platform</sml:value>
+        <sml:value>Platform</sml:value>
     </sml:Term>
 </sml:classifier>
 <sml:classifier name="Platform Type">
     <sml:Term definition="urn:ioos:def:classifier:NOAA:platformType">
         <sml:codeSpace xlink:href="http://nvs.nanoos.org"/>
-            <sml:value>MOORED BUOY</sml:value>
+        <sml:value>MOORED BUOY</sml:value>
     </sml:Term>
 </sml:classifier>
 }}}
