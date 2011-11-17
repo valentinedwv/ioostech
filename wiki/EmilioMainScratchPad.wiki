@@ -11,3 +11,4 @@ This will be my main public brain dump, to help me guide the crafting of more or
   # Semantics of GetObservations requests: meaning and usage of _offering, procedure, observedProperties_, etc
   # Development of a reasonable but unofficial DescribeSensor SensorML response
   # Use of "defaults" to simplify requests
+  # Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Consequences for IOOS Catalog, use of NVS asset-type map icons
