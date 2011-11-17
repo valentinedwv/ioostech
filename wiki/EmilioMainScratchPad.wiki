@@ -25,6 +25,8 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 </sml:classifier>
 }}}
 
+A question I've had about this implementation if, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
+
 = To-Do's =
 
   # IOOS conventions we've re-discovered or agreed on recently, including links to important documents (eg, [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_CSV_Encoding_v101.doc IOOS Conventions for CSV Encoding], [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx IOOS Conventions for Asset Identifiers (including station & sensor urn conventions)], adoption of CF names for measurements)
