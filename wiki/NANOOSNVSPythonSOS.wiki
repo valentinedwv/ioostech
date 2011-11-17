@@ -11,6 +11,9 @@ Our intent is to release the code, eventually, when we've cleaned it up and docu
 
 I also intend to document conventions used (IOOS conventions), with links to where they're specified; when something seemed ambiguous, I'll try to describe the rationale behind decisions made.
 
+= Table of Contents =
+<wiki:toc max_depth="2" />
+
 == stations and observed properties ==
 
 As illustrated below, this SOS service accepts both fully explicit and shorter, unqualified station (procedure or offering, depending on request) and observedProperty arguments; for example:
