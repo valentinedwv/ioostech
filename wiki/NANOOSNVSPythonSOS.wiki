@@ -27,6 +27,10 @@ The use of NANOOS/NVS asset id's allow for direct URL-based linking to NVS, such
 
 GetObservation data responseFormat options: text/plain, text/csv, application/xml. Explain each, provide examples (links, in-line text) and relevant documentation (IOOS CSV doc).
 
+== Defaults and "minimalist", simplified requests ==
+
+I've implemented extensive use of "defaults" to allow for the simplest possible requests to be composed, to make this service less complex and intimidating to users (including code, as these simplifications allow for simpler parsers). I'll describe these here, eventually; some are already mentioned, such as the acceptance of unqualified station and observedProperty values.
+
 == Sample requests and responses ==
 
 All these examples are currently based on multi-depth (profiling) platforms. Explanations will be added later.
@@ -45,9 +49,9 @@ All these examples are currently based on multi-depth (profiling) platforms. Exp
 
 = Limitations =
 
-Limitations of this SOS code are mainly related to GetObservation: only one procedure (station) and one observationOffering (measured parameter) can be requested at a time; BBOX parameter is not implemented; the only "standard" data encoding response available is the IOOS CSV specification; vector observationOffering requests (eg, Winds) are not implemented.
-
-Another current limitation has nothing to do with the code itself, but with the data store behind it: only the previous 30 days of data are available. 
+  * An important current limitation has nothing to do with the code itself, but with the data store behind it: only the previous 30 days of data are available. 
+  * Limitations of this SOS code are mainly related to GetObservation: only one procedure (station) and one observationOffering (measured parameter) can be requested at a time; BBOX parameter is not implemented; the only "standard" data encoding response available is the IOOS CSV specification; vector observationOffering requests (eg, Winds) are not implemented.
+  * Only GET requests are implemented. POST requests are not implemented.
 
 = Miscellaneous Notes =
 
