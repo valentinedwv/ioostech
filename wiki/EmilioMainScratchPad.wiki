@@ -5,29 +5,29 @@
 
 This will be my main public brain dump, to help me guide the crafting of more organized wiki pages addressing a range of issues relevant to the IOOS DMAC Reference Implementation focus. Most of this material will be based on recent discussions, and in challenges and solutions that have come up in the development of the [NANOOSNVSPythonSOS new NANOOS "NVS" SOS service].
 
+= Platform types =
+
+Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use use of Classification terms http://mmisw.org/ont/mmi/platform/ Consequences for IOOS Catalog, including the use of NVS asset-type map icons. _Note to self_: Describe and make the NVS asset-type map icons available through this wiki later on.
+
+Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOOS SOS as a draft incomplete implementation, borrowing from either NDBC or NOS/COOPS and possibly others:
+{{{
+<sml:classifier name="System Type Identifier">
+    <sml:Term definition="urn:ioos:def:classifier:NOAA::systemTypeID">
+        <sml:codeSpace xlink:href="http://mmisw.org/ont/mmi/platform/" />
+            <sml:value>Platform</sml:value>
+    </sml:Term>
+</sml:classifier>
+<sml:classifier name="Platform Type">
+    <sml:Term definition="urn:ioos:def:classifier:NOAA:platformType">
+        <sml:codeSpace xlink:href="http://nvs.nanoos.org"/>
+            <sml:value>MOORED BUOY</sml:value>
+    </sml:Term>
+</sml:classifier>
+}}}
+
 = To-Do's =
 
   # IOOS conventions we've re-discovered or agreed on recently, including links to important documents (eg, [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_CSV_Encoding_v101.doc IOOS Conventions for CSV Encoding], [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx IOOS Conventions for Asset Identifiers (including station & sensor urn conventions)], adoption of CF names for measurements)
   # Semantics of GetObservations requests: meaning and usage of _offering, procedure, observedProperties_, etc
   # Development of a reasonable but unofficial DescribeSensor SensorML response
   # Use of "defaults" to simplify requests
-
-= Platform types =
-
-Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use use of Classification terms http://mmisw.org/ont/mmi/platform/ Consequences for IOOS Catalog, use of NVS asset-type map icons
-
-Station Classifiers (sml:classification/sml:ClassifierList):
-{{{
-<sml:classifier name="System Type Identifier">
-	<sml:Term definition="urn:ioos:def:classifier:NOAA::systemTypeID">
-		<sml:codeSpace xlink:href="http://mmisw.org/ont/mmi/platform/" />
-		<sml:value>Platform</sml:value>
-	</sml:Term>
-</sml:classifier>
-<sml:classifier name="Platform Type">
-	<sml:Term definition="urn:ioos:def:classifier:NOAA:platformType">
-		<sml:codeSpace xlink:href="http://nvs.nanoos.org"/>
-		<sml:value>MOORED BUOY</sml:value>
-	</sml:Term>
-</sml:classifier>
-}}}
