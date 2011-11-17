@@ -13,9 +13,15 @@ Our intent is to release the code, eventually, when we've cleaned it up and docu
 
 I also intend to document conventions used (IOOS conventions), with links to where they're specified; when something seemed ambiguous, I'll try to describe the rationale behind decisions made.
 
+== Defaults and minimalist, simplified requests ==
+
+The NANOOS SOS makes extensive use of "defaults" to enable the simplest possible requests to be composed, making the service less complex and intimidating to users (including code, as these simplifications allow for simpler parsers). Many of these are illustrated in the [Sample_requests_and_responses Sample requests and responses] section below; the [stations_and_observed_properties stations and observed properties] section describes those related to the acceptance of unqualified station and _observedProperty_ values.
+
+I'll describe all defaults and simplifications, eventually.
+
 == stations and observed properties ==
 
-As illustrated below, this SOS service accepts both fully explicit and shorter, unqualified station (procedure or offering, depending on request) and observedProperty arguments; for example:
+As illustrated below, this SOS service accepts both fully explicit and shorter, unqualified station (_procedure_ or _offering_, depending on request) and _observedProperty_ arguments; for example:
   * *station.* _procedure_ key in DescribeSensor and _offering_ key in GetObservation. Fully explicit urn: _urn:ioos:station:nanoos:ORCA_Hoodsport_. Unqualified value: _ORCA_Hoodsport_. The latter corresponds to the _NANOOS/NVS asset id_.
   * *observedProperty.* Fully explicit urn: _http://mmisw.org/ont/cf/parameter/sea_water_temperature_. Unqualified value: _sea_water_temperature_. Only _CF names_ are currently accepted.
 
@@ -26,10 +32,6 @@ The use of NANOOS/NVS asset id's allow for direct URL-based linking to NVS, such
 == Data encodings available ==
 
 GetObservation data responseFormat options: text/plain, text/csv, application/xml. Explain each, provide examples (links, in-line text) and relevant documentation (IOOS CSV doc).
-
-== Defaults and "minimalist", simplified requests ==
-
-I've implemented extensive use of "defaults" to allow for the simplest possible requests to be composed, to make this service less complex and intimidating to users (including code, as these simplifications allow for simpler parsers). I'll describe these here, eventually; some are already mentioned, such as the acceptance of unqualified station and observedProperty values.
 
 == Sample requests and responses ==
 
