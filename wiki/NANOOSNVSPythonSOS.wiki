@@ -1,6 +1,8 @@
 #summary Python SOS for NANOOS NVS
 #labels NANOOS,SOS,Python
 
+<wiki:toc max_depth="2" />
+
 = Python SOS for NANOOS NVS NRT in-situ Assets =
 
 This is a temporary scratch pad for documenting the IOOS Python SOS server developed recently by [http://nanoos.org NANOOS] (first by CMOP, then enhanced by APL-UW).
@@ -10,9 +12,6 @@ This is a temporary scratch pad for documenting the IOOS Python SOS server devel
 Our intent is to release the code, eventually, when we've cleaned it up and documented it just enough.
 
 I also intend to document conventions used (IOOS conventions), with links to where they're specified; when something seemed ambiguous, I'll try to describe the rationale behind decisions made.
-
-= Table of Contents =
-<wiki:toc max_depth="2" />
 
 == stations and observed properties ==
 
