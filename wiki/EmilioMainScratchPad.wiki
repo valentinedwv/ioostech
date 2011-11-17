@@ -11,4 +11,23 @@ This will be my main public brain dump, to help me guide the crafting of more or
   # Semantics of GetObservations requests: meaning and usage of _offering, procedure, observedProperties_, etc
   # Development of a reasonable but unofficial DescribeSensor SensorML response
   # Use of "defaults" to simplify requests
-  # Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Consequences for IOOS Catalog, use of NVS asset-type map icons
+
+= Platform types =
+
+Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use use of Classification terms http://mmisw.org/ont/mmi/platform/ Consequences for IOOS Catalog, use of NVS asset-type map icons
+
+Station Classifiers (sml:classification/sml:ClassifierList):
+{{{
+<sml:classifier name="System Type Identifier">
+	<sml:Term definition="urn:ioos:def:classifier:NOAA::systemTypeID">
+		<sml:codeSpace xlink:href="http://mmisw.org/ont/mmi/platform/" />
+		<sml:value>Platform</sml:value>
+	</sml:Term>
+</sml:classifier>
+<sml:classifier name="Platform Type">
+	<sml:Term definition="urn:ioos:def:classifier:NOAA:platformType">
+		<sml:codeSpace xlink:href="http://nvs.nanoos.org"/>
+		<sml:value>MOORED BUOY</sml:value>
+	</sml:Term>
+</sml:classifier>
+}}}
