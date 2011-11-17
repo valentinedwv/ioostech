@@ -5,19 +5,15 @@
 
 = Python SOS for NANOOS NVS NRT in-situ Assets =
 
-Documentation for the IOOS Python SOS server developed recently by [http://nanoos.org NANOOS] (first by CMOP, then enhanced by APL-UW).
-
 *_The new server is not official yet, but will be soon (likely by Nov 18, 2011). So, the information and data from these responses are intended for testing only!_*
 
-Our intent is to release the code, eventually, when we've cleaned it up and documented it just enough.
+Documentation for the IOOS Python SOS server developed recently by [http://nanoos.org NANOOS] (first by CMOP, then enhanced by APL-UW).
 
-I also intend to document conventions used (IOOS conventions), with links to where they're specified; when something seemed ambiguous, I'll try to describe the rationale behind decisions made.
+Our intent is to release the code, eventually, when we've cleaned it up and documented it just enough. I also intend to document conventions used (IOOS conventions), with links to where they're specified; when something seemed ambiguous, I'll try to describe the rationale behind decisions made.
 
 == Defaults and minimalist, simplified requests ==
 
-The NANOOS SOS makes extensive use of "defaults" to enable the simplest possible requests to be composed, making the service less complex and intimidating to users (including code, as these simplifications allow for simpler parsers). Many of these are illustrated in the [#Sample_requests_and_responses Sample requests and responses] section below; the [#stations_and_observed_properties stations and observed properties] section describes those related to the acceptance of unqualified station and _observedProperty_ values.
-
-I'll describe all defaults and simplifications, eventually.
+The NANOOS SOS makes extensive use of "defaults" to enable the simplest possible requests to be composed, making the service less complex and intimidating to users (including code, as these simplifications allow for simpler parsers). Many of these are illustrated in the [#Sample_requests_and_responses Sample requests and responses] section below; the [#stations_and_observed_properties stations and observed properties] section describes those related to the acceptance of unqualified station and _observedProperty_ values. *I'll describe all defaults and simplifications ... eventually.*
 
 == stations and observed properties ==
 
@@ -52,8 +48,12 @@ All these examples are currently based on multi-depth (profiling) platforms. Exp
 = Limitations =
 
   * An important current limitation has nothing to do with the code itself, but with the data store behind it: only the previous 30 days of data are available. 
-  * Limitations of this SOS code are mainly related to GetObservation: only one procedure (station) and one observationOffering (measured parameter) can be requested at a time; BBOX parameter is not implemented; the only "standard" data encoding response available is the IOOS CSV specification; vector observationOffering requests (eg, Winds) are not implemented.
-  * Only GET requests are implemented. POST requests are not implemented.
+  * Limitations of this SOS code are mainly related to GetObservation:
+    * only one procedure (station) and one observationOffering (measured parameter) can be requested at a time
+    * BBOX parameter is not implemented
+    * the only "standard" data encoding response available is the IOOS CSV specification
+    * vector observationOffering requests (eg, Winds) are not implemented.
+  * Only GET requests are implemented. POST requests are not implemented, and there are no near-term plans to do so.
 
 = Miscellaneous Notes =
 
