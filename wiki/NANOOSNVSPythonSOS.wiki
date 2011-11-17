@@ -5,9 +5,9 @@
 
 = Python SOS for NANOOS NVS NRT in-situ Assets =
 
-This is a temporary scratch pad for documenting the IOOS Python SOS server developed recently by [http://nanoos.org NANOOS] (first by CMOP, then enhanced by APL-UW).
+Documentation for the IOOS Python SOS server developed recently by [http://nanoos.org NANOOS] (first by CMOP, then enhanced by APL-UW).
 
-*_The new server is not official yet, but will be soon (by early Nov 2011). So, the information and data from these responses are intended for testing only!_*
+*_The new server is not official yet, but will be soon (likely by Nov 18, 2011). So, the information and data from these responses are intended for testing only!_*
 
 Our intent is to release the code, eventually, when we've cleaned it up and documented it just enough.
 
@@ -15,7 +15,7 @@ I also intend to document conventions used (IOOS conventions), with links to whe
 
 == Defaults and minimalist, simplified requests ==
 
-The NANOOS SOS makes extensive use of "defaults" to enable the simplest possible requests to be composed, making the service less complex and intimidating to users (including code, as these simplifications allow for simpler parsers). Many of these are illustrated in the [Sample_requests_and_responses Sample requests and responses] section below; the [stations_and_observed_properties stations and observed properties] section describes those related to the acceptance of unqualified station and _observedProperty_ values.
+The NANOOS SOS makes extensive use of "defaults" to enable the simplest possible requests to be composed, making the service less complex and intimidating to users (including code, as these simplifications allow for simpler parsers). Many of these are illustrated in the [#Sample_requests_and_responses Sample requests and responses] section below; the [#stations_and_observed_properties stations and observed properties] section describes those related to the acceptance of unqualified station and _observedProperty_ values.
 
 I'll describe all defaults and simplifications, eventually.
 
