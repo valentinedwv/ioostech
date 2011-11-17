@@ -13,10 +13,11 @@ Our intent is to release the code, eventually, when we've cleaned it up and docu
 
 == Defaults and minimalist, simplified requests ==
 
-The NANOOS SOS makes extensive use of "defaults" to enable the simplest possible requests to be composed, making the service less complex and intimidating to users (including code, as these simplifications allow for simpler parsers). Many of these are illustrated in the [#Sample_requests_and_responses Sample requests and responses] section below; the [#stations_and_observed_properties stations and observed properties] section describes those related to the acceptance of unqualified station and _observedProperty_ values. 
+The NANOOS SOS makes extensive use of "defaults" to enable the simplest possible requests to be composed, making the service less complex and intimidating to users (including code, as these simplifications allow for simpler parsers). Many of these are illustrated in the [#Sample_requests_and_responses Sample requests and responses] section.
 
+  * DescribeSensor and GetObservation accept unqualified station values, and GetObservation accepts unqualified _observedProperty_ values. This is described in the [#stations_and_observed_properties stations and observed properties] section.
   * In GetObservation, when the _eventTime_ key is ommitted, the latest observation is returned *(OOT)*. When the station and observed property are measured at multiple depths, the latest observation per depth is returned.
-  * In GetObservation, when the _responseFormat_ key is ommitted, _text/plain_ is assumed. This is the same as _text/csv_, except that for browser requests the response is returned inline rather than as a file download. I think this is much more friendly to users and experimentation.
+  * In GetObservation, when the _responseFormat_ key is ommitted, _text/plain_ is assumed. This is the same IOOS CSV data encoding as _text/csv_, except that a browser request result in an inline response rather than a file download. This is much more friendly to users and experimentation.
 
 *I'll describe all defaults and simplifications ... eventually.*
 
