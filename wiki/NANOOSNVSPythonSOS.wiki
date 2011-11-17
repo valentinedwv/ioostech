@@ -45,7 +45,12 @@ All these examples are currently based on multi-depth (profiling) platforms. Exp
     * Minimalist version, with defaults and short names (not full urn's):  [http://habu.apl.washington.edu/pyws/sos.py?service=SOS&request=GetObservation&offering=ORCA_Hoodsport&observedProperty=sea_water_temperature&responseFormat=text/plain]
     * Another Minimalist request, but specifying a time interval:  [http://habu.apl.washington.edu/pyws/sos.py?service=SOS&request=GetObservation&offering=ORCA_Twanoh&observedProperty=mass_concentration_of_oxygen_in_sea_water&eventTime=2011-10-18T00:00Z/2011-10-20T23:00Z&responseFormat=text/plain]
 
-= Limitations =
+= Miscellaneous Notes =
+
+  * The NANOOS SOS GET requests are exhaustively case-insensitive. All keys and some values are case insensitive; eg, request=GetObservation and REQUEST=getobservation will both work. [https://groups.google.com/forum/#!msg/ioostech_dev/xMp3zuXcLHQ/BwnMWRIu-BQJ See this email thread with Eric Bridger for context.]
+  * This code has no direct relationship to the [http://www.oostethys.org/downloads/sos-cookbook-python/pysos-version-0.1 older Python SOS server that was also developed by CMOP / NANOOS, around 2007/2008]; That code is basically orphaned, as far as we know.
+
+== Limitations ==
 
   * An important current limitation has nothing to do with the code itself, but with the data store behind it: only the previous 30 days of data are available. 
   * Limitations of this SOS code are mainly related to GetObservation:
@@ -54,8 +59,3 @@ All these examples are currently based on multi-depth (profiling) platforms. Exp
     * the only "standard" data encoding response available is the IOOS CSV specification
     * vector observedProperty requests (eg, Winds) are not implemented.
   * Only GET requests are implemented. POST requests are not implemented, and there are no near-term plans to do so.
-
-= Miscellaneous Notes =
-
-  * The NANOOS SOS GET requests are exhaustively case-insensitive. All keys and some values are case insensitive; eg, request=GetObservation and REQUEST=getobservation will both work. [https://groups.google.com/forum/#!msg/ioostech_dev/xMp3zuXcLHQ/BwnMWRIu-BQJ See this email thread with Eric Bridger for context.]
-  * This code has no direct relationship to the [http://www.oostethys.org/downloads/sos-cookbook-python/pysos-version-0.1 older Python SOS server that was also developed by CMOP / NANOOS, around 2007/2008]; That code is basically orphaned, as far as we know.
