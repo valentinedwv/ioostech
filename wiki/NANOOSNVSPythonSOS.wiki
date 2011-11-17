@@ -49,10 +49,10 @@ All these examples are currently based on multi-depth (profiling) platforms. Exp
 
   * An important current limitation has nothing to do with the code itself, but with the data store behind it: only the previous 30 days of data are available. 
   * Limitations of this SOS code are mainly related to GetObservation:
-    * only one procedure (station) and one observationOffering (measured parameter) can be requested at a time
+    * only one offering (1 station) and one observedProperty (measured parameter) can be requested at a time
     * BBOX parameter is not implemented
     * the only "standard" data encoding response available is the IOOS CSV specification
-    * vector observationOffering requests (eg, Winds) are not implemented.
+    * vector observedProperty requests (eg, Winds) are not implemented.
   * Only GET requests are implemented. POST requests are not implemented, and there are no near-term plans to do so.
 
 = Miscellaneous Notes =
