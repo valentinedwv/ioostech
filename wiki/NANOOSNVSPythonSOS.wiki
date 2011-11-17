@@ -21,6 +21,10 @@ The use of NANOOS/NVS asset id's allow for direct URL-based linking to NVS, such
   * Go to the asset infowindow (pop up) on NVS: http://www.nanoos.org/nvs/nvs.php?section=NVS-Assets&infoWindow=action::auto_open||asset_class::siso||asset_id::ORCA_Hoodsport
   * Use the NVS light-weight JSON web services to request the asset's latest observations for all variables: http://www.nanoos.org/nvs/services/get_asset_info.php?opt=recent_values&asset_type=siso&asset_id=ORCA_Hoodsport&var_id=all&units_mode=v1 . These RESTful services are used by the NVS mobile apps and other NANOOS regional data-transport services.
 
+== Data encodings available ==
+
+GetObservation data responseFormat options: text/plain, text/csv, application/xml. Explain each, provide examples (links, in-line text) and relevant documentation (IOOS CSV doc).
+
 == Sample requests and responses ==
 
 All these examples are currently based on multi-depth (profiling) platforms. Explanations will be added later.
