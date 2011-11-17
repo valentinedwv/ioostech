@@ -7,6 +7,10 @@ This is a temporary scratch pad for documenting the IOOS Python SOS server devel
 
 *_The new server is not official yet, but will be soon (by early Nov 2011). So, the information and data from these responses are intended for testing only!_*
 
+As illustrated below, this SOS service accepts both fully explicit and shorter, unqualified station (procedure or offering, depending on request) and observedProperty arguments; for example:
+  * *station.* _procedure_ key in DescribeSensor and _offering_ key in GetObservation. Fully explicit urn: _urn:ioos:station:nanoos:ORCA_Hoodsport_. Unqualified value: _ORCA_Hoodsport_. The latter corresponds to the _NANOOS/NVS asset id_.
+  * *observedProperty.* Fully explicit urn: _http://mmisw.org/ont/cf/parameter/sea_water_temperature_. Unqualified value: _sea_water_temperature_. Only _CF names_ are currently accepted.
+
 Limitations of this SOS code are mainly related to GetObservation: only one procedure (station) and one observationOffering (measured parameter) can be requested at a time; BBOX parameter is not implemented; the only "standard" data encoding response available is the IOOS CSV specification; vector observationOffering requests (eg, Winds) are not implemented.
 
 Another current limitation has nothing to do with the code itself, but with the data store behind it: only the previous 30 days of data are available. 
