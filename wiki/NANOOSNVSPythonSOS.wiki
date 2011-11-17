@@ -3,7 +3,7 @@
 
 = Python SOS for NANOOS NVS NRT in-situ Assets =
 
-This is a temporary scratch pad for documenting the IOOS Python SOS server developed recently by [http://nanoos.org NANOOS] (first by CMOP, then enhanced by APL-UW). Note that this code has *no relationship at all* to the [http://www.oostethys.org/downloads/sos-cookbook-python/pysos-version-0.1 older Python SOS server that was also developed by CMOP / NANOOS, around 2007/2008]; That code is basically orphaned, as far as we know.
+This is a temporary scratch pad for documenting the IOOS Python SOS server developed recently by [http://nanoos.org NANOOS] (first by CMOP, then enhanced by APL-UW).
 
 *_The new server is not official yet, but will be soon (by early Nov 2011). So, the information and data from these responses are intended for testing only!_*
 
@@ -32,3 +32,4 @@ I also intend to document conventions used (IOOS conventions), with links to whe
 = Miscellaneous Notes =
 
   * The NANOOS SOS GET requests are exhaustively case-insensitive. All keys and some values are case insensitive; eg, request=GetObservation and REQUEST=getobservation will both work. [https://groups.google.com/forum/#!msg/ioostech_dev/xMp3zuXcLHQ/BwnMWRIu-BQJ See this email thread with Eric Bridger for context.]
+  * This code has no direct relationship to the [http://www.oostethys.org/downloads/sos-cookbook-python/pysos-version-0.1 older Python SOS server that was also developed by CMOP / NANOOS, around 2007/2008]; That code is basically orphaned, as far as we know.
