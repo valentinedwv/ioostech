@@ -19,9 +19,9 @@ The NANOOS SOS makes extensive use of "defaults" to enable the simplest possible
   * In GetObservation, when the _eventTime_ key is ommitted, the latest observation is returned *(OOT)*. When the station and observed property are measured at multiple depths, the latest observation per depth is returned.
   * In GetObservation, when the _responseFormat_ key is ommitted, _text/plain_ is assumed. This is the same IOOS CSV data encoding as _text/csv_, except that a browser request result in an inline response rather than a file download. This is much more friendly to users and experimentation.
 
-*I'll describe all defaults and simplifications ... eventually.*
+I'll describe all defaults and simplifications ... eventually.
 
-*(OOT)* = An [http://oostethys.org/ OOsTethys] convention.
+*(OOT)* = An [http://oostethys.org/ OOSTethys] convention.
 
 == stations and observed properties ==
 
@@ -32,6 +32,18 @@ As illustrated below, this SOS service accepts both fully explicit and shorter, 
 The use of NANOOS/NVS asset id's allow for direct URL-based linking to NVS, such as:
   * Go to the asset infowindow (pop up) on NVS: http://www.nanoos.org/nvs/nvs.php?section=NVS-Assets&infoWindow=action::auto_open||asset_class::siso||asset_id::ORCA_Hoodsport
   * Use the NVS light-weight JSON web services to request the asset's latest observations for all variables: http://www.nanoos.org/nvs/services/get_asset_info.php?opt=recent_values&asset_type=siso&asset_id=ORCA_Hoodsport&var_id=all&units_mode=v1 . These RESTful services are used by the NVS mobile apps and other NANOOS regional data-transport services.
+
+== GetObservation date-time (eventTime) requests ==
+
+Usage descriptions, assumptions, and limitations.
+
+  * Only UTC requests are currently accepted. The response timestamp is also in UTC.
+  * ISO 8601 date-time string formatting is used. Example: 2011-11-17T23:14Z
+  * Minutes and seconds must be specified. A request that only specifies the date will return an error.
+  * Request types:
+    # *Latest observations.* When the _eventTime_ key is omitted, the latest observation is returned *(OOT)*. When the station and observed property are measured at multiple depths, the latest observation per depth is returned.
+    # *Specified interval.* Example: eventTime=2011-11-15T00:00Z/2011-11-17T23:00Z
+    # *Specified instant.* Example: eventTime=2011-11-15T00:00Z. The requested timestamp is 'buffered' by 20 minutes on each end.
 
 == Data encodings available ==
 
