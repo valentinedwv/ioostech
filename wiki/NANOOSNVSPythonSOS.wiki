@@ -21,8 +21,6 @@ The NANOOS SOS makes extensive use of "defaults" to enable the simplest possible
 
 I'll describe all defaults and simplifications ... eventually.
 
-*(OOT)* = An [http://oostethys.org/ OOSTethys] convention.
-
 == stations and observed properties ==
 
 As illustrated below, this SOS service accepts both fully explicit and shorter, unqualified station (_procedure_ or _offering_, depending on request) and _observedProperty_ arguments; for example:
@@ -79,3 +77,7 @@ All these examples are currently based on multi-depth (profiling) platforms. Exp
     * the only "standard" data encoding response available is the IOOS CSV specification
     * vector observedProperty requests (eg, Winds) are not implemented.
   * Only GET requests are implemented. POST requests are not implemented, and there are no near-term plans to do so.
+
+== Footnotes ==
+
+*(OOT)* = An [http://oostethys.org/ OOSTethys] convention.
