@@ -61,7 +61,7 @@ All these examples are currently based on multi-depth (profiling) platforms. Exp
   # *GetObservation*
     * Fully explicit request, for latest data:  [http://habu.apl.washington.edu/pyws/sos.py?service=SOS&version=1.0.0&request=GetObservation&offering=urn:ioos:station:nanoos:ORCA_Hoodsport&observedProperty=http://mmisw.org/ont/cf/parameter/sea_water_temperature&responseFormat=text/plain]
     * Minimalist version, with defaults and short names (not full urn's):  [http://habu.apl.washington.edu/pyws/sos.py?service=SOS&request=GetObservation&offering=ORCA_Hoodsport&observedProperty=sea_water_temperature]
-    * Another Minimalist request, but specifying a time interval:  [http://habu.apl.washington.edu/pyws/sos.py?service=SOS&request=GetObservation&offering=ORCA_Twanoh&observedProperty=mass_concentration_of_oxygen_in_sea_water&eventTime=2011-10-18T00:00Z/2011-10-20T23:00Z]
+    * Another Minimalist request, but specifying a time interval:  [http://habu.apl.washington.edu/pyws/sos.py?service=SOS&request=GetObservation&offering=ORCA_Twanoh&observedProperty=mass_concentration_of_oxygen_in_sea_water&eventTime=2011-11-16T00:00Z/2011-11-18T23:00Z]
 
 = Miscellaneous Notes =
 
