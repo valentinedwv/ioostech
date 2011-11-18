@@ -1,5 +1,5 @@
 #labels Phase-Requirements,Phase-Design,SOS,SWE
-#Plan for developing SWECommon response for SOS  GetObservation requests.
+#Plan for developing SWECommon response for SOS GetObservation requests.
 
 = Introduction =
 
