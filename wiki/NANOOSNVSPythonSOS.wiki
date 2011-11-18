@@ -5,7 +5,7 @@
 
 = Python SOS for NANOOS NVS NRT in-situ Assets =
 
-*_The new server is not official yet, but will be soon (likely by Nov 18, 2011). So, the information and data from these responses are intended for testing only!_*
+*_The new server was released publicly on Nov 18, 2011. Currently it provides access to 19 in-situ stations/assets._*
 
 Documentation for the IOOS Python SOS server developed recently by [http://nanoos.org NANOOS] (first by CMOP, then enhanced by APL-UW).
 
