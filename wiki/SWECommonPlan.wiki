@@ -12,4 +12,9 @@ Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
+
+Just so we don't lose these...
+
 http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
+http://external.opengis.org/twiki_public/NREwg/GMESPHInstrumentCapabilities
+http://external.opengis.org/twiki_public/HydrologyDWG/SOSServingWaterML20
