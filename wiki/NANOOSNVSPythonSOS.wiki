@@ -25,7 +25,7 @@ I'll describe all defaults and simplifications ... eventually.
 
 As illustrated below, this SOS service accepts both fully explicit and shorter, unqualified station (_procedure_ or _offering_, depending on request) and _observedProperty_ arguments; for example:
   * *station.* _procedure_ key in DescribeSensor and _offering_ key in GetObservation. Fully explicit urn: _urn:ioos:station:nanoos:ORCA_Hoodsport_. Unqualified value: _ORCA_Hoodsport_. The latter corresponds to the _NANOOS/NVS asset id_.
-  * *observedProperty.* Fully explicit urn: _http://mmisw.org/ont/cf/parameter/sea_water_temperature_. Unqualified value: _sea_water_temperature_. Only _CF names_ are currently accepted.
+  * *observedProperty.* Fully explicit urn: _[http://mmisw.org/ont/cf/parameter/sea_water_temperature]_. Unqualified value: _sea_water_temperature_. Only _CF names_ are currently accepted.
 
 The use of NANOOS/NVS asset id's allow for direct URL-based linking to NVS, such as:
   * Go to the asset infowindow (pop up) on NVS: http://www.nanoos.org/nvs/nvs.php?section=NVS-Assets&infoWindow=action::auto_open||asset_class::siso||asset_id::ORCA_Hoodsport
