@@ -18,7 +18,7 @@ However, there is also a vocabulary developed during the Data Integration Framew
 
 = Domain Specific Issues =
 ==Water Quality==
-[https://docs.google.com/spreadsheetccc?key=0AkuvBG1lfvfMdHViX0FuejkyNENsalZNWW9KZXdrT2c&hl=en_US#gid=0 Draft IOOS Water Quality Terms].
+[https://docs.google.com/spreadsheetccc?key=0AkuvBG1lfvfMdHViX0FuejkyNENsalZNWW9KZXdrT2c&hl=en_US#gid=0 Draft Water Quality Terms].
 
 
 ==Semantic Web Maturity and Examples==
