@@ -43,6 +43,11 @@ Usage descriptions, assumptions, and limitations.
     # *Specified interval.* Example: eventTime=2011-11-15T00:00Z/2011-11-17T23:00Z
     # *Specified instant.* Example: eventTime=2011-11-15T00:00Z. The requested timestamp is 'buffered' by 20 minutes on each end.
 
+== TimePeriod being-end conventions used ==
+
+The GetCapabilities response is very useful as an initial, sparse catalog of what's available on the SOS service, specially information about each station: location (lat & lon), measured parameters, and time period available. The station time period is found in the XML node
+ `sos:Contents/sos:ObservationOfferingList/sos:ObservationOffering/sos:time`
+
 == Data encodings available ==
 
 GetObservation data responseFormat options: text/plain, text/csv, application/xml. Explain each, provide examples (links, in-line text) and relevant documentation (IOOS CSV doc).
