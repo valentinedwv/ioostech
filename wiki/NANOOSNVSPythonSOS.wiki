@@ -24,10 +24,10 @@ I'll describe all defaults and simplifications ... eventually.
 == stations and observed properties ==
 
 As illustrated below, this SOS service accepts both fully explicit and shorter, unqualified station (_procedure_ or _offering_, depending on request) and _observedProperty_ arguments; for example:
-  * *station.* _procedure_ key in DescribeSensor and _offering_ key in GetObservation. Fully explicit urn: _urn:ioos:station:nanoos:ORCA_Hoodsport_. Unqualified value: _ORCA_Hoodsport_. The latter corresponds to the _NANOOS/NVS asset id_.
+  * *station.* _procedure_ key in DescribeSensor and _offering_ key in GetObservation. Fully explicit urn: _urn:ioos:station:nanoos:ORCA_Hoodsport_. Unqualified value: _ORCA_Hoodsport_. RThe latter corresponds to the _NANOOS/NVS asset id_. *Rant:* BTW, this is a good place to remind ourselves that when dealing with horizontally fixed in situ stations, we're confronted with a confusing set of terms related to a station, depending on context: SWE/SOS use the abstract, ambiguous, overlapping terms _procedure_ and _offering_; in other contexts (eg, SensorML), _station_ and _platform_ are used. It's possible to use all 4 terms to refer to exactly the same thing!
   * *observedProperty.* Fully explicit urn: _[http://mmisw.org/ont/cf/parameter/sea_water_temperature]_. Unqualified value: _sea_water_temperature_. Only _CF names_ are currently accepted.
 
-The use of NANOOS/NVS asset id's allow for direct URL-based linking to NVS, such as:
+The use of NANOOS/NVS asset id's allows for direct URL-based linking to NVS, such as:
   * Go to the asset infowindow (pop up) on NVS: http://www.nanoos.org/nvs/nvs.php?section=NVS-Assets&infoWindow=action::auto_open||asset_class::siso||asset_id::ORCA_Hoodsport
   * Use the NVS light-weight JSON web services to request the asset's latest observations for all variables: http://www.nanoos.org/nvs/services/get_asset_info.php?opt=recent_values&asset_type=siso&asset_id=ORCA_Hoodsport&var_id=all&units_mode=v1 . These RESTful services are used by the NVS mobile apps and other NANOOS regional data-transport services.
 
