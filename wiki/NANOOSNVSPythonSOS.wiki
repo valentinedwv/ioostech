@@ -45,16 +45,14 @@ Usage descriptions, assumptions, and limitations.
 
 == Station time period begin-end conventions ==
 
-The GetCapabilities response is very useful as an initial, sparse catalog of what's available on the SOS service, specially information about each station: location (lat & lon), measured parameters, and time period available. The station (ie, _offering_) time period is found in the XML node:
- `sos:Contents/sos:ObservationOfferingList/sos:ObservationOffering/sos:time`
-The most comon convention used in IOOS SOS endpoints is the one that, by not defining an explicit _endPosition_, implies that the station is still active and collecting observations:
+The GetCapabilities response is very useful as an initial, sparse catalog of what's available on the SOS service, specially information about each station: location (lat & lon), measured parameters, and time period available. The station (ie, _offering_) time period is found in the XML node _sos:Contents/sos:ObservationOfferingList/sos:ObservationOffering/sos:time_. The most comon convention used in IOOS SOS endpoints is the one that, by not defining an explicit _endPosition_, implies that the station is still active and collecting observations:
 {{{
 <gml:TimePeriod>
     <gml:beginPosition>2011-10-24T17:58:31Z</gml:beginPosition>
     <gml:endPosition indeterminatePosition="now"/>
 </gml:TimePeriod>
 }}}
-It's a safe bet that in many cases, _<gml:endPosition indeterminatePosition="now"/>_ is being returned even when the station has been offline for an extended period.
+It's a safe bet that in many, if not most, cases, _gml:endPosition indeterminatePosition="now"_ is used even when the station has been offline for an extended period.
 
 In the NANOOS SOS only the previous 30 days of data area available, but even when a station or a parameter in a station has been offline for >30 days, the last observed value and its timestamp are retained and are also available. The NVS database supporting this SOS service also uses a manually set "OFFLINE" flag to indicate that a station is currently offline; the reason behind it and expected time to reactivation are not machine interpretable. Taking this context into account, the NANOOS SOS adopted a convention with three parts:
   # *At least one sensor on the station is functioning normally and continues to return observations at the expected sampling rate:*
