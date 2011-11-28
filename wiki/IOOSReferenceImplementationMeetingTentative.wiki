@@ -1,4 +1,4 @@
-*IOOS Reference Implementation Working Group Meeting (Tentative)*
+=*IOOS Reference Implementation Working Group Meeting (Tentative)*=
 
 = Introduction =
 
