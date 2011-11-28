@@ -25,7 +25,7 @@ This is the list of [https://docs.google.com/spreadsheet/ccc?key=0AkuvBG1lfvfMdH
 
 List of Parameters used by NOAA's Chesapeake Bay Office: 
 
-  *air_pressure
+  * air_pressure
 air_temperature
 mass_concentration_of_chlorophyll_in_sea_water
 mass_concentration_of_oxygen_in_sea_water
