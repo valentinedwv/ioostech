@@ -9,9 +9,9 @@ The meeting dates and location are tentatively:
 
 Dates between (tentative): 
 
-*bullet  Last week of January 
+* bullet item  Last week of January 
 
-*bullet  1st or 2nd week of February
+* bullet item  1st or 2nd week of February
 
 Location (tentative):
 *Atlanta, Georgia
