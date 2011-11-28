@@ -1,17 +1,18 @@
 *IOOS Reference Implementation Working Group Meeting (Tentative)*
 
 = Introduction =
+
 A small team of IOOS RA DMAC Coordinators are working on development of a reference implementation for SOS for use by the IOOS community.  The meeting will be focused on the development process.  The agenda and specific details are forthcoming.  
 
 = Logistics =
 
-Presently, the meeting time frame will be late January or early February.  We have, *tentatively*, decided on dates between: 
+Presently, the meeting time frame will be late January or early February.  The likely meeting dates will be between: 
 
   * Last week of January 
 
   * 1st or 2nd week of February
 
-The IOOS Program canvassed several cities across the U.S. and have, *tentatively*, decided on:
+The location *tentatively* decided on is:
 
   * Atlanta, Georgia
 
