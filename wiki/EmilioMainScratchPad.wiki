@@ -9,8 +9,8 @@ This will be my main public brain dump, to help me guide the crafting of more or
 
 Other ioostech wiki pages I've created and manage. I've also [http://code.google.com/p/ioostech/w/list?q=label:NANOOS assigned them the 'NANOOS' tag], but this index here makes it easier to track them.
 
-  * NANOOSNVSPythonSOS
-  * CanadianAssetsIOOSNDBC
+  * [NANOOSNVSPythonSOS]
+  * [CanadianAssetsIOOSNDBC]
 
 = Platform/Station types =
 
