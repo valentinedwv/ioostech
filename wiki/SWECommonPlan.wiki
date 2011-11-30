@@ -25,9 +25,9 @@ Should the vocabularies be referenced by URNs or URLs?  What are the criteria fo
 
 
 == SOS Data Model (Emilio, Eric) ==
+
 Ambiguity in the SOS 1.0 and 2.0 data model.  This issue has been discussed by the OGC Hyrology DWG and they have not reached a conclusion that is conformant to the SOS 1.0 spec as they understand it.  There are implications for the format of the responses from all three SOS core operations (GetCapabilities, DescribeSensor, GetObservation).  There are also performance implications due to the way searches must be performed.
 
-Consider q2o.whoi.edu as a source of information.
 
 == Units of Measure and Time encoding ==
 Clarification of the units of measure representation in output files.  Is there a clear OGC recommendation at this time?  Perhaps a follow up with Luis Bermudez?  UCUM, UOM definied in OGC dictionaries?  Udunits?
@@ -36,6 +36,8 @@ Issues with ISO 8601 and encoding time zones or time offsets
 
 == Encoding Quality Control Flags (Mohamed) ==
 NDBC and CO-OPS will both be working on this in FY12 and certification of RAs will require this as well.  High priority topic but for the purposes of the group the problem is about encoding QC flags, not defining or selecting QC tests.
+
+Consider q2o.whoi.edu as a source of information.
 
 == Testing (Jeremy) ==
 
