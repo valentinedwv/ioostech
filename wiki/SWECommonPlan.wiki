@@ -44,3 +44,6 @@ Just so we don't lose these...
 
 http://external.opengis.org/twiki_public/NREwg/GMESPHInstrumentCapabilities
 http://external.opengis.org/twiki_public/HydrologyDWG/SOSServingWaterML20
+
+http://opengeo.org/publications/opengeo-swe/
+http://code.google.com/p/swe-common-data-framework/
