@@ -21,7 +21,7 @@ What is the entire suite of parameters we need to consider for inclusion in the 
 
 See ControlledVocabularies for more information including a table that begins to tackle this with terms from the NOAA Chesapeake Bay Office database.
 
-URN Schemes for identifying vocabularies and stations/platforms.  Not implemented uniformly across existing servers.  We need clear definitions of the URN specifications. See IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx in the google docs shared folder for the current version of the specification.  Does this deserve review or is it clear enough as is?
+URN Schemes for identifying vocabularies and stations/platforms.  Not implemented uniformly across existing servers.  We need clear definitions of the URN specifications. See [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx&can=2&q=  IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx ]   Does this deserve review or is it clear enough as is?
 
 
 == SOS Data Model ==
