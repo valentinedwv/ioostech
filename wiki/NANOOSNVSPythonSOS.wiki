@@ -36,7 +36,7 @@ The use of NANOOS/NVS asset id's allows for direct URL-based linking to NVS, suc
 Usage descriptions, assumptions, and limitations.
 
   * Only UTC requests are currently accepted. The response timestamp is also in UTC.
-  * ISO 8601 date-time string formatting is used. Example: 2011-11-17T23:14Z
+  * [http://en.wikipedia.org/wiki/ISO_8601 ISO 8601 date-time string formatting] is used. Example: 2011-11-17T23:14Z
   * Minutes and seconds must be specified. A request that only specifies the date will return an error.
   * Request types:
     # *Latest observations.* When the _eventTime_ key is omitted, the latest observation is returned *(OOT)*. When the station and observed property are measured at multiple depths, the latest observation per depth is returned.
@@ -87,6 +87,7 @@ All these examples are currently based on multi-depth (profiling) platforms. Exp
 = Miscellaneous Notes =
 
   * The NANOOS SOS GET requests are exhaustively case-insensitive. All keys and some values are case insensitive; eg, request=GetObservation and REQUEST=getobservation will both work. [https://groups.google.com/forum/#!msg/ioostech_dev/xMp3zuXcLHQ/BwnMWRIu-BQJ See this email thread with Eric Bridger for context.]
+  * The XML responses all use explicit namespace prefixes. Namespace defaults are never used.
   * This code has no direct relationship to the [http://www.oostethys.org/downloads/sos-cookbook-python/pysos-version-0.1 older Python SOS server that was also developed by CMOP / NANOOS, around 2007/2008]; That code is basically orphaned, as far as we know.
 
 == Limitations ==
