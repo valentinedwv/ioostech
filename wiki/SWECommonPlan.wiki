@@ -15,6 +15,9 @@ Meeting details at the [http://code.google.com/p/ioostech/wiki/IOOSReferenceImpl
 = Issues to Resolve Prior to the Meeting = 
 Each issue below needs to be addressed prior to the meeting.  Ideally one person can volunteer to lead the discussion for each of the major topics so that we are prepared to make decisions at the meeting.  
 
+== CF Feature Types ==
+
+
 == Vocabularies (CJ, Emilio will help) ==
 
 What is the entire suite of parameters we need to consider for inclusion in the data file?  We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms (if translations are necessary).
