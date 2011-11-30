@@ -3,8 +3,7 @@
 
 = Introduction =
 
-Add your content here.
-
+Meeting details at the [http://code.google.com/p/ioostech/wiki/IOOSReferenceImplementationMeetingTentative meeting page].
 
 = Details =
 
