@@ -64,4 +64,6 @@ http://external.opengis.org/twiki_public/NREwg/GMESPHInstrumentCapabilities
 http://external.opengis.org/twiki_public/HydrologyDWG/SOSServingWaterML20
 
 http://opengeo.org/publications/opengeo-swe/
+http://opengeo.org/publications/opengeo-swe/OpenGeo-SWE.pdf
+
 http://code.google.com/p/swe-common-data-framework/
