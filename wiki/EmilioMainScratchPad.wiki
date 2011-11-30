@@ -11,6 +11,7 @@ This is my main public brain dump, to help me guide the crafting of more organiz
   # Semantics of GetObservations requests: meaning and usage of _offering, procedure, observedProperties_, etc
   # Development of a reasonable but unofficial DescribeSensor SensorML response
   # Mention and link to Ted Habermann's ISO XML metadata created dynamically via XSL mapping from the GetCapabilities response.
+  # Add some discussion about Controlled Vocabularies, relevant ones (in my opinion), issues, etc
 
 = My other wiki pages =
 
