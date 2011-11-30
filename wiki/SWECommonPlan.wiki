@@ -21,21 +21,21 @@ What is the entire suite of parameters we need to consider for inclusion in the 
 
 See ControlledVocabularies for more information including a table that begins to tackle this with terms from the NOAA Chesapeake Bay Office database.
 
+= Resources= 
+== Example Files ==
+http://code.google.com/p/ioostech/source/browse/ndbc_swe_sample-2011-10-19.xml NDBC example of temperature observations from a collection of moored buoys.
 
-= Testing Tools =
-== SOSTester at NERACOOS ==
+Examples from the OGC site: http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
 
 
-== Jeremy Cothran's Summaries ==
+== Testing Tools ==
+=== SOSTester at NERACOOS ===
 
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+=== Jeremy Cothran's Summaries ===
+
 
 Just so we don't lose these...
 
-http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
 http://external.opengis.org/twiki_public/NREwg/GMESPHInstrumentCapabilities
 http://external.opengis.org/twiki_public/HydrologyDWG/SOSServingWaterML20
