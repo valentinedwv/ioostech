@@ -21,6 +21,9 @@ What is the entire suite of parameters we need to consider for inclusion in the 
 
 See ControlledVocabularies for more information including a table that begins to tackle this with terms from the NOAA Chesapeake Bay Office database.
 
+URN Schemes for identifying vocabularies and stations/platforms.  Not implemented uniformly across existing servers.  We need clear definitions of the URN specifications. See IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx in the google docs shared folder for the current version of the specification.  Does this deserve review or is it clear enough as is?
+
+
 == SOS Data Model ==
 Ambiguity in the SOS 1.0 and 2.0 data model.  This issue has been discussed by the OGC Hyrology DWG and they have not reached a conclusion that is conformant to the SOS 1.0 spec as they understand it.  There are implications for the format of the responses from all three SOS core operations (GetCapabilities, DescribeSensor, GetObservation).  There are also performance implications due to the way searches must be performed.
 = Resources= 
