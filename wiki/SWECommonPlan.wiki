@@ -5,7 +5,23 @@
 
 Meeting details at the [http://code.google.com/p/ioostech/wiki/IOOSReferenceImplementationMeetingTentative meeting page].
 
-= Details =
+= Requirements =
+
+
+= Issues to Resolve Prior to the Meeting = 
+==Vocabularies==
+
+What is the entire suite of parameters we need to consider for inclusion in the data file?  We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms (if translations are necessary), and to the best way to reference the terms (URN vs. URL.  Which URLs etc)
+
+See ControlledVocabularies for more information including a table that begins to tackle this with terms from the NOAA Chesapeake Bay Office database.
+
+
+= Testing Tools =
+== SOSTester at NERACOOS ==
+
+
+== Jeremy Cothran's Summaries ==
+
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
