@@ -35,6 +35,8 @@ Issues with ISO 8601 and encoding time zones or time offsets
 == Encoding Quality Control Flags ==
 NDBC and CO-OPS will both be working on this in FY12 and certification of RAs will require this as well.  High priority topic but for the purposes of the group the problem is about encoding QC flags, not defining or selecting QC tests.
 
+== Testing (Jeremy) ==
+
 = Resources= 
 == Example Files ==
 http://code.google.com/p/ioostech/source/browse/ndbc_swe_sample-2011-10-19.xml NDBC example of temperature observations from a collection of moored buoys.
