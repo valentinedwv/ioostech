@@ -5,6 +5,13 @@
 
 This is my main public brain dump, to help me guide the crafting of more organized wiki contents (including other pages) addressing a range of issues relevant to the IOOS DMAC Reference Implementation focus. Most of this material will be based on recent or ongoing discussions, and in challenges and solutions that have come up in the development of the [NANOOSNVSPythonSOS new NANOOS "NVS" SOS service].
 
+= To-Do's =
+
+  # IOOS conventions we've re-discovered or agreed on recently, including links to important documents (eg, [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_CSV_Encoding_v101.doc IOOS Conventions for CSV Encoding], [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx IOOS Conventions for Asset Identifiers (including station & sensor urn conventions)], adoption of CF names for measurements)
+  # Semantics of GetObservations requests: meaning and usage of _offering, procedure, observedProperties_, etc
+  # Development of a reasonable but unofficial DescribeSensor SensorML response
+  # Mention and link to Ted Habermann's ISO XML metadata created dynamically via XSL mapping from the GetCapabilities response.
+
 = My other wiki pages =
 
 Other ioostech wiki pages I've created and manage. I've also [http://code.google.com/p/ioostech/w/list?q=label:NANOOS assigned them the 'NANOOS' tag], but this index here makes it easier to track them.
@@ -33,10 +40,3 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 }}}
 
 A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
-
-= To-Do's =
-
-  # IOOS conventions we've re-discovered or agreed on recently, including links to important documents (eg, [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_CSV_Encoding_v101.doc IOOS Conventions for CSV Encoding], [http://code.google.com/p/ioostech/downloads/detail?name=IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx IOOS Conventions for Asset Identifiers (including station & sensor urn conventions)], adoption of CF names for measurements)
-  # Semantics of GetObservations requests: meaning and usage of _offering, procedure, observedProperties_, etc
-  # Development of a reasonable but unofficial DescribeSensor SensorML response
-  # Mention and link to Ted Habermann's ISO XML metadata created dynamically via XSL mapping from the GetCapabilities response.
