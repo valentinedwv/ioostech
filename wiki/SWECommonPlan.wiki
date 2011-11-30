@@ -5,10 +5,16 @@
 
 Meeting details at the [http://code.google.com/p/ioostech/wiki/IOOSReferenceImplementationMeetingTentative meeting page].
 
+
+[https://docs.google.com/a/noaa.gov/document/d/1czWdBFjPmAEtLe5T3_54fwk2cUdbILwWPkIDKPKFNvY/edit?hl=en_US Google Docs version of this plan].  All of the material from that plan has not been migrated to the wiki and it may not be necessary to do so.  I'm suggesting that new information be collected on the wiki and the content from the document can be migrated as necessary. (Derrick)
+
+
 = Requirements =
 
 
 = Issues to Resolve Prior to the Meeting = 
+Each issue below needs to be addressed prior to the meeting.  Ideally one person can volunteer to lead the discussion for each of the major topics so that we are prepared to make decisions at the meeting.  
+
 ==Vocabularies==
 
 What is the entire suite of parameters we need to consider for inclusion in the data file?  We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms (if translations are necessary), and to the best way to reference the terms (URN vs. URL.  Which URLs etc)
