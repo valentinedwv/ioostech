@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:CompositeObservation xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/1.0" xmlns:swe="http://www.opengis.net/swe/1.0.2" xmlns:ioos="http://www.noaa.gov/ioos/0.6.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://ioos.gov/gml/IOOS/0.6.1/schemas/ioosObservationSpecializations.xsd" gml:id="WaterTemperaturePointCollectionTimeSeriesObservation">
+<!-- You have reached the NDBC TEST DIF SOS Server.  The production server is located at http://sdf.ndbc.noaa.gov/sos/. -->
+  <gml:description>Water Temperature observation at a collection of points at a series of times</gml:description>
+  <gml:name>Water Temperature observations for Network: all - Feature of Interest: BBOX: LowerCorner= 25, -90; UpperCorner = 30, -85</gml:name>
+  <gml:boundedBy>
+    <gml:Envelope srsName="urn:ogc:def:crs:epsg::4326">
+      <gml:lowerCorner>25 -90</gml:lowerCorner>
+      <gml:upperCorner>30 -85</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <om:samplingTime>
+    <gml:TimePeriod gml:id="ST">
+      <gml:beginPosition>2008-08-01T00:50:00Z</gml:beginPosition>
+      <gml:endPosition>2008-08-01T23:50:00Z</gml:endPosition>
+    </gml:TimePeriod>
+  </om:samplingTime>
+  <om:procedure>
+    <om:Process>
+      <ioos:CompositeContext gml:id="SensorMetadata" recDef="http://ioos.gov/gml/IOOS/0.6.1/recordDefinitions/PointSensorMetadataRecordDefinition.xml">
+        <gml:valueComponents>
+          <ioos:Count name="NumberOfStations">10</ioos:Count>
+          <ioos:ContextArray gml:id="StationArray">
+            <gml:valueComponents>
+              <ioos:CompositeContext gml:id="Station1Info">
+                <gml:valueComponents>
+                  <ioos:StationName>MID GULF 180 nm South of Southwest Pass, LA</ioos:StationName>
+                  <ioos:Organization>National Data Buoy Center</ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:42001</ioos:StationId>
+                  <gml:Point gml:id="Station1LatLon">
+                    <gml:pos>25.9 -89.67</gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Context name="TotalWaterDepth" uom="m">3246</ioos:Context>
+                  <ioos:Count name="Station1NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station1SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station1Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:42001::watertemp1</ioos:SensorId>
+                          <ioos:Context name="SensorDepth" uom="m">1.00</ioos:Context>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+              <ioos:CompositeContext gml:id="Station2Info">
+                <gml:valueComponents>
+                  <ioos:StationName>E GULF 262 nm South of Panama City, FL</ioos:StationName>
+                  <ioos:Organization>National Data Buoy Center</ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:42003</ioos:StationId>
+                  <gml:Point gml:id="Station2LatLon">
+                    <gml:pos>25.74 -85.73</gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Context name="TotalWaterDepth" uom="m">3233</ioos:Context>
+                  <ioos:Count name="Station2NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station2SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station2Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:42003::watertemp1</ioos:SensorId>
+                          <ioos:Context name="SensorDepth" uom="m">0.60</ioos:Context>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+              <ioos:CompositeContext gml:id="Station3Info">
+                <gml:valueComponents>
+                  <ioos:StationName>PENSACOLA - 115NM East Southeast of Pensacola, FL</ioos:StationName>
+                  <ioos:Organization>National Data Buoy Center</ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:42039</ioos:StationId>
+                  <gml:Point gml:id="Station3LatLon">
+                    <gml:pos>28.79 -86.01</gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Count name="Station3NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station3SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station3Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:42039::watertemp1</ioos:SensorId>
+                          <ioos:Context name="SensorDepth" uom="m">0.60</ioos:Context>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+              <ioos:CompositeContext gml:id="Station4Info">
+                <gml:valueComponents>
+                  <ioos:StationName>MOBILE SOUTH 64 nm South of Dauphin Island, AL</ioos:StationName>
+                  <ioos:Organization>National Data Buoy Center</ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:42040</ioos:StationId>
+                  <gml:Point gml:id="Station4LatLon">
+                    <gml:pos>29.21 -88.21</gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Count name="Station4NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station4SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station4Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:42040::watertemp1</ioos:SensorId>
+                          <ioos:Context name="SensorDepth" uom="m">0.60</ioos:Context>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+              <ioos:CompositeContext gml:id="Station5Info">
+                <gml:valueComponents>
+                  <ioos:StationName>Na Kika - Mississippi Canyon 474</ioos:StationName>
+                  <ioos:Organization>BP Inc</ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:42375</ioos:StationId>
+                  <gml:Point gml:id="Station5LatLon">
+                    <gml:pos>28.52 -88.29</gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Context name="TotalWaterDepth" uom="m">1920</ioos:Context>
+                  <ioos:Count name="Station5NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station5SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station5Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:42375::watertemp1</ioos:SensorId>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+              <ioos:CompositeContext gml:id="Station6Info">
+                <gml:valueComponents>
+                  <ioos:StationName>Glider</ioos:StationName>
+                  <ioos:Organization>University of Washington/iRobot</ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:48902</ioos:StationId>
+                  <gml:Point gml:id="Station6LatLon">
+                    <gml:pos> </gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Count name="Station6NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station6SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station6Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:48902::gct1</ioos:SensorId>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+              <ioos:CompositeContext gml:id="Station7Info">
+                <gml:valueComponents>
+                  <ioos:StationName>Glider</ioos:StationName>
+                  <ioos:Organization>NAVO</ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:48908</ioos:StationId>
+                  <gml:Point gml:id="Station7LatLon">
+                    <gml:pos> </gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Count name="Station7NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station7SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station7Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:48908::gct1</ioos:SensorId>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+              <ioos:CompositeContext gml:id="Station8Info">
+                <gml:valueComponents>
+                  <ioos:StationName>Glider</ioos:StationName>
+                  <ioos:Organization>NAVO</ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:48909</ioos:StationId>
+                  <gml:Point gml:id="Station8LatLon">
+                    <gml:pos> </gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Count name="Station8NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station8SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station8Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:48909::gct1</ioos:SensorId>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+              <ioos:CompositeContext gml:id="Station9Info">
+                <gml:valueComponents>
+                  <ioos:StationName>Glider</ioos:StationName>
+                  <ioos:Organization>SCRIPPS</ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:48910</ioos:StationId>
+                  <gml:Point gml:id="Station9LatLon">
+                    <gml:pos> </gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Count name="Station9NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station9SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station9Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:48910::gct1</ioos:SensorId>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+              <ioos:CompositeContext gml:id="Station10Info">
+                <gml:valueComponents>
+                  <ioos:StationName>Glider</ioos:StationName>
+                  <ioos:Organization></ioos:Organization>
+                  <ioos:StationId>urn:ioos:station:wmo:48911</ioos:StationId>
+                  <gml:Point gml:id="Station10LatLon">
+                    <gml:pos> </gml:pos>
+                  </gml:Point>
+                  <ioos:VerticalDatum>urn:ogc:def:datum:epsg::5113</ioos:VerticalDatum>
+                  <ioos:VerticalPosition xsi:nil="true" nilReason="missing"/>
+                  <ioos:Count name="Station10NumberOfSensors">1</ioos:Count>
+                  <ioos:ContextArray gml:id="Station10SensorArray">
+                    <gml:valueComponents>
+                      <ioos:CompositeContext gml:id="Station10Sensor1Info">
+                        <gml:valueComponents>
+                          <ioos:SensorId>urn:ioos:sensor:wmo:48911::gct1</ioos:SensorId>
+                          <ioos:SamplingRate uom="Hz" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ReportingInterval uom="s" xsi:nil="true" nilReason="missing"/>
+                          <ioos:ProcessingLevel xsi:nil="true" nilReason="missing"/>
+                        </gml:valueComponents>
+                      </ioos:CompositeContext>
+                    </gml:valueComponents>
+                  </ioos:ContextArray>
+                </gml:valueComponents>
+              </ioos:CompositeContext>
+            </gml:valueComponents>
+          </ioos:ContextArray>
+        </gml:valueComponents>
+      </ioos:CompositeContext>
+    </om:Process>
+  </om:procedure>
+  <om:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
+  <om:featureOfInterest xlink:href="urn:cgi:Feature:CGI:EarthOcean"/>
+  <om:result xsi:type="swe:DataArrayPropertyType">
+    <swe:DataArray>
+      <swe:elementCount>
+        <swe:Count>
+          <swe:value>72</swe:value>
+        </swe:Count>
+      </swe:elementCount>
+      <swe:elementType name="watertemperature_measurements">
+        <swe:DataRecord>
+          <gml:name>Water Temperature Observations Record</gml:name>
+          <swe:field name="station_id">
+            <swe:Text definition="urn:ogc:def:property:OGC::xxx">
+              <gml:name>Station Id</gml:name>
+            </swe:Text>
+          </swe:field>
+          <swe:field name="sensor_id">
+            <swe:Text definition="urn:ogc:def:property:OGC::xxx">
+              <gml:name>Sensor ID</gml:name>
+            </swe:Text>
+          </swe:field>
+          <swe:field name="location">
+            <swe:Vector definition="urn:ogc:property:OGC::LocationVector" referenceFrame="urn:ogc:def:crs:epsg::4326">
+              <gml:name>Station Location</gml:name>
+              <swe:coordinate name="lat">
+                <swe:Quantity definition="urn:ogc:def:property:OGC:GeodeticLatitude" axisID="Lat">
+                  <swe:uom code="deg"/>
+                </swe:Quantity>
+              </swe:coordinate>
+              <swe:coordinate name="lon">
+                <swe:Quantity definition="urn:ogc:def:property:OGC:GeodeticLongitude" axisID="Long">
+                  <swe:uom code="deg"/>
+                </swe:Quantity>
+              </swe:coordinate>
+            </swe:Vector>
+          </swe:field>
+          <swe:field name="time">
+            <swe:Time definition="urn:ogc:def:property:OGC::SamplingTime">
+              <gml:name>Sampling Time</gml:name>
+              <swe:uom xlink:href="urn:ogc:def:unit:ISO:8601"/>
+            </swe:Time>
+          </swe:field>
+          <swe:field name="depth">
+            <swe:Quantity definition="urn:ogc:def:property:OGC::xxx">
+              <gml:name>Sensor Depth</gml:name>
+              <gml:description>A positive value indicates a sensor depth below the water.  A negative value indicates a sensor elevation above the site.</gml:description>
+              <swe:uom code="m"/>
+            </swe:Quantity>
+          </swe:field>
+          <swe:field name="sea_water_temperature">
+            <swe:Quantity definition="urn:ogc:def:property:OGC::xxx">
+              <gml:name>Sea Water Temperature</gml:name>
+              <swe:uom code="Cel"/>
+            </swe:Quantity>
+          </swe:field>
+        </swe:DataRecord>
+      </swe:elementType>
+      <swe:encoding>
+        <swe:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&amp;#10"/>
+      </swe:encoding>
+      <swe:values>urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T00:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T01:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T02:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T03:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T04:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T05:50:00Z,1.00,29.20
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T06:50:00Z,1.00,29.20
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T07:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T08:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T09:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T10:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T11:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T12:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T13:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T14:50:00Z,1.00,29.30
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T15:50:00Z,1.00,29.40
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T16:50:00Z,1.00,29.40
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T17:50:00Z,1.00,29.50
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T18:50:00Z,1.00,29.60
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T19:50:00Z,1.00,29.70
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T20:50:00Z,1.00,29.70
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T21:50:00Z,1.00,29.80
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T22:50:00Z,1.00,29.80
+urn:ioos:station:wmo:42001,urn:ioos:sensor:wmo:42001::watertemp1,25.9,-89.67,2008-08-01T23:50:00Z,1.00,29.80
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T00:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T01:50:00Z,0.60,29.30
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T02:50:00Z,0.60,29.20
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T03:50:00Z,0.60,29.10
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T04:50:00Z,0.60,29.10
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T05:50:00Z,0.60,29.10
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T06:50:00Z,0.60,29.20
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T07:50:00Z,0.60,29.70
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T08:50:00Z,0.60,29.60
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T09:50:00Z,0.60,29.60
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T10:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T11:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T12:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T13:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T14:50:00Z,0.60,29.50
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T15:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T16:50:00Z,0.60,29.50
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T17:50:00Z,0.60,29.20
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T18:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T19:50:00Z,0.60,29.60
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T20:50:00Z,0.60,29.70
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T21:50:00Z,0.60,29.80
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T22:50:00Z,0.60,29.90
+urn:ioos:station:wmo:42039,urn:ioos:sensor:wmo:42039::watertemp1,28.79,-86.01,2008-08-01T23:50:00Z,0.60,29.90
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T00:50:00Z,0.60,29.70
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T01:50:00Z,0.60,29.70
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T02:50:00Z,0.60,29.70
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T03:50:00Z,0.60,29.70
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T04:50:00Z,0.60,29.80
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T05:50:00Z,0.60,29.70
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T06:50:00Z,0.60,29.70
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T07:50:00Z,0.60,29.70
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T08:50:00Z,0.60,29.50
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T09:50:00Z,0.60,29.50
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T10:50:00Z,0.60,29.50
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T11:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T12:50:00Z,0.60,29.30
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T13:50:00Z,0.60,29.30
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T14:50:00Z,0.60,29.30
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T15:50:00Z,0.60,29.30
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T16:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T17:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T18:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T19:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T20:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T21:50:00Z,0.60,29.50
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T22:50:00Z,0.60,29.40
+urn:ioos:station:wmo:42040,urn:ioos:sensor:wmo:42040::watertemp1,29.21,-88.21,2008-08-01T23:50:00Z,0.60,29.40
+</swe:values>
+    </swe:DataArray>
+  </om:result>
+</om:CompositeObservation>
