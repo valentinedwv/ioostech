@@ -33,7 +33,7 @@ Clarification of the units of measure representation in output files.  Is there 
 Issues with ISO 8601 and encoding time zones or time offsets
 
 === Platform Types and Unique Identifiers ===
-== SOS Data Model (Emilio, Eric) ==
+== SOS Data Model (Eric, Emilio) ==
 
 Ambiguity in the SOS 1.0 and 2.0 data model.  This issue has been discussed by the OGC Hyrology DWG and they have not reached a conclusion that is conformant to the SOS 1.0 spec as they understand it.  There are implications for the format of the responses from all three SOS core operations (GetCapabilities, DescribeSensor, GetObservation).  There are also performance implications due to the way searches must be performed.
 
