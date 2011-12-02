@@ -37,6 +37,10 @@ http://www.weatherflow.com/sos/sos.pl?request=GetCapabilities&service=SOS
 
 http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS
 
+and a second service documented at 
+
+NANOOSNVSPythonSOS
+
 = Northeastern Atlantic (NERACOOS) =
 
 Oostethys?
