@@ -62,6 +62,9 @@ http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&s
 
 = NDBC =
 
+Documentation link
+http://sdf.ndbc.noaa.gov/sos/
+
 http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS
 
 = CO-OP =
