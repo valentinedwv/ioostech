@@ -62,6 +62,10 @@ We have an older(2009) Oostethys version and a 'DIF' version which is a copied r
 
 http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS
 
+Xenia: Relational Database Schema used by SECOORA 
+Link to Google Code page: http://code.google.com/p/xenia/ 
+
+
 = NDBC =
 
 Documentation link
