@@ -71,11 +71,27 @@ Link to Google Code page: http://code.google.com/p/xenia/
 Documentation link
 http://sdf.ndbc.noaa.gov/sos/
 
+Production server:
 http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS
 
-= CO-OP =
+Test server:
+http://sdftest.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS
+
+
+= CO-OPS =
+Documentation Link
+http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/
+
 
 http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS
+
+Documentation Link for test server
+
+http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos-test/
+
+http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos-test/SOS?request=GetCapabilities&service=SOS
+
+
 
 = ACE = 
 
