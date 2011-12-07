@@ -15,3 +15,76 @@ Testing and categorization/compliance would be broken into 3 parts
   * differences in schema  - xsd reference and differences
   * differences in vocabulary - the listing/range of possible element/prefix terms and differences
 
+----
+
+from initial thread http://groups.google.com/group/ioostech_dev/browse_thread/thread/ae79e03b500ad148
+
+Thanks for posting the Catalog service endpoints document, from that I went 
+through and tried to choose one SOS from each of the 11 RA's and federal 
+backbone(ndbc,coop,ace) to start some analysis on. 
+Worked up an initial perl script to get the GetCapabilites document and had 
+to manually tweak some of the response xml namespace info at the document 
+beginning to get around some odd things which the version of LibXML I'm 
+using doesn't handle well. 
+The perl script is at http://neptune.baruch.sc.edu/xenia/ioos/out/get_sos.pl 
+and the resultant GetCapabilities documents and processed files are at 
+http://neptune.baruch.sc.edu/xenia/ioos/out 
+Each organization in the current array list below like 'secoora' has 
+a 'latest.txt.secoora' response corresponding to the getCapabilites 
+response 
+a summary file 'out_secoora' which is listed in a way for further 
+post-processing - including platform locations and obs types, summary 
+platform and observation type counts 
+and kml/kmz file like 'secoora.kml' 'secoora.kmz' showing the platform 
+locations and obs types at each location 
+I wanted to start also processing a sample getObservation from each RA and 
+Fed SOS to start profiling common points and differences similarly - if 
+there is a spreadsheet of getObservation links for each provider and 
+associated documentation or we can build one, let me know. 
+Let me know if this type of analysis is helpful towards some kind of 
+validation testing or if it overlaps with something already in place - I 
+was also looking into perl or unix command-line tools for validating 
+response xml's against an xml schema - xmllint and LibXML provide a basic 
+pass/fail option towards this, but not sure if they work well in practice 
+or provide enough useful detail on errors. 
+Thanks 
+Jeremy 
+In developing the perl script, the following differences were noted in the 
+code below: 
+########################################## 
+#differences between sos's 
+{{{
+my $sos_ns_prefix = 'sos:'; 
+if ($org eq 'gcoos' || $org eq 'macoora' || $org eq 'coop') { 
+  $sos_ns_prefix = ''; 
+} 
+
+##### 
+my $vocab_delimiter = '#'; 
+if ($org eq 'gcoos' || $org eq 'cencoos' || $org eq 'pacioos' || $org eq 
+'coop' || $org eq 'ace' || $org eq 'ndbc') { 
+  $vocab_delimiter = '/'; 
+} 
+
+if ($org eq 'neracoos' || $org eq 'aoos') { 
+  $vocab_delimiter = ':'; 
+} 
+
+##### 
+#uri vocab prefixes 
+#pacioos,cencoos,ndbc,coop,ace 
+#http://mmisw.org/ont/cf/parameter/ 
+#gcoos 
+#http://mmisw.org/ont/gcoos/parameter/ 
+#nanoos,sccoos,macoora,glos 
+# 
+http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/... 
+#neracoos 
+#urn:ogc:def:phenomenon:mmisw.org:cf: 
+#aoos 
+#urn:ogc:def:phenomenon:OGC:1.0.30:SwellPeriod 
+#secoora 
+#http://carolinasrcoos.org/cf# 
+}}}
+
+----
