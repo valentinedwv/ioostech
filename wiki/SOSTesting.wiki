@@ -38,9 +38,6 @@ Let me know if this type of analysis is helpful towards some kind of
 validation testing or if it overlaps with something already in place - I was also looking into perl or unix command-line tools for validating 
 response xml's against an xml schema - xmllint and LibXML provide a basic pass/fail option towards this, but not sure if they work well in practice or provide enough useful detail on errors. 
 
-Thanks 
-Jeremy 
-
 In developing the perl script, the following differences were noted in the 
 code below: 
 ########################################## 
