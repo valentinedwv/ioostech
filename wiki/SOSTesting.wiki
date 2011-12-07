@@ -16,6 +16,7 @@ Testing and categorization/compliance would be broken into 3 parts
   * differences in vocabulary - the listing/range of possible element/prefix terms and differences
 
 ----
+==discussion thread 1==
 
 from initial thread http://groups.google.com/group/ioostech_dev/browse_thread/thread/ae79e03b500ad148
 
@@ -75,5 +76,28 @@ http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/...
 #secoora 
 #http://carolinasrcoos.org/cf# 
 }}}
+
+----
+==discussion thread 2==
+
+from http://groups.google.com/group/ioostech_dev/browse_thread/thread/f07d530a07fbf708
+
+Posted some samples(will copy post to upcoming 'testing' wiki page 
+also) some examples of the generated xsd files(secoora_sos.xsd,ndbc_sos.xsd,...) for SOS GetCapabilities 
+documents using the 'trang' tool at http://neptune.baruch.sc.edu/xenia/sos/ioos/out/xsd 
+
+Using NDBC's GetCapabilities as a base reference - doing a difference 
+with the other xsd were almost same except for a few minor differences 
+in the the following organizations - secoora,neracoos,maracoos,aoos,pacioos - each of which has a *_diff 
+file to highlight the differences(like secoora_diff) 
+
+Plan to go through this xsd generation and diff comparison for the 
+DescribeSensor and GetObservations documents as well. 
+
+I used a basic perl regex substitution script 
+http://neptune.baruch.sc.edu/xenia/sos/ioos/out/filter/convert.sh to 
+apply full 'sos:' namespaces to documents which didn't have them - and 
+had to mess around with the namespace declarations, setting 
+xmlns:sos="http://blah.org" to get trang to create a correct xsd file. 
 
 ----
