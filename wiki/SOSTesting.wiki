@@ -1,6 +1,6 @@
 #summary SOS Testing Process and Tools
 
-see also [[SOSVersions]]
+see also [SOSVersions]
 
 <wiki:toc max_depth="6" />
 
