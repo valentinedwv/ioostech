@@ -23,7 +23,7 @@ Thanks for posting the Catalog service endpoints document, from that I went thro
 
 Worked up an initial perl script to get the GetCapabilites document and had to manually tweak some of the response xml namespace info at the document beginning to get around some odd things which the version of LibXML I'm using doesn't handle well. 
 
-The perl script is at http://neptune.baruch.sc.edu/xenia/ioos/out/get_sos.pl 
+The perl script is at http://neptune.baruch.sc.edu/xenia/ioos/get_sos.pl 
 and the resultant GetCapabilities documents and processed files are at 
 http://neptune.baruch.sc.edu/xenia/ioos/out 
 
