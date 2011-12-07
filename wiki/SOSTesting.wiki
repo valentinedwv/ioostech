@@ -20,7 +20,9 @@ In addition to the above summary SOS information, creating a xsd(xml schema docu
 
 Testing and categorization/compliance would be broken into 3 parts
   * a survey and categorization step to identify,categorize and describe existing SOS services to a known or new reference
+    * see CatalogEndpoints spreadsheet and [SOSVersions]
   * differences in schema  - xsd reference and differences
+    * see 'discussion thread 2' below
   * differences in vocabulary - the listing/range of possible element/prefix terms and differences
 
 ----
