@@ -94,7 +94,7 @@ documents using the 'trang' tool at http://neptune.baruch.sc.edu/xenia/sos/ioos/
 
 Using NDBC's GetCapabilities as a base reference - doing a difference 
 with the other xsd were almost same except for a few minor differences 
-in the the following organizations - secoora,neracoos,maracoos,aoos,pacioos - each of which has a *_diff 
+in the the following organizations - secoora,neracoos,maracoos,aoos,pacioos - each of which has a `*`_diff 
 file to highlight the differences(like secoora_diff) 
 
 Plan to go through this xsd generation and diff comparison for the 
