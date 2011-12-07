@@ -45,7 +45,7 @@ Consider q2o.whoi.edu as a source of information.
 
 == Testing (Jeremy) ==
 
-see also SOSTesting
+see also [SOSTesting]
 
 Initial testing is designed more towards a survey of existing SOS GetCapabilities,DescribeSensor and GetObservation services that have been submitted to the CatalogEndpoints document/spreadsheet.  For initial purposes, just looking at one (hopefully representative) SOS from each RA or other agency.  Also for initial purposes only considering single in-situ representations and not profiles or trajectories.
 
