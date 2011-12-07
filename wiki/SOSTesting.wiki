@@ -1,5 +1,7 @@
 #summary SOS Testing Process and Tools
 
+<wiki:toc max_depth="6" />
+
 = Introduction =
 
 Initial testing is designed more towards a survey of existing SOS GetCapabilities,DescribeSensor and GetObservation services that have been submitted to the CatalogEndpoints document/spreadsheet.  For initial purposes, just looking at one (hopefully representative) SOS from each RA or other agency.  Also for initial purposes only considering single in-situ representations and not profiles or trajectories.
