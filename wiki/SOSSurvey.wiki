@@ -28,18 +28,32 @@ See also discussion thread regarding 'IDD' (Interface Description Document) at h
 ----
 = Request parameters = 
 
-given - request= GetCapabilities,DescribeSensor,GetObservation
+request= GetCapabilities,DescribeSensor,GetObservation
+
+*If you do not support the above request= types, please describe.*
 
 == Defaults ==
 
-given - service=SOS - default?
+service=SOS
 
-version - default to latest?
+*Is service=SOS required or provided as a default?*
 
-*other default(shorthand) parameter conventions?
-  * no time = latest
-  * outputFormat vs responseFormat?
-    * no format = text/csv 
+version=
+
+*Is version=??? required or provided as a default to the latest version?  If required, list accepted versions.*
+
+eventtime=
+
+*Is eventtime always in full(including hours:minutes:seconds) ISO8601 format using GMT?
+
+*Does a missing eventtime parameter return the latest observation(s)?*
+
+outputformat=
+
+*Does a missing outputformat parameter return CSV?  Is the CSV response download or in-browser?*
+
+*Are there other additional default missing parameter conventions?*
+
 
 == Required/Common ==
 
