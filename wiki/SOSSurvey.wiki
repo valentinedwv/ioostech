@@ -82,7 +82,10 @@ data encoding - GML/DIF,SWE Common,Oostethys,...
 
 == Vocabularies, UOM == 
 
-additional instrumentation/example types - profiles,trajectories
+== Additional instrumentation/example types ==
+
+  profiles,trajectories
+
   swe data arrays?
 
 == Usage and Performance ==
