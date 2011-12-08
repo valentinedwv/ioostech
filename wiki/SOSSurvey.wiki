@@ -2,28 +2,28 @@
 
 see also [SOSVersions],[] 
 
+<wiki:toc max_depth="6" />
+
 co-op parameter listing examples, emilio USGS IDD example conventions
   http://groups.google.com/group/ioostech_dev/browse_thread/thread/85331a089b64716a/a32c8968617bdd41#a32c8968617bdd41
   http://waterservices.usgs.gov/rest/IV-Service.html%23Service
 
-==
-sos development history
+= SOS development history = 
 
-===general rules?
+= General rules = 
 
 no case sensitivity
+
 full namespaces in xml responses, post requests also?
   * post vs get? who using post and many users?
 
-===
-
-#request parameters
+= Request parameters = 
 
 given - service=SOS - default?
 given - request= GetCapabilities,DescribeSensor,GetObservation
 version - default to latest?
 
-#collections
+== Collections ==
 network-all,featureOfInterest,bbox
 
 given - observedProperty - single or multiple?
@@ -40,7 +40,7 @@ eventtime - iso8601,minutes/seconds required? always GMT? or time zones
 offering vs procedure
   platform vs sensor request
 
-#additional parameters
+== Additional parameters ==
 
 http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp
 
@@ -50,7 +50,7 @@ timezone
 epoch(datum)
 datatype(frequency)
 
-#response
+= Response = 
 
 service identification keywords - RA name like SECOORA,etc
   http://code.google.com/p/ioostech/wiki/RepresentingRAAffiliationInServiceMetadata
@@ -62,17 +62,18 @@ resource id's - redundancies? use same/close long/lat location to help identify 
 
 data encoding - GML/DIF,SWE Common,Oostethys,...
 
-=Additional concerns
+= Additional concerns = 
 
-=vocabularies, uom
+== Vocabularies, UOM == 
 
 additional instrumentation/example types - profiles,trajectories
   swe data arrays?
 
-#testers
+== Testers == 
 cite, edc , eric, mine, other testers?
 
-#usage
+== Usage and Performance ==
+
 any usage of the sos service other than for ioos catalog - if so, one or many? user list and pattern of use(data types,amount,frequency)
 
 usage/data,etc limits
@@ -82,5 +83,4 @@ usage/data,etc limits
 performance
   analysis & planned changes
 
-=additional comments
-
+== Additional comments ==
