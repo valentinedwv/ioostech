@@ -2,7 +2,7 @@
 
 see also [SOSVersions],[SOSAssessment],[SWECommonPlan],[https://docs.google.com/document/d/1czWdBFjPmAEtLe5T3_54fwk2cUdbILwWPkIDKPKFNvY/edit?hl=en_US SWE Common Encoding Plan]
 
-*Please provide answers on this wiki(copy and paste to a new wiki page like SOSSurveySecoora) or other means to the following questions in bold.*
+*Please provide answers on this wiki(copy and paste to a new wiki page like SOSSurveySECOORA) or other means to the following questions in bold.*
 
 <wiki:toc max_depth="6" />
 
