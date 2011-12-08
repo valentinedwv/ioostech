@@ -23,7 +23,7 @@ A listing of 'rules' which all SOS should follow - if disagree or would like to 
   * no case sensitivity - lowercase preference - request and response characters should not have any dependence on case
   * full namespaces in xml response elements, no default namespaces - 'sos:Contents' , not just 'Contents'
     * post requests also?(ndbc,co-ops)
-      * post vs get? who using post and many users?
+      * post vs get? *Do you provide a POST method?  Is POST required by your users?*
 
 ----
 = Request parameters = 
