@@ -72,7 +72,7 @@ data encoding - GML/DIF,SWE Common,Oostethys,...
 additional instrumentation/example types - profiles,trajectories
   swe data arrays?
 
-== Testers == 
+== Clients/Testers == 
 cite, edc , eric, mine, other testers?
 
 == Usage and Performance ==
