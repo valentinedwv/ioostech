@@ -17,6 +17,7 @@ no case sensitivity
 full namespaces in xml responses, post requests also?
   * post vs get? who using post and many users?
 
+----
 = Request parameters = 
 
 given - service=SOS - default?
@@ -50,6 +51,7 @@ timezone
 epoch(datum)
 datatype(frequency)
 
+----
 = Response = 
 
 service identification keywords - RA name like SECOORA,etc
@@ -62,6 +64,7 @@ resource id's - redundancies? use same/close long/lat location to help identify 
 
 data encoding - GML/DIF,SWE Common,Oostethys,...
 
+----
 = Additional concerns = 
 
 == Vocabularies, UOM == 
@@ -83,4 +86,5 @@ usage/data,etc limits
 performance
   analysis & planned changes
 
+----
 = Additional comments =
