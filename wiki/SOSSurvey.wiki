@@ -15,6 +15,7 @@ Please if possible provide information on how the SOS you are using was develope
 If you have SOS service usage documentation the same or similar to the below documentation, please provide links to that also.
 
 CO-OPS SOS request parameters http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp
+
 NDBC request parameters and example usage links http://sdf.ndbc.noaa.gov/sos/
 
 = General rules = 
