@@ -88,7 +88,7 @@ _outputformat vs responseformat ?_
 *Is a sensor request suffixed onto a platform request like below?  If not, what method is provided to access an individual sensor data feed?*
 
 Platform procedure=urn:ioos:station:NOAA.NOS.CO-OPS:cb1301
-    
+<br/>    
 Sensor procedure=urn:ioos:sensor:NOAA.NOS.CO-OPS:8454000:A1
 
 ----
@@ -110,9 +110,9 @@ offering=urn:ioos:network:noaa.nws.ndbc:all
 *Does your service support a featureofinterest= or bbox= parameter like below?  Please describe.*
 
 featureOfInterest=bbox:-177.3600,-46.9217,178.2700,71.3601
-
+<br/>
 bbox=-177.3600,-46.9217,178.2700,71.3601
- 
+<br/> 
 featureofinterest=urn:ioos:event:tsunami::geophysical:20090319_tonga
 
 ----
