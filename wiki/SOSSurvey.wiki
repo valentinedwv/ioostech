@@ -14,7 +14,7 @@ CO-OPS SOS request parameters http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/pa
 
 NDBC request parameters and example usage links http://sdf.ndbc.noaa.gov/sos/
 
-See also discussion thread regarding 'IDD' (Interface Description Document) at http://groups.google.com/group/ioostech_dev/browse_thread/thread/85331a089b64716a/a32c8968617bdd41#a32c8968617bdd41 http://waterservices.usgs.gov/rest/IV-Service.html%23Service
+See also discussion thread regarding 'IDD' (Interface Description Document) at http://groups.google.com/group/ioostech_dev/browse_thread/thread/85331a089b64716a/a32c8968617bdd41 http://waterservices.usgs.gov/rest/IV-Service.html#Service
 
 = General rules = 
 
