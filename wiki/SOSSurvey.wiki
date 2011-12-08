@@ -6,9 +6,9 @@ see also [SOSVersions],[SOSAssessment],[SWECommonPlan],[https://docs.google.com/
 
 = SOS development history = 
 
-Please if possible provide information on how the SOS you are using was developed or its origins(Oostethys,NDBC,52 North,etc) If your SOS is altered from a reference implementation please describe or provide documentation link(s) to how and why it is different(additional features,work with existing skills/environment,etc).  This information can be used to cross-reference or cross-apply existing documentation or changes.
+*Please if possible provide information on how the SOS you are using was developed or its origins(Oostethys,NDBC,52 North,etc) If your SOS is altered from a reference implementation please describe or provide documentation link(s) to how and why it is different(additional features,work with existing skills/environment,etc).  This information can be used to cross-reference or cross-apply existing documentation or changes.
 
-If you have SOS service usage documentation the same or similar to the below documentation, please provide links to that also.
+If you have SOS service usage documentation the same or similar to the below documentation, please provide links to that also.*
 
 CO-OPS SOS request parameters http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp
 
@@ -23,7 +23,7 @@ A listing of 'rules' which all SOS should follow - if disagree or would like to 
   * no case sensitivity - lowercase preference - request and response characters should not have any dependence on case
   * full namespaces in xml response elements, no default namespaces - 'sos:Contents' , not just 'Contents'
     * post requests also?(ndbc,co-ops)
-      * post vs get? *Do you provide a POST method?  Is POST required by your users?*
+      * post vs get - *Do you provide a POST method?  Is POST required by your users?*
 
 ----
 = Request parameters = 
