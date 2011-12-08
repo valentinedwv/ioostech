@@ -51,9 +51,13 @@ eventtime=
 *Does a missing eventtime parameter return the latest observation(s)?*
 
 ----
+_outputformat vs responseformat ?_
+
 outputformat=
 
 *Does a missing outputformat parameter return CSV?  Is the CSV response download or in-browser?*
+
+*Additional outputformat= GML,TSV,KML,JSON... ?*
 
 ----
 *Are there other additional default missing parameter conventions?*
