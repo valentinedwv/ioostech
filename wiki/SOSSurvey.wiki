@@ -173,11 +173,11 @@ http://code.google.com/p/ioostech/wiki/SOSTesting#discussion_thread_2
 any usage of the sos service other than for ioos catalog - if so, one or many? user list and pattern of use(data types,amount,frequency)
 
 usage/data,etc limits
-  holdings represented(type,time recency/window,period)
-  analysis & planned changes 
+  * holdings represented(type,time recency/window,period)
+  * analysis & planned changes 
    
 performance
-  analysis & planned changes
+  * analysis & planned changes
 
 === Clients/Testers ===
   * CITE
