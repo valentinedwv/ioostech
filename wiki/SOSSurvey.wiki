@@ -85,9 +85,6 @@ data encoding - GML/DIF,SWE Common,Oostethys,...
 additional instrumentation/example types - profiles,trajectories
   swe data arrays?
 
-== Clients/Testers == 
-cite, edc , eric, mine, other testers?
-
 == Usage and Performance ==
 
 any usage of the sos service other than for ioos catalog - if so, one or many? user list and pattern of use(data types,amount,frequency)
@@ -98,6 +95,10 @@ usage/data,etc limits
    
 performance
   analysis & planned changes
+
+=== Clients/Testers ===
+cite, edc , eric, mine, other testers?
+
 
 ----
 = Additional comments =
