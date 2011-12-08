@@ -1,0 +1,86 @@
+#summary a SOS question survey to better document and categorize existing features or issues
+
+see also [SOSVersions],[] 
+
+co-op parameter listing examples, emilio USGS IDD example conventions
+  http://groups.google.com/group/ioostech_dev/browse_thread/thread/85331a089b64716a/a32c8968617bdd41#a32c8968617bdd41
+  http://waterservices.usgs.gov/rest/IV-Service.html%23Service
+
+==
+sos development history
+
+===general rules?
+
+no case sensitivity
+full namespaces in xml responses, post requests also?
+  * post vs get? who using post and many users?
+
+===
+
+#request parameters
+
+given - service=SOS - default?
+given - request= GetCapabilities,DescribeSensor,GetObservation
+version - default to latest?
+
+#collections
+network-all,featureOfInterest,bbox
+
+given - observedProperty - single or multiple?
+winds,vectors,multiple obs request
+
+eventtime - iso8601,minutes/seconds required? always GMT? or time zones
+
+*other default(shorthand) parameter conventions?
+  * no time = latest
+  * outputFormat vs responseFormat?
+    * no format = text/csv 
+  * etc?
+
+offering vs procedure
+  platform vs sensor request
+
+#additional parameters
+
+http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp
+
+result(datum)
+unit
+timezone
+epoch(datum)
+datatype(frequency)
+
+#response
+
+service identification keywords - RA name like SECOORA,etc
+  http://code.google.com/p/ioostech/wiki/RepresentingRAAffiliationInServiceMetadata
+  iso 19115, 19119
+  
+roles/responsibilites semantics/usage
+
+resource id's - redundancies? use same/close long/lat location to help identify overlaps?
+
+data encoding - GML/DIF,SWE Common,Oostethys,...
+
+=Additional concerns
+
+=vocabularies, uom
+
+additional instrumentation/example types - profiles,trajectories
+  swe data arrays?
+
+#testers
+cite, edc , eric, mine, other testers?
+
+#usage
+any usage of the sos service other than for ioos catalog - if so, one or many? user list and pattern of use(data types,amount,frequency)
+
+usage/data,etc limits
+  holdings represented(type,time recency/window,period)
+  analysis & planned changes 
+   
+performance
+  analysis & planned changes
+
+=additional comments
+
