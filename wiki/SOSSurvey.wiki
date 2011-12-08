@@ -28,6 +28,8 @@ See also discussion thread regarding 'IDD' (Interface Description Document) at h
 ----
 = Request parameters = 
 
+== request= ==
+
 request= GetCapabilities,DescribeSensor,GetObservation
 
 *If you do not support the above request= types, please describe.*
