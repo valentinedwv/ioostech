@@ -32,6 +32,7 @@ request= GetCapabilities,DescribeSensor,GetObservation
 
 *If you do not support the above request= types, please describe.*
 
+----
 == Defaults ==
 
 service=SOS
@@ -62,7 +63,7 @@ outputformat=
 ----
 *Are there other additional default missing parameter conventions?*
 
-
+----
 == Required/Common ==
 
 offering vs procedure
@@ -73,18 +74,22 @@ winds,vectors,multiple obs request
 
 eventtime - iso8601,minutes/seconds required? always GMT? or time zones
 
+----
 == Collections ==
 network-all,featureOfInterest,bbox
 
+----
 == Additional parameters ==
+
+*Does your SOS support additional parameters such as the examples in the link below regarding datum,sampling frequency or conversion of units or timezone?*
 
 http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp
 
-result(datum)
-unit
-timezone
-epoch(datum)
-datatype(frequency)
+  * result(datum)
+  * unit
+  * timezone
+  * epoch(datum)
+  * datatype(frequency)
 
 ----
 = Response = 
