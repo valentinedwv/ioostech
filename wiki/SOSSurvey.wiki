@@ -4,10 +4,6 @@ see also [SOSVersions],[SOSAssessment],[SWECommonPlan],[https://docs.google.com/
 
 <wiki:toc max_depth="6" />
 
-co-op parameter listing examples, emilio USGS IDD example conventions
-  http://groups.google.com/group/ioostech_dev/browse_thread/thread/85331a089b64716a/a32c8968617bdd41#a32c8968617bdd41
-  http://waterservices.usgs.gov/rest/IV-Service.html%23Service
-
 = SOS development history = 
 
 Please if possible provide information on how the SOS you are using was developed or its origins(Oostethys,NDBC,52 North,etc) If your SOS is altered from a reference implementation please describe or provide documentation link(s) to how and why it is different(additional features,work with existing skills/environment,etc).  This information can be used to cross-reference or cross-apply existing documentation or changes.
@@ -17,6 +13,8 @@ If you have SOS service usage documentation the same or similar to the below doc
 CO-OPS SOS request parameters http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp
 
 NDBC request parameters and example usage links http://sdf.ndbc.noaa.gov/sos/
+
+See also discussion thread regarding 'IDD' (Interface Description Document) at http://groups.google.com/group/ioostech_dev/browse_thread/thread/85331a089b64716a/a32c8968617bdd41#a32c8968617bdd41 http://waterservices.usgs.gov/rest/IV-Service.html%23Service
 
 = General rules = 
 
