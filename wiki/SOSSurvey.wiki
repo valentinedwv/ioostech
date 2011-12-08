@@ -100,8 +100,14 @@ performance
   analysis & planned changes
 
 === Clients/Testers ===
-cite, edc , eric, mine, other testers?
-
+  * CITE
+  * EDC
+  * Eric
+    * Registry http://dev.neracoos.org/IOOSCatalog3/Registry/ 
+    * Tester http://dev.neracoos.org/IOOSCatalog3/SOSTester/
+  * Jeremy
+    * GetCapabilities http://code.google.com/p/ioostech/wiki/SOSTesting#discussion_thread_1
+    * XML to XSD for schema comparison http://code.google.com/p/ioostech/wiki/SOSTesting#discussion_thread_2
 
 ----
 = Additional comments =
