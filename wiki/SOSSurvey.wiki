@@ -37,6 +37,7 @@ request= GetCapabilities,DescribeSensor,GetObservation
 ----
 == Defaults ==
 
+----
 === service=SOS ===
 
 *Is service=SOS required or provided as a default?*
@@ -74,17 +75,43 @@ _outputformat vs responseformat ?_
 ----
 == Required/Common ==
 
-offering vs procedure
-  platform vs sensor request
+----
+=== offering vs procedure ===
 
-given - observedProperty - single or multiple?
-winds,vectors,multiple obs request
+*Are the parameters 'offering' and 'procedure' interchangeable in DescribeSensor and GetObservation requests?  If not, how do they differ?*
 
-eventtime - iso8601,minutes/seconds required? always GMT? or time zones
+----
+=== platform vs sensor request ===
+
+*Is a sensor request suffixed onto a platform request like below?  If not, what method is provided to access an individual sensor data feed?*
+
+Platform procedure=urn:ioos:station:NOAA.NOS.CO-OPS:cb1301
+    
+Sensor procedure=urn:ioos:sensor:NOAA.NOS.CO-OPS:8454000:A1
+
+----
+=== observedproperty= ===
+
+*Does the observedproperty request support multiple observation requests?  If so, is it a comma-delimited list or some other vector identifier such as 'winds',etc?*
 
 ----
 == Collections ==
-network-all,featureOfInterest,bbox
+
+=== all ===
+
+*Does your service support an 'all' type request like below?  If not implemented by featureofinterest or bbox parameter, please describe.*
+
+offering=urn:ioos:network:noaa.nws.ndbc:all
+
+=== featureofinterest, bbox ===
+
+*Does your service support a featureofinterest= or bbox= parameter like below?  Please describe.*
+
+featureOfInterest=bbox:-177.3600,-46.9217,178.2700,71.3601
+
+bbox=-177.3600,-46.9217,178.2700,71.3601
+ 
+featureofinterest=urn:ioos:event:tsunami::geophysical:20090319_tonga
 
 ----
 == Additional parameters ==
