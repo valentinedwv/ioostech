@@ -82,6 +82,8 @@ data encoding - GML/DIF,SWE Common,Oostethys,...
 
 == Vocabularies, UOM == 
 
+http://code.google.com/p/ioostech/wiki/SOSTesting#discussion_thread_2
+
 == Additional instrumentation/example types ==
 
   profiles,trajectories
