@@ -37,37 +37,38 @@ request= GetCapabilities,DescribeSensor,GetObservation
 ----
 == Defaults ==
 
-service=SOS
+== service=SOS ==
 
 *Is service=SOS required or provided as a default?*
 
 ----
-version=
+== version= ==
 
 *Is version=??? required or provided as a default to the latest version?  If required, list accepted versions.*
 
 ----
-eventtime=
+== eventtime= ==
 
 *Is eventtime always in full(including hours:minutes:seconds) ISO8601 format using GMT?
 
 *Does a missing eventtime parameter return the latest observation(s)?*
 
 ----
-_outputformat vs responseformat ?_
+== outputformat= ==
 
-outputformat=
+_outputformat vs responseformat ?_
 
 *Does a missing outputformat parameter return CSV?  Is the CSV response download or in-browser?*
 
 *Additional outputformat= GML,TSV,KML,JSON... ?*
 
 ----
-qualified namespaces
+== qualified namespaces ==
 
 *Do your offering,procedure or observedproperty parameters accept 'short' identifiers(like sea_water_temperature) or only fully qualified identifiers(like http://mmisw.org/ont/cf/parameter/sea_water_temperature)?*
 
 ----
+== additional parameters ==
 *Are there other additional default missing parameter conventions designed to make the service easier to use?*
 
 ----
