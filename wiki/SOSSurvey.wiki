@@ -28,26 +28,31 @@ A listing of 'rules' which all SOS should follow - if disagree or would like to 
 ----
 = Request parameters = 
 
-given - service=SOS - default?
 given - request= GetCapabilities,DescribeSensor,GetObservation
+
+== Defaults ==
+
+given - service=SOS - default?
+
 version - default to latest?
 
-== Collections ==
-network-all,featureOfInterest,bbox
+*other default(shorthand) parameter conventions?
+  * no time = latest
+  * outputFormat vs responseFormat?
+    * no format = text/csv 
+
+== Required/Common ==
+
+offering vs procedure
+  platform vs sensor request
 
 given - observedProperty - single or multiple?
 winds,vectors,multiple obs request
 
 eventtime - iso8601,minutes/seconds required? always GMT? or time zones
 
-*other default(shorthand) parameter conventions?
-  * no time = latest
-  * outputFormat vs responseFormat?
-    * no format = text/csv 
-  * etc?
-
-offering vs procedure
-  platform vs sensor request
+== Collections ==
+network-all,featureOfInterest,bbox
 
 == Additional parameters ==
 
