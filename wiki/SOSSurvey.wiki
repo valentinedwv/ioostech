@@ -21,7 +21,7 @@ See also discussion thread regarding 'IDD' (Interface Description Document) at h
 A listing of 'rules' which all SOS should follow - if disagree or would like to suggest additional common 'rules', please suggest below
 
   * no case sensitivity - lowercase preference - request and response characters should not have any dependence on case
-  * full namespaces in xml responses, no default namespaces - 'sos:Contents' , not just 'Contents'
+  * full namespaces in xml response elements, no default namespaces - 'sos:Contents' , not just 'Contents'
     * post requests also?(ndbc,co-ops)
       * post vs get? who using post and many users?
 
