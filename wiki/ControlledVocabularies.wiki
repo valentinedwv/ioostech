@@ -70,6 +70,8 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 Whats the status and how do we use it?
 
 =Links and yet to be organized errata=
+http://marinemetadata.org/conventions/vocabularies
+
 
 ==CMSP Discovery Vocabularies Workshop==
 December 1-3, 2010
