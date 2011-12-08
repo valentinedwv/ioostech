@@ -68,7 +68,7 @@ _outputformat vs responseformat ?_
 ----
 === qualified namespaces ===
 
-*Do your offering,procedure or observedproperty parameters accept 'short' identifiers(like sea_water_temperature) or only fully qualified identifiers(like http://mmisw.org/ont/cf/parameter/sea_water_temperature)?*
+*Do your offering,procedure or observedproperty parameters accept 'short' identifiers(like sea_water_temperature) or only fully qualified identifiers(like http://mmisw.org/ont/cf/parameter/sea_water_temperature )?*
 
 ----
 === additional defaults ===
@@ -131,15 +131,25 @@ http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp
 ----
 = Response = 
 
+== Service metadata ==
+
 service identification keywords - RA name like SECOORA,etc
   http://code.google.com/p/ioostech/wiki/RepresentingRAAffiliationInServiceMetadata
   iso 19115, 19119
   
 roles/responsibilites semantics/usage
 
-resource id's - redundancies? use same/close long/lat location to help identify overlaps?
+*What ISO and contact type metadata implementation guidelines does your service reference?*
 
-data encoding - GML/DIF,SWE Common,Oostethys,...
+== Resource id's ==
+
+redundancies? use same/close long/lat location to help identify overlaps?
+
+*What's the method or authority(WMO,etc) for providing resource id's such as platform or sensor id's?*
+
+== Data encoding ==
+
+*What data encoding(s) does your GetObservation provide? SWE Common,GML,CSV,TSV,KML,JSON,... *
 
 ----
 = Additional concerns = 
@@ -148,11 +158,15 @@ data encoding - GML/DIF,SWE Common,Oostethys,...
 
 http://code.google.com/p/ioostech/wiki/SOSTesting#discussion_thread_2
 
+*What observedproperty and unit of measure(UOM) vocabulary prefix(s) and terms does your service reference?*
+
 == Additional instrumentation/example types ==
 
   profiles,trajectories
 
   swe data arrays?
+
+*Are there additional instrumentation types (other than single point in-situ) that your service provides(such as profiles,trajectories,...).  Please describe.*
 
 == Usage and Performance ==
 
