@@ -12,10 +12,10 @@ co-op parameter listing examples, emilio USGS IDD example conventions
 
 = General rules = 
 
-no case sensitivity
-
-full namespaces in xml responses, post requests also?
-  * post vs get? who using post and many users?
+  * no case sensitivity - lowercase preference - request and response characters should not have any dependence on case
+  * full namespaces in xml responses
+    * post requests also?(ndbc,co-ops)
+      * post vs get? who using post and many users?
 
 ----
 = Request parameters = 
