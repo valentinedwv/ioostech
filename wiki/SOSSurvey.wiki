@@ -1,6 +1,6 @@
 #summary a SOS question survey to better document and categorize existing features or issues
 
-see also [SOSVersions],[] 
+see also [SOSVersions],[SOSAssessment],
 
 <wiki:toc max_depth="6" />
 
