@@ -61,7 +61,12 @@ outputformat=
 *Additional outputformat= GML,TSV,KML,JSON... ?*
 
 ----
-*Are there other additional default missing parameter conventions?*
+qualified namespaces
+
+*Do your offering,procedure or observedproperty parameters accept 'short' identifiers(like sea_water_temperature) or only fully qualified identifiers(like http://mmisw.org/ont/cf/parameter/sea_water_temperature)?*
+
+----
+*Are there other additional default missing parameter conventions designed to make the service easier to use?*
 
 ----
 == Required/Common ==
