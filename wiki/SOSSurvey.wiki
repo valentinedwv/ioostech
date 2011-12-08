@@ -1,6 +1,6 @@
 #summary a SOS question survey to better document and categorize existing features or issues
 
-see also [SOSVersions],[SOSAssessment],[SWECommonPlan],[SWE Common Encoding Planhttps://docs.google.com/document/d/1czWdBFjPmAEtLe5T3_54fwk2cUdbILwWPkIDKPKFNvY/edit?hl=en_US],[]
+see also [SOSVersions],[SOSAssessment],[SWECommonPlan],[https://docs.google.com/document/d/1czWdBFjPmAEtLe5T3_54fwk2cUdbILwWPkIDKPKFNvY/edit?hl=en_US SWE Common Encoding Plan]
 
 <wiki:toc max_depth="6" />
 
