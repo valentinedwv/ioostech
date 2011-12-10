@@ -11,13 +11,13 @@ This is my main public brain dump, to help me guide the crafting of more organiz
   # Semantics of GetObservations requests: meaning and usage of _offering, procedure, observedProperties_, etc
   # Development of a reasonable but unofficial DescribeSensor SensorML response
   # Mention and link to Ted Habermann's ISO XML metadata created dynamically via XSL mapping from the GetCapabilities response.
-  # Add some discussion about Controlled Vocabularies, relevant ones (in my opinion), issues, etc
 
 = My other wiki pages =
 
 Other ioostech wiki pages I've created and manage. I've also [http://code.google.com/p/ioostech/w/list?q=label:NANOOS assigned them the 'NANOOS' tag], but this index here makes it easier to track them.
 
   * [NANOOSNVSPythonSOS]
+  * [EmilioControlledVocabs] Some pointers, links and initial thoughts on Controlled Vocabularies 
   * [CanadianAssetsIOOSNDBC]
 
 = Platform/Station types =
