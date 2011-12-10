@@ -1,5 +1,5 @@
 #summary From Emilio: Some pointers, links and initial thoughts on Controlled Vocabularies
-#labels NANOOS,ControlledVocab
+#labels NANOOS,Vocabularies
 
 = Introduction =
 
