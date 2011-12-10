@@ -1,0 +1,6 @@
+#summary From Emilio: Some pointers, links and initial thoughts on Controlled Vocabularies
+#labels NANOOS,ControlledVocab
+
+= Introduction =
+
+The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a really interesting combination of models and data (I think) where controlled vocabularies for measurements are used. It's worth assessing these, chatting with people in that team (ASA, Kyle Wilcox??), etc. For example, it's clear to me that while many/most of the names used are in fact CF standard names, many must be made up, but using CF recommendations for building names.
