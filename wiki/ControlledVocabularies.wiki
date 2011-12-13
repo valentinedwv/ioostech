@@ -34,8 +34,8 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || air_temperature ||  ||  || http://mmisw.org/ont/cf/parameter/air_temperature ||  ||
 || mass_concentration_of_chlorophyll_in_sea_water ||  ||  || http://mmisw.org/ont/cf/parameter/mass_concentration_of_chlorophyll_in_sea_water ||  ||
 || mass_concentration_of_oxygen_in_sea_water ||  ||  ||  ||  ||
-|| radial_sea_water_velocity_away_from_instrument ||  ||  ||  ||  ||
-|| dew_point_temperature ||  ||  ||  ||  ||
+|| radial_sea_water_velocity_away_from_instrument ||  ||  || http://mmisw.org/ont/ioos/parameter/radial_sea_water_velocity_away_from_instrument.html ||  ||
+|| dew_point_temperature ||  ||  || http://mmisw.org/ont/ioos/parameter/CF_Definition ||  ||
 || direction_of_sea_water_velocity ||  ||  ||  ||  ||
 || product_of_air_temperature_and_specific_humidity ||  ||  ||  ||  ||
 || grid_latitude ||  ||  ||  ||  ||
