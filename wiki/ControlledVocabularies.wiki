@@ -47,21 +47,21 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || sea_surface_wave_from_direction ||  ||  ||  ||  ||
 || sea_surface_maximum_wave_height ||  ||  ||  ||  ||
 || sea_surface_wave_significant_height ||  ||  ||  ||  ||
-|| sea_surface_wind_wave_period ||  ||  || http://mmisw.org/ont/ioos/parameter/swell_wave_period.html ||  ||
+|| sea_surface_wind_wave_period ||  ||  || http://mmisw.org/ont/ioos/parameter/swell_wave_period ||  ||
 || sea_water_acidity ||  ||  ||  ||  ||
 || sea_water_electrical_conductivity ||  ||  ||  ||  ||
-|| sea_water_salinity ||  ||  ||  ||  ||
-|| sea_water_speed ||  ||  ||  ||  ||
-|| sea_water_temperature ||  ||  ||  ||  ||
+|| sea_water_salinity ||  ||  ||http://mmisw.org/ont/cf/parameter/sea_surface_salinity  ||  ||
+|| sea_water_speed ||  ||  || http://mmisw.org/ont/ioos/parameter/current_speed ||  ||
+|| sea_water_temperature ||  ||  || http://mmisw.org/ont/cf/parameter/sea_surface_temperature ||  ||
 || simple_turbidity ||  ||  ||  ||  ||
 || visibility_in_air ||  ||  ||  ||  ||
 || water_volume_transport_into_sea_water_from_rivers ||  ||  ||  ||  ||
 || wave_direction_spread ||  ||  ||  ||  ||
-|| wind_from_direction ||  ||  ||  ||  ||
+|| wind_from_direction ||  ||  || http://mmisw.org/ont/cf/parameter/wind_from_direction ||  ||
 || wind_speed ||  ||  ||  ||  ||
-|| wind_speed_of_gust ||  ||  ||  ||  ||
-|| sea_floor_depth_below_sea_surface ||  ||  ||  ||  ||
-|| altitude ||  ||  ||  ||  ||
+|| wind_speed_of_gust ||  ||  || http://mmisw.org/ont/cf/parameter/wind_speed_of_gust ||  ||
+|| sea_floor_depth_below_sea_surface ||  ||  || http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface ||  ||
+|| altitude ||  ||  || http://mmisw.org/ont/cf/parameter/altitude ||  ||
 || phycoerythrin ||  ||  ||  ||  ||
 || precipitation ||  ||  ||  ||  ||
 
