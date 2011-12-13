@@ -10,9 +10,9 @@ A small team of IOOS RA DMAC Coordinators are working on development of a refere
 
 ===The *tentative* meeting dates will be late January or early February:=== 
 
-  * Last week of January; or 
+We have set up a doodle poll to determine the best week for the DMAC Reference Implementation Workshop.  Please select the week (per the Monday doodle option) that you will be able to attend.  Here is the Doodle Poll link: http://www.doodle.com/xngxmqn8x5vebzsh.  
 
-  * 1st or 2nd week of February
+Please respond no later than tomorrow, Wed., Dec. 14. 
 
 ===The *tentative* meeting location is:===
 Hilton in St. Louis, MO
@@ -20,6 +20,4 @@ Hilton in St. Louis, MO
 ===Logistics=== 
 Additional logistics are being sorted by the IOOS Program Office and will be provided as they develop. 
 
-We have set up a doodle poll to determine the best week for the DMAC Reference Implementation Workshop.  Please select the week (per the Monday doodle option) that you will be able to attend.  Here is the Doodle Poll link: http://www.doodle.com/xngxmqn8x5vebzsh.  
-
-Please respond no later than tomorrow, Wed., Dec. 14.    
+   
