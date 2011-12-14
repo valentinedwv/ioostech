@@ -7,14 +7,13 @@ My intent here is to complement the [ControlledVocabularies more official page o
 
 The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a really interesting combination of models and data (I think) where controlled vocabularies for measurements are used. It's worth assessing these, chatting with people in that team (ASA, Kyle Wilcox??), etc. For example, it's clear to me that while many/most of the names used are in fact CF standard names, many must be made up, but using CF recommendations for building names. 
 
-That's a general approach that we've discussed and that I think we should follow: use CF when an appropriate parameter exist; provide a nimble, IOOS-controlled vocabulary on MMI for parameters not yet on the CF list, striving to follow CF naming patterns for these new parameters, and abundant documentation: names, definitions, linkages to other relevant vocabularies (such as those from [http://qwwebservices.usgs.gov/service-domains.html#CROSSWALK USGS], [http://his.cuahsi.org/mastercvreg.html CUAHSI]), most common units, etc. For existing CF parameters, there's sometimes ambiguity and apparent redundancy; we can also provide guidance on preferred parameters, when such ambiguity exists (eg, for barometric pressure).
+That's a general approach that we've discussed and that I think we should follow: use CF when an appropriate parameter exist; provide a nimble, IOOS-controlled vocabulary on MMI for parameters not yet on the CF list, striving to follow CF naming patterns for these new parameters, and abundant documentation: names, definitions, linkages to other relevant vocabularies (such as those from [http://qwwebservices.usgs.gov/service-domains.html#CROSSWALK USGS], [http://his.cuahsi.org/mastercvreg.html CUAHSI]), most common units, etc; we have a great starting point already, in the form of the "IOOS-specific parameter vocabularies on MMI" I've listed below. For existing CF parameters, there's sometimes ambiguity and apparent redundancy; we can also provide guidance on preferred parameters, when such ambiguity exists (eg, for barometric pressure).
 
 Other controlled ontologies / controlled vocabularies (some less controlled than others...) directly relevant to IOOS DMAC:
   # *CF resources on MMI*. I've found several pages and resources at MMI that are directly focused on CF, but may not be well integrated or cross-linked and have different degrees of currency (out of date).
     * [http://marinemetadata.org/references/cfstandardnames CF - Climate and Forecast Standard Names; Vocabulary for CF parameters] (a document, not a vocabulary resource per se)
     * [http://marinemetadata.org/community/teams/vocdev/generaldocuments/orrcf Using the ORR CF Standard names Vocabulary]
     * [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary]
-
   # *IOOS-specific parameter vocabularies on MMI*
     * [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary V.1.0]
     * [http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary]
