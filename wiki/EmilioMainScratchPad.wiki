@@ -17,5 +17,5 @@ This is my main public brain dump, to help me guide the crafting of more organiz
 Other ioostech wiki pages I've created and manage. I've also [http://code.google.com/p/ioostech/w/list?q=label:NANOOS assigned them the 'NANOOS' tag], but this index here makes it easier to track them.
 
   * [NANOOSNVSPythonSOS]
-  * [EmilioControlledVocabs] Some pointers, links and initial thoughts on Controlled Vocabularies, including ones for platform or station types
+  * [EmilioControlledVocabs] Some pointers, links and initial thoughts on Controlled Vocabularies, including ones for platform or station types in SensorML
   * [CanadianAssetsIOOSNDBC]
