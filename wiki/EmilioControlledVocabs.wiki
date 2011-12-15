@@ -22,7 +22,9 @@ Other controlled ontologies / controlled vocabularies (some less controlled than
 
 == Platform/Station types ==
 
-Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use of Classification terms from http://mmisw.org/ont/mmi/platform/ . Consequences for IOOS Catalog, including the use of NVS asset-type map icons. _Note to self_: Describe and make the NVS asset-type map icons available through this wiki later on.
+Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use of Classification terms from http://mmisw.org/ont/mmi/platform/ . Consequences for IOOS Catalog, including the use of NVS asset-type map icons.
+
+_Note to self_: Describe and make the NVS asset-type map icons available through this wiki later on.
 
 Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOOS SOS as a draft incomplete implementation, borrowing from either NDBC or NOS/COOPS and possibly others:
 {{{
