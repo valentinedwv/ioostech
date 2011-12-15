@@ -17,27 +17,5 @@ This is my main public brain dump, to help me guide the crafting of more organiz
 Other ioostech wiki pages I've created and manage. I've also [http://code.google.com/p/ioostech/w/list?q=label:NANOOS assigned them the 'NANOOS' tag], but this index here makes it easier to track them.
 
   * [NANOOSNVSPythonSOS]
-  * [EmilioControlledVocabs] Some pointers, links and initial thoughts on Controlled Vocabularies 
+  * [EmilioControlledVocabs] Some pointers, links and initial thoughts on Controlled Vocabularies, including ones for platform or station types
   * [CanadianAssetsIOOSNDBC]
-
-= Platform/Station types =
-
-Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use of Classification terms from http://mmisw.org/ont/mmi/platform/ . Consequences for IOOS Catalog, including the use of NVS asset-type map icons. _Note to self_: Describe and make the NVS asset-type map icons available through this wiki later on.
-
-Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOOS SOS as a draft incomplete implementation, borrowing from either NDBC or NOS/COOPS and possibly others:
-{{{
-<sml:classifier name="System Type Identifier">
-    <sml:Term definition="urn:ioos:def:classifier:NOAA::systemTypeID">
-        <sml:codeSpace xlink:href="http://mmisw.org/ont/mmi/platform/" />
-        <sml:value>Platform</sml:value>
-    </sml:Term>
-</sml:classifier>
-<sml:classifier name="Platform Type">
-    <sml:Term definition="urn:ioos:def:classifier:NOAA:platformType">
-        <sml:codeSpace xlink:href="http://nvs.nanoos.org"/>
-        <sml:value>MOORED BUOY</sml:value>
-    </sml:Term>
-</sml:classifier>
-}}}
-
-A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
