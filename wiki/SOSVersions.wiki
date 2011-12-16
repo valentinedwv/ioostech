@@ -9,7 +9,8 @@ The goal is to develop hopefully a small handful of SOS implementation reference
 
 = Alaska (AOOS) =
 
-52 North
+Documentation link(52 North)
+https://docs.google.com/document/d/15qKOfJSS3t9JTFZFUsU5ssVNGQxcWYivH9j0XE1puq0/edit?hl=en_US
 
 http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS
 
