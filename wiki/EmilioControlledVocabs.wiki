@@ -1,6 +1,15 @@
 #summary From Emilio: Some pointers, links and initial thoughts on Controlled Vocabularies
 #labels NANOOS,Vocabularies,SensorML
 
+
+_TO DO:_ Reorganize this page into a listing of types of vocabularies to be addressed, and where in SOS they are relevant (GetCapabilities, SensorML, etc): 
+  * Observed variables
+  * platform/asset types
+  * roles
+  * regions
+  * Regional Association codes/identifiers
+  * etc
+
 == Introduction ==
 
 My intent here is to complement the [ControlledVocabularies more official page on Controlled Vocabularies] elsewhere on this wiki, without adding my clutter to that page.
@@ -9,7 +18,7 @@ The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a re
 
 That's a general approach that we've discussed and that I think we should follow: use CF when an appropriate parameter exist; provide a nimble, IOOS-controlled vocabulary on MMI for parameters not yet on the CF list, striving to follow CF naming patterns for these new parameters, and abundant documentation: names, definitions, linkages to other relevant vocabularies (such as those from [http://qwwebservices.usgs.gov/service-domains.html#CROSSWALK USGS], [http://his.cuahsi.org/mastercvreg.html CUAHSI]), most common units, etc; we have a great starting point already, in the form of the "IOOS-specific parameter vocabularies on MMI" I've listed below. For existing CF parameters, there's sometimes ambiguity and apparent redundancy; we can also provide guidance on preferred parameters, when such ambiguity exists (eg, for barometric pressure).
 
-Other controlled ontologies / controlled vocabularies (some less controlled than others...) directly relevant to IOOS DMAC:
+Other ontologies / controlled vocabularies (some less controlled than others...) directly relevant to IOOS DMAC:
   # *CF resources on MMI*. I've found several pages and resources at MMI that are directly focused on CF, but may not be well integrated or cross-linked and have different degrees of currency (out of date).
     * [http://marinemetadata.org/references/cfstandardnames CF - Climate and Forecast Standard Names; Vocabulary for CF parameters] (a document, not a vocabulary resource per se)
     * [http://marinemetadata.org/community/teams/vocdev/generaldocuments/orrcf Using the ORR CF Standard names Vocabulary]
@@ -19,12 +28,9 @@ Other controlled ontologies / controlled vocabularies (some less controlled than
     * [http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary]
     * [http://mmisw.org/ont/gcoos/parameter GCOOS Vocabulary]
 
-
 == Platform/Station types ==
 
 Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use of Classification terms from http://mmisw.org/ont/mmi/platform/ . Consequences for IOOS Catalog, including the use of NVS asset-type map icons.
-
-_Note to self_: Describe and make the NVS asset-type map icons available through this wiki later on.
 
 Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOOS SOS as a draft incomplete implementation, borrowing from either NDBC or NOS/COOPS and possibly others:
 {{{
@@ -43,3 +49,12 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 }}}
 
 A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
+
+Other relevant resources:
+  * [http://www.bodc.ac.uk/products/web_services/vocab/ British Oceanographic Data Center (BODC) NERC Vocabulary Server]. 
+  * [http://www.seadatanet.org/ SeaDataNet (European project)] Device Categories vocabulary, [http://vocab.ndg.nerc.ac.uk/list/L05/current served from the BODC NERC]
+  * Probably resources at IODE/IOC
+
+=== NANOOS NVS Asset types and icons ===
+
+_Note to self_: Describe and make the NVS asset/platform-type map icons available through this wiki later on.
