@@ -50,7 +50,7 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 
 A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
 
-Other relevant resources:
+*Other relevant resources*:
   * [http://www.bodc.ac.uk/products/web_services/vocab/ British Oceanographic Data Center (BODC) NERC Vocabulary Server]. 
   * [http://www.seadatanet.org/ SeaDataNet (European project)] Device Categories vocabulary, [http://vocab.ndg.nerc.ac.uk/list/L05/current served from the BODC NERC]
   * Probably resources at IODE/IOC
