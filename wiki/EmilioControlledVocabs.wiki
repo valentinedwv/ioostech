@@ -53,6 +53,11 @@ A question I've had about this implementation is, _what the heck is "urn:ioos:de
 *Other relevant resources*:
   * [http://www.bodc.ac.uk/products/web_services/vocab/ British Oceanographic Data Center (BODC) NERC Vocabulary Server]. 
   * [http://www.seadatanet.org/ SeaDataNet (European project)] Device Categories vocabulary, [http://vocab.ndg.nerc.ac.uk/list/L05/current served from the BODC NERC]
+  * [http://www.seadatanet.org/Standards-Software/Common-Vocabularies SeaDataNet Common Vocabularies]
+  * SeaDataNet Common Vocabularies
+    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L06)%20SeaVoX+Platform+Categories&l=L06 L06 SeaVoX Platform Categories]
+    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L061)%20SeaVoX+Platform+Classes&l=L061 L061 SeaVoX Platform Classes]
+    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L062)%20SeaVoX+Platform+Class+Categories&l=L062 L062 SeaVoX Platform Class Categories]
   * Probably resources at IODE/IOC
 
 === NANOOS NVS Asset types and icons ===
