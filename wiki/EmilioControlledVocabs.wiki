@@ -57,4 +57,4 @@ A question I've had about this implementation is, _what the heck is "urn:ioos:de
 
 === NANOOS NVS Asset types and icons ===
 
-_Note to self_: Describe and make the NVS asset/platform-type map icons available through this wiki later on.
+_Note to self_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
