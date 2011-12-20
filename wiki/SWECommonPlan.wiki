@@ -16,7 +16,9 @@ Meeting details at the [http://code.google.com/p/ioostech/wiki/IOOSReferenceImpl
 Each issue below needs to be addressed prior to the meeting.  Ideally one person can volunteer to lead the discussion for each of the major topics so that we are prepared to make decisions at the meeting.  
 
 == CF Feature Types (Kyle) ==
-Examples from the OGC site: http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
+Examples from the OGC site: [http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial]
+
+[http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967]
 
 
 == Vocabularies (CJ, Emilio will help) ==
