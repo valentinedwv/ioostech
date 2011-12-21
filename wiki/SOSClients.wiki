@@ -1,13 +1,10 @@
-#summary One-sentence summary of this page.
+#summary Collection of links to various SOS clients.
+#labels Phase-Design
 
 = Introduction =
 
-Add your content here.
+[http://52north.org/communities/sensorweb/ 52North] SensorWeb Community (Servers and clients)
 
+[https://github.com/asascience-open/EDC ASA Environmental Data Connector]
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+IOOS Modeling Testbed tools 
