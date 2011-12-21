@@ -1,6 +1,8 @@
 #summary Plan for developing SWE Common response for SOS GetObservation requests.
 #labels Phase-Requirements,Phase-Design,SOS,SWE
 
+<wiki:toc max_depth="2" />
+
 = Introduction =
 
 Meeting details at the [http://code.google.com/p/ioostech/wiki/IOOSReferenceImplementationMeetingTentative meeting page].
