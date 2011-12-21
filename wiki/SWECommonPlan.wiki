@@ -5,7 +5,7 @@
 
 = Introduction =
 
-Meeting details at the [http://code.google.com/p/ioostech/wiki/IOOSReferenceImplementationMeetingTentative meeting page].
+Meeting details at the [SOSReferenceImplementation meeting page].
 
 
 [https://docs.google.com/a/noaa.gov/document/d/1czWdBFjPmAEtLe5T3_54fwk2cUdbILwWPkIDKPKFNvY/edit?hl=en_US Google Docs version of this plan].  All of the material from that plan has not been migrated to the wiki and it may not be necessary to do so.  I'm suggesting that new information be collected on the wiki and the content from the document can be migrated as necessary. (Derrick)
