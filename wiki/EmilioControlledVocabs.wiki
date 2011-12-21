@@ -53,7 +53,7 @@ A question I've had about this implementation is, _what the heck is "urn:ioos:de
 *Other relevant resources*:
   * Work on water quality (?) vocabularies that Matt Howard and Cyndy Chandler are starting up (no URL that I know of). Matt is also leading a vocabulary effort focused on Gulf of Mexico, related to Deepwater Horizon recovery efforts.
   * [http://www.bco-dmo.org/ BCO-DMO] and [http://cdmo.baruch.sc.edu/ NERRS CDMO] are also excellent resources for water quality and biogeochemistry. [http://cdmo.baruch.sc.edu/data/parameters.cfm For NERRS, this "Parameters" page is very relevant].
-  * [http://marinemetadata.org/news/mmisemanticpaper2011 MMI announces (2011) the publication of its paper "Semantic mediation of vocabularies for ocean observing systems"]
+  * [https://geo-ide.noaa.gov/wiki/index.php?title=In-situ_data_%28sensors,_groups_of_sensors,_platforms,_etc.%29 (Geo-IDE Wiki) In-situ data (sensors, groups of sensors, platforms, etc.)]
   * [http://www.bodc.ac.uk/products/web_services/vocab/ British Oceanographic Data Center (BODC) NERC Vocabulary Server]. 
   * [http://www.seadatanet.org/ SeaDataNet (European project)] Device Categories vocabulary, [http://vocab.ndg.nerc.ac.uk/list/L05/current served from the BODC NERC]
   * [http://www.seadatanet.org/Standards-Software/Common-Vocabularies SeaDataNet Common Vocabularies]
@@ -64,6 +64,7 @@ A question I've had about this implementation is, _what the heck is "urn:ioos:de
   * Probably resources at IODE/IOC
   * The work on an IOOS Non-Federal Asset Inventory in early-mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
   * [http://cdi.gleon.org/ GLEON-CDI (lakes)]
+  * [http://marinemetadata.org/news/mmisemanticpaper2011 MMI announces (2011) the publication of its paper "Semantic mediation of vocabularies for ocean observing systems"]
 
 === NANOOS NVS Asset types and icons ===
 
