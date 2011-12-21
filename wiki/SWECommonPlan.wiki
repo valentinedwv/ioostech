@@ -7,8 +7,7 @@
 
 Meeting details at the [SOSReferenceImplementationWorkshop  meeting page].
 
-
-[https://docs.google.com/a/noaa.gov/document/d/1czWdBFjPmAEtLe5T3_54fwk2cUdbILwWPkIDKPKFNvY/edit?hl=en_US Google Docs version of this plan].  All of the material from that plan has not been migrated to the wiki and it may not be necessary to do so.  I'm suggesting that new information be collected on the wiki and the content from the document can be migrated as necessary. (Derrick)
+[https://docs.google.com/a/noaa.gov/document/d/1czWdBFjPmAEtLe5T3_54fwk2cUdbILwWPkIDKPKFNvY/edit?hl=en_US Deprecated Google Docs version of this plan]. 
 
 
 Define SWE Common encodings for all of the CF sampling feature types that:
@@ -20,26 +19,41 @@ Define SWE Common encodings for all of the CF sampling feature types that:
  * provide all information necessary to unambiguously identify essential characteristics of the CF sampling feature types (should enable nearly lossless translation between the two encoding standards)
  * Provide a mechanism to encode quality information along with data values
 
+= Roadmap =
+This section needs to be fleshed out and assigned to individuals, preferably with dates associated with them at which time the responsible party will report back to the group.  Note, the reports does not imply a complete solution.
+
+ * identify data sources for each feature type (actual source data including platform metadata)
+ * resolve ambiguities surrounding SOS 1.0 and 2.0 interpretation of “procedure, observationOffering, featureOfInterest, observedProperty”
+ * create templates for each feature type
+ * implement SOS services for each feature type at each RA
+ * test by multiple clients
+	* Create a generic testing page with the ability to test servers as they are developed
+	* Can we add an upload form on [ http://testbedwww.sura.org/sosParse/getcap.html Eric’s javascript page] for example
+
 = Requirements =
 
 
 = Issues to Resolve Prior to the Meeting = 
 Each issue below needs to be addressed prior to the meeting. Ideally one person will volunteer to lead the discussion for each of the major topics so that we are prepared to make decisions at the meeting.
 
-    COTS vs home grown software:  AOOS experimenting with 52North while NERACOOS, NANOOS, NDBC, CO-OPS, SECOORA have all designed and coded their own software.  Is this sustainable?
-    Ambiguity in the SOS 1.0 and 2.0 data model.  This issue has been discussed by the OGC Hyrology DWG and they have not reached a conclusion that is conformant to the SOS 1.0 spec as they understand it.  There are implications for the format of the responses from all three SOS core operations (GetCapabilities, DescribeSensor, GetObservation).  There are also performance implications due to the way searches must be performed.
-    URN Schemes for identifying vocabularies and stations/platforms.  Not implemented uniformly across existing servers.  We need clear definitions of the URN specifications. See IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx in the google docs shared folder for the current version of the specification.  Does this deserve review or is it clear enough as is?
-    Clarification of the units of measure representation in output files.  Is there a clear OGC recommendation at this time?  Perhaps a follow up with Luis Bermudez?  UCUM, UOM definied in OGC dictionaries?  Udunits?
-    Gather a list of the sampling feature types currently in use among the IOOS regions and NDBC/CO-OPS.  Then associate a few actual platform types to each sampling feature types so that we have a sense of the information available in the  databases in use by IOOS partners.
-    We need a plan for including more metadata in the capabilities response to enable automatic harvesting by the IOOS catalog and other harvesting portals  (See OGC 06-121r9 - OGC Web Services Common Standard Version 2.0.0 for more information on common elements across OGC web services especially including relationships to ISO 1911* standards)
-    Need to identify the role of the “holistic architecture” Rob B spoke about on the last call.  The underlying requirement is that the architecture should support access to all available observations from a platform, not just the temporal snapshot that is stored in the database.  The IOOS requirement is to enable access to all the data.  Perhaps this is more tractable through an OPeNDAP service at this point. 
+ * COTS vs home grown software:  AOOS experimenting with 52North while NERACOOS, NANOOS, NDBC, CO-OPS, SECOORA have all designed and coded their own software.  Is this sustainable?
+ * Ambiguity in the SOS 1.0 and 2.0 data model.  This issue has been discussed by the OGC Hyrology DWG and they have not reached a conclusion that is conformant to the SOS 1.0 spec as they understand it.  There are implications for the format of the responses from all three SOS core operations (GetCapabilities, DescribeSensor, GetObservation).  There are also performance implications due to the way searches must be performed.
+ * URN Schemes for identifying vocabularies and stations/platforms.  Not implemented uniformly across existing servers.  We need clear definitions of the URN specifications. See IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx in the google docs shared folder for the current version of the specification.  Does this deserve review or is it clear enough as is?
+ * Clarification of the units of measure representation in output files.  Is there a clear OGC recommendation at this time?  Perhaps a follow up with Luis Bermudez?  UCUM, UOM definied in OGC dictionaries?  Udunits?
+ * Gather a list of the sampling feature types currently in use among the IOOS regions and NDBC/CO-OPS.  Then associate a few actual platform types to each sampling feature types so that we have a sense of the information available in the  databases in use by IOOS partners.
+ * We need a plan for including more metadata in the capabilities response to enable automatic harvesting by the IOOS catalog and other harvesting portals  (See OGC 06-121r9 - OGC Web Services Common Standard Version 2.0.0 for more information on common elements across OGC web services especially including relationships to ISO 1911* standards)
+ * Need to identify the role of the “holistic architecture” Rob B spoke about on the last call.  The underlying requirement is that the architecture should support access to all available observations from a platform, not just the temporal snapshot that is stored in the database.  The IOOS requirement is to enable access to all the data.  Perhaps this is more tractable through an OPeNDAP service at this point. 
+
+ 
+ 
 Each issue below needs to be addressed prior to the meeting.  Ideally one person can volunteer to lead the discussion for each of the major topics so that we are prepared to make decisions at the meeting.  
 
 == CF Feature Types (Kyle) ==
 Examples from the OGC site: [http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial]
 
 [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967]
-
+http://www.ogcnetwork.net/GEOSS_Climate_Workshop_2011
+[https://portal.opengeospatial.org/files/?artifact_id=46131 WCS 2.0 Extension for netCDF-CF; CSW and THREDDS Interoperability]
 
 == Vocabularies (CJ, Emilio will help) ==
 
@@ -73,7 +87,7 @@ Initial testing is designed more towards a survey of existing SOS GetCapabilitie
 
 An initial simple perl script was setup to read submitted SOS endpoints and detail the number of platforms and observation types and their locations based on the GetCapabilities document.  The script also parses based on whether full xml namespaces are used and reports the vocabulary prefix in effect and provides a kml file of the platform locations.
 
-This script can be used along with Eric Bridger's similar browser application which provides similar information at http://www.google.com/url?sa=D&q=http://dev.neracoos.org/IOOSCatalog3/SOSTester/catalog_end_points.html&usg=AFQjCNGG65xpqLiu3iCdtNebN2NxlQX_BA
+This script can be used along with Eric Bridger's similar browser application which provides similar information at http://dev.neracoos.org/IOOSCatalog3/SOSTester/catalog_end_points.html  (starfish/starfish)
 
 In addition to the above summary SOS information, creating a xsd(xml schema document) from a provided xml was used(the 'trang' tool) to compare existing schema/element differences between the existing SOS GetCapabilities documents.
 
@@ -85,23 +99,14 @@ Testing and categorization/compliance would be broken into 3 parts
 
 = Resources= 
 == Example Files ==
-http://code.google.com/p/ioostech/source/browse/ndbc_swe_sample-2011-10-19.xml NDBC example of temperature observations from a collection of moored buoys.
+http://code.google.com/p/ioostech/source/browse/ndbc_swe_sample-2011-10-19.xml NDBC example of temperature observations from a collection of moored buoys.  There are several other examples in the source repository now [http://code.google.com/p/ioostech/source/browse/]
 
-
-
-== Testing Tools ==
-=== SOSTester at NERACOOS ===
-
-
-=== Jeremy Cothran's Summaries ===
-
-
-Just so we don't lose these...
-
+== Reference Docs (Discussion Papers and Specifications ==
 http://external.opengis.org/twiki_public/NREwg/GMESPHInstrumentCapabilities
 http://external.opengis.org/twiki_public/HydrologyDWG/SOSServingWaterML20
-
 http://opengeo.org/publications/opengeo-swe/
 http://opengeo.org/publications/opengeo-swe/OpenGeo-SWE.pdf
-
 http://code.google.com/p/swe-common-data-framework/
+http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967
+http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
+
