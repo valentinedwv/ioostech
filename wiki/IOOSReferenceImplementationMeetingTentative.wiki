@@ -1,5 +1,11 @@
 #summary Logistics and other details supporting the Reference Implementation off site meeting.
 
+
+
+
+=This page is deprecated=
+see SOSReferenceImplementationWorkshop.
+
 ==*IOOS Reference Implementation Working Group Meeting (Tentative)*==
 
 === Introduction ===
