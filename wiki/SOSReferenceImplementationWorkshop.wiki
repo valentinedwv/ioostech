@@ -1,0 +1,27 @@
+#summary Logistics and other details supporting the Reference Implementation off site meeting.
+#labels Phase-Design,SOS,Meeting
+
+=IOOS Reference Implementation Working Group Meeting=
+
+== Introduction ==
+
+A small team of IOOS RA DMAC Coordinators are working on development of a reference implementation for SOS for use by the IOOS community.  The meeting will be focused on the development process.  The agenda and specific details are forthcoming.  
+
+== Meeting Details ==
+
+Arrival: Feb 6
+Meeting: Feb 7-9
+Departure: Feb 10
+
+[http://baltimore.hyatt.com/hyatt/hotels/index.jsp?null Hyatt Regency Baltimore]
+300 Light Street,
+Baltimore, Maryland, USA 21202
+Tel: +1 410 528 1234    Fax: +1 410 685 3362
+Email: quality@bwirbpo.hyatt.com 
+
+[http://baltimore.hyatt.com/hyatt/hotels/services/maps/index.jsp?icamp=propMapDirections Transportation from BWI to Hyatt Regency]
+
+== Agenda ==
+Agenda is developing here (link to emilio's agenda)
+
+
