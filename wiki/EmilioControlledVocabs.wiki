@@ -28,6 +28,25 @@ Other ontologies / controlled vocabularies (some less controlled than others...)
     * [http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary]
     * [http://mmisw.org/ont/gcoos/parameter GCOOS Vocabulary]
 
+== Organization Roles (esp. Provider/Owner) ==
+
+_Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_
+_Find and link to the discussion thread on ioostech_dev_
+
+{{{
+<sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner">
+    <sml:ResponsibleParty>
+        <sml:organizationName>ORCA-UW</sml:organizationName>
+        <sml:contactInfo>
+            <sml:address>
+                <sml:country>USA</sml:country>
+            </sml:address>
+            <sml:onlineResource xlink:href="http://orca.ocean.washington.edu" />
+        </sml:contactInfo>
+    </sml:ResponsibleParty>
+</sml:contact>
+}}}
+
 == Platform/Station types ==
 
 Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use of Classification terms from http://mmisw.org/ont/mmi/platform/ . Consequences for IOOS Catalog, including the use of NVS asset-type map icons.
