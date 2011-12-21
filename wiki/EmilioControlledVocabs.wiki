@@ -60,6 +60,7 @@ A question I've had about this implementation is, _what the heck is "urn:ioos:de
     * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L062)%20SeaVoX+Platform+Class+Categories&l=L062 L062 SeaVoX Platform Class Categories]
   * Probably resources at IODE/IOC
   * The work on an IOOS Non-Federal Asset Inventory in early-mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
+  * [http://cdi.gleon.org/ GLEON-CDI (lakes)]
 
 === NANOOS NVS Asset types and icons ===
 
