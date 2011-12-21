@@ -110,4 +110,4 @@ http://opengeo.org/publications/opengeo-swe/OpenGeo-SWE.pdf
 http://code.google.com/p/swe-common-data-framework/
 http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967
 http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
-
+http://code.google.com/p/swe-common-data-framework/
