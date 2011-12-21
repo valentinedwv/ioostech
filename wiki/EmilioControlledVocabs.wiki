@@ -51,6 +51,9 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
 
 *Other relevant resources*:
+  * Work on water quality (?) vocabularies that Matt Howard and Cyndy Chandler are starting up (no URL that I know of). Matt is also leading a vocabulary effort focused on Gulf of Mexico, related to Deepwater Horizon recovery efforts.
+  * [http://www.bco-dmo.org/ BCO-DMO] and [http://cdmo.baruch.sc.edu/ NERRS CDMO] are also excellent resources for water quality and biogeochemistry. [http://cdmo.baruch.sc.edu/data/parameters.cfm For NERRS, this "Parameters" page is very relevant].
+  * [http://marinemetadata.org/news/mmisemanticpaper2011 MMI announces (2011) the publication of its paper "Semantic mediation of vocabularies for ocean observing systems"]
   * [http://www.bodc.ac.uk/products/web_services/vocab/ British Oceanographic Data Center (BODC) NERC Vocabulary Server]. 
   * [http://www.seadatanet.org/ SeaDataNet (European project)] Device Categories vocabulary, [http://vocab.ndg.nerc.ac.uk/list/L05/current served from the BODC NERC]
   * [http://www.seadatanet.org/Standards-Software/Common-Vocabularies SeaDataNet Common Vocabularies]
