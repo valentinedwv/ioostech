@@ -67,11 +67,9 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 ==IOOS NCCOS Project - FIU Parameter List== 
 || *FIU Term* || *FIU Def* || *FIU Units* || *CF URL*  || *IOOS Vocab URL* ||
-
-
-|| *NCBO Term* || *NCBO Def* || *NCBO Units* || *CF URL*  || *IOOS Vocab URL* ||
+||
 || air_pressure ||  ||  || http://mmisw.org/ont/cf/parameter/air_pressure ||  
-|| air_pressure ||  ||  || http://mmisw.org/ont/cf/parameter/air_pressure ||   
+   
 
 
 ==Semantic Web Maturity and Examples==
