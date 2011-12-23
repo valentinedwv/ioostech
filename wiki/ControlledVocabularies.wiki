@@ -74,9 +74,9 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || Total Organic Carbon||  ||  ||  ||  ||
 || Dissolved oxygen ||  ||  ||  ||  ||
 || Dissolved inorganic nitrogen ||  ||  ||  ||  ||
-|| Total organic nitrogen||  ||  ||  ||  ||
-|| Nitrite ||  ||  ||  ||  ||
-|| Nitrate ||  ||  ||  ||  ||
+|| Total organic nitrogen||  ||μM  ||  ||  ||
+|| Nitrite ||  ||μM  ||  ||  ||
+|| Nitrate ||  || μM ||  ||  ||
 || Ammonium ||  ||  ||  ||  ||
 || TN:TP||  ||  ||  ||  ||
 || Photosynthetic active radiation||  ||  ||  ||  ||
