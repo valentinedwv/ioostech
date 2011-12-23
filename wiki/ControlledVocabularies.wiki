@@ -65,7 +65,41 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || phycoerythrin ||  ||  ||  ||  ||
 || precipitation ||  ||  ||  ||  ||
 
-  
+|| *NCBO Term* || *NCBO Def* || *NCBO Units* || *CF URL*  || *IOOS Vocab URL* ||
+|| air_pressure ||  ||  || http://mmisw.org/ont/cf/parameter/air_pressure ||  ||
+|| air_temperature ||  ||  || http://mmisw.org/ont/cf/parameter/air_temperature ||  ||
+|| mass_concentration_of_chlorophyll_in_sea_water ||  ||  || http://mmisw.org/ont/cf/parameter/mass_concentration_of_chlorophyll_in_sea_water ||  ||
+|| mass_concentration_of_oxygen_in_sea_water ||  ||  ||  ||  ||
+|| radial_sea_water_velocity_away_from_instrument ||  ||  || http://mmisw.org/ont/ioos/parameter/radial_sea_water_velocity_away_from_instrument ||  ||
+|| dew_point_temperature ||  ||  ||  || http://mmisw.org/ont/ioos/parameter/CF_Definition ||
+|| direction_of_sea_water_velocity ||  ||  ||  || http://mmisw.org/ont/ioos/parameter/current_to_direction ||
+|| product_of_air_temperature_and_specific_humidity ||  ||  ||  ||  ||
+|| grid_latitude ||  ||  || http://mmisw.org/ont/cf/parameter/grid_latitude ||  ||
+|| grid_longitude ||  ||  || http://mmisw.org/ont/cf/parameter/grid_longitude ||  ||
+|| relative_humidity ||  ||  ||  ||  ||
+|| sea_surface_height_above_sea_level ||  ||  ||  ||  ||
+|| sea_surface_wave_mean_height ||  ||  ||  ||  ||
+|| sea_surface_swell_wave_period ||  ||  ||  ||  ||
+|| sea_surface_wave_from_direction ||  ||  ||  ||  ||
+|| sea_surface_maximum_wave_height ||  ||  ||  ||  ||
+|| sea_surface_wave_significant_height ||  ||  ||  ||  ||
+|| sea_surface_wind_wave_period ||  ||  || http://mmisw.org/ont/ioos/parameter/swell_wave_period ||  ||
+|| sea_water_acidity ||  ||  ||  ||  ||
+|| sea_water_electrical_conductivity ||  ||  ||  ||  ||
+|| sea_water_salinity ||  ||  ||http://mmisw.org/ont/cf/parameter/sea_surface_salinity  ||  ||
+|| sea_water_speed ||  ||  || http://mmisw.org/ont/ioos/parameter/current_speed ||  ||
+|| sea_water_temperature ||  ||  || http://mmisw.org/ont/cf/parameter/sea_surface_temperature ||  ||
+|| simple_turbidity ||  ||  ||  ||  ||
+|| visibility_in_air ||  ||  ||  ||  ||
+|| water_volume_transport_into_sea_water_from_rivers ||  ||  ||  ||  ||
+|| wave_direction_spread ||  ||  ||  ||  ||
+|| wind_from_direction ||  ||  || http://mmisw.org/ont/cf/parameter/wind_from_direction ||  ||
+|| wind_speed ||  ||  ||  ||  ||
+|| wind_speed_of_gust ||  ||  || http://mmisw.org/ont/cf/parameter/wind_speed_of_gust ||  ||
+|| sea_floor_depth_below_sea_surface ||  ||  || http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface ||  ||
+|| altitude ||  ||  || http://mmisw.org/ont/cf/parameter/altitude ||  ||
+|| phycoerythrin ||  ||  ||  ||  ||
+|| precipitation ||  ||  ||  ||  ||  
 ==Semantic Web Maturity and Examples==
 Whats the status and how do we use it?
 
