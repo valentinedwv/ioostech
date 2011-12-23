@@ -67,10 +67,10 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 ==IOOS NCCOS Project - FIU Parameter List== 
 || *FIU Term* || *FIU Def* || *FIU Units* || *CF URL*  || *IOOS Vocab URL* ||
-|| Chlorophyll  ||  ||  ||  ||  
-|| Turbidity  ||  ||  ||  || 
-|| Light attenuation  ||  ||  ||  || 
-|| Colored Dissolved Organic Matter||  ||  ||  || 
+|| Chlorophyll  ||  ||  ||  ||  || 
+|| Turbidity  ||  ||  ||  ||  ||
+|| Light attenuation  ||  ||  ||  ||  ||
+|| Colored Dissolved Organic Matter||  ||  ||  ||  ||
 
 
 ==Semantic Web Maturity and Examples==
