@@ -1,8 +1,11 @@
 #summary From Emilio: Some pointers, links and initial thoughts on Controlled Vocabularies
 #labels NANOOS,Vocabularies,SensorML
 
+<wiki:toc max_depth="3" />
 
-_TO DO:_ Reorganize this page into a listing of types of vocabularies to be addressed, and where in SOS they are relevant (GetCapabilities, SensorML, etc): 
+== My To-Do's for this page ==
+
+Reorganize this page into a listing of types of vocabularies to be addressed, and where in SOS they are relevant (GetCapabilities, SensorML, etc): 
   * Observed variables
   * platform/asset types
   * roles
