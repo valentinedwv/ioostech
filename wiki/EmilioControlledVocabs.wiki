@@ -1,7 +1,8 @@
 #summary From Emilio: Some pointers, links and initial thoughts on Controlled Vocabularies
 #labels NANOOS,Vocabularies,SensorML
 
-<wiki:toc />
+*Table of Content*
+<wiki:toc max_depth="3" />
 
 == My To-Do's for this page ==
 
