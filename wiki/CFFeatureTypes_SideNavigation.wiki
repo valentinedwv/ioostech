@@ -1,7 +1,6 @@
   * [CFFeatureTypes_Point point]
     * [CFFeatureTypes_Point#CDL CDL]
     * [CFFeatureTypes_Point#SWE SWE]
-        
   * [CFFeatureTypes_timeSeries timeSeries]
     * [CFFeatureTypes_timeSeries#CDL CDL]
       * [CFFeatureTypes_timeSeries#Single_Station Single Station]
