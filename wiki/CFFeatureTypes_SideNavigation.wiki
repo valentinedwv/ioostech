@@ -21,14 +21,3 @@
     * [CFFeatureTypes_timeSeriesProfile#SWE SWE]
   * [CFFeatureTypes_trajectory trajectory]
   * [CFFeatureTypes_trajectoryProfile trajectoryProfile]
-
-
-    timeSeriesProfile
-        CDL
-            Single Station
-                Multidimentional
-                Ragged
-            Multiple Station
-                Multidimenstional
-                Ragged
-        SWE
