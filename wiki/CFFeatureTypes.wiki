@@ -21,9 +21,9 @@ NetCDF files can also represent data from multiple stations.  A timeSeries at mu
 
 Each Representation will get its own Wiki page for easier collaboration:
 
-  * CFFeatueTypes_timeSeries
+  * [CFFeatueTypes_timeSeries]
   * *timeSeriesProfile*
   * *trajectoryProfile*
   * *trajectory*
-  * CFFeatureTypes_Point
+  * [CFFeatureTypes_Point]
   * *profile*
