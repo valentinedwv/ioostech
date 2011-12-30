@@ -1,4 +1,5 @@
 #summary Mappings from CF Feature Types to SWE
+#sidebar CFFeatureTypes_SideNavigation
 
 = Introduction =
 
