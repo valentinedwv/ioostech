@@ -2,7 +2,7 @@
 
 = timeSeries =
 
-There are three ways to represent timeSeries data in NetCDF files using the CF 1.6 convention.  These should both be mapped to the same SWE encoding.
+There are three ways to represent timeSeries data in NetCDF files using the CF 1.6 convention.  These should all be mapped to a common SWE encoding.
 
 == Single Station ==
 
