@@ -9,7 +9,7 @@ Based on the [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventio
   * *trajectoryProfile* - a series of profile features located at points ordered along a trajectory
   * *trajectory* - a series of data points along a path through space with monotonically increasing times.  This has no Z dimension associated with it (path over a 2D plane over time).  It can be represented as a trajectoryProfile with a constant Z and P dimension.
 
-The solutions for encoding the above into SWE should NOT exclude the other CF Feature Types from being represented:
+The solutions for encoding the above into SWE should *NOT* exclude the other CF Feature Types from being represented (it will be likely that these will be used to represent the above):
 
   * *point* - a single data point having no implied coordinate relationship to other points.  x(1), y(1), t(1).  *The can be represented as a timeSeries with a single data record*
   * *profile* - an ordered set of data points along a vertical line at a fixed horizontal position and fixed time.  *This can be represented as a timeSeriesProfile with a time dimension of length 1.*
