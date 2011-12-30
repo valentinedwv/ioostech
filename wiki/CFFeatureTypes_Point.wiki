@@ -1,6 +1,8 @@
 #summary The *point* feature type
 
-= CDL Template=
+= point =
+
+== CDL ==
 {{{
 dimensions:
 	obs = 100 ;
@@ -39,7 +41,7 @@ variables:
 
 
 
-= SWE Common Mapping =
+== SWE ==
 
 {{{
 <DataStream>
