@@ -4,13 +4,15 @@
 
 There are three ways to represent timeSeries data in NetCDF files using the CF 1.6 convention.  These should all be mapped to a common SWE encoding.
 
-== Single Station ==
+== CDL ==
+
+=== Single Station ===
 
 
 
-== Multiple Stations == 
+=== Multiple Stations === 
 
-=== Incomplete-Multidimenstional ===
+==== Incomplete-Multidimenstional ====
 
 {{{
 dimensions:
@@ -64,7 +66,7 @@ variables:
 
 }}}
 
-=== Orthogonal-Multidimenstional ==
+==== Orthogonal-Multidimenstional ====
 
 
 {{{
@@ -109,7 +111,7 @@ variables:
 		:CF\:featureType = "timeSeries" ;
 }}}
 
-= SWE =
+== SWE ==
 
 {{{
 <DataArray>
