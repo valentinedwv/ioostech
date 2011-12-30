@@ -10,7 +10,7 @@ There are four ways to represent timeSeriesProfile data in NetCDF files using th
 
 === Single Station ===
 
-==== Multidimentional ====
+==== Multidimensional (SS) ====
 
 {{{
 dimensions:
@@ -49,7 +49,7 @@ variables:
 }}}
 
 
-==== Ragged ====
+==== Ragged (SS) ====
 {{{
 dimensions:
 	profile = 4 ;
@@ -95,7 +95,7 @@ variables:
 }}}
 === Multiple Station ===
 
-==== Multidimenstional ====
+==== Multidimensional (MS) ====
 {{{
 dimensions:
 	station = 2 ;
@@ -134,7 +134,7 @@ variables:
 }}}
 
 
-==== Ragged ====
+==== Ragged (MS) ====
 {{{
 dimensions:
 	station = 2 ;
