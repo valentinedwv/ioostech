@@ -1,4 +1,4 @@
-  * Mapping CF Feature Types to SWE
+  * [CFFeatureTypes Mapping CF Feature Types to SWE]
     * [CFFeatureTypes_Point point]
       * [CFFeatureTypes_Point#CDL CDL]
       * [CFFeatureTypes_Point#SWE SWE]
