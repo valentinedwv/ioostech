@@ -1,4 +1,5 @@
 #summary The *timeSeries* feature type
+#sidebar CFFeatureTypes_SideNavigation
 
 = timeSeries =
 
