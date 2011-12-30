@@ -6,14 +6,12 @@ There are three ways to represent timeSeries data in NetCDF files using the CF 1
 
 == Single Station ==
 
-==== CDL ====
 
 
 == Multiple Stations == 
 
 === Incomplete-Multidimenstional ===
 
-==== CDL ====
 {{{
 dimensions:
 	station = UNLIMITED ; // (10 currently)
@@ -68,7 +66,7 @@ variables:
 
 === Orthogonal-Multidimenstional ==
 
-==== CDL ====
+
 {{{
 dimensions:
 	station = 10 ;
