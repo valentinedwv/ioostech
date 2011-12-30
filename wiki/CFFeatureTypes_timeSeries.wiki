@@ -2,7 +2,12 @@
 
 = timeSeries =
 
-There are two ways to represent timeSeries data in NetCDF files using the CF 1.6 convention
+There are three ways to represent timeSeries data in NetCDF files using the CF 1.6 convention.  These should both be mapped to the same SWE encoding.
+
+== Single Station ==
+
+==== CDL ====
+
 
 == Multiple Stations == 
 
@@ -61,8 +66,6 @@ variables:
 
 }}}
 
-==== SWE ====
-
 === Orthogonal-Multidimenstional ==
 
 ==== CDL ====
@@ -108,7 +111,7 @@ variables:
 		:CF\:featureType = "timeSeries" ;
 }}}
 
-==== SWE ====
+= SWE =
 
 {{{
 <DataArray>
