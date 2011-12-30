@@ -1,7 +1,7 @@
 #summary The *point* feature type
 
 = CDL Template=
-{
+{{{
 dimensions:
 	obs = 100 ;
 variables:
@@ -35,12 +35,13 @@ variables:
 
 	// global attributes:
 		:CF\:featureType = "point" ;
-}
+}}}
 
 
 
 = SWE Common Mapping =
 
+{{{
 <DataStream>
   <elementCount>
     <Count definition="urn:def:ogc:data:OGC:ArrayDimension" axisCode="obs">
@@ -94,3 +95,4 @@ variables:
     </DataRecord>
   </elementType>
 </DataStream>
+}}}
