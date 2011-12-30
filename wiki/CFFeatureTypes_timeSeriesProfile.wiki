@@ -4,9 +4,11 @@
 
 There are four ways to represent timeSeriesProfile data in NetCDF files using the CF 1.6 convention.  These should all be mapped to a common SWE encoding.
 
-== Single Station ==
+== CDL ==
 
-=== Multidimentional ===
+=== Single Station ===
+
+==== Multidimentional ====
 
 {{{
 dimensions:
@@ -45,7 +47,7 @@ variables:
 }}}
 
 
-=== Ragged ===
+==== Ragged ====
 {{{
 dimensions:
 	profile = 4 ;
@@ -89,9 +91,9 @@ variables:
 	// global attributes:
 		:CF\:featureType = "timeSeriesProfile" ;
 }}}
-== Multiple Station ==
+=== Multiple Station ===
 
-=== Multidimenstional ===
+==== Multidimenstional ====
 {{{
 dimensions:
 	station = 2 ;
@@ -130,7 +132,7 @@ variables:
 }}}
 
 
-=== Ragged ===
+==== Ragged ====
 {{{
 dimensions:
 	station = 2 ;
@@ -181,4 +183,4 @@ variables:
 
 
 
-= SWE=
+== SWE ==
