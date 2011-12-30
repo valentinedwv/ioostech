@@ -1,4 +1,5 @@
 #summary The *timeSeriesProfile* feature type
+#sidebar CFFeatureTypes_SideNavigation
 
 = timeSeriesProfile =
 
