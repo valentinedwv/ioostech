@@ -14,7 +14,7 @@ There are three ways to represent timeSeries data in NetCDF files using the CF 1
 
 === Multiple Stations === 
 
-==== Incomplete-Multidimenstional ====
+==== Incomplete-Multidimensional ====
 
 {{{
 dimensions:
@@ -68,7 +68,7 @@ variables:
 
 }}}
 
-==== Orthogonal-Multidimenstional ====
+==== Orthogonal-Multidimensional ====
 
 
 {{{
