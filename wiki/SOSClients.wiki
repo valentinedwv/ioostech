@@ -5,8 +5,8 @@
 
 [http://52north.org/communities/sensorweb/ 52North] Sensor Web Community (Servers and clients)
 
-[https://github.com/asascience-open/EDC ASA Environmental Data Connector]
+[https://github.com/asascience-open/EDC ASA Environmental Data Connector] - Desktop (Java) based EDC
 
-[http://ec2-72-44-60-22.compute-1.amazonaws.com/edc/] ASA EDC-Web
+[http://ec2-72-44-60-22.compute-1.amazonaws.com/edc/ ASA EDC-Web] - Web based EDC
 
 IOOS Modeling Testbed tools 
