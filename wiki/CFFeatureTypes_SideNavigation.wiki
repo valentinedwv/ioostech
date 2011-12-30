@@ -1,0 +1,24 @@
+  * [CFFeatureTypes_Point point]
+    * [CFFeatureTypes_Point#CDL CDL]
+    * [CFFeatureTypes_Point#SWE SWE]
+        
+  * [CFFeatureTypes_timeSeries timeSeries]
+    * [CFFeatureTypes_timeSeries#CDL CDL]
+      * [CFFeatureTypes_timeSeries#Single_Station Single Station]
+      * [CFFeatureTypes_timeSeries#Multiple_Stations Multiple Stations]
+    * [CFFeatureTypes_timeSeries#SWE SWE]
+  * [CFFeatureTypes_profile profile]
+  * [CFFeatureTypes_timeSeriesProfile timeSeriesProfile]
+  * [CFFeatureTypes_trajectory trajectory]
+  * [CFFeatureTypes_trajectoryProfile trajectoryProfile]
+
+
+    timeSeriesProfile
+        CDL
+            Single Station
+                Multidimentional
+                Ragged
+            Multiple Station
+                Multidimenstional
+                Ragged
+        SWE
