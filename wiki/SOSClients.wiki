@@ -7,4 +7,6 @@
 
 [https://github.com/asascience-open/EDC ASA Environmental Data Connector]
 
+[http://ec2-72-44-60-22.compute-1.amazonaws.com/edc/] ASA EDC-Web
+
 IOOS Modeling Testbed tools 
