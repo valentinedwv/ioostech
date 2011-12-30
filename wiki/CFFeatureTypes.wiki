@@ -12,5 +12,5 @@ Based on the [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventio
 The solutions for encoding the above into SWE should NOT exclude the other CF Feature Types from being represented:
 
   * *point* - a single data point having no implied coordinate relationship to other points.  x(1), y(1), t(1).  *The can be represented as a timeSeries with a single data record*
-  * *profile* - an ordered set of data points along a vertical line at a fixed horizontal position and fixed time.  This can be represented as a timeSeriesProfile with a time dimension of length 1.
+  * *profile* - an ordered set of data points along a vertical line at a fixed horizontal position and fixed time.  *This can be represented as a timeSeriesProfile with a time dimension of length 1.*
   
