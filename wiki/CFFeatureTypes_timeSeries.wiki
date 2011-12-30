@@ -1,12 +1,14 @@
 #summary The *timeSeries* feature type
 
-= CDL Template=
+= timeSeries =
 
 There are two ways to represent timeSeries data in NetCDF files using the CF 1.6 convention
 
+== Multiple Stations == 
 
-== Incomplete-Multidimenstional (Multiple Stations) ==
+=== Incomplete-Multidimenstional ===
 
+==== CDL ====
 {{{
 dimensions:
 	station = UNLIMITED ; // (10 currently)
@@ -59,9 +61,11 @@ variables:
 
 }}}
 
+==== SWE ====
 
-== Orthogonal-Multidimenstional (Multiple Stations ==
+=== Orthogonal-Multidimenstional ==
 
+==== CDL ====
 {{{
 dimensions:
 	station = 10 ;
@@ -104,7 +108,7 @@ variables:
 		:CF\:featureType = "timeSeries" ;
 }}}
 
-= SWE Common Mapping=
+==== SWE ====
 
 {{{
 <DataArray>
