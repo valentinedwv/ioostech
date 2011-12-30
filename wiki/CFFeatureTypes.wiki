@@ -19,12 +19,3 @@ The solutions for encoding the above into SWE should *NOT* exclude the other CF 
 It is worth mentioning here that NetCDF files in the CD 1.6 spec can only represent one featureType at a time.  If at all possible, this should not be a restriction of the SWE mappings.
 
 NetCDF files can also represent data from multiple stations.  A timeSeries at multiple stations can be represented in one file.  I don't know how this will map to SWE.
-
-Each Representation will get its own Wiki page for easier collaboration:
-
-  * [CFFeatureTypes_timeSeries]
-  * *timeSeriesProfile*
-  * *trajectoryProfile*
-  * *trajectory*
-  * [CFFeatureTypes_Point]
-  * *profile*
