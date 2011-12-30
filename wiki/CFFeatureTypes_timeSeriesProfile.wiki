@@ -2,7 +2,7 @@
 
 = timeSeriesProfile =
 
-There are four ways to represent timeSeriesProfile data in NetCDF files using the CF 1.6 convention.  Multidimensional and Ragged.
+There are four ways to represent timeSeriesProfile data in NetCDF files using the CF 1.6 convention.  These should all be mapped to a common SWE encoding.
 
 == Single Station ==
 
