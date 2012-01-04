@@ -1,5 +1,5 @@
 #summary Logistics and other details supporting the Reference Implementation off site meeting.
-#labels Phase-Design,SOS,Meeting
+#labels Phase-Design,SOS,Featured
 
 =IOOS Reference Implementation Working Group Meeting=
 
