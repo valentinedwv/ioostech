@@ -5,9 +5,7 @@
 
 == Introduction ==
 
-A small team of IOOS RA DMAC Coordinators are working on development of a reference implementation for SOS for use by the IOOS community.  The meeting will be focused on the development of [SWECommonPlan SWE Common] templates for the data delivered in response to an SOS GetObservation call. 
-
-The agenda and specific details are forthcoming.  
+A small team of IOOS RA DMAC Coordinators are working on development of a reference implementation for SOS for use by the IOOS community.  The meeting will be focused on the development of [SWECommonPlan SWE Common] templates for the data delivered in response to an SOS GetObservation request.  A plan for the strategy is developing [SWECommon here]. 
 
 == Meeting Details ==
 
