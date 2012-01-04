@@ -9,7 +9,7 @@ There are *four* ways to represent profile data in NetCDF files using the CF 1.6
 
 == CDL ==
 
-===MultiDimensional===
+=== MultiDimensional ===
 
 ==== Orthogonal ====
 
