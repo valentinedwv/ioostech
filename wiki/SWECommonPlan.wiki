@@ -27,9 +27,6 @@ This section needs to be fleshed out and assigned to individuals, preferably wit
  * create templates for each feature type
  * implement SOS services for each feature type at each RA
  * test by multiple clients
-	* Create a generic testing page with the ability to test servers as they are developed
-	* Can we add an upload form on [ http://testbedwww.sura.org/sosParse/getcap.html Eric’s javascript page] for example
-
 
 
 = Issues to Resolve Prior to the Meeting = 
