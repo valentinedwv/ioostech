@@ -137,7 +137,7 @@ variables:
           <coordinate name="lat">
             <Quantity definition="urn:ogc:def:property:OGC:GeodeticLatitude" axisCode="Y">
               <gml:description>Geodetic latitude of the observation</gml:description>
-              <gml:name>Latitude</gml:name>
+              _<gml:name>Latitude</gml:name>_
               <uom code="deg"/>
             </Quantity>
           </coordinate>
