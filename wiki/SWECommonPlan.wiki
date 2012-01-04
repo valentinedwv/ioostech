@@ -40,8 +40,8 @@ Each issue below needs to be addressed prior to the meeting. Ideally one person 
  * We need a plan for including more metadata in the capabilities response to enable automatic harvesting by the IOOS catalog and other harvesting portals  (See OGC 06-121r9 - OGC Web Services Common Standard Version 2.0.0 for more information on common elements across OGC web services especially including relationships to ISO 1911x standards)
 
 
-== [CFFeatureTypes CF Feature Types] (Kyle) ==
-Gather a list of the sampling feature types currently in use among the IOOS regions and NDBC/CO-OPS.  Then associate a few actual platform types to each sampling feature types so that we have a sense of the information available in the  databases in use by IOOS partners.
+== CF Feature Types (Kyle) ==
+Gather a [CFFeatureTypes list] of the sampling feature types currently in use among the IOOS regions and NDBC/CO-OPS.  Then associate a few actual platform types to each sampling feature types so that we have a sense of the information available in the  databases in use by IOOS partners.
 Examples from the OGC site: [http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial]
 
 [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967 ]
