@@ -25,4 +25,4 @@ XSL translations
 
 =IOOS Modeling Testbed tools =
 
-Eric Bridgers javascript library hosted at Oostethys google code site
+Eric Bridgers javascript library hosted at Oostethys google code site http://code.google.com/p/oostethys/downloads/list
