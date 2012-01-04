@@ -37,18 +37,14 @@ This section needs to be fleshed out and assigned to individuals, preferably wit
 Each issue below needs to be addressed prior to the meeting. Ideally one person will volunteer to lead the discussion for each of the major topics so that we are prepared to make decisions at the meeting.
 
 
- * We need a plan for including more metadata in the capabilities response to enable automatic harvesting by the IOOS catalog and other harvesting portals  (See OGC 06-121r9 - OGC Web Services Common Standard Version 2.0.0 for more information on common elements across OGC web services especially including relationships to ISO 1911* standards)
+ * We need a plan for including more metadata in the capabilities response to enable automatic harvesting by the IOOS catalog and other harvesting portals  (See OGC 06-121r9 - OGC Web Services Common Standard Version 2.0.0 for more information on common elements across OGC web services especially including relationships to ISO 1911x standards)
 
 
- 
- 
-Each issue below needs to be addressed prior to the meeting.  Ideally one person can volunteer to lead the discussion for each of the major topics so that we are prepared to make decisions at the meeting.  
-
-== CF Feature Types (Kyle) ==
+== [CFFeatureTypes CF Feature Types] (Kyle) ==
 Gather a list of the sampling feature types currently in use among the IOOS regions and NDBC/CO-OPS.  Then associate a few actual platform types to each sampling feature types so that we have a sense of the information available in the  databases in use by IOOS partners.
 Examples from the OGC site: [http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial]
 
-[http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967]
+[http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967 ]
 http://www.ogcnetwork.net/GEOSS_Climate_Workshop_2011
 [https://portal.opengeospatial.org/files/?artifact_id=46131 WCS 2.0 Extension for netCDF-CF; CSW and THREDDS Interoperability]
 
