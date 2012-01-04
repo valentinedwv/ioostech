@@ -9,7 +9,25 @@
           * [CFFeatureTypes_timeSeries#Incomplete-Multidimensional Incomplete-Multidimensional]
           * [CFFeatureTypes_timeSeries#Orthogonal-Multidimensional Orthogonal-Multidimensional]
       * [CFFeatureTypes_timeSeries#SWE SWE]
-    * [CFFeatureTypes_profile profile]
+    * [CFFeatureTypes_Profile profile]
+      * [CFFeatureTypes_Profile#CDL CDL]
+        * [CFFeatureTypes_Profile#Multidimensional Multidimensional]
+          * [CFFeatureTypes_Profile#Orthogonal Orthogonal]
+          * [CFFeatureTypes_Profile#Incomplete Incomplete]
+        * [CFFeatureTypes_Profile#Ragged Ragged]
+          * [CFFeatureTypes_Profile#Indexed Indexed]
+          * [CFFeatureTypes_Profile#Contiguous Contiguous]
+      * [CFFeatureTypes_Profile#SWE SWE]
+
+    CDL
+        Multidimensional
+            Orthogonal
+            Incomplete
+        Ragged
+            Indexed
+            Contiguous
+    SWE
+
     * [CFFeatureTypes_timeSeriesProfile timeSeriesProfile]
       * [CFFeatureTypes_timeSeriesProfile#CDL CDL]
         * [CFFeatureTypes_timeSeriesProfile#Single_Station Single Station]
