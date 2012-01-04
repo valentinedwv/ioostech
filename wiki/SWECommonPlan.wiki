@@ -102,14 +102,21 @@ Testing and categorization/compliance would be broken into 3 parts
 == Example Files ==
 http://code.google.com/p/ioostech/source/browse/ndbc_swe_sample-2011-10-19.xml NDBC example of temperature observations from a collection of moored buoys.  There are several other examples in the source repository now [http://code.google.com/p/ioostech/source/browse/]
 
-== Reference Docs (Discussion Papers and Specifications ==
+== Reference Docs (Discussion Papers and Specifications) ==
 http://external.opengis.org/twiki_public/NREwg/GMESPHInstrumentCapabilities
+
 http://external.opengis.org/twiki_public/HydrologyDWG/SOSServingWaterML20
+
 http://opengeo.org/publications/opengeo-swe/
+
 http://opengeo.org/publications/opengeo-swe/OpenGeo-SWE.pdf
+
 http://code.google.com/p/swe-common-data-framework/
+
 http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967
+
 http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
+
 http://code.google.com/p/swe-common-data-framework/
 
 Bermudez, L., T. Cook, et al. (2009). Web feature service (WFS) and sensor observation service (SOS) comparison to publish time series data, IEEE.
@@ -145,4 +152,3 @@ Tamayo, A., P. Viciano, et al. (2011). Empirical Study of Sensor Observation Ser
 Advancing Geoinformation Science for a Changing World. S. Geertman, W. Reinhardt and F. Toppen, Springer Berlin Heidelberg. 1: 185-209.
 
 Zyl, T. L. v., I. Simonis, et al. (2009). "The Sensor Web: systems of sensor systems." International Journal of Digital Earth 2(1): 16-30.
-
