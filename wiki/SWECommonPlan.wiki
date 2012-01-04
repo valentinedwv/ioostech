@@ -111,3 +111,22 @@ http://code.google.com/p/swe-common-data-framework/
 http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967
 http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
 http://code.google.com/p/swe-common-data-framework/
+
+Bermudez, L., T. Cook, et al. (2009). Web feature service (WFS) and sensor observation service (SOS) comparison to publish time series data, IEEE.
+Botts, M., G. Percivall, et al. (2008). OGC Sensor Web Enablement: Overview and High Level Architecture. GeoSensor Networks. N. Silvia, L. Alexandros and S. Anthony, Springer-Verlag: 175-190.
+Bröring, A., J. Echterhoff, et al. (2011). "New Generation Sensor Web Enablement." Sensors 11(3): 2652-2699.
+Consortium, O. G. (2007). OpenGIS® Sensor Model Language (SensorML) Implementation Specification, Open Geospatial Consortium.
+Consortium, O. G. (2007). OpenGIS® SensorML Encoding Standard, version 1.0 Schema - Corrigendum 1, Open Geospatial Consortium.
+Consortium, O. G. (2007). Sensor Observation Service 1.0, Open Geospatial Consortium: 104.
+Consortium, O. G. (2011). Observations and Measurements - XML Implementation V2.0, Open Geospatial Consortium.
+Consortium, O. G. (2011). OGC SWE Common Data Model Encoding Standard, Open Geospatial Consortium.
+Consortium, O. G. (2011). OpenGIS® SWE Service Model Implementation Standard, Open Geospatial Consortium.
+Hankin, S. C., J. D. Blower, et al. (2009). NetCDF-CF-OPeNDAP: Standards for Ocean Data Interoperability and Object Lessons for Community Data Standards Processes. OceanObs09. Venice, Italy.
+Janowicz, K., A. Bröring, et al. (2011). "A RESTful proxy and data model for linked sensor data." International Journal of Digital Earth: 1-22.
+Na, A. and M. Priest (2007). Sensor Observation Service Version 1.0. O. G. C. Inc. 1.0: 90.
+Nativi, S., J. Caron, et al. (2008). "Unidata’s Common Data Model mapping to the ISO 19123 Data Model." Earth Science Informatics 1(2): 59-78.
+Sheth, A., C. Henson, et al. (2008). "Semantic sensor web." IEEE Internet Computing: 78-83.
+Tamayo, A., P. Viciano, et al. (2011). Empirical Study of Sensor Observation Services Server Instances
+Advancing Geoinformation Science for a Changing World. S. Geertman, W. Reinhardt and F. Toppen, Springer Berlin Heidelberg. 1: 185-209.
+Zyl, T. L. v., I. Simonis, et al. (2009). "The Sensor Web: systems of sensor systems." International Journal of Digital Earth 2(1): 16-30.
+
