@@ -30,7 +30,6 @@ This section needs to be fleshed out and assigned to individuals, preferably wit
 	* Create a generic testing page with the ability to test servers as they are developed
 	* Can we add an upload form on [ http://testbedwww.sura.org/sosParse/getcap.html Eric’s javascript page] for example
 
-= Requirements =
 
 
 = Issues to Resolve Prior to the Meeting = 
