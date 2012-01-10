@@ -1,0 +1,22 @@
+Resources for and Comparisons of O&M, SWE and SOS (Versions 1.0 and 2.0)
+
+= Introduction =
+
+The purpose of this document is to detail components of the Sensor Observation Service (SOS) data model definitions as they are described by various authorities and groups which advocate best practices.  Both SOS 1.0 and the SOS 2.0 draft Observation and Measurement (O&M) data models are inspected.  Based upon review of these materials a draft definition for SOS terms is provided.        
+
+
+= Details =
+
+*The following resources are relevant:*<br><br>
+*Observation and Measurement*<br>
+O&M 1.0.0 for SOS 1.0.0.(52 north) - https://wiki.52north.org/bin/view/Sensornet/SosDataModeling<br>
+Basic O&M 2.0.0 for SOS 2.0.0. - http://www.ogcnetwork.net/sos_2_0/tutorial/om<br>
+
+OOSTethys Interpretation Feature of Interest- http://www.oostethys.org/best-practices/foi
+
+
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
