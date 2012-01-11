@@ -2,7 +2,7 @@ Resources for and Comparisons of O&M, SWE and SOS (Versions 1.0 and 2.0)
 
 = Introduction =
 
-The purpose of this document is to detail components of the Sensor Observation Service (SOS)as they are described by various authorities and groups which advocate best practices. Included in this post are resources which detail the components between SWE Common and Observation and Measurement
+The purpose of this document is to detail components of the Sensor Observation Service (SOS)as they are described by various authorities and groups which advocate best practices. Included in this post are resources which detail the discrepancies between SWE Common and Observation and Measurement versions 1.0 and 2.0.  
 
 
 = Resources =
@@ -16,6 +16,6 @@ Basic O&M 2.0.0 for SOS 2.0.0. - http://www.ogcnetwork.net/sos_2_0/tutorial/om<b
 OGC SWE Common 1.0 Standard coupled with SensorML Standard - http://portal.opengeospatial.org/files/?artifact_id=21273<br>
 OGC SWE Common 2.0 Standard - http://portal.opengeospatial.org/files/?artifact_id=41157<br>
 
+= Discussion =
 
-
-OOSTethys Interpretation Feature of Interest- http://www.oostethys.org/best-practices/foi
+Though it is clear that O&M version 2.0 is coupled with SOS Version 2.0 it is not clear that the same relationship exists for SWE Common 2.0.  From initial inspection, it seems that SWE Common 2.0 has already been absorbed into the data packaging component of the 52 North SOS 1.0 version.
