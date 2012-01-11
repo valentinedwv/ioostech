@@ -93,48 +93,25 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || GetObservation Parameter Term || SOS URL || 
 || mean_wave_direction_peak_period|| http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi || 
 || swell_height || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
-
 || precipitation_accumulated_daily || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
 || oxygen_saturation || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
 || nitrate || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
 || cdom || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
 || eastward_current || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
-
 || northward_current || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
-
 || stream_velocity || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
-
 || chl_concentration || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
 || depth || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
-
 || current_to_direction || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
-
 || discharge || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
 || average_wave_period || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
 || solar_radiation || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
 || relative_humidity || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
-
 || turbidity || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
-
 || precipitation || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
 || ph || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||	
-	
 || gage_height || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||	
-
 || salinity || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||	
-
-
 || current_speed || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||	
 || water_conductivity || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
 || water_level || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
