@@ -9,7 +9,7 @@
 Reorganize this page into a listing of types of vocabularies to be addressed, and where in SOS they are relevant (GetCapabilities, SensorML, etc): 
   * Observed variables
   * platform/asset types
-  * roles
+  * [RepresentingRolesinServiceMetadata roles]
   * regions
   * Regional Association codes/identifiers
   * etc
