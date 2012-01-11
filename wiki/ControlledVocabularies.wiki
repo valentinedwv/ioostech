@@ -125,6 +125,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || wind_from_direction ||
 
 ==SCCOOS== 
+|| GetObservation Term || SOS URL ||
 || WaterTemperature || 
 || Salinity || 
 || Waves || 
