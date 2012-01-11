@@ -12,7 +12,7 @@ The purpose of this document is to detail components of the Sensor Observation S
 O&M 1.0.0 for SOS 1.0.0.(52 north) - https://wiki.52north.org/bin/view/Sensornet/SosDataModeling<br>
 Basic O&M 2.0.0 for SOS 2.0.0. - http://www.ogcnetwork.net/sos_2_0/tutorial/om<br>
 
-*SWE COmmon*<br>
+*SWE Common*<br>
 OGC SWE Common 1.0 Standard coupled with SensorML Standard - http://portal.opengeospatial.org/files/?artifact_id=21273<br>
 OGC SWE Common 2.0 Standard - http://portal.opengeospatial.org/files/?artifact_id=41157<br>
 
