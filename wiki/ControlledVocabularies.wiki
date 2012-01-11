@@ -90,7 +90,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || total phosphorus ||  ||µM  ||  ||  ||
 
 ==SECOORA== 
-|| GetObservation Parameter Term || SOS URL || 
+|| GetObservation Term || SOS URL || 
 || mean_wave_direction_peak_period|| http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi || 
 || swell_height || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
 || precipitation_accumulated_daily || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi ||
