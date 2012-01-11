@@ -19,3 +19,8 @@ OGC SWE Common 2.0 Standard - http://portal.opengeospatial.org/files/?artifact_i
 = Discussion =
 
 Though it is clear that O&M version 2.0 is coupled with SOS Version 2.0 it is not clear that the same relationship exists for SWE Common 2.0.  From initial inspection, it seems that SWE Common 2.0 has already been absorbed into the data packaging component of the 52 North SOS 1.0 version.
+
+Tentative decision for IOOS Workshop
+SOS 1.0
+O&M 1.0
+SWE Common Data Encoding 2.0 
