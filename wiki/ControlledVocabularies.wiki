@@ -90,7 +90,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || total phosphorus ||  ||µM  ||  ||  ||
 
 ==SECOORA== 
-|| GetObservation Term || SOS URL || 
+|| GetObservation Term ||
 || mean_wave_direction_peak_period || 
 || swell_height || 
 || precipitation_accumulated_daily || 
@@ -125,7 +125,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || wind_from_direction ||
 
 ==SCCOOS== 
-|| GetObservation Term || SOS URL ||
+|| GetObservation Term || 
 || WaterTemperature || 
 || Salinity || 
 || Waves || 
