@@ -2,7 +2,7 @@ Resources for and Comparisons of O&M, SWE and SOS (Versions 1.0 and 2.0)
 
 = Introduction =
 
-The purpose of this document is to detail components of the Sensor Observation Service (SOS) data model definitions as they are described by various authorities and groups which advocate best practices.  Both SOS 1.0 and the SOS 2.0 draft Observation and Measurement (O&M) data models are inspected.  Based upon review of these materials a draft definition for SOS terms is provided.        
+The purpose of this document is to detail components of the Sensor Observation Service (SOS)as they are described by various authorities and groups which advocate best practices. Included in this post are resources which detail the components between SWE Common and Observation and Measurement
 
 
 = Resources =
@@ -19,4 +19,3 @@ OGC SWE Common 2.0 Standard - http://portal.opengeospatial.org/files/?artifact_i
 
 
 OOSTethys Interpretation Feature of Interest- http://www.oostethys.org/best-practices/foi
-
