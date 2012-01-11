@@ -89,8 +89,8 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || total nitrogen ||  ||µM   ||    ||  ||
 || total phosphorus ||  ||µM  ||  ||  ||
 
-|| IOOS RA || GetObservation Name || SOS URL || 
-|| SECOORA || term:http://carolinasrcoos.org/cf#mean_wave_direction_peak_period:2 || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi || 
+|| IOOS RA || GetObservation Parameter Term || SOS URL || 
+|| SECOORA || http://carolinasrcoos.org/cf#mean_wave_direction_peak_period|| http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi || 
 
 term:http://carolinasrcoos.org/cf#swell_height:4	
 term:http://carolinasrcoos.org/cf#precipitation_accumulated_daily:6	
