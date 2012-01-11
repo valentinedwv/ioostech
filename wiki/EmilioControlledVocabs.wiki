@@ -8,8 +8,8 @@
 
 Reorganize this page into a listing of types of vocabularies to be addressed, and where in SOS they are relevant (GetCapabilities, SensorML, etc): 
   * Observed variables
-  * platform/asset types
-  * [RepresentingRolesinServiceMetadata roles]
+  * platform/asset types. See [DescribeSensorMetadataForIOOSSOS]
+  * [RepresentingRolesinServiceMetadata roles]. See also [DescribeSensorMetadataForIOOSSOS]
   * regions
   * Regional Association codes/identifiers
   * etc
