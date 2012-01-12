@@ -107,7 +107,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || average_wave_period ||http://carolinasrcoos.org/cf#average_wave_period ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || solar_radiation || http://carolinasrcoos.org/cf#solar_radiation ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || relative_humidity || http://carolinasrcoos.org/cf#relative_humidity ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
-|| turbidity || http://carolinasrcoos.org/cf#turbidity ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| turbidity || http://carolinasrcoos.org/cf#turbidity || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || precipitation || http://carolinasrcoos.org/cf#precipitation || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || ph || http://carolinasrcoos.org/cf#ph ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS || 
 || oxygen_concentration || http://carolinasrcoos.org/cf#oxygen_concentration || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
