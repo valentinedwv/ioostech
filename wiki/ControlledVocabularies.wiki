@@ -107,7 +107,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || average_wave_period ||term:http://carolinasrcoos.org/cf#average_wave_period ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || solar_radiation || term:http://carolinasrcoos.org/cf#solar_radiation ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || relative_humidity || term:http://carolinasrcoos.org/cf#relative_humidity ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
-|| turbidity || term:http://carolinasrcoos.org/cf#turbidity || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| turbidity || term:http://carolinasrcoos.org/cf#turbidity|| http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || precipitation || term:http://carolinasrcoos.org/cf#precipitation || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || ph || term:http://carolinasrcoos.org/cf#ph ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS || 
 || oxygen_concentration || http://carolinasrcoos.org/cf#oxygen_concentration || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
@@ -122,7 +122,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || wind_gust || term:http://carolinasrcoos.org/cf#wind_gust || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || air_pressure || term:http://carolinasrcoos.org/cf#air_pressure || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || air_temperature || term:http://carolinasrcoos.org/cf#air_temperature || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
-|| wind_speed || term:http://carolinasrcoos.org/cf#wind_speed || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| wind_speed || term:http://carolinasrcoos.org/cf#wind_speed|| http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 || wind_from_direction || term:http://carolinasrcoos.org/cf#wind_from_direction || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 
 ==SCCOOS== 
