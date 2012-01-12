@@ -91,7 +91,8 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 ==SECOORA== 
 || GetObservation Term ||
-|| mean_wave_direction_peak_period || 
+|| mean_wave_direction_peak_period || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+ 
 || swell_height || 
 || precipitation_accumulated_daily || 
 || oxygen_saturation || 
