@@ -94,7 +94,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || mean_wave_direction_peak_period || http://carolinasrcoos.org/cf#mean_wave_direction_peak_period||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || swell_height || http://carolinasrcoos.org/cf#swell_height||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || precipitation_accumulated_daily || http://carolinasrcoos.org/cf#precipitation_accumulated_daily ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
-|| oxygen_saturation || http://carolinasrcoos.org/cf#oxygen_saturation||
+|| oxygen_saturation || http://carolinasrcoos.org/cf#oxygen_saturation|| http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS
 || nitrate || http://carolinasrcoos.org/cf#nitrate||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || cdom || http://carolinasrcoos.org/cf#cdom||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || eastward_current ||http://carolinasrcoos.org/cf#eastward_current||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
