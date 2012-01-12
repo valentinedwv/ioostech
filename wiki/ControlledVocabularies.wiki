@@ -129,16 +129,16 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || WaterTemperature || http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterTemperature ||http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
 || Salinity || http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Salinity ||http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
 || Waves ||http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Waves||http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
+ 
 ==PacIOOS== 
-|| GetObservation Term || Vocabulary term URL ||SOS URL || 
-|| mass_concentration_of_oxygen_in_sea_water || http://mmisw.org/ont/cf/parameter/mass_concentration_of_oxygen_in_sea_water||http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
-||sea_water_pressure ||http://mmisw.org/ont/cf/parameter/sea_water_pressure||
+|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| mass_concentration_of_oxygen_in_sea_water || http://mmisw.org/ont/cf/parameter/mass_concentration_of_oxygen_in_sea_water || http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
+|| sea_water_pressure || http://mmisw.org/ont/cf/parameter/sea_water_pressure ||
 || http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
-||conductivity||http://mmisw.org/ont/cf/parameter/conductivity||	http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
-||sea_water_temperature|| term:http://mmisw.org/ont/cf/parameter/sea_water_temperature||http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
-||sea_water_salinity||term:http://mmisw.org/ont/cf/parameter/sea_water_salinity||http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
-||chlorophyll_concentration_in_sea_water||term:http://mmisw.org/ont/cf/parameter/chlorophyll_concentration_in_sea_water||	http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
-
+|| conductivity|| http://mmisw.org/ont/cf/parameter/conductivity ||	http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
+|| sea_water_temperature || term:http://mmisw.org/ont/cf/parameter/sea_water_temperature || http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
+|| sea_water_salinity||term:http://mmisw.org/ont/cf/parameter/sea_water_salinity|| http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
+|| chlorophyll_concentration_in_sea_water || term:http://mmisw.org/ont/cf/parameter/chlorophyll_concentration_in_sea_water ||	http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS
 
 ==NERACOOS== 
 ||GetObservation Term || Vocabulary term URL ||SOS URL || 
