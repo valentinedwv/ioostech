@@ -142,6 +142,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || chlorophyll_concentration_in_sea_water || term:http://mmisw.org/ont/cf/parameter/chlorophyll_concentration_in_sea_water ||	http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS ||
 
 
+
 ==NERACOOS== 
 || GetObservation Term || Vocabulary term URL || SOS URL || 
 || surface_partial_pressure_of_carbon_dioxide_in_air || term:urn:ogc:def:phenomenon:mmisw.org:cf:surface_partial_pressure_of_carbon_dioxide_in_air || http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
