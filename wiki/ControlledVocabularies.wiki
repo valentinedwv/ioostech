@@ -150,8 +150,6 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 ||oxygen_saturation||term:urn:ogc:def:phenomenon:mmisw.org:cf:oxygen_saturation||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 ||Ed_PAR || term:urn:ogc:def:phenomenon:mmisw.org:cf:Ed_PAR|| http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 ||chlorophyll||term:urn:ogc:def:phenomenon:mmisw.org:cf:chlorophyll|| http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
-|| turbidity || term:urn:ogc:def:phenomenon:mmisw.org:cf:turbidity ||
-http://www.neracoos.org/cgi-bin/sos/V1.0oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 ||dissolved_oxygen||term:urn:ogc:def:phenomenon:mmisw.org:cf:dissolved_oxygen:6||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 ||visibility_in_air|| term:urn:ogc:def:phenomenon:mmisw.org:cf:visibility_in_air ||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 ||sea_water_density||term:urn:ogc:def:phenomenon:mmisw.org:cf:sea_water_density:11||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
@@ -163,13 +161,13 @@ http://www.neracoos.org/cgi-bin/sos/V1.0oostethys_sos.cgi?request=GetCapabilitie
 || significant_height_of_wind_and_swell_waves || term:urn:ogc:def:phenomenon:mmisw.org:cf:significant_height_of_wind_and_swell_waves:19||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || wind_from_direction||term:urn:ogc:def:phenomenon:mmisw.org:cf:wind_from_direction:20||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || sea_level_pressure||term:urn:ogc:def:phenomenon:mmisw.org:cf:sea_level_pressure:22||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS || http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
-|| wind_speed || term:urn:ogc:def:phenomenon:mmisw.org:cf:wind_speed ||
-http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 ||air_temperature||term:urn:ogc:def:phenomenon:mmisw.org:cf:air_temperature:23||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 ||wind_gust||term:urn:ogc:def:phenomenon:mmisw.org:cf:wind_gust||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 ||sea_water_temperature||term:urn:ogc:def:phenomenon:mmisw.org:cf:sea_water_temperature:24||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
-
-
+|| turbidity || term:urn:ogc:def:phenomenon:mmisw.org:cf:turbidity||
+http://www.neracoos.org/cgi-bin/sos/V1.0oostethys_sos.cgi?request=GetCapabilities&service=SOS||
+|| wind_speed || term:urn:ogc:def:phenomenon:mmisw.org:cf:wind_speed ||
+http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 ==NDBC== 
 
 ||sea_water_electrical_conductivity||term:http://mmisw.org/ont/cf/parameter/sea_water_electrical_conductivity:46||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
