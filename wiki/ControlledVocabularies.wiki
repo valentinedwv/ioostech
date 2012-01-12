@@ -165,9 +165,9 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || wind_gust||term:urn:ogc:def:phenomenon:mmisw.org:cf:wind_gust||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 ||sea_water_temperature||term:urn:ogc:def:phenomenon:mmisw.org:cf:sea_water_temperature:24||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 || turbidity || term:urn:ogc:def:phenomenon:mmisw.org:cf:turbidity ||
-http://www.neracoos.org/cgi-bin/sos/V1.0oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+
 || wind_speed || term:urn:ogc:def:phenomenon:mmisw.org:cf:wind_speed ||
-http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+
 
 
 ==NDBC== 
@@ -180,7 +180,7 @@ http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabiliti
 ||air_pressure_at_sea_level||term:http://mmisw.org/ont/cf/parameter/air_pressure_at_sea_level:338||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
 ||air_temperature||term:http://mmisw.org/ont/cf/parameter/air_temperature:403 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
 ||sea_water_temperature || term:http://mmisw.org/ont/cf/parameter/sea_water_temperature:444 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
-||winds||term:http://mmisw.org/ont/cf/parameter/winds:496 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
+||winds||term:http://mmisw.org/ont/cf/parameter/winds:496|| http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
 
 
 ==Semantic Web Maturity and Examples==
