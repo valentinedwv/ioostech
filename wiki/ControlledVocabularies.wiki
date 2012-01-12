@@ -168,6 +168,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 http://www.neracoos.org/cgi-bin/sos/V1.0oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 || wind_speed || term:urn:ogc:def:phenomenon:mmisw.org:cf:wind_speed ||
 http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
+
 ==NDBC== 
 
 ||sea_water_electrical_conductivity||term:http://mmisw.org/ont/cf/parameter/sea_water_electrical_conductivity:46||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
