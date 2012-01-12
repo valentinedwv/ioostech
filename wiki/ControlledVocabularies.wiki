@@ -124,6 +124,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || air_temperature || http://carolinasrcoos.org/cf#air_temperature || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || wind_speed || http://carolinasrcoos.org/cf#wind_speed || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || wind_from_direction || http://carolinasrcoos.org/cf#wind_from_direction || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+
 ==SCCOOS== 
 || GetObservation Term || Vocabulary term URL ||SOS URL ||
 || WaterTemperature || http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterTemperature ||http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
