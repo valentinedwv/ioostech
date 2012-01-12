@@ -127,12 +127,10 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 ==SCCOOS== 
 || GetObservation Term || Vocabulary term URL || SOS URL ||
-
 || WaterTemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterTemperature || http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
-
 || Salinity || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Salinity || http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
-
 || Waves || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Waves||http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
+
  
 ==PacIOOS== 
 || GetObservation Term || Vocabulary term URL || SOS URL ||
