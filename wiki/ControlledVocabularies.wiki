@@ -143,10 +143,10 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 ==NERACOOS== 
 || GetObservation Term || Vocabulary term URL ||SOS URL || 
-|| surface_partial_pressure_of_carbon_dioxide_in_air || term:urn:ogc:def:phenomenon:mmisw.org:cf:surface_partial_pressure_of_carbon_dioxide_in_air:2
-|| http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
-|| surface_partial_pressure_of_carbon_dioxide_in_sea_water||term:urn:ogc:def:phenomenon:mmisw.org:cf:surface_partial_pressure_of_carbon_dioxide_in_sea_water:3||
-|| http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
+
+|| surface_partial_pressure_of_carbon_dioxide_in_air || term:urn:ogc:def:phenomenon:mmisw.org:cf:surface_partial_pressure_of_carbon_dioxide_in_air:2 || http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
+||surface_partial_pressure_of_carbon_dioxide_in_sea_water||term:urn:ogc:def:phenomenon:mmisw.org:cf:surface_partial_pressure_of_carbon_dioxide_in_sea_water:3||
+|| http://www.neracoos.org/cgi-bin/sos/V1.0 oostethys_sos.cgi?request=GetCapabilities&service=SOS||
 ||percent_oxygen_saturation||term:urn:ogc:def:phenomenon:mmisw.org:cf:percent_oxygen_saturation:3||http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS||
 ||oxygen_saturation|| term:urn:ogc:def:phenomenon:mmisw.org:cf:oxygen_saturation:3
 ||http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS||
