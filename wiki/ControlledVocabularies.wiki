@@ -177,8 +177,8 @@ http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabiliti
 ||currents||term:http://mmisw.org/ont/cf/parameter/currents:131 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
 ||waves||term:http://mmisw.org/ont/cf/parameter/waves:226 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
 ||air_pressure_at_sea_level||term:http://mmisw.org/ont/cf/parameter/air_pressure_at_sea_level:338||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
-||air_temperature||term:http://mmisw.org/ont/cf/parameter/air_temperature:403http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
-||sea_water_temperature || term:http://mmisw.org/ont/cf/parameter/sea_water_temperature:444http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
+||air_temperature||term:http://mmisw.org/ont/cf/parameter/air_temperature:403 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
+||sea_water_temperature || term:http://mmisw.org/ont/cf/parameter/sea_water_temperature:444 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
 ||winds||term:http://mmisw.org/ont/cf/parameter/winds:496 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
 
 
