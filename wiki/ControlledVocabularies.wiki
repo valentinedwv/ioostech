@@ -90,40 +90,40 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || total phosphorus ||  ||µM  ||  ||  ||
 
 ==SECOORA== 
-|| GetObservation Term ||
-|| mean_wave_direction_peak_period || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
- 
-|| swell_height || 
-|| precipitation_accumulated_daily || 
-|| oxygen_saturation || 
-|| nitrate || 
-|| cdom || 
-|| eastward_current ||
-|| northward_current || 
-|| stream_velocity || 
-|| chl_concentration || 
-|| depth || 
-|| current_to_direction ||
-|| discharge || 
-|| average_wave_period ||
-|| solar_radiation || 
-|| relative_humidity || 
-|| turbidity || 
-|| precipitation ||
-|| ph || 
-|| gage_height ||
-|| salinity ||
-|| current_speed || 
-|| water_conductivity || 
-|| water_level || 
-|| significant_wave_height || 
-|| dominant_wave_period || 
-|| water_temperature || 
-|| wind_gust || 
-|| air_pressure ||
-|| air_temperature || 
-|| wind_speed || 
-|| wind_from_direction ||
+|| GetObservation Term || Vocabulary term URL ||SOS URL
+|| mean_wave_direction_peak_period || http://carolinasrcoos.org/cf#mean_wave_direction_peak_period||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| swell_height || http://carolinasrcoos.org/cf#swell_height||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| precipitation_accumulated_daily || http://carolinasrcoos.org/cf#precipitation_accumulated_daily ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| oxygen_saturation || http://carolinasrcoos.org/cf#oxygen_saturation||
+|| nitrate || http://carolinasrcoos.org/cf#nitrate||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| cdom || http://carolinasrcoos.org/cf#cdom||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| eastward_current ||http://carolinasrcoos.org/cf#eastward_current||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| northward_current ||http://carolinasrcoos.org/cf#northward_current ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS || 
+|| stream_velocity || http://carolinasrcoos.org/cf#stream_velocity ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| chl_concentration || http://carolinasrcoos.org/cf#chl_concentration ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| depth || term:http://carolinasrcoos.org/cf#depth || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| current_to_direction ||http://carolinasrcoos.org/cf#current_to_direction ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| discharge || http://carolinasrcoos.org/cf#discharge||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| average_wave_period ||http://carolinasrcoos.org/cf#average_wave_period ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| solar_radiation || http://carolinasrcoos.org/cf#solar_radiation ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| relative_humidity || http://carolinasrcoos.org/cf#relative_humidity ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| turbidity || http://carolinasrcoos.org/cf#turbidity ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| precipitation ||http://carolinasrcoos.org/cf#precipitation ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| ph ||http://carolinasrcoos.org/cf#ph ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS || 
+|| oxygen_concentration ||http://carolinasrcoos.org/cf#oxygen_concentration ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+||gage_height || http://carolinasrcoos.org/cf#gage_height ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| salinity ||http://carolinasrcoos.org/cf#salinity ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| current_speed || http://carolinasrcoos.org/cf#current_speed ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| water_conductivity || http://carolinasrcoos.org/cf#water_conductivity ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| water_level ||http://carolinasrcoos.org/cf#water_level ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS || 
+|| significant_wave_height || http://carolinasrcoos.org/cf#significant_wave_height ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| dominant_wave_period || http://carolinasrcoos.org/cf#dominant_wave_period ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| water_temperature || http://carolinasrcoos.org/cf#water_temperature ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| wind_gust || http://carolinasrcoos.org/cf#wind_gust ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| air_pressure ||http://carolinasrcoos.org/cf#air_pressure ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| air_temperature || http://carolinasrcoos.org/cf#air_temperature ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| wind_speed || http://carolinasrcoos.org/cf#wind_speed ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+|| wind_from_direction ||http://carolinasrcoos.org/cf#wind_from_direction ||http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 
 ==SCCOOS== 
 || GetObservation Term || 
