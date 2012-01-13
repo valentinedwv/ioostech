@@ -208,8 +208,6 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 ==GCOOS== 
 || GetObservation Term || Vocabulary term URL || SOS URL || 
-
-
 || waves || term:http://mmisw.org/ont/gcoos/parameter/waves:2 || http://gcoos.rsmas.miami.edu/sos/sos_server.php?request=GetCapabilities&service=SOS || 
 || sea_floor_depth_below_sea_surface ||  term:http://mmisw.org/ont/gcoos/parameter/sea_floor_depth_below_sea_surface:36 || http://gcoos.rsmas.miami.edu/sos/sos_server.php?request=GetCapabilities&service=SOS || 
 ||  sea_water_salinity ||  term:http://mmisw.org/ont/gcoos/parameter/sea_water_salinity:59 || http://gcoos.rsmas.miami.edu/sos/sos_server.php?request=GetCapabilities&service=SOS ||
@@ -234,7 +232,6 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 ==CeNCOOS== 
 || GetObservation Term || Vocabulary term URL || SOS URL || 
-|| http://204.115.180.244/sos/server.php?request=GetCapabilities&service=SOS ||
 || waves || term:http://mmisw.org/ont/cf/parameter/waves:24 || http://204.115.180.244/sos/server.php?request=GetCapabilities&service=SOS ||
 || sea_floor_depth_below_sea_surface || term:http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface:26 || http://204.115.180.244/sos/server.php?request=GetCapabilities&service=SOS ||
 || sea_water_salinity || term:http://mmisw.org/ont/cf/parameter/sea_water_salinity:30 || http://204.115.180.244/sos/server.php?request=GetCapabilities&service=SOS ||
