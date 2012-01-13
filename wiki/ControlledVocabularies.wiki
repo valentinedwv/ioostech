@@ -90,7 +90,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || total phosphorus ||  ||µM  ||  ||  ||
 
 ==SECOORA== 
-|| GetObservation Term || Vocabulary term URL || SOS URL ||
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || mean_wave_direction_peak_period || term:http://carolinasrcoos.org/cf#mean_wave_direction_peak_period || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || swell_height || term:http://carolinasrcoos.org/cf#swell_height||http://neptune.baruch.sc.edu/cgi-bin oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 || precipitation_accumulated_daily || http://carolinasrcoos.org/cf#precipitation_accumulated_daily || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
@@ -126,14 +126,14 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || wind_from_direction || term:http://carolinasrcoos.org/cf#wind_from_direction || http://neptune.baruch.sc.edu/cgi-bin/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 
 ==SCCOOS== 
-|| GetObservation Term || Vocabulary term URL || SOS URL ||
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || WaterTemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterTemperature || http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
 || Salinity || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Salinity || http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
 || Waves || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Waves||http://sccoos-obs0.ucsd.edu/sos/server.php?request=GetCapabilities&service=SOS ||
  
 
 ==PacIOOS== 
-|| GetObservation Term || Vocabulary term URL || SOS URL ||
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || mass_concentration_of_oxygen_in_sea_water || term:http://mmisw.org/ont/cf/parameter/mass_concentration_of_oxygen_in_sea_water || http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS||
 || sea_water_pressure || term:http://mmisw.org/ont/cf/parameter/sea_water_pressure || term:http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS ||
 || conductivity || term:http://mmisw.org/ont/cf/parameter/conductivity || http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS ||
@@ -143,7 +143,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 
 ==NERACOOS== 
-|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || surface_partial_pressure_of_carbon_dioxide_in_air || term:urn:ogc:def:phenomenon:mmisw.org:cf:surface_partial_pressure_of_carbon_dioxide_in_air:2 || http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 ||surface_partial_pressure_of_carbon_dioxide_in_sea_water || term:urn:ogc:def:phenomenon:mmisw.org:cf:surface_partial_pressure_of_carbon_dioxide_in_sea_water:3 || http://www.neracoos.org/cgi-bin/sos/V1.0 oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
 ||percent_oxygen_saturation || term:urn:ogc:def:phenomenon:mmisw.org:cf:percent_oxygen_saturation||http://oos.soest.hawaii.edu/oostethys/sos?request=GetCapabilities&service=SOS||
@@ -170,7 +170,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 
 ==NDBC== 
-
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 ||sea_water_electrical_conductivity||term:http://mmisw.org/ont/cf/parameter/sea_water_electrical_conductivity:46||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
 ||sea_floor_depth_below_sea_surface||term:http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface:56||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
 ||sea_water_salinity||term:http://mmisw.org/ont/cf/parameter/sea_water_salinity:89||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
@@ -182,18 +182,16 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 ||winds||term:http://mmisw.org/ont/cf/parameter/winds:496|| http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
 
 ==NANOOS== 
-
-|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || WaterLevel || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterLevel || http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
 || Salinity || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Salinity || http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
 || WaterTemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterTemperature || http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
 
-==MARACOOS== 
-|| GetObservation Term || Vocabulary term URL || SOS URL || 
+==MARACOOS== || GetObservation Term || Vocabulary ID term || SOS URL || 
 ||Winds||term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Winds:427|| http://www.weatherflow.com/sos/sos.pl?request=GetCapabilities&service=SOS ||
 
 ==GLOS== 
-|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 ||waveperiod || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#waveperiod:65 ||http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
 ||waveheight || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#waveheight:68 || http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
 || watertemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#watertemperature:74 ||http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
@@ -207,7 +205,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 
 ==GCOOS== 
-|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || waves || term:http://mmisw.org/ont/gcoos/parameter/waves:2 || http://gcoos.rsmas.miami.edu/sos/sos_server.php?request=GetCapabilities&service=SOS || 
 || sea_floor_depth_below_sea_surface ||  term:http://mmisw.org/ont/gcoos/parameter/sea_floor_depth_below_sea_surface:36 || http://gcoos.rsmas.miami.edu/sos/sos_server.php?request=GetCapabilities&service=SOS || 
 ||  sea_water_salinity ||  term:http://mmisw.org/ont/gcoos/parameter/sea_water_salinity:59 || http://gcoos.rsmas.miami.edu/sos/sos_server.php?request=GetCapabilities&service=SOS ||
@@ -218,7 +216,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 
 ==CO-OPS== 
-|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || sea_water_salinity || term:http://mmisw.org/ont/cf/parameter/sea_water_salinity:22 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
 || sea_water-electrical_conductivity || term:http://mmisw.org/ont/cf/parameter/sea_water_electrical_conductivity:22 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
 || sea_water_temperature || term:http://mmisw.org/ont/cf/parameter/sea_water_temperature:220 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS || 
@@ -231,7 +229,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 
 ==CeNCOOS== 
-|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || waves || term:http://mmisw.org/ont/cf/parameter/waves:24 || http://204.115.180.244/sos/server.php?request=GetCapabilities&service=SOS ||
 || sea_floor_depth_below_sea_surface || term:http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface:26 || http://204.115.180.244/sos/server.php?request=GetCapabilities&service=SOS ||
 || sea_water_salinity || term:http://mmisw.org/ont/cf/parameter/sea_water_salinity:30 || http://204.115.180.244/sos/server.php?request=GetCapabilities&service=SOS ||
@@ -239,7 +237,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || sea_water_temperature || term:http://mmisw.org/ont/cf/parameter/sea_water_temperature:104 || http://204.115.180.244/sos/server.php?request=GetCapabilities&service=SOS ||
 
 ==AOOS== 
-|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || SwellPeriod || term:urn:ogc:def:phenomenon:OGC:1.0.30:SwellPeriod:1||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 || ReservoiWaterSurfaceabovedatum ||term:urn:ogc:def:phenomenon:OGC:1.0.30:ReservoirWaterSurfaceaboveDatum:1||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 || SignficantWaveHeight ||term:urn:ogc:def:phenomenon:OGC:1.0.30:SignificantWaveHeight:1||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
@@ -288,7 +286,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 ||Tides||term:urn:ogc:def:phenomenon:OGC:1.0.30:Tides:468||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 
 ==USACE== 
-|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| GetObservation Term || Vocabulary ID term || SOS URL || 
 || sea_floor_depth_below_sea_surface ||term:http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface:3 || http://sos.usace.army.mil/oracle_server.php?request=GetCapabilities&service=SOS||
 
 
