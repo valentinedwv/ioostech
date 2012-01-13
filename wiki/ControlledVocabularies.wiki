@@ -271,7 +271,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 ||DewPoint||term:urn:ogc:def:phenomenon:OGC:1.0.30:DewPoint:3||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||Webcam||term:urn:ogc:def:phenomenon:OGC:1.0.30:Webcam:3||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||pHWater||term:urn:ogc:def:phenomenon:OGC:1.0.30:pHWater:3||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
-||FuelMoisture||term:urn:ogc:def:phenomenon:OGC:1.0.30:FuelMoisture:4
+||FuelMoisture||term:urn:ogc:def:phenomenon:OGC:1.0.30:FuelMoisture:4||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||FuelTemperature||term:urn:ogc:def:phenomenon:OGC:1.0.30:FuelTemperature:6||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||WindGustDirection||term:urn:ogc:def:phenomenon:OGC:1.0.30:WindGustDirection:11||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||BarometricPressure||term:urn:ogc:def:phenomenon:OGC:1.0.30:BarometricPressure:13||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
@@ -281,7 +281,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 ||SnowWaterEquivalent||term:urn:ogc:def:phenomenon:OGC:1.0.30:SnowWaterEquivalent:35||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||WaterTemperatureIntragravel||term:urn:ogc:def:phenomenon:OGC:1.0.30:WaterTemperatureIntragravel:36||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||RelativeHumidity||term:urn:ogc:def:phenomenon:OGC:1.0.30:RelativeHumidity:37||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
-||SnowDepth||term:urn:ogc:def:phenomenon:OGC:1.0.30:SnowDepth:53
+||SnowDepth||term:urn:ogc:def:phenomenon:OGC:1.0.30:SnowDepth:53||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||WaterTemperature||term:urn:ogc:def:phenomenon:OGC:1.0.30:WaterTemperature:54||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||SolarRadiation||term:urn:ogc:def:phenomenon:OGC:1.0.30:SolarRadiation:57||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 ||AirTemperatureAverage||term:urn:ogc:def:phenomenon:OGC:1.0.30:AirTemperatureAverage:58||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
