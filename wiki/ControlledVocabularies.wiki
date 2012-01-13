@@ -221,7 +221,6 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 ==CO-OPS== 
 || GetObservation Term || Vocabulary term URL || SOS URL || 
-
 || sea_water_salinity || term:http://mmisw.org/ont/cf/parameter/sea_water_salinity:22 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
 || sea_water-electrical_conductivity || term:http://mmisw.org/ont/cf/parameter/sea_water_electrical_conductivity:22 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
 || sea_water_temperature || term:http://mmisw.org/ont/cf/parameter/sea_water_temperature:220 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS || 
@@ -244,11 +243,6 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 
 ==AOOS== 
 || GetObservation Term || Vocabulary term URL || SOS URL || 
-
-
-||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
-
-
 || SwellPeriod || term:urn:ogc:def:phenomenon:OGC:1.0.30:SwellPeriod:1||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 || ReservoiWaterSurfaceabovedatum ||term:urn:ogc:def:phenomenon:OGC:1.0.30:ReservoirWaterSurfaceaboveDatum:1||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
 || SignficantWaveHeight ||term:urn:ogc:def:phenomenon:OGC:1.0.30:SignificantWaveHeight:1||http://svc.axiomalaska.com:8080/sos2/sos?request=GetCapabilities&service=SOS||
