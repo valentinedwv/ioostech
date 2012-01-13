@@ -229,7 +229,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || sea_surface_height_amplitude_due_to_equilibrium_ocean_tide || term:http://mmisw.org/ont/cf/parameter/sea_surface_height_amplitude_due_to_equilibrium_ocean_tide:225 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
 || winds || term:http://mmisw.org/ont/cf/parameter/winds:235 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
 ||air_temperature || term:http://mmisw.org/ont/cf/parameter/air_temperature:241 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
-|| air_pressure || term:http://mmisw.org/ont/cf/parameter/air_pressure:245
+|| air_pressure || term:http://mmisw.org/ont/cf/parameter/air_pressure:245|| http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
 || water_surface_height_above_reference_datum || term:http://mmisw.org/ont/cf/parameter/water_surface_height_above_reference_datum:278 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
 || currents || term:http://mmisw.org/ont/cf/parameter/currents:550 || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?request=GetCapabilities&service=SOS||
 
