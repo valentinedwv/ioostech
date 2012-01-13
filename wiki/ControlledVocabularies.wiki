@@ -190,7 +190,23 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || Salinity || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Salinity || http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
 || WaterTemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterTemperature || http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
 
- 
+==MARACOOS== 
+|| GetObservation Term || Vocabulary term URL || SOS URL || 
+||Winds||term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Winds:427|| http://www.weatherflow.com/sos/sos.pl?request=GetCapabilities&service=SOS ||
+
+||waveperiod || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#waveperiod:65 ||http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
+
+||waveheigth || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#waveheight:68 || http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
+|| watertemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#watertemperature:74 ||http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
+|| cloudcover || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#cloudcover:140 || http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
+|| dewpoint || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#dewpoint:181 || http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
+|| windgust || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#windgust:248 || http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
+|| airpressure || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#airpressure:267  || windspeed || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#windspeed:290 || http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
+|| winddirection || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#winddirection:290 || http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
+|| airtemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#airtemperature:292 || http://michigan.glin.net/glos/sos/sos.php?request=GetCapabilities&service=SOS ||
+
+
+
 
 
 
