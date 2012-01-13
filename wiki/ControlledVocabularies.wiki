@@ -181,6 +181,19 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 ||sea_water_temperature || term:http://mmisw.org/ont/cf/parameter/sea_water_temperature:444 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
 ||winds||term:http://mmisw.org/ont/cf/parameter/winds:496|| http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
 
+==NANOOS== 
+|| GetObservation Term || Vocabulary term URL || SOS URL || 
+|| WaterLevel ||term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterLevel|| http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
+|| Salinity || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Salinity || http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
+||WaterTemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterTemperature:28
+|| http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
+
+ 
+
+
+
+|| surface_partial_pressure_of_carbon_dioxide_in_air || term:urn:ogc:def:phenomenon:mmisw.org:cf:surface_partial_pressure_of_carbon_dioxide_in_air || http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS ||
+
 
 ==Semantic Web Maturity and Examples==
 Whats the status and how do we use it?
