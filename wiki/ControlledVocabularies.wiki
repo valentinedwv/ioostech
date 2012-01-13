@@ -186,8 +186,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || GetObservation Term || Vocabulary term URL || SOS URL || 
 || WaterLevel || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterLevel || http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
 || Salinity || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Salinity || http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
-|| WaterTemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterTemperature:28
-|| http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
+|| WaterTemperature || term:http://www.csc.noaa.gov/ioos/schema/IOOS-DIF/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#WaterTemperature || http://data.stccmop.org/ws/util/sos.py?request=GetCapabilities&service=SOS ||
 
  
 
