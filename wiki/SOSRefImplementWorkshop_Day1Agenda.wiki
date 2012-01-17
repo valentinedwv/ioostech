@@ -18,8 +18,8 @@ Or described another way:
     # Develop and validate SOS services
     # Develop SOS clients
   # Clarify and extend mandated vs recommended practices, including:
-    # [Classifiers (Controlled vocabularies)]
-    # [Identifiers]
+    # [#Classifiers_(Controlled_vocabularies) Classifiers (Controlled vocabularies)]
+    # [#Identifiers Identifiers]
     # [Default values and behaviors]
     # [SOS requests Interface Definition Document]
       # GetCapabilities, DescribeSensor, GetObservation
