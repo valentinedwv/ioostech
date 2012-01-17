@@ -40,8 +40,12 @@ The target set of controlled vocabulary types we will likely need are:
 
 For observed properties, given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? 
 
-Address implementation details, in general and for each targeted vocaublary type.
+Address implementation details, in general and for each targeted vocabulary type.
 
+For now, until this section is better fleshed out and organized, see these two wiki pages:
+  * [ControlledVocabularies], from Rob Ragsdale and Derrick
+  * [EmilioControlledVocabs], from Emilio
+---
 
 == Identifiers ==
 
@@ -62,7 +66,7 @@ A draft of elements. These may be parsed out into different sections in the fina
     * depth/elevation conventions?
   * temporal conventions
     * all datetime values are specified as iso8601 strings, where seconds are optional (in requests)
-    * only UTC/GMT time support is currenlty required, for both requests and responses
+    * only UTC/GMT time support is currently required, for both requests and responses
     * in GetObservation request, eventTime is optional. If it's absent, the latest observations will be returned.
 
 
