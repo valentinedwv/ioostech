@@ -75,3 +75,5 @@ Examples, starting points:
   * [NANOOSNVSPythonSOS NANOOS SOS]
   * 52North Example?
   * Eric Bridger's OOsTethys/IOOS Perl server code?
+
+Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
