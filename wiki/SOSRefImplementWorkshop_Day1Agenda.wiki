@@ -1,7 +1,9 @@
 #summary Day-1 Agenda for IOOS SOS Reference Implementation Workshop
 #labels SOS
 
-= DRAFT Day-1 Agenda: The broader SOS context. IOOS DMAC SOS Reference Implementation Working Group Meeting =
+= DRAFT Day-1 Agenda: The broader SOS context =
+
+IOOS DMAC SOS Reference Implementation Working Group Meeting
 
 == General Goals ==
 
@@ -62,7 +64,7 @@ A draft of elements. These may be parsed out into different sections in the fina
   * temporal
     * all datetime values are specified as iso8601 strings, where seconds are optional (in requests)
     * only UTC/GMT time support is currenlty required, for both requests and responses
-    * in GetObservation requests, 
+    * in GetObservation request, eventTime is optional. If it's absent, the latest observations will be returned.
 
 
 == SOS requests Interface Definition Document ==
