@@ -1,0 +1,76 @@
+#summary Day-1 Agenda for IOOS SOS Reference Implementation Workshop
+#labels SOS
+
+= DRAFT Day-1 Agenda: The broader SOS context. IOOS DMAC SOS Reference Implementation Working Group Meeting =
+
+== General Goals ==
+
+Getting the basics and common elements squared away:
+  * Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses
+  * Minimal required DescribeSensor (SensorML) request and response
+  * Aspects of GetObservation requests and responses related to the above, and not covered by the Day 2-3 Agenda (_SWE Common Templates for CDM Scientific Feature Types_)
+
+Or described another way:
+
+  # Develop clear and consistent IOOS SOS request and response specifications to be implemented uniformly across IOOS and used to:
+    # Develop and validate SOS services
+    # Develop SOS clients
+  # Clarify and extend mandated vs recommended practices, including:
+    # [Classifiers (Controlled vocabularies)]
+    # [Identifiers]
+    # [Default values and behaviors]
+    # [SOS requests Interface Definition Document]
+      # GetCapabilities, DescribeSensor, GetObservation
+    # [Existing practices vs needed enhancements]
+    # (point to the Google Doc Derrick started ~ Oct 2011, "IOOS SOS Documentation")
+
+Many of these goals could be applied to the entire workshop, but as described are tuned to the Day 1 agenda. They also involve laying out a path for useful, clear service documentation, both in the form of bare-bones "Interface Definition Document" (IDD) templates that should be followed by every SOS service implementation (intended as a quick-takeup guide for service and client implementers and users), and more detailed documentation.
+
+
+== Classifiers (Controlled vocabularies) ==
+
+The target set of controlled vocabulary types we will likely need are:
+  * organization type (eg, Federal agency, IOOS Regional Association, state agency, industry)
+  * organizational role (service provider, data provider or asset owner)
+  * keywords (including geographical regions?)
+  * platform (asset) type
+  * observed property
+  * units-of-measure
+
+For observed properties, given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? 
+
+Address implementation details, in general and for each targeted vocaublary type.
+
+
+== Identifiers ==
+
+Existing IOOS identifier conventions include station (sometimes described as platform), sensors, and "collections" (network). These are currently implemented as urn's only.
+
+
+== Default values and behaviors ==
+
+A draft of elements. These may be parsed out into different sections in the final agenda.
+
+  * access: HTTP GET and POST (but mainly GET)
+  * GET KVP are case-insensitivity (both K & V, or all K's and *some* V's?)
+  * a request to the naked, unqualified service (no service=SOS or version) returns the GetCapabilities response
+  * version key is optional, for now
+  * use of default namespace in XML responses is forbidden
+  * spatial (XYZ)
+    * all x & y locations are only in lat-lon (wgs84, nothing else); these are fully qualified and parseable (srs, etc), but for now it's best to also accept that we'll only deal with lat-lon
+    * depth/elevation conventions?
+  * temporal
+    * all datetime values are specified as iso8601 strings, where seconds are optional (in requests)
+    * only UTC/GMT time support is currenlty required, for both requests and responses
+    * in GetObservation requests, 
+
+
+== SOS requests Interface Definition Document ==
+
+Examples, starting points:
+  * [http://sdf.ndbc.noaa.gov/sos/ NDBC SOS]
+  * [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp NOS-COOPS SOS]
+  * [http://waterservices.usgs.gov/rest/IV-Service.html#Service USGS Water Services] (not SOS, but based on WaterML 1 and related services
+  * 52North Example?
+  * Eric Bridger's OOsTethys/IOOS Perl server code?
+  * [NANOOSNVSPythonSOS NANOOS SOS]
