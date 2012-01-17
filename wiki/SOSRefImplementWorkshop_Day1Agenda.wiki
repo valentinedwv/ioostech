@@ -14,10 +14,10 @@ Getting the basics and common elements squared away:
 
 Or described another way:
 
-  # Develop clear and consistent IOOS SOS request and response specifications to be implemented uniformly across IOOS and used to:
+  # *Develop clear and consistent IOOS SOS request and response specifications to be implemented uniformly across IOOS and used to:*
     * Develop and validate SOS services
     * Develop SOS clients
-  # Clarify and extend mandated vs recommended practices, including:
+  # *Clarify and extend mandated vs recommended practices, including:*
     * [#Classifiers_(Controlled_vocabularies) Classifiers (Controlled vocabularies)]
     * [#Identifiers Identifiers]
     * [#Default_values_and_behaviors Default values and behaviors]
