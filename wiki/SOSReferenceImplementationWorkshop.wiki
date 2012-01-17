@@ -37,7 +37,7 @@ High-level agenda outline, with responsible parties.
 
   * *Day 1*
     * (Derrick) Meeting goals and agenda.
-    * (Emilio & Eric) Getting the basics and common elements squared away: Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses; a bare-bones DescribeSensor request and response; and a GetObservations request for the case of a fixed point time series.
+    * (Emilio & Eric) [SOSRefImplementWorkshop_Day1Agenda Getting the basics and common elements squared away]: Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses; a bare-bones DescribeSensor request and response; and a GetObservations request for the case of a fixed point time series.
   * *Day 2*
     * (Emilio) Quick wrap-up of discussions from previous day.
     * (Eric & Jeremy) Service assessment, testing and validation. Some relevant wiki pages: [SOSVersions], [SOSSurvey], [SOSTesting], [SOSAssessment], [SWECommonPlan#Testing_(Jeremy)]
