@@ -3,7 +3,7 @@
 
 = DRAFT Day-1 Agenda: The broader SOS request and response context =
 
-IOOS DMAC SOS Reference Implementation Working Group Meeting.
+[SOSReferenceImplementationWorkshop IOOS DMAC SOS Reference Implementation Working Group Meeting].
 
 == General Goals ==
 
@@ -26,6 +26,7 @@ Or described another way:
     * Point to the Google Doc Derrick started ~ Oct 2011, "IOOS SOS Documentation"
 
 Many of these goals could be applied to the entire workshop, but as described are tuned to the Day 1 agenda. They also involve laying out a path for useful, clear service documentation, both in the form of bare-bones [https://groups.google.com/d/topic/ioostech_dev/hTMaCJtkcWo/discussion "Interface Definition Document" (IDD)] templates that should be followed by every SOS service implementation (intended as a quick-takeup guide for service and client implementers and users), and more detailed documentation.
+----
 
 
 == Classifiers (Controlled vocabularies) ==
@@ -45,7 +46,6 @@ Address implementation details, in general and for each targeted vocabulary type
 For now, until this section is better fleshed out and organized, see these two wiki pages:
   * [ControlledVocabularies], from Rob Ragsdale and Derrick
   * [EmilioControlledVocabs], from Emilio
----
 
 == Identifiers ==
 
