@@ -1,9 +1,9 @@
 #summary Day-1 Agenda for IOOS SOS Reference Implementation Workshop
 #labels SOS
 
-= DRAFT Day-1 Agenda: The broader SOS context =
+= DRAFT Day-1 Agenda: The broader SOS request and response context =
 
-IOOS DMAC SOS Reference Implementation Working Group Meeting
+IOOS DMAC SOS Reference Implementation Working Group Meeting.
 
 == General Goals ==
 
@@ -25,7 +25,7 @@ Or described another way:
     * Existing practices vs needed enhancements
     * Point to the Google Doc Derrick started ~ Oct 2011, "IOOS SOS Documentation"
 
-Many of these goals could be applied to the entire workshop, but as described are tuned to the Day 1 agenda. They also involve laying out a path for useful, clear service documentation, both in the form of bare-bones "Interface Definition Document" (IDD) templates that should be followed by every SOS service implementation (intended as a quick-takeup guide for service and client implementers and users), and more detailed documentation.
+Many of these goals could be applied to the entire workshop, but as described are tuned to the Day 1 agenda. They also involve laying out a path for useful, clear service documentation, both in the form of bare-bones [https://groups.google.com/d/topic/ioostech_dev/hTMaCJtkcWo/discussion "Interface Definition Document" (IDD)] templates that should be followed by every SOS service implementation (intended as a quick-takeup guide for service and client implementers and users), and more detailed documentation.
 
 
 == Classifiers (Controlled vocabularies) ==
@@ -53,14 +53,14 @@ Existing IOOS identifier conventions include station (sometimes described as pla
 A draft of elements. These may be parsed out into different sections in the final agenda.
 
   * access: HTTP GET and POST (but mainly GET)
-  * GET KVP are case-insensitivity (both K & V, or all K's and *some* V's?)
+  * GET KVP's are case-insensitive (both K & V, or all K's and *some* V's?)
   * a request to the naked, unqualified service (no service=SOS or version) returns the GetCapabilities response
   * version key is optional, for now
-  * use of default namespace in XML responses is forbidden
-  * spatial (XYZ)
+  * use of a default namespace in XML responses is forbidden
+  * spatial (XYZ) conventions
     * all x & y locations are only in lat-lon (wgs84, nothing else); these are fully qualified and parseable (srs, etc), but for now it's best to also accept that we'll only deal with lat-lon
     * depth/elevation conventions?
-  * temporal
+  * temporal conventions
     * all datetime values are specified as iso8601 strings, where seconds are optional (in requests)
     * only UTC/GMT time support is currenlty required, for both requests and responses
     * in GetObservation request, eventTime is optional. If it's absent, the latest observations will be returned.
@@ -72,6 +72,6 @@ Examples, starting points:
   * [http://sdf.ndbc.noaa.gov/sos/ NDBC SOS]
   * [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp NOS-COOPS SOS]
   * [http://waterservices.usgs.gov/rest/IV-Service.html#Service USGS Water Services] (not SOS, but based on WaterML 1 and related services
+  * [NANOOSNVSPythonSOS NANOOS SOS]
   * 52North Example?
   * Eric Bridger's OOsTethys/IOOS Perl server code?
-  * [NANOOSNVSPythonSOS NANOOS SOS]
