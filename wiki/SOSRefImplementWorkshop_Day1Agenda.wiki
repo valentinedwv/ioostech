@@ -23,9 +23,11 @@ Or described another way:
     * [#Default_values_and_behaviors Default values and behaviors]
     * [#SOS_requests_Interface_Definition_Document SOS requests Interface Definition Document] (GetCapabilities, DescribeSensor, GetObservation)
     * Existing practices vs needed enhancements
-    * Point to the Google Doc Derrick started ~ Oct 2011, "IOOS SOS Documentation"
+    * Link to the [http://ioostech.googlecode.com/files/IOOS_SOS_Documentation_v0p1.doc Word document Derrick started ~ Oct 2011, "IOOS SOS Documentation"]
 
 Many of these goals could be applied to the entire workshop, but as described are tuned to the Day 1 agenda. They also involve laying out a path for useful, clear service documentation, both in the form of bare-bones [https://groups.google.com/d/topic/ioostech_dev/hTMaCJtkcWo/discussion "Interface Definition Document" (IDD)] templates that should be followed by every SOS service implementation (intended as a quick-takeup guide for service and client implementers and users), and more detailed documentation.
+
+[http://www.oostethys.org/best-practices The OOSTethys 2008 Guides and Best Practices documents] served as a foundation for many of the current IOOS SOS implementation details. It's still a highly relevant and well structured guide that we should refer to often and re-use as needed. _I'll add specific links in each section below, as appropriate._
 ----
 
 
@@ -54,6 +56,7 @@ For now, until this section is better fleshed out and organized, see these two w
 
 Existing IOOS identifier conventions include station (sometimes described as platform), sensors, and "collections" (network). These are currently implemented as urn's only.
 
+Link to the [http://ioostech.googlecode.com/files/IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx Word document "IOOS Conventions for Asset Identifiers"]
 
 == Default values and behaviors ==
 
@@ -69,7 +72,7 @@ A draft of elements. These may be parsed out into different sections in the fina
   * temporal conventions
     * all datetime values are specified as iso8601 strings, where seconds are optional (in requests)
     * only UTC/GMT time support is currently required, for both requests and responses
-    * in GetObservation request, eventTime is optional. If it's absent, the latest observations will be returned.
+    * in GetObservation request, eventTime is optional; if absent, the latest observations will be returned. [http://www.oostethys.org/best-practices/getlatest See the relevant OOSTethys 2008 document, "Get Latest"]
 
 
 == SOS requests Interface Definition Document ==
@@ -80,6 +83,7 @@ Examples, starting points:
   * [http://waterservices.usgs.gov/rest/IV-Service.html#Service USGS Water Services] (not SOS, but based on WaterML 1 and related services
   * [NANOOSNVSPythonSOS NANOOS SOS]
   * [https://wiki.52north.org/bin/view/Sensornet/SosOperations 52North Example]
-  * Eric Bridger's OOsTethys/IOOS Perl server code?
+  * Eric Bridger's OOSTethys/IOOS Perl server code?
+  * [http://www.oostethys.org/best-practices/best-practices-get The OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] is actually still highly relevant, I think. Copying to an IOOS-hosted site and updating it as needed may be the way to go!
 
 Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
