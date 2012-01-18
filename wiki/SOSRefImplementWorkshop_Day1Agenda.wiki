@@ -44,8 +44,11 @@ For observed properties, given the adoption of CF names and their lack of suppor
 Address implementation details, in general and for each targeted vocabulary type.
 
 For now, until this section is better fleshed out and organized, see these two wiki pages:
-  * [ControlledVocabularies], from Rob Ragsdale and Derrick
-  * [EmilioControlledVocabs], from Emilio
+  * [ControlledVocabularies], from Rob Ragsdale and Derrick. Largely about observed properties.
+  * [EmilioControlledVocabs], from Emilio. Miscellaneous.
+  * Regarding roles:
+    * [RepresentingRAAffiliationInServiceMetadata]
+    * [RepresentingRolesinServiceMetadata]
 
 == Identifiers ==
 
