@@ -76,7 +76,7 @@ Examples, starting points:
   * [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp NOS-COOPS SOS]
   * [http://waterservices.usgs.gov/rest/IV-Service.html#Service USGS Water Services] (not SOS, but based on WaterML 1 and related services
   * [NANOOSNVSPythonSOS NANOOS SOS]
-  * 52North Example?
+  * [https://wiki.52north.org/bin/view/Sensornet/SosOperations 52North Example]
   * Eric Bridger's OOsTethys/IOOS Perl server code?
 
 Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
