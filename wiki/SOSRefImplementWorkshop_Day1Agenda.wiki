@@ -5,6 +5,9 @@
 
 [SOSReferenceImplementationWorkshop IOOS DMAC SOS Reference Implementation Working Group Meeting].
 
+  _While time is passing, the technological foundations upon which data management systems are built are certain to continue advancing rapidly. These considerations argue for adopting attitudes of pragmatism and realism when planning data management strategies. We should understand that technological progress is always made in incremental steps, rather than "heroic leaps". We should give consideration to technology choices based upon their potential contributions to the distant vision, but we should measure them by their effectiveness at addressing today’s challenges.^[1]^_
+
+
 == General Goals ==
 
 Getting the basics and common elements squared away:
@@ -92,3 +95,7 @@ Examples, starting points:
   * [http://www.oostethys.org/best-practices/best-practices-get The OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] is actually still highly relevant, I think. Copying to an IOOS-hosted site and updating it as needed may be the way to go!
 
 Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
+
+== Footnotes ==
+
+^[1]^ [http://www.oceanobs09.net/proceedings/pp/pp21/ Hankin, S., L. Bermudez, J.D. Blower, B. Blumenthal, K.S. Casey, M. Fornwall, J. Graybeal, R.P. Guralnick, T. Habermann, E. Howlett, B. Keeley, R. Mendelssohn, R. Schlitzer, R. Signell, *D. Snowden* and A. Woolf, (2010), Data Management for the Ocean Sciences - Perspectives for the Next Decade, in _Proceedings of OceanObs’09: Sustained Ocean Observations and Information for Society (Vol. 1)_, Venice, Italy, 21-25 September 2009, Hall, J., Harrison, D.E. & Stammer, D., Eds., ESA Publication WPP-306, doi:10.5270/OceanObs09.pp.21]
