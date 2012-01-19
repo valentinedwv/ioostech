@@ -45,22 +45,27 @@ For observed properties, given the adoption of CF names and their lack of suppor
 
 Address implementation details, in general and for each targeted vocabulary type.
 
-For now, until this section is better fleshed out and organized, see these two wiki pages:
+For now, until this section is better fleshed out and organized, see these wiki pages:
   * [ControlledVocabularies], from Rob Ragsdale and Derrick. Largely about observed properties.
   * [EmilioControlledVocabs], from Emilio. Miscellaneous.
+  * [DescribeSensorMetadataForIOOSSOS], from Micah. Addresses several classifier types and options, particularly in SensorML.
   * Regarding roles:
     * [RepresentingRAAffiliationInServiceMetadata]
     * [RepresentingRolesinServiceMetadata]
+
 
 == Identifiers ==
 
 Existing IOOS identifier conventions include station (sometimes described as platform), sensors, and "collections" (network). These are currently implemented as urn's only.
 
+See also [DescribeSensorMetadataForIOOSSOS this wiki page from Micah].
+
 Link to the [http://ioostech.googlecode.com/files/IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx Word document "IOOS Conventions for Asset Identifiers"]
+
 
 == Default values and behaviors ==
 
-A draft of elements. These may be parsed out into different sections in the final agenda.
+A draft of elements. These may be parsed out into different sections in the final agenda. _This is not yet comprehensive or vetted, of course!_
 
   * access: HTTP GET and POST (but mainly GET)
   * GET KVP's are case-insensitive (both K & V, or all K's and *some* V's?)
