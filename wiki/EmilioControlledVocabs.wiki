@@ -4,19 +4,11 @@
 *Table of Content*
 <wiki:toc max_depth="3" />
 
-== My To-Do's for this page ==
-
-Reorganize this page into a listing of types of vocabularies to be addressed, and where in SOS they are relevant (GetCapabilities, SensorML, etc): 
-  * Observed variables
-  * platform/asset types. See [DescribeSensorMetadataForIOOSSOS]
-  * [RepresentingRolesinServiceMetadata roles]. See also [DescribeSensorMetadataForIOOSSOS]
-  * regions
-  * Regional Association codes/identifiers
-  * etc
-
 == Introduction ==
 
-My intent here is to complement the [ControlledVocabularies more official page on Controlled Vocabularies] elsewhere on this wiki, without adding my clutter to that page.
+My intent here is to complement the [ControlledVocabularies more official page on Controlled Vocabularies] elsewhere on this wiki, without adding my clutter to that page. Eventually, I'd like to identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
+
+== Observed Properties ==
 
 The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a really interesting combination of models and data (I think) where controlled vocabularies for measurements are used. It's worth assessing these, chatting with people in that team (ASA, Kyle Wilcox??), etc. For example, it's clear to me that while many/most of the names used are in fact CF standard names, many must be made up, but using CF recommendations for building names. 
 
@@ -32,7 +24,7 @@ Other ontologies / controlled vocabularies (some less controlled than others...)
     * [http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary]
     * [http://mmisw.org/ont/gcoos/parameter GCOOS Vocabulary]
 
-== Organization Roles (esp. Provider/Owner) ==
+== Organization Roles (Regional Association, Provider/Owner, etc) ==
 
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
@@ -51,6 +43,8 @@ Example:
     </sml:ResponsibleParty>
 </sml:contact>
 }}}
+
+See also [discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
 
 == Platform/Station types ==
 
@@ -74,7 +68,19 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 
 A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
 
-=== Other relevant resources ===
+See also [discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
+
+=== NANOOS NVS Asset types and icons ===
+_Note to self_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
+See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
+
+*Asset classes:*
+  * _Stationary In-Situ Observations (SISO)_. Current types: Buoy, Fixed Shore Station, River Gage, Land Station, Seabed Cabled Observatory
+  * _Moving-Location observations (MLOC)_. Cruises, AUV's
+  * _Gridded Regular and Irregular Data (GRID)_*. Models (forecasts), remote sensing imagery, etc.
+
+== Other relevant resources ==
+
   * Work on water quality (?) vocabularies that Matt Howard and Cyndy Chandler are starting up (no URL that I know of). Matt is also leading a vocabulary effort focused on Gulf of Mexico, related to Deepwater Horizon recovery efforts.
   * [http://www.bco-dmo.org/ BCO-DMO] and [http://cdmo.baruch.sc.edu/ NERRS CDMO] are also excellent resources for water quality and biogeochemistry. [http://cdmo.baruch.sc.edu/data/parameters.cfm For NERRS, this "Parameters" page is very relevant].
   * [https://geo-ide.noaa.gov/wiki/index.php?title=In-situ_data_%28sensors,_groups_of_sensors,_platforms,_etc.%29 (Geo-IDE Wiki) In-situ data (sensors, groups of sensors, platforms, etc.)]
@@ -89,6 +95,3 @@ A question I've had about this implementation is, _what the heck is "urn:ioos:de
   * The work on an IOOS Non-Federal Asset Inventory in early-mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
   * [http://cdi.gleon.org/ GLEON-CDI] (lakes). A [http://gleon.org/gleon-bb/viewtopic.php?f=3&t=18#p58 GLEON CV Excel spreadsheet is mentioned and linked to in this 2010 forum thread]
   * [http://www.citeulike.org/user/emayorga/tag/ioos,informatics My CiteULike collection of peer-reviewed journal articles broadly related to this topic]
-
-=== NANOOS NVS Asset types and icons ===
-_Note to self_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
