@@ -5,7 +5,7 @@
 
 [SOSReferenceImplementationWorkshop IOOS DMAC SOS Reference Implementation Working Group Meeting].
 
-  _"While time is passing, the technological foundations upon which data management systems are built are certain to continue advancing rapidly. These considerations argue for adopting attitudes of pragmatism and realism when planning data management strategies. We should understand that technological progress is always made in incremental steps, rather than 'heroic leaps'. We should give consideration to technology choices based upon their potential contributions to the distant vision, but we should measure them by their effectiveness at addressing today’s challenges." [#Footnotes ^[1]^]_
+  _"While time is passing, the technological foundations upon which data management systems are built are certain to continue advancing rapidly. These considerations argue for adopting attitudes of pragmatism and realism when planning data management strategies. We should understand that technological progress is always made in incremental steps, rather than 'heroic leaps'. We should give consideration to technology choices based upon their potential contributions to the distant vision, but we should measure them by their effectiveness at addressing today’s challenges." ^[#Footnotes (1)]^_
 
 
 == General Goals ==
@@ -24,7 +24,7 @@ Or described another way:
     * [#Classifiers_(Controlled_vocabularies) Classifiers (Controlled vocabularies)]
     * [#Identifiers Identifiers]
     * [#Default_values_and_behaviors Default values and behaviors]
-    * [#SOS_requests_Interface_Definition_Document SOS requests Interface Definition Document] (GetCapabilities, DescribeSensor, GetObservation)
+    * [#SOS_requests_Interface_Definition_Document SOS requests Interface Definition Document] (GetCapabilities!, DescribeSensor!, GetObservation!)
     * Existing practices vs needed enhancements
     * Link to the [http://ioostech.googlecode.com/files/IOOS_SOS_Documentation_v0p1.doc Word document Derrick started ~ Oct 2011, "IOOS SOS Documentation"]
 
@@ -98,4 +98,4 @@ Currently the interface descriptions for the two core IOOS SOS implementations (
 
 == Footnotes ==
 
-^[1]^ Hankin, S., L. Bermudez, J.D. Blower, B. Blumenthal, K.S. Casey, M. Fornwall, J. Graybeal, R.P. Guralnick, T. Habermann, E. Howlett, B. Keeley, R. Mendelssohn, R. Schlitzer, R. Signell, *D. Snowden* and A. Woolf, (2010), Data Management for the Ocean Sciences - Perspectives for the Next Decade, in _Proceedings of OceanObs'09: Sustained Ocean Observations and Information for Society (Vol. 1)_, Venice, Italy, 21-25 September 2009, Hall, J., Harrison, D.E. & Stammer, D., Eds., ESA Publication WPP-306, [http://www.oceanobs09.net/proceedings/pp/pp21/ doi:10.5270/OceanObs09.pp.21]
+^(1)^ Hankin, S., L. Bermudez, J.D. Blower, B. Blumenthal, K.S. Casey, M. Fornwall, J. Graybeal, R.P. Guralnick, T. Habermann, E. Howlett, B. Keeley, R. Mendelssohn, R. Schlitzer, R. Signell, *D. Snowden* and A. Woolf, (2010), Data Management for the Ocean Sciences - Perspectives for the Next Decade, in _Proceedings of OceanObs'09: Sustained Ocean Observations and Information for Society (Vol. 1)_, Venice, Italy, 21-25 September 2009, Hall, J., Harrison, D.E. & Stammer, D., Eds., ESA Publication WPP-306, [http://www.oceanobs09.net/proceedings/pp/pp21/ doi:10.5270/OceanObs09.pp.21]
