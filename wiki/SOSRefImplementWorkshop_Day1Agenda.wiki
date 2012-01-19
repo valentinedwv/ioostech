@@ -3,17 +3,17 @@
 
 = DRAFT Day-1 Agenda: The broader SOS request and response context =
 
-[SOSReferenceImplementationWorkshop IOOS DMAC SOS Reference Implementation Working Group Meeting].
-
   _"While time is passing, the technological foundations upon which data management systems are built are certain to continue advancing rapidly. These considerations argue for adopting attitudes of pragmatism and realism when planning data management strategies. We should understand that technological progress is always made in incremental steps, rather than 'heroic leaps'. We should give consideration to technology choices based upon their potential contributions to the distant vision, but we should measure them by their effectiveness at addressing today's challenges."_ [#Footnotes (1)]
+
+The main page for the [SOSReferenceImplementationWorkshop IOOS DMAC SOS Reference Implementation Working Group Meeting is at this link].
 
 
 == General Goals ==
 
 Getting the basics and common elements squared away:
-  * Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses
-  * Minimal required DescribeSensor (SensorML) request and response
-  * Aspects of GetObservation requests and responses related to the above, and not covered by the Day 2-3 Agenda (_SWE Common Templates for CDM Scientific Feature Types_)
+  * Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of !GetCapabilities requests and responses
+  * Minimal required !DescribeSensor (SensorML) request and response
+  * Aspects of !GetObservation requests and responses related to the above, and not covered by the Day 2-3 Agenda (_SWE Common Templates for CDM Scientific Feature Types_)
 
 Or described another way:
 
