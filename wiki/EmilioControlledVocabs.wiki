@@ -77,7 +77,7 @@ See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
 *Asset classes:*
   * _Stationary In-Situ Observations (SISO)_. Current types: Buoy, Fixed Shore Station, River Gage, Land Station, Seabed Cabled Observatory
   * _Moving-Location observations (MLOC)_. Cruises, AUV's
-  * _Gridded Regular and Irregular Data (GRID)_*. Models (forecasts), remote sensing imagery, etc.
+  * _Gridded Regular and Irregular Data (GRID)_. Models (forecasts), remote sensing imagery, etc.
 
 == Other relevant resources ==
 
