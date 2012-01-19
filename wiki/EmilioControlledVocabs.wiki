@@ -44,7 +44,7 @@ Example:
 </sml:contact>
 }}}
 
-See also [discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
+See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
 
 == Platform/Station types ==
 
@@ -68,7 +68,7 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 
 A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
 
-See also [discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
+See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
 
 === NANOOS NVS Asset types and icons ===
 _Note to self_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
