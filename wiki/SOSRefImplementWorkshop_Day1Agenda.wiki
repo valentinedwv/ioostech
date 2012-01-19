@@ -5,7 +5,7 @@
 
 [SOSReferenceImplementationWorkshop IOOS DMAC SOS Reference Implementation Working Group Meeting].
 
-  _"While time is passing, the technological foundations upon which data management systems are built are certain to continue advancing rapidly. These considerations argue for adopting attitudes of pragmatism and realism when planning data management strategies. We should understand that technological progress is always made in incremental steps, rather than 'heroic leaps'. We should give consideration to technology choices based upon their potential contributions to the distant vision, but we should measure them by their effectiveness at addressing today’s challenges."_ [#Footnotes ^(1)^]
+  _"While time is passing, the technological foundations upon which data management systems are built are certain to continue advancing rapidly. These considerations argue for adopting attitudes of pragmatism and realism when planning data management strategies. We should understand that technological progress is always made in incremental steps, rather than 'heroic leaps'. We should give consideration to technology choices based upon their potential contributions to the distant vision, but we should measure them by their effectiveness at addressing today's challenges."_ [#Footnotes (1)]
 
 
 == General Goals ==
