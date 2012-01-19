@@ -41,7 +41,7 @@ The target set of controlled vocabulary types we will likely need are:
   * observed property
   * units-of-measure
 
-For observed properties, given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? 
+For observed properties, given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? Also, I've always found very helpful [http://www.pmel.noaa.gov/maillists/tmap/ioos_wsde/msg00699.html this 2010-1-26 email from Jeff DLB to the ioos_wsde list, describing the elements of adopting "MMI/CF phenomenon names for IOOS".]
 
 Address implementation details, in general and for each targeted vocabulary type.
 
