@@ -28,6 +28,16 @@ The target set of controlled vocabulary types we will likely need are  ([EmilioC
  * observed property
  * units-of-measure
 
+= Units of Measure =
+
+[http://unitsofmeasure.org/ Universal Code for Units of Measure]
+
+[http://www.unidata.ucar.edu/software/udunits/ UDUNITS]
+
+OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_id=11498 OpenGIS© Recommendation Paper — Units of Measure Use and Definition Recommendations] may be outdated??
+
+[https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
+
 = Observed Property Vocabularies =
 == Existing Observed Property Vocabularies ==
 
