@@ -57,7 +57,7 @@ For now, until this section is better fleshed out and organized, see these wiki 
     * [RepresentingRolesinServiceMetadata]
 
 
-_DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies.  Correct the URLs and provide examples._
+_DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies, correct the URLs, and provide examples.  Then, correcting the actual usage of each vocabulary in the tables that follow is a trivial exercise.  My proposed initial prioritization for observedProperty vocabularies is to use the [ http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
 
 == Identifiers ==
 
