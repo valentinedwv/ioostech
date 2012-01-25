@@ -9,6 +9,9 @@ The closest thing to policy we currently have is that IOOS data providers should
 
 However, there is also a vocabulary developed during the Data Integration Framework project by Matt Howard, Sara Haines and others which has been titled the IOOS Parameter Vocabulary.  Both the [http://mmisw.org/orr/#http://mmisw.org/ont/cf/parameter CF table] and version 1.0 of the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary] are currently hosted (v1.0) at the [http://mmisw.org/orr/#b MMI Ontology Registry and Repository].  
 
+
+Additionally, the [http://sweet.jpl.nasa.gov/ontology/ NASA SWEET] project hosts fairly mature vocabularies with the additional benefit of attempting to provide a framework for relating them together into ontologies.  
+
 = Issues and Open Questions =
 
   # Which vocabularies should be used in what situations?
