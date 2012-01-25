@@ -59,7 +59,7 @@ request= GetCapabilities,DescribeSensor,GetObservation
 ----
 === outputformat= ===
 
-_outputformat vs responseformat ?_
+_outputformat(DescribeSensor) vs responseformat(GetObservation) ?_
 
 *Does a missing outputformat parameter return CSV?  Is the CSV response download or in-browser?*
 
@@ -129,6 +129,11 @@ http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp
   * datatype(frequency)
 
 ----
+== Error handling ==
+
+*What error codes or responses are given by your SOS services - are the responses common to a standard or reference implementation?*
+
+----
 = Response = 
 
 == Service metadata ==
@@ -149,7 +154,7 @@ redundancies? use same/close long/lat location to help identify overlaps?
 
 == Data encoding ==
 
-*What data encoding(s) does your GetObservation provide? SWE Common,GML,CSV,TSV,KML,JSON,... *
+*What data encoding(s) does your GetObservation provide? SWE Common,GML,CSV,TSV,KML,JSON,... How is the schema and vocabulary of these various responses the same or different?(for example, same CSV headers/payload for both CSV and SWE Common? netCDF vocabulary,etc?)*
 
 ----
 = Additional concerns = 
