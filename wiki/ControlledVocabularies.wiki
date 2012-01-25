@@ -37,7 +37,8 @@ The target set of controlled vocabulary types we will likely need are  ([EmilioC
 || IOOS DIF GML Dictionary || ?? || http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#PROPERTYNAME  ||
 || SWEET || http://sweet.jpl.nasa.gov/ || http://sweet.jpl.nasa.gov/2.2/VOCAB.owl#PROPERTYNAME ||
 || OGC Terms (URL) || ?? || ?? ||
-|| OGC Terms (URN) || ?? || ogc:def:phenomenon:mmisw.org:cf:PROPERTYNAME || || GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/waves ||
+|| OGC Terms (URN) || ?? || ogc:def:phenomenon:mmisw.org:cf:PROPERTYNAME || 
+|| GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/waves ||
 
 
 ==Water Quality==
