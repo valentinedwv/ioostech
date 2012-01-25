@@ -74,6 +74,21 @@ A draft of elements. These may be parsed out into different sections in the fina
   * GET KVP's are case-insensitive (both K & V, or all K's and *some* V's?)
   * a request to the naked, unqualified service (no request, service or version keys) returns the GetCapabilities response. _This was the [http://www.oostethys.org/ OOSTethys]-recommended convention (Eric, is that true?). Should we continue it?_
   * use of a default namespace in XML responses is forbidden
+  * common XSD references for GetCapabilities; here's a sample, from the NANOOS SOS:
+Example:
+{{{
+<sos:Capabilities 
+ xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:sos="http://www.opengis.net/sos/1.0" 
+ xmlns:ogc="http://www.opengis.net/ogc" 
+ xmlns:ows="http://www.opengis.net/ows/1.1" 
+ xmlns:gml="http://www.opengis.net/gml" 
+ xmlns:swe="http://www.opengis.net/swe/1.0.1" 
+ xmlns:om="http://www.opengis.net/om/1.0" 
+ xsi:schemaLocation="http://www.opengis.net/sos/1.0  http://schemas.opengis.net/sos/1.0.0/sosGetCapabilities.xsd" 
+ version="1.0.0">
+}}}
   * spatial (XYZ) conventions
     * all x & y locations are only in lat-lon (wgs84, nothing else); these are fully qualified and parseable (srs, etc), but for now it's best to also accept that we'll only deal with lat-lon
     * depth/elevation conventions?
