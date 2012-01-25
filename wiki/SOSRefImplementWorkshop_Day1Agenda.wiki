@@ -65,6 +65,9 @@ See also [DescribeSensorMetadataForIOOSSOS this wiki page from Micah].
 
 Link to the [http://ioostech.googlecode.com/files/IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx Word document "IOOS Conventions for Asset Identifiers"]
 
+The document above has been migrated to the  [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers GEO-IDE Wiki]
+
+[https://geo-ide.noaa.gov/wiki/index.php?title=Category:IOOS_Guidelines More of the IOOS Guidelines are here]
 
 == Default values and behaviors ==
 
