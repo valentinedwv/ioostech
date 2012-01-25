@@ -28,7 +28,18 @@ The target set of controlled vocabulary types we will likely need are  ([EmilioC
  * observed property
  * units-of-measure
 
-= Observed Property Vocabularies: Domain Specific Issues =
+= Observed Property Vocabularies =
+== Existing Observed Property Vocabularies ==
+
+|| Controlled Vocabulary || URL for information || URL for reference ||
+|| Climate and Forecast Standard Names || http://cf-pcmdi.llnl.gov/ and http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ || http://mmisw.org/ont/cf/parameter/PROPERTYNAME ||
+|| IOOS Parameter Vocabulary v1.0 || ?? || http://mmisw.org/ont/cf/parameter/PROPERTYNAME ||
+|| IOOS DIF GML Dictionary || ?? || http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#PROPERTYNAME  ||
+|| SWEET || http://sweet.jpl.nasa.gov/ || http://sweet.jpl.nasa.gov/2.2/VOCAB.owl#PROPERTYNAME ||
+|| OGC Terms (URL) || ?? || ?? ||
+|| OGC Terms (URN) || ?? || ?? ||
+
+
 ==Water Quality==
 
 ==IOOS NCCOS Water Quality Data Project==
