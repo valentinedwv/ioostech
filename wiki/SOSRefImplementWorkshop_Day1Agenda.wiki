@@ -57,6 +57,8 @@ For now, until this section is better fleshed out and organized, see these wiki 
     * [RepresentingRolesinServiceMetadata]
 
 
+_DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies.  Correct the URLs and provide examples._
+
 == Identifiers ==
 
 Existing IOOS identifier conventions include station (sometimes described as platform), sensors, and "collections" (network). These are currently implemented as urn's only.
