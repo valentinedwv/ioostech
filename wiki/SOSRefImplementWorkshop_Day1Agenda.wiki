@@ -75,7 +75,6 @@ A draft of elements. These may be parsed out into different sections in the fina
   * a request to the naked, unqualified service (no request, service or version keys) returns the GetCapabilities response. _This was the [http://www.oostethys.org/ OOSTethys]-recommended convention (Eric, is that true?). Should we continue it?_
   * use of a default namespace in XML responses is forbidden
   * common XSD references for GetCapabilities; here's a sample, from the NANOOS SOS:
-Example:
 {{{
 <sos:Capabilities 
  xmlns:xlink="http://www.w3.org/1999/xlink" 
