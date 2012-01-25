@@ -81,7 +81,7 @@ A draft of elements. These may be parsed out into different sections in the fina
     * all datetime values are specified as iso8601 strings, where seconds are optional (in requests)
     * only UTC/GMT time support is currently required, for both requests and responses
     * in GetObservation request, eventTime is optional; if absent, the latest observations will be returned. [http://www.oostethys.org/best-practices/getlatest See the relevant OOSTethys 2008 document, "Get Latest"]
-
+  * What role, if any, for featureOfInterest and FilterEncoding implementations?
 
 == SOS requests Interface Definition Document ==
 
