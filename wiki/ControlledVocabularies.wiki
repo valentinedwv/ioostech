@@ -40,6 +40,8 @@ OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_
 [https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
 
 = Observed Property Vocabularies =
+[EmilioControlledVocabs#Observed_Properties See also EmilioControlledVocabs#Observed_Properties]
+
 == Existing Observed Property Vocabularies ==
 
 || Controlled Vocabulary || URL for information || URL for reference ||
