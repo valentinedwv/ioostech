@@ -1,0 +1,16 @@
+#summary Sidebar Navigation for the SOS Guidelines
+#labels SOS
+
+ * [SOSGuidelines Landing page for the guidelines document]
+ * [SOSCallingSyntax Syntax and defaults for HTTP GET interface to the SOS]
+ * [GetCapabilities]
+ * [DescribeSensor]
+ * [GetObservation]
+   * [SWECommonPlan]
+ * [SOSSOSReferenceImplementationWorkshop Baltimore Md 7-8 Feb 2012]
+  * [SOSTesting]
+   * [SOSComponentVersions]
+   * [SOSVersions]
+   * [SOSSurvey]
+   * [SOSAssessment]
+ 
