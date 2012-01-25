@@ -1,0 +1,19 @@
+#summary Landing page to record the guidelines and decisions on SOS implementation, beginning with those generated at the SOSRefImplementWorkshop
+#labels Featured,SOS,IDD
+
+<wiki:toc max_depth="1" />
+#sidebar SOSTableOfContents
+
+= Introduction =
+
+The [http://code.google.com/p/ioostech/w ioostech wiki] contains many deliberations on the issues associated with SOS implementation.  This page serves as the table of contents or introduction for the decisions or commitments that result from the various discussions.  In other words, much of the wiki discusses what one could do, but the SOSGuidelines, document what you should do.  
+
+This may relate to or perhaps will become the IOOS SOS Interface Definition Document.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
