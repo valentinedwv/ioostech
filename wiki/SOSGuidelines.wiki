@@ -12,9 +12,29 @@ The [http://code.google.com/p/ioostech/w ioostech wiki] contains many deliberati
 This may relate to or perhaps will become the IOOS SOS Interface Definition Document.
 
 
-= Details =
+= Standards and Specifications =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+The versions of the international standards and specifications used in the IOOS SOS implementation.
+
+|| Specification Name || Version Number || References ||
+||O & M|| 1.0 || ||
+|| Observations & Measurements || 2.0 || ||
+Resources
+The following resources are relevant:
+
+Observation and Measurement
+O&M 1.0.0 for SOS 1.0.0.(52 north) - https://wiki.52north.org/bin/view/Sensornet/SosDataModeling
+
+Basic O&M 2.0.0 for SOS 2.0.0. - http://www.ogcnetwork.net/sos_2_0/tutorial/om
+
+SWE Common
+OGC SWE Common 1.0 Standard coupled with SensorML Standard - http://portal.opengeospatial.org/files/?artifact_id=21273
+OGC SWE Common 2.0 Standard - http://portal.opengeospatial.org/files/?artifact_id=41157
+Discussion
+Though it is clear that O&M version 2.0 is coupled with SOS Version 2.0 it is not clear that the same relationship exists for SWE Common 2.0. From initial inspection, it seems that SWE Common 2.0 has already been absorbed into the data packaging component of the 52 North SOS 1.0 version.
+
+Tentative decision for IOOS Workshop
+
+SOS 1.0
+O&M 1.0
+SWE Common Data Encoding 2.0
