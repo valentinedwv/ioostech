@@ -1,8 +1,9 @@
 #summary Landing page to record the guidelines and decisions on SOS implementation, beginning with those generated at the SOSRefImplementWorkshop
 #labels Featured,SOS,IDD
+#sidebar SOSTableOfContents
+
 
 <wiki:toc max_depth="1" />
-#sidebar SOSTableOfContents
 
 = Introduction =
 
