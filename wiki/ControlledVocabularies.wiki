@@ -18,12 +18,12 @@ However, there is also a vocabulary developed during the Data Integration Framew
   # How do we utilize or mature the vocabularies left over from the DIF at http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml ?
 The target set of controlled vocabulary types we will likely need are:
 
-* organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
-* organizational role (service provider, data provider or asset owner)
-* keywords (including geographical regions?)
-* platform (asset) type
-* observed property
-* units-of-measure
+ * organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
+ * organizational role (service provider, data provider or asset owner)
+ * keywords (including geographical regions?)
+ * platform (asset) type
+ * observed property
+ * units-of-measure
 
 = Observed Property Vocabularies: Domain Specific Issues =
 ==Water Quality==
