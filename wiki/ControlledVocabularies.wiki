@@ -16,8 +16,16 @@ However, there is also a vocabulary developed during the Data Integration Framew
   # How can we be good stewards in the community and participate in the process without bringing progress to a grinding halt?  (e.g. create temporary solutions for the immediate term but *ensure* that the long term vocabulary maintenance is done too.)
   # How do we harmonize with the many other vocabularies that have been developed in the regions?
   # How do we utilize or mature the vocabularies left over from the DIF at http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml ?
+The target set of controlled vocabulary types we will likely need are:
 
-= Domain Specific Issues =
+* organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
+* organizational role (service provider, data provider or asset owner)
+* keywords (including geographical regions?)
+* platform (asset) type
+* observed property
+* units-of-measure
+
+= Observed Property Vocabularies: Domain Specific Issues =
 ==Water Quality==
 
 ==IOOS NCCOS Water Quality Data Project==
