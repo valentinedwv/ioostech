@@ -8,7 +8,7 @@ Based on the [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventio
   * *timeSeries* - a series of data points at the same spatial location with monotonically increasing times
   * *timeSeriesProfile* - a series of profile features at the same horizontal position with monotonically increasing times
   * *trajectoryProfile* - a series of profile features located at points ordered along a trajectory
-  * *trajectory* - a series of data points along a path through space with monotonically increasing times.  This has no Z dimension associated with it (path over a 2D plane over time).  It can be represented as a trajectoryProfile with a constant Z and P dimension.
+  * *trajectory* - a series of data points along a path through space with monotonically increasing times.  This has no Z dimension associated with it (path over a 2D plane over time).  It can be represented as a trajectoryProfile with a constant Z and P dimension.  
 
 The solutions for encoding the above into SWE should *NOT* exclude the other CF Feature Types from being represented (it will be likely that these will be used to represent the above):
 
@@ -26,4 +26,6 @@ Here is the explanation of the different types of storage techniques:
 
 http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#representations-features
 
+
+Random link to a paper on SOS mobile profile for consideration when we get to trajectories [https://wiki.52north.org/pub/Sensornet/SosMobileExtension/20080306_SOSmobile.pdf pdf here]
  
