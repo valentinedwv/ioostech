@@ -68,8 +68,7 @@ Existing IOOS identifier conventions include station (sometimes described as pla
 
 See also [DescribeSensorMetadataForIOOSSOS this wiki page from Micah].
 
-Refer to the [http://ioostech.googlecode.com/files/IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx Word "IOOS Conventions for Asset Identifiers" document]. This Word [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers 
- document was recently migrated to a versioned wiki page on the GEO-IDE Wiki.]
+Refer to the [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers "IOOS Conventions for Asset Identifiers" document]. (This document was previously only available as a Word or pdf document, but was recently migrated to a versioned page on the GEO-IDE Wiki)
 
 == Default values and behaviors ==
 
