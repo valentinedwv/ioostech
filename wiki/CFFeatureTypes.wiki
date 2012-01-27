@@ -22,6 +22,8 @@ It is worth mentioning here that NetCDF files in the CF 1.6 spec can only repres
 
 NetCDF files can also represent data from multiple stations.  A timeSeries at multiple stations can be represented in one file.  I don't know how this will map to SWE.
 
+The initial, draft SWE representations included in this wiki document were [http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial taken from the 2009 OGC wiki document, "SWE Common encoding of CF-NetCDF coverage data"]. Unfortunately, that document didn't get around to fleshing out *profile* and *trajectory* SWE Common encodings (or their corresponding time series, of course).
+
 Here is the explanation of the different types of storage techniques:
 
 http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#representations-features
