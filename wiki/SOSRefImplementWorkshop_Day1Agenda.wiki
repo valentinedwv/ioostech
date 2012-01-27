@@ -31,6 +31,8 @@ Or described another way:
 Many of these goals could be applied to the entire workshop, but as described are tuned to the Day 1 agenda. They also involve laying out a path for useful, clear service documentation, both in the form of bare-bones [https://groups.google.com/d/topic/ioostech_dev/hTMaCJtkcWo/discussion "Interface Definition Document" (IDD)] templates that should be followed by every SOS service implementation (intended as a quick-takeup guide for service and client implementers and users), and more detailed documentation.
 
 [http://www.oostethys.org/best-practices The OOSTethys 2008 Guides and Best Practices documents] served as a foundation for many of the current IOOS SOS implementation details. It's still a highly relevant and well structured guide that we should refer to often and re-use as needed. _I'll add specific links in each section below, as appropriate._
+
+Some [https://geo-ide.noaa.gov/wiki/index.php?title=Category:IOOS_Guidelines core IOOS Guidelines documents formerly available only as Word or pdf docs have been recently migrated to the Geo-IDE wiki, here.]
 ----
 
 
@@ -56,6 +58,7 @@ For now, until this section is better fleshed out and organized, see these wiki 
     * [RepresentingRAAffiliationInServiceMetadata]
     * [RepresentingRolesinServiceMetadata]
 
+For units-of-measure, IOOS has considered and discussed UCUM (see http://aurora.regenstrief.org/~ucum/ucum.html and http://unitsofmeasure.org/) in the past; I'm not aware of a formal decision ever made, though. WaterML 2.0 apparently has also adopted UCUM.
 
 _DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies, correct the URLs, and provide examples.  Then, correcting the actual usage of each vocabulary in the tables that follow is a trivial exercise.  My proposed initial prioritization for observedProperty vocabularies is to use the [ http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
 
@@ -65,11 +68,8 @@ Existing IOOS identifier conventions include station (sometimes described as pla
 
 See also [DescribeSensorMetadataForIOOSSOS this wiki page from Micah].
 
-Link to the [http://ioostech.googlecode.com/files/IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx Word document "IOOS Conventions for Asset Identifiers"]
-
-The document above has been migrated to the  [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers GEO-IDE Wiki]
-
-[https://geo-ide.noaa.gov/wiki/index.php?title=Category:IOOS_Guidelines More of the IOOS Guidelines are here]
+Refer to the [http://ioostech.googlecode.com/files/IOOS_Conventions_for_Asset_Identifiers_2011-01-21_dps.docx Word "IOOS Conventions for Asset Identifiers" document]. This Word [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers 
+ document was recently migrated to a versioned wiki page on the GEO-IDE Wiki.]
 
 == Default values and behaviors ==
 
