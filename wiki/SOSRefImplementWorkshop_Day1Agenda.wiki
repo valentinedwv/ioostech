@@ -37,6 +37,8 @@ Many of these goals could be applied to the entire workshop, but as described ar
 
 == Classifiers (Controlled vocabularies) ==
 
+==== general discussions ====
+
 The target set of controlled vocabulary types we will likely need are:
   * organization type (eg, Federal agency, IOOS Regional Association, state agency, industry)
   * organizational role (service provider, data provider or asset owner)
@@ -44,8 +46,6 @@ The target set of controlled vocabulary types we will likely need are:
   * platform (asset) type
   * observed property
   * units-of-measure
-
-===     general discussions ===
 
 Address implementation details, in general and for each targeted vocabulary type.
 
@@ -56,34 +56,30 @@ For now, until this section is better fleshed out and organized, see these wiki 
 
 _DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies, correct the URLs, and provide examples.  Then, correcting the actual usage of each vocabulary in the tables that follow is a trivial exercise._
 
-===     organization type and role ===
+==== organization type and role ====
 
 See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
 
-===     keywords ===
+==== keywords ====
 
 Including geographical regions?
 
-===     platform (asset) type ===
+==== platform (asset) type ====
 
-===     observed property ===
+==== observed property ====
 
 Given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? Also, I've always found very helpful [http://www.pmel.noaa.gov/maillists/tmap/ioos_wsde/msg00699.html this 2010-1-26 email from Jeff DLB to the ioos_wsde list, describing the elements of adopting "MMI/CF phenomenon names for IOOS".]
 
 _DPS Comment: My proposed initial prioritization for observedProperty vocabularies is to use the [ http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
 
-===     units-of-measure ===
+==== units-of-measure ====
 
 IOOS has considered and discussed UCUM (see http://aurora.regenstrief.org/~ucum/ucum.html and http://unitsofmeasure.org/) in the past; I'm not aware of a formal decision ever made, though. WaterML 2.0 apparently has also adopted UCUM. CF conventions refer primarily to _udunits_, though I'm not sure if it's a requirement.
 
 
 == Identifiers ==
 
-Existing IOOS identifier conventions include station (sometimes described as platform), sensors, and "collections" (network). These are currently implemented as urn's only.
-
-See also [DescribeSensorMetadataForIOOSSOS this wiki page from Micah].
-
-Refer to the [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers "IOOS Conventions for Asset Identifiers" document]. (This document was previously only available as a Word or pdf document, but was recently migrated to a versioned page on the GEO-IDE Wiki)
+Existing IOOS identifier conventions include station (sometimes described as platform), sensors, and "collections" (network). These are currently implemented as urn's only.  See also [DescribeSensorMetadataForIOOSSOS this wiki page from Micah].  And refer to the [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers "IOOS Conventions for Asset Identifiers" document] (This document was previously only available as a Word or pdf document, but was recently migrated to a versioned page on the GEO-IDE Wiki).
 
 == Default values and behaviors ==
 
