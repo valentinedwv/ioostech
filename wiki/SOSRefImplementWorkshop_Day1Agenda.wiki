@@ -45,7 +45,7 @@ The target set of controlled vocabulary types we will likely need are:
   * observed property
   * units-of-measure
 
-For observed properties, given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? Also, I've always found very helpful [http://www.pmel.noaa.gov/maillists/tmap/ioos_wsde/msg00699.html this 2010-1-26 email from Jeff DLB to the ioos_wsde list, describing the elements of adopting "MMI/CF phenomenon names for IOOS".]
+=== general discussions ===
 
 Address implementation details, in general and for each targeted vocabulary type.
 
@@ -53,13 +53,23 @@ For now, until this section is better fleshed out and organized, see these wiki 
   * [ControlledVocabularies], from Rob Ragsdale and Derrick. Largely about observed properties.
   * [EmilioControlledVocabs], from Emilio. Miscellaneous.
   * [DescribeSensorMetadataForIOOSSOS], from Micah. Addresses several classifier types and options, particularly in SensorML.
-  * Regarding roles:
-    * [RepresentingRAAffiliationInServiceMetadata]
-    * [RepresentingRolesinServiceMetadata]
 
-For units-of-measure, IOOS has considered and discussed UCUM (see http://aurora.regenstrief.org/~ucum/ucum.html and http://unitsofmeasure.org/) in the past; I'm not aware of a formal decision ever made, though. WaterML 2.0 apparently has also adopted UCUM.
+_DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies, correct the URLs, and provide examples.  Then, correcting the actual usage of each vocabulary in the tables that follow is a trivial exercise._
 
-_DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies, correct the URLs, and provide examples.  Then, correcting the actual usage of each vocabulary in the tables that follow is a trivial exercise.  My proposed initial prioritization for observedProperty vocabularies is to use the [ http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
+=== organization type and role ===
+
+See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
+
+=== observed property ===
+
+Given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? Also, I've always found very helpful [http://www.pmel.noaa.gov/maillists/tmap/ioos_wsde/msg00699.html this 2010-1-26 email from Jeff DLB to the ioos_wsde list, describing the elements of adopting "MMI/CF phenomenon names for IOOS".]
+
+_DPS Comment: My proposed initial prioritization for observedProperty vocabularies is to use the [ http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
+
+=== units-of-measure ===
+
+IOOS has considered and discussed UCUM (see http://aurora.regenstrief.org/~ucum/ucum.html and http://unitsofmeasure.org/) in the past; I'm not aware of a formal decision ever made, though. WaterML 2.0 apparently has also adopted UCUM. CF conventions refer primarily to _udunits_, though I'm not sure if it's a requirement.
+
 
 == Identifiers ==
 
