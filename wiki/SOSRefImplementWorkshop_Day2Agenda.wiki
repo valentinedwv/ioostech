@@ -1,4 +1,5 @@
-#summary Annotated agenda for day 2 of the workshop.
+#summary Day-2 Annotated Agenda for IOOS SOS Reference Implementation Workshop
+#labels SOS
 
 (Emilio) Quick wrap-up of discussions from previous day.
 (Eric & Jeremy) Service assessment, testing and validation. Some relevant wiki pages: SOSVersions, SOSSurvey, SOSTesting, SOSAssessment, SWECommonPlan#Testing_(Jeremy)
