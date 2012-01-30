@@ -35,13 +35,13 @@ We have secured a room rate of $99.00 per night. *The "cut-off date" is January 
 
 High-level agenda outline, with responsible parties.
 
-  * *Day 1*
+  * *[SOSRefImplementWorkshop_Day1Agenda Day 1]*
     * (Derrick) Meeting goals and agenda.
     * (Emilio & Eric) [SOSRefImplementWorkshop_Day1Agenda Getting the basics and common elements squared away]: Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses; a bare-bones DescribeSensor request and response; and a GetObservations request for the case of a fixed point time series.
-  * *Day 2*
+  * *[SOSRefImplementWorkshop_Day2Agenda Day 2]*
     * (Emilio) Quick wrap-up of discussions from previous day.
     * (Eric & Jeremy) Service assessment, testing and validation. Some relevant wiki pages: [SOSVersions], [SOSSurvey], [SOSTesting], [SOSAssessment], [SWECommonPlan#Testing_(Jeremy)]
     * (Kyle) Part 1: O&M / SWE Common encoding for the [CFFeatureTypes scientific feature types] defined by CF conventions / the Common Data Model.
-  * *Day 3*
+  * *[SOSRefImplementWorkshop_Day3Agenda Day 3]*
     * (Kyle) Part 2: O&M / SWE Common encoding for [CFFeatureTypes scientific feature types]
     * (Derrick) Taking stock of what we've accomplished, open issues, follow-ups, etc
