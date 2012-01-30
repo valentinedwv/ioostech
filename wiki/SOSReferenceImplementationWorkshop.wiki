@@ -1,11 +1,11 @@
-#summary Logistics and other details supporting the Reference Implementation off site meeting.
+#summary Logistics and other details supporting the Feb 2012 Reference Implementation workshop in Baltimore.
 #labels Phase-Design,SOS,Featured
 
 =IOOS Reference Implementation Working Group Meeting=
 
 == Introduction ==
 
-A small team of IOOS RA DMAC Coordinators are working on development of a reference implementation for SOS for use by the IOOS community.  The meeting will be focused on the development of [SWECommonPlan SWE Common] templates for the data delivered in response to an SOS GetObservation request.  A plan for the strategy is developing [SWECommonPlan here]. 
+A small team of IOOS RA DMAC Coordinators are working on development of a reference implementation for SOS for use by the IOOS community.  The meeting will be focused on the development of [SWECommonPlan SWE Common] templates for the data delivered in response to an SOS GetObservation request.   
 
 == Meeting Details ==
 
