@@ -1,8 +1,8 @@
 #summary Day-1 Annotated Agenda for IOOS SOS Reference Implementation Workshop
 #labels SOS
 
-[SOSRefImplementWorkshop_Day1Agenda Day 1]
-[SOSRefImplementWorkshop_Day2Agenda Day 2]
+[SOSRefImplementWorkshop_Day1Agenda Day 1] | 
+[SOSRefImplementWorkshop_Day2Agenda Day 2] | 
 [SOSRefImplementWorkshop_Day3Agenda Day 3]
 
 <wiki:toc max_depth="2" />
