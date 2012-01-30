@@ -1,8 +1,19 @@
 #summary Day-3 Annotated Agenda for IOOS SOS Reference Implementation Workshop
 #labels SOS
 
+[SOSRefImplementWorkshop_Day1Agenda Day 1] | 
+[SOSRefImplementWorkshop_Day2Agenda Day 2] | 
+[SOSRefImplementWorkshop_Day3Agenda Day 3]
 
+<wiki:toc max_depth="2" />
 
+= Day Three = 
+
+== Common Data Model continued ==
 
 (Kyle) Part 2: O&M / SWE Common encoding for scientific feature types
+
+
+== Conclusions and Next Steps ==
+
 (Derrick) Taking stock of what we've accomplished, open issues, follow-ups, etc
