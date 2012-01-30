@@ -78,7 +78,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || grid_latitude ||  ||  || http://mmisw.org/ont/cf/parameter/grid_latitude ||  ||
 || grid_longitude ||  ||  || http://mmisw.org/ont/cf/parameter/grid_longitude ||  ||
 || relative_humidity ||  ||  ||  ||  ||
-|| sea_surface_height_above_sea_level ||  || http://mmisw.org/ont/cf/parameter/sea_surface_height_above_sea_level  ||  ||  ||
+|| sea_surface_height_above_sea_level ||  ||   ||http://mmisw.org/ont/cf/parameter/sea_surface_height_above_sea_level  ||  ||
 || sea_surface_wave_mean_height ||  ||  ||  ||  ||
 || sea_surface_swell_wave_period ||  ||  ||  ||  ||
 || sea_surface_wave_from_direction ||  ||  ||  ||  ||
