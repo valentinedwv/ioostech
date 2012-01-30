@@ -15,8 +15,22 @@
 
 The main page for the [SOSReferenceImplementationWorkshop IOOS DMAC SOS Reference Implementation Working Group Meeting is at this link].
 
+== Overview and Workshop Goals and Objectives (Derrick) ==
 
-== General Goals ==
+ * Goals for the system
+ * IOOS PO view of the enterprise
+ * Selected Use Cases that drive system development
+   * Automate the Asset Inventory (automatic repeatable view of the system)
+   * Integration via the Data Catalog/Portal/Registry
+   * Various ways to connect to users 
+   * Integration with other major programs
+ * Assumptions/Constraints/Good to Know
+ * Workflow for the next three days
+   * Recording decisions
+   * Noting next steps
+   * Noting responsibility for future work or outstanding issues
+
+== General !SOS Issues ==
 
 Getting the basics and common elements squared away:
   * Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of !GetCapabilities requests and responses
