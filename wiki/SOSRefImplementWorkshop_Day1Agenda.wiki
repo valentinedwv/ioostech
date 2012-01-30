@@ -30,7 +30,7 @@ The main page for the [SOSReferenceImplementationWorkshop IOOS DMAC SOS Referenc
    * Noting next steps
    * Noting responsibility for future work or outstanding issues
 
-== General !SOS Issues ==
+== General SOS Issues ==
 
 Getting the basics and common elements squared away:
   * Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of !GetCapabilities requests and responses
