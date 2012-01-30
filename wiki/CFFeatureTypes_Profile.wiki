@@ -9,7 +9,7 @@ A series of connected observations along a vertical line, like an atmospheric or
 
 The SWE encoding will need to support single and multiple profiles per request.  Each profile may measure at different depths, times, and locations, and also measure different variables.  This makes using a flat CSV file very inefficient.
 
-We need to think about how a user would want to see the data presented to them.  It may be better to seperate each PROFILE in the output as its own CSV block rather than combining them.
+We need to think about how a user would want to see the data presented to them.  It may be better to seperate each PROFILE in the output as its own CSV block rather than combining them.  We could also use the DataChoice element to designate which profile belongs to which row, and each Profile will get its own description block (see below).
 
 == CDL ==
 
@@ -72,6 +72,62 @@ There are basic examples
     <swe:values>1990-01-01T00:00:00Z,25.907316,9.71331 1990-01-01T00:00:00Z,30.689043,6.509185 1990-01-01T00:00:00Z,35.0691,7.8092937 1990-01-01T00:00:00Z,5.2745967,9.353531 1990-01-01T00:00:00Z,1.0291129,5.2182965 1990-01-01T00:00:00Z,31.410196,8.515996 1990-01-01T00:00:00Z,9.280735,4.7469463 1990-01-01T00:00:00Z,28.09941,7.780045 1990-01-01T00:00:00Z,5.374381,1.4958885 1990-01-01T00:00:00Z,24.737715,0.65638757</swe:values>
   </swe:DataArray>
 </om:result>
+}}}
+
+=== Multiple Profiles ===
+
+{{{
+
+<swe:DataStream>
+  <swe:elementType name="message">
+    <swe:DataChoice>
+      <swe:item name="TEMP">
+        <swe:DataRecord>
+          <swe:label>Temperature Measurement</swe:label>
+          <swe:field name="time">
+            <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+              <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+            </swe:Time>
+          </swe:field>
+          <swe:field name="temp">
+            <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
+              <swe:uom code="Cel"/>
+            </swe:Quantity>
+          </swe:field>
+        </swe:DataRecord>
+      </swe:item>
+      <swe:item name="WIND">
+        <swe:DataRecord>
+          <swe:label>Wind Measurement</swe:label>
+          <swe:field name="time">
+            <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+              <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+            </swe:Time>
+          </swe:field>
+          <swe:field name="wind_speed">
+            <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_speed">
+              <swe:uom code="km/h"/>
+            </swe:Quantity>
+          </swe:field>
+          <swe:field name="wind_dir">
+            <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_to_direction">
+              <swe:uom code="deg"/>
+            </swe:Quantity>
+          </swe:field>
+        </swe:DataRecord>
+      </swe:item>
+    </swe:DataChoice>
+  </swe:elementType>
+  <swe:encoding>
+    <swe:TextEncoding blockSeparator="\n" tokenSeparator=","/>
+  </swe:encoding>
+  <swe:values>
+    TEMP,2009-05-23T19:36:15Z,25.5
+    TEMP,2009-05-23T19:37:15Z,25.6
+    WIND,2009-05-23T19:37:17Z,56.3,226.3
+    TEMP,2009-05-23T19:38:15Z,25.5
+  </swe:values>
+</swe:DataStream
 }}}
 
 
