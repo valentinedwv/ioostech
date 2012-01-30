@@ -1,4 +1,4 @@
-#summary Day-1 Agenda for IOOS SOS Reference Implementation Workshop
+#summary Day-1 Annotated Agenda for IOOS SOS Reference Implementation Workshop
 #labels SOS
 
 = DRAFT Day-1 Agenda: The broader SOS request and response context =
