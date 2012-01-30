@@ -31,7 +31,7 @@ Or described another way:
 
 Many of these goals could be applied to the entire workshop, but as described are tuned to the Day 1 agenda. They also involve laying out a path for useful, clear service documentation, both in the form of bare-bones [https://groups.google.com/d/topic/ioostech_dev/hTMaCJtkcWo/discussion "Interface Definition Document" (IDD)] templates that should be followed by every SOS service implementation (intended as a quick-takeup guide for service and client implementers and users), and more detailed documentation.
 
-[http://www.oostethys.org/best-practices The OOSTethys 2008 Guides and Best Practices documents] served as a foundation for many of the current IOOS SOS implementation details. It's still a highly relevant and well structured guide that we should refer to often and re-use as needed. _I'll add specific links in each section below, as appropriate._
+[http://www.oostethys.org/best-practices The OOSTethys 2008 Guides and Best Practices documents] served as a foundation for many of the current IOOS SOS implementation details. It's still a highly relevant and well structured guide that we should refer to often and re-use as needed.
 ----
 
 
@@ -115,6 +115,7 @@ A draft of elements. These may be parsed out into different sections in the fina
   * temporal conventions
     * all datetime values are specified as iso8601 strings, where seconds are optional (in requests)
     * only UTC/GMT time support is currently required, for both requests and responses
+    * in GetCapabilities offerings response, address convention for <gml:TimePeriod><gml:endPosition>
     * in GetObservation request, eventTime is optional; if absent, the latest observations will be returned. [http://www.oostethys.org/best-practices/getlatest See the relevant OOSTethys 2008 document, "Get Latest"]
   * What role, if any, for featureOfInterest and FilterEncoding implementations?
     * For some early, limited featureOfInterest discussions, [http://www.oostethys.org/best-practices/foi see this 2008/2009 OOSTethys page]. If we implement something more sophisticated than "Earth:Ocean" or just the station location (assuming fixed site), we should consider how it interacts with the practice of using "Network-`*`" offerings currently used by NDBC and NOS; there's probably overlap.
