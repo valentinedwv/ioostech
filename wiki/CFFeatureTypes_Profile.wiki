@@ -3,11 +3,20 @@
 
 = Profile =
 
-There are *four* ways to represent profile data in NetCDF files using the CF 1.6 convention.  These should all be mapped to a common SWE encoding.
-
 <wiki:toc />
 
+== Use cases ==
+
+=== Web client ===
+
+
+
+=== Model ingestion ===
+
+
 == CDL ==
+
+There are *four* ways to represent profile data in NetCDF files using the CF 1.6 convention.  These should all be mapped to a common SWE encoding.
 
 === Multidimensional ===
 
