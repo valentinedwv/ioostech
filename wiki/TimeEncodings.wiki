@@ -1,6 +1,6 @@
 #summary How to encode time definition in SWE
 
-= TimeEncodints =
+= TimeEncodings =
 
 == Inside GetObservation ==
 
