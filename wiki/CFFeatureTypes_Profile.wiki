@@ -5,14 +5,11 @@
 
 <wiki:toc />
 
-== Use cases ==
+A series of connected observations along a vertical line, like an atmospheric or ocean sounding, is called a profile. For each profile, there is a single time, lat and lon.
 
-=== Web client ===
+The SWE encoding will need to support single and multiple profiles per request.  Each profile may measure at different depths, times, and locations, and also measure different variables.  This makes using a flat CSV file very inefficient.
 
-
-
-=== Model ingestion ===
-
+We need to think about how a user would want to see the data presented to them.  It may be better to seperate each PROFILE in the output as its own CSV block rather than combining them.
 
 == CDL ==
 
