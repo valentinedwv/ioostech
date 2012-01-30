@@ -1,0 +1,6 @@
+#summary Annotated agenda for day 3 of the workshop.
+#labels SOS
+
+
+(Kyle) Part 2: O&M / SWE Common encoding for scientific feature types
+(Derrick) Taking stock of what we've accomplished, open issues, follow-ups, etc
