@@ -31,3 +31,36 @@ There are *four* ways to represent profile data in NetCDF files using the CF 1.6
 
 
 == SWE ==
+
+{{{
+<om:result>
+  <swe:DataArray>
+    <swe:elementCount>
+      <swe:Count>
+        <swe:value>10</swe:value>
+      </swe:Count>
+    </swe:elementCount>
+    <swe:elementType name="SimpleDataArray">
+      <swe:DataRecord>
+        <swe:field name="time">
+          <swe:Time definition="urn:ogc:phenomenon:time:iso8601"/>
+        </swe:field>
+        <swe:field name="temperature">
+          <swe:Quantity definition="urn:ogc:def:phenomenon:mmisw.org:cf:temperature">
+            <swe:uom code="Celsius"/>
+          </swe:Quantity>
+        </swe:field>
+        <swe:field name="z">
+          <swe:Quantity definition="urn:ogc:def:phenomenon:mmisw.org:cf:z">
+            <swe:uom code="m"/>
+          </swe:Quantity>
+        </swe:field>
+      </swe:DataRecord>
+    </swe:elementType>
+    <swe:encoding>
+      <swe:TextBlock blockSeparator=" " decimalSeparator="." tokenSeparator=","/>
+    </swe:encoding>
+    <swe:values>1990-01-01T00:00:00Z,25.907316,9.71331 1990-01-01T00:00:00Z,30.689043,6.509185 1990-01-01T00:00:00Z,35.0691,7.8092937 1990-01-01T00:00:00Z,5.2745967,9.353531 1990-01-01T00:00:00Z,1.0291129,5.2182965 1990-01-01T00:00:00Z,31.410196,8.515996 1990-01-01T00:00:00Z,9.280735,4.7469463 1990-01-01T00:00:00Z,28.09941,7.780045 1990-01-01T00:00:00Z,5.374381,1.4958885 1990-01-01T00:00:00Z,24.737715,0.65638757</swe:values>
+  </swe:DataArray>
+</om:result>
+}}}
