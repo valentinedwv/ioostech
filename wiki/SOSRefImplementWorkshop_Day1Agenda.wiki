@@ -1,6 +1,13 @@
 #summary Day-1 Annotated Agenda for IOOS SOS Reference Implementation Workshop
 #labels SOS
 
+[SOSRefImplementWorkshop_Day1Agenda Day 1]
+[SOSRefImplementWorkshop_Day2Agenda Day 2]
+[SOSRefImplementWorkshop_Day3Agenda Day 3]
+
+<wiki:toc max_depth="2" />
+
+
 = DRAFT Day-1 Agenda: The broader SOS request and response context =
 
   _"While time is passing, the technological foundations upon which data management systems are built are certain to continue advancing rapidly. These considerations argue for adopting attitudes of pragmatism and realism when planning data management strategies. We should understand that technological progress is always made in incremental steps, rather than 'heroic leaps'. We should give consideration to technology choices based upon their potential contributions to the distant vision, but we should measure them by their effectiveness at addressing today's challenges."_ [#Footnotes (1)]
