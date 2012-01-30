@@ -30,4 +30,17 @@ http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#repres
 
 
 Random link to a paper on SOS mobile profile for consideration when we get to trajectories [https://wiki.52north.org/pub/Sensornet/SosMobileExtension/20080306_SOSmobile.pdf pdf here]
+
+== Other netCDF Issues  ==
+
+ * General construct for mapping global attributes
+ * More specific mechanism for certain types of information such as contact person
+ * Generic construct for variable attributes
+ * Specific variable attributes
+   * standard_name
+   * units
+   * long_name
+   * auxillary_variables
+   * axis
+
  
