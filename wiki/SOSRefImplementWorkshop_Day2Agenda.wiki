@@ -1,12 +1,26 @@
 #summary Day-2 Annotated Agenda for IOOS SOS Reference Implementation Workshop
 #labels SOS
 
-(Emilio) Quick wrap-up of discussions from previous day.
-(Eric & Jeremy) Service assessment, testing and validation. Some relevant wiki pages: SOSVersions, SOSSurvey, SOSTesting, SOSAssessment, SWECommonPlan#Testing_(Jeremy)
-(Kyle) Part 1: O&M / SWE Common encoding for the scientific feature types defined by CF conventions / the Common Data Model.
-= Day One Wrap Up =
+[SOSRefImplementWorkshop_Day1Agenda Day 1] | 
+[SOSRefImplementWorkshop_Day2Agenda Day 2] | 
+[SOSRefImplementWorkshop_Day3Agenda Day 3]
+
+<wiki:toc max_depth="2" />
+
+
+= Day Two = 
+
+== Day One Wrap Up ==
 
 Emilio will lead a short wrap up of day one activities.
 
 
-= Service Assessment =
+== Service Assessment ==
+
+
+(Eric & Jeremy) Service assessment, testing and validation. Some relevant wiki pages: SOSVersions, SOSSurvey, SOSTesting, SOSAssessment, SWECommonPlan#Testing_(Jeremy)
+
+
+== Common Data Model (CF/SWE/O&M) ==
+
+(Kyle) Part 1: O&M / SWE Common encoding for the scientific feature types defined by CF conventions / the Common Data Model.
