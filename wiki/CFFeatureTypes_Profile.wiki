@@ -75,4 +75,4 @@ There are *four* ways to represent profile data in NetCDF files using the CF 1.6
 }}}
 
 
-Alternatively see section x.y in the [http://portal.opengeospatial.org/files/?artifact_id=41157 SWE 2.0 specification] 
+Alternatively see section 9.2.6 in the [http://portal.opengeospatial.org/files/?artifact_id=41157 SWE 2.0 specification] 
