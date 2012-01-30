@@ -5,6 +5,9 @@
 
 Currently this page is just a dumping ground of links relevant to _SensorML_ and/or _DescribeSensor_
 
+= IOOS Examples or Guidance =
+DescribeSensorMetadataForIOOSSOS
+
 = Oostethys Examples = 
 http://code.google.com/p/oostethys/source/browse/trunk/component/server/perl/difDescribeSensor.xml?r=517
 
