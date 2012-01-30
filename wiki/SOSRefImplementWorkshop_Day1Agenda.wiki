@@ -9,13 +9,7 @@
 [SOSRefImplementWorkshop_Day3Agenda Day 3]
 
 
-= DRAFT Day-1 Agenda: The broader SOS request and response context =
-
-  _"While time is passing, the technological foundations upon which data management systems are built are certain to continue advancing rapidly. These considerations argue for adopting attitudes of pragmatism and realism when planning data management strategies. We should understand that technological progress is always made in incremental steps, rather than 'heroic leaps'. We should give consideration to technology choices based upon their potential contributions to the distant vision, but we should measure them by their effectiveness at addressing today's challenges."_ [#Footnotes (1)]
-
-The main page for the [SOSReferenceImplementationWorkshop IOOS DMAC SOS Reference Implementation Working Group Meeting is at this link].
-
-== Overview and Workshop Goals and Objectives (Derrick) ==
+= Overview and Workshop Goals and Objectives (Derrick) =
 
  * Goals for the system
  * IOOS PO view of the enterprise
@@ -29,6 +23,12 @@ The main page for the [SOSReferenceImplementationWorkshop IOOS DMAC SOS Referenc
    * Recording decisions
    * Noting next steps
    * Noting responsibility for future work or outstanding issues
+----
+
+
+= Day-1 Agenda: The broader SOS request and response context =
+
+  _"While time is passing, the technological foundations upon which data management systems are built are certain to continue advancing rapidly. These considerations argue for adopting attitudes of pragmatism and realism when planning data management strategies. We should understand that technological progress is always made in incremental steps, rather than 'heroic leaps'. We should give consideration to technology choices based upon their potential contributions to the distant vision, but we should measure them by their effectiveness at addressing today's challenges."_ [#Footnotes (1)]
 
 == General SOS Issues ==
 
@@ -59,7 +59,7 @@ Many of these goals could be applied to the entire workshop, but as described ar
 
 == Classifiers (Controlled vocabularies) ==
 
-==== general discussions ====
+=== general discussions ===
 
 The target set of controlled vocabulary types we will likely need are:
   * organization type (eg, Federal agency, IOOS Regional Association, state agency, industry)
@@ -79,24 +79,23 @@ For now, until this section is better fleshed out and organized, see these wiki 
 _DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies, correct the URLs, and provide examples.  Then, correcting the actual usage of each vocabulary in the tables that follow is a trivial exercise._
 
 
-
-==== organization type and role ====
+=== organization type and role ===
 
 See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
 
-==== keywords ====
+=== keywords ===
 
 Including geographical regions?
 
-==== platform (asset) type ====
+=== platform (asset) type ===
 
-==== observed property ====
+=== observed property ===
 
 Given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? Also, I've always found very helpful [http://www.pmel.noaa.gov/maillists/tmap/ioos_wsde/msg00699.html this 2010-1-26 email from Jeff DLB to the ioos_wsde list, describing the elements of adopting "MMI/CF phenomenon names for IOOS".]
 
 _DPS Comment: My proposed initial prioritization for observedProperty vocabularies is to use the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
 
-==== units-of-measure ====
+=== units-of-measure ===
 
 IOOS has considered and discussed UCUM (see http://aurora.regenstrief.org/~ucum/ucum.html and http://unitsofmeasure.org/) in the past; I'm not aware of a formal decision ever made, though. WaterML 2.0 apparently has also adopted UCUM. CF conventions refer primarily to _udunits_, though I'm not sure if it's a requirement.
 
@@ -160,6 +159,6 @@ Examples, starting points:
 
 Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
 
-== Footnotes ==
+= Footnotes =
 
 ^(1)^ Hankin, S., L. Bermudez, J.D. Blower, B. Blumenthal, K.S. Casey, M. Fornwall, J. Graybeal, R.P. Guralnick, T. Habermann, E. Howlett, B. Keeley, R. Mendelssohn, R. Schlitzer, R. Signell, *D. Snowden* and A. Woolf, (2010), Data Management for the Ocean Sciences - Perspectives for the Next Decade, in _Proceedings of OceanObs'09: Sustained Ocean Observations and Information for Society (Vol. 1)_, Venice, Italy, 21-25 September 2009, Hall, J., Harrison, D.E. & Stammer, D., Eds., ESA Publication WPP-306, [http://www.oceanobs09.net/proceedings/pp/pp21/ doi:10.5270/OceanObs09.pp.21]
