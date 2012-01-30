@@ -114,8 +114,8 @@ Existing IOOS identifier conventions include station (sometimes described as pla
 
 A draft of elements. These may be parsed out into different sections in the final agenda. _This is not yet comprehensive or vetted, of course!_
 
-  * access: HTTP GET and POST (but mainly GET)
-  * GET KVP's are case-insensitive (both K & V, or all K's and *some* V's?)
+  * access: HTTP GET and POST, but mainly GET. Note: A recent analysis of the NDBC SOS showed that POST access is barely ever used.
+  * GET KVP's are case-insensitive; both K & V, or all K's and *some* V's? See OOSTethys recommendation.
   * a request to the naked, unqualified service (no request, service or version keys) returns the GetCapabilities response. _This was the [http://www.oostethys.org/ OOSTethys]-recommended convention (Eric, is that true?). Should we continue it?_
   * use of a default namespace in XML responses is forbidden
   * correct XSD and namespace references for GetCapabilities; here's a sample, from the NANOOS SOS:
@@ -161,4 +161,4 @@ Currently the interface descriptions for the two core IOOS SOS implementations (
 
 = Footnotes =
 
-^(1)^ Hankin, S., L. Bermudez, J.D. Blower, B. Blumenthal, K.S. Casey, M. Fornwall, J. Graybeal, R.P. Guralnick, T. Habermann, E. Howlett, B. Keeley, R. Mendelssohn, R. Schlitzer, R. Signell, *D. Snowden* and A. Woolf, (2010), Data Management for the Ocean Sciences - Perspectives for the Next Decade, in _Proceedings of OceanObs'09: Sustained Ocean Observations and Information for Society (Vol. 1)_, Venice, Italy, 21-25 September 2009, Hall, J., Harrison, D.E. & Stammer, D., Eds., ESA Publication WPP-306, [http://www.oceanobs09.net/proceedings/pp/pp21/ doi:10.5270/OceanObs09.pp.21]
+^(1)^ Hankin, S., L. Bermudez, J.D. Blower, B. Blumenthal, K.S. Casey, M. Fornwall, J. Graybeal, R.P. Guralnick, T. Habermann, E. Howlett, B. Keeley, R. Mendelssohn, R. Schlitzer, R. Signell, *D. Snowden* and A. Woolf, (2010), Data Management for the Ocean Sciences - Perspectives for the Next Decade, in _Proceedings of !OceanObs'09: Sustained Ocean Observations and Information for Society (Vol. 1)_, Venice, Italy, 21-25 September 2009, Hall, J., Harrison, D.E. & Stammer, D., Eds., ESA Publication WPP-306, [http://www.oceanobs09.net/proceedings/pp/pp21/ doi:10.5270/OceanObs09.pp.21]
