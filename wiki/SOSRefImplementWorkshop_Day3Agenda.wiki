@@ -1,5 +1,7 @@
-#summary Annotated agenda for day 3 of the workshop.
+#summary Day-3 Annotated Agenda for IOOS SOS Reference Implementation Workshop
 #labels SOS
+
+
 
 
 (Kyle) Part 2: O&M / SWE Common encoding for scientific feature types
