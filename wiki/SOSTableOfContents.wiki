@@ -1,14 +1,14 @@
 #summary Sidebar Navigation for the SOS Guidelines
 #labels SOS
 
- * [SOSGuidelines SOSGuidelines Landing page for the guidelines document]
- * [SOSCallingSyntax SOSCallingSyntax Syntax and defaults for HTTP GET interface to the SOS]
+ * [SOSGuidelines SOS Guidelines]
+ * [SOSCallingSyntax Calling Syntax]
  * [GetCapabilities]
  * [DescribeSensor]
  * [GetObservation]
    * [SWECommonPlan]
    * [CFFeatureTypes]
- * [SOSReferenceImplementationWorkshop Material compiled in preparation for the Baltimore workshop]
+ * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
   * [SOSTesting]
    * [SOSComponentVersions]
    * [SOSVersions]
