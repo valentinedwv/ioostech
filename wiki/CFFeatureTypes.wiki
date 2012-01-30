@@ -42,5 +42,7 @@ Random link to a paper on SOS mobile profile for consideration when we get to tr
    * long_name
    * auxillary_variables
    * axis
+ * Mapping the featureType = "timeSeries"; attribute to O&M (featureOfInterest?)
+ * Mapping the cf_role=”timeseries_id” attribute to O&M
 
  
