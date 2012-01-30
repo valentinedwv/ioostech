@@ -40,7 +40,7 @@ There are *four* ways to represent profile data in NetCDF files using the CF 1.6
 
 == SWE ==
 
-There are basic examples
+There are basic examples.  The request that was made was for TWO profiles and TWO variables (temperature and salinity).
 
 === Multiple Blocks ===
 {{{
