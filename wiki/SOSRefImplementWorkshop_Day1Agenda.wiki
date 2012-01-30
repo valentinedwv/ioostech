@@ -70,7 +70,7 @@ Including geographical regions?
 
 Given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? Also, I've always found very helpful [http://www.pmel.noaa.gov/maillists/tmap/ioos_wsde/msg00699.html this 2010-1-26 email from Jeff DLB to the ioos_wsde list, describing the elements of adopting "MMI/CF phenomenon names for IOOS".]
 
-_DPS Comment: My proposed initial prioritization for observedProperty vocabularies is to use the [ http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
+_DPS Comment: My proposed initial prioritization for observedProperty vocabularies is to use the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
 
 ==== units-of-measure ====
 
