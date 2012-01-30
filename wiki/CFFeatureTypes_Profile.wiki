@@ -7,9 +7,11 @@
 
 A series of connected observations along a vertical line, like an atmospheric or ocean sounding, is called a profile. For each profile, there is a single time, lat and lon.
 
-The SWE encoding will need to support single and multiple profiles per request.  Each profile may measure at different depths, times, and locations, and also measure different variables.  This makes using a flat CSV file very inefficient.
+The SWE encoding will need to support single and multiple profiles per request.  Each profile may measure at different depths, times, and locations, and also measure different variables.  This makes using a flat CSV output very inefficient.
 
-We need to think about how a user would want to see the data presented to them.  It may be better to seperate each PROFILE in the output as its own CSV block rather than combining them.  We could also use the DataChoice element to designate which profile belongs to which row, and each Profile will get its own description block (see below).
+We need to think about how a user would want to see the data presented to them.  It may be better to seperate each PROFILE in the output as its own om:Observation block rather than combining them.  We could also use the DataChoice element to designate which profile belongs to which row, and each Profile will get its own description block (see below).
+
+I present two options in the SWE section.  One with different Observation blocks for each Profile, and one in which Profiles are combined into one Observation block.
 
 == CDL ==
 
