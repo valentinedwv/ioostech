@@ -92,9 +92,9 @@ There are basic examples
   <swe:DataStream>
     <swe:elementType name="message">
       <swe:DataChoice>
-        <swe:item name="TEMP">
+        <swe:item name="PROFILE_1">
           <swe:DataRecord>
-            <swe:label>Temperature Measurement</swe:label>
+            <swe:label>First Profile (PROFILE_1)</swe:label>
             <swe:field name="time">
               <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
                 <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
@@ -107,22 +107,12 @@ There are basic examples
             </swe:field>
           </swe:DataRecord>
         </swe:item>
-        <swe:item name="WIND">
+        <swe:item name="PROFILE_2">
           <swe:DataRecord>
-            <swe:label>Wind Measurement</swe:label>
-            <swe:field name="time">
-              <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
-                <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
-              </swe:Time>
-            </swe:field>
-            <swe:field name="wind_speed">
-              <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_speed">
-                <swe:uom code="km/h"/>
-              </swe:Quantity>
-            </swe:field>
-            <swe:field name="wind_dir">
-              <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_to_direction">
-                <swe:uom code="deg"/>
+            <swe:label>Second Profile (PROFILE_2)</swe:label>
+            <swe:field name="temp">
+              <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
+                <swe:uom code="Cel"/>
               </swe:Quantity>
             </swe:field>
           </swe:DataRecord>
@@ -133,8 +123,8 @@ There are basic examples
       <swe:TextEncoding blockSeparator="\n" tokenSeparator=","/>
     </swe:encoding>
     <swe:values>
-      TEMP,2009-05-23T19:36:15Z,25.5
-      TEMP,2009-05-23T19:37:15Z,25.6
+      PROFILE_1,2009-05-23T19:36:15Z,25.5
+      PROFILE_2,2009-05-23T19:37:15Z,25.6
       WIND,2009-05-23T19:37:17Z,56.3,226.3
       TEMP,2009-05-23T19:38:15Z,25.5
     </swe:values>
