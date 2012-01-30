@@ -279,7 +279,7 @@ variables:
 
 === Multiple Block ===
 
-Since we are giving each profile location (i.e. a station) it's own data block, we can leave out the latitude and longitude in the CSV block. It is represented in the <gml:boundedBy> section inside of <om:Observation>. If the profile is moving, it is not a timeSeriesProfile! I have left them in there for reference.
+Since we are giving each timeSeries location (i.e. a station) it's own data block, we can leave out the latitude and longitude in the CSV block. It is represented in the <gml:boundedBy> section inside of <om:Observation>. If the profile is moving, it is not a timeSeries! I have left them in there for reference.
 
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
