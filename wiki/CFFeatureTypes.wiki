@@ -2,6 +2,7 @@
 #sidebar CFFeatureTypes_SideNavigation
 
 = Introduction =
+This document summarizes the CF Feature Types as part of the [SOSReferenceImplementationWorkshop] discussion.
 
 Based on the [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#idp6280704 CF 1.6 Conventions], we need to develop SWE encodings for the feature types in use by the IOOS community.  These have been identified as:
 
