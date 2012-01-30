@@ -5,6 +5,10 @@
 
 Currently this page is just a dumping ground of links relevant to _SensorML_ and/or _DescribeSensor_
 
+= Oostethys Examples = 
+http://code.google.com/p/oostethys/source/browse/trunk/component/server/perl/difDescribeSensor.xml?r=517
+
+
 = Q2O: QARTOD to OGC =
 
 Project home page is here.  http://q2o.whoi.edu/  One key idea relevant to the SensorML discussion is that Q2O has separated the platform/sensor metadata into two or more hierarchies based on the time scale in which the metadata is updated.  They can be referenced from within through xlinks.  For example, the _OEM_ file, or Original Equipment Manufacturer file, contains static metadata for a sensor that represents metadata that a) never changes and/or b) represents the factory defaults (these may change through time).  A second file, is a time dependent _Deployment_ file that contains metadata relevant to a particular deployment of the sensor in the environment.  I think this is an idea worth pursuing.
