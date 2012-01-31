@@ -148,6 +148,8 @@ A draft of elements. These may be parsed out into different sections in the fina
 
 == SOS requests Interface Definition Document ==
 
+_Recommendation:_ Use the [http://www.oostethys.org/best-practices/best-practices-get OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] as our starting point for a template IDD. Move it to our wiki, edit it as needed (updates, cleanups, etc), then adapt existing representative SOS services (NDBC, NOS-COOPS, maybe NANOOS and other volunteers) using the template.
+
 Examples, starting points:
   * [http://sdf.ndbc.noaa.gov/sos/ NDBC SOS]
   * [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp NOS-COOPS SOS]
@@ -155,7 +157,6 @@ Examples, starting points:
   * [NANOOSNVSPythonSOS NANOOS SOS]
   * [https://wiki.52north.org/bin/view/Sensornet/SosOperations 52North Example]
   * Eric Bridger's OOSTethys/IOOS Perl server code?
-  * [http://www.oostethys.org/best-practices/best-practices-get The OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] is actually still highly relevant, I think. Copying to an IOOS-hosted site and updating it as needed may be the way to go!
 
 Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
 
