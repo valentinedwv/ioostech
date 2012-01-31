@@ -120,7 +120,8 @@ Botts, M., G. Percivall, et al. (2008). OGC Sensor Web Enablement: Overview and 
 
 Bröring, A., J. Echterhoff, et al. (2011). "New Generation Sensor Web Enablement." Sensors 11(3): 2652-2699.
 
-Consortium, O. G. (2007). OpenGIS® Sensor Model Language (SensorML) Implementation Specification, Open Geospatial Consortium.
+Consortium, O. G. (2007). OpenGIS® Sensor Model Language (SensorML) Implementation Specification, Open Geospatial Consortium. [http://portal.opengeospatial.org/files/?artifact_id=21273 OGC Portal]
+
 
 Consortium, O. G. (2007). OpenGIS® SensorML Encoding Standard, version 1.0 Schema - Corrigendum 1, Open Geospatial Consortium.
 
