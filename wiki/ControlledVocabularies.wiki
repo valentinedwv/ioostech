@@ -73,7 +73,7 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 || mass_concentration_of_oxygen_in_sea_water ||  ||  ||  ||  ||
 || radial_sea_water_velocity_away_from_instrument ||  ||  || http://mmisw.org/ont/ioos/parameter/radial_sea_water_velocity_away_from_instrument ||  ||
 || dew_point_temperature ||  ||  ||  || http://mmisw.org/ont/ioos/parameter/CF_Definition ||
-|| direction_of_sea_water_velocity ||  ||  ||  || http://mmisw.org/ont/ioos/parameter/current_to_direction ||
+|| direction_of_sea_water_velocity ||  ||  || http://mmisw.org/ont/cf/direction_of_sea_water_velocity || http://mmisw.org/ont/ioos/parameter/current_to_direction ||
 || product_of_air_temperature_and_specific_humidity ||  ||  ||  ||  ||
 || grid_latitude ||  ||  || http://mmisw.org/ont/cf/parameter/grid_latitude ||  ||
 || grid_longitude ||  ||  || http://mmisw.org/ont/cf/parameter/grid_longitude ||  ||
