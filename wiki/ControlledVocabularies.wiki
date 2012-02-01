@@ -97,15 +97,11 @@ Biodiversity Information Standards (formerly known as Taxonomic Data Working Gro
 
 Schema Terminology will be based on ratified [http://rs.tdwg.org/dwc/ Darwin core], Dublin core and proposed IOOS vocabularies. XML guide will also based on Darwin core XML guidance.
 
-•CF Conventions had been applied to biological data definition at the field level. This is to assure that IOOS Biological Project will be compatible with other geophysical datasets.
-
-•FGDC and ISO 19115-2 are the adopted Metadata standards.
-
-•ERDDAP is the main webservice for this project.
-
-•EDC is the client developed to connect directly to ERDDAP and access data using customer application tools such as ARCGIS and R Project.
-
-•To learn more about the Biological data standards implemented at the Pacific Islands Region please follow the following links:
+  * CF Conventions had been applied to biological data definition at the field level. This is to assure that IOOS Biological Project will be compatible with other geophysical datasets.
+  * FGDC and ISO 19115-2 are the adopted Metadata standards.
+  * ERDDAP is the main webservice for this project.
+  * EDC is the client developed to connect directly to ERDDAP and access data using customer application tools such as ARCGIS and R Project.
+  * To learn more about the Biological data standards implemented at the Pacific Islands Region please follow the following links:
 Biological data services at the Pacific Islands Region website
 FGDC and ISO Metadata
 
