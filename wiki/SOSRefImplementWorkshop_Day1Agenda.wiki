@@ -83,6 +83,8 @@ _DPS Comment: One desirable outcome of this session would be to approve and impr
 
 See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
 
+It would be useful to have some discussion on options for distinguishing redundant data within two a result set from two services.  For example, NDBC aggregates and reserves data from multiple RAs.  How can a user determine the intersection between the RA capabilities/Content and the NDBC capabilities/Content?  
+
 === keywords ===
 
 Including geographical regions?
