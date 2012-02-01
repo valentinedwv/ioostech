@@ -209,8 +209,8 @@ Are there vocabularies that can be used to augment this list?  Are the definitio
 ==NDBC== 
 || GetObservation Term || Vocabulary ID term || SOS URL || 
 ||sea_water_electrical_conductivity||term:http://mmisw.org/ont/cf/parameter/sea_water_electrical_conductivity:46||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
-||sea_floor_depth_below_sea_surface||term:http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface:56||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
-||sea_water_salinity||term:http://mmisw.org/ont/cf/parameter/sea_water_salinity:89||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
+||sea_floor_depth_below_sea_surface||term:http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
+||sea_water_salinity||term:http://mmisw.org/ont/cf/parameter/sea_water_salinity||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS||
 ||currents||term:http://mmisw.org/ont/cf/parameter/currents:131 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
 ||waves||term:http://mmisw.org/ont/cf/parameter/waves:226 || http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
 ||air_pressure_at_sea_level||term:http://mmisw.org/ont/cf/parameter/air_pressure_at_sea_level:338||http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS ||
