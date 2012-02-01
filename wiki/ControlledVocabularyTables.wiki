@@ -1,16 +1,8 @@
 #summary Several tables showing vocabularies currently in use by various data providers.
 
-= Introduction =
-
-Add your content here.
+<wiki:toc max_depth="2" />
 
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
 ==NOAA Chesapeake Bay Office Parameter List== 
 
 || *NCBO Term* || *NCBO Def* || *NCBO Units* || *CF URL*  || *IOOS Vocab URL* ||
