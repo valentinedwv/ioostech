@@ -1,6 +1,9 @@
 #summary Information about selecting and using Controlled Vocabularies for developers of IOOS services.
 #labels Phase-Requirements,Phase-Design,Vocabularies
 
+<wiki:toc max_depth="2" />
+
+
 = Introduction =
 Also see EmilioControlledVocabs.
 
@@ -221,6 +224,4 @@ See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
   * [http://data.nodc.noaa.gov/geoportal/ New NODC Geoportal]. Potentially it may use relevant controlled vocabularies that could facilitate wider discovery across IOOS, NODC, etc?
   * [http://cdi.gleon.org/ GLEON-CDI] (lakes). A [http://gleon.org/gleon-bb/viewtopic.php?f=3&t=18#p58 GLEON CV Excel spreadsheet is mentioned and linked to in this 2010 forum thread]
   * [http://www.citeulike.org/user/emayorga/tag/ioos,informatics My CiteULike collection of peer-reviewed journal articles broadly related to this topic]
-
-
 
