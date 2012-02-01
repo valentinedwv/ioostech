@@ -114,7 +114,7 @@ http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
 
 http://code.google.com/p/swe-common-data-framework/
 
-Jirka, S., and C. Stasch.  Concept for a Lightweight SWE Profile.  Accessed 01 February 2012 from http://external.opengis.org/twiki_public/pub/HydrologyDWG/SOSUsageAndServerTypeDiscussion/Lightweight_SWE_Profile_Draft.pdf Concept for a Lightweight SWE Profile URL]
+Jirka, S., and C. Stasch.  Concept for a Lightweight SWE Profile.  Accessed 01 February 2012 from [http://external.opengis.org/twiki_public/pub/HydrologyDWG/SOSUsageAndServerTypeDiscussion/Lightweight_SWE_Profile_Draft.pdf Concept for a Lightweight SWE Profile URL]
 
 Bermudez, L., T. Cook, et al. (2009). Web feature service (WFS) and sensor observation service (SOS) comparison to publish time series data, IEEE.[http://ieeexplore.ieee.org/Xplore/login.jsp?url=http%3A%2F%2Fieeexplore.ieee.org%2Fstamp%2Fstamp.jsp%3Ftp%3D%26arnumber%3D5067460&authDecision=-203 Abstract]
 
