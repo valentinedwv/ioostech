@@ -42,6 +42,8 @@ I present two options in the SWE section. One with different Observation blocks 
 
 === Single Block ===
 
+I came up with this, pulling in ideas from many different places and the SWE spec.
+
 The {{{<gml:boundedBy>}}} element contains all of the locations of the profiles included in the output.
 
 The {{{<om:samplingTime>}}} includes the time range of all profiles.
@@ -143,6 +145,8 @@ The {{{<om:samplingTime>}}} includes the time range of all profiles.
 }}}
 
 === Multiple Blocks ===
+
+I came up with this, pulling in ideas from many different places and the SWE spec.
 
 Since we are giving each profile location (i.e. a station) it's own data block, we can leave out the latitude and longitude in the CSV block.  It is represented in the {{{<gml:boundedBy>}}} section inside of {{{<om:Observation>}}}.  If the profile is moving, it is not a timeSeriesProfile!  I have left them in there for reference.
 
