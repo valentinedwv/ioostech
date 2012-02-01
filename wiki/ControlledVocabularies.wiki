@@ -53,7 +53,7 @@ OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_
 || OGC Terms (URN) || ?? || ogc:def:phenomenon:mmisw.org:cf:PROPERTYNAME || 
 || GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/waves ||
 
-=A list of tables can be found on the [http://code.google.com/p/ioostech/wiki/ControlledVocabularyTables ControlledVocabularyTables Page]=
+==A list of tables can be found on the [http://code.google.com/p/ioostech/wiki/ControlledVocabularyTables ControlledVocabularyTables Page]==
 
 ==Water Quality==
 
