@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Several tables showing vocabularies currently in use by various data providers.
 
 = Introduction =
 
