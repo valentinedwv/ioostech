@@ -123,7 +123,7 @@ Bröring, A., J. Echterhoff, et al. (2011). "New Generation Sensor Web Enablemen
 Consortium, O. G. (2007). OpenGIS® Sensor Model Language (SensorML) Implementation Specification, Open Geospatial Consortium. [http://portal.opengeospatial.org/files/?artifact_id=21273 OGC Portal]
 
 
-Consortium, O. G. (2007). OpenGIS® SensorML Encoding Standard, version 1.0 Schema - Corrigendum 1, Open Geospatial Consortium. https://portal.opengeospatial.org/modules/admin/license_agreement.php?suppressHeaders=0&access_license_id=3&target=http://portal.opengeospatial.org/files/%3fartifact_id=24757 Corrigendum 1]
+Consortium, O. G. (2007). OpenGIS® SensorML Encoding Standard, version 1.0 Schema - Corrigendum 1, Open Geospatial Consortium. [https://portal.opengeospatial.org/modules/admin/license_agreement.php?suppressHeaders=0&access_license_id=3&target=http://portal.opengeospatial.org/files/%3fartifact_id=24757 Corrigendum 1]
 
 Consortium, O. G. (2007). Sensor Observation Service 1.0, Open Geospatial Consortium: 104. http://www.opengeospatial.org/standards/sos
 
