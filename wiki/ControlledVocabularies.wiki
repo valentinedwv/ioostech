@@ -123,14 +123,12 @@ Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's
 
 #summary From Emilio: Some pointers, links and initial thoughts on Controlled Vocabularies
 
-*Table of Content*
-<wiki:toc max_depth="3" />
 
-== Introduction ==
+= Introduction =
 
 My intent here is to complement the [ControlledVocabularies more official page on Controlled Vocabularies] elsewhere on this wiki, without adding my clutter to that page. Eventually, I'd like to identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
 
-== Observed Properties ==
+= Observed Properties =
 [ControlledVocabularies#Observed_Property_Vocabularies See also ControlledVocabularies#Observed_Property_Vocabularies]
 
 The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a really interesting combination of models and data (I think) where controlled vocabularies for measurements are used. It's worth assessing these, chatting with people in that team (ASA, Kyle Wilcox??), etc. For example, it's clear to me that while many/most of the names used are in fact CF standard names, many must be made up, but using CF recommendations for building names. 
@@ -147,7 +145,7 @@ Other ontologies / controlled vocabularies (some less controlled than others...)
     * [http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary]
     * [http://mmisw.org/ont/gcoos/parameter GCOOS Vocabulary]
 
-== Organization Roles (Regional Association, Provider/Owner, etc) ==
+= Organization Roles (Regional Association, Provider/Owner, etc) =
 
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
@@ -171,7 +169,7 @@ See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page Des
 
 And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
 
-== Platform/Station types ==
+= Platform/Station types =
 
 Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use of Classification terms from http://mmisw.org/ont/mmi/platform/ . Consequences for IOOS Catalog, including the use of NVS asset-type map icons.
 
@@ -198,7 +196,7 @@ _DPS Comment: There is a significant conflict in our use of station and platform
   
 See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
 
-=== NANOOS NVS Asset types and icons ===
+== NANOOS NVS Asset types and icons ==
 _Note to self_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
 See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
 
@@ -207,7 +205,7 @@ See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
   * _Moving-Location observations (MLOC)_. Cruises, AUV's
   * _Gridded Regular and Irregular Data (GRID)_. Models (forecasts), remote sensing imagery, etc.
 
-== Other relevant resources ==
+= Other relevant resources =
 
   * Work on water quality (?) vocabularies that Matt Howard and Cyndy Chandler are starting up (no URL that I know of). Matt is also leading a vocabulary effort focused on Gulf of Mexico, related to Deepwater Horizon recovery efforts.
   * [http://www.bco-dmo.org/ BCO-DMO] and [http://cdmo.baruch.sc.edu/ NERRS CDMO] are also excellent resources for water quality and biogeochemistry. [http://cdmo.baruch.sc.edu/data/parameters.cfm For NERRS, this "Parameters" page is very relevant].
