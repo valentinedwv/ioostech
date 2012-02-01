@@ -120,14 +120,14 @@ Botts, M., G. Percivall, et al. (2008). OGC Sensor Web Enablement: Overview and 
 
 Bröring, A., J. Echterhoff, et al. (2011). "New Generation Sensor Web Enablement." Sensors 11(3): 2652-2699.
 
-Consortium, O. G. (2007). OpenGIS® Sensor Model Language (SensorML) Implementation Specification, Open Geospatial Consortium. [http://portal.opengeospatial.org/files/?artifact_id=21273 OGC Portal]
+Consortium, O. G. (2007). OpenGIS® Sensor Model Language (SensorML) Implementation Specification, Open Geospatial Consortium. [http://portal.opengeospatial.org/files/?artifact_id=21273 SensorML Implementation Specification]
 
 
 Consortium, O. G. (2007). OpenGIS® SensorML Encoding Standard, version 1.0 Schema - Corrigendum 1, Open Geospatial Consortium. [https://portal.opengeospatial.org/modules/admin/license_agreement.php?suppressHeaders=0&access_license_id=3&target=http://portal.opengeospatial.org/files/%3fartifact_id=24757 Corrigendum 1]
 
-Consortium, O. G. (2007). Sensor Observation Service 1.0, Open Geospatial Consortium: 104. http://www.opengeospatial.org/standards/sos
+Consortium, O. G. (2007). Sensor Observation Service 1.0, Open Geospatial Consortium: 104. [http://www.opengeospatial.org/standards/sos SOS v1.0]
 
-Consortium, O. G. (2011). Observations and Measurements - XML Implementation V2.0, Open Geospatial Consortium.  http://www.opengeospatial.org/standards/om
+Consortium, O. G. (2011). Observations and Measurements - XML Implementation V2.0, Open Geospatial Consortium.  [http://www.opengeospatial.org/standards/om O&M XML Implementation v2.0]
 
 Consortium, O. G. (2011). OGC SWE Common Data Model Encoding Standard, Open Geospatial Consortium.
 
