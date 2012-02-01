@@ -26,6 +26,9 @@ Data may be taken over periods of time at a set of discrete point, spatial locat
 == SWE ==
 
 === Sample ===
+
+Hmm.. I don't know where I got this from?  OGC Spec, NDBC, or a combination of both.
+
 {{{
 <DataArray>
   <elementCount>
@@ -95,6 +98,9 @@ Data may be taken over periods of time at a set of discrete point, spatial locat
 }}}
 
 === Single Block ===
+
+I came up with this, pulling in ideas from many different places and the SWE spec.
+
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
 <om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ID_1" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/observation.xsd">
@@ -187,6 +193,8 @@ Data may be taken over periods of time at a set of discrete point, spatial locat
 }}}
 
 === Multiple Block ===
+
+I came up with this, pulling in ideas from many different places and the SWE spec.
 
 Since we are giving each timeSeries location (i.e. a station) it's own data block, we can leave out the latitude and longitude in the CSV block. It is represented in the {{{<gml:boundedBy>}}} section inside of {{{<om:Observation>}}}. If the profile is moving, it is not a timeSeries! I have left them in there for reference.
 
