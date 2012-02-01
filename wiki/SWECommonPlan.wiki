@@ -127,7 +127,7 @@ Consortium, O. G. (2007). OpenGIS® SensorML Encoding Standard, version 1.0 Sche
 
 Consortium, O. G. (2007). Sensor Observation Service 1.0, Open Geospatial Consortium: 104.
 
-Consortium, O. G. (2011). Observations and Measurements - XML Implementation V2.0, Open Geospatial Consortium.  (https://docs.google.com/viewer?a=v&pid=explorer&chrome=true&srcid=0B0uvBG1lfvfMZTZlNDI2NzEtMGY5MS00MTM5LTg2NjEtYjdmOWY0NjhhODdm&hl=en_US)
+Consortium, O. G. (2011). Observations and Measurements - XML Implementation V2.0, Open Geospatial Consortium.  http://www.opengeospatial.org/standards/om
 
 Consortium, O. G. (2011). OGC SWE Common Data Model Encoding Standard, Open Geospatial Consortium.
 
