@@ -111,9 +111,7 @@ FGDC and ISO Metadata
 
 == IOOS Vars RDF ==
 
-Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's between controlled vocabularies.  The IOOS Catalog adopted a simple Ontology which allows the User Interface to map IOOS variables, e.g. Winds to the CF Terms used by some of the regional SOS's.  This is a very simple ontology, see below, which only makes use of the NarrowMatch triple store's thus Winds is mapped to wind_speed, wind_direction, etc.
-
-[ControlledVocabularyTables#IOOS_Vars_RDF See the XML listing here.]
+Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's between controlled vocabularies.  The IOOS Catalog adopted a simple Ontology which allows the User Interface to map IOOS variables, e.g. Winds to the CF Terms used by some of the regional SOS's.  This is a very simple ontology, see below, which only makes use of the NarrowMatch triple store's thus Winds is mapped to wind_speed, wind_direction, etc.  [ControlledVocabularyTables#IOOS_Vars_RDF See the XML listing here.]
 ----
 
 #summary From Emilio: Some pointers, links and initial thoughts on Controlled Vocabularies
