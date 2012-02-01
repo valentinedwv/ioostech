@@ -58,6 +58,21 @@ The menu will be Light Hors D'Oeuvres and drinks.
 
 == Agenda ==
 
+Workshop attendees
+
+Emilio Mayorga (NANOOS)
+Shane St Clair (AOOS)
+Eric Bridger (NERACOOS)
+Kyle Wilcox (MARACOOS)
+Jeremy Cothran (SECOORA)
+Derrick Snowden (US IOOS)
+Rob Ragsdale (US IOOS)
+Hassan Moustahfid (US IOOS)
+Mohamed Chaouchi (CO-OPS)
+Don Biven (NDBC)
+Irven Ingram (USACE)
+CJ Pellerin (NCBO) 
+
 High-level agenda outline, with responsible parties.
 
   * *[SOSRefImplementWorkshop_Day1Agenda Day 1]*
