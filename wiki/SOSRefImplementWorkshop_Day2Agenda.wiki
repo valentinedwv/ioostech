@@ -38,6 +38,6 @@ How to describe the position of an asset inside of {{{<om:result>}}} block.
 
 See: TheVectorBlock
 
-=== How to Identify the !FeatureType ===
+=== Identifying the !FeatureType ===
 
 See: IdentifyingTheFeatureType
