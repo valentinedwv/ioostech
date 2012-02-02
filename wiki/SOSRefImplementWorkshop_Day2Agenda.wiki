@@ -26,6 +26,12 @@ Emilio will lead a short wrap up of day one activities.
 
 (Kyle) Part 1: O&M / SWE Common encoding for the scientific feature types defined by CF conventions / the Common Data Model.
 
+=== The Time Block ===
+
+How to describe times in the responses.
+
+See: TheTimeBlock
+
 === The Vector Block ===
 
 How to describe the position of an asset inside of {{{<om:result>}}} block.
