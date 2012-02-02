@@ -88,7 +88,7 @@ Inside of the {{{<om:featureOfInterest>}}} block. The codeSpace for the {{{<gml:
 
 Alternate implementation of the above, but with the actual geometry described inline as opposed to strictly using a reference to a vocabulary.  I've also heard of this reference being made using a link to a WFS server which handles the details of the feature description.  Though more complicated than in [IdentifyingTheFeatureType#C] this has the advantage of not giving us another vocabulary to manage.  
 
-The example below comes from the example files Mike Botts developed, copies of which are on this wiki at: 
+The example below comes from the example files Mike Botts developed, copies of which are on this wiki at: [http://code.google.com/p/ioostech/source/browse/ObservationSeries-2011-12-20.xml ObservationSeries-2011-12-20.xml]
 {{{
 <!--=============================================================
         feature of interest carries the sampling geometry of the observation
