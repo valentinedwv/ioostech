@@ -19,9 +19,9 @@ Crosswalk between the various vocabularies used to describe these feature types.
 
 || CSML[#Footnotes (1)] || Climate and Forecast[#Footnotes (2)] || Unidata CDM [#Footnotes (3)] || THREDDS [#Footnotes (4)] ||
 || Point || point || Point || ||
-|| !PointSeries || timeSeries || || Station ||
-|| Trajectory || trajectory || || Trajectory ||
-|| Profile || profile || || ||
+|| !PointSeries || timeSeries ||Station time series || Station ||
+|| Trajectory || trajectory || Trajectory || Trajectory ||
+|| Profile || profile || Profile || ||
 || !ScanningRadar || || || Swath ??? ||
 || Swath || || || Swath ||
 || Grid || || || Grid ||
