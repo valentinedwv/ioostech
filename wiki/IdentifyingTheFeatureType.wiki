@@ -63,7 +63,7 @@ Inside of the {{{<om:procedure>}}} block.  The {{{codeSpace}}} for the {{{<gml:n
 
 == C ==
 
-Inside of the {{{<om:featureOfInterest>}}} block.
+Inside of the {{{<om:featureOfInterest>}}} block. The codeSpace for the <gml:name> should be better defined here.
 
 {{{
 <om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ID_1" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/observation.xsd">
