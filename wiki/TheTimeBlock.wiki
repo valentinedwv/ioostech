@@ -1,4 +1,4 @@
-#summary How to represent time metadata in responses
+#summary How to represent time in responses
 
 = Introduction =
 
