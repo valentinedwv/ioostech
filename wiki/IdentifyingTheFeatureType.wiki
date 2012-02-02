@@ -145,6 +145,8 @@ The example below comes from the example files Mike Botts developed, copies of w
     </om:featureOfInterest>
 }}}
 
+NOTE: some of the elements used above come from version 2.0 of O&M.  We had intended to stick with 1.0 for all of the relevant specifications so this may be a problem.  A 1.0 version of the above concepts hasn't been developed yet.  TBD
+
 = Footnotes =
  ^(1)^ [http://csml.badc.rl.ac.uk/]
  
