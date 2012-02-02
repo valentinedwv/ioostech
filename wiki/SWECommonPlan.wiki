@@ -112,8 +112,6 @@ http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id3626
 
 http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
 
-http://code.google.com/p/swe-common-data-framework/
-
 
 Emilio's online bibliography [http://www.citeulike.org/user/emayorga/tag/ioos,informatics at citeulike]
 
