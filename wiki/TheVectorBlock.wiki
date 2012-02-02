@@ -4,8 +4,35 @@
 
 Inside of the CSV response block, we may need to return position information (x,y,z). SWE defined the {{{<swe:Vector>}}} block for this purpose.
 
+== A - lat/lon ==
 
-= A =
+{{{
+<swe:swe:Vector definition="urn:ogc:def:data:LocationVector" referenceFrame="urn:ogc:def:crs:EPSG:6.7:4979">
+  <swe:coordinate name="lon">
+    <swe:Quantity definition="urn:ogc:def:property:OGC:Longitude" axisCode="X">
+      <swe:gml:description>Longitude of the observation</swe:gml:description>
+      <swe:gml:name>Longitude</swe:gml:name>
+      <swe:uom code="deg"/>
+    </swe:Quantity>
+  </swe:coordinate>
+  <swe:coordinate name="lat">
+    <swe:Quantity definition="urn:ogc:def:property:OGC:GeodeticLatitude" axisCode="Y">
+      <swe:gml:description>Geodetic latitude of the observation</swe:gml:description>
+      <swe:gml:name>Latitude</swe:gml:name>
+      <swe:uom code="deg"/>
+    </swe:Quantity>
+  </swe:coordinate>
+  <swe:coordinate name="alt">
+    <swe:Quantity definition="urn:ogc:def:property:OGC:AltitudeAboveMSL" axisCode="Z">
+      <swe:gml:description>Altitude of the observation above mean sea level</swe:gml:description>
+      <swe:gml:name>Altitude above MSL</swe:gml:name>
+      <swe:uom code="m"/>
+    </swe:Quantity>
+  </swe:coordinate>
+</swe:Vector>
+}}}
+
+== B - lat/lon/alt ==
 
 {{{
 <swe:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation" referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4979">
