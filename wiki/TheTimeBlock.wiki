@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Inside of the CSV response block, we may need to return time information. SWE defined the <swe:Time> block for this purpose.
+Inside of the CSV response block, we may need to return time information. SWE defined the {{{<swe:Time>}}} block for this purpose.
 
 {{{
 <swe:field name="time">
