@@ -1,4 +1,4 @@
-#summary How to identify the FeautureType in the GetObservation responses
+#summary How to identify the FeautureType in the !GetObservation responses
 = Introduction =
 
 
@@ -13,7 +13,7 @@ One thing the group has been trying to figure out (Shane, you probably missed th
 
 But how should we represent that?  I didn't include it in my SWE examples, because frankly I wasn't happy enough with any of the options.
 
-Since the contents of the <om:Observation> block will be different depending on the type, we need to include it there (at the top level) and can't just include it in the <om:result> section (the meat).
+Since the contents of the {{{<om:Observation>}}} block will be different depending on the type, we need to include it there (at the top level) and can't just include it in the {{{<om:result>}}} section (the meat).
 
 
 = Options=
