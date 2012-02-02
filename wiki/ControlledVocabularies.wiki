@@ -35,15 +35,6 @@ The target set of controlled vocabulary types we will likely need are  ([EmilioC
  * observed property
  * units-of-measure
 
-= Units of Measure =
-
-[http://unitsofmeasure.org/ Universal Code for Units of Measure]
-
-[http://www.unidata.ucar.edu/software/udunits/ UDUNITS]
-
-OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_id=11498 OpenGIS© Recommendation Paper — Units of Measure Use and Definition Recommendations] may be outdated??
-
-[https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
 
 = Observed Property Vocabularies =
 [EmilioControlledVocabs#Observed_Properties See also EmilioControlledVocabs#Observed_Properties]
@@ -79,9 +70,18 @@ Other ontologies / controlled vocabularies (some less controlled than others...)
 
 A list of tables with examples of how the various observed property vocabularies are used across example services can be found on the [ControlledVocabularyTables ControlledVocabularyTables Page]
 
+= Units of Measure =
 
-= Organization Roles (Regional Association, Provider/Owner, etc) =
+[http://unitsofmeasure.org/ Universal Code for Units of Measure]
 
+[http://www.unidata.ucar.edu/software/udunits/ UDUNITS]
+
+OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_id=11498 OpenGIS© Recommendation Paper — Units of Measure Use and Definition Recommendations] may be outdated??
+
+[https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
+
+= Organization Types and Roles  =
+(Regional Association, Provider/Owner, etc)
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
 
