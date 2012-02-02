@@ -68,7 +68,8 @@ Other ontologies / controlled vocabularies (some less controlled than others...)
 || SWEET || http://sweet.jpl.nasa.gov/ || http://sweet.jpl.nasa.gov/2.2/VOCAB.owl#PROPERTYNAME ||
 || OGC Terms (URL) || ?? || ?? ||
 || OGC Terms (URN) || ?? || ogc:def:phenomenon:mmisw.org:cf:PROPERTYNAME || 
-|| GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/waves ||
+|| GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/ ||
+|| SECOORA || ?? || http://mmisw.org/ont/secoora/parameter/ ||
 
 A list of tables with examples of how the various observed property vocabularies are used across example services can be found on the [ControlledVocabularyTables ControlledVocabularyTables Page]
 
