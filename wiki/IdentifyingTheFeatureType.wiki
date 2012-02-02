@@ -145,6 +145,9 @@ The example below comes from the example files Mike Botts developed, copies of w
 
 = Footnotes =
  ^(1)^ [http://csml.badc.rl.ac.uk/]
- ^(2)^ [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries]
- ^(3)^  [ ] 
- ^(4)^  [ ]
+ 
+^(2)^ [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries]
+
+ ^(3)^  [ ]
+
+ ^(4)^  [http://www.unidata.ucar.edu/projects/THREDDS/tech/catalog/InvCatalogSpec.html#dataType ] 
