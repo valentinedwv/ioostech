@@ -36,7 +36,7 @@ Crosswalk between the various vocabularies used to describe these feature types.
  # *Point feature*: one or more parameters measured at one point in time and space.
  # *Station time series feature*: a time-series of data points all at the same location, with varying time.
  # *Profile feature*: a set of data points along a vertical line.
- # *Station Profile feature : a time-series of profile features at a named location.
+ # *Station Profile feature*: a time-series of profile features at a named location.
  # *Trajectory feature*: a set of data points along a 1D curve in time and space.
  # *Section feature*: a collection of profile features which originate along a trajectory.
 
