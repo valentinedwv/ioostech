@@ -15,6 +15,22 @@ But how should we represent that?  I didn't include it in my SWE examples, becau
 
 Since the contents of the {{{<om:Observation>}}} block will be different depending on the type, we need to include it there (at the top level) and can't just include it in the {{{<om:result>}}} section (the meat).
 
+Crosswalk between the various vocabularies used to describe these feature types.  These are just approximate matches.
+
+|| CSML || Climate and Forecast || O&M 1.0 (ISO 19156) || THREDDS ||
+|| Point || || || ||
+|| PointSeries || || || ||
+|| Trajectory || || || ||
+|| Profile || || || ||
+|| ScanningRadar || || || ||
+|| Swath || || || ||
+|| Grid || || || ||
+|| ProfileSeries || || || ||
+|| Section || || || ||
+|| GridSeries || || || ||
+|| || || || ||
+|| || || || ||
+
 
 = Options=
 
