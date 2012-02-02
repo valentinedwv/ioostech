@@ -42,9 +42,11 @@ and a second service documented [NANOOSNVSPythonSOS here]
 
 = Northeastern Atlantic (NERACOOS) =
 
-Oostethys?
-
+Oostethys.  There are actually two versions demonstrating the OOSTethsy Perl Toolkit.  SWE and DIF.
+=== SWE ===
 http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos.cgi?request=GetCapabilities&service=SOS
+=== DIF ===
+http://www.neracoos.org/cgi-bin/sos/V1.0/oostethys_sos_dif.cgi?request=GetCapabilities&service=SOS
 
 = Pacific Islands (PacIOOS) =
 
