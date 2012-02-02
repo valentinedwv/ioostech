@@ -1,0 +1,28 @@
+#summary How to represent a position in responses
+
+= Introduction =
+
+Inside of the CSV response block, we may need to return position information (x,y,z). SWE defined the {{{<swe:Vector>}}} block for this purpose.
+
+
+= A =
+
+{{{
+<swe:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation" referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4979">
+              <swe:coordinate name="lat">
+                <swe:Quantity definition="http://sweet.jpl.nasa.gov/2.0/spaceCoordinates.owl#Latitude" axisID="Lat">
+                  <swe:uom code="deg"/>
+                </swe:Quantity>
+              </swe:coordinate>
+              <swe:coordinate name="lon">
+                <swe:Quantity definition="http://sweet.jpl.nasa.gov/2.0/spaceCoordinates.owl#Longitude" axisID="Long">
+                  <swe:uom code="deg"/>
+                </swe:Quantity>
+              </swe:coordinate>
+              <swe:coordinate name="alt">
+                <swe:Quantity definition="http://sweet.jpl.nasa.gov/2.0/spaceExtent.owl#Altitude" axisID="h">
+                  <swe:uom code="m"/>
+                </swe:Quantity>
+              </swe:coordinate>
+            </swe:Vector>
+}}}
