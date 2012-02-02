@@ -60,3 +60,26 @@ Inside of the {{{<om:procedure>}}} block.  The {{{codeSpace}}} for the {{{<gml:n
   </om:member>
 </om:ObservationCollection>
 }}}
+
+== C ==
+
+Inside of the {{{<om:featureOfInterest>}}} block.
+
+{{{
+<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ID_1" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/observation.xsd">
+  <om:member>
+    <om:Observation>
+      <om:featureOfInterest>
+        <gml:FeatureCollection>
+          <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">profile</gml:name>
+        </gml:FeatureCollection>
+      </om:featureOfInterest>
+      ...
+      <om:result>
+        ...
+      </om:result>
+    </om:Observation>
+  </om:member>
+</om:ObservationCollection>
+      
+}}}
