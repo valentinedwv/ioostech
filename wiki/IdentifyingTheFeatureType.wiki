@@ -2,7 +2,7 @@
 = Introduction =
 
 
-One thing the group has been trying to figure out (Shane, you probably missed this discussion) is a good way to distinguish in the GetObservation responses which Featuretype is actually being returned.  As far as I can tell, we will need 6 different outputs.
+One thing the group has been trying to figure out (Shane, you probably missed this discussion) is a good way to distinguish in the !GetObservation responses which Featuretype is actually being returned.  As far as I can tell, we will need 6 different outputs.
 
 !PointCollection - although seldom used
 !ProfileCollection -although seldom used
