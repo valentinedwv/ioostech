@@ -1,14 +1,24 @@
-#summary How to represent time in responses
+#summary How to represent time metadata in responses
 
 = Introduction =
 
 Inside of the CSV response block, we may need to return time information. SWE defined the {{{<swe:Time>}}} block for this purpose.
 
+== A ==
 {{{
 <swe:field name="time">
   <swe:Time definition="urn:ogc:def:property:OGC::SamplingTime">
     <gml:name>Sampling Time</gml:name>
     <swe:uom xlink:href="urn:ogc:def:unit:ISO:8601"/>
+  </swe:Time>
+</swe:field>
+}}}
+
+== B ==
+{{{
+<swe:field name="time">
+  <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+    <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
   </swe:Time>
 </swe:field>
 }}}
