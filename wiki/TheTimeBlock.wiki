@@ -1,0 +1,14 @@
+#summary How to represent time in responses
+
+= Introduction =
+
+Inside of the CSV response block, we may need to return time information. SWE defined the <swe:Time> block for this purpose.
+
+{{{
+<swe:field name="time">
+  <swe:Time definition="urn:ogc:def:property:OGC::SamplingTime">
+    <gml:name>Sampling Time</gml:name>
+    <swe:uom xlink:href="urn:ogc:def:unit:ISO:8601"/>
+  </swe:Time>
+</swe:field>
+}}}
