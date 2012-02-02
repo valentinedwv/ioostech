@@ -47,6 +47,8 @@ The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a re
 
 That's a general approach that we've discussed and that I think we should follow: use CF when an appropriate parameter exist; provide a nimble, IOOS-controlled vocabulary on MMI for parameters not yet on the CF list, striving to follow CF naming patterns for these new parameters, and abundant documentation: names, definitions, linkages to other relevant vocabularies (such as those from [http://qwwebservices.usgs.gov/service-domains.html#CROSSWALK USGS], [http://his.cuahsi.org/mastercvreg.html CUAHSI]), most common units, etc; we have a great starting point already, in the form of the "IOOS-specific parameter vocabularies on MMI" I've listed below. For existing CF parameters, there's sometimes ambiguity and apparent redundancy; we can also provide guidance on preferred parameters, when such ambiguity exists (eg, for barometric pressure).
 
+In the case mentioned above, it would also be useful for us have an active role with the CF Standard Name process.  We can add a term to the IOOS vocabulary, but it would be worth also proposing that name to CF.  If CF approves the new term we would then have a choice to make in terms of which reference or identifier we should use.
+
 Other ontologies / controlled vocabularies (some less controlled than others...) directly relevant to IOOS DMAC:
   # *CF resources on MMI*. I've found several pages and resources at MMI that are directly focused on CF, but may not be well integrated or cross-linked and have different degrees of currency (out of date).
     * [http://marinemetadata.org/references/cfstandardnames CF - Climate and Forecast Standard Names; Vocabulary for CF parameters] (a document, not a vocabulary resource per se)
@@ -69,6 +71,134 @@ Other ontologies / controlled vocabularies (some less controlled than others...)
 || GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/waves ||
 
 A list of tables with examples of how the various observed property vocabularies are used across example services can be found on the [ControlledVocabularyTables ControlledVocabularyTables Page]
+
+== Composite Properties ==
+
+Currently have at least two compound or composite properties in use.  
+
+ * GML Dictionaries
+ * CF like names 
+ * How are composite properties used in SOS 1.0?
+ 
+===Current NDBC usage of winds/waves===
+From GetCapabilites OperationsMetadata section:
+{{{
+<ows:Parameter name="observedProperty">
+<ows:AllowedValues>
+<ows:Value>air_temperature</ows:Value>
+<ows:Value>air_pressure_at_sea_level</ows:Value>
+<ows:Value>sea_water_electrical_conductivity</ows:Value>
+<ows:Value>currents</ows:Value>
+<ows:Value>sea_water_salinity</ows:Value>
+<ows:Value>sea_floor_depth_below_sea_surface</ows:Value>
+<ows:Value>sea_water_temperature</ows:Value>
+<ows:Value>waves</ows:Value>
+<ows:Value>winds</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+</ows:Operation>
+}}}
+From GetCapabilities offerings:
+{{{
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/air_pressure_at_sea_level"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_electrical_conductivity"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/currents"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_salinity"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/waves"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/winds"/>
+}}}
+
+Issues with the above usage:
+ # waves and winds are not actually CF standard names
+ 
+Data Columns returned from a [http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=Winds&responseformat=text/csv GetObservation (CSV) request] for winds:
+ * station_id	
+ * sensor_id	
+ * latitude (degree)	
+ * longitude (degree)	
+ * date_time	
+ * depth (m)	
+ * wind_from_direction (degree)	
+ * wind_speed (m/s)	
+ * wind_speed_of_gust (m/s)	
+ * upward_air_velocity (m/s)
+
+Data columns returned from a [http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=Waves&responseformat=text/csv GetObservation (CSV) request] for waves
+
+URL http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=Waves&responseformat=text/csv
+ * station_id	
+ * sensor_id	
+ * latitude (degree)	
+ * longitude (degree)	
+ * date_time	
+ * sea_surface_wave_significant_height (m)	
+ * sea_surface_wave_peak_period (s)	
+ * sea_surface_wave_mean_period (s)	
+ * sea_surface_swell_wave_significant_height (m)	
+ * sea_surface_swell_wave_period (s)	
+ * sea_surface_wind_wave_significant_height (m)	
+ * sea_surface_wind_wave_period (s)	
+ * sea_water_temperature (c)	
+ * sea_surface_wave_to_direction (degree)	
+ * sea_surface_swell_wave_to_direction (degree)	
+ * sea_surface_wind_wave_to_direction (degree)	
+ * number_of_frequencies (count)	
+ * center_frequencies (Hz)	
+ * bandwidths (Hz)	
+ * spectral_energy (m**2/Hz)	
+ * mean_wave_direction (degree)	
+ * principal_wave_direction (degree)	
+ * polar_coordinate_r1 (1)	
+ * polar_coordinate_r2 (1)	
+ * calculation_method	
+ * sampling_rate (Hz)
+
+Definition of Waves in the IOOS GML Dictionary http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml
+
+{{{
+<gml:definitionMember>
+<swe:CompositePhenomenon gml:id="NonDirectionalWaves" dimension="15">
+<gml:description>Wave measurements.</gml:description>
+<gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
+<swe:component xlink:href="#SignificantWaveHeight"/>
+<swe:component xlink:href="#DominantWavePeriod"/>
+<swe:component xlink:href="#AverageWavePeriod"/>
+<swe:component xlink:href="#SwellHeight"/>
+<swe:component xlink:href="#SwellPeriod"/>
+<swe:component xlink:href="#WindWaveHeight"/>
+<swe:component xlink:href="#WindWavePeriod"/>
+<swe:component xlink:href="#WaterTemperature"/>
+<swe:component xlink:href="#WaveDuration"/>
+<swe:component xlink:href="#CalculationMethod"/>
+<swe:component xlink:href="#SamplingRate"/>
+<swe:component xlink:href="#NumberOfFrequencies"/>
+<swe:component xlink:href="#CenterFrequency"/>
+<swe:component xlink:href="#Bandwidth"/>
+<swe:component xlink:href="#SpectralEnergy"/>
+</swe:CompositePhenomenon>
+</gml:definitionMember>
+<gml:definitionMember>
+<swe:CompositePhenomenon gml:id="Waves" dimension="23">
+<gml:description>Directional waves</gml:description>
+<gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
+<swe:base xlink:href="#NonDirectionalWaves"/>
+<swe:component xlink:href="#MeanWaveDirection"/>
+<swe:component xlink:href="#SwellWaveDirection"/>
+<swe:component xlink:href="#WindWaveDirection"/>
+<swe:component xlink:href="#DirectionalWaveParameter"/>
+<swe:component xlink:href="#FourierCoefficientA1"/>
+<swe:component xlink:href="#FourierCoefficientA2"/>
+<swe:component xlink:href="#FourierCoefficientB1"/>
+<swe:component xlink:href="#FourierCoefficientB2"/>
+</swe:CompositePhenomenon>
+</gml:definitionMember>
+}}}
+
+Couple things of note:
+Not all of the wave components are defined in the GML composite phenomenon definition
 
 = Units of Measure =
 
@@ -192,4 +322,3 @@ FGDC and ISO Metadata
 
 Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's between controlled vocabularies.  The IOOS Catalog adopted a simple Ontology which allows the User Interface to map IOOS variables, e.g. Winds to the CF Terms used by some of the regional SOS's.  This is a very simple ontology, see below, which only makes use of the NarrowMatch triple store's thus Winds is mapped to wind_speed, wind_direction, etc.  [ControlledVocabularyTables#IOOS_Vars_RDF See the XML listing here.]
 ----
-
