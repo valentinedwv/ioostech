@@ -22,7 +22,7 @@ Crosswalk between the various vocabularies used to describe these feature types.
 || !PointSeries || timeSeries ||Station time series || Station ||
 || Trajectory || trajectory || Trajectory || Trajectory ||
 || Profile || profile || Profile || ||
-|| !ScanningRadar || || || Swath ??? ||
+|| !ScanningRadar || ||Radial || Swath ??? ||
 || Swath || || || Swath ||
 || Grid || || || Grid ||
 || !ProfileSeries || timeSeriesProfile || Station Profile || ||
