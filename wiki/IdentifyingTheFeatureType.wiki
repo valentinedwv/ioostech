@@ -23,11 +23,11 @@ Crosswalk between the various vocabularies used to describe these feature types.
 || Trajectory || trajectory || Trajectory || Trajectory ||
 || Profile || profile || Profile || ||
 || !ScanningRadar || ||Radial || Swath ??? ||
-|| Swath || || || Swath ||
-|| Grid || || || Grid ||
+|| Swath || Grid || Grid || Swath ||
+|| Grid || Grid || Grid || Grid ||
 || !ProfileSeries || timeSeriesProfile || Station Profile || ||
 || Section || trajectoryProfile || Section || ||
-|| !GridSeries || || || ||
+|| !GridSeries || || Grid || Grid ||
 || || || || Image ??? ||
 || || || || ||
 
