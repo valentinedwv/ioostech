@@ -19,16 +19,16 @@ Crosswalk between the various vocabularies used to describe these feature types.
 
 || CSML[#Footnotes (1)] || Climate and Forecast[#Footnotes (2)] || O&M 1.0 (ISO 19156)[#Footnotes (3)] || THREDDS [#Footnotes (4)] ||
 || Point || || || ||
-|| !PointSeries || || || ||
-|| Trajectory || || || ||
+|| !PointSeries || || || Station ||
+|| Trajectory || || || Trajectory ||
 || Profile || || || ||
-|| !ScanningRadar || || || ||
-|| Swath || || || ||
-|| Grid || || || ||
+|| !ScanningRadar || || || Swath ??? ||
+|| Swath || || || Swath ||
+|| Grid || || || Grid ||
 || !ProfileSeries || || || ||
 || Section || || || ||
 || !GridSeries || || || ||
-|| || || || ||
+|| || || || Image ??? ||
 || || || || ||
 
 
