@@ -86,6 +86,29 @@ Inside of the {{{<om:featureOfInterest>}}} block. The codeSpace for the {{{<gml:
 
 == D ==
 
+
+
+In the {{{<om:metadata>}}} block.
+
+{{{
+<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ID_1" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/observation.xsd">
+  <om:member>
+    <om:Observation>
+      <om:metadata>
+        <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
+      </om:metadata>
+      ...
+      <om:result>
+        ...
+      </om:result>
+    </om:Observation>
+  </om:member>
+</om:ObservationCollection>
+      
+}}}
+
+== E ==
+
 Alternate implementation of the above, but with the actual geometry described inline as opposed to strictly using a reference to a vocabulary.  I've also heard of this reference being made using a link to a WFS server which handles the details of the feature description.  Though more complicated than in [IdentifyingTheFeatureType#C] this has the advantage of not giving us another vocabulary to manage.  
 
 The example below comes from the example files Mike Botts developed, copies of which are on this wiki at: [http://code.google.com/p/ioostech/source/browse/ObservationSeries-2011-12-20.xml ObservationSeries-2011-12-20.xml]
