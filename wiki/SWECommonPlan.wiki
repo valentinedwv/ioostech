@@ -158,35 +158,52 @@ Earth Science Informatics, Vol. 1, No. 2. (2008), pp. 59-78. doi:10.1007/s12145-
 
 Bermudez, L., T. Cook, et al. (2009). Web feature service (WFS) and sensor observation service (SOS) comparison to publish time series data, IEEE.  
 	
+	
 Botts, M., G. Percivall, et al. (2008). OGC Sensor Web Enablement: Overview and High Level Architecture. GeoSensor Networks. N. Silvia, L. Alexandros and S. Anthony, Springer-Verlag: 175-190.  DOI:10.1007/978-3-540-79996-2_10 
+
 	
 Bröring, A., J. Echterhoff, et al. (2011). "New Generation Sensor Web Enablement." Sensors 11(3): 2652-2699.  DOI:doi:10.3390/s110302652 http://www.mdpi.com/1424-8220/11/3/2652/
 
+
 Consortium, O. G. (2007). OpenGIS® Sensor Model Language (SensorML) Implementation Specification, Open Geospatial Consortium. http://portal.opengeospatial.org/files/?artifact_id=21273
+
 	
 Consortium, O. G. (2007). OpenGIS® SensorML Encoding Standard, version 1.0 Schema - Corrigendum 1, Open Geospatial Consortium. http://portal.opengeospatial.org/files/?artifact_id=24757
+
 	
 Consortium, O. G. (2007). Sensor Observation Service 1.0, Open Geospatial Consortium: 104. http://portal.opengeospatial.org/files/?artifact_id=26667
+
 	
 Consortium, O. G. (2011). Observations and Measurements - XML Implementation V2.0, Open Geospatial Consortium. http://www.opengis.net/doc/IS/OMXML/2.0
+
 	
 Consortium, O. G. (2011). OGC SWE Common Data Model Encoding Standard, Open Geospatial Consortium. http://portal.opengeospatial.org/files/?artifact_id=41157
+
 	
-Consortium, O. G. (2011). OpenGIS® SWE Service Model Implementation Standard, Open Geospatial Consortium. http://www.opengis.net/doc/IS/SWES/2.0
+Consortium, O. G. (2011). OpenGIS® SWE Service Model Implementation Standard, Open Geospatial Consortium. 
+http://www.opengis.net/doc/IS/SWES/2.0
+
 	
 Hankin, S. C., J. D. Blower, et al. (2009). NetCDF-CF-OPeNDAP: Standards for Ocean Data Interoperability and Object Lessons for Community Data Standards Processes. OceanObs09. Venice, Italy. 
+
 	
 Janowicz, K., A. Bröring, et al. (2011). "A RESTful proxy and data model for linked sensor data." International Journal of Digital Earth: 1-22.  DOI:10.1080/17538947.2011.614698 http://dx.doi.org/10.1080/17538947.2011.614698
 
+
 Mazzetti, P., S. Nativi, et al. (2009). "RESTful implementation of geospatial services for Earth and Space Science applications." International Journal of Digital Earth 2(sup1): 40-61.  DOI:10.1080/17538940902866153 http://dx.doi.org/10.1080/17538940902866153
 
+
 Na, A. and M. Priest (2007). Sensor Observation Service Version 1.0. O. G. C. Inc. 1.0: 90. http://portal.opengeospatial.org/files/?artifact_id=26667
+
 	
 Nativi, S., J. Caron, et al. (2008). "Unidata’s Common Data Model mapping to the ISO 19123 Data Model." Earth Science Informatics 1(2): 59-78.  DOI:10.1007/s12145-008-0011-6 http://dx.doi.org/10.1007/s12145-008-0011-6
 
+
 Sheth, A., C. Henson, et al. (2008). "Semantic sensor web." IEEE Internet Computing: 78-83.  
+
 	
 Tamayo, A., P. Viciano, et al. (2011). Empirical Study of Sensor Observation Services Server Instances
 Advancing Geoinformation Science for a Changing World. S. Geertman, W. Reinhardt and F. Toppen, Springer Berlin Heidelberg. 1: 185-209.  DOI:10.1007/978-3-642-19789-5_10 http://dx.doi.org/10.1007/978-3-642-19789-5_10
+
 
 Zyl, T. L. v., I. Simonis, et al. (2009). "The Sensor Web: systems of sensor systems." International Journal of Digital Earth 2(1): 16-30.  DOI:10.1080/17538940802439549 http://dx.doi.org/10.1080/17538940802439549
