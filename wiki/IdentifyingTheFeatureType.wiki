@@ -1,0 +1,27 @@
+#summary How to identify the FeautureType in the GetObservation responses
+= Introduction =
+
+
+One thing the group has been trying to figure out (Shane, you probably missed this discussion) is a good way to distinguish in the GetObservation responses which Featuretype is actually being returned.  As far as I can tell, we will need 6 different outputs.
+
+PointCollection - although seldom used
+ProfileCollection -although seldom used
+TimeSeriesCollection
+TimeSeriesProfile Collection
+TrajectoryCollection
+TrajectoryProfileCollection
+
+But how should we represent that?  I didn't include it in my SWE examples, because frankly I wasn't happy enough with any of the options.
+
+Since the contents of the <om:Observation> block will be different depending on the type, we need to include it there (at the top level ) and can't just include it in the <om:result> section (the meat).
+
+Things that have crossed my mine as places to represent the FeautreType:
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
