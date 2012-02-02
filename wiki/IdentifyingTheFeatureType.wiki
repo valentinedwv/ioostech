@@ -4,12 +4,12 @@
 
 One thing the group has been trying to figure out (Shane, you probably missed this discussion) is a good way to distinguish in the !GetObservation responses which Featuretype is actually being returned.  As far as I can tell, we will need 6 different outputs.
 
-  *!PointCollection - although seldom used
-  *!ProfileCollection -although seldom used
-  *!TimeSeriesCollection
-  *!TimeSeriesProfileCollection
-  *!TrajectoryCollection
-  *!TrajectoryProfileCollection
+  * !PointCollection - although seldom used
+  * !ProfileCollection -although seldom used
+  * !TimeSeriesCollection
+  * !TimeSeriesProfileCollection
+  * !TrajectoryCollection
+  * !TrajectoryProfileCollection
 
 But how should we represent that?  I didn't include it in my SWE examples, because frankly I wasn't happy enough with any of the options.
 
