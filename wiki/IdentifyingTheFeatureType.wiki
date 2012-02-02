@@ -39,7 +39,7 @@ In the {{{<gml:description>}}} tag.  So simple.  This field should probably be b
 
 == B ==
 
-Using the {{{<gml:FeatureCollection>}}} block.
+Using the {{{<gml:FeatureCollection>}}} block.  The codeSpace for the name should be better defined here.
 
 {{{
 <om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ID_1" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/observation.xsd">
@@ -48,7 +48,7 @@ Using the {{{<gml:FeatureCollection>}}} block.
       <om:procedure>
         <om:Process>
           <gml:FeatureCollection>
-            <gml:name>TimeSeriesProfileCollection</gml:name>
+            <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">profile</gml:name>
           </gml:FeatureCollection>
         </om:Process>
       </om:procedure>
