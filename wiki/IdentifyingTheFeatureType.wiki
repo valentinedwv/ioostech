@@ -17,23 +17,31 @@ Since the contents of the {{{<om:Observation>}}} block will be different dependi
 
 Crosswalk between the various vocabularies used to describe these feature types.  These are just approximate matches.
 
-|| CSML[#Footnotes (1)] || Climate and Forecast[#Footnotes (2)] || O&M 1.0 (ISO 19156)[#Footnotes (3)] || THREDDS [#Footnotes (4)] ||
-|| Point || point || || ||
+|| CSML[#Footnotes (1)] || Climate and Forecast[#Footnotes (2)] || Unidata CDM [#Footnotes (3)] || THREDDS [#Footnotes (4)] ||
+|| Point || point || Point || ||
 || !PointSeries || timeSeries || || Station ||
 || Trajectory || trajectory || || Trajectory ||
 || Profile || profile || || ||
 || !ScanningRadar || || || Swath ??? ||
 || Swath || || || Swath ||
 || Grid || || || Grid ||
-|| !ProfileSeries || || || ||
-|| Section || || || ||
+|| !ProfileSeries || timeSeriesProfile || Station Profile || ||
+|| Section || trajectoryProfile || Section || ||
 || !GridSeries || || || ||
 || || || || Image ??? ||
 || || || || ||
 
-Other CF features
-timeSeriesProfile
-trajectoryProfile
+
+*[http://www.unidata.ucar.edu/software/netcdf-java/reference/FeatureDatasets/PointFeatures.html Unidata CDM Definitions]*
+ # *Point feature*: one or more parameters measured at one point in time and space.
+ # *Station time series feature*: a time-series of data points all at the same location, with varying time.
+ # *Profile feature*: a set of data points along a vertical line.
+ # *Station Profile feature : a time-series of profile features at a named location.
+ # *Trajectory feature*: a set of data points along a 1D curve in time and space.
+ # *Section feature*: a collection of profile features which originate along a trajectory.
+
+
+
 = Options=
 
 
@@ -152,6 +160,6 @@ NOTE: some of the elements used above come from version 2.0 of O&M.  We had inte
  
 ^(2)^ [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries]
 
- ^(3)^  [ ]
+ ^(3)^  [http://www.unidata.ucar.edu/software/netcdf-java/reference/FeatureDatasets/PointUML.html], [http://www.unidata.ucar.edu/software/netcdf-java/reference/FeatureDatasets/PointFeatures.html] 
 
  ^(4)^  [http://www.unidata.ucar.edu/projects/THREDDS/tech/catalog/InvCatalogSpec.html#dataType ] 
