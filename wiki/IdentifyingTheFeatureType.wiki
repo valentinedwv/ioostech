@@ -38,3 +38,25 @@ In the {{{<gml:description>}}} tag.  So simple.  This field should probably be b
 }}}
 
 == B ==
+
+Using the {{{<gml:FeatureCollection>}}} block.
+
+{{{
+<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ID_1" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/observation.xsd">
+  <om:member>
+    <om:Observation>
+      <om:procedure>
+        <om:Process>
+          <gml:FeatureCollection>
+            <gml:name>TimeSeriesProfileCollection</gml:name>
+          </gml:FeatureCollection>
+        </om:Process>
+      </om:procedure>
+      ...
+      <om:result>
+        ...
+      </om:result>
+    </om:Observation>
+  </om:member>
+</om:ObservationCollection>
+}}}
