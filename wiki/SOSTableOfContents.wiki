@@ -11,6 +11,7 @@
    * [SOSRefImplementWorkshop_Day1Agenda Day One]
    * [SOSRefImplementWorkshop_Day2Agenda Day Two]
    * [SOSRefImplementWorkshop_Day3Agenda Day Three]
+   * [SWECommonPlan#Reference_Docs_(Discussion_Papers_and_Specifications) References]
    * [SWECommonPlan]
    * [CFFeatureTypes]
   * [SOSTesting]
