@@ -31,3 +31,20 @@ Inside of the CSV response block, we may need to return position information (x,
   </swe:Vector>
 </swe:field>
 }}}
+
+{{{
+<swe:values>
+  30.5,-76.5,1
+  30.5,-76.5,2
+  30.5,-76.5,3
+  30.5,-76.5,4
+  30.5,-76.5,5
+  30.5,-76.5,6
+  32.5,-74.5,1
+  32.5,-74.5,2
+  32.5,-74.5,3
+  32.5,-74.5,4
+  32.5,-74.5,5
+  32.5,-74.5,6
+</swe:values>
+}}}
