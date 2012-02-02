@@ -18,10 +18,10 @@ Since the contents of the {{{<om:Observation>}}} block will be different dependi
 Crosswalk between the various vocabularies used to describe these feature types.  These are just approximate matches.
 
 || CSML[#Footnotes (1)] || Climate and Forecast[#Footnotes (2)] || O&M 1.0 (ISO 19156)[#Footnotes (3)] || THREDDS [#Footnotes (4)] ||
-|| Point || || || ||
-|| !PointSeries || || || Station ||
-|| Trajectory || || || Trajectory ||
-|| Profile || || || ||
+|| Point || point || || ||
+|| !PointSeries || timeSeries || || Station ||
+|| Trajectory || trajectory || || Trajectory ||
+|| Profile || profile || || ||
 || !ScanningRadar || || || Swath ??? ||
 || Swath || || || Swath ||
 || Grid || || || Grid ||
@@ -31,7 +31,9 @@ Crosswalk between the various vocabularies used to describe these feature types.
 || || || || Image ??? ||
 || || || || ||
 
-
+Other CF features
+timeSeriesProfile
+trajectoryProfile
 = Options=
 
 
