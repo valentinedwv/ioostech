@@ -4,6 +4,8 @@
 
 Inside of the CSV response block, we may need to return time information. SWE defined the {{{<swe:Time>}}} block for this purpose.
 
+Should we use [http://en.wikipedia.org/wiki/ISO_8601 "ISO 8601"]?
+
 == A ==
 {{{
 <swe:field name="time">
