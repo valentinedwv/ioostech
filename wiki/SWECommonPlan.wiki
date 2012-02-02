@@ -114,6 +114,10 @@ http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
 
 http://code.google.com/p/swe-common-data-framework/
 
+
+Emilio's online bibliography [http://www.citeulike.org/user/emayorga/tag/ioos,informatics at citeulike]
+
+
 Jirka, S., and C. Stasch.  Concept for a Lightweight SWE Profile.  Accessed 01 February 2012 from [http://external.opengis.org/twiki_public/pub/HydrologyDWG/SOSUsageAndServerTypeDiscussion/Lightweight_SWE_Profile_Draft.pdf Concept for a Lightweight SWE Profile URL]
 
 
