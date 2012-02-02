@@ -17,17 +17,17 @@ Since the contents of the {{{<om:Observation>}}} block will be different dependi
 
 Crosswalk between the various vocabularies used to describe these feature types.  These are just approximate matches.
 
-|| CSML || Climate and Forecast || O&M 1.0 (ISO 19156) || THREDDS ||
+|| CSML[#Footnotes (1)] || Climate and Forecast[#Footnotes (2)] || O&M 1.0 (ISO 19156)[#Footnotes (3)] || THREDDS [#Footnotes (4)] ||
 || Point || || || ||
-|| PointSeries || || || ||
+|| !PointSeries || || || ||
 || Trajectory || || || ||
 || Profile || || || ||
-|| ScanningRadar || || || ||
+|| !ScanningRadar || || || ||
 || Swath || || || ||
 || Grid || || || ||
-|| ProfileSeries || || || ||
+|| !ProfileSeries || || || ||
 || Section || || || ||
-|| GridSeries || || || ||
+|| !GridSeries || || || ||
 || || || || ||
 || || || || ||
 
@@ -146,3 +146,9 @@ The example below comes from the example files Mike Botts developed, copies of w
         </sams:SF_SpatialSamplingFeature>
     </om:featureOfInterest>
 }}}
+
+= Footnotes =
+ ^(1)^ [http://csml.badc.rl.ac.uk/]
+ ^(2)^ [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries]
+ ^(3)^  [ ] 
+ ^(4)^  [ ]
