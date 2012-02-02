@@ -21,7 +21,7 @@ Since the contents of the {{{<om:Observation>}}} block will be different dependi
 
 == A ==
 
-In the {{{<gml:description>}}} tag.  This is probably not a great idea, since this field could be useful for other metadata.
+In the {{{<gml:description>}}} tag.  So simple.  This field should probably be better used for other metadata... but this is so easy!
 
 {{{
 <om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ID_1" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/observation.xsd">
