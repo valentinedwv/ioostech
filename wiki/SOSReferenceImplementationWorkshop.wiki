@@ -24,10 +24,10 @@ High-level agenda outline, with responsible parties.
 
   * *[SOSRefImplementWorkshop_Day1Agenda Day 1]*
     * (Derrick) Meeting goals and agenda.
-    * (Emilio & Eric) [SOSRefImplementWorkshop_Day1Agenda Getting the basics and common elements squared away]: Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses; a bare-bones DescribeSensor request and response; and a GetObservations request for the case of a fixed point time series.
+    * (Emilio & Eric) Getting the basics and common elements squared away: Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses; a bare-bones DescribeSensor request and response; and a GetObservations request for the case of a fixed point time series.
   * *[SOSRefImplementWorkshop_Day2Agenda Day 2]*
     * (Emilio) Quick wrap-up of discussions from previous day.
-    * (Eric & Jeremy) Service assessment, testing and validation. Some relevant wiki pages: [SOSVersions], [SOSSurvey], [SOSTesting], [SOSAssessment], [SWECommonPlan#Testing_(Jeremy)]
+    * (Eric & Jeremy) Service assessment, testing and validation. (*Move to Day 3*)
     * (Kyle) Part 1: O&M / SWE Common encoding for the [CFFeatureTypes scientific feature types] defined by CF conventions / the Common Data Model.
   * *[SOSRefImplementWorkshop_Day3Agenda Day 3]*
     * (Kyle) Part 2: O&M / SWE Common encoding for [CFFeatureTypes scientific feature types]
@@ -80,13 +80,10 @@ There will be a reception on Monday Night in the Harborview Room - 2nd Floor, be
 ==Copying Locations==
 
 *The UPS Store*,
-211 East Lombard St, Baltimore, MD<p>
-(410) 659-9360 ‎ 
+211 East Lombard St, Baltimore, MD, (410) 659-9360 ‎ 
 
 *The UPS Store*,
-401 W Pratt St, Baltimore, MD<p>
-(443) 220-0280 ‎ 
+401 W Pratt St, Baltimore, MD, (443) 220-0280 ‎ 
 
 *FedEx Office Print & Ship Center*,
-11 South Charles Street, Baltimore, MD<p>
-(410) 625-5862 
+11 South Charles Street, Baltimore, MD, (410) 625-5862
