@@ -2,7 +2,7 @@
 #labels SOS
 #sidebar SOSTableOfContents
 
-<wiki:toc max_depth="2" />
+<wiki:toc max_depth="3" />
 
 [SOSRefImplementWorkshop_Day1Agenda Day 1] | 
 [SOSRefImplementWorkshop_Day2Agenda Day 2] | 
@@ -18,25 +18,21 @@ Emilio will lead a short wrap up of day one activities.
 
 == Service Assessment ==
 
-
 (Eric & Jeremy) Service assessment, testing and validation. Some relevant wiki pages: SOSVersions, SOSSurvey, SOSTesting, SOSAssessment, SWECommonPlan#Testing_(Jeremy)
 
 
 == Common Data Model (CF/SWE/O&M) ==
 
-(Kyle) Part 1: O&M / SWE Common encoding for the scientific feature types defined by CF conventions / the Common Data Model.
+(Kyle) Part 1: [CFFeatureTypes O&M / SWE Common encoding for the scientific feature types defined by CF conventions / the Common Data Model.]
 
 === The Time Block ===
 
-How to describe times in the responses.
+[TheTimeBlock How to describe times in the responses.]
 
-See: TheTimeBlock
 
 === The Vector Block ===
 
-How to describe the position of an asset inside of {{{<om:result>}}} block.
-
-See: TheVectorBlock
+[TheVectorBlock How to describe the position of an asset inside of {{{<om:result>}}} block.]
 
 === Identifying the !FeatureType ===
 
