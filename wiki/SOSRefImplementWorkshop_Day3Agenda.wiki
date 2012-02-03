@@ -12,8 +12,11 @@
 
 == Common Data Model continued ==
 
-(Kyle) Part 2: O&M / SWE Common encoding for scientific feature types
+(Kyle) Part 2: [CFFeatureTypes O&M / SWE Common encoding for scientific feature types]
 
+== Service Testing and Assessment ==
+
+(Eric & Jeremy) [SOSTesting Service assessment, testing and validation.]
 
 == Conclusions and Next Steps ==
 
