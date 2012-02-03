@@ -16,54 +16,24 @@ A small team of IOOS RA DMAC Coordinators are working on development of a refere
  * Meeting: Feb 7-9
  * Departure: Feb 10
 
-[http://baltimore.hyatt.com/hyatt/hotels/index.jsp?null Hyatt Regency Baltimore]
+==Agenda==
 
-<p>
-300 Light Street,<p>
-Baltimore, Maryland, USA 21202<p>
-Tel: +1 410 528 1234    Fax: +1 410 685 3362<p>
-Email: quality@bwirbpo.hyatt.com <p>
+===Meeting Start time: 8:00 a.m.===
 
-[http://baltimore.hyatt.com/hyatt/hotels/services/maps/index.jsp?icamp=propMapDirections Transportation from BWI to Hyatt Regency]
+High-level agenda outline, with responsible parties.
 
-===Parking Options===
-There are many parking (Garages and lots) near the Hyatt. 
+  * *[SOSRefImplementWorkshop_Day1Agenda Day 1]*
+    * (Derrick) Meeting goals and agenda.
+    * (Emilio & Eric) [SOSRefImplementWorkshop_Day1Agenda Getting the basics and common elements squared away]: Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses; a bare-bones DescribeSensor request and response; and a GetObservations request for the case of a fixed point time series.
+  * *[SOSRefImplementWorkshop_Day2Agenda Day 2]*
+    * (Emilio) Quick wrap-up of discussions from previous day.
+    * (Eric & Jeremy) Service assessment, testing and validation. Some relevant wiki pages: [SOSVersions], [SOSSurvey], [SOSTesting], [SOSAssessment], [SWECommonPlan#Testing_(Jeremy)]
+    * (Kyle) Part 1: O&M / SWE Common encoding for the [CFFeatureTypes scientific feature types] defined by CF conventions / the Common Data Model.
+  * *[SOSRefImplementWorkshop_Day3Agenda Day 3]*
+    * (Kyle) Part 2: O&M / SWE Common encoding for [CFFeatureTypes scientific feature types]
+    * (Derrick) Taking stock of what we've accomplished, open issues, follow-ups, etc
 
-===Meeting Room===
-Meeting Room Name: Pratt/Calvert Room - Third Floor.
-
-=== Reservation Information ===
- 
-To start making your hotel reservation, please follow the link: https://resweb.passkey.com/go/natloceanicaa
-
-Select "Attendee" in the drop down menu under "Guest Type" and you will be able to make your reservations.    
-
-We have secured a room rate of $99.00 per night. *The "cut-off date" is January 12.*  Please make your reservation before Jan. 12 to receive this rate.  
-
-==Copying Locations==
-
-The UPS Store
-211 East Lombard St, Baltimore, MD
-(410) 659-9360 ‎ 
-    
-
-The UPS Store
-401 W Pratt St, Baltimore, MD
-(443) 220-0280 ‎ 
-
-FedEx Office Print & Ship Center
-11 South Charles Street, Baltimore, MD
-(410) 625-5862 ‎ 
-
-== Welcome Reception ==
-
-There will be a reception on Monday Night in the Harborview Room - 2nd Floor.
-The reception will be between 7 - 8:00PM
-The menu will be Light Hors D'Oeuvres and drinks.  
-
-== Agenda ==
-
-Workshop attendees
+==Workshop attendees==
 
   #  Emilio Mayorga (NANOOS)
   #  Shane St Clair (AOOS)
@@ -79,17 +49,41 @@ Workshop attendees
   #  Irven Ingram (USACE)
   #  CJ Pellerin (NCBO) 
 
-High-level agenda outline, with responsible parties.
 
-===Meeting Start time: 8:00 a.m.===
+==Venue==
+[http://baltimore.hyatt.com/hyatt/hotels/index.jsp?null Hyatt Regency Baltimore]
+300 Light Street, Baltimore, Maryland, USA 21202
+Tel: +1 410 528 1234    Fax: +1 410 685 3362
+Email: quality@bwirbpo.hyatt.com
 
-  * *[SOSRefImplementWorkshop_Day1Agenda Day 1]*
-    * (Derrick) Meeting goals and agenda.
-    * (Emilio & Eric) [SOSRefImplementWorkshop_Day1Agenda Getting the basics and common elements squared away]: Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses; a bare-bones DescribeSensor request and response; and a GetObservations request for the case of a fixed point time series.
-  * *[SOSRefImplementWorkshop_Day2Agenda Day 2]*
-    * (Emilio) Quick wrap-up of discussions from previous day.
-    * (Eric & Jeremy) Service assessment, testing and validation. Some relevant wiki pages: [SOSVersions], [SOSSurvey], [SOSTesting], [SOSAssessment], [SWECommonPlan#Testing_(Jeremy)]
-    * (Kyle) Part 1: O&M / SWE Common encoding for the [CFFeatureTypes scientific feature types] defined by CF conventions / the Common Data Model.
-  * *[SOSRefImplementWorkshop_Day3Agenda Day 3]*
-    * (Kyle) Part 2: O&M / SWE Common encoding for [CFFeatureTypes scientific feature types]
-    * (Derrick) Taking stock of what we've accomplished, open issues, follow-ups, etc
+[http://baltimore.hyatt.com/hyatt/hotels/services/maps/index.jsp?icamp=propMapDirections Transportation from BWI to Hyatt Regency]
+
+===Parking Options===
+There are many parking (Garages and lots) near the Hyatt. 
+
+===Meeting Room===
+Meeting Room Name: Pratt/Calvert Room - Third Floor.
+
+=== Reservation Information ===
+To start making your hotel reservation, please follow the link: https://resweb.passkey.com/go/natloceanicaa
+
+Select "Attendee" in the drop down menu under "Guest Type" and you will be able to make your reservations.    
+
+We have secured a room rate of $99.00 per night. *The "cut-off date" is January 12.*  Please make your reservation before Jan. 12 to receive this rate.  
+
+== Welcome Reception ==
+There will be a reception on Monday Night in the Harborview Room - 2nd Floor, between 7 - 8:00PM. The menu will be Light Hors D'Oeuvres and drinks.  
+
+==Copying Locations==
+
+The UPS Store
+211 East Lombard St, Baltimore, MD
+(410) 659-9360 ‎ 
+
+The UPS Store
+401 W Pratt St, Baltimore, MD
+(443) 220-0280 ‎ 
+
+FedEx Office Print & Ship Center
+11 South Charles Street, Baltimore, MD
+(410) 625-5862 ‎ 
