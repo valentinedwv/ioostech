@@ -15,10 +15,6 @@
 
 Emilio will lead a [SOSRefImplementWorkshop_Day1Agenda short wrap up of Day 1 activities].
 
-== Service Assessment ==
-
-(Eric & Jeremy) [SOSTesting Service assessment, testing and validation.]
-
 == Common Data Model (CF/SWE/O&M) ==
 
 (Kyle) Part 1: [CFFeatureTypes O&M / SWE Common encoding for the scientific feature types defined by CF conventions / the Common Data Model.]
