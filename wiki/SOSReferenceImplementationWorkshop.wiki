@@ -24,10 +24,10 @@ A small team of IOOS RA DMAC Coordinators are working on development of a refere
     * (Emilio & Eric) Getting the basics and common elements squared away: Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses; a bare-bones DescribeSensor request and response; and a GetObservations request for the case of a fixed point time series.
   * *[SOSRefImplementWorkshop_Day2Agenda Day 2]*
     * (Emilio) Quick wrap-up of discussions from previous day.
-    * (Eric & Jeremy) Service assessment, testing and validation. (*Move to Day 3*)
     * (Kyle) Part 1: O&M / SWE Common encoding for the [CFFeatureTypes scientific feature types] defined by CF conventions / the Common Data Model.
   * *[SOSRefImplementWorkshop_Day3Agenda Day 3]*
     * (Kyle) Part 2: O&M / SWE Common encoding for [CFFeatureTypes scientific feature types]
+    * (Eric & Jeremy) Service assessment, testing and validation.
     * (Derrick) Taking stock of what we've accomplished, open issues, follow-ups, etc
 
 ==Workshop attendees==
