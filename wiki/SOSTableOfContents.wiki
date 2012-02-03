@@ -1,22 +1,21 @@
-#summary Sidebar Navigation for the SOS Guidelines
+#summary Main Sidebar Navigation
 #labels SOS
 
- * [SOSGuidelines SOS Guidelines]
- * [SOSCallingSyntax Calling Syntax]
- * [SOSResponses]
-   * [GetCapabilities]
-   * [DescribeSensor]
-   * [GetObservation]
  * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
    * [SOSRefImplementWorkshop_Day1Agenda Day One]
    * [SOSRefImplementWorkshop_Day2Agenda Day Two]
    * [SOSRefImplementWorkshop_Day3Agenda Day Three]
-   * [SWECommonPlan#Reference_Docs_(Discussion_Papers_and_Specifications) References]
-   * [SWECommonPlan]
-   * [CFFeatureTypes]
+
+ * [CFFeatureTypes]
+ * Request Syntax (IDD)
+ * SOS Responses
+   * [GetCapabilities]
+   * [DescribeSensor]
+   * [GetObservation]
+ * [SOSGuidelines SOS Guidelines]
  * [SOSTesting]
    * [SOSComponentVersions]
    * [SOSVersions]
    * [SOSSurvey]
    * [SOSAssessment]
- 
+ * [SWECommonPlan#Reference_Docs_(Discussion_Papers_and_Specifications) References]
