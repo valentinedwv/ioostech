@@ -5,10 +5,7 @@
 
 = Introduction =
 
-Meeting details at the [SOSReferenceImplementationWorkshop  meeting page].
-
 [https://docs.google.com/a/noaa.gov/document/d/1czWdBFjPmAEtLe5T3_54fwk2cUdbILwWPkIDKPKFNvY/edit?hl=en_US Deprecated Google Docs version of this plan]. 
-
 
 Define SWE Common encodings for all of the CF sampling feature types that:
 
@@ -71,25 +68,6 @@ Ambiguity in the SOS 1.0 and 2.0 data model.  This issue has been discussed by t
 
 == Encoding Quality Control Flags (Mohamed) ==
 NDBC and CO-OPS will both be working on this in FY12 and certification of RAs will require this as well.  High priority topic but for the purposes of the group the problem is about encoding QC flags, not defining or selecting QC tests.
-
-Consider 
-
-== Testing (Jeremy) ==
-
-see also [SOSTesting] [SOSSurvey], and [SOSVersions]
-
-Initial testing is designed more towards a survey of existing SOS GetCapabilities,DescribeSensor and GetObservation services that have been submitted to the CatalogEndpoints document/spreadsheet.  For initial purposes, just looking at one (hopefully representative) SOS from each RA or other agency.  Also for initial purposes only considering single in-situ representations and not profiles or trajectories.
-
-An initial simple perl script was setup to read submitted SOS endpoints and detail the number of platforms and observation types and their locations based on the GetCapabilities document.  The script also parses based on whether full xml namespaces are used and reports the vocabulary prefix in effect and provides a kml file of the platform locations.
-
-This script can be used along with Eric Bridger's similar browser application which provides similar information at http://dev.neracoos.org/IOOSCatalog3/SOSTester/catalog_end_points.html  (starfish/starfish)
-
-In addition to the above summary SOS information, creating a xsd(xml schema document) from a provided xml was used(the 'trang' tool) to compare existing schema/element differences between the existing SOS GetCapabilities documents.
-
-Testing and categorization/compliance would be broken into 3 parts
-  * a survey and categorization step to identify,categorize and describe existing SOS services to a known or new reference
-  * differences in schema  - xsd reference and differences
-  * differences in vocabulary - the listing/range of possible element/prefix terms and differences
 
 
 = Resources= 
