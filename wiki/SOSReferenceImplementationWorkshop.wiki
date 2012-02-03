@@ -18,10 +18,7 @@ A small team of IOOS RA DMAC Coordinators are working on development of a refere
 
 ==Agenda==
 
-===Meeting Start time: 8:00 a.m.===
-
-High-level agenda outline, with responsible parties.
-
+*Meeting Start time: 8:00 a.m.*  Agenda outline, with responsible parties:
   * *[SOSRefImplementWorkshop_Day1Agenda Day 1]*
     * (Derrick) Meeting goals and agenda.
     * (Emilio & Eric) Getting the basics and common elements squared away: Settling on and clearly documenting conventions, controlled vocabularies, defaults, recommended best practices, etc, for all elements of GetCapabilities requests and responses; a bare-bones DescribeSensor request and response; and a GetObservations request for the case of a fixed point time series.
