@@ -1,5 +1,4 @@
 #summary SOS Testing Process and Tools
-
 #sidebar SOSTableOfContents
 
 <wiki:toc max_depth="6" />
