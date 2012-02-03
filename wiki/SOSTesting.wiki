@@ -26,7 +26,7 @@ Testing and categorization/compliance would be broken into 3 parts
 
 This script can be used along with Eric Bridger's similar browser application which provides similar information at http://dev.neracoos.org/IOOSCatalog3/SOSTester/catalog_end_points.html  (starfish/starfish)
 
-See also [SOSTesting], [SOSSurvey] and [SOSVersions]
+See also [SOSSurvey] and [SOSVersions]
 
 = SOS Assessment =
 
@@ -45,9 +45,7 @@ Summary of the current level of services and possibilities for evaluation, in an
   # Are data available on the service representative of the entire RA inventory?  If not, why?  Are these decisions related to technology impediments that we can solve?
 
 == Questions/Comments about the assessment ==
-Let's make sure each question has a purpose.  What we're envisioning here is a survey where all members of the team will need to spend time answering a questionnaire.  This is potentially non-trivial so let's make it worthwhile.
-
-How will we collect and/or compile the information?  
+Let's make sure each question has a purpose.  What we're envisioning here is a survey where all members of the team will need to spend time answering a questionnaire.  This is potentially non-trivial so let's make it worthwhile. How will we collect and/or compile the information?  
   * A template wiki page with questions?  Then copy/paste onto a new wiki page for each respondent?  
   * A linked spreadsheet?
 
