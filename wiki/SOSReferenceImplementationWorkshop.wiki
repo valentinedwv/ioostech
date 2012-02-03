@@ -16,8 +16,6 @@ A small team of IOOS RA DMAC Coordinators are working on development of a refere
  * Meeting: Feb 7-9
  * Departure: Feb 10
 
-==Meeting Start time: 8:00 a.m.==
-
 [http://baltimore.hyatt.com/hyatt/hotels/index.jsp?null Hyatt Regency Baltimore]
 
 <p>
@@ -79,6 +77,8 @@ Workshop attendees
   #  CJ Pellerin (NCBO) 
 
 High-level agenda outline, with responsible parties.
+
+=Meeting Start time: 8:00 a.m.=
 
   * *[SOSRefImplementWorkshop_Day1Agenda Day 1]*
     * (Derrick) Meeting goals and agenda.
