@@ -6,6 +6,8 @@ Inside of the CSV response block, we may need to return time information. SWE de
 
 Should we use [http://en.wikipedia.org/wiki/ISO_8601 "ISO 8601"]?
 
+_Emilio Comment: I strongly vote for the use of ISO 8601 all across the SOS service (in requests and all responses). We already use ISO 8601, it's widely used in general, it's human readable (as opposed to Option C), and if we stick to some conventions it's easily parsed. I don't know what are the implications of Options A vs B in terms of the `<swe:field>` package, but I assume in both cases the values can be full ISO 8601 date-time strings, like `2009-05-23T00:00:00Z`? _
+
 == A ==
 {{{
 <swe:field name="time">
