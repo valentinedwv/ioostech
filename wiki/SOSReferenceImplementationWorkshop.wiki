@@ -78,7 +78,7 @@ Workshop attendees
 
 High-level agenda outline, with responsible parties.
 
-=Meeting Start time: 8:00 a.m.=
+===Meeting Start time: 8:00 a.m.===
 
   * *[SOSRefImplementWorkshop_Day1Agenda Day 1]*
     * (Derrick) Meeting goals and agenda.
