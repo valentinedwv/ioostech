@@ -30,7 +30,7 @@ Emilio will lead a [SOSRefImplementWorkshop_Day1Agenda short wrap up of Day 1 ac
 
 === The Position Vector Block ===
 
-[TheVectorBlock How to describe the position of an asset inside of {{{<om:result>}}} block.]
+[TheVectorBlock How to describe the position of an asset] inside of {{{<om:result>}}} block.
 
 === Identifying the !FeatureType ===
 
