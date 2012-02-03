@@ -72,8 +72,7 @@ Ambiguity in the SOS 1.0 and 2.0 data model.  This issue has been discussed by t
 == Encoding Quality Control Flags (Mohamed) ==
 NDBC and CO-OPS will both be working on this in FY12 and certification of RAs will require this as well.  High priority topic but for the purposes of the group the problem is about encoding QC flags, not defining or selecting QC tests.
 
-Consider q2o.whoi.edu as a source of information.
-http://dl.dropbox.com/u/8611634/swe2011/swe2011_submission_9.pdf
+Consider 
 
 == Testing (Jeremy) ==
 
@@ -112,6 +111,10 @@ http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id3626
 
 http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial
 
+Quuality Control: q2o.whoi.edu
+
+
+http://dl.dropbox.com/u/8611634/swe2011/swe2011_submission_9.pdf
 
 Emilio's online bibliography [http://www.citeulike.org/user/emayorga/tag/ioos,informatics at citeulike]
 
