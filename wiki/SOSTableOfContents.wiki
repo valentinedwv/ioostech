@@ -5,13 +5,13 @@
    * [SOSRefImplementWorkshop_Day1Agenda Day One]
    * [SOSRefImplementWorkshop_Day2Agenda Day Two]
    * [SOSRefImplementWorkshop_Day3Agenda Day Three]
- * [CFFeatureTypes]
- * Request Syntax (IDD)
- * SOS Responses
-   * [GetCapabilities]
-   * [DescribeSensor]
-   * [GetObservation]
  * [SOSGuidelines SOS Guidelines]
+   * Request Syntax (IDD)
+   * SOS Responses
+     * [GetCapabilities]
+     * [DescribeSensor]
+     * [GetObservation]
+ * [CFFeatureTypes]
  * [SOSTesting]
    * [SOSComponentVersions]
    * [SOSVersions]
