@@ -14,7 +14,7 @@
    * [SWECommonPlan#Reference_Docs_(Discussion_Papers_and_Specifications) References]
    * [SWECommonPlan]
    * [CFFeatureTypes]
-  * [SOSTesting]
+ * [SOSTesting]
    * [SOSComponentVersions]
    * [SOSVersions]
    * [SOSSurvey]
