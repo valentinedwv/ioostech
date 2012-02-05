@@ -5,7 +5,6 @@
 
 
 = Introduction =
-Also see EmilioControlledVocabs.
 
 Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to chose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.  
 
@@ -26,7 +25,7 @@ Eventually, I'd like to identify exactly where in the SOS responses and requests
   # How can we be good stewards in the community and participate in the process without bringing progress to a grinding halt?  (e.g. create temporary solutions for the immediate term but *ensure* that the long term vocabulary maintenance is done too.)
   # How do we harmonize with the many other vocabularies that have been developed in the regions?
   # How do we utilize or mature the vocabularies left over from the DIF at http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml ?
-The target set of controlled vocabulary types we will likely need are  ([EmilioControlledVocabs stolen from Emilio's additional vocabulary discussion]):
+The target set of controlled vocabulary types we will likely need are:
 
  * organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
  * organizational role (service provider, data provider or asset owner)
@@ -37,11 +36,9 @@ The target set of controlled vocabulary types we will likely need are  ([EmilioC
 
 
 = Observed Property Vocabularies =
-[EmilioControlledVocabs#Observed_Properties See also EmilioControlledVocabs#Observed_Properties]
 
 Guidelines: 
- # Use the CF (but what about versions)
-[ControlledVocabularies#Observed_Property_Vocabularies See also ControlledVocabularies#Observed_Property_Vocabularies]
+ # Use CF standard names (but what about versions?)
 
 The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a really interesting combination of models and data (I think) where controlled vocabularies for measurements are used. It's worth assessing these, chatting with people in that team (ASA, Kyle Wilcox??), etc. For example, it's clear to me that while many/most of the names used are in fact CF standard names, many must be made up, but using CF recommendations for building names. 
 
@@ -203,13 +200,12 @@ Not all of the wave components are defined in the GML composite phenomenon defin
 
 = Units of Measure =
 
-[http://unitsofmeasure.org/ Universal Code for Units of Measure]
+Clarification of the units of measure representation in output files. Is there a clear OGC recommendation at this time? Perhaps a follow up with Luis Bermudez? UCUM, UOM definied in OGC dictionaries? Udunits?
 
-[http://www.unidata.ucar.edu/software/udunits/ UDUNITS]
-
-OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_id=11498 OpenGIS© Recommendation Paper — Units of Measure Use and Definition Recommendations] may be outdated??
-
-[https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
+  * [http://unitsofmeasure.org/ Universal Code for Units of Measure]
+  * [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]
+  * OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_id=11498 OpenGIS© Recommendation Paper — Units of Measure Use and Definition Recommendations] may be outdated??
+  * [https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
 
 = Organization Types and Roles  =
 (Regional Association, Provider/Owner, etc)
@@ -257,10 +253,10 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 
 A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
 
-
 _DPS Comment: There is a significant conflict in our use of station and platform as synonyms that will be especially evident when we get to the point of tracing lineage within SensorML.  In my mind a platform is a piece of equipment that hosts or carries one or more instruments or sensors.  It can be moved, it has a beginning and ending, and most importantly it's configuration can be modified which raises the requirement to trace the lineage of any data originating from a platform.  A station on the other hand is a fixed location at which a platform might be deployed for a finite period of time.  The station may persist longer than any one platform deployment at that site.  Think of the many different instruments that have derived CO2 at the Mauna Loa site where the [http://en.wikipedia.org/wiki/Keeling_Curve Keeling Curve] was observed as an example of this concept. What are the implications if we adopt this view of those two terms?_
   
 See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
+
 
 == NANOOS NVS Asset types and icons ==
 _Note to self_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
