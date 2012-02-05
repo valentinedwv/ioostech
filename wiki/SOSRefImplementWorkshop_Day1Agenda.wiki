@@ -110,7 +110,7 @@ Each term or concept used in the SOS should be referenced with a unique identifi
 
 NOTE: OGC seems to be moving from  [http://think.random-stuff.org/posts/ogc-rediscovers-urls-but-lets-tighten-up-the-terminology-a-bit URNs to URLs] (See this [http://www.opengeospatial.org/ogcUrnPolicy old document] for the previous policy)
 
-Existing IOOS identifier conventions include station (sometimes described as platform), sensors, and "collections" (network). These are currently implemented as urn's only.  See also [DescribeSensorMetadataForIOOSSOS this wiki page from Micah].  And refer to the [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers "IOOS Conventions for Asset Identifiers" document] (This document was previously only available as a Word or pdf document, but was recently migrated to a versioned page on the GEO-IDE Wiki).
+Existing IOOS identifier conventions include station (sometimes described as platform), sensors, and "collections" (network). These are currently implemented as urn's only.  See also [DescribeSensorMetadataForIOOSSOS this wiki page from Micah].  And refer to the [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers "IOOS Conventions for Asset Identifiers" document]. This document was previously only available as a Word or pdf document, but was recently migrated to a versioned page on the GEO-IDE Wiki; does it deserve review or is it clear enough as is?
 
 == Default values and behaviors ==
 
@@ -142,6 +142,7 @@ A draft of elements. These may be parsed out into different sections in the fina
     * only UTC/GMT time support is currently required, for both requests and responses
     * in GetCapabilities offerings response, address convention for `<gml:TimePeriod><gml:endPosition>`
     * in GetObservation request, eventTime is optional; if absent, the latest observations will be returned. [http://www.oostethys.org/best-practices/getlatest See the relevant OOSTethys 2008 document, "Get Latest"]
+    * Issues with ISO 8601 and encoding time zones or time offsets
   * What role, if any, for featureOfInterest and FilterEncoding implementations?
     * For some early, limited featureOfInterest discussions, [http://www.oostethys.org/best-practices/foi see this 2008/2009 OOSTethys page]. If we implement something more sophisticated than "Earth:Ocean" or just the station location (assuming fixed site), we should consider how it interacts with the practice of using "Network-`*`" offerings currently used by NDBC and NOS; there's probably overlap.
     * Discussions and examples of use of FilterEncoding, [http://external.opengis.org/twiki_public/HydrologyDWG/GwIeSOSResultFilter from a 2010 wiki page by the OGC Hydrology DWG (early WaterML 2 discussions)]
