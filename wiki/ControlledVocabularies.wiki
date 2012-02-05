@@ -12,10 +12,13 @@ The closest thing to policy we currently have is that IOOS data providers should
 
 However, there is also a vocabulary developed during the Data Integration Framework project by Matt Howard, Sara Haines and others which has been titled the IOOS Parameter Vocabulary.  Both the [http://mmisw.org/orr/#http://mmisw.org/ont/cf/parameter CF table] and version 1.0 of the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary] are currently hosted (v1.0) at the [http://mmisw.org/orr/#b MMI Ontology Registry and Repository].  
 
-
 Additionally, the [http://sweet.jpl.nasa.gov/ontology/ NASA SWEET] project hosts fairly mature vocabularies with the additional benefit of attempting to provide a framework for relating them together into ontologies.  
 
 Eventually, I'd like to identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
+
+What is the entire suite of parameters we need to consider for inclusion in the data file? We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms (if translations are necessary).
+
+There are other vocabularies that are often referenced by URNs. Specifically, those managed by OGC. How do we resolve this? 
  
 
 = Issues and Open Questions =
@@ -38,7 +41,8 @@ The target set of controlled vocabulary types we will likely need are:
 = Observed Property Vocabularies =
 
 Guidelines: 
- # Use CF standard names (but what about versions?)
+  # Use CF standard names (but what about versions?)
+  # All CF parameter names (and IOOS Parameter Vocabulary v1.0 terms) should be referenced by URLs pointing to the [http://mmisw.org/orr/ MMI Ontology Registry and Repository]. For example, http://mmisw.org/ont/cf/parameter/air_temperature_anomaly
 
 The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a really interesting combination of models and data (I think) where controlled vocabularies for measurements are used. It's worth assessing these, chatting with people in that team (ASA, Kyle Wilcox??), etc. For example, it's clear to me that while many/most of the names used are in fact CF standard names, many must be made up, but using CF recommendations for building names. 
 
