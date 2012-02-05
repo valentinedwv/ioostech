@@ -1,33 +1,7 @@
-#summary Plan for developing SWE Common response for SOS GetObservation requests.
+#summary References and Useful External Links for use across the wiki
 #labels Phase-Requirements,Phase-Design,SOS,SWE,Featured
 
 <wiki:toc max_depth="2" />
-
-= Introduction =
-
-Define SWE Common encodings for all of the CF sampling feature types that:
-
- * provide all the information required for accurate plotting of the data
- * are simple and easy to publish
- * are simple and easy to read
- * are optimized for minimum size, reduce accessing time
- * provide all information necessary to unambiguously identify essential characteristics of the CF sampling feature types (should enable nearly lossless translation between the two encoding standards)
- * Provide a mechanism to encode quality information along with data values
-
-= Roadmap =
- * identify data sources for each feature type (actual source data including platform metadata)
- * resolve ambiguities surrounding SOS 1.0 and 2.0 interpretation of “procedure, observationOffering, featureOfInterest, observedProperty”
- * create templates for each feature type
- * implement SOS services for each feature type at each RA
- * test by multiple clients
-
-
-= Issues to Resolve Prior to the Meeting = 
-We need a plan for including more metadata in the capabilities response to enable automatic harvesting by the IOOS catalog and other harvesting portals  (See OGC 06-121r9 - OGC Web Services Common Standard Version 2.0.0 for more information on common elements across OGC web services especially including relationships to ISO 1911x standards)
-
-== Encoding Quality Control Flags (Mohamed) ==
-NDBC and CO-OPS will both be working on this in FY12 and certification of RAs will require this as well.  High priority topic but for the purposes of the group the problem is about encoding QC flags, not defining or selecting QC tests.
-
 
 =Resources= 
 == Example Files ==
