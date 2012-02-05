@@ -271,8 +271,13 @@ See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
 
 =Links and yet to be organized errata=
 
-http://marinemetadata.org/conventions/vocabularies
+== IOOS Vars RDF ==
 
+Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's between controlled vocabularies.  The IOOS Catalog adopted a simple Ontology which allows the User Interface to map IOOS variables, e.g. Winds to the CF Terms used by some of the regional SOS's.  This is a very simple ontology, see below, which only makes use of the NarrowMatch triple store's thus Winds is mapped to wind_speed, wind_direction, etc.  [ControlledVocabularyTables#IOOS_Vars_RDF See the XML listing here.]
+
+==Various potentially useful resources==
+
+  * http://marinemetadata.org/conventions/vocabularies
   * Work on water quality (?) vocabularies that Matt Howard and Cyndy Chandler are starting up (no URL that I know of). Matt is also leading a vocabulary effort focused on Gulf of Mexico, related to Deepwater Horizon recovery efforts.
   * [http://www.bco-dmo.org/ BCO-DMO] and [http://cdmo.baruch.sc.edu/ NERRS CDMO] are also excellent resources for water quality and biogeochemistry. [http://cdmo.baruch.sc.edu/data/parameters.cfm For NERRS, this "Parameters" page is very relevant].
   * [https://geo-ide.noaa.gov/wiki/index.php?title=In-situ_data_%28sensors,_groups_of_sensors,_platforms,_etc.%29 (Geo-IDE Wiki) In-situ data (sensors, groups of sensors, platforms, etc.)]
@@ -290,8 +295,8 @@ http://marinemetadata.org/conventions/vocabularies
   * [http://www.citeulike.org/user/emayorga/tag/ioos,informatics My CiteULike collection of peer-reviewed journal articles broadly related to this topic]
 
 ==CMSP Discovery Vocabularies Workshop==
-December 1-3, 2010
-WHOI (With USGS/NOAA sponsorship)
+
+December 1-3, 2010, at WHOI (With USGS/NOAA sponsorship)
 http://www.whoi.edu/page.do?pid=49656
 Workshop report is available from the page above or directly from http://www.whoi.edu/fileserver.do?id=77984&pt=2&p=84468
 
@@ -300,6 +305,7 @@ There was useful information gathered prior to the meeting and included in the a
 Matt Howard and some others from the IOOS community are exploring how best to extend IOOS vocabularies into the biogeochemical and water quality domains.
 
 ==IOOS Biological Data Project==
+
 Hassan Moustahfid from the IOOS PO led a project with three agencies in Hawaii aimed at developing a common exchange data format for exchanging reef fish survey data (presence, absence, abundance of reef fish as determined by visual sampling procedures).  A large part of that development involved agreeing on vocabularies to be used by all three agencies.  The solution was an extension of the Darwin Core standard for biological observations and was developed in conjunction with OBIS USA.  
 [http://www.ioos.gov/ecosystem_observations/welcome.html Click Projects tab on this page]
 How do we use this?  Is it extensible?  What about the overlap with existing standards like CF and the IOOS Param Voc?  
@@ -315,8 +321,3 @@ Schema Terminology will be based on ratified [http://rs.tdwg.org/dwc/ Darwin cor
   * To learn more about the Biological data standards implemented at the Pacific Islands Region please follow the following links:
 Biological data services at the Pacific Islands Region website
 FGDC and ISO Metadata
-
-== IOOS Vars RDF ==
-
-Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's between controlled vocabularies.  The IOOS Catalog adopted a simple Ontology which allows the User Interface to map IOOS variables, e.g. Winds to the CF Terms used by some of the regional SOS's.  This is a very simple ontology, see below, which only makes use of the NarrowMatch triple store's thus Winds is mapped to wind_speed, wind_direction, etc.  [ControlledVocabularyTables#IOOS_Vars_RDF See the XML listing here.]
-----
