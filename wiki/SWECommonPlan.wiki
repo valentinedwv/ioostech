@@ -32,15 +32,6 @@ Each issue below needs to be addressed prior to the meeting. Ideally one person 
 
  * We need a plan for including more metadata in the capabilities response to enable automatic harvesting by the IOOS catalog and other harvesting portals  (See OGC 06-121r9 - OGC Web Services Common Standard Version 2.0.0 for more information on common elements across OGC web services especially including relationships to ISO 1911x standards)
 
-
-== CF Feature Types (Kyle) ==
-Gather a [CFFeatureTypes list] of the sampling feature types currently in use among the IOOS regions and NDBC/CO-OPS.  Then associate a few actual platform types to each sampling feature types so that we have a sense of the information available in the  databases in use by IOOS partners.
-Examples from the OGC site: [http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial]
-
-[http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#id36261967 ]
-http://www.ogcnetwork.net/GEOSS_Climate_Workshop_2011
-[https://portal.opengeospatial.org/files/?artifact_id=46131 WCS 2.0 Extension for netCDF-CF; CSW and THREDDS Interoperability]
-
 == Vocabularies (CJ, Emilio will help) ==
 
 What is the entire suite of parameters we need to consider for inclusion in the data file?  We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms (if translations are necessary).
@@ -51,26 +42,11 @@ All CF parameter names (and IOOS Parameter Vocabulary v1.0 terms) should be refe
 
 There are other vocabularies that are often referenced by URNs.  Specifically, those managed by OGC.  How do we resolve this?  
 
-=== Units of Measure and Time encoding ===
-Clarification of the units of measure representation in output files.  Is there a clear OGC recommendation at this time?  Perhaps a follow up with Luis Bermudez?  UCUM, UOM definied in OGC dictionaries?  Udunits?
-
-Issues with ISO 8601 and encoding time zones or time offsets
-
-=== Platform Types and Unique Identifiers ===
-The current IOOS Guidance for encoding platform identifiers using URNs is documented at [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers].  Does this deserve review or is it clear enough as is?
-
-URN vs URL within the identifier discussion.
-
-== SOS Data Model (Eric, Emilio) ==
-
-Ambiguity in the SOS 1.0 and 2.0 data model.  This issue has been discussed by the OGC Hyrology DWG and they have not reached a conclusion that is conformant to the SOS 1.0 spec as they understand it.  There are implications for the format of the responses from all three SOS core operations (GetCapabilities, DescribeSensor, GetObservation).  There are also performance implications due to the way searches must be performed.
-
-
 == Encoding Quality Control Flags (Mohamed) ==
 NDBC and CO-OPS will both be working on this in FY12 and certification of RAs will require this as well.  High priority topic but for the purposes of the group the problem is about encoding QC flags, not defining or selecting QC tests.
 
 
-= Resources= 
+=Resources= 
 == Example Files ==
 http://code.google.com/p/ioostech/source/browse/ndbc_swe_sample-2011-10-19.xml NDBC example of temperature observations from a collection of moored buoys.  There are several other examples in the source repository now [http://code.google.com/p/ioostech/source/browse/]
 
