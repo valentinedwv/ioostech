@@ -82,19 +82,18 @@ Currently have at least two compound or composite properties in use.
 From GetCapabilites OperationsMetadata section:
 {{{
 <ows:Parameter name="observedProperty">
-<ows:AllowedValues>
-<ows:Value>air_temperature</ows:Value>
-<ows:Value>air_pressure_at_sea_level</ows:Value>
-<ows:Value>sea_water_electrical_conductivity</ows:Value>
-<ows:Value>currents</ows:Value>
-<ows:Value>sea_water_salinity</ows:Value>
-<ows:Value>sea_floor_depth_below_sea_surface</ows:Value>
-<ows:Value>sea_water_temperature</ows:Value>
-<ows:Value>waves</ows:Value>
-<ows:Value>winds</ows:Value>
-</ows:AllowedValues>
+  <ows:AllowedValues>
+    <ows:Value>air_temperature</ows:Value>
+    <ows:Value>air_pressure_at_sea_level</ows:Value>
+    <ows:Value>sea_water_electrical_conductivity</ows:Value>
+    <ows:Value>currents</ows:Value>
+    <ows:Value>sea_water_salinity</ows:Value>
+    <ows:Value>sea_floor_depth_below_sea_surface</ows:Value>
+    <ows:Value>sea_water_temperature</ows:Value>
+    <ows:Value>waves</ows:Value>
+    <ows:Value>winds</ows:Value>
+  </ows:AllowedValues>
 </ows:Parameter>
-</ows:Operation>
 }}}
 From GetCapabilities offerings:
 {{{
@@ -110,7 +109,7 @@ From GetCapabilities offerings:
 }}}
 
 Issues with the above usage:
- # waves and winds are not actually CF standard names
+ # *waves* and *winds* are not actually CF standard names
  
 Data Columns returned from a [http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=Winds&responseformat=text/csv GetObservation (CSV) request] for winds:
  * station_id	
@@ -158,45 +157,45 @@ Definition of Waves in the IOOS GML Dictionary http://www.ioos.gov/gml/IOOS/0.6.
 
 {{{
 <gml:definitionMember>
-<swe:CompositePhenomenon gml:id="NonDirectionalWaves" dimension="15">
-<gml:description>Wave measurements.</gml:description>
-<gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
-<swe:component xlink:href="#SignificantWaveHeight"/>
-<swe:component xlink:href="#DominantWavePeriod"/>
-<swe:component xlink:href="#AverageWavePeriod"/>
-<swe:component xlink:href="#SwellHeight"/>
-<swe:component xlink:href="#SwellPeriod"/>
-<swe:component xlink:href="#WindWaveHeight"/>
-<swe:component xlink:href="#WindWavePeriod"/>
-<swe:component xlink:href="#WaterTemperature"/>
-<swe:component xlink:href="#WaveDuration"/>
-<swe:component xlink:href="#CalculationMethod"/>
-<swe:component xlink:href="#SamplingRate"/>
-<swe:component xlink:href="#NumberOfFrequencies"/>
-<swe:component xlink:href="#CenterFrequency"/>
-<swe:component xlink:href="#Bandwidth"/>
-<swe:component xlink:href="#SpectralEnergy"/>
-</swe:CompositePhenomenon>
+  <swe:CompositePhenomenon gml:id="NonDirectionalWaves" dimension="15">
+    <gml:description>Wave measurements.</gml:description>
+    <gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
+    <swe:component xlink:href="#SignificantWaveHeight"/>
+    <swe:component xlink:href="#DominantWavePeriod"/>
+    <swe:component xlink:href="#AverageWavePeriod"/>
+    <swe:component xlink:href="#SwellHeight"/>
+    <swe:component xlink:href="#SwellPeriod"/>
+    <swe:component xlink:href="#WindWaveHeight"/>
+    <swe:component xlink:href="#WindWavePeriod"/>
+    <swe:component xlink:href="#WaterTemperature"/>
+    <swe:component xlink:href="#WaveDuration"/>
+    <swe:component xlink:href="#CalculationMethod"/>
+    <swe:component xlink:href="#SamplingRate"/>
+    <swe:component xlink:href="#NumberOfFrequencies"/>
+    <swe:component xlink:href="#CenterFrequency"/>
+    <swe:component xlink:href="#Bandwidth"/>
+    <swe:component xlink:href="#SpectralEnergy"/>
+  </swe:CompositePhenomenon>
 </gml:definitionMember>
 <gml:definitionMember>
-<swe:CompositePhenomenon gml:id="Waves" dimension="23">
-<gml:description>Directional waves</gml:description>
-<gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
-<swe:base xlink:href="#NonDirectionalWaves"/>
-<swe:component xlink:href="#MeanWaveDirection"/>
-<swe:component xlink:href="#SwellWaveDirection"/>
-<swe:component xlink:href="#WindWaveDirection"/>
-<swe:component xlink:href="#DirectionalWaveParameter"/>
-<swe:component xlink:href="#FourierCoefficientA1"/>
-<swe:component xlink:href="#FourierCoefficientA2"/>
-<swe:component xlink:href="#FourierCoefficientB1"/>
-<swe:component xlink:href="#FourierCoefficientB2"/>
-</swe:CompositePhenomenon>
+  <swe:CompositePhenomenon gml:id="Waves" dimension="23">
+    <gml:description>Directional waves</gml:description>
+    <gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
+    <swe:base xlink:href="#NonDirectionalWaves"/>
+    <swe:component xlink:href="#MeanWaveDirection"/>
+    <swe:component xlink:href="#SwellWaveDirection"/>
+    <swe:component xlink:href="#WindWaveDirection"/>
+    <swe:component xlink:href="#DirectionalWaveParameter"/>
+    <swe:component xlink:href="#FourierCoefficientA1"/>
+    <swe:component xlink:href="#FourierCoefficientA2"/>
+    <swe:component xlink:href="#FourierCoefficientB1"/>
+    <swe:component xlink:href="#FourierCoefficientB2"/>
+  </swe:CompositePhenomenon>
 </gml:definitionMember>
 }}}
 
 Couple things of note:
-Not all of the wave components are defined in the GML composite phenomenon definition
+  * Not all of the wave components are defined in the GML composite phenomenon definition
 
 = Units of Measure =
 
@@ -208,6 +207,7 @@ Clarification of the units of measure representation in output files. Is there a
   * [https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
 
 = Organization Types and Roles  =
+
 (Regional Association, Provider/Owner, etc)
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
@@ -259,7 +259,8 @@ See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page Des
 
 
 == NANOOS NVS Asset types and icons ==
-_Note to self_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
+
+_Note from Emilio_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
 See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
 
 *Asset classes:*
@@ -268,8 +269,8 @@ See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
   * _Gridded Regular and Irregular Data (GRID)_. Models (forecasts), remote sensing imagery, etc.
 
 
-
 =Links and yet to be organized errata=
+
 http://marinemetadata.org/conventions/vocabularies
 
   * Work on water quality (?) vocabularies that Matt Howard and Cyndy Chandler are starting up (no URL that I know of). Matt is also leading a vocabulary effort focused on Gulf of Mexico, related to Deepwater Horizon recovery efforts.
