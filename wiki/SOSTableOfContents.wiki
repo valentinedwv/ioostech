@@ -16,4 +16,4 @@
    * [SOSSurvey]
    * [SOSComponentVersions]
    * [SOSVersions]
- * [SWECommonPlan#Reference_Docs_(Discussion_Papers_and_Specifications) References]
+ * [ExternalResources References & Links]
