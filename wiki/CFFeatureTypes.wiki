@@ -29,13 +29,13 @@ The initial, draft SWE representations included in this wiki document were [http
 
 Here is the explanation of the different types of storage techniques: http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#representations-features
 
-== Overlap with the IOOS CSV Specs ==
+=Overlap with the IOOS CSV Specs=
 
 See the [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_CSV_and_TSV_Encoding IOOS CSV/TSV encodings] document for prior guidance on using these data formats with SOS.  Note, the document above at the [https://geo-ide.noaa.gov/wiki/index.php GEO-IDE wiki] is the most recent version of this information. All other documents whether they are pdf, word or google docs version of the above information should be considered deprecated.
 
 Additional IOOS Guidelines can be found [https://geo-ide.noaa.gov/wiki/index.php?title=Category:IOOS_Guidelines here].  As above, these wiki versions of the information supersede previous versions.
 
-== Other netCDF Issues  ==
+=Other netCDF Issues=
 
  * General construct for mapping global attributes
  * More specific mechanism for certain types of information such as contact person
@@ -49,7 +49,7 @@ Additional IOOS Guidelines can be found [https://geo-ide.noaa.gov/wiki/index.php
  * Mapping the featureType = "timeSeries"; attribute to O&M (featureOfInterest?)
  * Mapping the cf_role=”timeseries_id” attribute to O&M
 
-==Other, related information==
+=Other, related information=
 
 Other potentially documents (mostly from deprecated SWECommonPlan wiki page):
 
