@@ -1,6 +1,8 @@
 #summary Mappings from CF Feature Types to SWE
 #sidebar CFFeatureTypes_SideNavigation
 
+<wiki:toc max_depth="3" />
+
 = Introduction =
 This document summarizes the CF Feature Types as part of the [SOSReferenceImplementationWorkshop] discussion.
 
@@ -25,12 +27,7 @@ NetCDF files can also represent data from multiple stations.  A timeSeries at mu
 
 The initial, draft SWE representations included in this wiki document were [http://external.opengis.org/twiki_public/NREwg/SWECommonNetCDFTutorial taken from the 2009 OGC wiki document, "SWE Common encoding of CF-NetCDF coverage data"]. Unfortunately, that document didn't get around to fleshing out *profile* and *trajectory* SWE Common encodings (or their corresponding time series, of course).
 
-Here is the explanation of the different types of storage techniques:
-
-http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#representations-features
-
-
-Random link to a paper on SOS mobile profile for consideration when we get to trajectories [https://wiki.52north.org/pub/Sensornet/SosMobileExtension/20080306_SOSmobile.pdf pdf here]
+Here is the explanation of the different types of storage techniques: http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#representations-features
 
 == Overlap with the IOOS CSV Specs ==
 
@@ -52,4 +49,10 @@ Additional IOOS Guidelines can be found [https://geo-ide.noaa.gov/wiki/index.php
  * Mapping the featureType = "timeSeries"; attribute to O&M (featureOfInterest?)
  * Mapping the cf_role=”timeseries_id” attribute to O&M
 
- 
+==Other, related information==
+
+Other potentially documents (mostly from deprecated SWECommonPlan wiki page):
+
+  * [https://wiki.52north.org/pub/Sensornet/SosMobileExtension/20080306_SOSmobile.pdf Paper (pdf) on SOS mobile profile for consideration when we get to trajectories]
+  * http://www.ogcnetwork.net/GEOSS_Climate_Workshop_2011 
+  * [https://portal.opengeospatial.org/files/?artifact_id=46131 WCS 2.0 Extension for netCDF-CF, CSW and THREDDS Interoperability]
