@@ -5,8 +5,6 @@
 
 = Introduction =
 
-[https://docs.google.com/a/noaa.gov/document/d/1czWdBFjPmAEtLe5T3_54fwk2cUdbILwWPkIDKPKFNvY/edit?hl=en_US Deprecated Google Docs version of this plan]. 
-
 Define SWE Common encodings for all of the CF sampling feature types that:
 
  * provide all the information required for accurate plotting of the data
@@ -17,8 +15,6 @@ Define SWE Common encodings for all of the CF sampling feature types that:
  * Provide a mechanism to encode quality information along with data values
 
 = Roadmap =
-This section needs to be fleshed out and assigned to individuals, preferably with dates associated with them at which time the responsible party will report back to the group.  Note, the reports does not imply a complete solution.
-
  * identify data sources for each feature type (actual source data including platform metadata)
  * resolve ambiguities surrounding SOS 1.0 and 2.0 interpretation of “procedure, observationOffering, featureOfInterest, observedProperty”
  * create templates for each feature type
