@@ -32,16 +32,6 @@ Each issue below needs to be addressed prior to the meeting. Ideally one person 
 
  * We need a plan for including more metadata in the capabilities response to enable automatic harvesting by the IOOS catalog and other harvesting portals  (See OGC 06-121r9 - OGC Web Services Common Standard Version 2.0.0 for more information on common elements across OGC web services especially including relationships to ISO 1911x standards)
 
-== Vocabularies (CJ, Emilio will help) ==
-
-What is the entire suite of parameters we need to consider for inclusion in the data file?  We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms (if translations are necessary).
-
-See [ControlledVocabularies] for more information including a table that begins to tackle this with terms from the NOAA Chesapeake Bay Office database.
-
-All CF parameter names (and IOOS Parameter Vocabulary v1.0 terms) should be referenced by URLs pointing to the [mmisw.org/orr/ MMI Ontology Registry and Repository].   For example, [http://mmisw.org/ont/cf/parameter/air_temperature_anomaly].
-
-There are other vocabularies that are often referenced by URNs.  Specifically, those managed by OGC.  How do we resolve this?  
-
 == Encoding Quality Control Flags (Mohamed) ==
 NDBC and CO-OPS will both be working on this in FY12 and certification of RAs will require this as well.  High priority topic but for the purposes of the group the problem is about encoding QC flags, not defining or selecting QC tests.
 
