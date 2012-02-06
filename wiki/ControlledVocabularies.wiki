@@ -159,7 +159,7 @@ URL http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&o
 The terms *waves* and *winds* are not actually CF standard names.  
 From the two lists above we can see that the *waves* and *winds* are actually aliases for a larger set of observed parameters, some, but not all of which are CF Standard Names.  We'll refer to these two observed parameters as composite parameters.  By using the KVP `observedproperty=Waves` the NDBC SOS actually returns 26 parameters.  Some of these parameters are common across all requests so the actual number of aliased properties may be less than 26 but the point is that aliasing is used here to simplify the request.  
 
-*ISSUE: Is this a legal SOS 1.0 or 2.0 behavior?  Are there alternative methods of enabling this simplified request syntax such as through observationOfferings?  Are each of the parameters above also available individually?*  
+*ISSUE: Is this a legal SOS 1.0 or 2.0 behavior?  Are there alternative methods of enabling this simplified request syntax such as through observationOfferings?  Are each of the parameters above also available individually?  [http://code.google.com/p/ioostech/issues/detail?id=1 Issue 1]*  
 
 http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=polar_coordinate_r1&responseformat=text/csv  yields an exception 
 
