@@ -112,8 +112,7 @@ From GetCapabilities offerings:
 <observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/winds"/>
 }}}
 
-Issues with the above usage:
- # *waves* and *winds* are not actually CF standard names
+
  
 Data Columns returned from a [http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=Winds&responseformat=text/csv GetObservation (CSV) request] for winds:
  * station_id	
@@ -157,7 +156,26 @@ URL http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&o
  * calculation_method	
  * sampling_rate (Hz)
 
-Definition of Waves in the IOOS GML Dictionary http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml
+The terms *waves* and *winds* are not actually CF standard names.  
+From the two lists above we can see that the *waves* and *winds* are actually aliases for a larger set of observed parameters, some, but not all of which are CF Standard Names.  We'll refer to these two observed parameters as composite parameters.  By using the KVP `observedproperty=Waves` the NDBC SOS actually returns 26 parameters.  Some of these parameters are common across all requests so the actual number of aliased properties may be less than 26 but the point is that aliasing is used here to simplify the request.  
+
+*ISSUE: Is this a legal SOS 1.0 or 2.0 behavior?  Are there alternative methods of enabling this simplified request syntax such as through observationOfferings?  Are each of the parameters above also available individually?*  
+
+http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=polar_coordinate_r1&responseformat=text/csv  yields an exception 
+
+{{{
+<ExceptionReport xmlns="http://www.opengis.net/ows/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/ows/1.1 owsExceptionReport.xsd" version="1.0.0" xml:lang="en">
+   <Exception exceptionCode="InvalidParameterValue" locator="observedProperty">
+      <ExceptionText>polar_coordinate_r1</ExceptionText>
+   </Exception>
+</ExceptionReport>
+}}}
+
+
+
+Another way to describe this mapping is through the use of GML dictionaries as shown below. 
+
+Definition of Waves in the IOOS GML Dictionary http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Waves
 
 {{{
 <gml:definitionMember>
