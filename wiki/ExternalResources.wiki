@@ -63,3 +63,5 @@ Tamayo, A., P. Viciano, et al. (2011). Empirical Study of Sensor Observation Ser
 Advancing Geoinformation Science for a Changing World. S. Geertman, W. Reinhardt and F. Toppen, Springer Berlin Heidelberg. 1: 185-209.  [http://dx.doi.org/10.1007/978-3-642-19789-5_10 doi:10.1007/978-3-642-19789-5_10]
 
 Zyl, T. L. v., I. Simonis, et al. (2009). "The Sensor Web: systems of sensor systems." International Journal of Digital Earth 2(1): 16-30.  [http://dx.doi.org/10.1080/17538940802439549 doi:10.1080/17538940802439549]
+
+SOS 2.0 Submission Package up for a vote currently.  https://portal.opengeospatial.org/files/?artifact_id=47599&version=1
