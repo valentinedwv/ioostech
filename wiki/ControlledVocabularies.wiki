@@ -76,13 +76,13 @@ A list of tables with examples of how the various observed property vocabularies
 
 == Composite Properties ==
 
-Currently have at least two compound or composite properties in use.  
+Currently have at least three compound or composite properties in use.  
 
  * GML Dictionaries
  * CF like names 
  * How are composite properties used in SOS 1.0?
  
-===Current NDBC usage of winds/waves===
+===Current NDBC usage of winds/waves/currents===
 From GetCapabilites OperationsMetadata section:
 {{{
 <ows:Parameter name="observedProperty">
@@ -156,8 +156,43 @@ URL http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&o
  * calculation_method	
  * sampling_rate (Hz)
 
-The terms *waves* and *winds* are not actually CF standard names.  
-From the two lists above we can see that the *waves* and *winds* are actually aliases for a larger set of observed parameters, some, but not all of which are CF Standard Names.  We'll refer to these two observed parameters as composite parameters.  By using the KVP `observedproperty=Waves` the NDBC SOS actually returns 26 parameters.  Some of these parameters are common across all requests so the actual number of aliased properties may be less than 26 but the point is that aliasing is used here to simplify the request.  
+Data columns returned from a [http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-89.5,28,-89,28.5&observedproperty=currents&responseformat=text/csv GetObservation (CSV) request] for currents.
+
+URL http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-89.5,28,-89,28.5&observedproperty=currents&responseformat=text/csv
+
+ * station_id	
+ * sensor_id	
+ * latitude (degree)	
+ * longitude (degree)	
+ * date_time	
+ * bin (count)
+ * depth (m)
+ * direction_of_sea_water_velocity (degree)
+ * sea_water_speed (cm/s)
+ * upward_sea_water_velocity (cm/s)
+ * error_velocity (cm/s)
+ * platform_orientation (degree)
+ * platform_pitch_angle (degree)
+ * platform_roll_angle (degree)
+ * sea_water_temperature (C)
+ * pct_good_3_beam (%)
+ * pct_good_4_beam (%)
+ * pct_rejected (%)
+ * pct_bad (%)
+ * echo_intensity_beam1 (count)
+ * echo_intensity_beam2 (count)
+ * echo_intensity_beam3 (count)
+ * echo_intensity_beam4 (count)
+ * correlation_magnitude_beam1 (count)
+ * correlation_magnitude_beam2 (count)
+ * correlation_magnitude_beam3 (count)
+ * correlation_magnitude_beam4 (count)
+ * quality_flags
+
+All fields from upward_sea_water_velocity through quality flags are optional as their availability depends on the instrument type and processing.
+
+The terms *waves*, *winds* and *currents* are not actually CF standard names.  
+From the three lists above we can see that the *waves*, *winds* and *currents* are actually aliases for a larger set of observed parameters, some, but not all of which are CF Standard Names.  We'll refer to these three observed parameters as composite parameters.  By using the KVP `observedproperty=Waves` the NDBC SOS actually returns 26 parameters.  Some of these parameters are common across all requests so the actual number of aliased properties may be less than 26 but the point is that aliasing is used here to simplify the request.  
 
 *ISSUE: Is this a legal SOS 1.0 or 2.0 behavior?  Are there alternative methods of enabling this simplified request syntax such as through observationOfferings?  Are each of the parameters above also available individually?  [http://code.google.com/p/ioostech/issues/detail?id=1 Issue 1]*  
 
