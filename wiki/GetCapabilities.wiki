@@ -18,17 +18,17 @@ Example request: http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities
 
 FROM OOSTETHYS GET DOCUMENT:
 
-GetCapabilities Get Request
+!GetCapabilities Get Request
 
-The parameters rules for the getCapabilities operation are taken from table 3 and table 5 of [http://portal.opengeospatial.org/files/?artifact_id=20040 OGC 06-121r3]
+The parameters rules for the !GetCapabilities operation are taken from table 3 and table 5 of [http://portal.opengeospatial.org/files/?artifact_id=20040 OGC 06-121r3]
 
 Example: http://host[:port]/path?request=GetCapabilities&version=1.0.0&service=sos
 
-|| Parameter Name || Definition || Data type and Values || Multiplicity and Use of the Parameter||
-|| request || Operation name || GetCapabilities || One (mandatory)||
+|| *Parameter Name* || *Definition* || *Data type and Values* || *Multiplicity and Use of the Parameter* ||
+|| request || Operation name || !GetCapabilities || One (mandatory)||
 || service || Service type identifier || SOS || One (mandatory)||
-|| AcceptFormats || Comma-separated prioritized sequence of zero or more response formats desired by client, with preferred formats listed first || text/xml || One (mandatory). When omitted or not supported by server, return service metadata document using MIME type "text/xml" .||
-|| AcceptVersions || Prioritized sequence of one more specification versions accepted by client, with preferred versions listed first || 1.0.0 has format X.Y.Z || Zero or more (optional). ||
+|| !AcceptFormats || Comma-separated prioritized sequence of zero or more response formats desired by client, with preferred formats listed first || text/xml || One (mandatory). When omitted or not supported by server, return service metadata document using MIME type "text/xml" .||
+|| !AcceptVersions || Prioritized sequence of one more specification versions accepted by client, with preferred versions listed first || 1.0.0 has format X.Y.Z || Zero or more (optional). ||
 
   * Recommendation: Request should implement 'Sections' parameter, for easier parsing; eg: service=SOS&request=GetCapabilities&sections=OperationsMetadata
   * https://wiki.52north.org/bin/view/Sensornet/GetCapabilities
