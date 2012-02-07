@@ -28,7 +28,7 @@ Example: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0
 || !AcceptFormats || Comma-separated prioritized sequence of zero or more response formats desired by client, with preferred formats listed first || text/xml || One (mandatory). When omitted or not supported by server, return service metadata document using MIME type "text/xml" .||
 || !AcceptVersions || Prioritized sequence of one more specification versions accepted by client, with preferred versions listed first || 1.0.0 has format X.Y.Z || Zero or more (optional). ||
 
-  * Recommendation: Request should implement 'Sections' parameter, for easier and lighter metadata parsing, eg: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0.0&sections=OperationsMetadata
+  * *Recommendation:* Request should implement *'Sections'* parameter, for easier and lighter metadata parsing, eg: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0.0&sections=OperationsMetadata
   * https://wiki.52north.org/bin/view/Sensornet/GetCapabilities
 
 =Response=
@@ -41,7 +41,50 @@ The GetCapabilities response is an XML document with four sections:
 
 ==!ServiceIdentification Section==
 
+{{{
+<ows:ServiceIdentification>
+  <ows:Title>NANOOS Sensor Observation Service (SOS)</ows:Title>
+  <ows:Abstract>Sensor Observation Service (SOS) Server for NANOOS, blah-blah.</ows:Abstract>
+  <ows:Keywords>
+    <ows:Keyword>NANOOS</ows:Keyword>
+    <ows:Keyword>Air Temperature</ows:Keyword>
+    <ows:Keyword>Chlorophyll</ows:Keyword>
+    <ows:Keyword>Salinity</ows:Keyword>
+    <ows:Keyword>Water Temperature</ows:Keyword>
+    <ows:Keyword>Pacific Northwest</ows:Keyword>
+    <ows:Keyword>Oregon</ows:Keyword>
+  </ows:Keywords>
+  <ows:ServiceType codeSpace="http://opengeospatial.net">OGC:SOS</ows:ServiceType>
+  <ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+  <ows:Fees>NONE</ows:Fees> 
+  <ows:AccessConstraints>NONE</ows:AccessConstraints>
+</ows:ServiceIdentification>
+}}}
+
 ==!ServiceProvider Section==
+
+{{{
+<ows:ServiceProvider>
+  <ows:ProviderName>NANOOS - Northwest Association of Networked Ocean Observing Systems</ows:ProviderName>
+  <ows:ProviderSite xlink:href="http://www.nanoos.org"/>
+  <ows:ServiceContact>
+    <ows:IndividualName>Emilio Mayorga</ows:IndividualName>
+    <ows:ContactInfo>
+      <ows:Phone>
+        <ows:Voice>206-543-6431</ows:Voice>
+      </ows:Phone>
+      <ows:Address>
+        <ows:DeliveryPoint></ows:DeliveryPoint>
+        <ows:City>Seattle</ows:City>
+        <ows:AdministrativeArea>WA</ows:AdministrativeArea>
+        <ows:PostalCode>98195</ows:PostalCode>
+        <ows:Country>USA</ows:Country>
+        <ows:ElectronicMailAddress>mayorga@apl.washington.edu</ows:ElectronicMailAddress>
+      </ows:Address>
+    </ows:ContactInfo>
+  </ows:ServiceContact>
+</ows:ServiceProvider>
+}}}
 
 ==!OperationsMetadata Section==
 
@@ -61,6 +104,43 @@ The GetCapabilities response is an XML document with four sections:
 The Contents section of Capabilities XML is a list of one or more observation offerings; each offering corresponds to a single platform or a network of platforms. The following information is provided for each offering:
 
 ===Offering (platform) general description===
+
+====Example response for an offering (from NANOOS)====
+{{{
+<sos:ObservationOffering gml:id="station-APL_NPB2Carr">
+  <gml:description>LSG NPB-2 Profiling Buoy at Carr Inlet. APL-UW Buoy asset (NANOOS: APL_NPB2Carr)</gml:description>
+  <gml:name>urn:ioos:station:nanoos:APL_NPB2Carr</gml:name>
+  <gml:srsName>urn:ogc:def:crs:epsg::4326</gml:srsName>
+  <gml:boundedBy>
+    <gml:Envelope srsName="urn:ogc:def:crs:epsg::4326">
+      <gml:lowerCorner>47.2800 -122.7300</gml:lowerCorner>
+      <gml:upperCorner>47.2800 -122.7300</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <sos:time>
+    <gml:TimePeriod> 
+        <gml:beginPosition>2012-01-08T05:20:51Z</gml:beginPosition>
+        <gml:endPosition indeterminatePosition="now"/>
+    </gml:TimePeriod>
+  </sos:time>
+  <sos:procedure xlink:href="urn:ioos:station:nanoos:APL_NPB2Carr"/>
+  <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed"/>
+  <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed_of_gust"/>
+  <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/net_downward_shortwave_flux_in_air"/>
+  <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/wind_from_direction"/>
+  <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/surface_air_pressure"/>
+  <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/>
+  <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_salinity"/>
+  <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
+  <sos:featureOfInterest xlink:href="urn:cgi:Feature:CGI:EarthOcean"/>
+  <sos:responseFormat>text/csv</sos:responseFormat>
+  <sos:responseFormat>text/plain</sos:responseFormat>
+  <sos:responseFormat>application/xml</sos:responseFormat>
+  <sos:resultModel>om:Observation</sos:resultModel>
+  <sos:responseMode>inline</sos:responseMode>
+</sos:ObservationOffering>
+
+}}}
 
 ====gml:id====
 _Role:_ Brief attribute which is required by the XML schema rules but is not the official platform identifier.<br>
