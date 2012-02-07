@@ -138,6 +138,7 @@ A draft of elements. These may be parsed out into different sections in the fina
     * Issues with ISO 8601 and encoding time zones or time offsets
     * See 2-3 relevant wiki pages or sections (will link to them later)
   * As the IOOS SOS guidance/profile/requirements formalize and then start to evolve, we'll have a need to define "versions" and encode the IOOS SOS version in SOS responses.
+  * Any guidance on whether the SOS service should strive to include data that are now historical (eg, buoy off the water and not coming back)
   * In GetObservation requests, [ControlledVocabularies#Composite_Properties will we support multiple stations and multiple and/or vector/composite observed properties?]
   * *Other, less widely adopted or standardized components (but potentially very useful)*
     * Combinations of these components may address several important issues (eg, more granular queries) we have discussed
