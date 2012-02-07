@@ -28,7 +28,7 @@ Example: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0
 || !AcceptFormats || Comma-separated prioritized sequence of zero or more response formats desired by client, with preferred formats listed first || text/xml || One (mandatory). When omitted or not supported by server, return service metadata document using MIME type "text/xml" .||
 || !AcceptVersions || Prioritized sequence of one more specification versions accepted by client, with preferred versions listed first || 1.0.0 has format X.Y.Z || Zero or more (optional). ||
 
-  * Recommendation: Request should implement 'Sections' parameter, for easier parsing; eg: service=SOS&request=GetCapabilities&sections=OperationsMetadata
+  * Recommendation: Request should implement 'Sections' parameter, for easier and lighter metadata parsing, eg: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0.0&sections=OperationsMetadata
   * https://wiki.52north.org/bin/view/Sensornet/GetCapabilities
 
 =Response=
