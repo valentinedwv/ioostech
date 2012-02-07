@@ -7,11 +7,11 @@
    * [SOSRefImplementWorkshop_Day3Agenda Day Three]
  * [SOSGuidelines SOS Guidelines]
    * [SOSGuidelines#SOS_Requests_(IDD) Request Syntax (IDD)]
-     * [GetCapabilities#Interface_Definition_Document_(IDD)]
+     * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]
      * [DescribeSensor]
      * [GetObservation]
    * SOS Responses
-     * [GetCapabilities#Response]
+     * [GetCapabilities#Response GetCapabilities]
      * [DescribeSensor]
      * [GetObservation]
  * [CFFeatureTypes]
