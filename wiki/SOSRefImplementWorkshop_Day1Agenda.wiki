@@ -173,21 +173,9 @@ A draft of elements. These may be parsed out into different sections in the fina
       * Discussions and examples of use of FilterEncoding, [http://external.opengis.org/twiki_public/HydrologyDWG/GwIeSOSResultFilter from a 2010 wiki page by the OGC Hydrology DWG (early WaterML 2 discussions)]
 
 
-
 == SOS requests Interface Definition Document ==
 
-_Recommendation:_ Use the [http://www.oostethys.org/best-practices/best-practices-get OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] as our starting point for a template IDD. Move it to our wiki, edit it as needed (updates, cleanups, etc), then adapt existing representative SOS services (NDBC, NOS-COOPS, maybe NANOOS and other volunteers) using the template.
-
-Examples, starting points:
-  * [http://sdf.ndbc.noaa.gov/sos/ NDBC SOS]
-  * [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp NOS-COOPS SOS]
-  * [http://waterservices.usgs.gov/rest/IV-Service.html#Service USGS Water Services] (not SOS, but based on WaterML 1 and related services
-  * [NANOOSNVSPythonSOS NANOOS SOS]
-  * [https://wiki.52north.org/bin/view/Sensornet/SosOperations 52North Example]
-  * Eric Bridger's OOSTethys/IOOS Perl server code?
-
-Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
-
+See [SOSGuidelines#SOS_Requests_(IDD)
 
 == Other issues ==
 
