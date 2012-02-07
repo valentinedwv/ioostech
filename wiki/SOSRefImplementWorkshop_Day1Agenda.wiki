@@ -115,7 +115,7 @@ _DPS Comment: One desirable outcome of this session would be to approve and impr
 
 === organization type and role ===
 
-See ControlledVocabularies#Organization_Types_and_Roles
+See [ControlledVocabularies#Organization_Types_and_Roles]
 
 === keywords ===
 
@@ -123,15 +123,15 @@ Including geographical regions?
 
 === platform (asset) type ===
 
-See ControlledVocabularies#Platform/Station_types
+See [ControlledVocabularies#Platform/Station_types]
 
 === observed property ===
 
-See ControlledVocabularies#Observed_Property_Vocabularies
+See [ControlledVocabularies#Observed_Property_Vocabularies]
 
 === units-of-measure ===
 
-See ControlledVocabularies#Units_of_Measure
+See [ControlledVocabularies#Units_of_Measure]
 
 == Default values and behaviors ==
 
@@ -166,6 +166,7 @@ A draft of elements. These may be parsed out into different sections in the fina
     * Issues with ISO 8601 and encoding time zones or time offsets
   * As the IOOS SOS guidance/profile/requirements formalize and then start to evolve, we'll have a need to define "versions" and encode the IOOS SOS version in SOS responses.
   * Other, less widely adopted or standardized components (but potentially very useful):
+    * Combinations of these components may address several important issues (eg, more granular queries) we have discussed
     * "Network" offerings (currently used by NDBC and COOPS for "All" and specific subsets). Usage, challenges, and overlap with other functionality.
     * Is there a more useful role for procedure in GetCapabilities and GetObservation, in the current IOOS usage?
     * What role, if any, for featureOfInterest and FilterEncoding implementations?
