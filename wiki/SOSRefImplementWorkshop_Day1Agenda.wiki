@@ -136,6 +136,7 @@ A draft of elements. These may be parsed out into different sections in the fina
     * in GetCapabilities offerings response, address convention for `<gml:TimePeriod><gml:endPosition>`, including use of 'now' and 'unknown' (see our recent discussions)
     * in GetObservation request, eventTime is optional; if absent, the latest observations will be returned. [http://www.oostethys.org/best-practices/getlatest See the relevant OOSTethys 2008 document, "Get Latest"]
     * Issues with ISO 8601 and encoding time zones or time offsets
+    * See 2-3 relevant wiki pages or sections (will link to them later)
   * As the IOOS SOS guidance/profile/requirements formalize and then start to evolve, we'll have a need to define "versions" and encode the IOOS SOS version in SOS responses.
   * In GetObservation requests, [ControlledVocabularies#Composite_Properties will we support multiple stations and multiple and/or vector/composite observed properties?]
   * *Other, less widely adopted or standardized components (but potentially very useful)*
