@@ -280,6 +280,8 @@ _DPS Comment/Question: Does either UCUM or udunits provide guidance on the for o
 
 = Organization Types and Roles  =
 
+See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
+
 (Regional Association, Provider/Owner, etc)
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
