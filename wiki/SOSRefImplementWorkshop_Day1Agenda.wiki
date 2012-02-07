@@ -90,8 +90,6 @@ It would be useful to have some discussion on options for distinguishing redunda
 
 == Classifiers (Controlled vocabularies) ==
 
-=== general discussions ===
-
 The target set of controlled vocabulary types we will likely need are:
   * [ControlledVocabularies#Organization_Types_and_Roles organization type] (eg, Federal agency, IOOS Regional Association, state agency, industry)
   * [ControlledVocabularies#Organization_Types_and_Roles organizational role] (service provider, data provider or asset owner)
