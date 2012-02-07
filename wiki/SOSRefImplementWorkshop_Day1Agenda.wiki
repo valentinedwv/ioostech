@@ -100,14 +100,9 @@ The target set of controlled vocabulary types we will likely need are:
   * observed property
   * units-of-measure
 
-Address implementation details, in general and for each targeted vocabulary type.
-
-For now, until this section is better fleshed out and organized, see these wiki pages:
-  * [ControlledVocabularies]: primary wiki page on controlled vocabularies; still evolving and being compacted, improved
+Address implementation details, in general and for each targeted vocabulary type. For more extensive discussions, see:
+  * [ControlledVocabularies]: primary wiki page on controlled vocabularies. Final decisions must be reconciled and made consistent with the information at [ControlledVocabularies].
   * [DescribeSensorMetadataForIOOSSOS], from Micah. Addresses several classifier types and options, particularly in SensorML.
-
-Final decisions must be reconciled and made consistent with the information at [ControlledVocabularies].
-
 
 _DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies, correct the URLs, and provide examples.  Then, correcting the actual usage of each vocabulary in the tables that follow is a trivial exercise._
 
