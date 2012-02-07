@@ -14,7 +14,7 @@ However, there is also a vocabulary developed during the Data Integration Framew
 
 Additionally, the [http://sweet.jpl.nasa.gov/ontology/ NASA SWEET] project hosts fairly mature vocabularies with the additional benefit of attempting to provide a framework for relating them together into ontologies.  
 
-Eventually, I'd like to identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
+Identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
 
 What is the entire suite of parameters we need to consider for inclusion in the data file? We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms (if translations are necessary).
 
@@ -377,8 +377,6 @@ http://www.whoi.edu/page.do?pid=49656
 Workshop report is available from the page above or directly from http://www.whoi.edu/fileserver.do?id=77984&pt=2&p=84468
 
 There was useful information gathered prior to the meeting and included in the appendices of the report on existing Crosswalks, Repositories, Metadtaa Standards, Tools, and Vocabularies in use.  Most important for IOOS, are some firm recommendations on how to choose vocabularies and the importance of a mature process for extending/updating vocabularies when they do not meet our exact needs.  
-
-Matt Howard and some others from the IOOS community are exploring how best to extend IOOS vocabularies into the biogeochemical and water quality domains.
 
 ==IOOS Biological Data Project==
 
