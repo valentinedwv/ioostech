@@ -126,7 +126,6 @@ The Contents section of Capabilities XML is a list of one or more observation of
   <sos:procedure xlink:href="urn:ioos:station:nanoos:APL_NPB2Carr"/>
   <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed"/>
   <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed_of_gust"/>
-  <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/net_downward_shortwave_flux_in_air"/>
   <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/wind_from_direction"/>
   <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/surface_air_pressure"/>
   <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/>
@@ -139,7 +138,6 @@ The Contents section of Capabilities XML is a list of one or more observation of
   <sos:resultModel>om:Observation</sos:resultModel>
   <sos:responseMode>inline</sos:responseMode>
 </sos:ObservationOffering>
-
 }}}
 
 ====gml:id====
