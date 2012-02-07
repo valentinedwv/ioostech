@@ -64,12 +64,11 @@ Or described another way:
     * Develop and validate SOS services
     * Develop SOS clients
   # *Clarify and extend mandated vs recommended practices, including:*
-    * [#Classifiers_(Controlled_vocabularies) Classifiers (Controlled vocabularies)]
     * [#Identifiers Identifiers]
+    * [#Classifiers_(Controlled_vocabularies) Classifiers (Controlled vocabularies)]
     * [#Default_values_and_behaviors Default values and behaviors]
     * [#SOS_requests_Interface_Definition_Document SOS requests Interface Definition Document] (GetCapabilities, DescribeSensor, GetObservation)
     * Existing practices vs needed enhancements
-    * Link to the [http://ioostech.googlecode.com/files/IOOS_SOS_Documentation_v0p1.doc Word document Derrick started ~ Oct 2011, "IOOS SOS Documentation"]
     * Some [https://geo-ide.noaa.gov/wiki/index.php?title=Category:IOOS_Guidelines core IOOS Guidelines documents formerly available only as Word or pdf docs have been recently migrated to the Geo-IDE wiki]
 
 Many of these goals could be applied to the entire workshop, but as described are tuned to the Day 1 agenda. They also involve laying out a path for useful, clear service documentation, both in the form of bare-bones [https://groups.google.com/d/topic/ioostech_dev/hTMaCJtkcWo/discussion "Interface Definition Document" (IDD)] templates that should be followed by every SOS service implementation (intended as a quick-takeup guide for service and client implementers and users), and more detailed documentation.
