@@ -16,9 +16,7 @@ Issuing the request: bla bla bla
 
 Example request: http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS
 
-FROM OOSTETHYS GET DOCUMENT:
-
-!GetCapabilities Get Request
+*FROM OOSTETHYS GET DOCUMENT:*
 
 The parameters rules for the !GetCapabilities operation are taken from table 3 and table 5 of [http://portal.opengeospatial.org/files/?artifact_id=20040 OGC 06-121r3]
 
