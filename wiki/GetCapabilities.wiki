@@ -33,7 +33,7 @@ The Contents section of Capabilities XML is a list of one or more observation of
 _Role:_ Brief attribute which is required by the XML schema rules but is not the official platform identifier.<br>
 _Content:_ IOOS convention has been to use gml:id values starting with 'station-' for individual platforms and 'network-' for networks of platforms, with additional characters derived from the actual IOOS identifier (see gml:name).<br>
 _Example:_ station-21401.<br>
-Note: XML rules permit a gml:id to be random string of letters and characters as long as it is unique within the file. Do not rely on the gml:id value remaining constant for a given offering.
+_Note:_ XML rules permit a gml:id to be random string of letters and characters as long as it is unique within the file. Do not rely on the gml:id value remaining constant for a given offering.
 
 ====gml:name====
 _Role:_ The official IOOS identifier for the platform or network.<br>
@@ -63,16 +63,17 @@ _Example:_
 }}}
 
 ====srsName====
-Role: States the spatial reference system (a.k.a. coordinate reference system) used by geographic locations.
-Content: A URN defined by OGC based on the European Petroleum Survey Group (EPSG) database of coordinate reference systems. IOOS uses decimal latitude/longitude in the World Geodetic System 1984 (WGS84), as identified by the value in the example.
-Example: urn:ogc:def:crs:epsg::4326
-Note: srsName appears redundantly in two places: inside gml:boundedBy (as an attribute of the gml:Envelope) and as a separate gml:srsName. If may be permitted to eliminate gml:srsName -- some investigation is required.
+_Role:_ States the spatial reference system (a.k.a. coordinate reference system) used by geographic locations.<br>
+_Content:_ A URN defined by OGC based on the European Petroleum Survey Group (EPSG) database of coordinate reference systems. IOOS uses decimal latitude/longitude in the World Geodetic System 1984 (WGS84), as identified by the value in the example.<br>
+_Example:_ urn:ogc:def:crs:epsg::4326<br>
+_Note:_ srsName appears redundantly in two places: inside gml:boundedBy (as an attribute of the gml:Envelope) and as a separate gml:srsName. If may be permitted to eliminate gml:srsName -- some investigation is required.
 
 ===Temporal Information===
 
 ====time====
-Role: States the time period for which data are available from this offering.
-Content: a gml:TimePeriod providing a beginPosition and an endPosition. Time values are always Universal Time in ISO 8601 format (yyyy-mm-ddThh:mm:ssZ). If the offering remains in operation, then the end time has not yet been defined so the value indeterminatePosition="now" is specified. Example:
+_Role:_ States the time period for which data are available from this offering.<br>
+_Content:_ a gml:TimePeriod providing a beginPosition and an endPosition. Time values are always Universal Time in ISO 8601 format (yyyy-mm-ddThh:mm:ssZ). If the offering remains in operation, then the end time has not yet been defined so the value indeterminatePosition="now" is specified.<br>
+_Example:_
 {{{
 <time>
   <gml:TimePeriod>
@@ -81,19 +82,19 @@ Content: a gml:TimePeriod providing a beginPosition and an endPosition. Time val
   </gml:TimePeriod>
 </time>
 }}}
-Note: The overall start and end times do not indicate whether data gaps exist. If an offering comprises multiple sensors, each with different start or end times (for example, a new sensor was added at a later date), the start and end times indicate the overall period during which at least some data are available.
+_Note:_ The overall start and end times do not indicate whether data gaps exist. If an offering comprises multiple sensors, each with different start or end times (for example, a new sensor was added at a later date), the start and end times indicate the overall period during which at least some data are available.
 
 ===Other Information===
 
 ====procedure====
-Role: The official IOOS identifier for the platform or network. The value of this identifier can be used in DescribeSensor requests for additional metadata and in GetObservation requests for actual data.
-Content: A Uniform Resource Name (URN) that obeys the IOOS URN convention described at [Fill in URL].
-Example: urn:ioos:station:wmo:21401.
-Note: Previously, IOOS used multiple procedures per offering (one per sensor); SOS 2.0 allows only one procedure, which is now redundant with gml:name. There has been discussion of using gml:name for the station name information now found in gml:description.
+_Role:_ The official IOOS identifier for the platform or network. The value of this identifier can be used in DescribeSensor requests for additional metadata and in GetObservation requests for actual data.
+Content: A Uniform Resource Name (URN) that obeys the IOOS URN convention described at [Fill in URL].<br>
+_Example:_ urn:ioos:station:wmo:21401.<br>
+_Note:_ Previously, IOOS used multiple procedures per offering (one per sensor); SOS 2.0 allows only one procedure, which is now redundant with gml:name. There has been discussion of using gml:name for the station name information now found in gml:description.
 
 ====observedProperty (1 or more)====
-Role: A list of one or more quantities observed by this offering. The observedProperty identifier is used in GetObservation requests to obtain actual data.
-Content: A URL from the Marine Metadata Interoperability (MMI) project corresponding to a Climate and Forecast (CF) Standard Name.
-Example: http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface
+_Role:_ A list of one or more quantities observed by this offering. The observedProperty identifier is used in GetObservation requests to obtain actual data.<br>
+_Content:_ A URL from the Marine Metadata Interoperability (MMI) project corresponding to a Climate and Forecast (CF) Standard Name.<br>
+_Example:_ http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface
 
 =Other Issues=
