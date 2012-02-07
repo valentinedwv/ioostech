@@ -40,9 +40,16 @@ The target set of controlled vocabulary types we will likely need are:
 
 = Observed Property Vocabularies =
 
-Guidelines: 
-  # Use CF standard names (but what about versions?)
-  # All CF parameter names (and IOOS Parameter Vocabulary v1.0 terms) should be referenced by URLs pointing to the [http://mmisw.org/orr/ MMI Ontology Registry and Repository]. For example, http://mmisw.org/ont/cf/parameter/air_temperature_anomaly
+*Guidelines:*
+  # _Use CF standard names when an appropriate name exists (but address issue of CF versions)._ 
+    * All CF parameter names should be referenced by URLs pointing to the [http://mmisw.org/orr/ MMI Ontology Registry and Repository]. For example, http://mmisw.org/ont/cf/parameter/air_temperature_anomaly
+    * Provide guidance when there are apparent synonyms
+    * Provide documentation listing the most commonly used CF names, for convenience
+  # _Adopt and manage the [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary V.1.0] when an appropriate CF standard name is not available._
+    * First clean up, focusing on most common terms. Follow CF name construction patterns whenever possible (see SURA Modeling Testbed)
+    * As with CF names, reference by URL's pointing to MMI resource. Example: http://mmisw.org/ont/ioos/parameter/nitrate
+  # _If no appropriate IOOS Vocabulary name exists and a provider must use a custom term until an IOOS name is set up, provide a urn naming convention similar to the one for station identifiers.
+
 
 The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a really interesting combination of models and data (I think) where controlled vocabularies for measurements are used. It's worth assessing these, chatting with people in that team (ASA, Kyle Wilcox??), etc. For example, it's clear to me that while many/most of the names used are in fact CF standard names, many must be made up, but using CF recommendations for building names. 
 
@@ -55,10 +62,6 @@ Other ontologies / controlled vocabularies (some less controlled than others...)
     * [http://marinemetadata.org/references/cfstandardnames CF - Climate and Forecast Standard Names; Vocabulary for CF parameters] (a document, not a vocabulary resource per se)
     * [http://marinemetadata.org/community/teams/vocdev/generaldocuments/orrcf Using the ORR CF Standard names Vocabulary]
     * [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary]
-  # *IOOS-specific parameter vocabularies on MMI*
-    * [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary V.1.0]
-    * [http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary]
-    * [http://mmisw.org/ont/gcoos/parameter GCOOS Vocabulary]
 
 == Existing Observed Property Vocabularies ==
 
@@ -111,7 +114,6 @@ From GetCapabilities offerings:
 <observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/waves"/>
 <observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/winds"/>
 }}}
-
 
  
 Data Columns returned from a [http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=Winds&responseformat=text/csv GetObservation (CSV) request] for winds:
@@ -256,8 +258,14 @@ Couple things of note:
 
 = Units of Measure =
 
-Clarification of the units of measure representation in output files. Is there a clear OGC recommendation at this time? Perhaps a follow up with Luis Bermudez? UCUM, UOM definied in OGC dictionaries? Udunits?
+Clarification of the units of measure representation in output files. Is there a clear OGC recommendation at this time? Perhaps a follow up with Luis Bermudez? UCUM, UOM defined in OGC dictionaries? Udunits?
 
+*The decision at this time pretty much boils down to a choice betwen:*
+  * Adopt UCUM or Udunits
+  * Don't mandate or the other, just describe how to specify which is being used
+  * Punt the issue to a later time
+
+Relevant links:
   * [http://unitsofmeasure.org/ Universal Code for Units of Measure]
   * [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]
   * OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_id=11498 OpenGIS© Recommendation Paper — Units of Measure Use and Definition Recommendations] may be outdated??
@@ -284,9 +292,9 @@ Example:
 </sml:contact>
 }}}
 
-See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
-
-And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
+  * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
+  * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
+  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
 
 = Platform/Station types =
 
@@ -309,6 +317,12 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 }}}
 
 A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
+
+  * [http://www.seadatanet.org/Standards-Software/Common-Vocabularies SeaDataNet Common Vocabularies]
+    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L06)%20SeaVoX+Platform+Categories&l=L06 L06 SeaVoX Platform Categories]
+    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L061)%20SeaVoX+Platform+Classes&l=L061 L061 SeaVoX Platform Classes]
+    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L062)%20SeaVoX+Platform+Class+Categories&l=L062 L062 SeaVoX Platform Class Categories]
+  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
 
 _DPS Comment: There is a significant conflict in our use of station and platform as synonyms that will be especially evident when we get to the point of tracing lineage within SensorML.  In my mind a platform is a piece of equipment that hosts or carries one or more instruments or sensors.  It can be moved, it has a beginning and ending, and most importantly it's configuration can be modified which raises the requirement to trace the lineage of any data originating from a platform.  A station on the other hand is a fixed location at which a platform might be deployed for a finite period of time.  The station may persist longer than any one platform deployment at that site.  Think of the many different instruments that have derived CO2 at the Mauna Loa site where the [http://en.wikipedia.org/wiki/Keeling_Curve Keeling Curve] was observed as an example of this concept. What are the implications if we adopt this view of those two terms?_
   
@@ -341,12 +355,8 @@ Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's
   * [http://www.bodc.ac.uk/products/web_services/vocab/ British Oceanographic Data Center (BODC) NERC Vocabulary Server]. 
   * [http://www.seadatanet.org/ SeaDataNet (European project)] Device Categories vocabulary, [http://vocab.ndg.nerc.ac.uk/list/L05/current served from the BODC NERC]
   * [http://www.seadatanet.org/Standards-Software/Common-Vocabularies SeaDataNet Common Vocabularies]
-  * SeaDataNet Common Vocabularies
-    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L06)%20SeaVoX+Platform+Categories&l=L06 L06 SeaVoX Platform Categories]
-    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L061)%20SeaVoX+Platform+Classes&l=L061 L061 SeaVoX Platform Classes]
-    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L062)%20SeaVoX+Platform+Class+Categories&l=L062 L062 SeaVoX Platform Class Categories]
   * Probably resources at IODE/IOC
-  * The work on an IOOS Non-Federal Asset Inventory in early-mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
+  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
   * [http://data.nodc.noaa.gov/geoportal/ New NODC Geoportal]. Potentially it may use relevant controlled vocabularies that could facilitate wider discovery across IOOS, NODC, etc?
   * [http://cdi.gleon.org/ GLEON-CDI] (lakes). A [http://gleon.org/gleon-bb/viewtopic.php?f=3&t=18#p58 GLEON CV Excel spreadsheet is mentioned and linked to in this 2010 forum thread]
   * [http://www.citeulike.org/user/emayorga/tag/ioos,informatics My CiteULike collection of peer-reviewed journal articles broadly related to this topic]
