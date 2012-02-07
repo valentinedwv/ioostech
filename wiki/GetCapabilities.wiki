@@ -30,28 +30,29 @@ The Contents section of Capabilities XML is a list of one or more observation of
 ===Offering (platform) general description===
 
 ====gml:id====
-Role: Brief attribute which is required by the XML schema rules but is not the official platform identifier.
-Content: IOOS convention has been to use gml:id values starting with 'station-' for individual platforms and 'network-' for networks of platforms, with additional characters derived from the actual IOOS identifier (see gml:name).
-Example: station-21401.
+_Role:_ Brief attribute which is required by the XML schema rules but is not the official platform identifier.<br>
+_Content:_ IOOS convention has been to use gml:id values starting with 'station-' for individual platforms and 'network-' for networks of platforms, with additional characters derived from the actual IOOS identifier (see gml:name).<br>
+_Example:_ station-21401.<br>
 Note: XML rules permit a gml:id to be random string of letters and characters as long as it is unique within the file. Do not rely on the gml:id value remaining constant for a given offering.
 
 ====gml:name====
-Role: The official IOOS identifier for the platform or network.
-Content: A Uniform Resource Name (URN) that obeys the IOOS URN convention described at [Fill in URL].
-Example: urn:ioos:station:wmo:21401.
-Note: gml:name is now redundant with procedure. There has been discussion of using gml:name for the station name information now found in gml:description.
+_Role:_ The official IOOS identifier for the platform or network.<br>
+_Content:_ A Uniform Resource Name (URN) that obeys the IOOS URN convention described at [Fill in URL].<br>
+_Example:_ urn:ioos:station:wmo:21401.<br>
+_Note:_ gml:name is now redundant with procedure. There has been discussion of using gml:name for the station name information now found in gml:description.
 
 ====gml:description====
-Role: The name of the station assigned by the data provider. This is sometimes more descriptive than the IOOS identifier.
-Content: A human-readable string at the discretion of the provider.
-Example: 250NM Southeast of Iturup Island.
-Note: If the Name information is moved to gml:name (see above), this field could be either eliminated or used for additional description of the platform type.
+_Role:_ The name of the station assigned by the data provider. This is sometimes more descriptive than the IOOS identifier.<br>
+_Content:_ A human-readable string at the discretion of the provider.<br>
+_Example:_ 250NM Southeast of Iturup Island.<br>
+_Note:_ If the Name information is moved to gml:name (see above), this field could be either eliminated or used for additional description of the platform type.
 
 ===Spatial Information===
 
 ====gml:boundedBy====
-Role: The location or bounding box of the platform or network.
-Content: A gml:Envelope providing coordinate values and a spatial reference system (SRS) identifier (see srsName). IOOS uses latitude/longitude coordinates in decimal degrees. The coordinates are given as a lower corner (southwest) and an upper corner (northeast). For fixed platforms, both values are the same. For moored buoys with a nominal location and watch radius, the nominal location is provided. For moving sensors, the overall bounding box of the trajectory is provided. For a network of sensors, the overall bounds of the network are provided. Example:
+_Role:_ The location or bounding box of the platform or network.
+Content: A gml:Envelope providing coordinate values and a spatial reference system (SRS) identifier (see srsName). IOOS uses latitude/longitude coordinates in decimal degrees. The coordinates are given as a lower corner (southwest) and an upper corner (northeast). For fixed platforms, both values are the same. For moored buoys with a nominal location and watch radius, the nominal location is provided. For moving sensors, the overall bounding box of the trajectory is provided. For a network of sensors, the overall bounds of the network are provided.<br>
+_Example:_
 {{{
 <gml:boundedBy>
   <gml:Envelope srsName="urn:ogc:def:crs:epsg::4326">
