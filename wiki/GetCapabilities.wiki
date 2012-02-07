@@ -12,18 +12,18 @@ GetCapabilities provides summary information about the service and about the pla
 =Response=
 
 The GetCapabilities response is an XML document with four sections:
-  * ServiceIdentification provides a brief summary description of the service and the type of data it offers.
-  * ServiceProvider provides information about the operator of the service.
-  * OperationsMetadata provides detail URL endpoints and allowed parameters for each operation.
-  * Contents provides a detailed listing of the observations offered by the SOS.
+  * !ServiceIdentification provides a brief summary description of the service and the type of data it offers.
+  * !ServiceProvider provides information about the operator of the service.
+  * !OperationsMetadata provides detail URL endpoints and allowed parameters for each operation.
+  * !Contents provides a detailed listing of the observations offered by the SOS.
 
-==ServiceIdentification Section==
+==!ServiceIdentification Section==
 
-==ServiceProvider Section==
+==!ServiceProvider Section==
 
-==OperationsMetadata Section==
+==!OperationsMetadata Section==
 
-==Contents Section==
+==!Contents Section==
 
 The Contents section of Capabilities XML is a list of one or more observation offerings; each offering corresponds to a single platform or a network of platforms. The following information is provided for each offering:
 
@@ -39,7 +39,7 @@ Note: XML rules permit a gml:id to be random string of letters and characters as
 
 ====gml:name====
 Role: The official IOOS identifier for the platform or network.
-Content: A Uniform Resource Name (URN) that obeys the IOOS URN convention described at <URL>.
+Content: A Uniform Resource Name (URN) that obeys the IOOS URN convention described at [Fill in URL].
 Example: urn:ioos:station:wmo:21401.
 Note: gml:name is now redundant with procedure. There has been discussion of using gml:name for the station name information now found in gml:description.
 
