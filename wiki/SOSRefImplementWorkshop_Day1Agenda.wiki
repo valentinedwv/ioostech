@@ -151,7 +151,7 @@ A draft of elements. These may be parsed out into different sections in the fina
 
 == SOS requests Interface Definition Document ==
 
-See [SOSGuidelines#SOS_Requests_(IDD)
+See [SOSGuidelines#SOS_Requests_(IDD)]
 
 == Other issues ==
 
