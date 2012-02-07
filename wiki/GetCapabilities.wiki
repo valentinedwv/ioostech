@@ -25,8 +25,9 @@ Example: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0
 || *Parameter Name* || *Definition* || *Data type and Values* || *Multiplicity and Use of the Parameter* ||
 || request || Operation name || !GetCapabilities || One (mandatory)||
 || service || Service type identifier || SOS || One (mandatory)||
-|| !AcceptFormats || Comma-separated prioritized sequence of zero or more response formats desired by client, with preferred formats listed first || text/xml || One (mandatory). When omitted or not supported by server, return service metadata document using MIME type "text/xml" .||
-|| !AcceptVersions || Prioritized sequence of one more specification versions accepted by client, with preferred versions listed first || 1.0.0 has format X.Y.Z || Zero or more (optional). ||
+|| _*!AcceptFormats*_ || Comma-separated prioritized sequence of zero or more response formats desired by client, with preferred formats listed first || text/xml || One (mandatory). When omitted or not supported by server, return service metadata document using MIME type "text/xml" .||
+|| _*!AcceptVersions*_ || Prioritized sequence of one more specification versions accepted by client, with preferred versions listed first || 1.0.0 has format X.Y.Z || Zero or more (optional). ||
+|| *Sections* || Select GetCap section to return || !GetCapabilities || optional? ||
 
   * *Recommendation:* Request should implement *'Sections'* parameter, for easier and lighter metadata parsing, eg: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0.0&sections=OperationsMetadata
   * https://wiki.52north.org/bin/view/Sensornet/GetCapabilities
