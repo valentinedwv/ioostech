@@ -261,9 +261,9 @@ Couple things of note:
 Clarification of the units of measure representation in output files. Is there a clear OGC recommendation at this time? Perhaps a follow up with Luis Bermudez? UCUM, UOM defined in OGC dictionaries? Udunits?
 
 *The decision at this time pretty much boils down to a choice betwen:*
-  * Adopt UCUM or Udunits
-  * Don't mandate or the other, just describe how to specify which is being used
-  * Punt the issue to a later time
+  # Adopt UCUM or Udunits
+  # Don't mandate or the other, just describe how to specify which is being used
+  # Punt the issue to a later time
 
 Relevant links:
   * [http://unitsofmeasure.org/ Universal Code for Units of Measure]
