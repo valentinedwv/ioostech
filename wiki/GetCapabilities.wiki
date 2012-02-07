@@ -22,7 +22,7 @@ FROM OOSTETHYS GET DOCUMENT:
 
 The parameters rules for the !GetCapabilities operation are taken from table 3 and table 5 of [http://portal.opengeospatial.org/files/?artifact_id=20040 OGC 06-121r3]
 
-Example: http://host[:port]/path?request=GetCapabilities&version=1.0.0&service=sos
+Example: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0.0
 
 || *Parameter Name* || *Definition* || *Data type and Values* || *Multiplicity and Use of the Parameter* ||
 || request || Operation name || !GetCapabilities || One (mandatory)||
