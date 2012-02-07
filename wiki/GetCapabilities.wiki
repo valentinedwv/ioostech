@@ -9,14 +9,15 @@ GetCapabilities provides summary information about the service and about the pla
 
   * Go over guidelines, rules, and minimum requirements needed for ows:ServiceIdentification, ows:ServiceProvider, ows:OperationsMetadata, and sos:Contents
   * patterns and guides for title, keywords, and maybe abstract
-  * Recommendation: Request should implement 'Sections' parameter, for easier parsing; eg:
-  service=SOS&request=GetCapabilities&sections=OperationsMetadata
 
 =Interface Definition Document (IDD)=
 
 Issuing the request: bla bla bla
 
 Example request: http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS
+
+  * Recommendation: Request should implement 'Sections' parameter, for easier parsing; eg: service=SOS&request=GetCapabilities&sections=OperationsMetadata
+  * https://wiki.52north.org/bin/view/Sensornet/GetCapabilities
 
 =Response=
 
