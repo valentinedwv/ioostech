@@ -21,10 +21,10 @@ Example request: http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities
 =Response=
 
 The GetCapabilities response is an XML document with four sections:
-  * !ServiceIdentification provides a brief summary description of the service and the type of data it offers.
-  * !ServiceProvider provides information about the operator of the service.
-  * !OperationsMetadata provides detail URL endpoints and allowed parameters for each operation.
-  * Contents provides a detailed listing of the observations offered by the SOS.
+  * [#ServiceIdentification_Section ServiceIdentification] provides a brief summary description of the service and the type of data it offers.
+  * [#ServiceProvider_Section ServiceProvider] provides information about the operator of the service.
+  * [#OperationsMetadata_Section OperationsMetadata] provides detail URL endpoints and allowed parameters for each operation.
+  * [#Contents_Section Contents] provides a detailed listing of the observations offered by the SOS.
 
 ==!ServiceIdentification Section==
 
