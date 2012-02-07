@@ -7,7 +7,16 @@
 
 GetCapabilities provides summary information about the service and about the platforms for which it provides data.
 
+  * Go over guidelines, rules, and minimum requirements needed for ows:ServiceIdentification, ows:ServiceProvider, ows:OperationsMetadata, and sos:Contents
+  * patterns and guides for title, keywords, and maybe abstract
+  * Recommendation: Request should implement 'Sections' parameter, for easier parsing; eg:
+  service=SOS&request=GetCapabilities&sections=OperationsMetadata
+
 =Interface Definition Document (IDD)=
+
+Issuing the request: bla bla bla
+
+Example request: http://sdf.ndbc.noaa.gov/sos/server.php?request=GetCapabilities&service=SOS
 
 =Response=
 
@@ -22,6 +31,17 @@ The GetCapabilities response is an XML document with four sections:
 ==!ServiceProvider Section==
 
 ==!OperationsMetadata Section==
+
+  * ows:OperationsMetadata/ows:Operation@[name=GetObservation]
+    * What should be listed under ows:Parameter@[name=offering]/ows:AllowedValues ?
+      * Each and every asset/platform actually available? But what happens when there's a 'network' request?
+      * Full urn's, unqualified (naked) values, or both? My reccommendation: Only full urn's?
+      * But in sos:Contents/sos:ObservationOfferingList, sos:ObservationOffering@[gml:id] is specified as the naked unqualified station value, not full urn! eg: gml:id="station-ORCA_Hansville"
+      * So, the offering Parameter should be exactly like this. (and where is the "station-" and "network-" prefix convention specified or described?)
+    * What should be listed under ows:Parameter@[name=observedProperty]/ows:AllowedValues ? Full urn's, unqualified (naked) values, or both? My reccommendation: Only full urn's
+  * ows:OperationsMetadata/ows:Operation@[name=DescribeSensor]
+    * What should be listed under ows:Parameter@[name=procedure]/ows:AllowedValues ? Each and every asset/platform actually available? But what happens when there's a 'network' request? Full urn's, unqualified (naked) values, or both? My reccommendation: Only full urn's?
+  * Should ows:Parameter@[name=service] and ows:Parameter@[name=version] be repeated in each ows:Operation, or is it ok to list them just once, right under ows:OperationsMetadata ?
 
 ==Contents Section==
 
