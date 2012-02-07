@@ -93,12 +93,12 @@ It would be useful to have some discussion on options for distinguishing redunda
 === general discussions ===
 
 The target set of controlled vocabulary types we will likely need are:
-  * organization type (eg, Federal agency, IOOS Regional Association, state agency, industry)
-  * organizational role (service provider, data provider or asset owner)
+  * [ControlledVocabularies#Organization_Types_and_Roles organization type] (eg, Federal agency, IOOS Regional Association, state agency, industry)
+  * [ControlledVocabularies#Organization_Types_and_Roles organizational role] (service provider, data provider or asset owner)
+  * [ControlledVocabularies#Platform/Station_types platform (asset) type]
+  * [ControlledVocabularies#Observed_Property_Vocabularies observed property]
+  * [ControlledVocabularies#Units_of_Measure units-of-measure]
   * keywords (including geographical regions?)
-  * platform (asset) type
-  * observed property
-  * units-of-measure
 
 Address implementation details, in general and for each targeted vocabulary type. For more extensive discussions, see:
   * [ControlledVocabularies]: primary wiki page on controlled vocabularies. Final decisions must be reconciled and made consistent with the information at [ControlledVocabularies].
@@ -106,26 +106,6 @@ Address implementation details, in general and for each targeted vocabulary type
 
 _DPS Comment: One desirable outcome of this session would be to approve and improve [ControlledVocabularies#Existing_Observed_Property_Vocabularies this table] on the ControlledVocabularies page.  In particular we should prioritize the vocabularies, correct the URLs, and provide examples.  Then, correcting the actual usage of each vocabulary in the tables that follow is a trivial exercise._
 
-
-=== organization type and role ===
-
-See [ControlledVocabularies#Organization_Types_and_Roles]
-
-=== keywords ===
-
-Including geographical regions?
-
-=== platform (asset) type ===
-
-See [ControlledVocabularies#Platform/Station_types]
-
-=== observed property ===
-
-See [ControlledVocabularies#Observed_Property_Vocabularies]
-
-=== units-of-measure ===
-
-See [ControlledVocabularies#Units_of_Measure]
 
 == Default values and behaviors ==
 
@@ -149,17 +129,18 @@ A draft of elements. These may be parsed out into different sections in the fina
  xsi:schemaLocation="http://www.opengis.net/sos/1.0  http://schemas.opengis.net/sos/1.0.0/sosGetCapabilities.xsd" 
  version="1.0.0">
 }}}
-  * spatial (XYZ) conventions
+  * *spatial (XYZ) conventions*
     * all x & y locations are only in lat-lon (wgs84, nothing else); these are fully qualified and parseable (srs, etc), but for now it's best to also accept that we'll only deal with lat-lon
     * depth/elevation conventions?
-  * temporal conventions
+  * *temporal conventions*
     * all datetime values are specified as iso8601 strings, where seconds are optional (in requests)
     * only UTC/GMT time support is currently required, for both requests and responses
-    * in GetCapabilities offerings response, address convention for `<gml:TimePeriod><gml:endPosition>`
+    * in GetCapabilities offerings response, address convention for `<gml:TimePeriod><gml:endPosition>`, including use of 'now' and 'unknown' (see our recent discussions)
     * in GetObservation request, eventTime is optional; if absent, the latest observations will be returned. [http://www.oostethys.org/best-practices/getlatest See the relevant OOSTethys 2008 document, "Get Latest"]
     * Issues with ISO 8601 and encoding time zones or time offsets
   * As the IOOS SOS guidance/profile/requirements formalize and then start to evolve, we'll have a need to define "versions" and encode the IOOS SOS version in SOS responses.
-  * Other, less widely adopted or standardized components (but potentially very useful):
+  * In GetObservation requests, [ControlledVocabularies#Composite_Properties will we support multiple stations and multiple and/or vector/composite observed properties?]
+  * *Other, less widely adopted or standardized components (but potentially very useful)*
     * Combinations of these components may address several important issues (eg, more granular queries) we have discussed
     * "Network" offerings (currently used by NDBC and COOPS for "All" and specific subsets). Usage, challenges, and overlap with other functionality.
     * Is there a more useful role for procedure in GetCapabilities and GetObservation, in the current IOOS usage?
