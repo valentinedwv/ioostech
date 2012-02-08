@@ -25,7 +25,7 @@ Emilio will lead a [SOSRefImplementWorkshop_Day1Agenda short wrap up of Day 1 ac
     * MultipleBlocks
       # Less fill values.  Each offering only has to return the observedProperties that apply to itself, not all of them that are requested.
       # Multiple CSV blocks means more output parsing and POTENTIALLY more verbose output.
-      # offerings are *usually* on a common frequency.
+      # Offerings are *usually* on a common frequency, resulting in even less fill values.
     * SingleBlock
       # Less description metadata since it is all encompassed in one block.
       # More fill values for offerings that do not support all requested observedProperties.
