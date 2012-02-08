@@ -73,7 +73,7 @@ See: IdentifyingTheFeatureType
 
   * trajectoryProfile
     * the trajectory path
-    * should we include the time associated with each trajectory point?
+    * should we include the time and depth associated with each trajectory point here?
 
 {{{      
       <om:featureOfInterest>
