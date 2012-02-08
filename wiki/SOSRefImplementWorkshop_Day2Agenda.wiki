@@ -23,7 +23,13 @@ Emilio will lead a [SOSRefImplementWorkshop_Day1Agenda short wrap up of Day 1 ac
 
   * Support multiple observedProperties and offerings, even if offerings are on different frequencies.  How should we represent the different offerings?
     * MultipleBlocks
+      # Less fill values.  Each offering only has to return the observedProperties that apply to itself, not all of them that are requested.
+      # Multiple CSV blocks means more output parsing and POTENTIALLY more verbose output.
+      # offerings are *usually* on a common frequency.
     * SingleBlock
+      # Less description metadata since it is all encompassed in one block.
+      # More fill values for offerings that do not support all requested observedProperties.
+      # offerings on different reporting frequencies can further increase the verbosity of the output.
 
 === The Time Block ===
 
