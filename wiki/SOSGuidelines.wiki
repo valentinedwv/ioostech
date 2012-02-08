@@ -39,9 +39,11 @@ Currently the interface descriptions for the two core IOOS SOS implementations (
 
 The versions of the international standards and specifications used in the IOOS SOS implementation.
 
-|| Specification Name || Version Number || References ||
-||O & M|| 1.0 || ||
-|| Observations & Measurements || 2.0 || ||
+|| *Specification Name* || *Version Number* || *Comments* ||
+||Sensor Observation Service || 1.0 || With some extensions ||
+|| Observations & Measurements || 1.0 || ||
+|| SWE Common || 1.0 || ||
+
 Resources
 The following resources are relevant:
 
