@@ -21,6 +21,12 @@ Emilio will lead a [SOSRefImplementWorkshop_Day1Agenda short wrap up of Day 1 ac
 
 === Requirements ===
 
+  * Output format needs to be useable by the community
+    * IOOS GML was not the solution, too verbose
+    * CSV has has positive reception
+    * Need to add metadata block to CSV output so it is completely self describing.
+  * Should we be able to translate the SWE output into a Binary NetCDF output fairly easily?  I think so.
+
   * Support multiple observedProperties and offerings, even if offerings are on different frequencies.  How should we represent the different offerings?
     * MultipleBlocks
       # Less fill values.  Each offering only has to return the observedProperties that apply to itself, not all of them that are requested.
@@ -31,11 +37,6 @@ Emilio will lead a [SOSRefImplementWorkshop_Day1Agenda short wrap up of Day 1 ac
       # More fill values for offerings that do not support all requested observedProperties.
       # Offerings on different reporting frequencies can further increase the verbosity of the output.
 
-  * Output format needs to be useable by the community
-    * IOOS GML was not the solution, too verbose
-    * CSV has has positive reception
-    * Need to add metadata block to CSV output so it is completely self describing.
-  * Should we be able to translate the SWE output into a Binary NetCDF output fairly easily?  I think so.
 
 === Can we simplify the FeatureTypes into just a few outputs? ===
 
