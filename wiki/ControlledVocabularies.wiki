@@ -196,8 +196,7 @@ URL http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&o
 
 All fields from upward_sea_water_velocity through quality flags are optional as their availability depends on the instrument type and processing.
 
-The terms *waves*, *winds* and *currents* are not actually CF standard names.  
-From the three lists above we can see that the *waves*, *winds* and *currents* are actually aliases for a larger set of observed parameters, some, but not all of which are CF Standard Names.  We'll refer to these three observed parameters as composite parameters.  By using the KVP `observedproperty=Waves` the NDBC SOS actually returns 26 parameters.  Some of these parameters are common across all requests so the actual number of aliased properties may be less than 26 but the point is that aliasing is used here to simplify the request.  
+The terms *waves*, *winds* and *currents* are not actually CF standard names.  From the three lists above we can see that the *waves*, *winds* and *currents* are actually aliases for a larger set of observed parameters, some, but not all of which are CF Standard Names.  We'll refer to these three observed parameters as composite parameters.  By using the KVP `observedproperty=Waves` the NDBC SOS actually returns 26 parameters.  Some of these parameters are common across all requests so the actual number of aliased properties may be less than 26 but the point is that aliasing is used here to simplify the request.  
 
 *ISSUE: Is this a legal SOS 1.0 or 2.0 behavior?  Are there alternative methods of enabling this simplified request syntax such as through observationOfferings?  Are each of the parameters above also available individually?  [http://code.google.com/p/ioostech/issues/detail?id=1 Issue 1]*  
 
@@ -260,7 +259,7 @@ Couple things of note:
 
 = Units of Measure =
 
-Clarification of the units of measure representation in output files. Is there a clear OGC recommendation at this time? Perhaps a follow up with Luis Bermudez? UCUM, UOM defined in OGC dictionaries? Udunits?
+Clarification of the units of measure representation in output files. Is there a clear OGC recommendation at this time? Perhaps a follow up with Luis Bermudez? UCUM, UOM defined in OGC dictionaries? Udunits (note that there are now two versions of Udunits, 1 and 2)?
 
 *The decision at this time pretty much boils down to a choice betwen:*
   # Adopt UCUM or Udunits
@@ -276,6 +275,8 @@ Relevant links:
 IOOS has considered and discussed UCUM (see http://aurora.regenstrief.org/~ucum/ucum.html and http://unitsofmeasure.org/) in the past; I'm not aware of a formal decision ever made, though. WaterML 2.0 apparently has also adopted UCUM. CF conventions refer primarily to _udunits_, though I'm not sure if it's a requirement.
 
 _DPS Comment/Question: Does either UCUM or udunits provide guidance on the for of the identifier to use in GML or SWE XML elements?  In particular the codeSpace attribute?  This is part of the larger discussion on a strategy or overarching guidance on the form of identifiers, i.e. URN vs URL etc._ 
+
+There's an [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html excellent comparison of UDUNITS and UCUM at this page ERDDAP / NOAA CoastWatch page (thanks, Jeremy!)]. It also includes converters among the units systems, and discussion of UDUNITS-1 and UDUNITS-2.
 
 
 = Organization Types and Roles  =
