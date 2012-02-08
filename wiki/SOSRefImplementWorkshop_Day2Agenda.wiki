@@ -21,7 +21,7 @@ Emilio will lead a [SOSRefImplementWorkshop_Day1Agenda short wrap up of Day 1 ac
 
 === Requirements ===
 
-  * Support multiple observedProperties and offerings, even on different frequencies.
+  * Support multiple observedProperties and offerings, even if offerings are on different frequencies.  How should we represent the different offerings?
     * MultipleBlocks
     * SingleBlock
 
