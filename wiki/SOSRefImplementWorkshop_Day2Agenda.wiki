@@ -29,7 +29,7 @@ Emilio will lead a [SOSRefImplementWorkshop_Day1Agenda short wrap up of Day 1 ac
     * SingleBlock
       # Less description metadata since it is all encompassed in one block.
       # More fill values for offerings that do not support all requested observedProperties.
-      # offerings on different reporting frequencies can further increase the verbosity of the output.
+      # Offerings on different reporting frequencies can further increase the verbosity of the output.
 
 === The Time Block ===
 
