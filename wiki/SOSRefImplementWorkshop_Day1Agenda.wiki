@@ -140,6 +140,7 @@ A draft of elements. These may be parsed out into different sections in the fina
   * As the IOOS SOS guidance/profile/requirements formalize and then start to evolve, we'll have a need to define "versions" and encode the IOOS SOS version in SOS responses.
   * Any guidance on whether the SOS service should strive to include data that are now historical (eg, buoy off the water and not coming back)? Can we set up this work to also feed into the IOOS Asset Inventory?
   * In GetObservation requests, [ControlledVocabularies#Composite_Properties will we support multiple stations and multiple and/or vector/composite observed properties?]
+    * Requesting multiple stations can be handled via a "Network" offering and procedure requests with comma-separated station urn arguments.
   * *Other, less widely adopted or standardized components (but potentially very useful)*
     * Combinations of these components may address several important issues (eg, more granular queries) we have discussed
     * "Network" offerings (currently used by NDBC and COOPS for "All" and specific subsets). Usage, challenges, and overlap with other functionality.
