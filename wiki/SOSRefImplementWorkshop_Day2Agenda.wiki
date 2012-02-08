@@ -59,9 +59,38 @@ See: IdentifyingTheFeatureType
     * location
     * depths (if not varying by time)
 
+{{{
+      <om:featureOfInterest>
+        <gml:FeatureCollection>
+          <gml:location>    
+              <gml:Point>
+                <gml:pos>-76.3 45</gml:pos>
+              </gml:Point>
+          </gml:location>
+        </gml:FeatureCollection>
+      </om:featureOfInterest>
+}}}
+
   * trajectoryProfile
     * the trajectory path
     * should we include the time associated with each trajectory point?
+
+{{{      
+      <om:featureOfInterest>
+        <gml:FeatureCollection>
+          <gml:location>
+            <gml:MultiPoint>
+            <gml:srsName>EPSG_URN</gml:srsName>
+              <gml:pointMembers>
+                <gml:Point>
+                  <gml:pos>-76.3 45 8</gml:pos>
+                </gml:Point>
+              </gml:pointMembers>
+            </gml:MultiPoint>
+          </gml:location>
+        </gml:FeatureCollection>
+      </om:featureOfInterest>
+}}}
 
 === The Position Vector Block ===
 
