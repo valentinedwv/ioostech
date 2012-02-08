@@ -29,7 +29,7 @@ Example: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0
 || _*!AcceptVersions*_ || Prioritized sequence of one more specification versions accepted by client, with preferred versions listed first || 1.0.0 has format X.Y.Z || Zero or more (optional). ||
 || *Sections* || Select GetCap section to return || !GetCapabilities || optional? ||
 
-  * *Recommendation:* Request should implement *'Sections'* parameter, for easier and lighter metadata parsing, eg: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0.0&sections=OperationsMetadata
+  * *Recommendation:* Request should implement *'Sections'* parameter, for easier and lighter metadata parsing, like this: http://host[:port]/path?request=GetCapabilities&service=SOS&version=1.0.0&sections=OperationsMetadata .  Here's a NANOOS example: http://habu.apl.washington.edu/pyws/sos.py?service=SOS&request=GetCapabilities&sections=OperationsMetadata
   * https://wiki.52north.org/bin/view/Sensornet/GetCapabilities
 
 =Response=
