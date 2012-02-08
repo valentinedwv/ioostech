@@ -48,10 +48,6 @@ Emilio will lead a [SOSRefImplementWorkshop_Day1Agenda short wrap up of Day 1 ac
 [TheTimeBlock How to describe times in the responses.]
 
 
-=== The Position Vector Block ===
-
-[TheVectorBlock How to describe the position of an asset] inside of {{{<om:result>}}} block.
-
 === Identifying the !FeatureType ===
 
 See: IdentifyingTheFeatureType
@@ -66,3 +62,11 @@ See: IdentifyingTheFeatureType
   * trajectoryProfile
     * the trajectory path
     * should we include the time associated with each trajectory point?
+
+=== The Position Vector Block ===
+
+[TheVectorBlock How to describe the position of an asset] inside of {{{<om:result>}}} block.
+
+Which featureTypes need position information inside of the result block?
+  * timeSeries[Profile] - point location will need to be represented elsewhere, so why repeate the location in each line of CSV?
+  * trajectory[Profile] - depending on where we are listing the actual path (geometry), we *may* not need to verbosely list each position.
