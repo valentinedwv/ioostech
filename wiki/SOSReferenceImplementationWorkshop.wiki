@@ -8,7 +8,9 @@
 
 == Introduction ==
 
-A small team of IOOS RA DMAC Coordinators are working on development of a reference implementation for SOS for use by the IOOS community.  The meeting will be focused on the development of [SWECommonPlan SWE Common] templates for the data delivered in response to an SOS GetObservation request.   
+A small team of IOOS RA DMAC Coordinators are working on development of a reference implementation for SOS for use by the IOOS community. The meeting will focus on:
+  * Documenting SOS request and response specifications that can be implemented uniformly across IOOS. The outcomes will result or extend recommendations for controlled vocabularies, identifier conventions, default values and behaviors and the SOS request user interface. 
+  * Developing of SWE Common templates for the data delivered in response to an SOS GetObservation request, for in-situ data types ranging from point time series, depth profiles, and trajectories.
 
 == Meeting Details ==
 
