@@ -5,7 +5,7 @@
   * [PointTemplate Point]
   * [ProfileTemplate Profile]
   * [TimeSeriesTemplate TimeSeries]
-  * [TimeSeriesDifferentZTemplate "TimeSeries w/ sensors at different Z coordinates"]
+  * [TimeSeriesDifferentZTemplate TimeSeries w/ sensors at different Z coordinates]
   * [TimeSeriesVDatumTemplate "TimeSeries with a vertical datum specified"]
   * [TimeSeriesProfileTemplate TimeSeriesProfile]
   * [TrajectoryTemplate Trajectory]
