@@ -2,11 +2,11 @@
 
 = Templates =
 
-[PointTemplate Point]
-[ProfileTemplate Profile]
-[TimeSeriesTemplate timeSeries]
-[TimeSeriesDifferentZTemplate "timeSeries with sensors with a different Z coordinate"]
-[TimeSeriesVDatumTemplate "timeSeries with a vertical datum specified"]
-[TimeSeriesProfileTemplate timeSeriesProfile]
-[TrajectoryTemplate trajectory]
-[TrajectoryProfileTemplate trajectoryProfile]
+  * [PointTemplate Point]
+  * [ProfileTemplate Profile]
+  * [TimeSeriesTemplate timeSeries]
+  * [TimeSeriesDifferentZTemplate "timeSeries with sensors with a different Z coordinate"]
+  * [TimeSeriesVDatumTemplate "timeSeries with a vertical datum specified"]
+  * [TimeSeriesProfileTemplate timeSeriesProfile]
+  * [TrajectoryTemplate trajectory]
+  * [TrajectoryProfileTemplate trajectoryProfile]
