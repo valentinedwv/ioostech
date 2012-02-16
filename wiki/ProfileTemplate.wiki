@@ -1,4 +1,5 @@
 #summary Profile Template
+#sidebar SOSTableOfContents
 
 = Introduction =
 
