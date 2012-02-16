@@ -1,4 +1,5 @@
 #summary TrajectoryProfile Template
+#sidebar SOSTableOfContents
 
 = Introduction =
 
