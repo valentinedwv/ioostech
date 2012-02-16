@@ -1,4 +1,5 @@
 #summary Point Template
+#sidebar SOSTableOfContents
 
 = Summary =
 
