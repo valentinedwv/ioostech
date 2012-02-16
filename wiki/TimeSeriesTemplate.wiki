@@ -1,4 +1,5 @@
 #summary TimeSeries Template
+#sidebar SOSTableOfContents
 
 = Introduction =
 
