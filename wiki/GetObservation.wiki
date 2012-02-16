@@ -1,4 +1,5 @@
 #summary Templates for the GetObservation responses
+#sidebar SOSTableOfContents
 
 = Templates =
 
