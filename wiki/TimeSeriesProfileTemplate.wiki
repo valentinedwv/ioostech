@@ -1,4 +1,5 @@
 #summary TimeSeriesProfile Template
+#sidebar SOSTableOfContents
 
 = Introduction =
 
