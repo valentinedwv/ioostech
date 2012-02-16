@@ -1,0 +1,174 @@
+<sos:Capabilities xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:om="http://www.opengis.net/om/1.0" xmlns:sos="http://www.opengis.net/sos/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosAll.xsd" version="1.0.0">
+  <ows:ServiceIdentification>
+    <ows:Title>TITLE</ows:Title>
+    <ows:Abstract>ABSTRACT</ows:Abstract>
+    <ows:Keywords>
+      <ows:Keyword>KEYWORD 1</ows:Keyword>
+      <ows:Keyword>KEYWORD 2</ows:Keyword>
+    </ows:Keywords>
+    <ows:ServiceType codeSpace="http://opengeospatial.net">OGC:SOS</ows:ServiceType>
+    <ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+    <ows:Fees>NONE</ows:Fees>
+    <ows:AccessConstraints>NONE</ows:AccessConstraints>
+  </ows:ServiceIdentification>
+  <ows:ServiceProvider>
+    <ows:ProviderName>PROVIDER</ows:ProviderName>
+    <ows:ProviderSite xlink:href="PROVIDER_LINK"/>
+    <ows:ServiceContact>
+      <ows:IndividualName>CONTACT NAME</ows:IndividualName>
+      <ows:ContactInfo>
+        <ows:Phone>
+          <ows:Voice>PHONE</ows:Voice>
+        </ows:Phone>
+        <ows:Address>
+          <ows:DeliveryPoint>foo</ows:DeliveryPoint>
+          <ows:City>foo</ows:City>
+          <ows:AdministrativeArea>foo</ows:AdministrativeArea>
+          <ows:PostalCode>foo</ows:PostalCode>
+          <ows:Country>foo</ows:Country>
+          <ows:ElectronicMailAddress>foo@bar</ows:ElectronicMailAddress>
+        </ows:Address>
+      </ows:ContactInfo>
+    </ows:ServiceContact>
+  </ows:ServiceProvider>
+  <ows:OperationsMetadata>
+    <ows:Operation name="GetCapabilities">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="SOS_SERVER"/>
+          <ows:Post xlink:href="SOS_SERVER"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="Sections">
+        <ows:AllowedValues>
+          <ows:Value>ServiceIdentification</ows:Value>
+          <ows:Value>ServiceProvider</ows:Value>
+          <ows:Value>OperationsMetadata</ows:Value>
+          <ows:Value>Contents</ows:Value>
+          <ows:Value>All</ows:Value>
+        </ows:AllowedValues>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="GetObservation">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="SOS_SERVER"/>
+          <ows:Post xlink:href="SOS_SERVER"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="observedProperty">
+        <ows:AllowedValues>
+          <ows:Value>VALUE</ows:Value>
+          <ows:Value>COMPOSITE_VALUE</ows:Value>
+        </ows:AllowedValues>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="DescribeSensor">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="SOS_SERVER"/>
+          <ows:Post xlink:href="SOS_SERVER"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="outputFormat">
+        <ows:AllowedValues>
+          <ows:Value>text/xml;subtype="sensorML/1.0.0"</ows:Value>
+        </ows:AllowedValues>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Parameter name="service">
+      <ows:AllowedValues>
+        <ows:Value>SOS</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+    <ows:Parameter name="version">
+      <ows:AllowedValues>
+        <ows:Value>1.0.0</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+  </ows:OperationsMetadata>
+  <sos:Contents>
+    <sos:ObservationOfferingList>
+    
+      <!-- NETWORK_ALL -->
+      <sos:ObservationOffering gml:id="network-all">
+        <gml:description>All stations</gml:description>
+        <gml:name>urn:ioos:network:AUTHORITY:all</gml:name>
+        <gml:srsName>EPSG:4326</gml:srsName>
+        <gml:boundedBy>
+          <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:lowerCorner>-90 -180</gml:lowerCorner>
+            <gml:upperCorner>90 180</gml:upperCorner>
+          </gml:Envelope>
+        </gml:boundedBy>
+        <sos:time>
+          <gml:TimePeriod>
+            <gml:beginPosition>BEGINNING</gml:beginPosition>
+            <gml:endPosition indeterminatePosition="now"/>
+          </gml:TimePeriod>
+        </sos:time>
+        <sos:procedure xlink:href="URN:STATION_1"/>
+        <sos:procedure xlink:href="URN:STATION_2"/>
+        <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/VALUE"/>
+        <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/COMPOSITE_VALUE"/>
+        <sos:featureOfInterest xlink:href="FEATURE"/>
+        <sos:responseFormat>text/xml;schema="om/1.0.0"</sos:responseFormat>
+        <sos:responseFormat>text/csv</sos:responseFormat>
+        <sos:resultModel>om:ObservationCollection</sos:resultModel>
+        <sos:responseMode>inline</sos:responseMode>
+      </sos:ObservationOffering>
+      
+      <!-- STATION_1 -->
+      <sos:ObservationOffering gml:id="STATION_1">
+        <gml:description>DESCRIPTION</gml:description>
+        <gml:name>urn:ioos:station:AUTHORITY:STATION_1</gml:name>
+        <gml:srsName>EPSG:4326</gml:srsName>
+        <gml:boundedBy>
+          <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:lowerCorner>-90 -180</gml:lowerCorner>
+            <gml:upperCorner>90 180</gml:upperCorner>
+          </gml:Envelope>
+        </gml:boundedBy>
+        <sos:time>
+          <gml:TimePeriod>
+            <gml:beginPosition>BEGINNING</gml:beginPosition>
+            <gml:endPosition indeterminatePosition="now"/>
+          </gml:TimePeriod>
+        </sos:time>
+        <sos:procedure xlink:href="urn:ioos:station:AUTHORITY:STATION_1"/>
+        <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/VALUE"/>
+        <sos:featureOfInterest xlink:href="FEATURE"/>
+        <sos:responseFormat>text/xml;schema="om/1.0.0"</sos:responseFormat>
+        <sos:responseFormat>text/csv</sos:responseFormat>
+        <sos:resultModel>om:ObservationCollection</sos:resultModel>
+        <sos:responseMode>inline</sos:responseMode>
+      </sos:ObservationOffering>
+      
+      <!-- STATION_2 -->
+      <sos:ObservationOffering gml:id="STATION_2">
+        <gml:description>DESCRIPTION</gml:description>
+        <gml:name>urn:ioos:station:AUTHORITY:STATION_2</gml:name>
+        <gml:srsName>EPSG:4326</gml:srsName>
+        <gml:boundedBy>
+          <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:lowerCorner>-90 -180</gml:lowerCorner>
+            <gml:upperCorner>90 180</gml:upperCorner>
+          </gml:Envelope>
+        </gml:boundedBy>
+        <sos:time>
+          <gml:TimePeriod>
+            <gml:beginPosition>BEGINNING</gml:beginPosition>
+            <gml:endPosition indeterminatePosition="now"/>
+          </gml:TimePeriod>
+        </sos:time>
+        <sos:procedure xlink:href="urn:ioos:station:AUTHORITY:STATION_2"/>
+        <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/VALUE"/>
+        <sos:featureOfInterest xlink:href="FEATURE"/>
+        <sos:responseFormat>text/xml;schema="om/1.0.0"</sos:responseFormat>
+        <sos:responseFormat>text/csv</sos:responseFormat>
+        <sos:resultModel>om:ObservationCollection</sos:resultModel>
+        <sos:responseMode>inline</sos:responseMode>
+      </sos:ObservationOffering>
+    </sos:ObservationOfferingList>
+  </sos:Contents>
+</sos:Capabilities>
