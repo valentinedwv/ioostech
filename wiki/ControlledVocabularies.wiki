@@ -45,8 +45,8 @@ The target set of controlled vocabulary types we will likely need are:
     * All CF parameter names should be referenced by URLs pointing to the [http://mmisw.org/orr/ MMI Ontology Registry and Repository]. For example, http://mmisw.org/ont/cf/parameter/air_temperature_anomaly
     * Provide guidance when there are apparent synonyms
     * Provide documentation listing the most commonly used CF names, for convenience
-  # _Adopt and manage the [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary V.1.0] when an appropriate CF standard name is not available._
-    * First clean up, focusing on most common terms. Follow CF name construction patterns whenever possible (see SURA Modeling Testbed)
+  # _Adopt and manage the [http://mmisw.org/orr/#http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary] when an appropriate CF standard name is not available._
+    * First need to discuss management of terms with Sarah Haines at UNC-CH.  Focus on most common terms.  Follow CF name construction patterns whenever possible (see SURA Modeling Testbed)
     * As with CF names, reference by URL's pointing to MMI resource. Example: http://mmisw.org/ont/ioos/parameter/nitrate
   # _If no appropriate IOOS Vocabulary name exists and a provider must use a custom term until an IOOS name is set up, provide a urn naming convention similar to the one for station identifiers.
 
