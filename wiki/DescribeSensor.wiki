@@ -9,28 +9,6 @@
 
 Currently this page is just a dumping ground of links relevant to _SensorML_ and/or _DescribeSensor_
 
-= IOOS Examples or Guidance =
-[DescribeSensorMetadataForIOOSSOS]
-
-= Oostethys Examples = 
-http://code.google.com/p/oostethys/source/browse/trunk/component/server/perl/difDescribeSensor.xml?r=517
-
-
-= Q2O: QARTOD to OGC =
-
-Project home page is here.  http://q2o.whoi.edu/  One key idea relevant to the SensorML discussion is that Q2O has separated the platform/sensor metadata into two or more hierarchies based on the time scale in which the metadata is updated.  They can be referenced from within through xlinks.  For example, the _OEM_ file, or Original Equipment Manufacturer file, contains static metadata for a sensor that represents metadata that a) never changes and/or b) represents the factory defaults (these may change through time).  A second file, is a time dependent _Deployment_ file that contains metadata relevant to a particular deployment of the sensor in the environment.  I think this is an idea worth pursuing.
-
-= Marine Metadata Initiative =
-
-Go to http://marinemetadata.org and search sensorml, there are many resources.
-
-Additionally, Carlos Rueda at MMI has been working on a web service to create SensorML documents.  I don't know how capable it is but according to his comments on the SensorML mailing list he has been working on it lately (Oct 2011).  I hope this means that he's willing to engage if we have questions and possibly even respond to requests.  http://mmisw.org/smlmor/ 
-
-= OGC Resources =
-
-http://www.ogcnetwork.net/search/node/sensorml
-
-https://portal.opengeospatial.org/files/?artifact_id=45897
 
 =Interface Definition Document (IDD)=
 
@@ -46,3 +24,21 @@ The attributes of the DescribeSensor request are detailed in the Table 3 of the 
 
 
 =Response=
+
+
+
+=Examples =
+ * IOOS Examples or Guidance [DescribeSensorMetadataForIOOSSOS]
+ * Oostethys Examples http://code.google.com/p/oostethys/source/browse/trunk/component/server/perl/difDescribeSensor.xml?r=517
+ * OGC Resources http://www.ogcnetwork.net/search/node/sensorml
+ * OGC Resources https://portal.opengeospatial.org/files/?artifact_id=45897
+
+== Q2O: QARTOD to OGC ==
+
+Project home page is here.  http://q2o.whoi.edu/  One key idea relevant to the SensorML discussion is that Q2O has separated the platform/sensor metadata into two or more hierarchies based on the time scale in which the metadata is updated.  They can be referenced from within through xlinks.  For example, the _OEM_ file, or Original Equipment Manufacturer file, contains static metadata for a sensor that represents metadata that a) never changes and/or b) represents the factory defaults (these may change through time).  A second file, is a time dependent _Deployment_ file that contains metadata relevant to a particular deployment of the sensor in the environment.  I think this is an idea worth pursuing.
+
+== Marine Metadata Initiative ==
+
+Go to http://marinemetadata.org and search sensorml, there are many resources.
+
+Additionally, Carlos Rueda at MMI has been working on a web service to create SensorML documents.  I don't know how capable it is but according to his comments on the SensorML mailing list he has been working on it lately (Oct 2011).  I hope this means that he's willing to engage if we have questions and possibly even respond to requests.  http://mmisw.org/smlmor/ 
