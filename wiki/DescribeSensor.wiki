@@ -40,10 +40,12 @@ The attributes of the DescribeSensor request are detailed in the Table 3 of the 
 ||*Parameter*|| *Name*||*Definition	Data type and Values*||*Multiplicity and Use of the Parameter*||
 
 ||request||	Operation name||	DescribeSensor||	One (mandatory)||
+
 ||procedure||	Is the process or sensor system, for which the description is to be returned. It could be an observing system, platform or a simple device, such as a bin. This value must match the value advertised in the xlink:href attribute of a procedure element advertised in the SOS GetCapabilities response. In the SOS specification it is referred as SensorID (Table 3). ||	anyURI	One (mandatory)||
-||service||	Service type identifier	SOS||	One (mandatory)||
-||version||	Specification version of the SOS accepted by client	||1.0.0 
-has format X.Y.Z||	One (mandatory)||
+
+||service||	Service type identifier ||	SOS||	One (mandatory)||
+||version||	Specification version of the SOS accepted by client	||1.0.0 has format X.Y.Z||	One (mandatory)||
+
 ||outputFormat||	Specifies the desire output format.||	text/xml;subtype=sensorML/1.0.1	|| One (mandatory)||
 
 
