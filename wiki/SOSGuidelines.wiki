@@ -35,6 +35,14 @@ Examples, starting points:
 
 Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
 
+=Response=
+
+The response given by the server to valid (as described above) requests are documented on the following pages.
+
+  * [GetCapabilities#Response GetCapabilities]
+  * [DescribeSensor#Response DescribeSensor]
+  * [GetObservation#Response GetObservation]
+
 = Standards and Specifications =
 
 The versions of the international standards and specifications used in the IOOS SOS implementation.
@@ -62,4 +70,4 @@ Tentative decision for IOOS Workshop
 
 SOS 1.0
 O&M 1.0
-SWE Common Data Encoding 2.0
+SWE Common Data Encoding 2.0  ISSUE: Is this statement incorrect?
