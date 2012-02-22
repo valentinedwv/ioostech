@@ -5,10 +5,6 @@
 
 <wiki:toc max_depth="3" />
 
-= Introduction =
-
-Currently this page is just a dumping ground of links relevant to _SensorML_ and/or _DescribeSensor_
-
 
 =Interface Definition Document (IDD)=
 
