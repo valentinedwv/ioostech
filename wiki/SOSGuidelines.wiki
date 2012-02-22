@@ -18,7 +18,7 @@ IOOS data from fixed and mobile observing platforms can be obtained over the int
   * GetObservation provides time-series data from one or more sensors on one or more platforms.
 
 = SOS Requests (IDD) =
-_Recommendation:_ Use the [http://www.oostethys.org/best-practices/best-practices-get OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] as our starting point for a template IDD. Move it to our wiki, edit it as needed (updates, cleanups, etc), then adapt existing representative SOS services (NDBC, NOS-COOPS, maybe NANOOS and other volunteers) using the template.
+*TODO* Implement the following recommendation.  _Recommendation:_ Use the [http://www.oostethys.org/best-practices/best-practices-get OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] as our starting point for a template IDD. Move it to our wiki, edit it as needed (updates, cleanups, etc), then adapt existing representative SOS services (NDBC, NOS-COOPS, maybe NANOOS and other volunteers) using the template.
 
 Go to the specific sections:
   * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]
