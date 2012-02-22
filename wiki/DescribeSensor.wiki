@@ -31,3 +31,9 @@ Additionally, Carlos Rueda at MMI has been working on a web service to create Se
 http://www.ogcnetwork.net/search/node/sensorml
 
 https://portal.opengeospatial.org/files/?artifact_id=45897
+
+=Interface Definition Document (IDD)=
+
+
+
+=Response=
