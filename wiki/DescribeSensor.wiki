@@ -1,5 +1,9 @@
 #summary Examples and links to information on the SensorML response to the DescribeSensor request for SOS.
 #labels Phase-Requirements,Phase-Design,SOS,Metadata
+#sidebar SOSTableOfContents
+
+
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
