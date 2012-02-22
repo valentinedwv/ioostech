@@ -23,9 +23,9 @@ IOOS data from fixed and mobile observing platforms can be obtained over the int
 
 *NOTE* This section is taken from the Oostethys wiki and has (will be) modified to fit the current IOOS specification.   [http://www.oostethys.org/best-practices/best-practices-get OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] 
 
-An HTTP request could be of various types: GET, POST, PUT etc., as explain in the RFC 2616. GET passes parameters to the server in the HTTP URL (e.g. http://marinemetadata.org:9600/oostethys/sos?VERSION=1.0.0&SERVICE=SOS&REQUEST=GetCapabilities). POST sends a document to the server, allowing an message or result to be returned,  or to provide a block of XML data, among others.
+An HTTP request could be of various types: GET, POST, PUT etc., as explain in the [http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html RFC 2616]. GET passes parameters to the server in the HTTP URL (e.g. http://marinemetadata.org:9600/oostethys/sos?VERSION=1.0.0&SERVICE=SOS&REQUEST=GetCapabilities). POST sends a document to the server, allowing an message or result to be returned,  or to provide a block of XML data, among others.
 
-At OOSTethys we found that the GET request is very popular in the oceanographic community, because it is well-understood, easier to implement and easier to query. Sensor Observation Service, however,  does not explicitly use a GET request. This section explains the GET request operations supported by OOSTethys Sensor Observation Service cookbooks. The information presented here was mostly extracted from OGC specifications and in some cases clarifications and minor comments were added. If not noted, this section complies with the OGC Web Services Common Specification 1.1.0 (OGC 06-121r3) and the Sensor Observation Service Specification 1.0 (OGC 06-009r6). If there are discrepancies between the specification and the schema, the schema is preferred. 
+At OOSTethys we found that the GET request is very popular in the oceanographic community, because it is well-understood, easier to implement and easier to query. Sensor Observation Service, however,  does not explicitly use a GET request. This section explains the GET request operations supported by OOSTethys Sensor Observation Service cookbooks. The information presented here was mostly extracted from OGC specifications and in some cases clarifications and minor comments were added. If not noted, this section complies with the OGC Web Services Common Specification 1.1.0 ([http://portal.opengeospatial.org/files/?artifact_id=20040 OGC 06-121r3]) and the Sensor Observation Service Specification 1.0 ([https://portal.opengeospatial.org/files/?artifact_id=26667 OGC 06-009r6]). If there are discrepancies between the specification and the schema, the schema is preferred. 
 
 
 
@@ -48,7 +48,7 @@ Currently the interface descriptions for the two core IOOS SOS implementations (
 
 
 ===Structure of the GET request===
-The structure of the operation is specified in Table 34 (Whiteside, 2007).
+The structure of the operation is specified in Table 34 ([http://portal.opengeospatial.org/files/?artifact_id=20040 Whiteside, 2007]).
 
 ||*URL*|| *Component* ||	*Description*||
 ||`!http://host[:port]/path[?{name[=value]&}]`	|| URL prefix of service operation. || `[ ]` denotes 0 or 1 occurrence of an optional part; `{}` denotes 0 or more occurrences.||
@@ -66,10 +66,10 @@ The structure of the operation is specified in Table 34 (Whiteside, 2007).
  
 *Parameter names* are case insensitive. The following example shows equivalent terms for a parameter named “request”: REQUEST, request, Request, or ReQuEsT. As a guideline, it is suggested that lowercase names be used for ease-of-reading and consistency.
 
-*Parameter values* are case sensitive and string values are UpperCamelCase. These are appropriate examples for parameter values: !GetObservation, !DescribeSensor.
+*Parameter values* are case sensitive and string values are [http://en.wikipedia.org/wiki/CamelCase UpperCamelCase]. These are appropriate examples for parameter values: !GetObservation, !DescribeSensor.
  
 ===Escaping special characters===
-IETF 2396 , section 2.4.1 explains that special characters should be escaped as follows: percent character "%" followed by the two hexadecimal digits.  This is important because both URIs, and URNs could be sent as values for parameters, and they may include special characters . An online application that helps to convert special characters to escaped characters could be found here.
+[http://www.ietf.org/rfc/rfc2396.txt IETF 2396 , section 2.4.1] explains that special characters should be escaped as follows: percent character "%" followed by the two hexadecimal digits.  This is important because both URIs, and URNs could be sent as values for parameters, and they may include special characters . An online application that helps to convert special characters to escaped characters could be found [http://www.xs4all.nl/~jlpoutre/BoT/Javascript/Utils/endecode.html here].
 
 ||*Special character*||*Escaped encoding*||
 ||:	||%3A||
