@@ -45,7 +45,7 @@
           <swe:DataChoice>
             <swe:item name="SENSOR_1">
               <swe:DataRecord>
-                <swe:label>Second Sensor (SENSOR_1)</swe:label>
+                <swe:label>First Sensor (SENSOR_1)</swe:label>
                 <swe:field name="location">
                   <swe:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation" referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4979">
                     <swe:coordinate name="lat">
