@@ -1,8 +1,7 @@
 #summary Dumping ground for Derrick's half baked ideas and TODO items.
 
 
-  # Address the ideas in the following thread about in situ sampling features in netCDF.  What should we do about this? In general, I like the idea and support it.  Not sure yet how to push this forward or how it should be prioritized.  Maybe Jim Potemra would be interested in pursuing this as they are implementing this?  Steven at CeNCOOS re their glider data on THREDDS???https://groups.google.com/d/topic/ioostech_dev/7J6JXj_9u7U/discussion
+
   # Need a plan to document/address the units of measure issue.  There is conflicting guidance and IOOS doesn't seem to have a stated position yet.
-    # What are the UOM guidelines from OGC?
     # How do you reference different uom vocabularies within the various types of files, e.g. GetCapabilities response and a netcdf file.
-    # 
+    # Update the DescribeSensor page to reflect the outcome of the Baltimore workshop including adding links to the templates Kyle started in the source repo.
