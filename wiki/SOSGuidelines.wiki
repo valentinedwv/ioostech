@@ -22,8 +22,8 @@ _Recommendation:_ Use the [http://www.oostethys.org/best-practices/best-practice
 
 Go to the specific sections:
   * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]
-  * DescribeSensor
-  * GetObservation
+  * [DescribeSensor#Interface_Definition_Document_(IDD)DescribeSensor]
+  * [GetObservation#Interface_Definition_Document_(IDD)GetObservation]
 
 Examples, starting points:
   * [http://sdf.ndbc.noaa.gov/sos/ NDBC SOS]
