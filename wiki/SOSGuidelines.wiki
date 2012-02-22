@@ -62,6 +62,23 @@ The structure of the operation is specified in Table 34 (Whiteside, 2007).
 ||`=` ||	Separator between name and value of parameter.||
 ||`,`||	Separator between individual values given for a parameter.||
 
+===Capitalization of Keyword Value Pair (KVP) names and values ===
+ 
+*Parameter names* are case insensitive. The following example shows equivalent terms for a parameter named “request”: REQUEST, request, Request, or ReQuEsT. As a guideline, it is suggested that lowercase names be used for ease-of-reading and consistency.
+
+*Parameter values* are case sensitive and string values are UpperCamelCase. These are appropriate examples for parameter values: !GetObservation, !DescribeSensor.
+ 
+===Escaping special characters===
+IETF 2396 , section 2.4.1 explains that special characters should be escaped as follows: percent character "%" followed by the two hexadecimal digits.  This is important because both URIs, and URNs could be sent as values for parameters, and they may include special characters . An online application that helps to convert special characters to escaped characters could be found here.
+
+||*Special character*||*Escaped encoding*||
+||:	||%3A||
+||/	||%2F||
+||#	||%23||
+||?	||%3F||
+||=	||%3D||
+
+
 =Response=
 
 The response given by the server to valid (as described above) requests are documented on the following pages.
