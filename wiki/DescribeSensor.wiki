@@ -23,10 +23,10 @@ The attributes of the DescribeSensor request are detailed in the Table 3 of the 
 
 The following templates show very DRAFT examples of desirable sensor/platform/network descriptions.  These templates are not finalized.
 
-* Sensor description [http://code.google.com/p/ioostech/source/browse/trunk/templates/1.0/DescribeSensor/DescribeSensor-Sensor.xml DescribeSensor-Sensor.xml]
-* Network description [http://code.google.com/p/ioostech/source/browse/trunk/templates/1.0/DescribeSensor/DescribeSensor-Network.xml DescribeSensor-Network.xml ]
-* Platform description (time series at a point) [http://code.google.com/p/ioostech/source/browse/trunk/templates/1.0/DescribeSensor/DescribeSensor-TimeSeries.xml DescribeSensor-TimeSeries.xml]
-* Platform description (trajectory from a glider) [http://code.google.com/p/ioostech/source/browse/trunk/templates/1.0/DescribeSensor/DescribeSensor-Trajectory.xml DescribeSensor-Trajectory.xml]
+ * Sensor description [http://code.google.com/p/ioostech/source/browse/trunk/templates/1.0/DescribeSensor/DescribeSensor-Sensor.xml DescribeSensor-Sensor.xml]
+ * Network description [http://code.google.com/p/ioostech/source/browse/trunk/templates/1.0/DescribeSensor/DescribeSensor-Network.xml DescribeSensor-Network.xml ]
+ * Platform description (time series at a point) [http://code.google.com/p/ioostech/source/browse/trunk/templates/1.0/DescribeSensor/DescribeSensor-TimeSeries.xml DescribeSensor-TimeSeries.xml]
+ * Platform description (trajectory from a glider) [http://code.google.com/p/ioostech/source/browse/trunk/templates/1.0/DescribeSensor/DescribeSensor-Trajectory.xml DescribeSensor-Trajectory.xml]
 
 =Examples =
  * IOOS Examples or Guidance [DescribeSensorMetadataForIOOSSOS]
