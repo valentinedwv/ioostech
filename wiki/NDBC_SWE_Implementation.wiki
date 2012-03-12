@@ -1,0 +1,14 @@
+#summary Documents the implementation of the SWE GetObservation responses for public testing.
+#labels SOS,SWE,NDBC
+= Introduction =
+
+NDBC is adding the new SWE [GetObservation] response formats to its public test site in March 2012.  This site may be reached at http://sdftest.ndbc.noaa.gov/sos/.  _This link does not yet offer the enhanced SWE responses._
+
+= Issues/Questions =
+
+  # The templates do not include placeholders for station id and sensor id.  These ids/URNs are useful in making [DescribeSensor] calls to obtain metadata.  Should we add these as swe:fields in the record definition, or is more discussion needed?
+  # How should composite phenomena be handled?  NDBC is proceeding with coding the fields into the SWE record definitions within the responses similar to what CO-OPS has done in their sample templates and how NDBC has coded these responses in the past.  Do we have valid property names for these composite phenomena?  Any guidance would be helpful.
+
+= Progress =
+
+The new SWE responses are coded for all properties but waves.  Additional work is required in defining the wave record before implementing it.  If the wave record proves to be too time consuming, the revised code can be placed in public test without the waves SWE response.
