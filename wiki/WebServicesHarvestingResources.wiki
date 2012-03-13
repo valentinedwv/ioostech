@@ -7,17 +7,17 @@ There are numerous web services in existence that can be harvested into IOOS ser
 
 ||*Service*||*Info URL*||*Service URL*||*Developer*||*Examples or code repo*||
 ||  ||  ||  ||  ||  ||
-|| Center for Operational Oceanographic Products and Services (CO-OPS)  ||  ||  ||  ||  ||
-|| Federal Aviation Administration (FAA)  ||  ||  ||  ||  ||
-|| Hydrometeorological Design Studies Center (HADS)  ||  ||  ||  ||  ||
-|| National Data Buoy Center (NDBC)  ||  ||  ||  ||  ||
-|| NOAA Pacific Marine Environmental Laboratory (PMEL) Carbon Program  ||  ||  ||  ||  ||
-|| NOAA Tides  ||  ||  ||  ||  ||
-|| NOAA Weather  ||  ||  ||  ||  ||
-|| Remote Automatic Weather Stations (RAWS)  ||  ||  ||  ||  ||
-|| Snow telemetry (SNOTEL)  ||  ||  ||  ||  ||
-|| US Climate Research Network  ||  ||  ||  ||  ||
-|| U.S. Geological Survey water (USGS Water)  ||  ||  ||  ||  ||
+|| Center for Operational Oceanographic Products and Services (CO-OPS)  ||  ||  || AOOS/Axiom ||  ||
+|| Federal Aviation Administration (FAA)  ||  ||  || AOOS/Axiom ||  ||
+|| Hydrometeorological Design Studies Center (HADS)  ||  ||  || AOOS/Axiom ||  ||
+|| National Data Buoy Center (NDBC)  ||  ||  || AOOS/Axiom ||  ||
+|| NOAA Pacific Marine Environmental Laboratory (PMEL) Carbon Program  ||  ||  || AOOS/Axiom ||  ||
+|| NOAA Tides  ||  ||  || AOOS/Axiom ||  ||
+|| NOAA Weather  ||  ||  || AOOS/Axiom ||  ||
+|| Remote Automatic Weather Stations (RAWS)  ||  ||  || AOOS/Axiom ||  ||
+|| Snow telemetry (SNOTEL)  ||  ||  || AOOS/Axiom ||  ||
+|| US Climate Research Network  ||  ||  || AOOS/Axiom ||  ||
+|| U.S. Geological Survey water (USGS Water)  ||  ||  || AOOS/Axiom ||  ||
 || NOAA NDBC ||  ||  || MARACOOS/ASA ||  ||
 || NOAA CO-OPS ||  ||  || MARACOOS/ASA ||  ||
 || NERRS ||  || e.g. http://cdmo.baruch.sc.edu/QueryPages/realtime.cfm?Station_Code=hudfsmet || MARACOOS/ASA ||  ||
