@@ -38,6 +38,9 @@ Eric Bridgers javascript library hosted at Oostethys google code site http://cod
 
 = SECOORA =
 http://code.google.com/p/xenia/source/browse/trunk/python/xeniatools/ioosDif.py  
+and for that matter, many useful things at 
+http://code.google.com/p/xenia/source/browse/trunk/python/
+
 
 == GetCapabilities survey ==
 
