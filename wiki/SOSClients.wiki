@@ -37,6 +37,7 @@ XSL translations
 Eric Bridgers javascript library hosted at Oostethys google code site http://code.google.com/p/oostethys/downloads/list
 
 = SECOORA =
+http://code.google.com/p/xenia/source/browse/trunk/python/xeniatools/ioosDif.py  
 
 == GetCapabilities survey ==
 
