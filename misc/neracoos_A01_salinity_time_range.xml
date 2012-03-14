@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!-- request=GetObservation&offering=A01&observedProperty=sea_water_salinity&EventTime=2012-01-06T00:00:00Z/2012-01-06T06:00:00Z -->
+<om:ObservationCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0.1" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/om.xsd" gml:id="Univ. of Maine_sensor">
+
+  <gml:description>SEA_WATER_SALINITY measurements from Univ. of Maine A01</gml:description>
+  <gml:name>SEA_WATER_SALINITY measurements from Univ. of Maine A01</gml:name>
+  <gml:boundedBy>
+      <gml:Envelope srsName="urn:ogc:def:crs:EPSG:6.5:4326">
+<!-- overwrite these with your actual offering ROI -->
+          <gml:lowerCorner>42.5232 -70.5655</gml:lowerCorner>
+          <gml:upperCorner>42.5232 -70.5655</gml:upperCorner>
+      </gml:Envelope>
+  </gml:boundedBy>
+  <om:member>
+      <om:Observation gml:id="Univ. of Maine_A01">
+          <gml:description>SEA_WATER_SALINITY measurements from Univ. of Maine A01</gml:description>
+          <gml:name>SEA_WATER_SALINITY measurements from Univ. of Maine A01</gml:name>
+          <gml:boundedBy>
+              <gml:Envelope srsName="urn:ogc:def:crs:EPSG:6.5:4326">
+                  <!-- overwrite these with your actual offering  ROI -->
+                  <gml:lowerCorner>42.5232 -70.5655</gml:lowerCorner>
+                  <gml:upperCorner>42.5232 -70.5655</gml:upperCorner>
+              </gml:Envelope>
+          </gml:boundedBy>     
+          <!-- Observation time -->
+          <om:samplingTime><gml:TimePeriod xsi:type="gml:TimePeriodType"><gml:beginPosition>2012-01-06T00:00:00Z</gml:beginPosition><gml:endPosition>2012-01-06T06:00:00Z</gml:endPosition></gml:TimePeriod></om:samplingTime>
+          <!-- Sensor description (SensorML) -->
+          <om:procedure xlink:href="urn:ogc:neracoos.org:def:source:mooring:A01"/>
+         <!-- Observed Property, can be multiple -->
+         <om:observedProperty>
+         <swe:CompositePhenomenon dimension="1" gml:id="BUOY_OBSERVABLES">
+               <gml:name>Buoy Observables</gml:name>
+          <swe:component xlink:href="urn:ogc:def:phenomenon:mmisw.org:cf:sea_water_salinity"/></swe:CompositePhenomenon>
+          </om:observedProperty>
+          <om:featureOfInterest xlink:href="urn:ogc:def:object:feature:FOI_A01"/>
+           <!-- Result Structure, Encoding, and Data -->
+           <om:result>
+               <swe:DataArray>
+                   <swe:elementCount>
+                       <swe:Count>
+                             <swe:value>27</swe:value>  <!-- Number of Records here -->
+                         </swe:Count>
+                     </swe:elementCount>
+                     <swe:elementType name="A01Observations">
+                         <swe:DataRecord>
+                            <swe:field name="PlatformName">
+                                <swe:Quantity definition="urn:mmisw.org#platform"/>
+                            </swe:field>
+                            <!--  Time -->
+                            <swe:field name="time">
+                                <swe:Time definition="urn:ogc:phenomenon:time:iso8601"/>
+                            </swe:field>
+                            <swe:field name="latitude">
+                                <swe:Quantity definition="urn:ogc:phenomenon:latitude:wgs84">
+                                    <swe:uom code="deg"/>
+                                </swe:Quantity>
+                            </swe:field>
+                            <swe:field name="longitude">
+                                <swe:Quantity definition="urn:ogc:phenomenon:longitude:wgs84">
+                                     <swe:uom code="deg"/> 
+                                </swe:Quantity>
+                            </swe:field>
+                            <swe:field name="depth">
+                                     <swe:Quantity definition="http://mmisw.org/cf#depth" referenceFrame="urn:ogc:def:crs:EPSG:6.15:5113">
+                                     <swe:uom code="m"/>
+                                 </swe:Quantity>
+                            </swe:field>
+                            <!--  Observable fields -->
+                            
+                         <swe:field name="observedProperty1">
+                                <swe:Quantity definition="urn:ogc:def:phenomenon:mmisw.org:cf:sea_water_salinity">
+                                    <swe:uom code="psu"/>                    
+                                </swe:Quantity>
+                            </swe:field></swe:DataRecord>
+                     </swe:elementType>
+                     <swe:encoding>
+                         <swe:TextBlock blockSeparator=" " decimalSeparator="." tokenSeparator=","/>
+                     </swe:encoding>
+                     <swe:values>A01,2012-01-06T00:00:00Z,42.5232,-70.5655,1,32.0430450439453 A01,2012-01-06T00:00:00Z,42.5232,-70.5655,20,32.0736236572266 A01,2012-01-06T00:00:00Z,42.5232,-70.5655,50,32.1039009094238 A01,2012-01-06T00:30:00Z,42.5232,-70.5655,1,32.0410652160645 A01,2012-01-06T01:00:00Z,42.5232,-70.5655,1,32.0438423156738 A01,2012-01-06T01:00:00Z,42.5232,-70.5655,20,32.0779266357422 A01,2012-01-06T01:00:00Z,42.5232,-70.5655,50,32.1297874450684 A01,2012-01-06T01:30:00Z,42.5232,-70.5655,1,32.0395317077637 A01,2012-01-06T02:00:00Z,42.5232,-70.5655,1,32.0438423156738 A01,2012-01-06T02:00:00Z,42.5232,-70.5655,20,32.0751419067383 A01,2012-01-06T02:00:00Z,42.5232,-70.5655,50,32.1047592163086 A01,2012-01-06T02:30:00Z,42.5232,-70.5655,1,32.0421409606934 A01,2012-01-06T03:00:00Z,42.5232,-70.5655,1,32.0410652160645 A01,2012-01-06T03:00:00Z,42.5232,-70.5655,20,32.0794486999512 A01,2012-01-06T03:00:00Z,42.5232,-70.5655,50,32.1176300048828 A01,2012-01-06T03:30:00Z,42.5232,-70.5655,1,32.0358467102051 A01,2012-01-06T04:00:00Z,42.5232,-70.5655,1,32.039363861084 A01,2012-01-06T04:00:00Z,42.5232,-70.5655,20,32.0837516784668 A01,2012-01-06T04:00:00Z,42.5232,-70.5655,50,32.1129150390625 A01,2012-01-06T04:30:00Z,42.5232,-70.5655,1,32.0533561706543 A01,2012-01-06T05:00:00Z,42.5232,-70.5655,1,32.0461654663086 A01,2012-01-06T05:00:00Z,42.5232,-70.5655,20,32.0859031677246 A01,2012-01-06T05:00:00Z,42.5232,-70.5655,50,32.0980911254883 A01,2012-01-06T05:30:00Z,42.5232,-70.5655,1,32.0552368164062 A01,2012-01-06T06:00:00Z,42.5232,-70.5655,1,32.0541610717773 A01,2012-01-06T06:00:00Z,42.5232,-70.5655,20,32.0871734619141 A01,2012-01-06T06:00:00Z,42.5232,-70.5655,50,32.1118507385254</swe:values>
+                 </swe:DataArray>
+             </om:result>
+         </om:Observation>
+     </om:member>
+</om:ObservationCollection>
