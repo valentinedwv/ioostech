@@ -2,14 +2,14 @@
 #labels SOS,SWE,NDBC
 = Introduction =
 
-NDBC is adding the new SWE [GetObservation] response formats to its public test site in March 2012.  This site may be reached at http://sdftest.ndbc.noaa.gov/sos/.  _This link does not yet offer the enhanced SWE responses._
+NDBC has added the new SWE [GetObservation] response formats to its public test site.  This site may be reached at http://sdftest.ndbc.noaa.gov/sos/.
 
 = Issues/Questions =
 
-  # The templates do not include placeholders for station id and sensor id.  These ids/URNs are useful in making [DescribeSensor] calls to obtain metadata.  Should we add these as swe:fields in the record definition, or is more discussion needed?
-  # How should composite phenomena be handled?  NDBC is proceeding with coding the fields into the SWE record definitions within the responses similar to what CO-OPS has done in their sample templates and how NDBC has coded these responses in the past.  Do we have valid property names for these composite phenomena?  Any guidance would be helpful.
-  # How to code quality flags in SWE response?  NDBC uses two types of flags - Environmental Quality Control (EQC) flags (or hard flags) which prohibits the release of data and Data Quality Analyst (DQA) flags (or soft flags) which simply warn the data analysts of potential problems.  These flags are listed at http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml.  There may be zero or one EQC flags present with the data, however, there may be zero or more DQA flags present.  I'm not sure how to handle the possible multiple DQA flags in the SWE response.  Additional information on NDBC quality control may be found at http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf.
+  # The templates do not include placeholders for station id and sensor id.  These ids/URNs are useful in making [DescribeSensor] calls to obtain metadata.  The NDBC responses do include these fields, but feedback on proper usage is invited.
+  # How should composite phenomena be handled?  NDBC has coded the fields into the SWE record definitions within the responses similar to what CO-OPS has done in their sample templates and how NDBC has coded these responses in the past.  Do we have valid property names for these composite phenomena?  Any guidance would be helpful.
+  # How to code quality flags in SWE the response?  NDBC uses two types of flags - Environmental Quality Control (EQC) flags (or hard flags) which prohibit the release of data to the GTS and Data Quality Analyst (DQA) flags (or soft flags) which simply warn the data analysts of potential problems.  These flags are listed at http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml.  There may be zero or one EQC flags present with the data, however, there may be zero or more DQA flags present.  How should the possible multiple DQA flags be handled in the SWE response?  Additional information on NDBC quality control may be found at http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf.
 
 = Progress =
 
-The new SWE responses are coded for all properties but waves.  Additional work is required in defining the wave record before implementing it.  If the wave record proves to be too time consuming, the revised code can be placed in public test without the waves SWE response.
+The initial SWE changes were implemented into the NDBC public test at http://sdftest.ndbc.noaa.gov/sos/ on March 15, 2012.
