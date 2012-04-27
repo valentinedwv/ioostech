@@ -1,4 +1,5 @@
 #summary Templates for the GetObservation responses
+#labels Phase-Implementation
 #sidebar SOSTableOfContents
 
 = Templates =
@@ -9,3 +10,7 @@
   * [TimeSeriesProfileTemplate TimeSeriesProfile]
   * [TrajectoryTemplate Trajectory]
   * [TrajectoryProfileTemplate TrajectoryProfile]
+
+= Errors and Exceptions =
+== Large Data Requests ==
+Discussion on proper behavior for large data requests is documented in Issue 17 
