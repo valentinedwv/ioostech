@@ -17,7 +17,7 @@ However, there is also a vocabulary developed during the Data Integration Framew
 Identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
 
 What is the entire suite of parameters we need to consider for inclusion in the data file? We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms.
- 
+
 *The target set of controlled vocabulary types we will likely need are:*
  * observed property
  * platform (asset) type
