@@ -19,7 +19,6 @@ IOOS data from fixed and mobile observing platforms can be obtained over the int
 
 = SOS Requests (IDD) =
 == HTTP GET Request==
-*TODO* Check that the recommendations copied from Oostethys actually apply to the current IOOS specification.
 
 *NOTE* This section is taken from the Oostethys wiki and has (will be) modified to fit the current IOOS specification.   [http://www.oostethys.org/best-practices/best-practices-get OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] 
 
@@ -33,16 +32,6 @@ The document first presents the general structure of a GET request, notes about 
   * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]  returns general metadata about the service, operations supported and list of observation offerings;
   * [DescribeSensor#Interface_Definition_Document_(IDD) DescribeSensor] returns metadata about a sensor system. It could be an observing system, platform or a simple device, such as a bin. The return is given as a SensorML or TML document; 
   * [GetObservation#Interface_Definition_Document_(IDD) GetObservation] returns a collection of observations. each observation is composed of metadata, description of the phenomena being returned (parameter names, units of measure, reference systems) and values.
-
-Examples, starting points:
-  * [http://sdf.ndbc.noaa.gov/sos/ NDBC SOS]
-  * [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp NOS-COOPS SOS]
-  * [http://waterservices.usgs.gov/rest/IV-Service.html#Service USGS Water Services] (not SOS, but based on WaterML 1 and related services
-  * [NANOOSNVSPythonSOS NANOOS SOS]
-  * [https://wiki.52north.org/bin/view/Sensornet/SosOperations 52North Example]
-  * Eric Bridger's OOSTethys/IOOS Perl server code?
-
-Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
 
 
 ===Structure of the GET request===
@@ -89,7 +78,7 @@ The response given by the server to valid (as described above) requests are docu
 
 The versions of the international OGC standards and specifications used in the IOOS SOS implementation. The IOOS implementation includes some extensions.
 
-|| *Specification Name* || *Version Number* || *Comments, Resources* ||
+|| *Specification* || *Version* || *Comments, Resources* ||
 || GML || 3.? ||  ||
 || O&M || 1.0 || [https://wiki.52north.org/bin/view/Sensornet/SosDataModeling O&M 1.0.0 for SOS 1.0.0.(52 North)] ||
 || SOS || 1.0 ||  ||
