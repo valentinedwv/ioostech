@@ -1,6 +1,8 @@
 #summary Main Sidebar Navigation
 #labels SOS
 
+ * [SOSGuidelines_final SOS Guidelines - Final Version]
+
  * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
    * [SOSRefImplementWorkshop_Day1Agenda Day One]
    * [SOSRefImplementWorkshop_Day2Agenda Day Two]
