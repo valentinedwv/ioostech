@@ -68,57 +68,21 @@ Other ontologies / controlled vocabularies (some less controlled than others...)
     * [http://marinemetadata.org/community/teams/vocdev/generaldocuments/orrcf Using the ORR CF Standard names Vocabulary]
     * [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary]
 
-== Existing Observed Property Vocabularies ==
+== Relevant, Existing Observed Property Vocabularies ==
 
 || Controlled Vocabulary || URL for information || URL for reference ||
 || Climate and Forecast Standard Names || http://cf-pcmdi.llnl.gov/ and http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ || http://mmisw.org/ont/cf/parameter/PROPERTYNAME ||
 || IOOS Parameter Vocabulary v1.0 || ?? || http://mmisw.org/ont/ioos/parameter/PROPERTYNAME ||
 || IOOS DIF GML Dictionary || ?? || http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#PROPERTYNAME  ||
-|| SWEET || http://sweet.jpl.nasa.gov/ || http://sweet.jpl.nasa.gov/2.2/VOCAB.owl#PROPERTYNAME ||
-|| OGC Terms (URL) || ?? || ?? ||
-|| OGC Terms (URN) || ?? || ogc:def:phenomenon:mmisw.org:cf:PROPERTYNAME || 
-|| GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/ ||
 || SECOORA || ?? || http://mmisw.org/ont/secoora/parameter/ ||
 
 A list of tables with examples of how the various observed property vocabularies are used across example services can be found on the [ControlledVocabularyTables ControlledVocabularyTables Page]
 
 == Composite Properties ==
 
-Currently have at least three compound or composite properties in use.  
-
- * GML Dictionaries
- * CF like names 
- * How are composite properties used in SOS 1.0?
+Currently have at least three compound or composite properties in use: winds, waves and currents.
  
 ===Current NDBC usage of winds/waves/currents===
-From GetCapabilites OperationsMetadata section:
-{{{
-<ows:Parameter name="observedProperty">
-  <ows:AllowedValues>
-    <ows:Value>air_temperature</ows:Value>
-    <ows:Value>air_pressure_at_sea_level</ows:Value>
-    <ows:Value>sea_water_electrical_conductivity</ows:Value>
-    <ows:Value>currents</ows:Value>
-    <ows:Value>sea_water_salinity</ows:Value>
-    <ows:Value>sea_floor_depth_below_sea_surface</ows:Value>
-    <ows:Value>sea_water_temperature</ows:Value>
-    <ows:Value>waves</ows:Value>
-    <ows:Value>winds</ows:Value>
-  </ows:AllowedValues>
-</ows:Parameter>
-}}}
-From GetCapabilities offerings:
-{{{
-<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/>
-<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/air_pressure_at_sea_level"/>
-<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_electrical_conductivity"/>
-<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/currents"/>
-<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_salinity"/>
-<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface"/>
-<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
-<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/waves"/>
-<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/winds"/>
-}}}
 
 The terms *waves*, *winds* and *currents* are not actually CF standard names.  From the three lists above we can see that the *waves*, *winds* and *currents* are actually aliases for a larger set of observed parameters, some, but not all of which are CF Standard Names.  We'll refer to these three observed parameters as composite parameters.  By using the KVP `observedproperty=Waves` the NDBC SOS actually returns 26 parameters.  Some of these parameters are common across all requests so the actual number of aliased properties may be less than 26 but the point is that aliasing is used here to simplify the request.  
 
@@ -261,21 +225,3 @@ A question I've had about this implementation is, _what the heck is "urn:ioos:de
 _DPS Comment: There is a significant conflict in our use of station and platform as synonyms that will be especially evident when we get to the point of tracing lineage within SensorML.  In my mind a platform is a piece of equipment that hosts or carries one or more instruments or sensors.  It can be moved, it has a beginning and ending, and most importantly it's configuration can be modified which raises the requirement to trace the lineage of any data originating from a platform.  A station on the other hand is a fixed location at which a platform might be deployed for a finite period of time.  The station may persist longer than any one platform deployment at that site.  Think of the many different instruments that have derived CO2 at the Mauna Loa site where the [http://en.wikipedia.org/wiki/Keeling_Curve Keeling Curve] was observed as an example of this concept. What are the implications if we adopt this view of those two terms?_
   
 See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
-
-
-== NANOOS NVS Asset types and icons ==
-
-_Note from Emilio_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
-See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
-
-*Asset classes:*
-  * _Stationary In-Situ Observations (SISO)_. Current types: Buoy, Fixed Shore Station, River Gage, Land Station, Seabed Cabled Observatory
-  * _Moving-Location observations (MLOC)_. Cruises, AUV's
-  * _Gridded Regular and Irregular Data (GRID)_. Models (forecasts), remote sensing imagery, etc.
-
-
-=Links and yet to be organized errata=
-
-== IOOS Vars RDF ==
-
-Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's between controlled vocabularies.  The IOOS Catalog adopted a simple Ontology which allows the User Interface to map IOOS variables, e.g. Winds to the CF Terms used by some of the regional SOS's.  This is a very simple ontology, see below, which only makes use of the NarrowMatch triple store's thus Winds is mapped to wind_speed, wind_direction, etc.  [ControlledVocabularyTables#IOOS_Vars_RDF See the XML listing here.]
