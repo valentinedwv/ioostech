@@ -2,6 +2,12 @@
 #labels SOS
 
  * [SOSGuidelines_final SOS Guidelines - Final Version]
+   * [SOSGuidelines#SOS_Requests_(IDD) Request Syntax (IDD)]
+     * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]
+     * [DescribeSensor#Interface_Definition_Document_(IDD) DescribeSensor]
+     * [GetObservation#Interface_Definition_Document_(IDD) GetObservation ]
+   * SOS Responses
+   * [ControlledVocabularies]
 
  * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
    * [SOSRefImplementWorkshop_Day1Agenda Day One]
