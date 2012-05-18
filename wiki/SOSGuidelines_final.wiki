@@ -93,8 +93,7 @@ The versions of the international OGC standards and specifications used in the I
 || GML || 3.? ||  ||
 || O&M || 1.0 || [https://wiki.52north.org/bin/view/Sensornet/SosDataModeling O&M 1.0.0 for SOS 1.0.0.(52 North)] ||
 || SOS || 1.0 ||  ||
-|| SWE Common || 1.0 || [http://portal.opengeospatial.org/files/?artifact_id=21273 SWE Common 1.0 Standard coupled with SensorML Standard]
- ||
+|| SWE Common || 1.0 || [http://portal.opengeospatial.org/files/?artifact_id=21273 SWE Common 1.0 Standard coupled with SensorML Standard] ||
 || SensorML || 1.0? ||  ||
 
   * *GML*: Geographic Markup Language
