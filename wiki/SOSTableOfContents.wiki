@@ -7,6 +7,9 @@
      * !DescribeSensor
      * !GetObservation
    * SOS Responses
+     * !GetCapabilities
+     * !DescribeSensor
+     * !GetObservation
    * [Vocabularies_final Vocabularies]
    * Identifiers
  * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
