@@ -2,10 +2,10 @@
 #labels SOS
 
  * [SOSGuidelines_final SOS Guidelines - DRAFT FINAL VERSION]
-   * [Request Syntax (IDD)]
-     * [GetCapabilities]
-     * [DescribeSensor]
-     * [GetObservation]
+   * Request Syntax (IDD)
+     * !GetCapabilities
+     * !DescribeSensor
+     * !GetObservation
    * SOS Responses
    * [Vocabularies_final Vocabularies]
    * Identifiers
