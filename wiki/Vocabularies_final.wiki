@@ -18,16 +18,7 @@ Identify exactly where in the SOS responses and requests each controlled vocabul
 
 What is the entire suite of parameters we need to consider for inclusion in the data file? We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms.
  
-
-= Issues and Open Questions =
-
-  # Which vocabularies should be used in what situations?
-  # How are deficiencies identified, documented and passed along to the right people so that they can be addressed. (e.g. if you have a new term not on any existing list, who do you tell and what will they do about it?)
-  # How can we be good stewards in the community and participate in the process without bringing progress to a grinding halt?  (e.g. create temporary solutions for the immediate term but *ensure* that the long term vocabulary maintenance is done too.)
-  # How do we harmonize with the many other vocabularies that have been developed in the regions?
-  # How do we utilize or mature the vocabularies left over from the DIF at http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml ?
-The target set of controlled vocabulary types we will likely need are:
-
+*The target set of controlled vocabulary types we will likely need are:*
  * observed property
  * platform (asset) type
  * organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
