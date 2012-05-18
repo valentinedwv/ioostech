@@ -1,7 +1,7 @@
-#summary Landing page to record the guidelines and decisions on SOS implementation, beginning with those generated at the SOSRefImplementWorkshop
+#summary ALL THE MATERIALS HERE ARE IN FLUX. THIS WILL BECOME THE "FINAL" DOCUMENTATION FOR THE SOS REFERENCE IMPLEMENTATION, BEFORE COPYING IT TO THE GEO-IDE WIKI
 #labels Featured,SOS,IDD
-#sidebar SOSTableOfContents
 
+#sidebar SOSTableOfContents
 
 <wiki:toc max_depth="3" />
 
@@ -26,8 +26,6 @@ IOOS data from fixed and mobile observing platforms can be obtained over the int
 An HTTP request could be of various types: GET, POST, PUT etc., as explain in the [http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html RFC 2616]. GET passes parameters to the server in the HTTP URL (e.g. http://marinemetadata.org:9600/oostethys/sos?VERSION=1.0.0&SERVICE=SOS&REQUEST=GetCapabilities). POST sends a document to the server, allowing an message or result to be returned,  or to provide a block of XML data, among others.
 
 At OOSTethys we found that the GET request is very popular in the oceanographic community, because it is well-understood, easier to implement and easier to query. Sensor Observation Service, however,  does not explicitly use a GET request. This section explains the GET request operations supported by OOSTethys Sensor Observation Service cookbooks. The information presented here was mostly extracted from OGC specifications and in some cases clarifications and minor comments were added. If not noted, this section complies with the OGC Web Services Common Specification 1.1.0 ([http://portal.opengeospatial.org/files/?artifact_id=20040 OGC 06-121r3]) and the Sensor Observation Service Specification 1.0 ([https://portal.opengeospatial.org/files/?artifact_id=26667 OGC 06-009r6]). If there are discrepancies between the specification and the schema, the schema is preferred. 
-
-
 
 The document first presents the general structure of a GET request, notes about how to handle special characters and capitalization rules. Then, the document presents the GET request details for each of the Sensor Observation Service (SOS) supported by OOSTethys, which correspond to the three mandatory operations in a Sensor Observation Service (SOS):
 
