@@ -85,26 +85,19 @@ The response given by the server to valid (as described above) requests are docu
   * [DescribeSensor#Response DescribeSensor]
   * [GetObservation#Response GetObservation]
 
-= Standards and Specifications =
+= OGC Standards and Specifications =
 
-The versions of the international standards and specifications used in the IOOS SOS implementation.
+The versions of the international OGC standards and specifications used in the IOOS SOS implementation. The IOOS implementation includes some extensions.
 
-|| *Specification Name* || *Version Number* || *Comments* ||
-||Sensor Observation Service || 1.0 || With some extensions ||
-|| Observations & Measurements || 1.0 || ||
-|| SWE Common || 1.0 || ||
+|| *Specification Name* || *Version Number* || *Comments, Resources* ||
+|| GML || 3.? ||  ||
+|| O&M || 1.0 || [https://wiki.52north.org/bin/view/Sensornet/SosDataModeling O&M 1.0.0 for SOS 1.0.0.(52 North)] ||
+|| SOS || 1.0 ||  ||
+|| SWE Common || 1.0 || [http://portal.opengeospatial.org/files/?artifact_id=21273 SWE Common 1.0 Standard coupled with SensorML Standard]
+ ||
+|| SensorML || 1.0? ||  ||
 
-Resources
-The following resources are relevant:
-
-Observation and Measurement
-O&M 1.0.0 for SOS 1.0.0.(52 north) - https://wiki.52north.org/bin/view/Sensornet/SosDataModeling
-
-SWE Common
-OGC SWE Common 1.0 Standard coupled with SensorML Standard - http://portal.opengeospatial.org/files/?artifact_id=21273
-
-Tentative decision for IOOS Workshop
-
-SOS 1.0
-O&M 1.0
-SWE Common Data Encoding 2.0  ISSUE: Is this statement incorrect?
+  * *GML*: Geographic Markup Language
+  * *O&M*: Observations & Measurements
+  * *SOS*: Sensor Observation Service
+  * *SWE*: Sensor Web Enablement
