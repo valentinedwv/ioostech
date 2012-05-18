@@ -8,7 +8,6 @@
      * [GetObservation#Interface_Definition_Document_(IDD) GetObservation ]
    * SOS Responses
    * [ControlledVocabularies]
-
  * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
    * [SOSRefImplementWorkshop_Day1Agenda Day One]
    * [SOSRefImplementWorkshop_Day2Agenda Day Two]
