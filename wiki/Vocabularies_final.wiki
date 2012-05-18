@@ -5,8 +5,27 @@
 
 <wiki:toc max_depth="3" />
 
-
 = Introduction =
+
+= Observed Properties ("Parameters") =
+== Composite Properties ==
+
+= Platform/Station Types =
+
+= Organization Types and Roles ("Sectors") =
+Includes a vocabulary for RA's
+
+= Keywords =
+
+= Other relevant concepts =
+== Organization Role ==
+(Mainly in SensorML)
+== Units of Measure ==
+(Not actually a vocabulary per se, but rather a mix of vocabulary terms and syntax for combinations)
+
+
+----
+= OLD Introduction =
 
 Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to chose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.  
 
@@ -23,8 +42,8 @@ What is the entire suite of parameters we need to consider for inclusion in the 
  * platform (asset) type
  * organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
  * organizational role (service provider, data provider or asset owner)
- * units-of-measure
  * keywords (including geographical regions?)
+ * units-of-measure
 
 
 = Observed Property Vocabularies =
