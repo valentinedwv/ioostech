@@ -1,0 +1,281 @@
+#summary Information about selecting and using Controlled Vocabularies for developers of IOOS services.
+#labels Phase-Implementation,Vocabularies,SOS
+#sidebar SOSTableOfContents
+
+
+<wiki:toc max_depth="3" />
+
+
+= Introduction =
+
+Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to chose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.  
+
+The closest thing to policy we currently have is that IOOS data providers should use the [http://cf-pcmdi.llnl.gov Climate and Forecast Standard Names] when referring to variables (used synonymously with parameters here).  This applies to both netCDF files and to the various outputs of an SOS service (i.e. as column headings in a CSV file). [Requirement Requirement]
+
+However, there is also a vocabulary developed during the Data Integration Framework project by Matt Howard, Sara Haines and others which has been titled the IOOS Parameter Vocabulary.  Both the [http://mmisw.org/orr/#http://mmisw.org/ont/cf/parameter CF table] and version 1.0 of the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary] are currently hosted (v1.0) at the [http://mmisw.org/orr/#b MMI Ontology Registry and Repository].  
+
+Additionally, the [http://sweet.jpl.nasa.gov/ontology/ NASA SWEET] project hosts fairly mature vocabularies with the additional benefit of attempting to provide a framework for relating them together into ontologies.  
+
+Identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
+
+What is the entire suite of parameters we need to consider for inclusion in the data file? We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms (if translations are necessary).
+
+There are other vocabularies that are often referenced by URNs. Specifically, those managed by OGC. How do we resolve this? 
+ 
+
+= Issues and Open Questions =
+
+  # Which vocabularies should be used in what situations?
+  # How are deficiencies identified, documented and passed along to the right people so that they can be addressed. (e.g. if you have a new term not on any existing list, who do you tell and what will they do about it?)
+  # How can we be good stewards in the community and participate in the process without bringing progress to a grinding halt?  (e.g. create temporary solutions for the immediate term but *ensure* that the long term vocabulary maintenance is done too.)
+  # How do we harmonize with the many other vocabularies that have been developed in the regions?
+  # How do we utilize or mature the vocabularies left over from the DIF at http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml ?
+The target set of controlled vocabulary types we will likely need are:
+
+ * organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
+ * organizational role (service provider, data provider or asset owner)
+ * keywords (including geographical regions?)
+ * platform (asset) type
+ * observed property
+ * units-of-measure
+
+
+= Observed Property Vocabularies =
+
+*Guidelines:*
+  # _Use CF standard names when an appropriate name exists (but address issue of CF versions)._ 
+    * All CF parameter names should be referenced by URLs pointing to the [http://mmisw.org/orr/ MMI Ontology Registry and Repository]. For example, http://mmisw.org/ont/cf/parameter/air_temperature_anomaly
+    * Provide guidance when there are apparent synonyms
+    * Provide documentation listing the most commonly used CF names, for convenience
+  # _Adopt and manage the [http://mmisw.org/orr/#http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary] when an appropriate CF standard name is not available._
+    * First need to discuss management of terms with Sarah Haines at UNC-CH.  Focus on most common terms.  Follow CF name construction patterns whenever possible (see SURA Modeling Testbed)
+    * As with CF names, reference by URL's pointing to MMI resource. Example: http://mmisw.org/ont/ioos/parameter/nitrate
+  # _If no appropriate IOOS Vocabulary name exists and a provider must use a custom term until an IOOS name is set up, provide a urn naming convention similar to the one for station identifiers.
+
+Given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? Also, I've always found very helpful [http://www.pmel.noaa.gov/maillists/tmap/ioos_wsde/msg00699.html this 2010-1-26 email from Jeff DLB to the ioos_wsde list, describing the elements of adopting "MMI/CF phenomenon names for IOOS".]
+
+_DPS Comment: My proposed initial prioritization for observedProperty vocabularies is to use the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
+
+The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a really interesting combination of models and data (I think) where controlled vocabularies for measurements are used. It's worth assessing these, chatting with people in that team (ASA, Kyle Wilcox??), etc. For example, it's clear to me that while many/most of the names used are in fact CF standard names, many must be made up, but using CF recommendations for building names. 
+
+That's a general approach that we've discussed and that I think we should follow: use CF when an appropriate parameter exist; provide a nimble, IOOS-controlled vocabulary on MMI for parameters not yet on the CF list, striving to follow CF naming patterns for these new parameters, and abundant documentation: names, definitions, linkages to other relevant vocabularies (such as those from [http://qwwebservices.usgs.gov/service-domains.html#CROSSWALK USGS], [http://his.cuahsi.org/mastercvreg.html CUAHSI]), most common units, etc; we have a great starting point already, in the form of the "IOOS-specific parameter vocabularies on MMI" I've listed below. For existing CF parameters, there's sometimes ambiguity and apparent redundancy; we can also provide guidance on preferred parameters, when such ambiguity exists (eg, for barometric pressure).
+
+In the case mentioned above, it would also be useful for us have an active role with the CF Standard Name process.  We can add a term to the IOOS vocabulary, but it would be worth also proposing that name to CF.  If CF approves the new term we would then have a choice to make in terms of which reference or identifier we should use.
+
+Other ontologies / controlled vocabularies (some less controlled than others...) directly relevant to IOOS DMAC:
+  # *CF resources on MMI*. I've found several pages and resources at MMI that are directly focused on CF, but may not be well integrated or cross-linked and have different degrees of currency (out of date).
+    * [http://marinemetadata.org/references/cfstandardnames CF - Climate and Forecast Standard Names; Vocabulary for CF parameters] (a document, not a vocabulary resource per se)
+    * [http://marinemetadata.org/community/teams/vocdev/generaldocuments/orrcf Using the ORR CF Standard names Vocabulary]
+    * [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary]
+
+== Existing Observed Property Vocabularies ==
+
+|| Controlled Vocabulary || URL for information || URL for reference ||
+|| Climate and Forecast Standard Names || http://cf-pcmdi.llnl.gov/ and http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ || http://mmisw.org/ont/cf/parameter/PROPERTYNAME ||
+|| IOOS Parameter Vocabulary v1.0 || ?? || http://mmisw.org/ont/ioos/parameter/PROPERTYNAME ||
+|| IOOS DIF GML Dictionary || ?? || http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#PROPERTYNAME  ||
+|| SWEET || http://sweet.jpl.nasa.gov/ || http://sweet.jpl.nasa.gov/2.2/VOCAB.owl#PROPERTYNAME ||
+|| OGC Terms (URL) || ?? || ?? ||
+|| OGC Terms (URN) || ?? || ogc:def:phenomenon:mmisw.org:cf:PROPERTYNAME || 
+|| GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/ ||
+|| SECOORA || ?? || http://mmisw.org/ont/secoora/parameter/ ||
+
+A list of tables with examples of how the various observed property vocabularies are used across example services can be found on the [ControlledVocabularyTables ControlledVocabularyTables Page]
+
+== Composite Properties ==
+
+Currently have at least three compound or composite properties in use.  
+
+ * GML Dictionaries
+ * CF like names 
+ * How are composite properties used in SOS 1.0?
+ 
+===Current NDBC usage of winds/waves/currents===
+From GetCapabilites OperationsMetadata section:
+{{{
+<ows:Parameter name="observedProperty">
+  <ows:AllowedValues>
+    <ows:Value>air_temperature</ows:Value>
+    <ows:Value>air_pressure_at_sea_level</ows:Value>
+    <ows:Value>sea_water_electrical_conductivity</ows:Value>
+    <ows:Value>currents</ows:Value>
+    <ows:Value>sea_water_salinity</ows:Value>
+    <ows:Value>sea_floor_depth_below_sea_surface</ows:Value>
+    <ows:Value>sea_water_temperature</ows:Value>
+    <ows:Value>waves</ows:Value>
+    <ows:Value>winds</ows:Value>
+  </ows:AllowedValues>
+</ows:Parameter>
+}}}
+From GetCapabilities offerings:
+{{{
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/air_pressure_at_sea_level"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_electrical_conductivity"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/currents"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_salinity"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/waves"/>
+<observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/winds"/>
+}}}
+
+The terms *waves*, *winds* and *currents* are not actually CF standard names.  From the three lists above we can see that the *waves*, *winds* and *currents* are actually aliases for a larger set of observed parameters, some, but not all of which are CF Standard Names.  We'll refer to these three observed parameters as composite parameters.  By using the KVP `observedproperty=Waves` the NDBC SOS actually returns 26 parameters.  Some of these parameters are common across all requests so the actual number of aliased properties may be less than 26 but the point is that aliasing is used here to simplify the request.  
+
+*ISSUE: Is this a legal SOS 1.0 or 2.0 behavior?  Are there alternative methods of enabling this simplified request syntax such as through observationOfferings?  Are each of the parameters above also available individually?  [http://code.google.com/p/ioostech/issues/detail?id=1 Issue 1]*  
+
+http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=polar_coordinate_r1&responseformat=text/csv  yields an exception 
+
+{{{
+<ExceptionReport xmlns="http://www.opengis.net/ows/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/ows/1.1 owsExceptionReport.xsd" version="1.0.0" xml:lang="en">
+   <Exception exceptionCode="InvalidParameterValue" locator="observedProperty">
+      <ExceptionText>polar_coordinate_r1</ExceptionText>
+   </Exception>
+</ExceptionReport>
+}}}
+
+
+Another way to describe this mapping is through the use of GML dictionaries as shown below. 
+
+Definition of Waves in the IOOS GML Dictionary http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Waves
+
+{{{
+<gml:definitionMember>
+  <swe:CompositePhenomenon gml:id="NonDirectionalWaves" dimension="15">
+    <gml:description>Wave measurements.</gml:description>
+    <gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
+    <swe:component xlink:href="#SignificantWaveHeight"/>
+    <swe:component xlink:href="#DominantWavePeriod"/>
+    <swe:component xlink:href="#AverageWavePeriod"/>
+    <swe:component xlink:href="#SwellHeight"/>
+    <swe:component xlink:href="#SwellPeriod"/>
+    <swe:component xlink:href="#WindWaveHeight"/>
+    <swe:component xlink:href="#WindWavePeriod"/>
+    <swe:component xlink:href="#WaterTemperature"/>
+    <swe:component xlink:href="#WaveDuration"/>
+    <swe:component xlink:href="#CalculationMethod"/>
+    <swe:component xlink:href="#SamplingRate"/>
+    <swe:component xlink:href="#NumberOfFrequencies"/>
+    <swe:component xlink:href="#CenterFrequency"/>
+    <swe:component xlink:href="#Bandwidth"/>
+    <swe:component xlink:href="#SpectralEnergy"/>
+  </swe:CompositePhenomenon>
+</gml:definitionMember>
+<gml:definitionMember>
+  <swe:CompositePhenomenon gml:id="Waves" dimension="23">
+    <gml:description>Directional waves</gml:description>
+    <gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
+    <swe:base xlink:href="#NonDirectionalWaves"/>
+    <swe:component xlink:href="#MeanWaveDirection"/>
+    <swe:component xlink:href="#SwellWaveDirection"/>
+    <swe:component xlink:href="#WindWaveDirection"/>
+    <swe:component xlink:href="#DirectionalWaveParameter"/>
+    <swe:component xlink:href="#FourierCoefficientA1"/>
+    <swe:component xlink:href="#FourierCoefficientA2"/>
+    <swe:component xlink:href="#FourierCoefficientB1"/>
+    <swe:component xlink:href="#FourierCoefficientB2"/>
+  </swe:CompositePhenomenon>
+</gml:definitionMember>
+}}}
+
+Couple things of note:
+  * Not all of the wave components are defined in the GML composite phenomenon definition
+
+= Units of Measure =
+
+Clarification of the units of measure representation in output files. Is there a clear OGC recommendation at this time? Perhaps a follow up with Luis Bermudez? UCUM, UOM defined in OGC dictionaries? Udunits (note that there are now two versions of Udunits, 1 and 2)?
+
+*The decision at this time pretty much boils down to a choice betwen:*
+  # Adopt UCUM or Udunits
+  # Don't mandate or the other, just describe how to specify which is being used
+  # Punt the issue to a later time
+
+Relevant links:
+  * [http://unitsofmeasure.org/ Universal Code for Units of Measure]
+  * [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]
+  * OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_id=11498 OpenGIS© Recommendation Paper — Units of Measure Use and Definition Recommendations] may be outdated??
+  * [https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
+
+IOOS has considered and discussed UCUM (see http://aurora.regenstrief.org/~ucum/ucum.html and http://unitsofmeasure.org/) in the past; I'm not aware of a formal decision ever made, though. WaterML 2.0 apparently has also adopted UCUM. CF conventions refer primarily to _udunits_, though I'm not sure if it's a requirement.
+
+_DPS Comment/Question: Does either UCUM or udunits provide guidance on the for of the identifier to use in GML or SWE XML elements?  In particular the codeSpace attribute?  This is part of the larger discussion on a strategy or overarching guidance on the form of identifiers, i.e. URN vs URL etc._ 
+
+There's an [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html excellent comparison of UDUNITS and UCUM at this page ERDDAP / NOAA CoastWatch page (thanks, Jeremy!)]. It also includes converters among the units systems, and discussion of UDUNITS-1 and UDUNITS-2.
+
+
+= Organization Types and Roles  =
+
+See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
+
+(Regional Association, Provider/Owner, etc)
+  * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
+  * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
+
+Example:
+{{{
+<sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner">
+    <sml:ResponsibleParty>
+        <sml:organizationName>ORCA-UW</sml:organizationName>
+        <sml:contactInfo>
+            <sml:address>
+                <sml:country>USA</sml:country>
+            </sml:address>
+            <sml:onlineResource xlink:href="http://orca.ocean.washington.edu" />
+        </sml:contactInfo>
+    </sml:ResponsibleParty>
+</sml:contact>
+}}}
+
+  * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
+  * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
+  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
+
+= Platform/Station types =
+
+Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use of Classification terms from http://mmisw.org/ont/mmi/platform/ . Consequences for IOOS Catalog, including the use of NVS asset-type map icons.
+
+Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOOS SOS as a draft incomplete implementation, borrowing from either NDBC or NOS/COOPS and possibly others:
+{{{
+<sml:classifier name="System Type Identifier">
+    <sml:Term definition="urn:ioos:def:classifier:NOAA::systemTypeID">
+        <sml:codeSpace xlink:href="http://mmisw.org/ont/mmi/platform/" />
+        <sml:value>Platform</sml:value>
+    </sml:Term>
+</sml:classifier>
+<sml:classifier name="Platform Type">
+    <sml:Term definition="urn:ioos:def:classifier:NOAA:platformType">
+        <sml:codeSpace xlink:href="http://nvs.nanoos.org"/>
+        <sml:value>MOORED BUOY</sml:value>
+    </sml:Term>
+</sml:classifier>
+}}}
+
+A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
+
+  * [http://www.seadatanet.org/Standards-Software/Common-Vocabularies SeaDataNet Common Vocabularies]
+    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L06)%20SeaVoX+Platform+Categories&l=L06 L06 SeaVoX Platform Categories]
+    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L061)%20SeaVoX+Platform+Classes&l=L061 L061 SeaVoX Platform Classes]
+    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L062)%20SeaVoX+Platform+Class+Categories&l=L062 L062 SeaVoX Platform Class Categories]
+  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
+
+_DPS Comment: There is a significant conflict in our use of station and platform as synonyms that will be especially evident when we get to the point of tracing lineage within SensorML.  In my mind a platform is a piece of equipment that hosts or carries one or more instruments or sensors.  It can be moved, it has a beginning and ending, and most importantly it's configuration can be modified which raises the requirement to trace the lineage of any data originating from a platform.  A station on the other hand is a fixed location at which a platform might be deployed for a finite period of time.  The station may persist longer than any one platform deployment at that site.  Think of the many different instruments that have derived CO2 at the Mauna Loa site where the [http://en.wikipedia.org/wiki/Keeling_Curve Keeling Curve] was observed as an example of this concept. What are the implications if we adopt this view of those two terms?_
+  
+See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
+
+
+== NANOOS NVS Asset types and icons ==
+
+_Note from Emilio_: Describe and make the [http://nvs.nanoos.org NVS] asset/platform-type map icons available through this wiki later on.
+See Mayorga et al, 2010 ("NVS DMAC" Oceans'10 paper).
+
+*Asset classes:*
+  * _Stationary In-Situ Observations (SISO)_. Current types: Buoy, Fixed Shore Station, River Gage, Land Station, Seabed Cabled Observatory
+  * _Moving-Location observations (MLOC)_. Cruises, AUV's
+  * _Gridded Regular and Irregular Data (GRID)_. Models (forecasts), remote sensing imagery, etc.
+
+
+=Links and yet to be organized errata=
+
+== IOOS Vars RDF ==
+
+Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's between controlled vocabularies.  The IOOS Catalog adopted a simple Ontology which allows the User Interface to map IOOS variables, e.g. Winds to the CF Terms used by some of the regional SOS's.  This is a very simple ontology, see below, which only makes use of the NarrowMatch triple store's thus Winds is mapped to wind_speed, wind_direction, etc.  [ControlledVocabularyTables#IOOS_Vars_RDF See the XML listing here.]
