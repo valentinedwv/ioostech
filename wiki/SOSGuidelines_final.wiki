@@ -1,0 +1,112 @@
+#summary Landing page to record the guidelines and decisions on SOS implementation, beginning with those generated at the SOSRefImplementWorkshop
+#labels Featured,SOS,IDD
+#sidebar SOSTableOfContents
+
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+The [http://code.google.com/p/ioostech/w ioostech wiki] contains many deliberations on the issues associated with SOS implementation.  This page serves as the table of contents or introduction for the decisions or commitments that result from the various discussions.  In other words, much of the wiki discusses what one could do, but the SOSGuidelines, document what you should do.  
+
+This may relate to or perhaps will become the IOOS SOS Interface Definition Document.
+
+IOOS data from fixed and mobile observing platforms can be obtained over the internet using the Sensor Observation Service (SOS) specification published by the Open Geospatial Consortium. An SOS has three basic operations:
+
+  * GetCapabilities provides summary information about the service and about the platforms for which it provides data.
+  * DescribeSensor provides descriptions of individual sensors, platforms supporting one or more sensors, and networks of related platforms.
+  * GetObservation provides time-series data from one or more sensors on one or more platforms.
+
+= SOS Requests (IDD) =
+== HTTP GET Request==
+*TODO* Check that the recommendations copied from Oostethys actually apply to the current IOOS specification.
+
+*NOTE* This section is taken from the Oostethys wiki and has (will be) modified to fit the current IOOS specification.   [http://www.oostethys.org/best-practices/best-practices-get OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] 
+
+An HTTP request could be of various types: GET, POST, PUT etc., as explain in the [http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html RFC 2616]. GET passes parameters to the server in the HTTP URL (e.g. http://marinemetadata.org:9600/oostethys/sos?VERSION=1.0.0&SERVICE=SOS&REQUEST=GetCapabilities). POST sends a document to the server, allowing an message or result to be returned,  or to provide a block of XML data, among others.
+
+At OOSTethys we found that the GET request is very popular in the oceanographic community, because it is well-understood, easier to implement and easier to query. Sensor Observation Service, however,  does not explicitly use a GET request. This section explains the GET request operations supported by OOSTethys Sensor Observation Service cookbooks. The information presented here was mostly extracted from OGC specifications and in some cases clarifications and minor comments were added. If not noted, this section complies with the OGC Web Services Common Specification 1.1.0 ([http://portal.opengeospatial.org/files/?artifact_id=20040 OGC 06-121r3]) and the Sensor Observation Service Specification 1.0 ([https://portal.opengeospatial.org/files/?artifact_id=26667 OGC 06-009r6]). If there are discrepancies between the specification and the schema, the schema is preferred. 
+
+
+
+The document first presents the general structure of a GET request, notes about how to handle special characters and capitalization rules. Then, the document presents the GET request details for each of the Sensor Observation Service (SOS) supported by OOSTethys, which correspond to the three mandatory operations in a Sensor Observation Service (SOS):
+
+
+  * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]  returns general metadata about the service, operations supported and list of observation offerings;
+  * [DescribeSensor#Interface_Definition_Document_(IDD) DescribeSensor] returns metadata about a sensor system. It could be an observing system, platform or a simple device, such as a bin. The return is given as a SensorML or TML document; 
+  * [GetObservation#Interface_Definition_Document_(IDD) GetObservation] returns a collection of observations. each observation is composed of metadata, description of the phenomena being returned (parameter names, units of measure, reference systems) and values.
+
+Examples, starting points:
+  * [http://sdf.ndbc.noaa.gov/sos/ NDBC SOS]
+  * [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/parameters.jsp NOS-COOPS SOS]
+  * [http://waterservices.usgs.gov/rest/IV-Service.html#Service USGS Water Services] (not SOS, but based on WaterML 1 and related services
+  * [NANOOSNVSPythonSOS NANOOS SOS]
+  * [https://wiki.52north.org/bin/view/Sensornet/SosOperations 52North Example]
+  * Eric Bridger's OOSTethys/IOOS Perl server code?
+
+Currently the interface descriptions for the two core IOOS SOS implementations (NDBC and NOS-COOPS) are quite different, as can be seen from the links above. Beyond any differences in actual implementations, using a common template description for describing the SOS services across providers is an achievable goal and would go a long way towards facilitating the development of common service and client software.
+
+
+===Structure of the GET request===
+The structure of the operation is specified in Table 34 ([http://portal.opengeospatial.org/files/?artifact_id=20040 Whiteside, 2007]).
+
+||*URL*|| *Component* ||	*Description*||
+||`!http://host[:port]/path[?{name[=value]&}]`	|| URL prefix of service operation. || `[ ]` denotes 0 or 1 occurrence of an optional part; `{}` denotes 0 or more occurrences.||
+||`name=value&`	|| One or more standard request parameter name/value pairs as defined for each operation by this International Standard. This parameter encoding is referred to as Keyword Value Pair (KVP) encoding in this document. || ||
+
+
+===Reserved characters===
+||*Character* || *Reserved usage* ||
+||`?` ||	Separator indicating start of query string or the KVPs.||
+||`&` ||	Separator between the parameter (name/value) pairs in query string.||
+||`=` ||	Separator between name and value of parameter.||
+||`,`||	Separator between individual values given for a parameter.||
+
+===Capitalization of Keyword Value Pair (KVP) names and values ===
+ 
+*Parameter names* are case insensitive. The following example shows equivalent terms for a parameter named “request”: REQUEST, request, Request, or ReQuEsT. As a guideline, it is suggested that lowercase names be used for ease-of-reading and consistency.
+
+*Parameter values* are case sensitive and string values are [http://en.wikipedia.org/wiki/CamelCase UpperCamelCase]. These are appropriate examples for parameter values: !GetObservation, !DescribeSensor.
+ 
+===Escaping special characters===
+[http://www.ietf.org/rfc/rfc2396.txt IETF 2396 , section 2.4.1] explains that special characters should be escaped as follows: percent character "%" followed by the two hexadecimal digits.  This is important because both URIs, and URNs could be sent as values for parameters, and they may include special characters . An online application that helps to convert special characters to escaped characters could be found [http://www.xs4all.nl/~jlpoutre/BoT/Javascript/Utils/endecode.html here].
+
+||*Special character*||*Escaped encoding*||
+||:	||%3A||
+||/	||%2F||
+||#	||%23||
+||?	||%3F||
+||=	||%3D||
+
+
+=Response=
+
+The response given by the server to valid (as described above) requests are documented on the following pages.
+
+  * [GetCapabilities#Response GetCapabilities]
+  * [DescribeSensor#Response DescribeSensor]
+  * [GetObservation#Response GetObservation]
+
+= Standards and Specifications =
+
+The versions of the international standards and specifications used in the IOOS SOS implementation.
+
+|| *Specification Name* || *Version Number* || *Comments* ||
+||Sensor Observation Service || 1.0 || With some extensions ||
+|| Observations & Measurements || 1.0 || ||
+|| SWE Common || 1.0 || ||
+
+Resources
+The following resources are relevant:
+
+Observation and Measurement
+O&M 1.0.0 for SOS 1.0.0.(52 north) - https://wiki.52north.org/bin/view/Sensornet/SosDataModeling
+
+SWE Common
+OGC SWE Common 1.0 Standard coupled with SensorML Standard - http://portal.opengeospatial.org/files/?artifact_id=21273
+
+Tentative decision for IOOS Workshop
+
+SOS 1.0
+O&M 1.0
+SWE Common Data Encoding 2.0  ISSUE: Is this statement incorrect?
