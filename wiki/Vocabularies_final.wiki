@@ -63,12 +63,27 @@ See these wiki pages for earlier discussions [RepresentingRAAffiliationInService
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
   * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
-  * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
-  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
 
 === Regional Associations ===
+
+MMI vocabulary:  http://mmisw.org/ont/ioos/ioos_ra_descriptions
+
+Example term reference:
+http://mmisw.org/ont/ioos/ioos_ra_descriptions/SECOORA
+
 === Sectors ===
 
+  * Government–Federal
+  * Government–State 
+  * Government–Municipal
+  * Tribal
+  * Academic
+  * Industry
+  * Non-Profit
+  * Other
+  * Unknown
+
+"International" providers will be handled via the specification of a country name in the SensorML Operator role contact information.
 
 ----
 == Keywords ==
@@ -76,7 +91,7 @@ See these wiki pages for earlier discussions [RepresentingRAAffiliationInService
 
 ----
 = Other relevant concepts =
-== Organization Role ==
+== Other Organization Role ==
 (Mainly in SensorML)
 
 == Units of Measure ==
