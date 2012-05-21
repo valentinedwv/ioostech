@@ -29,9 +29,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
   # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI vocabulary location is: http://mmisw.org/ont/cf/parameter
   # *[TODO_IOOSVocabPage IOOS Parameter Vocabulary.]* A vocabulary created via an IOOS community polling of terms in use by RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
 
-_All references to parameters from these vocabularies should be done via MMI URL's_. For example:
-  * http://mmisw.org/ont/cf/parameter/sea_water_temperature
-  * http://mmisw.org/ont/ioos/parameter/ammonia
+_All references to parameters from these vocabularies should be done via MMI URL's_, such as  http://mmisw.org/ont/cf/parameter/sea_water_temperature  or  http://mmisw.org/ont/ioos/parameter/ammonia
 
 === Selecting a vocabulary term ===
 
