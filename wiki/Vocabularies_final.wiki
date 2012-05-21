@@ -55,8 +55,19 @@ The CF standard names vocabulary only defines scalar properties. Previously, IOO
 
 
 ----
-== Organization Types and Roles ("Sectors") ==
-Includes a vocabulary for RA's
+== Organization Types ==
+
+See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
+
+(Regional Association, Provider/Owner, etc)
+  * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
+  * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
+  * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
+  * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
+  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
+
+=== Regional Associations ===
+=== Sectors ===
 
 
 ----
@@ -67,91 +78,7 @@ Includes a vocabulary for RA's
 = Other relevant concepts =
 == Organization Role ==
 (Mainly in SensorML)
+
 == Units of Measure ==
-(Not actually a vocabulary per se, but rather a mix of vocabulary terms and syntax for combinations)
 
-
-----
-----
-
-= IGNORE ALL CONTENT BELOW; IT WILL BE REMOVED IN THE FINAL VERSION =
-
-= Platform/Station types =
-
-Document existing practices and options regarding controlled vocabularies for "platform types" in SensorML DescribeSensor responses. [http://mmisw.org/ont/mmi/platform/ MMI vocabulary]. Note the use of Classification terms from http://mmisw.org/ont/mmi/platform/ . Consequences for IOOS Catalog, including the use of NVS asset-type map icons.
-
-Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOOS SOS as a draft incomplete implementation, borrowing from either NDBC or NOS/COOPS and possibly others:
-{{{
-<sml:classifier name="System Type Identifier">
-    <sml:Term definition="urn:ioos:def:classifier:NOAA::systemTypeID">
-        <sml:codeSpace xlink:href="http://mmisw.org/ont/mmi/platform/" />
-        <sml:value>Platform</sml:value>
-    </sml:Term>
-</sml:classifier>
-<sml:classifier name="Platform Type">
-    <sml:Term definition="urn:ioos:def:classifier:NOAA:platformType">
-        <sml:codeSpace xlink:href="http://nvs.nanoos.org"/>
-        <sml:value>MOORED BUOY</sml:value>
-    </sml:Term>
-</sml:classifier>
-}}}
-
-A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
-
-  * [http://www.seadatanet.org/Standards-Software/Common-Vocabularies SeaDataNet Common Vocabularies]
-    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L06)%20SeaVoX+Platform+Categories&l=L06 L06 SeaVoX Platform Categories]
-    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L061)%20SeaVoX+Platform+Classes&l=L061 L061 SeaVoX Platform Classes]
-    * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L062)%20SeaVoX+Platform+Class+Categories&l=L062 L062 SeaVoX Platform Class Categories]
-  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
-
-_DPS Comment: There is a significant conflict in our use of station and platform as synonyms that will be especially evident when we get to the point of tracing lineage within SensorML.  In my mind a platform is a piece of equipment that hosts or carries one or more instruments or sensors.  It can be moved, it has a beginning and ending, and most importantly it's configuration can be modified which raises the requirement to trace the lineage of any data originating from a platform.  A station on the other hand is a fixed location at which a platform might be deployed for a finite period of time.  The station may persist longer than any one platform deployment at that site.  Think of the many different instruments that have derived CO2 at the Mauna Loa site where the [http://en.wikipedia.org/wiki/Keeling_Curve Keeling Curve] was observed as an example of this concept. What are the implications if we adopt this view of those two terms?_
-  
-See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
-
-
-= Organization Types and Roles  =
-
-See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
-
-(Regional Association, Provider/Owner, etc)
-  * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
-  * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
-
-Example:
-{{{
-<sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner">
-    <sml:ResponsibleParty>
-        <sml:organizationName>ORCA-UW</sml:organizationName>
-        <sml:contactInfo>
-            <sml:address>
-                <sml:country>USA</sml:country>
-            </sml:address>
-            <sml:onlineResource xlink:href="http://orca.ocean.washington.edu" />
-        </sml:contactInfo>
-    </sml:ResponsibleParty>
-</sml:contact>
-}}}
-
-  * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
-  * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
-  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
-
-
-= Units of Measure =
-
-Clarification of the units of measure representation in output files. Is there a clear OGC recommendation at this time? Perhaps a follow up with Luis Bermudez? UCUM, UOM defined in OGC dictionaries? Udunits (note that there are now two versions of Udunits, 1 and 2)? *The decision at this time pretty much boils down to a choice betwen:*
-  # Adopt UCUM or Udunits
-  # Don't mandate or the other, just describe how to specify which is being used
-  # Punt the issue to a later time
-
-Relevant links:
-  * [http://unitsofmeasure.org/ Universal Code for Units of Measure]
-  * [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]
-  * OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_id=11498 OpenGIS© Recommendation Paper — Units of Measure Use and Definition Recommendations] may be outdated??
-  * [https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
-
-IOOS has considered and discussed UCUM (see http://aurora.regenstrief.org/~ucum/ucum.html and http://unitsofmeasure.org/) in the past; I'm not aware of a formal decision ever made, though. WaterML 2.0 apparently has also adopted UCUM. CF conventions refer primarily to _udunits_, though I'm not sure if it's a requirement.
-
-_DPS Comment/Question: Does either UCUM or udunits provide guidance on the for of the identifier to use in GML or SWE XML elements?  In particular the codeSpace attribute?  This is part of the larger discussion on a strategy or overarching guidance on the form of identifiers, i.e. URN vs URL etc._ 
-
-There's an [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html excellent comparison of UDUNITS and UCUM at this page ERDDAP / NOAA CoastWatch page (thanks, Jeremy!)]. It also includes converters among the units systems, and discussion of UDUNITS-1 and UDUNITS-2.
+Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. Recommend (but not mandate) use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. But versions must be kept in mind (eg, UDUNITS-1 vs UDUNITS-2).
