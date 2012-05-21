@@ -11,7 +11,6 @@ Developers of IOOS services should strive to use Controlled Vocabularies wheneve
 
 Identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
 
-
 = IOOS Controlled Vocabularies =
 
 The target set of controlled vocabulary types we will need are:
@@ -23,6 +22,7 @@ The target set of controlled vocabulary types we will need are:
  * units-of-measure
 
 
+----
 == Observed Properties ==
 
 IOOS supports the inclusion and standard referencing of a large set of observed properties (sometimes referred to as phenomena, parameters, or variables). Any property encompassed by the following two vocabularies is supported:
@@ -39,7 +39,7 @@ For convenience and completeness, the IOOS Parameter Vocabulary incorporates CF 
 
   * _The use of CF vocabulary references is encouraged (but not mandated) when a relevant term exists in that vocabulary._ This preference exists to support interoperability with the wider community using CF.
   * _When the desired term is not found on the CF vocabulary, an IOOS Parameter Vocabulary reference should be used._
-  * _See the section below [#Terms_not_found_in_either_vocabulary "Terms not found in either vocabulary"] if the desired parameter is not found on either vocabulary.
+  * See the section below [#Terms_not_found_in_either_vocabulary "Terms not found in either vocabulary"] if the desired parameter is not found on either vocabulary.
 
 === Terms not found in either vocabulary ===
 
@@ -50,14 +50,20 @@ If the parameter is not on the CF or IOOS vocabularies, engage IOOS to add it to
 The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary, and will be referenced like any other term there, eg:  http://mmisw.org/ont/ioos/winds
 
 
+----
 == Platform/Station Types ==
 
+
+----
 == Organization Types and Roles ("Sectors") ==
 Includes a vocabulary for RA's
 
+
+----
 == Keywords ==
 
 
+----
 = Other relevant concepts =
 == Organization Role ==
 (Mainly in SensorML)
