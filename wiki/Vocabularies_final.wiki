@@ -7,19 +7,19 @@
 
 = Introduction =
 
-Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to chose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.  
+(This is place-holder text) Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to chose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.  
 
-*Identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed. Specific instructions/examples will be listed in this document, and will be completed by linking to SOS response templates (XML files)*
+*TO-DO: Identify and describe exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed. Specific instructions/examples will be listed in this document, and will be completed by linking to SOS response templates (XML files)*
 
 
 = IOOS Controlled Vocabularies =
 
-The target set of controlled vocabulary types we will need are:
+IOOS has defined the use of specific controlled vocabularies for the following categories or concepts:
  * observed property
  * platform (asset) type
- * organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
- * organizational role (service provider, data provider or asset owner)
- * keywords (including geographical regions?)
+ * organization type
+ * organizational role
+ * keywords
  * units-of-measure
 
 
@@ -86,10 +86,13 @@ An MMI vocabulary will be created, containing these terms:
 
 == Keywords ==
 
+Including geographical regions?
+
 
 = Other relevant concepts =
 == Other Organization Role ==
 (Mainly in SensorML)
+Service provider, data provider, asset owner.
 
 == Units of Measure ==
 
