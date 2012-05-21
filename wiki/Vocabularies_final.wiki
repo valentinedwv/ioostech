@@ -37,6 +37,10 @@ Includes a vocabulary for RA's
 
 
 ----
+----
+
+= IGNORE ALL CONTENT BELOW; IT WILL BE REMOVED IN THE FINAL VERSION =
+
 = ------- OLD Introduction ------- =
 
 Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to chose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.  
