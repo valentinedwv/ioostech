@@ -26,7 +26,7 @@ IOOS has defined the use of specific controlled vocabularies for the following c
 == Observed Properties ==
 
 IOOS supports the inclusion and standard referencing of a large set of observed properties (sometimes referred to as phenomena, parameters, or variables). Any property encompassed by the following two vocabularies is supported:
-  # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]. The MMI vocabulary location is: http://mmisw.org/ont/cf/parameter
+  # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI vocabulary location is: http://mmisw.org/ont/cf/parameter
   # *[TODO_IOOSVocabPage IOOS Parameter Vocabulary.]* A vocabulary created via an IOOS community polling of terms in use by RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
 
 _All references to parameters from these vocabularies should be done via MMI URL's_. For example:
