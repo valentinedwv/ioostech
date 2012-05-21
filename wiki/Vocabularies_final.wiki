@@ -7,27 +7,54 @@
 
 = Introduction =
 
-= Observed Properties ("Phenomena", "Parameters") =
 
-*Guidelines:*
-  # _Use CF standard names when an appropriate name exists (but address issue of CF versions)._ 
-    * All CF parameter names should be referenced by URLs pointing to the [http://mmisw.org/orr/ MMI Ontology Registry and Repository]. For example, http://mmisw.org/ont/cf/parameter/air_temperature_anomaly
-    * Provide guidance when there are apparent synonyms
-    * Provide documentation listing the most commonly used CF names, for convenience
-  # _Adopt and manage the [http://mmisw.org/orr/#http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary] when an appropriate CF standard name is not available._
-    * First need to discuss management of terms with Sarah Haines at UNC-CH.  Focus on most common terms.  Follow CF name construction patterns whenever possible (see SURA Modeling Testbed)
-    * As with CF names, reference by URL's pointing to MMI resource. Example: http://mmisw.org/ont/ioos/parameter/nitrate
+= IOOS Controlled Vocabularies =
+
+The target set of controlled vocabulary types we will need are:
+ * observed property
+ * platform (asset) type
+ * organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
+ * organizational role (service provider, data provider or asset owner)
+ * keywords (including geographical regions?)
+ * units-of-measure
+
+
+== Observed Properties ==
+
+IOOS supports the inclusion and standard referencing of a large set of observed properties (sometimes referred to as phenomena, parameters, or variables). Any property encompassed by the following two vocabularies is supported:
+  # [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about *Climate & Forecast (CF) Standard Names Parameter Vocabulary.*]. The MMI vocabulary location is: http://mmisw.org/ont/cf/parameter
+  # [TODO_IOOSVocabPage *IOOS Parameter Vocabulary.*] A vocabulary created via an IOOS community polling of terms in use by RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
+
+_All references to parameters from these vocabularies should be done via MMI URL's_. For example:
+  * http://mmisw.org/ont/cf/parameter/sea_water_temperature
+  * http://mmisw.org/ont/ioos/parameter/ammonia
+
+=== Selecting a vocabulary term ===
+
+For convenience and completeness, the IOOS Parameter Vocabulary incorporates CF terms that are widely used in IOOS. An MMI-based ontological mapping or cross-walk has been created between matching IOOS and CF terms, such that a reference to a term in one vocabulary is automatically linked to an appropriate term on the other vocabulary if such a match exists.
+
+  * _The use of CF vocabulary references is encouraged (but not mandated) when a relevant term exists in that vocabulary._ This preference exists to support interoperability with the wider community using CF.
+  * _When the desired term is not found on the CF vocabulary, an IOOS Parameter Vocabulary reference should be used._
+  * _See the section below [#Terms_not_found_in_either_vocabulary "Terms not found in either vocabulary"] if the desired parameter is not found on either vocabulary.
+
+=== Terms not found in either vocabulary ===
+
+If the parameter is not on the CF or IOOS vocabularies, engage IOOS to add it to the IOOS vocabulary using a publicized and accepted process that's reasonably fast and not much of a burden on anyone involved. In parallel, IOOS will maintain an engagement with the CF community to discuss adding parameters that are not currently present.
+
   # _If no appropriate IOOS Vocabulary name exists and a provider must use a custom term until an IOOS name is set up, provide a urn naming convention similar to the one for station identifiers.
 
-== Composite Properties ==
+=== Composite Properties ===
+
+The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary, and will be referenced like any other term there, eg:  http://mmisw.org/ont/ioos/winds
 
 
-= Platform/Station Types =
+== Platform/Station Types ==
 
-= Organization Types and Roles ("Sectors") =
+== Organization Types and Roles ("Sectors") ==
 Includes a vocabulary for RA's
 
-= Keywords =
+== Keywords ==
+
 
 = Other relevant concepts =
 == Organization Role ==
@@ -50,113 +77,6 @@ The closest thing to policy we currently have is that IOOS data providers should
 However, there is also a vocabulary developed during the Data Integration Framework project by Matt Howard, Sara Haines and others which has been titled the IOOS Parameter Vocabulary.  Both the [http://mmisw.org/orr/#http://mmisw.org/ont/cf/parameter CF table] and version 1.0 of the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary] are currently hosted (v1.0) at the [http://mmisw.org/orr/#b MMI Ontology Registry and Repository].  
 
 Identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
-
-What is the entire suite of parameters we need to consider for inclusion in the data file? We need to compile a list of all of the currently known parameters and link them to the best vocabulary terms.
-
-*The target set of controlled vocabulary types we will likely need are:*
- * observed property
- * platform (asset) type
- * organization type (eg, Federal agency, IOOS Regional Association,  state agency, industry)
- * organizational role (service provider, data provider or asset owner)
- * keywords (including geographical regions?)
- * units-of-measure
-
-
-= Observed Property Vocabularies =
-
-*Guidelines:*
-  # _Use CF standard names when an appropriate name exists (but address issue of CF versions)._ 
-    * All CF parameter names should be referenced by URLs pointing to the [http://mmisw.org/orr/ MMI Ontology Registry and Repository]. For example, http://mmisw.org/ont/cf/parameter/air_temperature_anomaly
-    * Provide guidance when there are apparent synonyms
-    * Provide documentation listing the most commonly used CF names, for convenience
-  # _Adopt and manage the [http://mmisw.org/orr/#http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary] when an appropriate CF standard name is not available._
-    * First need to discuss management of terms with Sarah Haines at UNC-CH.  Focus on most common terms.  Follow CF name construction patterns whenever possible (see SURA Modeling Testbed)
-    * As with CF names, reference by URL's pointing to MMI resource. Example: http://mmisw.org/ont/ioos/parameter/nitrate
-  # _If no appropriate IOOS Vocabulary name exists and a provider must use a custom term until an IOOS name is set up, provide a urn naming convention similar to the one for station identifiers.
-
-Given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? Also, I've always found very helpful [http://www.pmel.noaa.gov/maillists/tmap/ioos_wsde/msg00699.html this 2010-1-26 email from Jeff DLB to the ioos_wsde list, describing the elements of adopting "MMI/CF phenomenon names for IOOS".]
-
-That's a general approach that we've discussed and that I think we should follow: use CF when an appropriate parameter exist; provide a nimble, IOOS-controlled vocabulary on MMI for parameters not yet on the CF list, striving to follow CF naming patterns for these new parameters, and abundant documentation: names, definitions, linkages to other relevant vocabularies (such as those from [http://qwwebservices.usgs.gov/service-domains.html#CROSSWALK USGS], [http://his.cuahsi.org/mastercvreg.html CUAHSI]), most common units, etc; we have a great starting point already, in the form of the "IOOS-specific parameter vocabularies on MMI" I've listed below. For existing CF parameters, there's sometimes ambiguity and apparent redundancy; we can also provide guidance on preferred parameters, when such ambiguity exists (eg, for barometric pressure).
-
-In the case mentioned above, it would also be useful for us have an active role with the CF Standard Name process.  We can add a term to the IOOS vocabulary, but it would be worth also proposing that name to CF.  If CF approves the new term we would then have a choice to make in terms of which reference or identifier we should use.
-
-Other ontologies / controlled vocabularies (some less controlled than others...) directly relevant to IOOS DMAC:
-  # *CF resources on MMI*. I've found several pages and resources at MMI that are directly focused on CF, but may not be well integrated or cross-linked and have different degrees of currency (out of date).
-    * [http://marinemetadata.org/references/cfstandardnames CF - Climate and Forecast Standard Names; Vocabulary for CF parameters] (a document, not a vocabulary resource per se)
-    * [http://marinemetadata.org/community/teams/vocdev/generaldocuments/orrcf Using the ORR CF Standard names Vocabulary]
-    * [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary]
-
-== Relevant, Existing Observed Property Vocabularies ==
-
-|| Controlled Vocabulary || URL for information || URL for reference ||
-|| Climate and Forecast Standard Names || http://cf-pcmdi.llnl.gov/ and http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ || http://mmisw.org/ont/cf/parameter/PROPERTYNAME ||
-|| IOOS Parameter Vocabulary v1.0 || ?? || http://mmisw.org/ont/ioos/parameter/PROPERTYNAME ||
-|| IOOS DIF GML Dictionary || ?? || http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#PROPERTYNAME  ||
-|| SECOORA || ?? || http://mmisw.org/ont/secoora/parameter/ ||
-
-A list of tables with examples of how the various observed property vocabularies are used across example services can be found on the [ControlledVocabularyTables ControlledVocabularyTables Page]
-
-== Composite Properties ==
-
-Currently have at least three compound or composite properties in use: *winds, waves and currents*.
- 
-The discussion below is largely based on current NDBC usage of these composite properties.
-
-The terms *waves*, *winds* and *currents* are not actually CF standard names; they're actually aliases for a larger set of observed parameters, some, but not all of which are CF Standard Names.  We'll refer to these three observed parameters as composite parameters.  By using the KVP `observedproperty=Waves` the NDBC SOS actually returns 26 parameters.  Some of these parameters are common across all requests so the actual number of aliased properties may be less than 26 but the point is that aliasing is used here to simplify the request.  
-
-*ISSUE: Are there alternative methods of enabling this simplified request syntax such as through observationOfferings?  Are each of the parameters above also available individually?  [http://code.google.com/p/ioostech/issues/detail?id=1 Issue 1]*  
-
-http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&offering=urn:ioos:network:noaa.nws.ndbc:all&featureofinterest=BBOX:-90,25,-85,30&observedproperty=polar_coordinate_r1&responseformat=text/csv  yields an exception 
-
-{{{
-<ExceptionReport xmlns="http://www.opengis.net/ows/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/ows/1.1 owsExceptionReport.xsd" version="1.0.0" xml:lang="en">
-   <Exception exceptionCode="InvalidParameterValue" locator="observedProperty">
-      <ExceptionText>polar_coordinate_r1</ExceptionText>
-   </Exception>
-</ExceptionReport>
-}}}
-
-Another way to describe this mapping is through the use of GML dictionaries, as shown below from the [http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#Waves definition of Waves in the IOOS GML Dictionary] (but note that not all the wave components are defined in the GML composite phenomenon definition):
-
-{{{
-<gml:definitionMember>
-  <swe:CompositePhenomenon gml:id="NonDirectionalWaves" dimension="15">
-    <gml:description>Wave measurements.</gml:description>
-    <gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
-    <swe:component xlink:href="#SignificantWaveHeight"/>
-    <swe:component xlink:href="#DominantWavePeriod"/>
-    <swe:component xlink:href="#AverageWavePeriod"/>
-    <swe:component xlink:href="#SwellHeight"/>
-    <swe:component xlink:href="#SwellPeriod"/>
-    <swe:component xlink:href="#WindWaveHeight"/>
-    <swe:component xlink:href="#WindWavePeriod"/>
-    <swe:component xlink:href="#WaterTemperature"/>
-    <swe:component xlink:href="#WaveDuration"/>
-    <swe:component xlink:href="#CalculationMethod"/>
-    <swe:component xlink:href="#SamplingRate"/>
-    <swe:component xlink:href="#NumberOfFrequencies"/>
-    <swe:component xlink:href="#CenterFrequency"/>
-    <swe:component xlink:href="#Bandwidth"/>
-    <swe:component xlink:href="#SpectralEnergy"/>
-  </swe:CompositePhenomenon>
-</gml:definitionMember>
-<gml:definitionMember>
-  <swe:CompositePhenomenon gml:id="Waves" dimension="23">
-    <gml:description>Directional waves</gml:description>
-    <gml:identifier codeSpace="urn:x-noaa:ioos:def:phenomenonNames">Waves</gml:identifier>
-    <swe:base xlink:href="#NonDirectionalWaves"/>
-    <swe:component xlink:href="#MeanWaveDirection"/>
-    <swe:component xlink:href="#SwellWaveDirection"/>
-    <swe:component xlink:href="#WindWaveDirection"/>
-    <swe:component xlink:href="#DirectionalWaveParameter"/>
-    <swe:component xlink:href="#FourierCoefficientA1"/>
-    <swe:component xlink:href="#FourierCoefficientA2"/>
-    <swe:component xlink:href="#FourierCoefficientB1"/>
-    <swe:component xlink:href="#FourierCoefficientB2"/>
-  </swe:CompositePhenomenon>
-</gml:definitionMember>
-}}}
-
 
 = Platform/Station types =
 
