@@ -23,7 +23,6 @@ The target set of controlled vocabulary types we will need are:
  * units-of-measure
 
 
-----
 == Observed Properties ==
 
 IOOS supports the inclusion and standard referencing of a large set of observed properties (sometimes referred to as phenomena, parameters, or variables). Any property encompassed by the following two vocabularies is supported:
@@ -51,11 +50,10 @@ If the parameter is not on the CF or IOOS vocabularies, engage IOOS to add it to
 The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary, and will be referenced like any other term there, eg:  http://mmisw.org/ont/ioos/winds
 
 
-----
 == Platform/Station Types ==
 
+(To be added later)
 
-----
 == Organization Types ==
 
 See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
@@ -86,11 +84,9 @@ An MMI vocabulary will be created, containing these terms:
 
 "International" providers will be handled via the specification of a country name in the SensorML Operator role contact information.
 
-----
 == Keywords ==
 
 
-----
 = Other relevant concepts =
 == Other Organization Role ==
 (Mainly in SensorML)
