@@ -26,8 +26,8 @@ IOOS has defined the use of specific controlled vocabularies for the following c
 == Observed Properties ==
 
 IOOS supports the inclusion and standard referencing of a large set of observed properties (sometimes referred to as phenomena, parameters, or variables). Any property encompassed by the following two vocabularies is supported:
-  # [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about *Climate & Forecast (CF) Standard Names Parameter Vocabulary.*]. The MMI vocabulary location is: http://mmisw.org/ont/cf/parameter
-  # [TODO_IOOSVocabPage *IOOS Parameter Vocabulary.*] A vocabulary created via an IOOS community polling of terms in use by RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
+  # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]. The MMI vocabulary location is: http://mmisw.org/ont/cf/parameter
+  # *[TODO_IOOSVocabPage IOOS Parameter Vocabulary.]* A vocabulary created via an IOOS community polling of terms in use by RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
 
 _All references to parameters from these vocabularies should be done via MMI URL's_. For example:
   * http://mmisw.org/ont/cf/parameter/sea_water_temperature
@@ -39,7 +39,7 @@ For convenience and completeness, the IOOS Parameter Vocabulary incorporates CF 
 
   * _The use of CF vocabulary references is encouraged (but not mandated) when a relevant term exists in that vocabulary._ This preference exists to support interoperability with the wider community using CF.
   * _When the desired term is not found on the CF vocabulary, an IOOS Parameter Vocabulary reference should be used._
-  * See the section below [#Terms_not_found_in_either_vocabulary "Terms not found in either vocabulary"] if the desired parameter is not found on either vocabulary.
+  * _If the desired parameter is not found on either vocabulary_, see the section [#Terms_not_found_in_either_vocabulary "Terms not found in either vocabulary"], below.
 
 === Terms not found in either vocabulary ===
 
