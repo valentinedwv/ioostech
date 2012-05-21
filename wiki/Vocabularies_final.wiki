@@ -1,4 +1,4 @@
-#summary Information about selecting and using Controlled Vocabularies for developers of IOOS services.
+#summary IOOS Instructions and Guidelines for use of Controlled Vocabularies in IOOS-compliant data services
 #labels Phase-Implementation,Vocabularies,SOS
 #sidebar SOSTableOfContents
 
@@ -9,7 +9,8 @@
 
 Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to chose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.  
 
-Identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed.
+*Identify exactly where in the SOS responses and requests each controlled vocabulary is relevant and needs to be addressed. Specific instructions/examples will be listed in this document, and will be completed by linking to SOS response templates (XML files)*
+
 
 = IOOS Controlled Vocabularies =
 
@@ -59,7 +60,6 @@ The CF standard names vocabulary only defines scalar properties. Previously, IOO
 
 See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
 
-(Regional Association, Provider/Owner, etc)
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
   * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
@@ -73,6 +73,7 @@ http://mmisw.org/ont/ioos/ioos_ra_descriptions/SECOORA
 
 === Sectors ===
 
+An MMI vocabulary will be created, containing these terms:
   * Government–Federal
   * Government–State 
   * Government–Municipal
