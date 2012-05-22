@@ -5,8 +5,7 @@
 
 There are numerous web services in existence that can be harvested into IOOS services.  For example, the IOOS Data Portal routinely harvests from several federal or non federal web services that are distinct from the RA web services.  Similarly, the IOOS profile of the 52 North SOS server will harvest from select web services out of the box.  The list below is a collection of web services that are of interest or currently being harvested into one or more IOOS services (i.e. a regional SOS or the data portal).  The hope is that the IOOS community can begin to share code for common activities.
 
-||*Service*||*Info URL*||*Service URL*||*Developer*||*Examples or code repo*||
-||  ||  ||  ||  ||  ||
+|| *Service* || *Info URL* || *Service URL* || *Developer* || *Examples or code repo* ||
 || Federal Aviation Administration (FAA)  ||  ||  || AOOS/Axiom ||  ||
 || Hydrometeorological Design Studies Center (HADS)  ||  ||  || AOOS/Axiom ||  ||
 || NOAA Center for Operational Oceanographic Products and Services (CO-OPS)  ||  ||  || AOOS/Axiom ||  ||
