@@ -34,10 +34,10 @@ _All references to parameters from these vocabularies should be done via MMI URL
 || *SOS Operation* || *Request parameters* || *Response: XML block (XPath)* ||
 || GetCapabilities || N/A || /sos:Capabilities/ows:OperationsMetadata/ows:Operation/ows:Parameter/ows:AllowedValues/ows:Value ||
 ||         "       || N/A || /sos:Capabilities/sos:Contents/sos:ObservationOfferingList/sos:ObservationOffering/sos:observedProperty ||
-|| GetObservation  || observedProperty || /om:ObservationCollection/om:member/om:Observation/om:observedProperty ||
-||         "       ||       "          || /om:ObservationCollection/om:member/om:Observation/om:result/swe:DataStream/swe:DataChoice/swe:item/swe:DataRecord/swe:field/swe:Quantity ||
+|| GetObservation  || observedProperty || TimeSeries feature-type, multi-sensor response: `*` /om:observedProperty ||
+||         "       ||       "          || `*` /om:result/swe:DataStream/swe:DataChoice/swe:item/swe:DataRecord/swe:field/swe:Quantity ||
 || DescribeSensor || N/A || ||
-
+`*`Preceded by /om:ObservationCollection/om:member/om:Observation
 
 === Selecting a vocabulary term ===
 
