@@ -31,16 +31,16 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
 
 _All references to parameters from these vocabularies should be done via MMI URL's_, such as  http://mmisw.org/ont/cf/parameter/sea_water_temperature  or  http://mmisw.org/ont/ioos/parameter/ammonia
 
-Usage in SOS request parameters and XML responses:
+*Usage in SOS request parameters and XML responses:*
 
 || *SOS Operation* || *Request parameters* || *Response: XML block (XPath)* ||
 || GetCapabilities || N/A || /sos:Capabilities/ows:OperationsMetadata/ows:Operation/ows:Parameter/ows:AllowedValues/ows:Value ||
 ||         "       || N/A || /sos:Capabilities/sos:Contents/sos:ObservationOfferingList/sos:ObservationOffering/sos:observedProperty ||
-|| GetObservation  || observedProperty || TimeSeries feature-type, multi-sensor response: `*` /om:observedProperty ||
+|| GetObservation  || observedProperty || _!TimeSeries feature-type, multi-sensor response:_ `*` /om:observedProperty ||
 ||         "       ||       "          || `*` /om:result/swe:DataStream/swe:DataChoice/swe:item/swe:DataRecord/swe:field/swe:Quantity ||
 || DescribeSensor || N/A || ||
 
-`*` Preceded by /om:ObservationCollection/om:member/om:Observation
+`*` _Preceded by /om:!ObservationCollection/om:member/om:Observation_
 
 === Selecting a vocabulary term ===
 
