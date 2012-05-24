@@ -40,7 +40,7 @@ Usage in SOS request parameters and XML responses:
 ||         "       ||       "          || `*` /om:result/swe:DataStream/swe:DataChoice/swe:item/swe:DataRecord/swe:field/swe:Quantity ||
 || DescribeSensor || N/A || ||
 
-`*`Preceded by /om:ObservationCollection/om:member/om:Observation
+`*` Preceded by /om:ObservationCollection/om:member/om:Observation
 
 === Selecting a vocabulary term ===
 
