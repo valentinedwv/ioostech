@@ -31,6 +31,14 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
 
 _All references to parameters from these vocabularies should be done via MMI URL's_, such as  http://mmisw.org/ont/cf/parameter/sea_water_temperature  or  http://mmisw.org/ont/ioos/parameter/ammonia
 
+|| *SOS Operation* || *Request parameters* || *Response: XML block (XPath)* ||
+|| GetCapabilities || N/A || /sos:Capabilities/ows:OperationsMetadata/ows:Operation/ows:Parameter/ows:AllowedValues/ows:Value ||
+||         "       || N/A || /sos:Capabilities/sos:Contents/sos:ObservationOfferingList/sos:ObservationOffering/sos:observedProperty ||
+|| GetObservation  || observedProperty || /om:ObservationCollection/om:member/om:Observation/om:observedProperty ||
+||         "       ||       "          || /om:ObservationCollection/om:member/om:Observation/om:result/swe:DataStream/swe:DataChoice/swe:item/swe:DataRecord/swe:field/swe:Quantity ||
+|| DescribeSensor || N/A || ||
+
+
 === Selecting a vocabulary term ===
 
 For convenience and completeness, the IOOS Parameter Vocabulary incorporates CF terms that are widely used in IOOS. An MMI-based ontological mapping or cross-walk has been created between matching IOOS and CF terms, such that a reference to a term in one vocabulary is automatically linked to an appropriate term on the other vocabulary if such a match exists.
