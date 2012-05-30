@@ -41,7 +41,7 @@ _All references to parameters from these vocabularies should be done via MMI URL
 ||         "       ||       "          || `*` /om:result/swe:DataStream/swe:DataChoice/swe:item/swe:DataRecord/swe:field/swe:Quantity ||
 || DescribeSensor || - || _[TO-DO]_ ||
 
-- None, Not applicable
+- _None, Not applicable_
 
 `*` _Preceded by /om:!ObservationCollection/om:member/om:Observation_
 
@@ -78,16 +78,15 @@ See these wiki pages for earlier discussions [RepresentingRAAffiliationInService
 
 IOOS Regional Associations (RA's) should be referenced using standard RA acronyms (GLOS, SECOORA, etc) as listed in the MMI-hosted RA vocabulary at http://mmisw.org/ont/ioos/ioos_ra_descriptions . MMI URL references such as http://mmisw.org/ont/ioos/ioos_ra_descriptions/SECOORA must be used when appropriate, as described below; the RA acronym on this URL is case sensitive and must be all uppercase.
 
-Usage in SOS XML responses: [TO-DO: the Response entries will be linked to SOS response templates, so that full usage details are readily accessible] 
+*Usage in SOS XML responses: [TO-DO: the Response entries will be linked to SOS response templates, so that full usage details are readily accessible]*
 
 || *SOS Operation* || *Request* || *Response: XML block (XPath)* || *Comment* ||
-|| GetCapabilities || - || /sos:Capabilities/ows:ServiceIdentification/ows:Keywords/ows:Keyword  || Required. RA keyword must be the first keyword listed. ||
+|| GetCapabilities || - || /sos:Capabilities/ows:ServiceIdentification/ows:Keywords/ows:Keyword  || *Required*. RA keyword must be the first keyword listed. ||
 || GetObservation  || - || - || No RA reference. ||
-|| DescribeSensor || - ||  ||
-||         "       || - || `*` /sml:classification/sml:ClassifierList/sml:classifier[name="ParentNetwork"]/sml:Term[definition="urn:ioos:def:classifier:NOAA:parentNetwork"]/sml:value || Required. Also use <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/ioos_ra_descriptions"/> ||
-||         "       || - || `*` /sml:contact[xlink:role="urn:ogc:def:classifiers:OGC:contactType:publisher"]/sml:ResponsibleParty/sml:organizationName || Optional. Use if data are distributed via RA-hosted data service. ||
+|| DescribeSensor || - || `*` /sml:classification/sml:ClassifierList/sml:classifier[name="ParentNetwork"]/sml:Term[definition="urn:ioos:def:classifier:NOAA:parentNetwork"]/sml:value || *Required*. Also use <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/ioos_ra_descriptions"/> ||
+||         "       || - || `*` /sml:contact[xlink:role="urn:ogc:def:classifiers:OGC:contactType:publisher"]/sml:ResponsibleParty/sml:organizationName || *Optional*. Use if data are distributed via RA-hosted data service. ||
 
-- None, Not applicable
+- _None, Not applicable_
 
 `*` _Preceded by /sml:SensorML/sml:member/sml:System_
 
