@@ -34,13 +34,14 @@ _All references to parameters from these vocabularies should be done via MMI URL
 *Usage in SOS request parameters and XML responses: _[TO-DO: the Response entries will be linked to GetObservation templates, so that full usage details are readily accessible]_ *
 
 || *SOS Operation* || *Request parameters* || *Response: XML block (XPath)* ||
-|| GetCapabilities || N/A || /sos:Capabilities/ows:OperationsMetadata/ows:Operation/ows:Parameter/ows:AllowedValues/ows:Value ||
-||         "       || N/A || /sos:Capabilities/sos:Contents/sos:ObservationOfferingList/sos:ObservationOffering/sos:observedProperty ||
+|| GetCapabilities || - || /sos:Capabilities/ows:OperationsMetadata/ows:Operation/ows:Parameter/ows:AllowedValues/ows:Value ||
+||         "       || - || /sos:Capabilities/sos:Contents/sos:ObservationOfferingList/sos:ObservationOffering/sos:observedProperty ||
 || GetObservation  || || _!TimeSeries feature-type, multi-sensor response:_  ||
 ||         "       || observedProperty || `*` /om:observedProperty ||
 ||         "       ||       "          || `*` /om:result/swe:DataStream/swe:DataChoice/swe:item/swe:DataRecord/swe:field/swe:Quantity ||
-|| DescribeSensor || N/A || _[TO-DO]_ ||
+|| DescribeSensor || - || _[TO-DO]_ ||
 
+- None, Not applicable
 `*` _Preceded by /om:!ObservationCollection/om:member/om:Observation_
 
 === Selecting a vocabulary term ===
