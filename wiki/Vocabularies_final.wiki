@@ -42,6 +42,7 @@ _All references to parameters from these vocabularies should be done via MMI URL
 || DescribeSensor || - || _[TO-DO]_ ||
 
 - None, Not applicable
+
 `*` _Preceded by /om:!ObservationCollection/om:member/om:Observation_
 
 === Selecting a vocabulary term ===
