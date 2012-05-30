@@ -80,8 +80,7 @@ IOOS Regional Associations (RA's) should be referenced using standard RA acronym
 
 Usage in SOS XML responses: [TO-DO: the Response entries will be linked to SOS response templates, so that full usage details are readily accessible] 
 
-|| *SOS Operation* || *Request parameters* || *Response: XML block (XPath)* || Comment ||
-
+|| *SOS Operation* || *Request* || *Response: XML block (XPath)* || *Comment* ||
 || GetCapabilities || - || /sos:Capabilities/ows:ServiceIdentification/ows:Keywords/ows:Keyword  || Required. RA keyword must be the first keyword listed. ||
 || GetObservation  || - || - || No RA reference. ||
 || DescribeSensor || - ||  ||
