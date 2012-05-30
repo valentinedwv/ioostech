@@ -31,7 +31,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
 
 _All references to parameters from these vocabularies should be done via MMI URL's_, such as  http://mmisw.org/ont/cf/parameter/sea_water_temperature  or  http://mmisw.org/ont/ioos/parameter/ammonia
 
-*Usage in SOS request parameters and XML responses:*
+*Usage in SOS request parameters and XML responses: _[TO-DO: the Response entries will be linked to GetObservation templates, so that full usage details are readily accessible]_ *
 
 || *SOS Operation* || *Request parameters* || *Response: XML block (XPath)* ||
 || GetCapabilities || N/A || /sos:Capabilities/ows:OperationsMetadata/ows:Operation/ows:Parameter/ows:AllowedValues/ows:Value ||
