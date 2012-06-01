@@ -39,3 +39,11 @@ The getObservationCollection method on the Station class is used to provide sens
 A phenomenon is one specific value type that is read from a sensor. For example for a wind sensor there would be three phenomena: Wind speed, Wind direction, and Wind Gust. For an air temperature there would only be one phenomenon: Air Temperature. A phenomenon contains the name (e.g. Air Temperature), tag (e.g urn:x-ogc:def:phenomenon:IOOS:0.0.1:air_temperature ), and units (e.g. C). Across all the stations the phenomena must be the same. For example one can not have a phenomenon from one station for air temperature with units of “C” and another with the units of “F”. Even the spelling must be the same, so for those two stations with air temperature phenomenon one can not have units of “C” and the other of “Celsius”.
 
 The ObservationCollection class is used to hold all the sensor observations that are collected. This object holds two list one for the numeric values and the other for the corresponding dates. The values and the dates are related by their position in the list. For example the first items in the lists are associated to each other then the second items …. The ObservationCollection also contains the phenomenon that these observations are associated to.
+
+== Default Source Injections ==
+* NOAA NOS CO OPS - in progress. 
+* RAWS - not started
+* SnoTel - not started
+* NDBC - not started
+* HADS - not started
+* USGS Water - not started
