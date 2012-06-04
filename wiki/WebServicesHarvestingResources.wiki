@@ -6,19 +6,16 @@
 There are numerous web services in existence that can be harvested into IOOS services.  For example, the IOOS Data Portal routinely harvests from several federal or non federal web services that are distinct from the RA web services.  Similarly, the IOOS profile of the 52 North SOS server will harvest from select web services out of the box.  The list below is a collection of web services that are of interest or currently being harvested into one or more IOOS services (i.e. a regional SOS or the data portal).  The hope is that the IOOS community can begin to share code for common activities.
 
 || *Service* || *Info URL* || *Service URL* || *Developer* || *Examples or code repo* ||
-|| Federal Aviation Administration (FAA)  ||  ||  || AOOS/Axiom ||  ||
-|| Hydrometeorological Design Studies Center (HADS)  ||  ||  || AOOS/Axiom ||  ||
-|| NOAA Center for Operational Oceanographic Products and Services (CO-OPS)  ||  ||  || AOOS/Axiom ||  ||
+|| Hydrometeorological Design Studies Center (HADS)  || http://dipper.nws.noaa.gov/hdsc/pfds/ || http://amazon.nws.noaa.gov/nexhads2/servlet/DecodedData || AOOS/Axiom ||  ||
+|| NOAA Center for Operational Oceanographic Products and Services (CO-OPS)  || http://tidesonline.nos.noaa.gov/ || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/ || AOOS/Axiom ||  ||
 || " ||  ||  || MARACOOS/ASA ||  ||
-|| NOAA National Data Buoy Center (NDBC)  ||  ||  || AOOS/Axiom ||  ||
+|| NOAA National Data Buoy Center (NDBC)  || http://www.ndbc.noaa.gov/  || http://sdf.ndbc.noaa.gov/sos || AOOS/Axiom ||  ||
 || " ||  ||  || MARACOOS/ASA ||  ||
-|| NOAA Pacific Marine Environmental Laboratory (PMEL) Carbon Program  ||  ||  || AOOS/Axiom ||  ||
-|| NOAA Tides  ||  ||  || AOOS/Axiom ||  ||
-|| NOAA Weather  ||  ||  || AOOS/Axiom ||  ||
-|| Remote Automatic Weather Stations (RAWS)  ||  ||  || AOOS/Axiom ||  ||
-|| Snow telemetry (SNOTEL)  ||  ||  || AOOS/Axiom ||  ||
-|| US Climate Research Network  ||  ||  || AOOS/Axiom ||  ||
-|| U.S. Geological Survey water (USGS Water/NWIS)  ||  ||  || AOOS/Axiom ||  ||
+|| NOAA Weather  || http://www.nws.noaa.gov/ || http://www.nws.noaa.gov/data/obhistory/ || AOOS/Axiom ||  ||
+|| Remote Automatic Weather Stations (RAWS)  || http://www.raws.dri.edu/ || http://www.raws.dri.edu/cgi-bin/wea_list2.pl || AOOS/Axiom ||  ||
+|| Snow telemetry (SNOTEL)  || http://www.wcc.nrcs.usda.gov/ || http://www.wcc.nrcs.usda.gov/nwcc/site || AOOS/Axiom ||  ||
+|| US Climate Research Network  || http://www.ncdc.noaa.gov/crn/ || http://www.ncdc.noaa.gov/crn/station.htm || AOOS/Axiom ||  ||
+|| U.S. Geological Survey water (USGS Water/NWIS)  || http://waterdata.usgs.gov/ak/nwis/uv || http://waterservices.usgs.gov/nwis/iv || AOOS/Axiom ||  ||
 || " || http://waterdata.usgs.gov/usa/nwis || e.g. http://waterdata.usgs.gov/usa/nwis/uv?site_no=442238068154101  || MARACOOS/ASA ||  ||
 || NERRS ||  || e.g. http://cdmo.baruch.sc.edu/QueryPages/realtime.cfm?Station_Code=hudfsmet || MARACOOS/ASA ||  ||
 || HRECOS || http://www.hrecos.org/joomla/ ||  || MARACOOS/ASA ||  ||
