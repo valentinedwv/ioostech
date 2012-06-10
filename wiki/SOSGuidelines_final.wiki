@@ -18,6 +18,9 @@ IOOS data from fixed and mobile observing platforms can be obtained over the int
   * GetObservation provides time-series data from one or more sensors on one or more platforms.
 
 = SOS Requests (IDD) =
+
+_See the new, draft [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos-test/ IDD documentation from NOS/COOPS for their test SOS service]. It's a terrific, dynamic, rich example that we should strive to replicate._
+
 == HTTP GET Request==
 
 *NOTE* This section is taken from the Oostethys wiki and has (will be) modified to fit the current IOOS specification.   [http://www.oostethys.org/best-practices/best-practices-get OOSTethys 2008 "Best Practices SOS HTTP GET Request" document] 
