@@ -13,8 +13,7 @@ There are numerous web services in existence that can be harvested into IOOS ser
 || Remote Automatic Weather Stations (RAWS)  || http://www.raws.dri.edu/ || http://www.raws.dri.edu/cgi-bin/wea_list2.pl || AOOS/Axiom || Done ||
 || Snow telemetry (SNOTEL)  || http://www.wcc.nrcs.usda.gov/ || http://www.wcc.nrcs.usda.gov/nwcc/site || AOOS/Axiom || Done ||
 || US Climate Research Network  || http://www.ncdc.noaa.gov/crn/ || http://www.ncdc.noaa.gov/crn/station.htm || AOOS/Axiom || pushed off ||
-|| U.S. Geological Survey water (USGS Water/NWIS)  || http://waterdata.usgs.gov/ak/nwis/uv || http://waterservices.usgs.gov/nwis/iv || AOOS/Axiom || working ||
-|| " || http://waterdata.usgs.gov/usa/nwis || e.g. http://waterdata.usgs.gov/usa/nwis/uv?site_no=442238068154101  || MARACOOS/ASA ||  ||
+|| U.S. Geological Survey water (USGS Water/NWIS)  || http://waterdata.usgs.gov/ak/nwis/uv || http://waterservices.usgs.gov/nwis/iv || AOOS/Axiom || Done ||
 || NERRS ||  || e.g. http://cdmo.baruch.sc.edu/QueryPages/realtime.cfm?Station_Code=hudfsmet || MARACOOS/ASA ||  ||
 || HRECOS || http://www.hrecos.org/joomla/ ||  || MARACOOS/ASA ||  ||
 || Drifters (NEFSC only) || http://www.nefsc.noaa.gov/drifter/  ||  || MARACOOS/ASA ||  ||
