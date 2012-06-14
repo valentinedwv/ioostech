@@ -9,7 +9,7 @@ There are numerous web services in existence that can be harvested into IOOS ser
 || Hydrometeorological Design Studies Center (HADS)  || http://dipper.nws.noaa.gov/hdsc/pfds/ || http://amazon.nws.noaa.gov/nexhads2/servlet/DecodedData || AOOS/Axiom || Done  ||
 || NOAA Center for Operational Oceanographic Products and Services (CO-OPS)  || http://tidesonline.nos.noaa.gov/ || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/ || AOOS/Axiom || Done ||
 || NOAA National Data Buoy Center (NDBC)  || http://www.ndbc.noaa.gov/  || http://sdf.ndbc.noaa.gov/sos || AOOS/Axiom || Done ||
-|| NOAA Weather  || http://www.nws.noaa.gov/ || http://www.nws.noaa.gov/data/obhistory/ || AOOS/Axiom || working  ||
+|| NOAA Weather  || http://www.nws.noaa.gov/ || http://www.nws.noaa.gov/data/obhistory/ || AOOS/Axiom || Done  ||
 || Remote Automatic Weather Stations (RAWS)  || http://www.raws.dri.edu/ || http://www.raws.dri.edu/cgi-bin/wea_list2.pl || AOOS/Axiom || Done ||
 || Snow telemetry (SNOTEL)  || http://www.wcc.nrcs.usda.gov/ || http://www.wcc.nrcs.usda.gov/nwcc/site || AOOS/Axiom || Done ||
 || US Climate Research Network  || http://www.ncdc.noaa.gov/crn/ || http://www.ncdc.noaa.gov/crn/station.htm || AOOS/Axiom || pushed off ||
@@ -20,6 +20,10 @@ There are numerous web services in existence that can be harvested into IOOS ser
 || Ships and drifting buoys from MADIS || http://madis.noaa.gov/madis_sfc.html ||  ||  ||  || 
 || HFRadar ground stations || http://maracoos.org/hfradar ||  ||  ||
 
+= Source SOS Injectors =
+This project contains public observation sources that are used to inject observation into a users SOS. This project uses the base SOS Observation Inject project to preform its work. The current sources that it pulls observation from are: HADS, NDBC, NOAA NOS CO-OPS, NOAA Weather, RAWS, SnoTel, and USGS Water. 
+
+Currently working on placing the code in GitHub. 
 
 = SOS Observation Injecter =
 https://github.com/axiomalaska/sos-injection
