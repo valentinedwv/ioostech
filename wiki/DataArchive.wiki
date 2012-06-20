@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Add your content here.
+This page will serve to provide guidance on archiving data with the National Oceanographic Data Center (NODC). The NODC requirements for data submission are illustrated in the example of an NDBC completed NODC Submission Information Form (SIF). The NODC SIF example is presented here for you to follow. Presently, NODC is working with SECOORA and MARACOOS on pilot project related to data archive submission. Steve Rutz the NODC Observing System Team Lead will give a brief on July 17th RA IOOS monthly conference call.
 
 
 = Details =
