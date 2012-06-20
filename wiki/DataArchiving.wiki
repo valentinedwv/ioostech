@@ -1,4 +1,4 @@
-Guidance for submitting data to NODC. 
+Guidance for submitting data to NODC 
 
 = Introduction =
 
