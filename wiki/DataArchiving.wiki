@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+Guidance for submitting data to NODC. 
 
 = Introduction =
 
