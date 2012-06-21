@@ -20,6 +20,7 @@ IOOS has defined the use of specific controlled vocabularies for the following c
  * keywords
  * units-of-measure
 
+All vocabularies that IOOS has formally adopted or developed are hosted at the [https://marinemetadata.org/mmiswinfo/ MMI Ontology Registry and Repository (MMI ORR)]. A list of IOOS vocabularies and vocabulary mappings on MMI is available at [http://mmisw.org/ont/ioos].
 
 == Observed Properties ==
 
