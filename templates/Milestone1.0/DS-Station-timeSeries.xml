@@ -1,0 +1,228 @@
+<sml:SensorML 
+  xmlns:sml="http://www.opengis.net/sensorML/1.0.1" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:gml="http://www.opengis.net/gml" 
+  xmlns:swe="http://www.opengis.net/swe/1.0.1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.opengis.net/sensorML/1.0.1 http://schemas.opengis.net/sensorML/1.0.1/sensorML.xsd" 
+  version="1.0.1">
+  <sml:member>
+    <sml:System gml:id="stationID">
+      <gml:description>Station Description</gml:description>
+      
+      <sml:identification>
+        <sml:IdentifierList>
+          <!-- MANDATORY -->
+          <sml:identifier name="StationId">
+            <sml:Term definition="urn:ioos:def:identifier:NOAA:stationID">
+              <sml:codeSpace xlink:href="LINK"/>
+              <sml:value/>
+            </sml:Term>
+          </sml:identifier>
+          <sml:identifier name="Short Name">
+            <sml:Term definition="urn:ogc:def:identifier:OGC:shortName">
+              <sml:value>shortName</sml:value>
+            </sml:Term>
+          </sml:identifier>
+          <sml:identifier name="Long Name">
+            <sml:Term definition="urn:ogc:def:identifier:OGC:longName">
+              <sml:value>longName</sml:value>
+            </sml:Term>
+          </sml:identifier>
+        </sml:IdentifierList>
+      </sml:identification>
+      
+      <sml:classification>
+        <sml:ClassifierList>
+          <!-- MANDATORY -->
+          <sml:classifier name="PlatformType">
+            <sml:Term definition="urn:ioos:def:classifier:NOAA:platformType">
+              <sml:codeSpace xlink:href="VOCAB_DEF"/>
+              <sml:value>VOCAB_TERM</sml:value>
+            </sml:Term>
+          </sml:classifier>
+          <!-- Emilio: Operator classifier is NOT mandatory -->
+          <sml:classifier name="Operator">
+            <sml:Term definition="urn:ioos:def:classifier:NOAA:operator">
+              <sml:codeSpace xlink:href="VOCAB_DEF"/>
+              <sml:value>VOCAB_TERM</sml:value>
+            </sml:Term>
+          </sml:classifier>
+          <sml:classifier name="Sector">
+            <sml:Term definition="urn:ioos:def:classifier:NOAA:sector">
+              <sml:codeSpace xlink:href="VOCAB_DEF"/>
+              <sml:value>VOCAB_TERM</sml:value>
+            </sml:Term>
+          </sml:classifier>
+          <!-- 
+                One of more ParentNetwork elements are allowed.  
+                At least one MUST reference an IOOS codespace and list the RA Acronym
+          -->
+          <sml:classifier name="ParentNetwork">
+            <!-- Emilio: Can we use IOOS instead of NOAA? Or nothing at all? -->
+            <sml:Term definition="urn:ioos:def:classifier:NOAA:parentNetwork">
+              <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/ioos_ra_descriptions"/>
+              <sml:value>NANOOS</sml:value>
+            </sml:Term>
+          </sml:classifier>
+          <sml:classifier name="ParentNetwork">
+            <sml:Term definition="urn:ioos:def:classifier:NOAA:parentNetwork">
+              <sml:codeSpace xlink:href="VOCAB_DEF"/>
+              <sml:value>VOCAB_TERM</sml:value>
+            </sml:Term>
+          </sml:classifier>
+          <!-- EMILIO: I DON'T THINK WE DEFINED THIS CLASSIFIER ... -->
+          <sml:classifier name="Publisher">
+            <sml:Term definition="urn:ioos:def:classifier:NOAA:publisher">
+              <sml:codeSpace xlink:href="IOOS_VOCAB_DEF_FOR_RA_ACRONYMS"/>
+              <sml:value>RA_ACRONYM</sml:value>
+            </sml:Term>
+          </sml:classifier>
+          
+          <!-- RECOMMENDED -->
+          <!-- One of more NetworkOfferings -->
+          <sml:classifier name="NetworkOffering">
+            <sml:Term definition="urn:ioos:def:classifier:NOAA:networkOffering">
+              <sml:codeSpace xlink:href="LINKS_BACK_TO_GETCAP_OFFERINGS"/>
+              <sml:value>A_NETWORK_OFFERING_THIS_BELONGS_TO</sml:value>
+            </sml:Term>
+          </sml:classifier>
+          <sml:classifier name="NetworkOffering">
+            <sml:Term definition="urn:ioos:def:classifier:NOAA:networkOffering">
+              <sml:codeSpace xlink:href="LINKS_BACK_TO_GETCAP_OFFERINGS"/>
+              <sml:value>ANOTHER_NETWORK_OFFERING_THIS_BELONGS_TO</sml:value>
+            </sml:Term>
+          </sml:classifier>
+          
+          <!-- OPTIONAL -->
+          <!-- Emilio: I thought we were going to be silent on "Owner", b/c it's tricky -->
+          <sml:classifier name="Owner">
+            <sml:Term definition="urn:ioos:def:classifier:NOAA:owner">
+              <sml:codeSpace xlink:href="VOCAB_DEF"/>
+              <sml:value>VOCAB_TERM</sml:value>
+            </sml:Term>
+          </sml:classifier>
+        </sml:ClassifierList>
+      </sml:classification>
+      
+      <!-- CONTACT -->
+      <!-- OPERATOR -->
+      <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:operator">
+        <sml:ResponsibleParty>
+          <sml:organizationName>OPERATOR ORGANIZATION</sml:organizationName>
+          <sml:contactInfo>
+            <sml:address>
+              <sml:country>COUNTRY [USA, COUNTRY NAME, OR "NON-USA"]</sml:country>
+              <sml:electronicMailAddress>EMAIL</sml:electronicMailAddress>
+            </sml:address>
+          </sml:contactInfo>
+        </sml:ResponsibleParty>
+      </sml:contact>
+      <!-- PUBLISHER -->
+      <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:publisher">
+        <sml:ResponsibleParty>
+          <sml:organizationName>NANOOS</sml:organizationName>
+          <sml:contactInfo>
+            <sml:address>
+              <sml:country>USA</sml:country>
+              <sml:electronicMailAddress>EMAIL</sml:electronicMailAddress>
+            </sml:address>
+            <sml:onlineResource xlink:href="http://nanoos.org" />
+          </sml:contactInfo>
+        </sml:ResponsibleParty>
+      </sml:contact>
+      
+        <!-- DOCUMENTATION -->
+      <sml:documentation xlink:arcrole="qualityControlDocument">
+        <sml:Document>
+          <gml:description>Handbook of Automated Data Quality Control Checks and Procedures, National Data Buoy Center, August 2009</gml:description>
+          <sml:format>pdf</sml:format>
+          <sml:onlineResource xlink:href="http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf"/>
+        </sml:Document>
+      </sml:documentation>
+      
+      <!-- HISTORY [WE DIDN'T DISCUSS THIS; MAKE DECISION WHETHER TO INCLUDE LATER AFTER DISCUSSING WITH GROUP; OPTIONAL-->
+      <sml:history>
+        <sml:EventList>
+          <sml:member name="deployment_start">
+            <sml:Event>
+              <sml:date>2010-01-12</sml:date>
+              <gml:description>Deployment start event</gml:description>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:station:wmo:44029:20100112"/>
+            </sml:Event>
+          </sml:member>
+          <sml:member name="deployment_stop">
+            <sml:Event>
+              <sml:date>2011-02-06</sml:date>
+              <gml:description>Deployment stop event</gml:description>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:station:wmo:44029:20100112"/>
+            </sml:Event>
+          </sml:member>
+          <sml:member name="deployment_start">
+            <sml:Event>
+              <sml:date>2011-02-07</sml:date>
+              <gml:description>Deployment start event</gml:description>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:station:wmo:44029:20110207"/>
+            </sml:Event>
+          </sml:member>
+        </sml:EventList>
+      </sml:history>
+      
+      <!-- LOCATION -->
+      <sml:location>
+        <gml:Point gml:id="STATION-LOCATION-44029" srsName="urn:ogc:crs:epsg::4326">
+          <gml:coordinates>42.52 -70.57</gml:coordinates>
+        </gml:Point>
+      </sml:location>
+
+      <!-- COMPONENTS [sml:System/sml:documentation is OPTIONAL, AT LEAST INITIALLY; 
+        PROVIDE GUIDANCE AND WHAT TO USE THERE (EG, ANOTHER DESCRIBE SENSOR, METADATA DOC, ETC] -->
+      <sml:components>
+        <sml:ComponentList>
+          <sml:component name="Sensor watertemp1">
+            <sml:System gml:id="sensor-watertemp1">
+              <gml:description/>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::watertemp1"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::watertemp1"/>
+            </sml:System>
+          </sml:component>
+          <sml:component name="Sensor anemometer1">
+            <sml:System gml:id="sensor-anemometer1">
+              <gml:description/>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::anemometer1"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::anemometer1"/>
+            </sml:System>
+          </sml:component>
+          <sml:component name="Sensor ct1">
+            <sml:System gml:id="sensor-ct1">
+              <gml:description/>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::ct1"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::ct1"/>
+            </sml:System>
+          </sml:component>
+          <sml:component name="Sensor summarywav1">
+            <sml:System gml:id="sensor-summarywav1">
+              <gml:description/>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::summarywav1"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::summarywav1"/>
+            </sml:System>
+          </sml:component>
+          <sml:component name="Sensor baro1">
+            <sml:System gml:id="sensor-baro1">
+              <gml:description/>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::baro1"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::baro1"/>
+            </sml:System>
+          </sml:component>
+          <sml:component name="Sensor airtemp1">
+            <sml:System gml:id="sensor-airtemp1">
+              <gml:description/>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::airtemp1"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::airtemp1"/>
+            </sml:System>
+          </sml:component>
+        </sml:ComponentList>
+      </sml:components>
+    </sml:System>
+  </sml:member>
+</sml:SensorML>
