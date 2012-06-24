@@ -6,9 +6,10 @@
 == urn conventions, identifiers ==
 
 We've made several changes and updates to the previously published (in draft form) IOOS naming conventions for station and sensor id urn's. That documentation will be updated, but for now, here are pointers to the main, relevant ioostech Issues:
-  * [http://code.google.com/p/ioostech/issues/detail?id=3 Issue 3]
-  * [http://code.google.com/p/ioostech/issues/detail?id=5 Issue 5]
-  * [http://code.google.com/p/ioostech/issues/detail?id=24 Issue 24]
+  * [http://code.google.com/p/ioostech/issues/detail?id=3 Issue 3: URN vs URL]
+  * [http://code.google.com/p/ioostech/issues/detail?id=5 Issue 5: URN syntax for platform/stations identifiers]
+  * [http://code.google.com/p/ioostech/issues/detail?id=24 Issue 24: Change "NOAA" in def:identifier, def:classifier urn's to "IOOS"]
+  * [https://groups.google.com/d/topic/ioostech_dev/Qj6hBy52FPU/discussion ioostech_dev discussion: Standardizing sensor asset urn component text?]
 
 Related discussions on the ioostech_dev list and on other Issues are mentioned and linked from there.
 
