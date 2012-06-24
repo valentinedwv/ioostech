@@ -1,6 +1,20 @@
 #summary Emilio's main scratch pad of topics and ideas
 #labels NANOOS,SOS
 
+= Notes and To-Do's for SOS Reference Implementation, Summer 2012 =
+
+== urn conventions, identifiers ==
+
+We've made several changes and updates to the previously published (in draft form) IOOS naming conventions for station and sensor id urn's. That documentation will be updated, but for now, here are pointers to the main, relevant ioostech Issues:
+  * [http://code.google.com/p/ioostech/issues/detail?id=3 Issue 3]
+  * [http://code.google.com/p/ioostech/issues/detail?id=5 Issue 5]
+  * [http://code.google.com/p/ioostech/issues/detail?id=24 Issue 24]
+
+Related discussions on the ioostech_dev list and on other Issues are mentioned and linked from there.
+
+----
+*OLD. Will update/remove eventually*
+
 = Introduction =
 
 This is my main public brain dump, to help me guide the crafting of more organized wiki contents (including other pages) addressing a range of issues relevant to the IOOS DMAC Reference Implementation focus. Most of this material will be based on recent or ongoing discussions, and in challenges and solutions that have come up in the development of the [NANOOSNVSPythonSOS new NANOOS "NVS" SOS service].
