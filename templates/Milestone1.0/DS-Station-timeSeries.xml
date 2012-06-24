@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MADE GML NAMESPACE VERSION EXPLICIT, but it created errors!! -->
 <sml:SensorML 
   xmlns:sml="http://www.opengis.net/sensorML/1.0.1" 
   xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -13,18 +15,18 @@
       <sml:identification>
         <sml:IdentifierList>
           <!-- MANDATORY -->
-          <sml:identifier name="StationId">
-            <sml:Term definition="urn:ioos:def:identifier:NOAA:stationID">
+          <sml:identifier name="stationID">
+            <sml:Term definition="urn:ioos:def:identifier:IOOS:stationID">
               <sml:codeSpace xlink:href="LINK"/>
               <sml:value/>
             </sml:Term>
           </sml:identifier>
-          <sml:identifier name="Short Name">
+          <sml:identifier name="ShortName">
             <sml:Term definition="urn:ogc:def:identifier:OGC:shortName">
               <sml:value>shortName</sml:value>
             </sml:Term>
           </sml:identifier>
-          <sml:identifier name="Long Name">
+          <sml:identifier name="LongName">
             <sml:Term definition="urn:ogc:def:identifier:OGC:longName">
               <sml:value>longName</sml:value>
             </sml:Term>
@@ -36,20 +38,20 @@
         <sml:ClassifierList>
           <!-- MANDATORY -->
           <sml:classifier name="PlatformType">
-            <sml:Term definition="urn:ioos:def:classifier:NOAA:platformType">
+            <sml:Term definition="urn:ioos:def:classifier:IOOS:platformType">
               <sml:codeSpace xlink:href="VOCAB_DEF"/>
               <sml:value>VOCAB_TERM</sml:value>
             </sml:Term>
           </sml:classifier>
           <!-- Emilio: Operator classifier is NOT mandatory -->
           <sml:classifier name="Operator">
-            <sml:Term definition="urn:ioos:def:classifier:NOAA:operator">
+            <sml:Term definition="urn:ioos:def:classifier:IOOS:operator">
               <sml:codeSpace xlink:href="VOCAB_DEF"/>
               <sml:value>VOCAB_TERM</sml:value>
             </sml:Term>
           </sml:classifier>
           <sml:classifier name="Sector">
-            <sml:Term definition="urn:ioos:def:classifier:NOAA:sector">
+            <sml:Term definition="urn:ioos:def:classifier:IOOS:sector">
               <sml:codeSpace xlink:href="VOCAB_DEF"/>
               <sml:value>VOCAB_TERM</sml:value>
             </sml:Term>
@@ -59,45 +61,39 @@
                 At least one MUST reference an IOOS codespace and list the RA Acronym
           -->
           <sml:classifier name="ParentNetwork">
-            <!-- Emilio: Can we use IOOS instead of NOAA? Or nothing at all? -->
-            <sml:Term definition="urn:ioos:def:classifier:NOAA:parentNetwork">
+            <!-- Emilio: Can we use IOOS instead of IOOS? Or nothing at all? -->
+            <sml:Term definition="urn:ioos:def:classifier:IOOS:parentNetwork">
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/ioos_ra_descriptions"/>
               <sml:value>NANOOS</sml:value>
             </sml:Term>
           </sml:classifier>
           <sml:classifier name="ParentNetwork">
-            <sml:Term definition="urn:ioos:def:classifier:NOAA:parentNetwork">
+            <sml:Term definition="urn:ioos:def:classifier:IOOS:parentNetwork">
               <sml:codeSpace xlink:href="VOCAB_DEF"/>
               <sml:value>VOCAB_TERM</sml:value>
             </sml:Term>
           </sml:classifier>
           <!-- EMILIO: I DON'T THINK WE DEFINED THIS CLASSIFIER ... -->
           <sml:classifier name="Publisher">
-            <sml:Term definition="urn:ioos:def:classifier:NOAA:publisher">
+            <sml:Term definition="urn:ioos:def:classifier:IOOS:publisher">
               <sml:codeSpace xlink:href="IOOS_VOCAB_DEF_FOR_RA_ACRONYMS"/>
               <sml:value>RA_ACRONYM</sml:value>
             </sml:Term>
           </sml:classifier>
           
-          <!-- RECOMMENDED -->
-          <!-- One of more NetworkOfferings -->
+          <!-- MANDATORY IF NETWORK OFFERINGS ARE AVAILABLE -->
+          <!-- One of more NetworkOfferings may be listed -->
           <sml:classifier name="NetworkOffering">
-            <sml:Term definition="urn:ioos:def:classifier:NOAA:networkOffering">
+            <sml:Term definition="urn:ioos:def:classifier:IOOS:networkOffering">
               <sml:codeSpace xlink:href="LINKS_BACK_TO_GETCAP_OFFERINGS"/>
               <sml:value>A_NETWORK_OFFERING_THIS_BELONGS_TO</sml:value>
-            </sml:Term>
-          </sml:classifier>
-          <sml:classifier name="NetworkOffering">
-            <sml:Term definition="urn:ioos:def:classifier:NOAA:networkOffering">
-              <sml:codeSpace xlink:href="LINKS_BACK_TO_GETCAP_OFFERINGS"/>
-              <sml:value>ANOTHER_NETWORK_OFFERING_THIS_BELONGS_TO</sml:value>
             </sml:Term>
           </sml:classifier>
           
           <!-- OPTIONAL -->
           <!-- Emilio: I thought we were going to be silent on "Owner", b/c it's tricky -->
           <sml:classifier name="Owner">
-            <sml:Term definition="urn:ioos:def:classifier:NOAA:owner">
+            <sml:Term definition="urn:ioos:def:classifier:IOOS:owner">
               <sml:codeSpace xlink:href="VOCAB_DEF"/>
               <sml:value>VOCAB_TERM</sml:value>
             </sml:Term>
@@ -208,7 +204,7 @@
             </sml:System>
           </sml:component>
           <sml:component name="Sensor baro1">
-            <sml:System gml:id="sensor-baro1">
+            <sml:System>
               <gml:description/>
               <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::baro1"/>
               <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::baro1"/>
