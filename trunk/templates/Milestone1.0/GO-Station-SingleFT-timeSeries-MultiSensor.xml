@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ==================================================
-** Compare this with ObservationSeries.xml from Mike Bott's SWE Common 2 examples
-** namespace specifications:
+** COMMENTS on namespace specifications:
  - gml: Why isn't it declared with a specific version?
    According to Oxygen validator, it should be 3.1.0, I think
  - swe: Ditto? I've changed it to 1.0.1 
@@ -9,8 +8,8 @@
      xsi:schemaLocation="http://www.opengis.net/swe/1.0.1
         htp://schemas.opengis.net/sweCommon/1.0.1/swe.xsd"
     Would that be relevant and/or legal here? Does it address the problem
-    with SWE Common not seeming well annotated or "validatable"?
-    ** Ask on ioostech_dev?!
+    with SWE Common not seeming well annotated or validatable?
+    Doesn't look like it.
 ================================================== -->
 <om:ObservationCollection 
   xmlns:om="http://www.opengis.net/om/1.0"
@@ -37,11 +36,16 @@
         *******             START OF "METADATA" BLOCK                 *******
         =====================================================================
         ===================================================================== -->
-      <!-- COMMENTS: What convention for procedure and name should be used when
-        more than one offering is requested??
-        -->
-      <gml:description>Observations at point station urn:ioos:station:wmo:41001, 150 NM East of Cape HATTERAS</gml:description>
-      <!-- USE A DIFFERENT CONVENTION FOR gml:name? -->
+      <!-- =========================================================== 
+        description and name 
+        COMMENTS:
+        - We should come up with a guideline for the content of gml: description element
+        - Is this gml:name convention a good way to go? It's what NDBC is currently doing.
+        - What convention for procedure and name should be used when more than one 
+          offering is requested?
+        ============================================================== -->
+      <gml:description>Observations at point station urn:ioos:station:wmo:41001, 
+        150 NM East of Cape HATTERAS</gml:description>
       <gml:name>urn:ioos:station:wmo:41001</gml:name>
 
       <!-- ===========================================================
@@ -59,9 +63,9 @@
       <!-- ===========================================================
         procedure
         Same as the offering request (station or network "asset type").
-        COMMENTS: If more than one station offering is requested, in principle
-        more than one procedure should be returned. But it looks like it's
-        illegal to have more than one procedure element!! 
+        COMMENTS/ISSUE: If more than one station offering is requested, in
+        principle more than one procedure should be returned. But it 
+        looks like it's illegal to have more than one procedure element! 
         =========================================================== -->
       <om:procedure xlink:href="urn:ioos:station:wmo:41001"/>
       
@@ -101,7 +105,7 @@
           <!-- Geographic (lat lon) Bounding Box -->
           <!-- COMMENTS: Moved gml:boundedBy block to here (inside om:featureOfInterest 
           rather than outside), so that om:featureOfInterest contains all spatial and
-          feature=type response metadata. Is this a problem? -->
+          feature-type response metadata. Is this a problem? -->
           <gml:boundedBy>
             <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:lowerCorner>34.7 -72.73</gml:lowerCorner>
@@ -113,9 +117,10 @@
           <!-- COMMENTS: 
           - gml:location is annotated as "Deprecated in GML 3.1.0". Is this a problem?
             I haven't found a clear alternative.
-          - The use of gml:location/gml:MultiPoint/gml:pointMembers is proposed as a
+          - I propose the use of gml:location/gml:MultiPoint/gml:pointMembers as a
             generalized way to also handle Network-offering responses that include
-            multiple points (stations). This is analogous to our use of 
+            multiple points (stations), as well as requests for multiple station offerings. 
+            This is analogous to our use of 
             om:observedProperty/swe:CompositePhenomenon even for single-property responses.
           - Always use epsg 4326 -->
           <gml:location>
@@ -137,8 +142,11 @@
 
 
       <!-- ===========================================================
-           om:result block
-           =========================================================== -->
+        om:result block
+        COMMENTS: The om:result block below is not ready for comments yet, 
+        and is currently not fully consistent with the "metadata" block above. 
+        It will be soon.
+        =========================================================== -->
       <om:result>
         <swe:DataStream>
           <!-- ===========================================================
@@ -175,6 +183,9 @@
             </swe:Time>
           </swe:field>
           <swe:DataChoice>
+            <!-- ===========================================================
+              SENSOR_1 custom swe:item field definitions
+              =========================================================== -->
             <swe:item name="SENSOR_1">
               <swe:DataRecord>
                 <gml:name>First Sensor (SENSOR_1)</gml:name>
@@ -196,6 +207,9 @@
                 </swe:field>
               </swe:DataRecord>
             </swe:item>
+            <!-- ===========================================================
+              SENSOR_2 custom swe:item field definitions
+              =========================================================== -->
             <swe:item name="SENSOR_2">
               <swe:DataRecord>
                 <gml:name>Second Sensor (SENSOR_2)</gml:name>
@@ -239,13 +253,24 @@
               </swe:DataRecord>
             </swe:item>
           </swe:DataChoice>
+
+          <!-- ===========================================================
+              SWE encoding and data values
+              swe:encoding *must* be always specified exactly as described below,
+              to avoid the need to have fully general parsers that interpret
+              swe:TextEncoding. That is, parsers may hard-code this particular
+              swe:TextEncoding specification.
+              =========================================================== -->
           <swe:encoding>
-            <swe:TextEncoding blockSeparator="\n" tokenSeparator=","/>
+            <swe:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="\n"/>
           </swe:encoding>
           <swe:values> 
-            2009-05-23T00:00:00Z,SENSOR_1,15.4 2009-05-23T01:00:00Z,SENSOR_1,15.8
-            2009-05-23T02:00:00Z,SENSOR_1,15.6 2009-05-23T00:00:00Z,SENSOR_2,300,56.7
-            2009-05-23T01:00:00Z,SENSOR_2,310,52.6 2009-05-23T02:00:00Z,SENSOR_2,320,62.5
+            2009-05-23T00:00:00Z,SENSOR_1,15.4
+            2009-05-23T01:00:00Z,SENSOR_1,15.8
+            2009-05-23T02:00:00Z,SENSOR_1,15.6
+            2009-05-23T00:00:00Z,SENSOR_2,300,56.7
+            2009-05-23T01:00:00Z,SENSOR_2,310,52.6
+            2009-05-23T02:00:00Z,SENSOR_2,320,62.5
           </swe:values>
         </swe:DataStream>
       </om:result>
