@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ==================================================
 ** COMMENTS on namespace specifications:
- - gml: Why isn't it declared with a specific version?
-   According to Oxygen validator, it should be 3.1.0, I think
- - swe: Ditto? I've changed it to 1.0.1 
- - xsi:schemaLocation: An example I've seen elsewhere uses:
-     xsi:schemaLocation="http://www.opengis.net/swe/1.0.1
-        htp://schemas.opengis.net/sweCommon/1.0.1/swe.xsd"
-    Would that be relevant and/or legal here? Does it address the problem
-    with SWE Common not seeming well annotated or validatable?
-    Doesn't look like it.
+ - gml: using an unversioned namespace has been confirmed to be ok;
+   the om 1.0 schema defines GML 3.1.1 as the version used
 ================================================== -->
 <om:ObservationCollection 
   xmlns:om="http://www.opengis.net/om/1.0"
@@ -93,7 +86,7 @@
 
       <!-- ===========================================================
         featureOfInterest  
-        Includes all spatial and feature-type response metadata.
+        Encompasses *all* spatial and feature-type response metadata.
         ============================================================== -->
       <om:featureOfInterest>
         <gml:FeatureCollection>
@@ -103,9 +96,6 @@
           </gml:metaDataProperty>
 
           <!-- Geographic (lat lon) Bounding Box -->
-          <!-- COMMENTS: Moved gml:boundedBy block to here (inside om:featureOfInterest 
-          rather than outside), so that om:featureOfInterest contains all spatial and
-          feature-type response metadata. Is this a problem? -->
           <gml:boundedBy>
             <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:lowerCorner>34.7 -72.73</gml:lowerCorner>
@@ -115,8 +105,8 @@
 
           <!-- Feature geographic (lat lon) location -->
           <!-- COMMENTS: 
-          - gml:location is annotated as "Deprecated in GML 3.1.0". Is this a problem?
-            I haven't found a clear alternative.
+          - gml:location is annotated as "Deprecated in GML 3.1.0". Still, we agreed
+            is use is appropriate for now, and better than the alternatives.
           - I propose the use of gml:location/gml:MultiPoint/gml:pointMembers as a
             generalized way to also handle Network-offering responses that include
             multiple points (stations), as well as requests for multiple station offerings. 
@@ -127,6 +117,7 @@
             <gml:MultiPoint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pointMembers>
                 <gml:Point>
+                  <gml:name>urn:ioos:station:wmo:41001</gml:name>
                   <gml:pos>34.7 -72.73</gml:pos>
                 </gml:Point>
               </gml:pointMembers>
@@ -182,72 +173,63 @@
               <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
             </swe:Time>
           </swe:field>
+          
           <swe:DataChoice>
             <!-- ===========================================================
-              SENSOR_1 custom swe:item field definitions
+              custom swe:item field definitions
+              If available, can use a shorthand version for sensor brand and 
+              description in swe:item name and gml:name
               =========================================================== -->
-            <swe:item name="SENSOR_1">
+            <swe:item name="sensor1">
               <swe:DataRecord>
-                <gml:name>First Sensor (SENSOR_1)</gml:name>
-                <!-- ===========================================================
-                     (Emilio, 5/18/12) For single-station responses, it seems redundant,
-                     verbose and unnecessary to have a Vector location swe:field in
-                     addition to <om:featureOfInterest> already listed above
-                     =========================================================== -->
+                <!-- COMMENT: Use IOOS sensor ID urn in gml:name ?
+                     IS THERE STILL A NEED FOR A sensor_id FIELD? -->
+                <gml:name>sensor1</gml:name>
                 <swe:field name="alt">
                   <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude">
                     <swe:uom code="m"/>
-                    <swe:value>10</swe:value>
+                    <swe:value>5</swe:value>
                   </swe:Quantity>
                 </swe:field>
                 <swe:field name="temp">
                   <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
-                    <swe:uom code="Cel"/>
+                    <swe:uom code="Celsius"/>
+                  </swe:Quantity>
+                </swe:field>
+                <swe:field name="windspeed">
+                  <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_speed">
+                    <swe:uom code="m/s"/>
+                  </swe:Quantity>
+                </swe:field>
+                <swe:field name="winddirection">
+                  <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_direction">
+                    <swe:uom code="degrees(from)"/>
                   </swe:Quantity>
                 </swe:field>
               </swe:DataRecord>
             </swe:item>
             <!-- ===========================================================
-              SENSOR_2 custom swe:item field definitions
+              swe:item field definitions
               =========================================================== -->
-            <swe:item name="SENSOR_2">
+            <swe:item name="watersensors">
               <swe:DataRecord>
-                <gml:name>Second Sensor (SENSOR_2)</gml:name>
-                <swe:field name="location">
-                  <swe:Vector
-                    definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
-                    referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4979">
-                    <swe:coordinate name="lat">
-                      <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude"
-                        axisID="Lat">
-                        <swe:uom code="deg"/>
-                        <swe:value>32.5</swe:value>
-                      </swe:Quantity>
-                    </swe:coordinate>
-                    <swe:coordinate name="lon">
-                      <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude"
-                        axisID="Long">
-                        <swe:uom code="deg"/>
-                        <swe:value>-78.5</swe:value>
-                      </swe:Quantity>
-                    </swe:coordinate>
-                    <swe:coordinate name="alt">
-                      <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude"
-                        axisID="h">
-                        <swe:uom code="m"/>
-                        <swe:value>-4</swe:value>
-                      </swe:Quantity>
-                    </swe:coordinate>
-                  </swe:Vector>
+                <!-- COMMENT: Use IOOS sensor ID urn in gml:name ?
+                     IS THERE STILL A NEED FOR A sensor_id FIELD? -->
+                <gml:name>Water sensors</gml:name>
+                <swe:field name="alt">
+                  <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude">
+                    <swe:uom code="m"/>
+                    <swe:value>-2</swe:value>
+                  </swe:Quantity>
                 </swe:field>
-                <swe:field name="chlorophyll">
-                  <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/chlorophyll">
-                    <swe:uom code="Cel"/>
+                <swe:field name="watertemp">
+                  <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
+                    <swe:uom code="Celsius"/>
                   </swe:Quantity>
                 </swe:field>
                 <swe:field name="dissolved_oxygen">
                   <swe:Quantity definition="http://mmisw.org/ont/ioos/parameter/dissolved_oxygen">
-                    <swe:uom code="hPa"/>
+                    <swe:uom code="mg/L"/>
                   </swe:Quantity>
                 </swe:field>
               </swe:DataRecord>
@@ -265,12 +247,12 @@
             <swe:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="\n"/>
           </swe:encoding>
           <swe:values> 
-            2009-05-23T00:00:00Z,SENSOR_1,15.4
-            2009-05-23T01:00:00Z,SENSOR_1,15.8
-            2009-05-23T02:00:00Z,SENSOR_1,15.6
-            2009-05-23T00:00:00Z,SENSOR_2,300,56.7
-            2009-05-23T01:00:00Z,SENSOR_2,310,52.6
-            2009-05-23T02:00:00Z,SENSOR_2,320,62.5
+            2009-05-23T00:00:00Z,sensor1,15.4,2.0,280
+            2009-05-23T01:00:00Z,sensor1,15.8,1.8,121
+            2009-05-23T02:00:00Z,sensor1,15.6,1.0,1.42
+            2009-05-23T00:00:00Z,watersensors,5.6,8.0
+            2009-05-23T01:00:00Z,watersensors,5.8,8.2
+            2009-05-23T02:00:00Z,watersensors,5.7,8.5
           </swe:values>
         </swe:DataStream>
       </om:result>
