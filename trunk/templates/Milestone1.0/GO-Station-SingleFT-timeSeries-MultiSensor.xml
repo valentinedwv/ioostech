@@ -13,6 +13,12 @@
   xsi:schemaLocation="http://www.opengis.net/om/1.0 
     http://schemas.opengis.net/om/1.0.0/observation.xsd">
 
+  <!-- DISCLAIMER -->
+  <gml:metaDataProperty xlink:title="disclaimer">
+    <gml:GenericMetaData>
+      <gml:description>DISCLAIMER</gml:description>
+    </gml:GenericMetaData>
+  </gml:metaDataProperty>
   <!-- ===========================================================
     - For a station offering, the response will return one CF feature type,
       corresponding to one om:member/om:Observation block.
@@ -183,7 +189,7 @@
             <swe:item name="sensor1">
               <swe:DataRecord>
                 <!-- COMMENT: Use IOOS sensor ID urn in gml:name ?
-                     IS THERE STILL A NEED FOR A sensor_id FIELD? -->
+                     IS THERE STILL A NEED FOR A sensor_id swe:field element? -->
                 <gml:name>sensor1</gml:name>
                 <swe:field name="alt">
                   <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude">
