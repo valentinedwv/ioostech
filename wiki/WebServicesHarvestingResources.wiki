@@ -29,3 +29,7 @@ This project can be used by just downloading the pre-built jar from Github. Goto
 
 = SOS Observation Injecter =
 https://github.com/axiomalaska/sos-injection
+
+The SOS Observation Injector is used to enter sensor observations into a SOS. This code is an adaptor from the model of how most groups store their data (Source/Station/Sensor) to allow observations to be placed in an SOS. The model I am referring to is one where there is a Source that contains many Stations. An example source would be NOAA. Each of those Stations contain one or more Sensors. And each of those Sensors reads one or more Phenomena. This code allows one to inject data into a SOS by implementing some interfaces that are geared towards the common Source/Station/Sensor model. 
+
+Goto [https://github.com/axiomalaska/sos-injection Github project] to learn more.
