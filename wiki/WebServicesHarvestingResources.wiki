@@ -6,14 +6,14 @@
 There are numerous web services in existence that can be harvested into IOOS services.  For example, the IOOS Data Portal routinely harvests from several federal or non federal web services that are distinct from the RA web services.  Similarly, the IOOS profile of the 52 North SOS server will harvest from select web services out of the box.  The list below is a collection of web services that are of interest or currently being harvested into one or more IOOS services (i.e. a regional SOS or the data portal).  The hope is that the IOOS community can begin to share code for common activities.
 
 || *Service* || *Info URL* || *Service URL* || *Developer* || *Examples or code repo* ||
-|| Hydrometeorological Design Studies Center (HADS)  || http://dipper.nws.noaa.gov/hdsc/pfds/ || http://amazon.nws.noaa.gov/nexhads2/servlet/DecodedData || AOOS/Axiom || Done  ||
-|| NOAA Center for Operational Oceanographic Products and Services (CO-OPS)  || http://tidesonline.nos.noaa.gov/ || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/ || AOOS/Axiom || Done ||
-|| NOAA National Data Buoy Center (NDBC)  || http://www.ndbc.noaa.gov/  || http://sdf.ndbc.noaa.gov/sos || AOOS/Axiom || Done ||
-|| NOAA Weather  || http://www.nws.noaa.gov/ || http://www.nws.noaa.gov/data/obhistory/ || AOOS/Axiom || Done  ||
-|| Remote Automatic Weather Stations (RAWS)  || http://www.raws.dri.edu/ || http://www.raws.dri.edu/cgi-bin/wea_list2.pl || AOOS/Axiom || Done ||
-|| Snow telemetry (SNOTEL)  || http://www.wcc.nrcs.usda.gov/ || http://www.wcc.nrcs.usda.gov/nwcc/site || AOOS/Axiom || Done ||
+|| Hydrometeorological Design Studies Center (HADS)  || http://dipper.nws.noaa.gov/hdsc/pfds/ || http://amazon.nws.noaa.gov/nexhads2/servlet/DecodedData || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors  ||
+|| NOAA Center for Operational Oceanographic Products and Services (CO-OPS)  || http://tidesonline.nos.noaa.gov/ || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/ || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors ||
+|| NOAA National Data Buoy Center (NDBC)  || http://www.ndbc.noaa.gov/  || http://sdf.ndbc.noaa.gov/sos || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors ||
+|| NOAA Weather  || http://www.nws.noaa.gov/ || http://www.nws.noaa.gov/data/obhistory/ || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors  ||
+|| Remote Automatic Weather Stations (RAWS)  || http://www.raws.dri.edu/ || http://www.raws.dri.edu/cgi-bin/wea_list2.pl || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors ||
+|| Snow telemetry (SNOTEL)  || http://www.wcc.nrcs.usda.gov/ || http://www.wcc.nrcs.usda.gov/nwcc/site || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors ||
 || US Climate Research Network  || http://www.ncdc.noaa.gov/crn/ || http://www.ncdc.noaa.gov/crn/station.htm || AOOS/Axiom || pushed off ||
-|| U.S. Geological Survey water (USGS Water/NWIS)  || http://waterdata.usgs.gov/ak/nwis/uv || http://waterservices.usgs.gov/nwis/iv || AOOS/Axiom || Done ||
+|| U.S. Geological Survey water (USGS Water/NWIS)  || http://waterdata.usgs.gov/ak/nwis/uv || http://waterservices.usgs.gov/nwis/iv || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors ||
 || NERRS ||  || e.g. http://cdmo.baruch.sc.edu/QueryPages/realtime.cfm?Station_Code=hudfsmet || MARACOOS/ASA ||  ||
 || HRECOS || http://www.hrecos.org/joomla/ ||  || MARACOOS/ASA ||  ||
 || Drifters (NEFSC only) || http://www.nefsc.noaa.gov/drifter/  ||  || MARACOOS/ASA ||  ||
@@ -21,27 +21,11 @@ There are numerous web services in existence that can be harvested into IOOS ser
 || HFRadar ground stations || http://maracoos.org/hfradar ||  ||  ||
 
 = Source SOS Injectors =
-This project contains public observation sources that are used to inject observation into a users SOS. This project uses the base SOS Observation Inject project to preform its work. The current sources that it pulls observation from are: HADS, NDBC, NOAA NOS CO-OPS, NOAA Weather, RAWS, SnoTel, and USGS Water. 
+https://github.com/axiomalaska/source-sos-injectors
 
-Currently working on placing the code in GitHub. 
+This project contains common public observation sources that are used to inject observation into a users SOS. This project is base off the [https://github.com/axiomalaska/sos-injection SOS Observation Injecter project] (below) to inject the observation into the SOS. The current sources that it pulls observation from are: HADS, NDBC, NOAA NOS CO-OPS, NOAA Weather, RAWS, SnoTel, and USGS Water. 
+
+This project can be used by just downloading the pre-built jar from Github. Goto [https://github.com/axiomalaska/source-sos-injectors Github project] to learn more. 
 
 = SOS Observation Injecter =
 https://github.com/axiomalaska/sos-injection
-
-The SOS Observation Injector is used to enter sensor observations into a SOS. To use the code one must create an instance of the StationUpdater with the URL of your SOS. Then call the method ‘update’ on this instance passing in Station objects.
-
-The Station class represents a location that has one or more sensors. In this class one has to provide: description of the station, latitude/longitude, procedure ID, feature of interest ID, feature of Interest description, and a list of phenomena. The description of the station can be anything for example one could state the name of the station and the source’s name that manages the station. The latitude and longitude must be in double format. The procedure ID is the ID for this station in the SOS. Therefore this ID must be unique and can only be one hundred or less characters. An example of an procedure ID is urn:ogc:object:feature:Sensor:11111. The feature of interest ID is an ID for the location of the station. Normally this would be the unique for each station. An example of an feature of interest ID is foi_11111. This ID also has a maximum of one hundred characters. The feature of interest description describes where the station is located for example states the station’s name and source’s name and that it is in a named bay. The list of phenomena provides information about what sensor reading this station provides.
-
-The getObservationCollection method on the Station class is used to provide sensor observations from the station. This method needs to be overridden to provide observations values for the station. The method is passed a phenomenon, startdate and enddate and needs to return a ObservationCollection. The ObservationCollection class will contain all the observation values and dates found from the station for that phenomenon between the passed in startdate and enddate.
-
-A phenomenon is one specific value type that is read from a sensor. For example for a wind sensor there would be three phenomena: Wind speed, Wind direction, and Wind Gust. For an air temperature there would only be one phenomenon: Air Temperature. A phenomenon contains the name (e.g. Air Temperature), tag (e.g urn:x-ogc:def:phenomenon:IOOS:0.0.1:air_temperature ), and units (e.g. C). Across all the stations the phenomena must be the same. For example one can not have a phenomenon from one station for air temperature with units of “C” and another with the units of “F”. Even the spelling must be the same, so for those two stations with air temperature phenomenon one can not have units of “C” and the other of “Celsius”.
-
-The ObservationCollection class is used to hold all the sensor observations that are collected. This object holds two list one for the numeric values and the other for the corresponding dates. The values and the dates are related by their position in the list. For example the first items in the lists are associated to each other then the second items …. The ObservationCollection also contains the phenomenon that these observations are associated to.
-
-== Default Source Injections ==
-  * NOAA NOS CO OPS - in progress. 
-  * RAWS - not started
-  * SnoTel - not started
-  * NDBC - not started
-  * HADS - not started
-  * USGS Water - not started
