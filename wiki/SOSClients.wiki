@@ -17,6 +17,7 @@ As a starting point we may need a survey for such stand alone components, where 
  * Web-based Thin Client: http://52north.org/communities/sensorweb/clients/Thin_SWE_Client/index.html 
    * demo: http://sensorweb.demo.52north.org/ThinSweClient2.0/Client.html
 provides map-view of sensor locations, interactive graphing, and data export capabilities, works with pre-provided SOS services, however not with services above, probably requires specific response formats (?)
+   * Another demo (via Shane): [http://sensorweb.demo.52north.org/sensorwebclient-webapp-3.0.0-rc.2/] Don't know if this is simply a newer version of the demo listed above.
 
 = Applied Science Associates =
 [https://github.com/asascience-open/EDC ASA Environmental Data Connector] - Desktop (Java) based EDC
