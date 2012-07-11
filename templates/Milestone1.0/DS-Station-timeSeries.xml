@@ -64,9 +64,9 @@
               <sml:value>NANOOS</sml:value>
             </sml:Term>
           </sml:classifier>
-          <!-- One or more ParentNetwork elements are allowed.  
+          <!-- One or more parentNetwork elements are allowed.  
             At least one MUST reference an IOOS codespace and list the RA Acronym -->
-          <sml:classifier name="ParentNetwork">
+          <sml:classifier name="parentNetwork">
             <sml:Term definition="urn:ioos:def:classifier:IOOS:parentNetwork">
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
               <sml:value>NANOOS</sml:value>
@@ -151,12 +151,16 @@
         </sml:EventList>
       </sml:history>
       
-      <!-- LOCATION -->
+      <!-- =================================================================== -->
+      <!-- LOCATION 
+      Station geographic location (lat & lon only, no z). Always use epsg 4326.
+      -->
       <sml:location>
         <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
           <gml:pos>34.7 -72.73</gml:pos>
         </gml:Point>
       </sml:location>
+      <!-- =================================================================== -->
       
       <!-- ============================================================================= 
         COMPONENTS [sml:System/sml:documentation is OPTIONAL, AT LEAST INITIALLY; 
@@ -166,6 +170,7 @@
         - Can a sensor altitude element be included in components?
         - sml:component/sml:System/sml:documentation is optional.
           To be used only if there's a relevant documentation or SensorML response.
+        - sml:System gml:id seems to be optional (not mandated by the schema)
         - What convention should be used for gml:description?
         - Use an sml:outputs block per sensor to specify the parameter and uom
       -->
