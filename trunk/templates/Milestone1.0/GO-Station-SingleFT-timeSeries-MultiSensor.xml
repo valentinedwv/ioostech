@@ -13,6 +13,9 @@
   xsi:schemaLocation="http://www.opengis.net/om/1.0 
     http://schemas.opengis.net/om/1.0.0/observation.xsd">
 
+  <!-- ==================================================================
+       TOP-LEVEL METADATA
+       =============================================================== -->
   <!-- DISCLAIMER -->
   <gml:metaDataProperty xlink:title="disclaimer">
     <gml:GenericMetaData>
@@ -20,9 +23,9 @@
     </gml:GenericMetaData>
   </gml:metaDataProperty>
   
-  <!-- OFFERING URN REQUESTED  
-       Holds the asset id urn -->
+  <!-- OFFERING URN REQUESTED. Holds asset id urn -->
   <gml:name>urn:ioos:station:wmo:41001</gml:name>
+  <!-- ================================================================== -->
   
   <!-- ===========================================================
     - For a station offering, the response will return one CF feature type,
@@ -40,6 +43,7 @@
         *******             START OF "METADATA" BLOCK                 *******
         =====================================================================
         ===================================================================== -->
+      
       <!-- =========================================================== 
         gml:name Naming pattern:  <OFFERING ASSET URN>-<FEATURE TYPE>
         gml:description: COME UP WITH USAGE GUIDELINE FOR THIS ELEMENT'S CONTENT
@@ -138,31 +142,23 @@
 
 
       <!-- ===========================================================
-        om:result block
-        COMMENTS: The om:result block below is not ready for comments yet, 
-        and is currently not fully consistent with the "metadata" block above. 
-        It will be soon.
+        om:result (THE "DATA" BLOCK)
         =========================================================== -->
       <om:result>
         <swe:DataStream>
-          <!-- ===========================================================
-               (Emilio, 5/18/12) sensor_id belongs under swe:item/swe:DataRecord below
-               Maybe it should be optional, for cases where it's not meaningful?
-               =========================================================== 
-          COMMENTS: USE CONSISTENT NAMES FOR THE "stationID" LABEL! In the swe:field
-          block below, both station_id and stationID are used. In the DescribeSensor
-          sensorML, StationID and stationID. Stick to a single form, in uniform case. 
-          -->
           <!-- ==================== PLATFORM-WIDE FIELDS ======================= -->
-          <!-- station_id (RENAMED TO stationID for consistency -->
+          <!-- stationID 
+          For consistency, "stationID" should always be spelled out this way, 
+          (and never as, say, "station_id") using the same case, for readability. -->
           <swe:field name="stationID">
             <swe:Text definition="urn:ioos:def:identifier:IOOS:stationID">
               <swe:value>urn:ioos:station:wmo:41001</swe:value>
             </swe:Text>
           </swe:field>
-          <!-- latitude and longitude -->
+          <!-- latitude and longitude, always in epsgs 4326 -->
           <swe:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
             referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <!--  COMMENT: Removed axisID attributes on swe:Quantity; not strictly needed? -->
             <swe:coordinate name="lat">
               <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude">
                 <swe:uom code="deg"/>
@@ -176,7 +172,8 @@
               </swe:Quantity>
             </swe:coordinate>
           </swe:Vector>
-          <!-- date-time -->
+          <!-- date-time 
+            COMMENT: double-check that these time definition and swe:uom xlink:href are good choices -->
           <swe:field name="time">
             <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
               <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
@@ -187,14 +184,28 @@
           <swe:DataChoice>
             <!-- ===========================================================
               custom swe:item field definitions
-              If available, can use a shorthand version for sensor brand and 
-              description in swe:item name and gml:name
+              =========================================================== -->
+
+            <!-- ===========================================================
+              sensor id urn
+              COMMENTS: 
+              - A swe:field for sensor id doesn't seem to be strictly needed
+              or particularly useful. We're already breaking up data fields by "sensor"
+              using sensor-specific swe:item blocks.
+              - swe:DataRecord/gml:name seems adequate for storing a sensor id urn.
+              The sensor id urn may use a meaningful component value (eg, "sbe16") or,
+              if not available, a simple, unique value such as "sensor1" vs "sensor2".
+              - swe:item name attribute should be globally unique within this response,
+              at the very least within each om:member/om:Observation block. Using a simple
+              constant string followed by an integer counter (sensor1, sensor2, etc)
+              may be enough.
+              - Is it a rule that the swe:item name attribute will be used as a field value 
+              in swe:values, as shown on the original template? Or is a sensor id swe:field  
+              required to accomplish this??
               =========================================================== -->
             <swe:item name="sensor1">
               <swe:DataRecord>
-                <!-- COMMENT: Use IOOS sensor ID urn in gml:name ?
-                     IS THERE STILL A NEED FOR A sensor_id swe:field element? -->
-                <gml:name>sensor1</gml:name>
+                <gml:name>urn:ioos:sensor:wmo:41001:sensor1</gml:name>
                 <swe:field name="alt">
                   <!-- COMMENT: Looks like the alt swe:Quantity can have a referenceFrame attribute:
                     <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude" 
@@ -224,13 +235,11 @@
               </swe:DataRecord>
             </swe:item>
             <!-- ===========================================================
-              swe:item field definitions
+              custom swe:item field definitions
               =========================================================== -->
-            <swe:item name="watersensors">
+            <swe:item name="sensor2">
               <swe:DataRecord>
-                <!-- COMMENT: Use IOOS sensor ID urn in gml:name ?
-                     IS THERE STILL A NEED FOR A sensor_id FIELD? -->
-                <gml:name>Water sensors</gml:name>
+                <gml:name>urn:ioos:sensor:wmo:41001:sbe28</gml:name>
                 <swe:field name="alt">
                   <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude">
                     <swe:uom code="m"/>
@@ -265,9 +274,9 @@
             2009-05-23T00:00:00Z,sensor1,15.4,2.0,280
             2009-05-23T01:00:00Z,sensor1,15.8,1.8,121
             2009-05-23T02:00:00Z,sensor1,15.6,1.0,1.42
-            2009-05-23T00:00:00Z,watersensors,5.6,8.0
-            2009-05-23T01:00:00Z,watersensors,5.8,8.2
-            2009-05-23T02:00:00Z,watersensors,5.7,8.5
+            2009-05-23T00:00:00Z,sensor2,5.6,8.0
+            2009-05-23T01:00:00Z,sensor2,5.8,8.2
+            2009-05-23T02:00:00Z,sensor2,5.7,8.5
           </swe:values>
         </swe:DataStream>
       </om:result>
