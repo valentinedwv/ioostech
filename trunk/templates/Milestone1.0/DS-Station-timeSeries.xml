@@ -13,8 +13,10 @@
       - Added gml:name. Recommend its use?
       -->
     <sml:System>
-      <gml:description>STATION DESCRIPTION</gml:description>
+      <gml:description>Observations at urn:ioos:station:wmo:41001 buoy station, 
+        150 NM East of Cape HATTERAS</gml:description>
       <gml:name>urn:ioos:station:wmo:41001</gml:name>
+      
       <!-- ===============================================================
         STATION IDENTIFIERS
         ================================================================== -->
@@ -22,18 +24,18 @@
         <sml:IdentifierList>
           <!-- The 3 identifiers listed below are MANDATORY -->
           <sml:identifier name="stationID">
-            <sml:Term definition="urn:ioos:def:identifier:IOOS:stationID">
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/stationID">
               <sml:value>urn:ioos:station:wmo:41001</sml:value>
             </sml:Term>
           </sml:identifier>
           <sml:identifier name="shortName">
-            <sml:Term definition="urn:ogc:def:identifier:OGC:shortName">
-              <sml:value>shortName</sml:value>
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/shortName">
+              <sml:value>WMO 41001 Buoy, Cape Hatteras</sml:value>
             </sml:Term>
           </sml:identifier>
           <sml:identifier name="longName">
-            <sml:Term definition="urn:ogc:def:identifier:OGC:longName">
-              <sml:value>longName</sml:value>
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/longName">
+              <sml:value>urn:ioos:station:wmo:41001 buoy station, 150 NM East of Cape HATTERAS</sml:value>
             </sml:Term>
           </sml:identifier>
         </sml:IdentifierList>
@@ -46,59 +48,73 @@
         <sml:ClassifierList>
           <!-- MANDATORY: platformType, operatorSector, publisher -->
           <sml:classifier name="platformType">
-            <sml:Term definition="urn:ioos:def:classifier:IOOS:platformType">
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType">
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/>
               <sml:value>buoy</sml:value>
             </sml:Term>
           </sml:classifier>
           <sml:classifier name="operatorSector">
-            <sml:Term definition="urn:ioos:def:classifier:IOOS:operatorSector">
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/operatorSector">
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/sector"/>
               <sml:value>academic</sml:value>
             </sml:Term>
           </sml:classifier>
           <sml:classifier name="publisher">
-            <sml:Term definition="urn:ioos:def:classifier:IOOS:publisher">
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/publisher">
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
               <sml:value>NANOOS</sml:value>
             </sml:Term>
           </sml:classifier>
+          
           <!-- One or more parentNetwork elements are allowed.  
-            At least one MUST reference an IOOS codespace and list the RA Acronym -->
+            At least one MUST reference an IOOS codespace and list the RA Acronym 
+            COMMENT: THE USE OF THE LABEL "NETWORK" BOTH IN THIS ORGANIZATIONAL SENSE
+                     AND IN THE SENSE OF NETWORK OFFERING MAY BE CONFUSING! -->
           <sml:classifier name="parentNetwork">
-            <sml:Term definition="urn:ioos:def:classifier:IOOS:parentNetwork">
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/parentNetwork">
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
               <sml:value>NANOOS</sml:value>
-            </sml:Term>
-          </sml:classifier>
-          <!-- MANDATORY IF NETWORK OFFERINGS ARE AVAILABLE -->
-          <!-- One or more NetworkOfferings may be listed -->
-          <sml:classifier name="networkOffering">
-            <sml:Term definition="urn:ioos:def:classifier:IOOS:networkOffering">
-              <sml:codeSpace xlink:href="LINKS_BACK_TO_GETCAP_OFFERINGS"/>
-              <sml:value>A_NETWORK_OFFERING_THIS_BELONGS_TO</sml:value>
             </sml:Term>
           </sml:classifier>
         </sml:ClassifierList>
       </sml:classification>
       <!-- =================================================================== -->
       
+      <!-- MANDATORY IF NETWORK OFFERINGS ARE AVAILABLE -->
+      <!-- COMMENT: SHANE'S PROPOSAL FOR NETWORK OFFERING, INSTEAD OF USING sml:classifier 
+           possible alternate sml:capabilities name attribute values:
+           networkOfferings, parentProcedures, networkProcedures -->
+      <sml:capabilities name="networkProcedures">
+        <swe:SimpleDataRecord>
+          <gml:metaDataProperty xlink:title="network-all" xlink:href="urn:ioos:network:nanoos:all" />
+        </swe:SimpleDataRecord>
+      </sml:capabilities>
+      
       <!-- CONTACTS
         MANDATORY: operator, publisher -->
-      <sml:contact xlink:role="urn:ogc:def:classifier:OGC:contactType:operator">
+      <sml:contact xlink:role="http://mmisw.org/ont/ioos/definition/operator">
         <sml:ResponsibleParty>
-          <sml:organizationName>OPERATOR ORGANIZATION</sml:organizationName>
+          <sml:organizationName>PNW Buoys</sml:organizationName>
           <sml:contactInfo>
             <sml:address>
-              <sml:country>COUNTRY [USA, COUNTRY NAME, OR "NON-USA"]</sml:country>
-              <sml:electronicMailAddress>EMAIL</sml:electronicMailAddress>
+              <!-- MANDATORY ELEMENTS: 
+                   country [Values: USA|<COUNTRY NAME>|NON-USA],
+                   electronicMailAddress
+                Other elements are optional, but "city" is strongly encouraged
+                for USA operators. -->
+              <sml:deliveryPoint>1007 Balch Blvd.</sml:deliveryPoint>
+              <sml:city>Fremont</sml:city>
+              <sml:administrativeArea>WA</sml:administrativeArea>
+              <sml:postalCode>98195</sml:postalCode>
+              <sml:country>USA</sml:country>
+              <sml:electronicMailAddress>contact@buoys.com</sml:electronicMailAddress>
             </sml:address>
             <!-- sml:onlineResource is optional but strongly encouraged for operator --> 
             <sml:onlineResource xlink:href="http://pnw.buoyoperator.org"/>
           </sml:contactInfo>
         </sml:ResponsibleParty>
       </sml:contact>
-      <sml:contact xlink:role="urn:ogc:def:classifier:OGC:contactType:publisher">
+      <sml:contact xlink:role="http://mmisw.org/ont/ioos/definition/publisher">
         <sml:ResponsibleParty>
           <sml:organizationName>NANOOS</sml:organizationName>
           <sml:contactInfo>
@@ -113,6 +129,10 @@
       <!-- =================================================================== -->
       
       <!-- DOCUMENTATION (OPTIONAL) -->
+      <!-- COMMENTS:
+           - Why is xlink:arcrole used, rather than xlink:role?
+           - Changed the xlink:arcrole attribute value ("qualityControlDocument") to
+             a URL-based term on the new MMI, IOOS-managed vocabulary of definitions? -->
       <sml:documentation xlink:arcrole="qualityControlDocument">
         <sml:Document>
           <gml:description>Handbook of Automated Data Quality Control Checks and Procedures, National Data Buoy Center, August 2009</gml:description>
@@ -130,21 +150,21 @@
             <sml:Event>
               <sml:date>2010-01-12</sml:date>
               <gml:description>Deployment start event</gml:description>
-              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:station:wmo:44029:20100112"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:station:wmo:41001:20100112"/>
             </sml:Event>
           </sml:member>
           <sml:member name="deployment_stop">
             <sml:Event>
               <sml:date>2011-02-06</sml:date>
               <gml:description>Deployment stop event</gml:description>
-              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:station:wmo:44029:20100112"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:station:wmo:41001:20100112"/>
             </sml:Event>
           </sml:member>
           <sml:member name="deployment_start">
             <sml:Event>
               <sml:date>2011-02-07</sml:date>
               <gml:description>Deployment start event</gml:description>
-              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:station:wmo:44029:20110207"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:station:wmo:41001:20110207"/>
             </sml:Event>
           </sml:member>
         </sml:EventList>
@@ -153,7 +173,10 @@
       <!-- =================================================================== -->
       <!-- LOCATION 
       Station geographic location (lat & lon only, no z). Always use epsg 4326.
-      -->
+      COMMENT: sml:location will not work for network procedures. It's been suggested
+      that for network procedures we use a gml:boundedBy/gml:Envelope instead, as
+      "Server implementations can include each station's location in child components if they 
+      choose, and clients can still get each child's location from its own DescribeSensor response." -->
       <sml:location>
         <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
           <gml:pos>34.7 -72.73</gml:pos>
@@ -162,50 +185,85 @@
       <!-- =================================================================== -->
       
       <!-- ============================================================================= 
-        COMPONENTS [sml:System/sml:documentation is OPTIONAL, AT LEAST INITIALLY; 
-        PROVIDE GUIDANCE AND WHAT TO USE THERE (EG, ANOTHER DESCRIBE SENSOR, METADATA DOC, ETC] 
+        COMPONENTS 
         ================================================================================ -->
       <!-- COMMENTS
         - Can a sensor altitude element be included in components?
         - sml:component/sml:System/sml:documentation is optional.
           To be used only if there's a relevant documentation or SensorML response.
+          Provide guidance on what to use there (eg, another describe sensor, metadata doc, etc)
         - sml:System gml:id seems to be optional (not mandated by the schema)
         - What convention should be used for gml:description?
-        - Use an sml:outputs block per sensor to specify the parameter and uom
-      -->
+        - Use an sml:outputs block per sensor to specify the parameter and uom -->
       <sml:components>
         <sml:ComponentList>
           <sml:component name="Sensor watertemp1">
             <sml:System gml:id="sensor-watertemp1">
-              <gml:description>Sensor description</gml:description>
-              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::watertemp1"/>
-              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::watertemp1"/>
+              <gml:description>SENSOR DESCRIPTION</gml:description>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:41001:watertemp1"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:41001:watertemp1"/>
+              <sml:outputs>
+                <sml:OutputList>
+                  <sml:output name="Water Temperature">
+                    <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
+                      <swe:uom code="degC" />
+                    </swe:Quantity>
+                  </sml:output>
+                </sml:OutputList>
+              </sml:outputs>
             </sml:System>
           </sml:component>
           <sml:component name="Sensor ct1">
+            <!-- ADD A SENSOR ALTITUDE ELEMENT SOMEWHERE HERE -->
             <sml:System gml:id="sensor-ct1">
               <gml:description/>
-              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::ct1"/>
-              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::ct1"/>
-            </sml:System>
-          </sml:component>
-          <sml:component name="Sensor summarywav1">
-            <sml:System gml:id="sensor-summarywav1">
-              <gml:description/>
-              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::summarywav1"/>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:41001:ct1"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:41001:ct1"/>
+              <sml:outputs>
+                <sml:OutputList>
+                  <sml:output name="Water Temperature">
+                    <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
+                      <swe:uom code="degC" />
+                    </swe:Quantity>
+                  </sml:output>
+                  <sml:output name="Salinity">
+                    <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_salinity">
+                      <swe:uom code="PSU" />
+                    </swe:Quantity>
+                  </sml:output>
+                </sml:OutputList>
+              </sml:outputs>
             </sml:System>
           </sml:component>
           <sml:component name="Sensor baro1">
             <sml:System>
               <gml:description/>
-              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::baro1"/>
-              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:44029::baro1"/>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:41001:baro1"/>
+              <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:41001:baro1"/>
+              <sml:outputs>
+                <sml:OutputList>
+                  <sml:output name="Barometric Pressure">
+                    <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_pressure">
+                      <swe:uom code="mb" />
+                    </swe:Quantity>
+                  </sml:output>
+                </sml:OutputList>
+              </sml:outputs>
             </sml:System>
           </sml:component>
           <sml:component name="Sensor airtemp1">
             <sml:System gml:id="sensor-airtemp1">
               <gml:description/>
-              <sml:identification xlink:href="urn:ioos:sensor:wmo:44029::airtemp1"/>
+              <sml:identification xlink:href="urn:ioos:sensor:wmo:41001:airtemp1"/>
+              <sml:outputs>
+                <sml:OutputList>
+                  <sml:output name="Air Temperature">
+                    <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
+                      <swe:uom code="degC" />
+                    </swe:Quantity>
+                  </sml:output>
+                </sml:OutputList>
+              </sml:outputs>
             </sml:System>
           </sml:component>
         </sml:ComponentList>
