@@ -22,10 +22,16 @@
       <gml:description>DISCLAIMER</gml:description>
     </gml:GenericMetaData>
   </gml:metaDataProperty>
-  
-  <!-- OFFERING URN REQUESTED. Holds asset id urn -->
-  <gml:name>urn:ioos:station:wmo:41001</gml:name>
-  <!-- ================================================================== -->
+    
+  <!-- COMMENT: MAKE THIS MANDATORY FOR NETWORK OFFERINGS, B/C THE RESPONSE
+       MAY SPAN >1 FEATURE TYPE?
+       BUT THEN REMOVE IT FROM om:featureOfInterest ?? -->
+  <gml:boundedBy>
+    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+      <gml:lowerCorner>34.7 -72.73</gml:lowerCorner>
+      <gml:upperCorner>34.7 -72.73</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
   
   <!-- ===========================================================
     - For a station offering, the response will return one CF feature type,
@@ -45,12 +51,12 @@
         ===================================================================== -->
       
       <!-- =========================================================== 
-        gml:name Naming pattern:  <OFFERING ASSET URN>-<FEATURE TYPE>
-        gml:description: COME UP WITH USAGE GUIDELINE FOR THIS ELEMENT'S CONTENT
+        gml:description
+        Intended as fairly free-form text for human eyeballs.
+        COMMENTS: COME UP WITH USAGE GUIDELINE FOR THIS ELEMENT'S CONTENT
         ============================================================== -->
       <gml:description>Observations at point station urn:ioos:station:wmo:41001, 
         150 NM East of Cape HATTERAS</gml:description>
-      <gml:name>urn:ioos:station:wmo:41001-timeSeries</gml:name>
 
       <!-- ===========================================================
         samplingTime  
@@ -103,7 +109,7 @@
         ============================================================== -->
       <om:featureOfInterest>
         <gml:FeatureCollection>
-          <!-- CF Feature Type (discrete-sampling-geometry) -->
+          <!-- CF Feature Type (discrete-sampling-geometry). COMMENT: Why vers. 1.6 specifically? -->
           <gml:metaDataProperty>
             <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
           </gml:metaDataProperty>
@@ -151,7 +157,7 @@
           For consistency, "stationID" should always be spelled out this way, 
           (and never as, say, "station_id") using the same case, for readability. -->
           <swe:field name="stationID">
-            <swe:Text definition="urn:ioos:def:identifier:IOOS:stationID">
+            <swe:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
               <swe:value>urn:ioos:station:wmo:41001</swe:value>
             </swe:Text>
           </swe:field>
@@ -159,21 +165,20 @@
           <swe:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
             referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
             <!--  COMMENT: Removed axisID attributes on swe:Quantity; not strictly needed? -->
-            <swe:coordinate name="lat">
+            <swe:coordinate name="latitude">
               <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude">
                 <swe:uom code="deg"/>
                 <swe:value>32.5</swe:value>
               </swe:Quantity>
             </swe:coordinate>
-            <swe:coordinate name="lon">
+            <swe:coordinate name="longitude">
               <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude">
                 <swe:uom code="deg"/>
                 <swe:value>-78.5</swe:value>
               </swe:Quantity>
             </swe:coordinate>
           </swe:Vector>
-          <!-- date-time 
-            COMMENT: double-check that these time definition and swe:uom xlink:href are good choices -->
+          <!-- date-time -->
           <swe:field name="time">
             <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
               <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
@@ -183,30 +188,29 @@
           <!-- ==================== SENSOR-SPECIFIC FIELDS ======================= -->
           <swe:DataChoice>
             <!-- ===========================================================
-              custom swe:item field definitions
-              =========================================================== -->
-
-            <!-- ===========================================================
-              sensor id urn
+              sensorID urn
               COMMENTS: 
-              - A swe:field for sensor id doesn't seem to be strictly needed
-              or particularly useful. We're already breaking up data fields by "sensor"
-              using sensor-specific swe:item blocks.
-              - swe:DataRecord/gml:name seems adequate for storing a sensor id urn.
-              The sensor id urn may use a meaningful component value (eg, "sbe16") or,
-              if not available, a simple, unique value such as "sensor1" vs "sensor2".
+              - The sensorID urn may use a meaningful "component" name (eg, "sbe16"); or,
+              if not available, a simple, constant string followed by an integer counter
+              such as "sensor1", "sensor2", "salt1", etc.
               - swe:item name attribute should be globally unique within this response,
-              at the very least within each om:member/om:Observation block. Using a simple
-              constant string followed by an integer counter (sensor1, sensor2, etc)
-              may be enough.
-              - Is it a rule that the swe:item name attribute will be used as a field value 
-              in swe:values, as shown on the original template? Or is a sensor id swe:field  
-              required to accomplish this??
+              at the very least within each om:member/om:Observation block.
+              =========================================================== -->
+            
+            <!-- ===========================================================
+              custom swe:item field definitions
+              The swe:item@name value should be the same as the sensor urn "component"
+              (the last urn element) below 
               =========================================================== -->
             <swe:item name="sensor1">
               <swe:DataRecord>
-                <gml:name>urn:ioos:sensor:wmo:41001:sensor1</gml:name>
-                <swe:field name="alt">
+                <!-- sensorID and the "Z" dimension (eg, altitude) -->
+                <swe:field name="sensorID">
+                  <swe:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                    <swe:value>urn:ioos:station:wmo:41001:sensor1</swe:value>
+                  </swe:Text>
+                </swe:field>
+                <swe:field name="altitude">
                   <!-- COMMENT: Looks like the alt swe:Quantity can have a referenceFrame attribute:
                     <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude" 
                     referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -217,36 +221,44 @@
                     <swe:value>5</swe:value>
                   </swe:Quantity>
                 </swe:field>
-                <swe:field name="temp">
+                <!-- The "data" fields follow (measured quantities/properties) -->
+                <swe:field name="air_temperature">
                   <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
                     <swe:uom code="Celsius"/>
                   </swe:Quantity>
                 </swe:field>
-                <swe:field name="windspeed">
+                <swe:field name="wind_speed">
                   <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_speed">
                     <swe:uom code="m/s"/>
                   </swe:Quantity>
                 </swe:field>
-                <swe:field name="winddirection">
+                <swe:field name="wind_to_direction">
                   <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_to_direction">
                     <swe:uom code="degrees"/>
                   </swe:Quantity>
                 </swe:field>
               </swe:DataRecord>
             </swe:item>
+            
             <!-- ===========================================================
               custom swe:item field definitions
               =========================================================== -->
             <swe:item name="sensor2">
               <swe:DataRecord>
-                <gml:name>urn:ioos:sensor:wmo:41001:sbe28</gml:name>
-                <swe:field name="alt">
-                  <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude">
+                <!-- sensorID and the "Z" dimension (eg, altitude) -->
+                <swe:field name="sensorID">
+                  <swe:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                    <swe:value>urn:ioos:station:wmo:41001:sensor2</swe:value>
+                  </swe:Text>
+                </swe:field>
+                <swe:field name="altitude">
+                  <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude" referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
                     <swe:uom code="m"/>
                     <swe:value>-2</swe:value>
                   </swe:Quantity>
                 </swe:field>
-                <swe:field name="watertemp">
+                <!-- The "data" fields follow (measured quantities/properties) -->
+                <swe:field name="sea_water_temperature">
                   <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
                     <swe:uom code="Celsius"/>
                   </swe:Quantity>
