@@ -1,6 +1,14 @@
 #summary One-sentence summary of this page.
 #labels AATDataProject
 
-= Pilot Project: Animal Acoustic Telemetry Data =
+= Improving Access to Animal Acoustic Telemetry Observations =
 
 IOOS - NANOOS - POST
+
+IOOS Biology Data projects:
+  * http://www.ioos.gov/dmac/biology/welcome.html
+  * http://www.ioos.gov/observing/animal_telemetry/welcome.html
+
+Other relevant systems:
+  * http://hydra.sounddatamanagement.com/data
+  * http://aatams.emii.org.au/aatams/
