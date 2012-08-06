@@ -5,10 +5,15 @@
 
 IOOS - NANOOS - POST
 
-IOOS Biology Data projects:
+Links to project documents:
+  * Statement of Work
+  * POST Data System
+  * Requirements: Survey results and initial requirements synthesis
+
+*IOOS Biology Data projects:*
   * http://www.ioos.gov/dmac/biology/welcome.html
   * http://www.ioos.gov/observing/animal_telemetry/welcome.html
 
-Other relevant systems:
+*Other relevant systems:*
   * http://hydra.sounddatamanagement.com/data
   * http://aatams.emii.org.au/aatams/
