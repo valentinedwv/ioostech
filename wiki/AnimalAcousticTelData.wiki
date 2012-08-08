@@ -15,5 +15,5 @@ Links to project documents. These documents are currently in draft form:
   * http://www.ioos.gov/observing/animal_telemetry/welcome.html
 
 *Other relevant systems:*
-  * http://hydra.sounddatamanagement.com/data
+  * http://hydra3.sound-data.com
   * http://aatams.emii.org.au/aatams/
