@@ -5,9 +5,9 @@
 
 IOOS - NANOOS - POST
 
-Links to project documents:
+Links to project documents. These documents are currently in draft form:
   * Statement of Work
-  * POST Data System
+  * [http://ioostech.googlecode.com/files/POST_DataSystemDescription_DRAFT1.0.doc POST Data System Description]
   * Requirements: Survey results and initial requirements synthesis
 
 *IOOS Biology Data projects:*
