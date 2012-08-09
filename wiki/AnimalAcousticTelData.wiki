@@ -5,10 +5,13 @@
 
 [http://www.ioos.gov IOOS] - [http://www.nanoos.org NANOOS] - [http://www.postprogram.org/ POST]
 
-Links to project documents. These documents are currently in draft form:
+*Project documents. These documents are currently in draft form:*
   * Statement of Work
   * [http://ioostech.googlecode.com/files/POST_DataSystemDescription_DRAFT1.0.doc POST Data System Description]
   * Requirements: Survey results and initial requirements synthesis
+  * Brief comparison of some existing systems
+  * Content Standard
+  * System Design
 
 *IOOS Biology Data projects:*
   * http://www.ioos.gov/dmac/biology/welcome.html
