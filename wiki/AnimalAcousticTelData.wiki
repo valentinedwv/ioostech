@@ -5,13 +5,20 @@
 
 [http://www.ioos.gov IOOS] - [http://www.nanoos.org NANOOS] - [http://www.postprogram.org/ POST]
 
+The purpose of this project is to engage in small-scale collaboration with important emerging data providers of both physical and biological observations-the Pacific Ocean Shelf Tracking (POST) project.
+
+== Objectives and Tasks to be addressed in this project ==
+The project objectives are to 1) extend, adopt and implement data and metadata standards and data services for animal acoustic telemetry observations, 2) implement a standard approach for exposing these observations and information via web services, and 3) develop limited, regional, accessible online products for browsing and visualizing such data, based on a customer-specified set of requirements. To ensure relevance and future extensibility, this project will involve potential customers drawn from POST and NANOOS stakeholders (particularly fisheries state agencies) as well as NOAA partners. We will seek broad community participation in technical discussions and priority-setting exercises related to the execution of project objectives. IOOS and NANOOS leadership will ensure adherence to IOOS DMAC recommendations and extensibility to other groups, datasets and regions.
+
+This project will build on existing IOOS DMAC guidance and activities regarding biological and broader oceanographic data access.
+
 *Project documents. These documents are currently in draft form:*
   * Statement of Work
   * [http://ioostech.googlecode.com/files/POST_DataSystemDescription_DRAFT1.0.doc POST Data System Description]
   * Requirements: Survey results and initial requirements synthesis
   * Brief comparison of some existing systems
   * Content Standard
-  * System Design
+  * System Design, including diagrams
 
 *IOOS Biology Data projects:*
   * http://www.ioos.gov/dmac/biology/welcome.html
