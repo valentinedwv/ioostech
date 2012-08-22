@@ -13,7 +13,7 @@ There are numerous web services in existence that can be harvested into IOOS ser
 || NOAA Weather  || http://www.nws.noaa.gov/ || http://www.nws.noaa.gov/data/obhistory/ ||  ||   ||
 || Remote Automatic Weather Stations (RAWS)  || http://www.raws.dri.edu/ || http://www.raws.dri.edu/cgi-bin/wea_list2.pl ||  ||  ||
 || Snow telemetry (SNOTEL)  || http://www.wcc.nrcs.usda.gov/ || http://www.wcc.nrcs.usda.gov/nwcc/site ||  ||  ||
-|| U.S. Geological Survey water (USGS Water/NWIS)  || http://waterdata.usgs.gov/ak/nwis/uv || http://waterservices.usgs.gov/nwis/iv || AOOS/Axiom ||  ||
+|| U.S. Geological Survey water (USGS Water/NWIS)  || http://waterdata.usgs.gov/ak/nwis/uv || http://waterservices.usgs.gov/nwis/iv || ||  ||
 || NERRS ||  || e.g. http://cdmo.baruch.sc.edu/QueryPages/realtime.cfm?Station_Code=hudfsmet || MARACOOS/ASA ||  ||
 || HRECOS || http://www.hrecos.org/joomla/ ||  || MARACOOS/ASA ||  ||
 || Drifters (NEFSC only) || http://www.nefsc.noaa.gov/drifter/  ||  || MARACOOS/ASA ||  ||
