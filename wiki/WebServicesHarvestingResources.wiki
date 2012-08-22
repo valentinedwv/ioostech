@@ -30,7 +30,7 @@ There are numerous web services in existence that can be harvested into IOOS ser
 || Remote Automatic Weather Stations (RAWS)  || http://www.raws.dri.edu/ || http://www.raws.dri.edu/cgi-bin/wea_list2.pl || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors ||
 || Snow telemetry (SNOTEL)  || http://www.wcc.nrcs.usda.gov/ || http://www.wcc.nrcs.usda.gov/nwcc/site || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors ||
 || U.S. Geological Survey water (USGS Water/NWIS)  || http://waterdata.usgs.gov/ak/nwis/uv || http://waterservices.usgs.gov/nwis/iv || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors ||
-|| NERRS ||  || e.g. http://cdmo.baruch.sc.edu/QueryPages/realtime.cfm?Station_Code=hudfsmet ||  ||  ||
+|| NERRS ||http://cdmo.baruch.sc.edu/webservices.cfm  || http://cdmo.baruch.sc.edu/webservices2/requests.cfc?wsdl || AOOS/Axiom || https://github.com/axiomalaska/source-sos-injectors ||
 || HRECOS || http://www.hrecos.org/joomla/ ||  ||  ||  ||
 || Drifters (NEFSC only) || http://www.nefsc.noaa.gov/drifter/  ||  ||  ||  ||
 || Ships and drifting buoys from MADIS || http://madis.noaa.gov/madis_sfc.html ||  ||  ||  || 
@@ -39,13 +39,13 @@ There are numerous web services in existence that can be harvested into IOOS ser
 == Source SOS Injectors ==
 https://github.com/axiomalaska/source-sos-injectors
 
-This project contains common public observation sources that are used to inject observation into a users SOS. This project is base off the [https://github.com/axiomalaska/sos-injection SOS Observation Injecter project] (below) to inject the observation into the SOS. The current sources that it pulls observation from are: HADS, NDBC, NOAA NOS CO-OPS, NOAA Weather, RAWS, SnoTel, and USGS Water. 
+This project contains common public observation sources that are used to inject observation into a users SOS. This project is base off the [https://github.com/axiomalaska/sos-injection SOS Observation Injecter project] (below) to inject the observation into the SOS. The current sources that it pulls observations from are: HADS, NDBC, NOAA NOS CO-OPS, NOAA Weather, RAWS, SnoTel, USGS Water, and NERRS. 
 
 This project can be used by just downloading the pre-built jar from Github. Goto [https://github.com/axiomalaska/source-sos-injectors Github project] to learn more. 
 
 == SOS Observation Injecter ==
 https://github.com/axiomalaska/sos-injection
 
-The SOS Observation Injector is used to enter sensor observations into a SOS. This code is an adaptor from the model of how most groups store their data (Source/Station/Sensor) to allow observations to be placed in an SOS. The model I am referring to is one where there is a Source that contains many Stations. An example source would be NOAA. Each of those Stations contain one or more Sensors. And each of those Sensors reads one or more Phenomena. This code allows one to inject data into a SOS by implementing some interfaces that are geared towards the common Source/Station/Sensor model. 
+The SOS Observation Injector is used to enter sensor observations into a SOS. This project takes as input Source, Station, Sensor, and Phenomenon objects and adds the needed XML formating to allow the data to be placed in an SOS.
 
 Goto [https://github.com/axiomalaska/sos-injection Github project] to learn more.
