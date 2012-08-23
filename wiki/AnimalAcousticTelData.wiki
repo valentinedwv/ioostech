@@ -20,7 +20,7 @@ This project will build on existing IOOS DMAC guidance and activities regarding 
   * Content Standard
   * System Design, including diagrams
 
-*Data Services used by animal telemetry Groups:*
+*Data Services used by animal acoustic telemetry groups:*
   * OTN (URL?): Geoserver, OGC WMS, KML
 
 *IOOS Biology Data projects:*
