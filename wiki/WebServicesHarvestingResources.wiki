@@ -19,7 +19,7 @@
 || *Service* || *Info URL* || *Service URL* || *Developer* || *Examples or code repo* ||
 || Hydrometeorological Design Studies Center (HADS)  || http://dipper.nws.noaa.gov/hdsc/pfds/ || http://amazon.nws.noaa.gov/nexhads2/servlet/DecodedData || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester  ||
 || NOAA Center for Operational Oceanographic Products and Services (CO-OPS)  || http://tidesonline.nos.noaa.gov/ || http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/ || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester ||
-|| NOAA National Data Buoy Center (NDBC)  || http://www.ndbc.noaa.gov/  || http://sdf.ndbc.noaa.gov/sos || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester ||
+|| NOAA National Data Buoy Center (NDBC)  || http://www.ndbc.noaa.gov/  || http://sdf.ndbc.noaa.gov/sos* || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester ||
 || NOAA Weather  || http://www.nws.noaa.gov/ || http://www.nws.noaa.gov/data/obhistory/ || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester  ||
 || Remote Automatic Weather Stations (RAWS)  || http://www.raws.dri.edu/ || http://www.raws.dri.edu/cgi-bin/wea_list2.pl || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester ||
 || Snow telemetry (SNOTEL)  || http://www.wcc.nrcs.usda.gov/ || http://www.wcc.nrcs.usda.gov/nwcc/site || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester ||
@@ -29,6 +29,8 @@
 || Drifters (NEFSC only) || http://www.nefsc.noaa.gov/drifter/  ||  ||  ||  ||
 || Ships and drifting buoys from MADIS || http://madis.noaa.gov/madis_sfc.html ||  ||  ||  || 
 || HFRadar ground stations || http://maracoos.org/hfradar ||  ||  ||
+
+* AOOS' sensor-web-harvester currently uses http://www.ndbc.noaa.gov/to_station.shtml and http://www.ndbc.noaa.gov/data/5day2/ for NDBC sensors because these endpoints tend to be more up-to-date and complete.
 
 == Sensor Web Harvester ==
 https://github.com/axiomalaska/sensor-web-harvester
