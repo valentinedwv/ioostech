@@ -1,0 +1,19 @@
+#summary Links to the test instances of the IOOS SOS developed by Axiom based on 52North.org
+#labels SOS
+
+
+Continuous integration (always up to date) sandboxed instance of the 52n IOOS branch:
+
+http://ioossostest.axiomalaska.com/
+
+Feel free to experiment with example requests. Data is reset whenever new code is checked in.
+
+Lance's SOS injection code is available here:
+
+https://github.com/axiomalaska/sos-injection
+
+sos-injection is the Java toolkit for pushing data into the SOS via RegisterSensor and InsertObservation requests.
+
+https://github.com/axiomalaska/source-sos-injectors
+
+source-sos-injectors is a Scala project that harvests sensor data from web sources and uses the sos-injection module to push the data to an SOS.
