@@ -38,7 +38,7 @@ _All references to parameters from these vocabularies should be done via MMI URL
 || GetObservation  || || _!TimeSeries feature-type, multi-sensor response:_  ||
 ||         "       || observedProperty || `*` /om:observedProperty ||
 ||         "       ||       "          || `*` /om:result/swe:DataStream/swe:DataChoice/swe:item/swe:DataRecord/swe:field/swe:Quantity ||
-|| DescribeSensor || - || _[TO-DO]_ ||
+|| DescribeSensor || - || /sml:SensorML/sml:member/sml:System/sml:components/sml:ComponentList/sml:component/sml:System/sml:outputs/sml:OutputList/sml:output/swe:Quantity[@definition] ||
 
 - _None, Not applicable_
 
