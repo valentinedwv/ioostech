@@ -87,6 +87,8 @@ IOOS Regional Associations (RA's) should be referenced using standard RA acronym
 
 === Sectors ===
 
+http://code.google.com/p/ioostech/wiki/Vocabularies_final#Organization_Types
+
 An MMI vocabulary will be created, containing these terms:
   * Government–Federal
   * Government–State 
