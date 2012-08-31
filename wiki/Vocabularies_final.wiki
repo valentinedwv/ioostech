@@ -61,7 +61,7 @@ If the parameter is not on the CF or IOOS vocabularies, engage IOOS to add it to
 The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary, and will be referenced like any other term there, eg:  http://mmisw.org/ont/ioos/winds
 
 
-== Platform ==
+== Platform Types ==
 
 (To be added later)
 
@@ -88,6 +88,12 @@ IOOS Regional Associations (RA's) should be referenced using standard RA acronym
 === Sectors ===
 
 http://mmisw.org/ont/ioos/sector
+
+
+
+
+	
+IOOS Organization Societal Sector. This vocabulary does not distinguish non-US organizations as such, and should be applicable within their national contexts; for example, a Canadian provincial agency can be described as "gov_state".
 
 An MMI vocabulary will be created, containing these terms:
   * Government–Federal
