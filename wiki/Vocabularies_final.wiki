@@ -61,7 +61,7 @@ If the parameter is not on the CF or IOOS vocabularies, engage IOOS to add it to
 The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary, and will be referenced like any other term there, eg:  http://mmisw.org/ont/ioos/winds
 
 
-== Platform/Station Types ==
+== Platform ==
 
 (To be added later)
 
