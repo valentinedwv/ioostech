@@ -67,11 +67,11 @@ The CF standard names vocabulary only defines scalar properties. Previously, IOO
 
 == Organization Types ==
 
-Two kinds of organization or institutional classifiers are formally recorded: the *IOOS Regional Association*, and the *data provider Sector*.
+Two kinds of organization or institutional classifiers are formally recorded: *IOOS Partners*, and *Sector Types*.
 
-=== Regional Associations ===
+=== IOOS Partners ===
 
-IOOS Regional Associations (RA's) should be referenced using standard RA acronyms (GLOS, SECOORA, etc) as listed in the MMI-hosted organization vocabulary at http://mmisw.org/ont/ioos/organization . MMI URL references such as http://mmisw.org/ont/ioos/organization/SECOORA must be used when appropriate, as described below; the RA acronym on this URL is case sensitive and must be all uppercase.
+IOOS data providers that include IOOS Regional Associations (RAs) and Federal Agencies should be referenced using standard RA and agency acronyms (GLOS, SECOORA, USACE, etc) as listed in the MMI-hosted organization vocabulary at http://mmisw.org/ont/ioos/organization. MMI URL references such as http://mmisw.org/ont/ioos/organization/SECOORA must be used when appropriate, as described below; the RA acronym on this URL is case sensitive and must be all uppercase.
 
 *Usage in SOS XML responses: [TO-DO: the Response entries will be linked to SOS response templates, so that full usage details are readily accessible]*
 
@@ -85,28 +85,19 @@ IOOS Regional Associations (RA's) should be referenced using standard RA acronym
 
 `*` _Preceded by /sml:SensorML/sml:member/sml:System_
 
-=== Sectors ===
+=== Sector Types ===
 
-http://mmisw.org/ont/ioos/sector
+IOOS Organizational Societal Sector types should reference the MMI hosted sector vocabulary at http://mmisw.org/ont/ioos/sector. The terms distinguish between different segments of government, for example, federal, state and municipal, academic and tribal, and industry divisions.  This vocabulary does not distinguish from non-US organizations as such, and should be applicable within their national contexts; for example, a Canadian provincial agency can be described as "gov_state".
 
+Examples of IOOS Organizational Sector terms listed:
 
-
-
-	
-IOOS Organization Societal Sector. This vocabulary does not distinguish non-US organizations as such, and should be applicable within their national contexts; for example, a Canadian provincial agency can be described as "gov_state".
-
-An MMI vocabulary will be created, containing these terms:
-  * Government–Federal
-  * Government–State 
-  * Government–Municipal
-  * Tribal
-  * Academic
-  * Industry
-  * Non-Profit
-  * Other
-  * Unknown
-
-"International" providers will be handled via the specification of a country name in the SensorML Operator role contact information.
+  *Government
+  *Tribal
+  *Academic
+  *Industry
+  *International
+    *"International" providers will be handled via the specification 
+of a country name in the SensorML Operator role contact information.
 
 == Keywords ==
 
