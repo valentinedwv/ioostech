@@ -9,7 +9,7 @@
 
 (This is place-holder text) Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to choose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.  
 
-[http://code.google.com/p/ioostech/downloads/detail?name=Full%20page%20photo.jpg&can=2&q=]
+WikiWordLink [http://code.google.com/p/ioostech/downloads/detail?name=Full%20page%20photo.jpg&can=2&q=]
 
 
 = IOOS Controlled Vocabularies =
