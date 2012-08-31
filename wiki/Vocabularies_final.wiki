@@ -91,13 +91,14 @@ IOOS Organizational Societal Sector types should reference the MMI hosted sector
 
 Examples of IOOS Organizational Sector terms listed:
 
-  *Government
-  *Tribal
-  *Academic
-  *Industry
-  *International
-    *"International" providers will be handled via the specification 
-of a country name in the SensorML Operator role contact information.
+  * Government
+  * Tribal
+  * Academic
+  * Industry
+  * International
+    * "International" providers will be handled via the   
+      specification of a country name in the SensorML Operator role 
+      contact information.
 
 == Keywords ==
 
