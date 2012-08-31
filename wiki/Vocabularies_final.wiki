@@ -97,8 +97,8 @@ Examples of IOOS Organizational Sector terms listed:
   * Industry
   * International
     * "International" providers will be handled via the   
-      specification of a country name in the SensorML Operator role 
-      contact information.
+    specification of a country name in the SensorML Operator role 
+    contact information.
 
 == Keywords ==
 
