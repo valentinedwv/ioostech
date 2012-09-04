@@ -109,8 +109,8 @@ Including geographical regions?
 
 == IOOS Biology Data projects (adopted terms) == 
 
-  * http://www.ioos.gov/dmac/biology/welcome.html
-  * http://www.ioos.gov/observing/animal_telemetry/welcome.html
+  * [http://www.ioos.gov/dmac/biology/welcome.html Biological Data Terminology]
+  * [http://www.ioos.gov/observing/animal_telemetry/welcome.html Animal Telemetry Network, ATN]
 
 == Other Organization Role ==
 (Mainly in SensorML)
