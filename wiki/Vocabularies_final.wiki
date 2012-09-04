@@ -106,6 +106,12 @@ Including geographical regions?
 
 
 = Other relevant concepts =
+
+== IOOS Biology Data projects (adopted terms) == 
+
+  * http://www.ioos.gov/dmac/biology/welcome.html
+  * http://www.ioos.gov/observing/animal_telemetry/welcome.html
+
 == Other Organization Role ==
 (Mainly in SensorML)
 Service provider, data provider, asset owner.
