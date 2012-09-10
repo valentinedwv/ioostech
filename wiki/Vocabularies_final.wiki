@@ -22,7 +22,7 @@ This page describes the relevant vocabularies that have been adopted or develope
 
 The material presented here will evolve into a clearer policy. [http://code.google.com/p/ioostech/downloads/detail?name=Full%20page%20photo.jpg&can=2&q= For example, currently, this diagram illustrates the decision process for identifying, using or adding terms to IOOS vocabularies, with a focus on observed properties terms from the CF Standard Names and IOOS Parameter Vocabulary].
 
-For additional details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see [1]. This paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings.
+For additional details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see (1). This paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings.
 
 
 = IOOS Controlled Vocabularies =
@@ -41,7 +41,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
   # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI vocabulary location is: http://mmisw.org/ont/cf/parameter
   # *[TODO_IOOSVocabPage IOOS Parameter Vocabulary.]* A vocabulary created via an IOOS community polling of terms in use by RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
 
-The background and IOOS use of these vocabularies is described in detailed in [1].
+The background and IOOS use of these vocabularies is described in detailed in (1).
 
 *Usage in SOS request parameters and XML responses: _[TO-DO: the Response entries will be linked to SOS response templates, so that full usage details are readily accessible]_ *
 
@@ -77,14 +77,14 @@ The CF standard names vocabulary only defines scalar properties. Previously, IOO
 
 A vocabulary for platform types used to describe each station asset is currently under development. It draws from:
   * [http://mmisw.org/ont/mmi/platform The MMI Platform Ontology], developed and last updated by the [https://marinemetadata.org/community/teams/ontplatforms MMI Platform Ontology team] around 2005/2006.
-  * The platform type catgories compiled for the IOOS Observation Asset Inventory, last updated in 2011.
+  * The platform type categories compiled for the IOOS Observation Asset Inventory, last updated in 2011.
 
-A small (20-30) set of the most common platform types is being identified and assessed for initial use by IOOS, based on these two resources.
+A small set of the most common platform types (20-30) is being identified and assessed for initial use by IOOS, based on these two resources.
 
 
 == Organization Descriptors ==
 
-IOOS has implemented as MMI vocabularies two kinds of organization or institutional descriptors (classifiers): *IOOS Partner Organization*, and *Organization Societal Sector*.
+IOOS has implemented as MMI vocabularies two kinds of organization or institutional descriptors (classifiers): *IOOS Partner Organization* and *Organization Societal Sector*.
 
 === IOOS Partner Organization ===
 
@@ -129,8 +129,8 @@ Including geographical regions? RA in GetCapabilities Keywords?
 
 == Other IOOS categories and high-level concepts ==
 
-The background, IOOS use, and mappings of these vocabularies is partially described in [1]. Though this has not been discussed at lenght, terms from these vocabularies may become useful as service Keywords and for other data-discovery uses.
-  * [http://mmisw.org/ont/ioos/core_variable IOOS Core Variable Vocabulary]. ("The 26 core variables")
+The background, IOOS use, and mappings of these vocabularies is partially described in (1). Though this has not been discussed at lenght, terms from these vocabularies may become useful as service Keywords and for other data-discovery uses.
+  * [http://mmisw.org/ont/ioos/core_variable IOOS Core Variable Vocabulary]. "The 26 core variables"
   * [http://mmisw.org/ont/ioos/societal_areas IOOS Societal Benefit Areas]
   * [http://mmisw.org/ont/ioos/category IOOS Category Vocabulary]
 
@@ -146,4 +146,4 @@ Units of Measure are not actually a vocabulary per se, but are rather a mix of v
 
 = References =
 
-[1] Haines, S., V. Subramanian, E. Mayorga, D. Snowden, R. Ragsdale, C. Rueda and M. Howard. _Submitted_. IOOS vocabulary and ontology strategy for observed properties. _Proc. MTS/IEEE Oceans 2012_, Hampton Roads, VA.
+(1) Haines, S., V. Subramanian, E. Mayorga, D. Snowden, R. Ragsdale, C. Rueda and M. Howard. _Submitted_. IOOS vocabulary and ontology strategy for observed properties. [www.oceans12mtsieeehamptonroads.org _Proc. MTS/IEEE Oceans 2012_, Hampton Roads, VA].
