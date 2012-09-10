@@ -6,12 +6,9 @@
 
 = Introduction =
 
-(This is place-holder text) Developers of IOOS services should strive to use Controlled Vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to choose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  The material presented here should evolve into a policy but currently there are several open questions to be resolved.
-
-  
-
-The U.S. IOOS Program has addressed control vocabulary usage in the community by forming a strategy that follows IOOS guiding principles.  The U.S. IOOS Program is employing community backed controlled vocabularies when applicable.  This is over development of new vocabularies in order to support a wider level or interoperability.   This strategy encourages use of the CF community standards’ name table.  The CF standards name table, however, focuses on physical and chemical parameter terms and pays no attention to sectors like biology and ecology.  The IOOS Parameter Vocabulary provides a list of marine terms, their definitions and units.  This vocabulary was compiled to capture important observed parameters being integrated regionally by one or more of the 11 RA’s and potentially available for national integration by the IOOS Program Office.   
-
+  The U.S. IOOS Program has addressed control vocabulary usage in the community by forming a strategy that follows IOOS guiding principles.  The U.S. IOOS Program is employing community backed controlled vocabularies when applicable.  This is over development of new vocabularies in order to support a wider level or interoperability.   
+  This strategy encourages use of the CF community standards’ name table.  The CF standards name table, however, focuses on physical and chemical parameter terms and pays no attention to sectors like biology and ecology.  The IOOS Parameter Vocabulary provides a list of marine terms, their definitions and units.  This vocabulary was compiled to capture important observed parameters being integrated regionally by one or more of the 11 RA’s and potentially available for national integration by the IOOS Program Office.
+  Developers of IOOS services should strive to use controlled vocabularies whenever appropriate.  This page describes some options for Controlled Vocabularies to choose from, examples of how to implement them in various data formats and information about how to update existing vocabularies.  
 
 = IOOS Controlled Vocabularies =
 
