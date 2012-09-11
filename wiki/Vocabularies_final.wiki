@@ -22,7 +22,7 @@ This page describes the relevant vocabularies that have been adopted or develope
 
 The material presented here will evolve into a clearer policy. [http://code.google.com/p/ioostech/downloads/detail?name=Full%20page%20photo.jpg&can=2&q= For example, currently, this diagram illustrates the decision process for identifying, using or adding terms to IOOS vocabularies, with a focus on observed properties terms from the CF Standard Names and IOOS Parameter Vocabulary].
 
-For additional details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see (1). This paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings.
+For more details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see (1). This paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings. Additional background materials may be found at [ControlledVocabularies this older wiki page on IOOS vocabulary strategies].
 
 
 = IOOS Controlled Vocabularies =
@@ -95,8 +95,10 @@ IOOS data providers, including IOOS Regional Associations (RAs) and Federal Agen
 || *SOS Operation* || *Request* || *Response: XML block (XPath)* || *Comment* ||
 || GetCapabilities || - || /sos:Capabilities/ows:ServiceIdentification/ows:Keywords/ows:Keyword  || *Required*. RA keyword must be the first keyword listed [*Eric, is this still true?*]. ||
 || GetObservation  || - || - || No RA reference. ||
-|| DescribeSensor || - || `*` /sml:classification/sml:ClassifierList/sml:classifier[name="ParentNetwork"]/sml:Term[definition="urn:ioos:def:classifier:NOAA:parentNetwork"]/sml:value || *Required*. Also use <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/> ||
-||         "       || - || `*` /sml:contact[xlink:role="urn:ogc:def:classifiers:OGC:contactType:publisher"]/sml:ResponsibleParty/sml:organizationName || *Optional*. Use if data are distributed via RA-hosted data service. ||
+|| DescribeSensor || - || `*` /sml:classification/sml:ClassifierList/sml:classifier[@name="ParentNetwork"]/sml:Term[@definition="http://mmisw.org/ont/ioos/definition/parentNetwork"]/sml:value || *Required*. Also use <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/> ||
+||         "       || - || `*` /sml:classification/sml:ClassifierList/sml:classifier[@name="publisher"]/sml:Term[@definition="http://mmisw.org/ont/ioos/definition/publisher"]/sml:value || *Required*. Also use <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/> ||
+
+||         "       || - || `*` /sml:contact[@xlink:role="http://mmisw.org/ont/ioos/definition/publisher"]/sml:ResponsibleParty/sml:organizationName || *Required*. ||
 
 - _None, Not applicable_
 
