@@ -33,7 +33,7 @@ IOOS has defined the use of specific vocabularies for the following categories o
  * [#IOOS_Partner_Organization IOOS partner organization]
  * [#Organization_Societal_Sector organization societal sector]
 
-Additional, related concepts are also used in IOOS services, some of which have also been formally implemented as MMI vocabularies but may not be used. [#Additional_Vocabularies_And_Concepts See the corresponding section below.]
+Additional, related concepts are also used in IOOS services, some of which have also been formally implemented as MMI vocabularies but may not be used yet or deliberately by service providers. [#Additional_Vocabularies_And_Concepts See the corresponding section below.]
 
 == Observed Property ==
 
