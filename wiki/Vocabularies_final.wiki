@@ -97,7 +97,6 @@ IOOS data providers, including IOOS Regional Associations (RAs) and Federal Agen
 || GetObservation  || - || - || No RA reference. ||
 || DescribeSensor || - || `*` /sml:classification/sml:ClassifierList/sml:classifier[@name="ParentNetwork"]/sml:Term[@definition="http://mmisw.org/ont/ioos/definition/parentNetwork"]/sml:value || *Required*. Also use <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/> ||
 ||         "       || - || `*` /sml:classification/sml:ClassifierList/sml:classifier[@name="publisher"]/sml:Term[@definition="http://mmisw.org/ont/ioos/definition/publisher"]/sml:value || *Required*. Also use <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/> ||
-
 ||         "       || - || `*` /sml:contact[@xlink:role="http://mmisw.org/ont/ioos/definition/publisher"]/sml:ResponsibleParty/sml:organizationName || *Required*. ||
 
 - _None, Not applicable_
