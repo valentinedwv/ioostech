@@ -144,6 +144,10 @@
       <!-- HISTORY (OPTIONAL)
         WE HAVEN'T DISCUSSED THIS EXTENSIVELY. Discuss with group and decide 
         what recommendation to make (conventions, etc) -->
+      <!-- Per discussion at IOOS DMAC meeting, from comment by Lisa H., 9/11/2012:
+        Use this scheme to include "status" messages (in the <gml:description> tag?), 
+        like NVS' status updates!! This is doable! Maybe we'd want to implement a set 
+        of standardized "event types" vocabulary, for sml:member@name? -->
       <sml:history>
         <sml:EventList>
           <sml:member name="deployment_start">
@@ -183,7 +187,7 @@
         </gml:Point>
       </sml:location>
       <!-- =================================================================== -->
-      
+            
       <!-- ============================================================================= 
         COMPONENTS 
         ================================================================================ -->
