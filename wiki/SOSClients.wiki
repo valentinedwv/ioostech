@@ -40,11 +40,16 @@ XSL translations
 
 Eric Bridgers javascript library hosted at Oostethys google code site http://code.google.com/p/oostethys/downloads/list
 
+
+= Proteus =
+
+"[http://www.i-a-i.com/proteus/ IAI's Proteus] offers a convenient way to discover sensor data from SOS standardized by OGC. Proteus can visualize service contents on a map to quickly give an overview of sensor locations. Sensor data can then be viewed in a time series and exported for further processing." Currently (Sept. 2012) at Beta stage.
+
+
 = SECOORA =
 http://code.google.com/p/xenia/source/browse/trunk/python/xeniatools/ioosDif.py  
 and for that matter, many useful things at 
 http://code.google.com/p/xenia/source/browse/trunk/python/
-
 
 == GetCapabilities survey ==
 
