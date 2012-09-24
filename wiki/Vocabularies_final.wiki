@@ -41,7 +41,7 @@ IOOS supports the inclusion and standard referencing of a large set of observed 
   # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI vocabulary location is: http://mmisw.org/ont/cf/parameter
   # *[TODO_IOOSVocabPage IOOS Parameter Vocabulary.]* A vocabulary created via an IOOS community polling of terms in use by RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
 
-The background and IOOS use of these vocabularies is described in detailed in (1).
+The background and IOOS use of these vocabularies is described in detailed in [#References (1)].
 
 *Usage in SOS request parameters and XML responses: _[TO-DO: the Response entries will be linked to SOS response templates, so that full usage details are readily accessible]_ *
 
