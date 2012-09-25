@@ -122,7 +122,7 @@ Including geographical regions? RA in GetCapabilities Keywords?
 
 == Other IOOS categories and high-level concepts ==
 
-The background, IOOS use, and mappings of these vocabularies is partially described in (1). Though this has not been discussed at lenght, terms from these vocabularies may become useful as service Keywords and for other data-discovery uses.
+The background, IOOS use, and mappings of these vocabularies is partially described in [#References (1)]. Though this has not been discussed at length, terms from these vocabularies may become useful as service Keywords and for other data-discovery uses.
   * [http://mmisw.org/ont/ioos/core_variable IOOS Core Variable Vocabulary]. "The 26 core variables"
   * [http://mmisw.org/ont/ioos/societal_areas IOOS Societal Benefit Areas]
   * [http://mmisw.org/ont/ioos/category IOOS Category Vocabulary]
@@ -134,7 +134,7 @@ The background, IOOS use, and mappings of these vocabularies is partially descri
 
 == Units of Measure ==
 
-Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. Recommend (but not mandate) use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. But versions must be kept in mind (eg, UDUNITS-1 vs UDUNITS-2).
+Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. Versions should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2).
 
 
 = References =
