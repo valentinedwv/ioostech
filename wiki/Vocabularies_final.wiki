@@ -6,7 +6,7 @@
 
 = Introduction =
 
-In a collaboration between the IOOS Program Office and RA partners, a broad strategy addresses vocabulary needs across core components of the IOOS distributed observation systems, following IOOS guiding principles. This strategy encompasses vocabularies and vocabulary mappings (ontologies) for observation platforms; organization names, types and roles; and other characteristics. All such vocabularies are defined on the [https://marinemetadata.org/mmiswinfo/ MMI Ontology Registry and Repository (MMI ORR)], and existing community vocabularies and ontologies are being adopted as appropriate. 
+In a collaboration between the IOOS Program Office and RA partners, a broad strategy addresses vocabulary needs across core components of the IOOS distributed observation systems, following IOOS guiding principles. This strategy encompasses vocabularies and vocabulary mappings (ontologies) for observation platforms; organization names, types and roles; and other characteristics. All such vocabularies are defined on the [https://marinemetadata.org/mmiswinfo/ MMI Ontology Registry and Repository (MMI ORR)], and existing community vocabularies and ontologies are being adopted as appropriate. [#References See also (2) below for additional MMI ORR background].
 
 IOOS service providers must use IOOS-approved, MMI-hosted vocabularies whenever appropriate. _All references to IOOS-approved vocabulary terms must be encoded via MMI term URL's_ (e.g., http://mmisw.org/ont/ioos/parameter/ammonia). MMI-hosted vocabularies and mappings managed by IOOS are available at http://mmisw.org/ont/ioos.
 
@@ -25,7 +25,7 @@ IOOS has defined the use of specific vocabularies for the following categories o
  * [#IOOS_Partner_Organization IOOS partner organization]
  * [#Organization_Societal_Sector organization societal sector]
 
-Additional, related concepts are also used in IOOS services, some of which have also been formally implemented as MMI vocabularies but may not be used yet or deliberately by service providers. [#Additional_Vocabularies_And_Concepts See the corresponding section below.]
+[#Additional_Vocabularies_And_Concepts Additional, related concepts are also used in IOOS services], some of which have also been formally implemented as MMI vocabularies but may not be used yet or deliberately by service providers.
 
 == Observed Property ==
 
@@ -140,3 +140,5 @@ Units of Measure are not actually a vocabulary per se, but are rather a mix of v
 = References =
 
 (1) Haines, S., V. Subramanian, E. Mayorga, D. Snowden, R. Ragsdale, C. Rueda and M. Howard. _Submitted_. IOOS vocabulary and ontology strategy for observed properties. [http://www.oceans12mtsieeehamptonroads.org Proc. MTS/IEEE Oceans 2012, Hampton Roads, VA].
+
+(2) [https://marinemetadata.org/news/mmisemanticpaper2011 Graybeal, J., A. W. Isenor, and C. Rueda. 2012. Semantic mediation of vocabularies for ocean observing systems. Computers & Geosciences 40: 120-131, doi:10.1016/j.cageo.2011.08.002]
