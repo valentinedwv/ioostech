@@ -6,23 +6,15 @@
 
 = Introduction =
 
-*<FROM ROB, 9/10/12>*
-The U.S. IOOS Program has addressed control vocabulary usage in the community by forming a strategy that follows IOOS guiding principles. The U.S. IOOS Program is employing community backed controlled vocabularies when applicable. This is over development of new vocabularies in order to support a wider level or interoperability.
-
-This strategy encourages use of the CF community standards’ name table. The CF standards name table, however, focuses on physical and chemical parameter terms and pays no attention to sectors like biology and ecology. The IOOS Parameter Vocabulary provides a list of marine terms, their definitions and units. This vocabulary was compiled to capture important observed parameters being integrated regionally by one or more of the 11 RA’s and potentially available for national integration by the IOOS Program Office.
-
-Developers of IOOS services should strive to use controlled vocabularies whenever appropriate. This page describes some options for Controlled Vocabularies to choose from, examples of how to implement them in various data formats and information about how to update existing vocabularies. 
-
-*<FROM EMILIO, 9/10/12>*
-In a collaboration between the IOOS Program Office and RA partners, a broad IOOS strategy addresses vocabulary needs across core components of the IOOS distributed observation systems. This strategy encompasses vocabularies and vocabulary mappings (ontologies) for observation platforms; organization names, types and roles; and other characteristics. All such vocabularies are defined on the [https://marinemetadata.org/mmiswinfo/ MMI Ontology Registry and Repository (MMI ORR)], and existing community vocabularies and ontologies are being adopted as appropriate. 
+In a collaboration between the IOOS Program Office and RA partners, a broad strategy addresses vocabulary needs across core components of the IOOS distributed observation systems, following IOOS guiding principles. This strategy encompasses vocabularies and vocabulary mappings (ontologies) for observation platforms; organization names, types and roles; and other characteristics. All such vocabularies are defined on the [https://marinemetadata.org/mmiswinfo/ MMI Ontology Registry and Repository (MMI ORR)], and existing community vocabularies and ontologies are being adopted as appropriate. 
 
 IOOS service providers must use IOOS-approved, MMI-hosted vocabularies whenever appropriate. _All references to IOOS-approved vocabulary terms must be encoded via MMI term URL's_ (e.g., http://mmisw.org/ont/ioos/parameter/ammonia). MMI-hosted vocabularies and mappings managed by IOOS are available at http://mmisw.org/ont/ioos.
 
-This page describes the relevant vocabularies that have been adopted or developed by the IOOS community, including context and specific instructions for use in data services. Currently they target SOS service requests (GetCapabilities, GetObservation, DescribeSensor), but are of general applicability in other services as well.
+This page describes the relevant controlled vocabularies that have been adopted or developed by the IOOS community, including context and specific instructions for use and implementation in data services. Currently they target SOS service requests (GetCapabilities, GetObservation and DescribeSensor), but are of general applicability in other services as well.
 
-The material presented here will evolve into a clearer policy. [http://code.google.com/p/ioostech/downloads/detail?name=Full%20page%20photo.jpg&can=2&q= For example, currently, this diagram illustrates the decision process for identifying, using or adding terms to IOOS vocabularies, with a focus on observed properties terms from the CF Standard Names and IOOS Parameter Vocabulary].
+The material presented here will evolve into a clearer policy. [http://code.google.com/p/ioostech/downloads/detail?name=Full%20page%20photo.jpg&can=2&q= For example, this diagram illustrates the decision process for identifying, using or proposing new terms to IOOS vocabularies, with a focus on observed properties terms from the CF Standard Names and IOOS Parameter Vocabulary].
 
-For more details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see (1). This paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings. Additional background materials may be found at [ControlledVocabularies this older wiki page on IOOS vocabulary strategies]. Current [http://www.unc.edu/~haines/orrioos.html IOOS vocabulary mappings and SPARQL querying demonstrations are available in this external page].
+For more details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see [#References (1)]; this paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings. Additional background materials may be found at [ControlledVocabularies this older wiki page on IOOS vocabulary strategies]. Current [http://www.unc.edu/~haines/orrioos.html IOOS vocabulary mappings and SPARQL querying demonstrations are available in this external page].
 
 
 = IOOS Controlled Vocabularies =
@@ -38,8 +30,8 @@ Additional, related concepts are also used in IOOS services, some of which have 
 == Observed Property ==
 
 IOOS supports the inclusion and standard referencing of a large set of observed properties (sometimes referred to as phenomena, parameters, or variables). Any property encompassed by the following two vocabularies is supported:
-  # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI vocabulary location is: http://mmisw.org/ont/cf/parameter
-  # *[TODO_IOOSVocabPage IOOS Parameter Vocabulary.]* A vocabulary created via an IOOS community polling of terms in use by RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
+  # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI vocabulary is located at http://mmisw.org/ont/cf/parameter . CF standard names focus on physical and chemical terms and pays only limited attention to areas like biology and ecology.
+  # *[TODO_IOOSVocabPage IOOS Parameter Vocabulary.]* A vocabulary created via an IOOS community polling of terms in use by the 11 RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
 
 The background and IOOS use of these vocabularies is described in detailed in [#References (1)].
 
