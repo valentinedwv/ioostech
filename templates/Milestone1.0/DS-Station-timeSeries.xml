@@ -79,6 +79,15 @@
         </sml:ClassifierList>
       </sml:classification>
       <!-- =================================================================== -->
+
+      <!-- SERVICE METADATA -->
+      <sml:capabilities name="ioosServiceMetadata">
+        <swe:SimpleDataRecord>
+          <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
+            <gml:version>1.0</gml:version>
+          </gml:metaDataProperty>
+        </swe:SimpleDataRecord>
+      </sml:capabilities> 
       
       <!-- MANDATORY IF NETWORK OFFERINGS ARE AVAILABLE -->
       <!-- COMMENT: SHANE'S PROPOSAL FOR NETWORK OFFERING, INSTEAD OF USING sml:classifier 
