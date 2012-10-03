@@ -14,6 +14,8 @@ This page describes the relevant controlled vocabularies that have been adopted 
 
 The material presented here will evolve into a clearer policy. [http://code.google.com/p/ioostech/downloads/detail?name=Full%20page%20photo.jpg&can=2&q= For example, this diagram illustrates the decision process for identifying, using or proposing new terms to IOOS vocabularies, with a focus on observed properties terms from the CF Standard Names and IOOS Parameter Vocabulary].
 
+= Additional Background =
+
 For more details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see [#References (1)]; this paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings. Additional background materials may be found at [ControlledVocabularies this older wiki page on IOOS vocabulary strategies]. Current [http://www.unc.edu/~haines/orrioos.html IOOS vocabulary mappings and SPARQL querying demonstrations are available in this external page].
 
 
