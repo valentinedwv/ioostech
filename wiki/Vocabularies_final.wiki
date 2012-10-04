@@ -141,6 +141,6 @@ Units of Measure are not actually a vocabulary per se, but are rather a mix of v
 
 = References =
 
-(1) Haines, S., V. Subramanian, E. Mayorga, D. Snowden, R. Ragsdale, C. Rueda and M. Howard. _Submitted_. IOOS vocabulary and ontology strategy for observed properties. [http://www.oceans12mtsieeehamptonroads.org Proc. MTS/IEEE Oceans 2012, Hampton Roads, VA].
+(1) Haines, S., V. Subramanian, E. Mayorga, D. Snowden, R. Ragsdale, C. Rueda and M. Howard. _Submitted_. IOOS vocabulary and ontology strategy for observed properties. [http://www.oceans12mtsieeehamptonroads.org Proc. MTS/IEEE Oceans 2012], Hampton Roads, VA. Final, submitted paper [http://ioostech.googlecode.com/files/IOOSVocabPaper_MTSOceans2012_HainesEtal_Final_copyrighted.pdf is available here as pdf.]
 
 (2) [https://marinemetadata.org/news/mmisemanticpaper2011 Graybeal, J., A. W. Isenor, and C. Rueda. 2012. Semantic mediation of vocabularies for ocean observing systems. Computers & Geosciences 40: 120-131, doi:10.1016/j.cageo.2011.08.002]
