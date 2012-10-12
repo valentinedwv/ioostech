@@ -2,6 +2,10 @@
 #labels SOS
 
 
+Main project site and documentation site for the IOOS modifications to the 52North SOS service.
+http://ioossos.axiomalaska.com/
+
+
 Continuous integration (always up to date) sandboxed instance of the 52n IOOS branch:
 
 http://ioossostest.axiomalaska.com/
