@@ -58,11 +58,7 @@
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/sector"/>
               <sml:value>academic</sml:value>
             </sml:Term>
-          </sml:classifier>
-          
-          <!-- Suggestions on adding an owner domain and/or an operator domain
-            (e.g. Federal, Non-Federal, Blended)??? -->
-            
+          </sml:classifier>          
           <sml:classifier name="publisher">
             <sml:Term definition="http://mmisw.org/ont/ioos/definition/publisher">
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
