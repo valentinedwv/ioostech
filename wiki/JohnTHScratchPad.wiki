@@ -1,12 +1,18 @@
-#summary One-sentence summary of this page.
-
-= Introduction =
-
-John's Online place for comments, thoughts, ideas, etc
+#summary JohnTH's Online IOOS Comments/Ideas
 
 
-= Details =
+===Musings on identifying IOOS Assets using GC, DS, GC===
 
-*Thoughts on how to describe IOOS sector*
+<b>Situation:</b> Asset owned by RA1<br>
+<b>Anticipated Result:</b> operatorSector in DS is...?
 
+<b>Situation:</b> Asset physically located in RA1, data provided through RA2<br>
+<b>Anticipated Result:</b> Keyword in GC is RA2.  parentNetwork in DS is also RA2.  What field contains R1?
 
+<b>Situation:</b> Asset owned by ACE, operated by SCRIPPS, provided by RA1<br>  
+<b>Anticipated Result:</b> Keyword in GC is RA1, operatorSector in DS is academic, publisher in DS is RA1.  Where is ACE listed?
+
+<b>Situation:</b>  Asset owned by SCRIPPS, data provided by NDBC<br>
+<b>Anticipated Result:</b> operatorSector in DS is academic.  Publisher and parentNetwork are listed as NDBC?  Where is the RA affiliation?  If an asset is not both owned and operated by a federal agency, is the RA affiliation required to be noted in parentNetwork and/or publisher?
+
+<i>Note:</i> Not sure if I should be surprised by this, but the gml:id in GC is not specified using a URN.  Yet, the sml:id in DS is specified using a URN.  Conversely, the gml:id in GC is specified using a URN and the sml:name in DS is not specified using a URN.
