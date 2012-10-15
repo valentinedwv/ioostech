@@ -6,13 +6,13 @@
 <b>Situation:</b> Asset owned by RA1<br>
 <b>Anticipated Result:</b> operatorSector in DS is...?
 
-<b>Situation:</b> Asset physically located in RA1, data provided through RA2<br>
-<b>Anticipated Result:</b> Keyword in GC is RA2.  parentNetwork in DS is also RA2.  What field contains R1?
+<b>Situation:</b> Asset located in RA1, but data provided through RA2 and RA1<br>
+<b>Anticipated Result:</b> For the RA2 responses, keyword in GC is RA2.  parentNetwork in DS is also RA2.  Does a field contain R1?
 
 <b>Situation:</b> Asset owned by ACE, operated by SCRIPPS, provided by RA1<br>  
 <b>Anticipated Result:</b> Keyword in GC is RA1, operatorSector in DS is academic, publisher in DS is RA1.  Where is ACE listed?
 
-<b>Situation:</b>  Asset owned by SCRIPPS, data provided by NDBC<br>
-<b>Anticipated Result:</b> operatorSector in DS is academic.  Publisher and parentNetwork are listed as NDBC?  Where is the RA affiliation?  If an asset is not both owned and operated by a federal agency, is the RA affiliation required to be noted in parentNetwork and/or publisher?
+<b>Situation:</b>  Asset owned/operated by SCRIPPS, data provided by NDBC<br>
+<b>Anticipated Result:</b> operatorSector in DS is academic.  Publisher and parentNetwork are likely listed as NDBC.  Where is the RA affiliation located?  If an asset is not owned, operated, and provided by a federal agency, is the RA affiliation required to be noted in parentNetwork and/or publisher?
 
-<i>Note:</i> Not sure if I should be surprised by this, but the gml:id in GC is not specified using a URN.  Yet, the sml:id in DS is specified using a URN.  Conversely, the gml:name in GC is specified using a URN (additionally and the sml:name in DS is not specified using a URN.
+<i>Note:</i> Not sure if I should be surprised by this, but the gml:id in GC is not specified using a URN.  Yet, the sml:id in DS is specified using a URN.  Conversely, the gml:name in GC and DS is specified using a URN and the sml:name in DS is not necessarily specified using a URN.
