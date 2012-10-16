@@ -16,3 +16,8 @@
 <b>Anticipated Result:</b> operatorSector in DS is academic.  Publisher and parentNetwork are likely listed as NDBC.  Where is the RA affiliation located?  If an asset is not owned, operated, and provided by a federal agency, is the RA affiliation required to be noted in parentNetwork and/or publisher?
 
 <i>Note:</i> Not sure if I should be surprised by this, but the gml:id in GC is not specified using a URN.  Yet, the sml:id in DS is specified using a URN.  Conversely, the gml:name in GC and DS is specified using a URN and the sml:name in DS is not necessarily specified using a URN.
+<br><br>
+
+===Useful Reports Generated From NGDC ISO Metadata in the Service Registry===
+
+A record in the registry is one dataset for DAP services but a service endpoint (containing multiple datasets) for SOS services.  Will need a way of combining DAP datasets when creating summary reports 
