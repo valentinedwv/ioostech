@@ -21,3 +21,10 @@ NOTICE: These realtime data are considered provisional. Please read the definiti
 
 Which is linked to the "definition of provisional data"
 http://www.neracoos.org/data/provisional.html
+
+
+=GLOS Short Disclaimer=
+Disclaimer: All products published on this website are prototype products and are not intended to be used for navigational or operational purposes. View full disclaimer.
+
+=GLOS Full Disclaimer=
+http://glos.us/legal
