@@ -1,0 +1,17 @@
+#summary Collection of example data disclaimers for potential incorporation in IOOS.
+
+= CO-OPS Tides Online Water Level Stations by State =
+http://tidesonline.noaa.gov/disclaimer.html
+Center for Operational Oceanographic Products and Services
+
+Data Disclaimer
+
+These raw data have not been subjected to the National Ocean Service's quality control or quality assurance procedures and do not meet the criteria and standards of official National Ocean Service data. They are released for limited public use as preliminary data to be used only with appropriate caution. 
+
+
+Also see the same disclaimer used at the bottom of the CO-OPS SOAP Web Services landing page.
+http://opendap.co-ops.nos.noaa.gov/axis/
+
+=NWS Main Disclaimer=
+http://www.weather.gov/disclaimer
+The above is long and broad.
