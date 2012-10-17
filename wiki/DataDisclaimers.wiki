@@ -15,3 +15,9 @@ http://opendap.co-ops.nos.noaa.gov/axis/
 =NWS Main Disclaimer=
 http://www.weather.gov/disclaimer
 The above is long and broad.
+
+=NERACOOS Short Disclaimer=
+NOTICE: These realtime data are considered provisional. Please read the definition of provisional data and their inherent limitations. 
+
+Which is linked to the "definition of provisional data"
+http://www.neracoos.org/data/provisional.html
