@@ -29,6 +29,14 @@ Disclaimer: All products published on this website are prototype products and ar
 =GLOS Full Disclaimer=
 http://glos.us/legal
 
-=CariCOOS=
+=CariCOOS Full Disclaimer=
 Disclaimer: Disclaimer
 This information is presented as a good faith service to the scientific community, the public in general and to our colleagues and friends. The information, views and opinions herein provided should not be viewed as formally accurate scientific data and/or advice that can be relied upon without proper verification and validation. This service should not be construed as a substitute for specific data that could be obtained though official sources. If any inaccuracy is observed, please inform CaRA as soon as possible for verification and correction, as necessary. Use of and reliance upon the information provided in this web site signifies that its user(s) understands and has(ve) accepted of the above mentioned caveat and conditions.
+
+=NANOOS Full Disclaimer= 
+http://nanoos.org/disclaimer/disclaimer.php
+
+=AOOS Full Disclaimer=
+All products published on this website are prototype products and are not intended to be used for navigational or operational purposes. This website provides an aggregation and display service for distributed data and modeling products that come from a wide array of contributors. We are grateful to those contributors and make every attempt to give them credit for their products. We welcome suggestions for clarification or correction, as appropriate. 
+
+With respect to information available from this website, neither AOOS nor any of its members, employees or agents makes any warranty, expressed or implied, including merchantability and fitness for a particular purpose, or assumes any legal liability or responsibility for the accuracy, completeness or usefulness of any information, apparatus, product or process disclosed, or represents that its use does not infringe privately owned rights. The user of these data and products assumes the entire risk related to use of these date and this web site. In no event will AOOS, its agents, employees or members be liable to a user or any third party for any direct, indirect, incidental, consequential, special or exemplary damages, loss of life or lost profits resulting from any use, misuse or reliance on any of the data or information appearing on this website.
