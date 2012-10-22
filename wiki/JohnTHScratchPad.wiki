@@ -7,7 +7,7 @@
 <b>Anticipated Result:</b> operatorSector in DS is...?
 
 <b>Situation:</b> Asset located in RA1, but data provided through RA2 and RA1<br>
-<b>Anticipated Result:</b> For the RA2 responses, keyword in GC is RA2.  parentNetwork in DS is also RA2.  Does a field contain R1?
+<b>Anticipated Result:</b> For the RA2 responses, keyword in GC is RA2.  parentNetwork in DS is also RA2.  Does a field contain RA1?
 
 <b>Situation:</b> Asset owned by ACE, operated by SCRIPPS, provided by RA1<br>  
 <b>Anticipated Result:</b> Keyword in GC is RA1, operatorSector in DS is academic, publisher in DS is RA1.  Where is ACE listed?
