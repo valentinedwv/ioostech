@@ -19,7 +19,7 @@
 
 <i>Note:</i> Not sure if I should be surprised by this, but the gml:id in GC is not specified using a URN.  Yet, the sml:id in DS is specified using a URN.  Conversely, the gml:name in GC and DS is specified using a URN and the sml:name in DS is not necessarily specified using a URN.
 
-<i>Note:</i> Where do we include information about the quality of the data?<br><br>
+<i>Note:</i> Where do we include information about the QA/QC?<br><br>
 
 ===Useful Reports Generated From NGDC ISO Metadata in the Service Registry===
 
