@@ -1,0 +1,45 @@
+#summary Proposal for an organization structure for some components of this wiki.
+#labels Phase-Implementation
+
+= Purpose =
+
+The primary purpose of this wiki is (comments? votes? alternatives?):
+ * to record the unorganized but important issues and solutions arrived at in the course of the SOS Reference Implementation Working group
+ * to house an in progress, but always up to date version of the SOS Interface Description Document that contains all the technical information necessary for a developer to either a. write client software to consume IOOS SOS, b. write server software implementing the IOOS profile (what's the correct word? Ioos Specification? ) of SOS
+ * to be a technical repository for projects and related activities that use SOS or other data access services? (list of libraries, client software, training materials, demos, presentations?)
+ * any/all of the above for each IOOS data access service including SOS, WMS, DAP (all flavors)
+ * repository of technical information documenting the entire IOOS architecture including Service Registry, Geoportal, Data Catalog, GTS distribution of data, relationships between major entities etc etc.
+ * repository of code implementing various common functions such as a general Python/Java/Matlab/C library of QARTOD algorithms.
+
+
+= Suggested Outline for the SOS IDD elements =
+
+* DataAccessServices
+  * SOS
+  * SOSClients
+    * EnvironmentalDataConnector
+    * Proteus
+    * pyOOS
+    * JavaNetCDFIOSP
+  * SOSServers
+    * 52NorthSOS
+    * ncSOS
+    * DIF SOS
+    * OostethysSOS
+  * SOSGuidelines (IDD)
+    * Request Parameters and usage
+    * Response types (aka Templates)
+    * SOSVocabularies (any SOS specific modifications or additions to the overall ControlledVocabularies page.
+* ControlledVocabularies
+     
+Pieces to consider
+# Record of the workshop
+# More thorough crosswalk with CF Discrete Sampling Geompetries (we have many pages already
+# Filling out the other big pieces of DMAC (RCV, Regional Portals)
+# Playing well with others (ocean.data.gov and company)
+# Intersections with the international programs
+# Observing System specific stuff (CF netCDF template for gliders is almost done)
+# More direct intersections with HFR/Waves
+# Tools for anything (web harvesting resources, other clients)
+# Training, demos, movies, mashups, example scripts
+# Individual regional IDD noting difference with the generic IDD.
