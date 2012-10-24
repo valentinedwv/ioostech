@@ -2,7 +2,7 @@
 #labels SOS
 
 
-This project, carried out by Axiom Consulting and Design, in collaboration with IOOS, aims to augment the 52North.org SOS server code base with modifications that IOOS has deemed important.  To accomplish this, Axiom developers have [https://svn.52north.org/svn/swe/main/SOS/Service/branches/ioos-sos/  forked the 52North server] and are adding new capabilities.  Periodically 52North will review changes in the IOOS branch for potential incorporation back in to the [https://svn.52north.org/svn/swe/main/SOS/Service/trunk/ 52North trunk].
+This project, carried out by Axiom Consulting and Design, in collaboration with IOOS, aims to augment the 52North.org SOS server code base with modifications that IOOS has deemed important.  To accomplish this, Axiom developers have [https://svn.52north.org/svn/swe/main/SOS/Service/branches/ioos-sos/  created an SVN branch of the 52North SOS code] and are adding new capabilities.  Changes that are applicable to all user groups (i.e. not specific to IOOS needs) are submitted back to the [https://svn.52north.org/svn/swe/main/SOS/Service/trunk/ 52North SOS trunk].
 
 Main project site and documentation site for the IOOS modifications to the 52North SOS service.
 http://ioossos.axiomalaska.com/
