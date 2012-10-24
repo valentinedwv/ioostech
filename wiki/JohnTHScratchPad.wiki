@@ -13,7 +13,7 @@
 <b>Anticipated Result:</b> Keyword in GC is RA1, operatorSector in DS is academic, publisher in DS is RA1.  Where is ACE listed?
 
 <b>Situation:</b>  Asset owned/operated by SCRIPPS, data provided by NDBC<br>
-<b>Anticipated Result:</b> operatorSector in DS is academic.  Publisher and parentNetwork are likely listed as NDBC.  RA is located in the Keyword in GC?  If an asset is not owned, operated, and provided by a federal agency, is the RA affiliation required to be noted in parentNetwork and/or publisher?
+<b>Anticipated Result:</b> operatorSector in DS is academic.  Publisher and parentNetwork are likely listed as NDBC.  If an asset is not owned, operated, and provided by a federal agency, is the RA affiliation required to be noted in parentNetwork and/or publisher?
 
 <i>Note:</i> Do we want to include PlatformMobility and PlatformEnvironment in the DS templates?  Ideally the PlatformEnvironment could be derived from the PlatformType, but the PlatformMobility maybe cannot.
 
