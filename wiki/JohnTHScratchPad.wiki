@@ -4,19 +4,19 @@
 ===Musings on identifying IOOS Assets using GC, DS, GC===
 
 <b>Situation:</b> Asset owned by RA1<br>
-<b>Anticipated Result:</b> operatorSector in DS is...?
+<b>Anticipated Result:</b> operatorSector in DS is...?<br>
 <b>Resolution:</b> We allow the RAs to choose their sector, whether it is a non-profit or academic?
 
 <b>Situation:</b> Asset located in RA1, but data provided through RA2 and RA1<br>
-<b>Anticipated Result:</b> For the RA2 responses, keyword in GC is RA2.  parentNetwork in DS is also RA2.  Does a field contain RA1?
+<b>Anticipated Result:</b> For the RA2 responses, keyword in GC is RA2.  parentNetwork in DS is also RA2.  Does a field contain RA1?<br>
 <b>Resolution:</b> We encourage that RA2 also puts RA1 in the parentNetwork
 
 <b>Situation:</b> Asset owned by ACE, operated by SCRIPPS, provided by RA1<br>  
-<b>Anticipated Result:</b> Keyword in GC is RA1, operatorSector in DS is academic, publisher in DS is RA1.  Where is ACE listed?
+<b>Anticipated Result:</b> Keyword in GC is RA1, operatorSector in DS is academic, publisher in DS is RA1.  Where is ACE listed?<br>
 <b>Resolution:</b> We require that the RA includes any federal affiliation in the parentNetwork.  
 
 <b>Situation:</b>  Asset owned/operated by SCRIPPS, data provided by NDBC<br>
-<b>Anticipated Result:</b> operatorSector in DS is academic.  Publisher is likely listed as NDBC, parentNetwork may be SCRIPPS and RA and NDBC.
+<b>Anticipated Result:</b> operatorSector in DS is academic.  Publisher is likely listed as NDBC, parentNetwork may be SCRIPPS and RA and NDBC.<br>
 <b>Resolution:</b> For any re-served data, we require that the original data providers and the RA are listed in the parentNetwork.
 
 <i>Note:</i> Do we want to include PlatformMobility and PlatformEnvironment in the DS templates?  Ideally the PlatformEnvironment could be derived from the PlatformType, but the PlatformMobility maybe cannot.  This is probably for v1.1
