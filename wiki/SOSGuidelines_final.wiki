@@ -82,10 +82,11 @@ The response given by the server to valid (as described above) requests are docu
 The versions of the international OGC standards and specifications used in the IOOS SOS implementation. The IOOS implementation includes some extensions.
 
 || *Specification* || *Version* || *Comments, Resources* ||
-|| GML || 3.? ||  ||
+|| GML || 3.11 ||  ||
 || O&M || 1.0 || [https://wiki.52north.org/bin/view/Sensornet/SosDataModeling O&M 1.0.0 for SOS 1.0.0.(52 North)] ||
 || SOS || 1.0 ||  ||
-|| SWE Common || 1.0 || [http://portal.opengeospatial.org/files/?artifact_id=21273 SWE Common 1.0 Standard coupled with SensorML Standard] ||
+|| SWE Common || 1.01 || Used everywhere except for om:result in GetObservation response [http://portal.opengeospatial.org/files/?artifact_id=21273 SWE Common 1.0 Standard coupled with SensorML Standard] ||
+|| SWE Common || 2.0 || Used in om:result of GetObservation response ||
 || SensorML || 1.0? ||  ||
 
   * *GML*: Geographic Markup Language
