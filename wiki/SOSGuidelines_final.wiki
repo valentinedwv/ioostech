@@ -87,7 +87,7 @@ The versions of the international OGC standards and specifications used in the I
 || SOS || 1.0 ||  ||
 || SWE Common || 1.01 || Used everywhere except for om:result in GetObservation response ([http://portal.opengeospatial.org/files/?artifact_id=21273 SWE Common 1.0 Standard coupled with SensorML Standard]) ||
 || SWE Common || 2.0 || Used in om:result of GetObservation response ||
-|| SensorML || 1.0? ||  ||
+|| SensorML || 1.0 ||  ||
 
   * *GML*: Geographic Markup Language
   * *O&M*: Observations & Measurements
