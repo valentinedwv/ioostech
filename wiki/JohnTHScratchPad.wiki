@@ -25,6 +25,8 @@
 
 <i>Note:</i> Where do we include information about the QA/QC for certification, in addition to other reasons?  This is probably for v1.1 
 
+<i>Note:</i> Do we need a seasonal flag or a non-real time sensor flag?
+
 <i>Note:</i> I'll be starting an asset inventory page with requirements, metadata fields, mappings to SOS, etc in the days to come.
 
 <br>
