@@ -27,7 +27,12 @@
 
 <i>Note:</i> I'll be starting an asset inventory page with requirements, metadata fields, mappings to SOS, etc in the days to come.
 
-<br><br>
+<br>
 ===Useful Reports Generated From NGDC ISO Metadata in the Service Registry===
 
 A record in the registry is one dataset for DAP services but a service endpoint (containing multiple datasets) for SOS services.  Will need a way of combining DAP datasets when creating summary reports 
+
+<br>
+===Musings on Platform Vocabularies===
+
+One issue is that many shore stations contain water measurements and met measurements, such as the Puerto Rico Seismic Network which takes water levels and met obs. How do we classify these stations?
