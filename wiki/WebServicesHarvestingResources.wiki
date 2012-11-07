@@ -34,7 +34,7 @@
 
 = Station URN Names =
 || *Source* || *URL* || *SOS Station Name* ||
-|| Chugach Nation Forest Avalanche Information Center || www.cnfaic.org || cnfaic ||
+|| Chugach Nation Forest Avalanche Information Center || www.cnfaic.org || org.cnfaic ||
 || Hydrometeorological Design Studies Center (HADS) || http://dipper.nws.noaa.gov/hdsc/pfds || gov.noaa.nws.hads ||
 || NOAA Weather || http://www.nws.noaa.gov/ || gov.noaa.nws ||
 || Remote Automatic Weather Stations (RAWS) || http://www.raws.dri.edu/ || edu.dri.raws ||
