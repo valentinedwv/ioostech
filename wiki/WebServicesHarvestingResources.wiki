@@ -41,6 +41,17 @@
 || Snow telemetry (SNOTEL) || http://www.wcc.nrcs.usda.gov/ || gov.usda.nrcs.wcc.snotel ||
 || U.S. Geological Survey water (USGS Water/NWIS) || http://waterdata.usgs.gov/ak/nwis/uv || gov.usgs.waterdata ||
 || NERRS || http://cdmo.baruch.sc.edu/webservices.cfm || cdmo.nerrs ||
+|| Micro specialties Inc || http://www.micro-specialties.com/ || com.micro-specialties ||
+|| Circum-Arctic Lakes Observation Network || http://datagarrison.com/users/300234011204340/300234011204340/plots.php || nsf.aon.calon ||
+|| Alaska Department of Transportation || http://www.dot.state.ak.us/iways/roadweather/forms/IndexForm.html || alaska.dot ||
+|| USGS Climate Monitoring || http://data.usgs.gov/climateMonitoring/main/home || gov.usgs.climate-monitoring ||
+|| NOAA Water || http://water.weather.gov/ahps/index.php || gov.noaa.water ||
+|| AOOS || http://www.aoos.org/ || aoos ||
+|| US Climate Reference Network (USCRN) || http://www.ncdc.noaa.gov/crn/ || gov.noaa.uscrn ||
+|| NOAA PMEL Carbon Program || http://www.pmel.noaa.gov/co2/ || gov.noaa.pmel ||
+|| Water and Environmental Research Center || http://ine.uaf.edu/werc/ || edu.uaf.werc ||
+
+
 
 == Sensor Web Harvester ==
 https://github.com/axiomalaska/sensor-web-harvester
