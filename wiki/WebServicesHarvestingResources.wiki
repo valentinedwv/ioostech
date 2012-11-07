@@ -38,9 +38,9 @@
 || Hydrometeorological Design Studies Center (HADS) || http://dipper.nws.noaa.gov/hdsc/pfds || gov.noaa.nws.hads ||
 || NOAA Weather || http://www.nws.noaa.gov/ || gov.noaa.nws ||
 || Remote Automatic Weather Stations (RAWS) || http://www.raws.dri.edu/ || edu.dri.raws ||
-|| Snow telemetry (SNOTEL) || http://www.wcc.nrcs.usda.gov/ || gov.usda.nrcs.wcc ||
+|| Snow telemetry (SNOTEL) || http://www.wcc.nrcs.usda.gov/ || gov.usda.nrcs.wcc.snotel ||
 || U.S. Geological Survey water (USGS Water/NWIS) || http://waterdata.usgs.gov/ak/nwis/uv || gov.usgs.waterdata ||
-|| NERRS || http://cdmo.baruch.sc.edu/webservices.cfm || nerrs ||
+|| NERRS || http://cdmo.baruch.sc.edu/webservices.cfm || cdmo.nerrs ||
 
 == Sensor Web Harvester ==
 https://github.com/axiomalaska/sensor-web-harvester
