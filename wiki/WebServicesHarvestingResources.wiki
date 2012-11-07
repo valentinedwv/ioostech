@@ -32,8 +32,8 @@
 
 {{{[1]}}} AOOS' sensor-web-harvester currently uses http://www.ndbc.noaa.gov/to_station.shtml and http://www.ndbc.noaa.gov/data/5day2/ for NDBC sensors because these endpoints tend to be more up-to-date and complete.
 
-= Station URN Names =
-|| *Source* || *URL* || *SOS Station Name* ||
+= URN Authorities =
+|| *Source* || *URL* || *Authority* ||
 || Chugach Nation Forest Avalanche Information Center || http://www.cnfaic.org || cnfaic ||
 || Hydrometeorological Design Studies Center (HADS) || http://dipper.nws.noaa.gov/hdsc/pfds || gov.noaa.nws.hads ||
 || NOAA Weather || http://www.nws.noaa.gov/ || gov.noaa.nws ||
