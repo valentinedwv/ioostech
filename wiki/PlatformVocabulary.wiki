@@ -6,8 +6,10 @@
 The 1.0 templates were complete without final guidance on the controlled vocabulary used in the templates to describe platformType.  This was unavoidable as we had to make progress.  This issue is in place to formally place the completion of the platform vocabulary in the 1.1 work plan, though I expect we will solve the problem before that.  For the record, Emilio, John Ten Hoeve, Rob R and Sara Haines have, to date, been most active in developing the vocabulary.  If you're interested please use this list to express that interest.  I've set up a wiki page to record the deliberations of that group at  PlatformVocabulary which is also linked from the main Vocabularies page (or will be soon).
 {{{
 <sml:classifier name="platformType">
-<sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType"><sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/><sml:value>MOORED BUOY</sml:value>
-</sml:Term>
+   <sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType">
+      <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/>
+      <sml:value>MOORED BUOY</sml:value>
+   </sml:Term>
 </sml:classifier>
 }}}
 the vocab at http://mmisw.org/ont/ioos/platform does not yet exist.
