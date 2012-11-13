@@ -69,7 +69,7 @@ The CF standard names vocabulary only defines scalar properties. Previously, IOO
 
 == Station Platform Type ==
 
-A vocabulary for platform types used to describe each station asset is currently under development.  A [http://code.google.com/p/ioostech/wiki/PlatformVocabulary page] has been set up to describe the platform vocabulary work.  It draws from:
+A vocabulary for platform types used to describe each station asset is currently under development.  A [http://code.google.com/p/ioostech/wiki/PlatformVocabulary PlatformVocabulary page] has been set up to describe the platform vocabulary work.  It draws from:
   * [http://mmisw.org/ont/mmi/platform The MMI Platform Ontology], developed and last updated by the [https://marinemetadata.org/community/teams/ontplatforms MMI Platform Ontology team] around 2005/2006.
   * The platform type categories compiled for the IOOS Observation Asset Inventory, last updated in 2011.
 
