@@ -25,6 +25,18 @@ SECOORA:
 
 Initial IOOS Vocab:  
 
-= Example of proposed Hierarchial Structure  =
+== Example of proposed Hierarchical Structure ==
 
-|| Platform Type || Subclass || Subclass || 
+|| Platform Type || Subclass || Subclass ||
+|| Animal        || Fish     || Subclass ||
+||               || Mammal   || Subclass ||
+|| Buoy || Subclass || Subclass ||
+|| Platform Type || Subclass || Subclass ||
+|| Platform Type || Subclass || Subclass ||
+|| Platform Type || Subclass || Subclass ||
+|| Platform Type || Subclass || Subclass ||
+|| Platform Type || Subclass || Subclass ||
+|| Platform Type || Subclass || Subclass ||
+|| Platform Type || Subclass || Subclass ||
+|| Platform Type || Subclass || Subclass ||
+|| Platform Type || Subclass || Subclass ||
