@@ -16,7 +16,7 @@ the vocab at http://mmisw.org/ont/ioos/platform does not yet exist.
 
 
 = Existing Platform Vocabularies =
-MMI Platform Vocabulary: 
+MMI Platform Vocabulary: http://mmisw.org/ont/mmi/platform
 
 NDBC: 
 
