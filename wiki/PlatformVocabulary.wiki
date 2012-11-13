@@ -3,7 +3,7 @@
 
 == Introduction ==
  
-The Platform Vocabulary is being developed to give oceanographic data users consistent terminology to use for their data sets.  The Platform Vocabulary is an essential part of fulfilling the development of the IOOS SOS templates.  However, version 1.0 of the templates were complete without final guidance on the controlled vocabulary used in the templates to describe platformType.  This was unavoidable as we had to make progress.  The immediate goal is to complete the platform vocabulary before release of the version 1.1 and it is expected the vocabulary will be resolved before that.  For the record, Emilio, John Ten Hoeve, Rob R. and Sara Haines, to date, have been most active in developing the vocabulary.  If you are interested please, express that interest through the list serv. 
+The Platform Vocabulary is being developed to give oceanographic data users consistent terminology to use for their data sets.  The Platform Vocabulary is an essential part of fulfilling the development of the IOOS SOS templates.  However, version 1.0 of the templates were complete without final guidance on the controlled vocabulary used in the templates to describe platformType.  This was unavoidable as we had to make progress.  The immediate goal is to complete the platform vocabulary before release of the version 1.1 and it is expected the vocabulary will be resolved before that.  For the record, Emilio, John Ten Hoeve, Rob R. and Sara Haines, to date, have been most active in developing the vocabulary.  If you are interested please, contact Rob Ragsdale (Rob.Ragsdale@noaa.gov) or John Ten Hoeve (John.tenhoeve@noaa.gov).  
 
 {{{
 <sml:classifier name="platformType">
@@ -26,6 +26,8 @@ SECOORA:
 Initial IOOS Vocab:  
 
 == Platform Vocabulary Use Cases ==
+IOOS has drafted use cases to help derive requirements for the IOOS Platform Vocabulary.  These use cases are draft examples and include an initial set of guidelines for the vocabulary.   
+
 1.  The Program Office has a requirement to report assets in broad categories (e.g. buoys, HF radars, fixed stations near or on the coasts) for data calls and budgetary reports.  The platform vocabulary should be hierarchical so that the assets may be reported according to few large classes (less than 10) but also in higher 
 
 2.  Definitions for the platform vocabulary must be prescriptive to avoid misclassification.  In the previous version of the IOOS Asset Inventory, similar assets were assigned different platforms across the Regional Associations.  
