@@ -64,7 +64,6 @@ A hierarchical structure has been proposed for the Platform Vocabulary in order 
 ||                          ||                          || Roof     ||  
 ||                          || Fixed Off-shore Station  || Tower    ||  
 ||                          ||                          || Mooring  || 
-||                          || Station                  ||          ||
 || Radar                    ||                          ||          ||
 || Sampling Location        ||                          ||          ||
 || Satellite                ||                          ||          ||
