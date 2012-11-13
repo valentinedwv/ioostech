@@ -3,7 +3,7 @@
 
 == Introduction ==
  
-The Platform Vocabulary is being developed to give oceanographic data users a consistent terminology to use for their data sets.  The Platform Vocabulary is an essential part of the fulfilling the development of the IOOS SOS templates.  However, version 1.0 of the templates were complete without final guidance on the controlled vocabulary used in the templates to describe platformType.  This was unavoidable as we had to make progress.  The immediate goal is to complete the platform vocabulary before release of the version 1.1 and it is expected the vocabulary will be resolved before that.  For the record, Emilio, John Ten Hoeve, Rob R. and Sara Haines, to date, have been most active in developing the vocabulary.  If you are interested please, express that interest through the list serv.  
+The Platform Vocabulary is being developed to give oceanographic data users consistent terminology to use for their data sets.  The Platform Vocabulary is an essential part of fulfilling the development of the IOOS SOS templates.  However, version 1.0 of the templates were complete without final guidance on the controlled vocabulary used in the templates to describe platformType.  This was unavoidable as we had to make progress.  The immediate goal is to complete the platform vocabulary before release of the version 1.1 and it is expected the vocabulary will be resolved before that.  For the record, Emilio, John Ten Hoeve, Rob R. and Sara Haines, to date, have been most active in developing the vocabulary.  If you are interested please, express that interest through the list serv.  
 
 {{{
 <sml:classifier name="platformType">
