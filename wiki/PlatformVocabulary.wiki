@@ -56,8 +56,9 @@ A hierarchical structure has been proposed for the Platform Vocabulary in order 
 || Cabled Array             || Subclass                 ||          ||
 || Camera                   || IR Camera                ||          ||
 ||                          || Webcam                   ||          || 
-|| Fixed Drilling Platform  || Station                  || Dock     ||
-|| Fixed Station            ||                          || Pier     ||
+|| Fixed Drilling Platform  ||                          ||          ||
+|| Fixed Station            || Station                  || Dock     ||
+||                          ||                          || Pier    ||   
 ||                          ||                          || Tower    ||
 ||                          || Fixed Inland Station     || Tower    ||
 ||                          ||                          || Roof     ||  
