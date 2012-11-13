@@ -28,7 +28,7 @@ Initial IOOS Vocab:
 == Platform Vocabulary Use Cases ==
 IOOS has drafted use cases to help derive requirements for the IOOS Platform Vocabulary.  These use cases are draft examples and include an initial set of guidelines for the vocabulary.   
 
-# The Program Office has a requirement to report assets in broad categories (e.g. buoys, HF radars, fixed stations near or on the coasts) for data calls and budgetary reports.  The platform vocabulary should be hierarchical so that the assets may be reported according to few large classes (less than 10) but also in higher 
+  #The Program Office has a requirement to report assets in broad categories (e.g. buoys, HF radars, fixed stations near or on the coasts) for data calls and budgetary reports.  The platform vocabulary should be hierarchical so that the assets may be reported according to few large classes (less than 10) but also in higher 
 
 # Definitions for the platform vocabulary must be prescriptive to avoid misclassification.  In the previous version of the IOOS Asset Inventory, similar assets were assigned different platforms across the Regional Associations.  
 
