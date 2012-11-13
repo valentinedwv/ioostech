@@ -27,16 +27,32 @@ Initial IOOS Vocab:
 
 == Example of proposed Hierarchical Structure ==
 
-|| Platform Type || Subclass || Subclass ||
-|| Animal        || Fish     || Subclass ||
-||               || Mammal   || Subclass ||
-|| Buoy || Subclass || Subclass ||
-|| Platform Type || Subclass || Subclass ||
-|| Platform Type || Subclass || Subclass ||
-|| Platform Type || Subclass || Subclass ||
-|| Platform Type || Subclass || Subclass ||
-|| Platform Type || Subclass || Subclass ||
-|| Platform Type || Subclass || Subclass ||
-|| Platform Type || Subclass || Subclass ||
-|| Platform Type || Subclass || Subclass ||
-|| Platform Type || Subclass || Subclass ||
+|| Platform Type            || Subclass                 || Subclass ||
+|| Animal                   || Fish                     || Tuna     ||
+||                          ||                          || Shark    ||
+||                          || Mammal                   || Whale    ||
+|| Buoy                     || Moored Buoy              ||          ||  
+||                          || Moored Profiling Buoy    ||          ||
+||                          || Drifting Buoy            ||          ||
+||                          || Drifting Profiling Buoy  ||          ||
+||                          || Wave Buoy                ||          ||
+|| Cabled Array             || Subclass                 ||          ||
+|| Camera                   || IR Camera                ||          ||
+||                          || Webcam                   ||          || 
+|| Fixed Drilling Platform  || Station                  || Dock     ||
+|| Fixed Station            ||                          || Pier     ||
+||                          ||                          || Tower    ||
+||                          || Fixed Inland Station     || Tower    ||
+||                          ||                          || Roof     ||  
+||                          || Fixed Off-shore Station  || Tower    ||  
+||                          ||                          || Mooring  || 
+||                          || Station                  ||          ||
+|| Radar                    ||                          ||          ||
+|| Sampling Location        ||                          ||          ||
+|| Satellite                ||                          ||          ||
+|| Vehicle                  || Aircraft                 ||          ||
+||                          || Autonomous Underwater Vehicle ||     || 
+||                          || Glider                   ||          ||
+||                          || Towed Vehicle            ||          ||
+||                          || Vehicle                  ||          ||
+||                          || Vessel                   ||          ||
