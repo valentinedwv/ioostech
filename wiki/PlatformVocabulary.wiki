@@ -28,15 +28,15 @@ Initial IOOS Vocab:
 == Platform Vocabulary Use Cases ==
 IOOS has drafted use cases to help derive requirements for the IOOS Platform Vocabulary.  These use cases are draft examples and include an initial set of guidelines for the vocabulary.   
 
-1.  The Program Office has a requirement to report assets in broad categories (e.g. buoys, HF radars, fixed stations near or on the coasts) for data calls and budgetary reports.  The platform vocabulary should be hierarchical so that the assets may be reported according to few large classes (less than 10) but also in higher 
+# The Program Office has a requirement to report assets in broad categories (e.g. buoys, HF radars, fixed stations near or on the coasts) for data calls and budgetary reports.  The platform vocabulary should be hierarchical so that the assets may be reported according to few large classes (less than 10) but also in higher 
 
-2.  Definitions for the platform vocabulary must be prescriptive to avoid misclassification.  In the previous version of the IOOS Asset Inventory, similar assets were assigned different platforms across the Regional Associations.  
+# Definitions for the platform vocabulary must be prescriptive to avoid misclassification.  In the previous version of the IOOS Asset Inventory, similar assets were assigned different platforms across the Regional Associations.  
 
-3.  If sensor information is not populated in the appropriate fields in sensorML, this sensor information may have to be provided in the platform vocabulary.  For example, a CTD may be on a vessel or a shore station, but if that information probably will not be included in the sensor metadata, then it may have to be included in some way iin the platform vocabulary.  Webcams are another good example of this.
+If sensor information is not populated in the appropriate fields in sensorML, this sensor information may have to be provided in the platform vocabulary.  For example, a CTD may be on a vessel or a shore station, but if that information probably will not be included in the sensor metadata, then it may have to be included in some way iin the platform vocabulary.  Webcams are another good example of this.
 
-4.  The platform vocabulary must be able to handle mixed platforms (combined shore sensors measuring water temperature and met sensors measuring wind speed). Maybe this isn’t really a mixed platform and is instead should be called “Fixed Station”?
+The platform vocabulary must be able to handle mixed platforms (combined shore sensors measuring water temperature and met sensors measuring wind speed). Maybe this isn’t really a mixed platform and is instead should be called “Fixed Station”?
 
-5.  If a hierarchical structure is used for the vocabulary, the platform must be able to be uniquely identified using the MMI framework, and the structure should be transparent.  For example, if wave buoy is a subclass of buoy, and the Platform Type is listed as wave buoy, then the XPath provided should direct you to a page where wave buoy is noted as a subclass of buoy.  
+If a hierarchical structure is used for the vocabulary, the platform must be able to be uniquely identified using the MMI framework, and the structure should be transparent.  For example, if wave buoy is a subclass of buoy, and the Platform Type is listed as wave buoy, then the XPath provided should direct you to a page where wave buoy is noted as a subclass of buoy.  
 
 Guidelines:
 1.  No capitalization
