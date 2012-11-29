@@ -71,3 +71,34 @@ A hierarchical structure has been proposed for the Platform Vocabulary in order 
 ||                          || Towed Vehicle            ||          ||
 ||                          || Vehicle                  ||          ||
 ||                          || Vessel                   ||          ||
+
+==Discussion Forum==
+
+*Sara Haines - 11/28/12*
+
+The Platform Vocab wiki page is a great start.  The use cases really help to understand what the issues are.  Nice addition. Here are my  questions and comments to consider (mostly with regard to the table and but also to help refine use cases).
+ 
+1. Are cameras and radars sensors? Should we classify stations with subclass HFR and webcam stations
+
+2. A cabled array is a set of platforms. 
+
+3. Drifters, buoys, and floats?? not sure how to categorize or map with fixed-station, fixed-profiling, profiling, profile-drifting types of these platforms (discuss more)
+
+4. There should be definitions for each of the platform types (this might help the above comments and questions)
+
+
+*John Ten Hoeve - 11/29/12*
+
+Thanks for the comments Sara.  You bring up a lot of good points that Rob and I were struggling with here.  
+
+1. We were particularly struggling with the compromise between having accurate terms for platforms but also employing jargon that people have already used.  HFR is a great example, as you noted.  It's technically a sensor, but what would be the platform?  Shore station possibly?  That's why I initially included it as a platform in the table to be more specific.  
+
+2.  I agree with your take on cabled array - it's really a set of platforms but I'm not sure how data from cabled arrays will be handled through web services yet, for instance, SOS.  Will each element of the array be considered a different platform in the world of SOS (i.e. a different DescribeSensor file for each subsurface mooring of the cabled array?)  If so, then the cabled array may be a network and the individual elements, platforms?  In that case, cabled array maybe wouldn't have to be in the platform vocabulary?
+
+3.  I also had trouble with buoys, drifters, floats, and moorings.  I agree that this need some thought.  My best attempt was in the table on the wiki.
+
+4.  I agree that definitions would help a lot
+
+5.  Another issue with the hierarchical framework is that if the lowest element of the hierarchy is used to populate the PlatformType field, then there may be similar terms used across different branches of the hierarchical tree.  I know that in SOS at least you could trace the hierarchy by using the MMI reference, but it still may be confusing for people who only want to look at the term.  Is it worth it to make terms more explicit?  In other words, instead of "Fixed Station"/"Inland Station"/"Dock" in the hierarchy, have a term like "Fixed Station - Inland Station - Dock"
+
+
