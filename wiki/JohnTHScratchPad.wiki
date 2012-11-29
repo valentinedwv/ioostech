@@ -27,6 +27,8 @@
 
 <i>Note:</i> Do we need a seasonal flag or a non-real time sensor flag?
 
+<i>Note:</i> I think we need a placeholder for the WMO ID
+
 <i>Note:</i> I'll be starting an asset inventory page with requirements, metadata fields, mappings to SOS, etc in the days to come.
 
 <br>
