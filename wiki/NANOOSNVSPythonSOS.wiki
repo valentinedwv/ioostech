@@ -41,7 +41,7 @@ Usage descriptions, assumptions, and limitations.
   * Request types:
     # *Latest observations.* When the _eventTime_ key is omitted, the latest observation is returned *(OOT)*. When the station and observed property are measured at multiple depths, the latest observation per depth is returned.
     # *Specified interval.* Example: eventTime=2011-11-15T00:00Z/2011-11-17T23:00Z
-    # *Specified instant.* Example: eventTime=2011-11-15T00:00Z. The requested timestamp is 'buffered' by 20 minutes on each end.
+    # *Specified instant.* Example: eventTime=2011-11-15T00:00Z. The requested timestamp is 'buffered' by 5 minutes on each end.
 
 == Station time period begin-end conventions ==
 
@@ -54,14 +54,14 @@ The GetCapabilities response is very useful as an initial, sparse catalog of wha
 }}}
 It's a safe bet that in many, if not most, cases, _gml:endPosition indeterminatePosition="now"_ is used even when the station has been offline for an extended period. I'm not aware of any IOOS guidelines about this.
 
-In the NANOOS SOS only the previous 30 days of data are available, but even when a station or a parameter in a station has been offline for >30 days, the last observed value and its timestamp are retained and are also available. The NVS database supporting this SOS service also uses a manually set "OFFLINE" flag to indicate that a station is currently offline; the reason behind it and expected time to reactivation are not machine interpretable. Taking this context into account, the NANOOS SOS adopted a convention with four parts:
+In the NANOOS SOS only the previous 60 days of data are available, but even when a station or a parameter in a station has been offline for >60 days, the last observed value and its timestamp are retained and are also available. The NVS database supporting this SOS service also uses a manually set "OFFLINE" flag to indicate that a station is currently offline; the reason behind it and expected time to reactivation are not machine interpretable. Taking this context into account, the NANOOS SOS adopted a convention with four parts:
   # *At least one sensor on the station is functioning normally and continues to return observations at the expected sampling rate:*
-    * _gml:beginPosition_: an explicit value is used; this value is typically 30 days ago, the start of the data cache available (_not_ the deployment start, which is not available!)
+    * _gml:beginPosition_: an explicit value is used; this value is typically 60 days ago, the start of the data cache available (_not_ the deployment start, which is not available!)
     * _gml:endPosition_: left blank and attributed with _indeterminatePosition="now"_, as illustrated above, to indicate that observation is ongoing.
-  # *Station is currently offline (_OFFLINE_ flag is set), and the last observation was reported within the previous 30 days:*
-    * _gml:beginPosition_: an explicit value is used; this value is typically 30 days ago.
+  # *Station is currently offline (_OFFLINE_ flag is set), and the last observation was reported within the previous 60 days:*
+    * _gml:beginPosition_: an explicit value is used; this value is typically 60 days ago.
     * _gml:endPosition_: as with _gml:beginPosition_, an explicit value is used, corresponding to the last timestamp when an observation was reported.
-  # *Station is currently offline (_OFFLINE_ flag is set), and the last observation was reported more than 30 days ago but within the previous 180 days:*
+  # *Station is currently offline (_OFFLINE_ flag is set), and the last observation was reported more than 60 days ago but within the previous 180 days:*
     * _gml:beginPosition_ and _gml:endPosition_ use explicit, identical values, corresponding to the last timestamp when an observation was reported.
   # *Station is currently offline (_OFFLINE_ flag is set), and the last observation was reported more than 180 days ago:* In this case, it's assumed that the station has been removed permanently or not coming back any time soon, so it's excluded from the SOS service altogether.
 == Data encodings available ==
@@ -92,7 +92,7 @@ All these examples are currently based on multi-depth (profiling) platforms. Exp
 
 == Limitations ==
 
-  * An important current limitation has nothing to do with the code itself, but with the data store behind it: only the previous 30 days of data are available. 
+  * An important current limitation has nothing to do with the code itself, but with the data store behind it: only the previous 60 days of data are available. 
   * WMO Station ID's are not used at this time.
   * Only GET requests are implemented. POST requests are not implemented, and there are no near-term plans to do so.
   * Limitations of this SOS code are mainly related to GetObservation:
