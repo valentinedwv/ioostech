@@ -76,6 +76,7 @@ A hierarchical structure has been proposed for the Platform Vocabulary in order 
 ==Animal Platform Terms==
 
 Scientific name and common name.  For example, if common name = northern elephant seal and if scientific name = Mirounga angustirostris, the platform term would be a combination of the two.  We recommend to use both common names and scientific names so that it can be searched by either.
+The scientific and common name for animals can be found here URL: http://www.marinespecies.org/
 
 
 ==Discussion Forum==
