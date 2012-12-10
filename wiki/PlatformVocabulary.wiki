@@ -72,6 +72,12 @@ A hierarchical structure has been proposed for the Platform Vocabulary in order 
 ||                          || Vehicle                  ||          ||
 ||                          || Vessel                   ||          ||
 
+
+==Animal Platform Terms==
+
+Scientific name and common name.  For example, if common name = northern elephant seal and if scientific name = Mirounga angustirostris, the platform term would be a combination of the two.  We recommend to use both common names and scientific names so that it can be searched by either.
+
+
 ==Discussion Forum==
 
 *Sara Haines - 11/28/12*
@@ -100,5 +106,3 @@ Thanks for the comments Sara.  You bring up a lot of good points that Rob and I 
 4.  I agree that definitions would help a lot
 
 5.  Another issue with the hierarchical framework is that if the lowest element of the hierarchy is used to populate the PlatformType field, then there may be similar terms used across different branches of the hierarchical tree.  I know that in SOS at least you could trace the hierarchy by using the MMI reference, but it still may be confusing for people who only want to look at the term.  Is it worth it to make terms more explicit?  In other words, instead of "Fixed Station"/"Inland Station"/"Dock" in the hierarchy, have a term like "Fixed Station - Inland Station - Dock"
-
-
