@@ -77,7 +77,7 @@ This is complete list of IOOS Platform Vocabulary Terms used in the 2011 IOOS As
 
 || Acoustic Doppler Current Profiler            ||
 || Acoustic System ||
-ADCP
+|| ADCP||
 ADCP (SELF-CONTAINED)
 ADCP Profiler
 AIRCRAFT
