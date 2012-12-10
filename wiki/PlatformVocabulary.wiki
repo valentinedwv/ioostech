@@ -75,8 +75,8 @@ A hierarchical structure has been proposed for the Platform Vocabulary in order 
 == List of IOOS Platform Vocabulary Terms ==
 This is complete list of IOOS Platform Vocabulary Terms used in the 2011 IOOS Asset Inventory.  
 
-Acoustic Doppler Current Profiler
-Acoustic System
+|| Acoustic Doppler Current Profiler            ||
+|| Acoustic System ||
 ADCP
 ADCP (SELF-CONTAINED)
 ADCP Profiler
