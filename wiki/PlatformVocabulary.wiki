@@ -79,66 +79,66 @@ This is complete list of IOOS Platform Vocabulary Terms used in the 2011 IOOS As
 || Acoustic System ||
 || ADCP||
 ||ADCP (SELF-CONTAINED)||
-ADCP Profiler
-AIRCRAFT
-AIS
-AUV
-BUOY
-CABLED ARRAY
-Coastal Met
-Coastal Wave/Met
-CTD
-CTD/MET
-Doppler Radar
-DRIFTER
-Drifter
-Drifter Buoy
-Field Station
-FIXED BOTTOM STATION
-FIXED MET STATION
-FIXED SHORE STATION
-FIXED TIDE GAGE
-FIXED WQ STATION
-GLIDER
-HF Radar
-Ice Profiling Sonar
-IR Camera
-Met Station
-MOORING
-OTHER
-OTHER - TOWED VEHICLE
-Passive Acoustic Recorder
-PIER
-PRESSURE SENSOR
-Research Ship
-RIB Boat
-ROV
-Sailing Vessel
-SeaBird CTD
-SL ADCP Profiler
-SMAST Pier
-SODAR
-Subsurface Mooring
-SUB-SURFACE MOORING
-Tide Gauge
-TOWER
-UUV
-VEHICLE
-VESSEL
-WATER LEVEL STATION
-Wave Buoy
-Weather Stations
-X-band Radar
-Ship, research
-Ship, fishing
-Ship, other
-Buoy, moored
-Buoy, drifting
-Autonomous Underwater Vehicle
-Glider
-Animal
-aircraft
-satellite
+||ADCP Profiler||
+||AIRCRAFT||
+||AIS||
+||AUV||
+||BUOY||
+||CABLED ARRAY||
+||Coastal Met||
+||Coastal Wave/Met||
+||CTD||
+||CTD/MET||
+||Doppler Radar||
+||DRIFTER||
+||Drifter||
+||Drifter Buoy||
+||Field Station||
+||FIXED BOTTOM STATION||
+||FIXED MET STATION||
+||FIXED SHORE STATION||
+||FIXED TIDE GAGE||
+||FIXED WQ STATION||
+||GLIDER||
+||HF Radar||
+||Ice Profiling Sonar||
+||IR Camera||
+||Met Station||
+||MOORING||
+||OTHER||
+||OTHER - TOWED VEHICLE||
+||Passive Acoustic Recorder||
+||PIER||
+||PRESSURE SENSOR||
+||Research Ship||
+||RIB Boat||
+||ROV||
+||Sailing Vessel||
+||SeaBird CTD||
+||SL ADCP Profiler||
+||SMAST Pier||
+||SODAR||
+||Subsurface Mooring||
+||SUB-SURFACE MOORING||
+||Tide Gauge||
+||TOWER||
+||UUV||
+||VEHICLE||
+||VESSEL||
+||WATER LEVEL STATION||
+||Wave Buoy||
+||Weather Stations||
+||X-band Radar||
+||Ship, research||
+||Ship, fishing||
+||Ship, other||
+||Buoy, moored||
+||Buoy, drifting||
+||Autonomous Underwater Vehicle||
+||Glider||
+||Animal||
+||aircraft||
+||satellite||
 
 ==Animal Platform Terms==
 
