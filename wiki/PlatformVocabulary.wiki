@@ -39,7 +39,7 @@ IOOS has drafted use cases to help derive requirements for the IOOS Platform Voc
   # No acronyms (High Frequency Radar)
   # A procedure is described for how the hierarchy is structured.  
 
-== Example of proposed Hierarchical Structure ==
+== Example of Proposed Hierarchical Structure ==
 A hierarchical structure has been proposed for the Platform Vocabulary in order meet reporting requirements, for example from the IOOS Asset Inventory or IOOS Catalog.  Here is an example to provide context to this proposal: 
 
 || Platform Type            || Subclass                 || Subclass ||
