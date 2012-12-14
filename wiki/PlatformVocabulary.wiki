@@ -174,3 +174,18 @@ Thanks for the comments Sara.  You bring up a lot of good points that Rob and I 
 4.  I agree that definitions would help a lot
 
 5.  Another issue with the hierarchical framework is that if the lowest element of the hierarchy is used to populate the PlatformType field, then there may be similar terms used across different branches of the hierarchical tree.  I know that in SOS at least you could trace the hierarchy by using the MMI reference, but it still may be confusing for people who only want to look at the term.  Is it worth it to make terms more explicit?  In other words, instead of "Fixed Station"/"Inland Station"/"Dock" in the hierarchy, have a term like "Fixed Station - Inland Station - Dock"
+
+
+*John Ten Hoeve - 12/13/12*
+
+Some thoughts from the teleconference today:
+
+1.  One of the primary goals is a list of terms and precise definitions
+
+2.  Do we want a hierarchical structure a flat structure?
+
+3.  The vocabulary should be consistent with the international community
+
+4.  Look to other vocabularies for examples and guidance
+
+5.  Hassan's Comment: We need a list of synonyms for the platform vocabulary and we should also be mindful of the specific attributes of those platforms
