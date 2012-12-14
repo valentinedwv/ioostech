@@ -4,13 +4,10 @@
 
 A comprehensive inventory of observational assets is critical to the continued development of the Integrated Ocean Observing System (IOOS) and is a mandate of the ICOOS Act of 2009.  The Asset Inventory will serve as an important tool to document changes to IOOS observing capabilities and Data Management and Communication (DMAC) services in future years, to assist with DMAC initiatives, to respond to budgetary inquires, to inform real-time operations, to provide information about national IOOS for communication and outreach purposes, and to facilitate gaps analyses.  The inventory must be up-to-date, but asking for continued manual updates from system operators is impractical.  As a result, the inventory will be designed to be largely automated.  To minimize the workload by data providers and to leverage existing DMAC investments, the Asset Inventory will take advantage of web services that the Regional Associations (RAs) are already expected to develop.  Overall, the development of the Asset Inventory will require minimal additional responsibility by regional and federal partners associated with the IOOS network but should greatly benefit the entire IOOS community.
 
+
 = Draft Plans (12/12/2012) =
 
 [http://ioostech.googlecode.com/files/InventoryDevelopmentPlanExecSummary.doc Executive Summary of the Plan]
 
 [http://ioostech.googlecode.com/files/InventoryDevelopmentPlan.doc Full Development and Implementation Plan]
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
