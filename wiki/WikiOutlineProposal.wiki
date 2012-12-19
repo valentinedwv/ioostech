@@ -33,13 +33,13 @@ The primary purpose of this wiki is (comments? votes? alternatives?):
 * ControlledVocabularies
      
 Pieces to consider
-# Record of the workshop
-# More thorough crosswalk with CF Discrete Sampling Geompetries (we have many pages already
-# Filling out the other big pieces of DMAC (RCV, Regional Portals)
-# Playing well with others (ocean.data.gov and company)
-# Intersections with the international programs
-# Observing System specific stuff (CF netCDF template for gliders is almost done)
-# More direct intersections with HFR/Waves
-# Tools for anything (web harvesting resources, other clients)
-# Training, demos, movies, mashups, example scripts
-# Individual regional IDD noting difference with the generic IDD.
+  # Record of the workshop
+  # More thorough crosswalk with CF Discrete Sampling Geompetries (we  have many pages already
+  # Filling out the other big pieces of DMAC (RCV, Regional Portals)
+  # Playing well with others (ocean.data.gov and company)
+  # Intersections with the international programs
+  # Observing System specific stuff (CF netCDF template for gliders is almost done)
+  # More direct intersections with HFR/Waves
+  # Tools for anything (web harvesting resources, other clients)
+  # Training, demos, movies, mashups, example scripts
+  # Individual regional IDD noting difference with the generic IDD.
