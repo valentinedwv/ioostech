@@ -98,7 +98,32 @@ The versions of the international OGC standards and specifications used in the I
 
 This section contains IOOS specific rules that have been distilled from resolved issues or mailing list discussions. The rule should have a human readable identifier, be concise, and include a link to the original discussion for background info. Developers writing SOS clients and validators should be able to use these rules to guide their coding.
 
-== LOWER_CAMEL_CASE_NAMES ==
+== Lower Camel Case Names ==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=31]
 
 Names, titles, gml ids, and other attribute values in SOS XML documents meant as human readable labels should use lower camel case (ex. sensorLocation). An exception is made for labels containing the short version of an identifier or definition URI that contains underscores (e.g. air_temperature, station_12, etc). Another exception is made for network-all. This rule does not apply to identifier values and terms from established vocabularies (e.g. http://mmisw.org/ont/cf/parameter/air_temperature or urn:ioos:station:xoos:the_station). Text containing acronyms should treat the acronym component as a normal word for readability (e.g. bprLocation instead of BPRLocation).
+
+== Asset URN identifiers ==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=14]
+
+Link: [https://groups.google.com/forum/#!topic/ioostech_dev/F1SBuamGUrI/discussion]
+
+Asset URN identifiers generally follow the convention explained at [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers], although this page needs to be updated.
+
+Supported asset URN ids are network, sensor, and station. Platform is not a supported id.
+
+Formats:
+
+  * Station: urn:ioos:station:wmo:41001
+  * Sensor: urn:ioos:sensor:wmo:41001:baro1
+  * Network: urn:ioos:network:aoos:all-barometric
+
+Definitions:
+
+  * Station: http://mmisw.org/ont/ioos/definition/stationID
+  * Sensor: http://mmisw.org/ont/ioos/definition/sensorID
+  * Network: http://mmisw.org/ont/ioos/definition/networkID
+
+Version (deployment date, etc) is not included in the URN standard at this time.
+
+
