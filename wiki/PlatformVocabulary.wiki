@@ -208,3 +208,45 @@ Another thought while reading regional progress reports: Since one mooring platf
 || Satellite tracked surface drifters provide a quasi-Lagrangian view of surface circulation and, with caveats regarding their performance relative to Lagrangian trajectories (not necessary surfaceconfined), provide excellent tools for surface trajectory analyses ||
 || *AXBTs, AXCTDs, AXCPs* || 
 || Airborne expendable bathythermograph; airborne expendable Conductivity, Temperature, depth; airborne expendable current profilers || 
+
+
+*NANOOS*
+
+|| *Shore Stations (weather)* || 
+|| Meteorological stations provide wind speed and direction, air temperature, sea surface temperature, barometric pressure, humidity, AIS, and rainfall levels. || 
+|| *Shore Stations (water) * || 
+|| Fixed stations provide water properties at discrete depths, either just surface or surface and deeper. ||
+|| *Single-Purpose Buoys * || 
+|| Buoys measure waves and SST. ||
+|| *Multi-Purpose Buoys * || 
+|| Multidisciplinary long-term moorings for shallow water (100 m depth) with a surface buoy and a suite of sensors in the water column below to provide water column conditions at specific depth. ||
+|| *Biogeochemical Profiling * || 
+|| Automated sensors on  piers  to measure temperature, salinity, chlorophyll, turbidity and water level at frequent intervals in the nearshore coastal ocean.  Add carbon dioxide and oxygen sensors to track ocean acidification and hypoxia in the nearshore environment. ||
+|| *Estuarine fixed * || 
+|| Fixed stations provide water properties at discrete depths, either just surface or surface and deeper. ||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
