@@ -197,5 +197,5 @@ Another thought while reading regional progress reports: Since one mooring platf
 ==Examples of Existing IOOS Regional Platform Definitions==
 
 
-|| Gliders, Profilers and AUVs:            || Underwater Gliders are autonomous underwater vehicles (AUVs) and Profilers programmed to survey the ocean in transects. They can be used for physical and/or water quality sampling (HABs, outfalls, hazardous spills), or with acoustic sea gliders, tracking fish and marine mammals as well as monitoring
+|| Gliders, Profilers and AUVs:            || || Underwater Gliders are autonomous underwater vehicles (AUVs) and Profilers programmed to survey the ocean in transects. They can be used for physical and/or water quality sampling (HABs, outfalls, hazardous spills), or with acoustic sea gliders, tracking fish and marine mammals as well as monitoring
 ambient noise and mapping habitat.                 || 
