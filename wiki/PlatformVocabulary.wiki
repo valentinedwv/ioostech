@@ -207,6 +207,8 @@ Another thought while reading regional progress reports: Since one mooring platf
 || Surface Drifters || 
 || Satellite tracked surface drifters provide a quasi-Lagrangian view of surface circulation and, with caveats regarding their performance relative to Lagrangian trajectories (not necessary surfaceconfined),
 provide excellent tools for surface trajectory analyses ||
+
 || AXBTs, AXCTDs, AXCPs || 
+
 || Airborne expendable bathythermograph; airborne expendable Conductivity, Temperature, depth; airborne expendable current profilers
 || 
