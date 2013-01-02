@@ -38,6 +38,12 @@
               <sml:value>urn:ioos:station:wmo:41001 buoy station, 150 NM East of Cape HATTERAS</sml:value>
             </sml:Term>
           </sml:identifier>
+          <!-- Optional WMO ID -->
+          <sml:identifier name="wmoID">
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/wmoID">
+              <sml:value>41001</sml:value>
+            </sml:Term>
+          </sml:identifier>
         </sml:IdentifierList>
       </sml:identification>
       
