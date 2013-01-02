@@ -189,3 +189,7 @@ Some thoughts from the teleconference today:
 4.  Look to other vocabularies for examples and guidance
 
 5.  Hassan's Comment: We need a list of synonyms for the platform vocabulary and we should also be mindful of the specific attributes of those platforms
+
+*John Ten Hoeve - 01/02/13*
+
+Another thought while reading regional progress reports: Since one mooring platform name can have surface and bottom nodes, there may be a need for a term that describes these types of platforms.
