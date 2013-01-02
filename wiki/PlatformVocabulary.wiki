@@ -194,7 +194,7 @@ Some thoughts from the teleconference today:
 
 Another thought while reading regional progress reports: Since one mooring platform name can have surface and bottom nodes, there may be a need for a term that describes these types of platforms.
 
-== Examples of Existing IOOS Regional Platform Definitions == ===(Extracted from IOOS Regional Build-Out Plans)===
+== Examples of Existing IOOS Regional Platform Definitions  (Extracted from IOOS Regional Build-Out Plans)===
 
 *SECOORA*
 
@@ -217,8 +217,6 @@ Another thought while reading regional progress reports: Since one mooring platf
 || Automated sensors on  piers  to measure temperature, salinity, chlorophyll, turbidity and water level at frequent intervals in the nearshore coastal ocean.  Add carbon dioxide and oxygen sensors to track ocean acidification and hypoxia in the nearshore environment. ||
 || *Estuarine fixed * || 
 || Fixed stations provide water properties at discrete depths, either just surface or surface and deeper. ||
-
-
 
 
 
