@@ -200,15 +200,8 @@ Another thought while reading regional progress reports: Since one mooring platf
 
 || *Gliders, Profilers and AUVs:* || 
 || Underwater Gliders are autonomous underwater vehicles (AUVs) and Profilers programmed to survey the ocean in transects. They can be used for physical and/or water quality sampling (HABs, outfalls, hazardous spills), or with acoustic sea gliders, tracking fish and marine mammals as well as monitoring ambient noise and mapping habitat. || 
-|| *Ships: Transect and/or Event Sampling* || 
-|| Event-based ship sampling for water quality (HABs,outfalls, storm-water, hazardous spills.) Biological sampling related to events and/or regular stock or ecological assessments.  Sampling will also be integrated into regular maintenance cruises for other observing assets. || 
-|| *Voluntary Observing Ships (VOS)* || 
-|| Leverage the large volume of commercial shipping and recreational boat activity to add automated instrumentation packages. || 
-|| *Surface Drifters* || 
-|| Satellite tracked surface drifters provide a quasi-Lagrangian view of surface circulation and, with caveats regarding their performance relative to Lagrangian trajectories (not necessary surfaceconfined), provide excellent tools for surface trajectory analyses ||
 || *AXBTs, AXCTDs, AXCPs* || 
 || Airborne expendable bathythermograph; airborne expendable Conductivity, Temperature, depth; airborne expendable current profilers || 
-
 
 *NANOOS*
 
@@ -224,8 +217,6 @@ Another thought while reading regional progress reports: Since one mooring platf
 || Automated sensors on  piers  to measure temperature, salinity, chlorophyll, turbidity and water level at frequent intervals in the nearshore coastal ocean.  Add carbon dioxide and oxygen sensors to track ocean acidification and hypoxia in the nearshore environment. ||
 || *Estuarine fixed * || 
 || Fixed stations provide water properties at discrete depths, either just surface or surface and deeper. ||
-
-
 
 
 
