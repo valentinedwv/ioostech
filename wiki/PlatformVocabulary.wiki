@@ -193,3 +193,7 @@ Some thoughts from the teleconference today:
 *John Ten Hoeve - 01/02/13*
 
 Another thought while reading regional progress reports: Since one mooring platform name can have surface and bottom nodes, there may be a need for a term that describes these types of platforms.
+
+==Examples of Existing IOOS Regional Platform Definitions==
+
+
