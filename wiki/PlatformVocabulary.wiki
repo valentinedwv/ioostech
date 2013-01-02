@@ -202,5 +202,5 @@ Another thought while reading regional progress reports: Since one mooring platf
 || Underwater Gliders are autonomous underwater vehicles (AUVs) and Profilers programmed to survey the ocean in transects. They can be used for physical and/or water quality sampling (HABs, outfalls, hazardous spills), or with acoustic sea gliders, tracking fish and marine mammals as well as monitoring ambient noise and mapping habitat. || 
 || Ships: Transect and/or Event Sampling || 
 || Event-based ship sampling for water quality (HABs, outfalls, stormwater, hazardous spills.) Biological sampling related to events
-and/or regular stock or ecological assessments. Sampling will also be
-integrated into regular maintenance cruises for other observing assets.||
+and/or regular stock or ecological assessments. Sampling 
+will also be integrated into regular maintenance cruises for other observing assets.||
