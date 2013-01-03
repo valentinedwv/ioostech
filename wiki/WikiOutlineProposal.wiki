@@ -12,29 +12,45 @@ The primary purpose of this wiki is (comments? votes? alternatives?):
  * repository of code implementing various common functions such as a general Python/Java/Matlab/C library of QARTOD algorithms.
 
 
-= Suggested Outline for the SOS IDD elements =
+= Suggested Outline for the High Level Wiki Navigation =
 
 * DataAccessServices
   * SOS
-  * SOSClients
-    * EnvironmentalDataConnector
-    * Proteus
-    * pyOOS
-    * JavaNetCDFIOSP
-  * SOSServers
-    * 52NorthSOS
-    * ncSOS
-    * DIF SOS
-    * OostethysSOS
-  * SOSGuidelines (IDD)
-    * Request Parameters and usage
-    * Response types (aka Templates)
-    * SOSVocabularies (any SOS specific modifications or additions to the overall ControlledVocabularies page.
+    * SOSClients
+      * EnvironmentalDataConnector
+      * Proteus 
+      * PyOOS
+      * JavaNetCDFIOSP
+    * SOSServers
+      * 52NorthSOS
+      * ncSOS
+      * DIF SOS (NDBC) Probably should be renamed.  Should these server pages be included underneatht the SOSGuidleines IDD so that the information can be version specific?
+      * NANOOS Python SOS
+      * OostethysSOS
+    * SOSGuidelines (IDD)  (THE IDD OR WSDD MUST BE VERSIONED AND WILL REFER TO THE TEMPLATE MILESTONE VERSION.  KEEP LINKAGES FROM THIS PAGE MINIMAL TO KEEP APPLICABLE VERSIONS CLEAR)
+      * SOSConcepts (definitions and common usage for observedProperty, featureOfInterest, procedure, and ObservationOffering)
+      * Request Parameters and usage
+      * Response types (aka Templates)
+      * SOSVocabularies (any SOS specific modifications or additions to the overall ControlledVocabularies page.
+  * OPeNDAP based services (Guidelines for use, not necessarly an all encompassing technical documentation.  Only IOOS specifics)
+    * ERDDAP
+    * THREDDS
+    * Hyrax
+    * PyDAP
+  * WMS
+* ServiceRegistry
+* DataCatalog
+* SystemMonitor
+* SystemViewer
 * ControlledVocabularies
-     
+  * ObservedProperty (aka Parameter vocabularies.  Description and rules for choosing and managing terms)
+  * PlatformVocabulary (Description and crosswalk with other concepts)
+* Metadata
+* FileFormats (Web Service agnostic discussion of file formats and data models relevant to them.  Mostly focused on netCDF and the so-called standards in use in that area (CF, Glider Files, Argo, OceanSITES, Discrete Sampling Geometries etc)    
+  
 Pieces to consider
   # Record of the workshop
-  # More thorough crosswalk with CF Discrete Sampling Geompetries (we  have many pages already
+  # More thorough crosswalk with CF Discrete Sampling Geometries (we  have many pages already
   # Filling out the other big pieces of DMAC (RCV, Regional Portals)
   # Playing well with others (ocean.data.gov and company)
   # Intersections with the international programs
