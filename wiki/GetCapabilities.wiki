@@ -215,3 +215,9 @@ _Content:_ A URL from the Marine Metadata Interoperability (MMI) project corresp
 _Example:_ http://mmisw.org/ont/cf/parameter/sea_floor_depth_below_sea_surface
 
 =Other Issues=
+===Multiple Observed Properties and Compound Phenomena===
+Conventions for creating and referencing compound phenomena.
+
+Links to resources: http://www.w3.org/2005/Incubator/ssn/wiki/images/4/46/O%26M_Property_Dictionary.pdf
+
+Links to discussions on this wiki:
