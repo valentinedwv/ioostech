@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Capabilities version="1.0.0" xmlns="http://www.opengis.net/sos/1.0"
+    xmlns:gml="http://www.opengis.net/gml"
+    xmlns:oost="http://www.oostethys.org/schemas/0.1.0/oostethys"
+    xmlns:ows="http://www.opengis.net/ows/1.1"
+    xmlns:swe="http://www.opengis.net/swe/1.0.1"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosGetCapabilities.xsd">
+    <ows:ServiceIdentification>
+        <ows:Title/>
+        <ows:Abstract/>
+        <ows:Keywords>
+            <ows:Keyword>REGIONAL ASSOCOATION</ows:Keyword>
+            <ows:Keyword>KEYWORD 2</ows:Keyword>
+            <ows:Keyword>KEYWORD 3</ows:Keyword>
+        </ows:Keywords>
+        <ows:ServiceType codeSpace="http://opengeospatial.net">OGC:SOS</ows:ServiceType>
+        <ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+        <ows:Fees>NONE</ows:Fees>
+        <ows:AccessConstraints>NONE</ows:AccessConstraints>
+    </ows:ServiceIdentification>
+    <ows:ServiceProvider>
+        <ows:ProviderName/>
+        <ows:ProviderSite/>
+        <ows:ServiceContact>
+            <ows:IndividualName/>
+            <ows:PositionName/>
+            <ows:ContactInfo>
+                <ows:Phone>
+                    <ows:Voice/>
+                </ows:Phone>
+                <ows:Address>
+                    <ows:DeliveryPoint/>
+                    <ows:City/>
+                    <ows:AdministrativeArea/>
+                    <ows:PostalCode/>
+                    <ows:Country/>
+                    <ows:ElectronicMailAddress/>
+                </ows:Address>
+            </ows:ContactInfo>
+        </ows:ServiceContact>
+    </ows:ServiceProvider>
+    <ows:OperationsMetadata>
+        <ows:Operation name="GetCapabilities">
+            <ows:DCP>
+                <ows:HTTP>
+                    <ows:Get xlink:href="SOS_SERVER_URL"/>
+                    <!-- Optional POST -->
+                    <ows:Post xlink:href="SOS_SERVER_URL"/>
+                </ows:HTTP>
+            </ows:DCP>
+            <ows:Parameter name="Sections">
+                <ows:AllowedValues>
+                    <ows:Value>ServiceIdentification</ows:Value>
+                    <ows:Value>ServiceProvider</ows:Value>
+                    <ows:Value>OperationsMetadata</ows:Value>
+                    <ows:Value>Contents</ows:Value>
+                    <ows:Value>All</ows:Value>
+                </ows:AllowedValues>
+            </ows:Parameter>
+        </ows:Operation>
+        <ows:Operation name="GetObservation">
+            <ows:DCP>
+                <ows:HTTP>
+                    <ows:Get xlink:href="SOS_SERVER_URL"/>
+                    <!-- Optional POST -->
+                    <ows:Post xlink:href="SOS_SERVER_URL"/>
+                </ows:HTTP>
+            </ows:DCP>
+            <ows:Parameter name="offering" use="required">
+                <ows:AllowedValues>
+                    <ows:Value>network-all</ows:Value>
+                    <ows:Value>Station-0</ows:Value>
+                    <ows:Value>Station-1</ows:Value>
+                    <ows:Value>Station-2</ows:Value>
+                    <ows:Value>Station-3</ows:Value>
+                    <ows:Value>Station-4</ows:Value>
+                    <ows:Value>Station-5</ows:Value>
+                    <ows:Value>Station-6</ows:Value>
+                    <ows:Value>Station-7</ows:Value>
+                    <ows:Value>Station-8</ows:Value>
+                    <ows:Value>Station-9</ows:Value>
+                </ows:AllowedValues>
+            </ows:Parameter>
+            <ows:Parameter name="observedProperty" use="required">
+                <ows:Value>VALUE</ows:Value>
+                <ows:Value>COMPOSITE_VALUE</ows:Value>
+            </ows:Parameter>
+            <ows:Parameter name="eventTime" use="optional">
+                <ows:AllowedValues>
+                    <ows:Range/>
+                    <ows:MinimumValue>1990-01-01T00:00:00.000Z</ows:MinimumValue>
+                    <ows:MaximumValue>1990-01-05T03:00:00.000Z</ows:MaximumValue>
+                </ows:AllowedValues>
+            </ows:Parameter>
+            <ows:Parameter name="responseFormat" use="required">
+                <ows:AllowedValues>
+                    <ows:Value>text/xml;subtype="om/1.0.0"</ows:Value>
+                </ows:AllowedValues>
+            </ows:Parameter>
+        </ows:Operation>
+        <ows:Operation name="DescribeSensor">
+            <ows:DCP>
+                <ows:HTTP>
+                    <ows:Get/>
+                </ows:HTTP>
+            </ows:DCP>
+            <ows:Parameter name="procedure" use="required">
+                <ows:AllowedValues>
+                    <ows:Value>urn:tds:network:all</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-0</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-1</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-2</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-3</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-4</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-5</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-6</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-7</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-8</ows:Value>
+                    <ows:Value>urn:tds:station.sos:Station-9</ows:Value>
+                </ows:AllowedValues>
+            </ows:Parameter>
+            <ows:Parameter name="responseformat" use="required">
+                <ows:AllowedValues>
+                    <ows:Value>text/xml;subtype="sensorML/1.0.1"</ows:Value>
+                </ows:AllowedValues>
+            </ows:Parameter>
+        </ows:Operation>
+        <ows:Parameter name="service" use="required">
+            <ows:AllowedValues>
+                <ows:Value>SOS</ows:Value>
+            </ows:AllowedValues>
+        </ows:Parameter>
+        <ows:Parameter name="version" use="required">
+            <ows:AllowedValues>
+                <ows:Value>1.0.0</ows:Value>
+            </ows:AllowedValues>
+        </ows:Parameter>
+    </ows:OperationsMetadata>
+    <Contents>
+        <ObservationOfferingList>
+            <!-- NETWORK_ALL -->
+            <ObservationOffering gml:id="network-all">
+                <gml:description>All stations in the network</gml:description>
+                <gml:name>urn:ioos:network:all</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>3.0 38.0</gml:lowerCorner>
+                        <gml:upperCorner>90.0 174.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <procedure xlink:href="urn:tds:station.sos:Station-0"/>
+                <procedure xlink:href="urn:tds:station.sos:Station-1"/>
+                <procedure xlink:href="urn:tds:station.sos:Station-2"/>
+                <procedure xlink:href="urn:tds:station.sos:Station-3"/>
+                <procedure xlink:href="urn:tds:station.sos:Station-4"/>
+                <procedure xlink:href="urn:tds:station.sos:Station-5"/>
+                <procedure xlink:href="urn:tds:station.sos:Station-6"/>
+                <procedure xlink:href="urn:tds:station.sos:Station-7"/>
+                <procedure xlink:href="urn:tds:station.sos:Station-8"/>
+                <procedure xlink:href="urn:tds:station.sos:Station-9"/>
+                <observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/VALUE"/>
+                <observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/COMPOSITE_VALUE"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-0">
+                <gml:name>urn:tds:station.sos:Station-0</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>90.0 90.0</gml:lowerCorner>
+                        <gml:upperCorner>90.0 90.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-0"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-1">
+                <gml:name>urn:tds:station.sos:Station-1</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>3.0 148.0</gml:lowerCorner>
+                        <gml:upperCorner>3.0001 148.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-1"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-2">
+                <gml:name>urn:tds:station.sos:Station-2</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>62.0 38.0</gml:lowerCorner>
+                        <gml:upperCorner>62.0001 38.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-2"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-3">
+                <gml:name>urn:tds:station.sos:Station-3</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>90.0 149.0</gml:lowerCorner>
+                        <gml:upperCorner>90.0 149.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-3"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-4">
+                <gml:name>urn:tds:station.sos:Station-4</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>67.0 103.0</gml:lowerCorner>
+                        <gml:upperCorner>67.0001 103.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-4"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-5">
+                <gml:name>urn:tds:station.sos:Station-5</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>90.0 84.0</gml:lowerCorner>
+                        <gml:upperCorner>90.0 84.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-5"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-6">
+                <gml:name>urn:tds:station.sos:Station-6</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>90.0 149.0</gml:lowerCorner>
+                        <gml:upperCorner>90.0 149.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-6"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-7">
+                <gml:name>urn:tds:station.sos:Station-7</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>49.0 93.0</gml:lowerCorner>
+                        <gml:upperCorner>49.0001 93.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-7"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-8">
+                <gml:name>urn:tds:station.sos:Station-8</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>10.0 128.0</gml:lowerCorner>
+                        <gml:upperCorner>10.0001 128.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-8"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+            <ObservationOffering gml:id="Station-9">
+                <gml:name>urn:tds:station.sos:Station-9</gml:name>
+                <gml:srsName>EPSG:4326</gml:srsName>
+                <gml:boundedBy>
+                    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>90.0 174.0</gml:lowerCorner>
+                        <gml:upperCorner>90.0 174.0001</gml:upperCorner>
+                    </gml:Envelope>
+                </gml:boundedBy>
+                <time>
+                    <gml:TimePeriod xsi:type="gml:TimePeriodType">
+                        <gml:beginPosition>1990-01-01T00:00:00.000Z</gml:beginPosition>
+                        <gml:endPosition>1990-01-05T03:00:00.000Z</gml:endPosition>
+                    </gml:TimePeriod>
+                </time>
+                <featureOfInterest xlink:href="Station-9"/>
+                <responseFormat>text/xml; subtype="om/1.0.0"</responseFormat>
+                <responseModel>om:ObservationCollection</responseModel>
+                <responseMode>inline</responseMode>
+            </ObservationOffering>
+        </ObservationOfferingList>
+    </Contents>
+</Capabilities>
