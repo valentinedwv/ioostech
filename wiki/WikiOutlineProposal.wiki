@@ -38,15 +38,15 @@ The primary purpose of this wiki is (comments? votes? alternatives?):
     * Hyrax
     * PyDAP
   * WMS
-* ServiceRegistry
-* DataCatalog
-* SystemMonitor
-* SystemViewer
-* ControlledVocabularies
-  * ObservedProperty (aka Parameter vocabularies.  Description and rules for choosing and managing terms)
-  * PlatformVocabulary (Description and crosswalk with other concepts)
-* Metadata
-* FileFormats (Web Service agnostic discussion of file formats and data models relevant to them.  Mostly focused on netCDF and the so-called standards in use in that area (CF, Glider Files, Argo, OceanSITES, Discrete Sampling Geometries etc)    
+ * ServiceRegistry
+ * DataCatalog
+ * SystemMonitor
+ * SystemViewer
+ * ControlledVocabularies
+   * ObservedProperty (aka Parameter vocabularies.  Description and rules for choosing and managing terms)
+   * PlatformVocabulary (Description and crosswalk with other concepts)
+ * Metadata
+ * FileFormats (Web Service agnostic discussion of file formats and data models relevant to them.  Mostly focused on netCDF and the so-called standards in use in that area (CF, Glider Files, Argo, OceanSITES, Discrete Sampling Geometries etc)    
   
 Pieces to consider
   # Record of the workshop
