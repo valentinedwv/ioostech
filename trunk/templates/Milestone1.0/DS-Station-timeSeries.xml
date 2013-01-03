@@ -153,15 +153,31 @@
       
       <!-- DOCUMENTATION (OPTIONAL) -->
       <!-- COMMENTS:
-           - Why is xlink:arcrole used, rather than xlink:role?
-           - Changed the xlink:arcrole attribute value ("qualityControlDocument") to
-             a URL-based term on the new MMI, IOOS-managed vocabulary of definitions? -->
-      <sml:documentation xlink:arcrole="qualityControlDocument">
-        <sml:Document>
-          <gml:description>Handbook of Automated Data Quality Control Checks and Procedures, National Data Buoy Center, August 2009</gml:description>
-          <sml:format>pdf</sml:format>
-          <sml:onlineResource xlink:href="http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf"/>
-        </sml:Document>
+           - Need to replace "qualityControlDocument with a MMI URI when it is available -->
+      <sml:documentation>
+        <sml:DocumentList>
+          <sml:member name="qc" xlink:arcrole="qualityControlDocument">
+            <sml:Document>
+              <gml:description>Handbook of Automated Data Quality Control Checks and Procedures, National Data Buoy Center, August 2009</gml:description>
+              <sml:format>pdf</sml:format>
+              <sml:onlineResource xlink:href="http://www.ndbc.noaa.gov/NDBCHandbookofAutomatedDataQualityControl2009.pdf"/>
+            </sml:Document>
+          </sml:member>
+          <sml:member name="wp1" xlink:arcrole="urn:ogc:def:role:webPage">
+            <sml:Document>
+              <gml:description>Station web page from provider</gml:description>
+              <sml:format>text/html</sml:format>
+              <sml:onlineResource xlink:href="STATION_WEBPAGE"/>
+            </sml:Document>
+          </sml:member>
+          <sml:member name="wp2" xlink:arcrole="urn:ogc:def:role:webPage">
+            <sml:Document>
+              <gml:description>Station web page from operator</gml:description>
+              <sml:format>text/html</sml:format>
+              <sml:onlineResource xlink:href="STATION_WEBPAGE"/>
+            </sml:Document>            
+          </sml:member>
+        </sml:DocumentList>
       </sml:documentation>
       
       <!-- HISTORY (OPTIONAL)
