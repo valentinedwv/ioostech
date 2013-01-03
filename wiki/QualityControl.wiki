@@ -1,0 +1,16 @@
+#summary Information and guidelines for applying quality control tests to data and documenting the results in standard file formats.
+
+= Introduction =
+
+Add your content here.
+
+www.ioos.gov/qartod
+
+code.google.com/p/qartod
+
+
+= Documenting Flags in SOS =
+See issue 15.
+
+= Documenting Flags in netCDF files =
+Section 3.4 and 3.5 of the Climate and Forecast [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html Conventions]
