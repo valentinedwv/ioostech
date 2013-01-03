@@ -218,8 +218,24 @@ Another thought while reading regional progress reports: Since one mooring platf
 || *Estuarine fixed * || 
 || Fixed stations provide water properties at discrete depths, either just surface or surface and deeper. ||
 
+*CeNCOOS*
 
-
-
-
+|| *Shore Stations (weather; cameras; AIS)* || 
+|| Stations measuring meteorological variables and located on coastal lands, piers or docks. We have also included AIS transmitters and automated cameras regularly imaging the ocean, bays or estuaries in this column. || 
+|| *Shore Stations (ocean)* || 
+|| Stations attached to piers, docks or other structures connected to the shoreline with sensors submerged in water. || 
+|| *Moorings* || 
+|| Stations attached to a float located at the surface or within the water column and moored to the seafloor.  Sensors may be located at the surface or anywhere in the water column. || 
+|| *Seafloor Mounted Stations* || 
+|| Stations mounted on the seafloor with no flotation above, e.g. poles, tripods. Measurments may be from anywhere in the water column between the seafloor and the surface. || 
+|| *Underwater Gliders: Coastal* || 
+|| Spray Underwater Gliders are buoyancy driven profiling autonomous underwater vehicles programmed to survey the ocean || 
+|| *Ships/ propeller-driven AUVs* || 
+|| Ships are used to make a variety of measurements along fixed regularly occupied transect lines, and also to rapidly respond to changing events and conditions  || 
+|| *Jet skis, ATVs* || 
+|| Small manueverable vehicles for use in shallow water, or on the beach. || 
+|| *Drifters* || 
+|| Low cost devices with drogue designed to follow near surface currents.   || 
+|| *Animals* || 
+|| CTD, light, and other sensors may be attached to animals, such as elephant seals, that travel long distances || 
 
