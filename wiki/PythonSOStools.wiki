@@ -9,16 +9,20 @@
 
 == Key high-level libraries, code, groups ==
 
-In no particular order, for now.
+Roughly ordered from higher to lower level, in focus.
 
-  * [NANOOSNVSPythonSOS NANOOS SOS]
-  * [http://geopython.github.com/OWSLib/ OWSLib]
+  * [NANOOSNVSPythonSOS NANOOS SOS]. Server software.
   * *[https://github.com/swtools/ WOFpy/ulmo/pyhis group]. Based in Austin.*
-    * [https://github.com/swtools/WOFpy WOFpy]
-    * [http://pypi.python.org/pypi/ulmo/ ulmo]. Don't know what happened to [ the github page that used to be there
-    * [https://github.com/swtools/pyhis pyhis]. Deprecated, being replaced by ulmo
-    * [http://librelist.com/browser/pywaterdata/ pywaterdata email list]
-  * [https://github.com/asascience-open/pyoos pyoos]
-  * [http://code.google.com/p/netcdf4-python/ netcdf4-python]
+    * [https://github.com/swtools/WOFpy WOFpy]. Server software.
+    * [http://pypi.python.org/pypi/ulmo/ ulmo]. Client software. Don't know what happened to [ the github page that used to be there
+    * [https://github.com/swtools/pyhis pyhis]. Client software. Deprecated, being replaced by ulmo
+  * [https://github.com/asascience-open/pyoos pyoos]. Client software.
+  * [http://geopython.github.com/OWSLib/ OWSLib]. Mostly client.
+  * [http://code.google.com/p/netcdf4-python/ netcdf4-python]. Mostly client.
+  * [http://pydap.org Pydap]. Server/Client.
+
+== Mailing lists and groups ==
+
+  * [http://librelist.com/browser/pywaterdata/ pywaterdata email list]. Currently limited to the WOFpy/ulmo/pyhis group
   * [http://code.google.com/p/waterpython/ Water Python Google Code group]. Never really got off the ground after a bit of enthusiasm back in early 2010 (Chris Barker, Rob Hetland, etc). But could be repurposed....
   
