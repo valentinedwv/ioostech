@@ -7,7 +7,7 @@
 
 _1/8/2013. Just an initial scratchpad. I'll grow this soon. -Emilio_
 
-== Key high-level libraries, code, groups ==
+== Key "high-level" libraries & code ==
 
 Roughly ordered from higher to lower level, in focus.
 
