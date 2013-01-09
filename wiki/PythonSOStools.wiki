@@ -1,0 +1,24 @@
+#summary Python SOS Client & Server architecture
+#labels Python
+
+<wiki:toc max_depth="2" />
+
+= Python SOS Client & Server architecture =
+
+1/8/2013. Just an initial scratchpad. I'll grow this soon. -Emilio
+
+== Key high-level libraries, code, groups ==
+
+In no particular order, for now.
+
+  * [NANOOSNVSPythonSOS NANOOS SOS]
+  * [http://geopython.github.com/OWSLib/ OWSLib]
+  * *[https://github.com/swtools/ WOFpy/ulmo/pyhis group]. Based in Austin.*
+    * [https://github.com/swtools/WOFpy WOFpy]
+    * [http://pypi.python.org/pypi/ulmo/ ulmo]. Don't know what happened to [ the github page that used to be there
+    * [https://github.com/swtools/pyhis pyhis]. Deprecated, being replaced by ulmo
+    * [http://librelist.com/browser/pywaterdata/ pywaterdata email list]
+  * [https://github.com/asascience-open/pyoos pyoos]
+  * [http://code.google.com/p/netcdf4-python/ netcdf4-python]
+  * [http://code.google.com/p/waterpython/ Water Python Google Code group]. Never really got off the ground after a bit of enthusiasm back in early 2010 (Chris Barker, Rob Hetland, etc). But could be repurposed....
+  
