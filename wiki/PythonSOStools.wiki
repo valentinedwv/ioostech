@@ -5,7 +5,7 @@
 
 = Python SOS Client & Server architecture =
 
-1/8/2013. Just an initial scratchpad. I'll grow this soon. -Emilio
+_1/8/2013. Just an initial scratchpad. I'll grow this soon. -Emilio_
 
 == Key high-level libraries, code, groups ==
 
