@@ -179,3 +179,8 @@ Link: [http://code.google.com/p/ioostech/issues/detail?id=4]
 In general, SOS servers should only support what it advertises in the GetCapabilities document. Thus, an SOS server may support both fully qualified and unqualified observedProperty parameters as far as they are advertized in GetCapabilities.
 
 IOOS-compliant SOS server shall advertise and accept fully qualified observedProperty parameters.
+
+
+==URN vs. URL==
+
+The use of both URNs and URLs are allowed for now, but it is recommended to use URLs where possible. URNs should be used only where a specific IOOS guideline has stipulated it (mainly for station id, sensor id, and "network" id).
