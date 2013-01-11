@@ -127,3 +127,38 @@ Definitions:
 Version (deployment date, etc) is not included in the URN standard at this time.
 
 
+== Composite phenomena ==
+
+Link: [http://code.google.com/p/ioostech/issues/detail?id=1]
+
+Although support of composite phenomena is OPTIONAL for IOOS service providers, the implementation of the composite phenomena shall comply with the following rules (these rules accommodate both true composite phenomena like winds, and ad-hoc requests for multiple properties like water and air temperature):
+  # IOOS-defined vector variables (namely winds, currents and waves) shall be advertized in GetCapabilities response as composite phenomena that contains scalar properties defined in the CF standard names vocabulary. 
+  # The supported composite phenomena are defined in the IOOS Parameter Vocabulary (e.g.: http://mmisw.org/ont/ioos/parameter/wave).
+  # The exact collection of individual scalar properties that is used by a service provider to form a certain composite phenomenon shall be a subset of the properties defined in the IOOS Parameter Vocabulary for that composite phenomenon.
+  # In the GetObservation response, the `<om:observedProperty>` element under each `<om:ObservationCollection/om:member/om:Observation>` block shall return a list of scalar properties only, referencing the MMI CF or IOOS parameter vocabularies.
+  # The `<swe:CompositePhenomenon>` element shall be used even when the response returns a single observed property:
+    * attribute `<gml:id>` is required. Each `<om:ObservationCollection/om:member/om:Observation>` block shall have a document-wide unique `<gml:id>` value. It is recommended to use just a simple integer counter next to a fixed string, as shown in examples below.
+    * child element `<gml:name>` is required; the element value may be any text string.
+
+EXAMPLE 1 (multiple scalar properties): 
+{{{
+<om:observedProperty>
+  <swe:CompositePhenomenon dimension="4" gml:id="observedproperties1">
+    <gml:name>Response Observed Properties</gml:name>
+    <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/>
+    <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed"/>
+    <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_gust"/>
+    <swe:component xlink:href="http://mmisw.org/ont/ioos/parameter/dissolved_oxygen"/>
+  </swe:CompositePhenomenon>
+</om:observedProperty>
+}}}
+
+EXAMPLE 1 (single scalar property): 
+{{{
+<om:observedProperty>
+  <swe:CompositePhenomenon dimension="1" gml:id="observedproperties1">
+    <gml:name>Response Observed Properties</gml:name>
+    <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed"/>
+  </swe:CompositePhenomenon>
+</om:observedProperty>
+}}}
