@@ -176,5 +176,6 @@ In order to keep up the interoperability with IOOS-compliant services, the follo
 ==observedProperty support==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=4]
 
-In general, SOS server should only support what it advertises in the GetCapabilities document. Thus, an SOS server may support both fully qualified and unqualified observedProperty parameters as far as they are advertized in GetCapabilities.
-An IOOS-compliant SOS server shall advertise and accept fully qualified observedProperty parameters.
+In general, SOS servers should only support what it advertises in the GetCapabilities document. Thus, an SOS server may support both fully qualified and unqualified observedProperty parameters as far as they are advertized in GetCapabilities.
+
+IOOS-compliant SOS server shall advertise and accept fully qualified observedProperty parameters.
