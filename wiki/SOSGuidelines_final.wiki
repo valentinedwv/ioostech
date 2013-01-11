@@ -128,7 +128,6 @@ Version (deployment date, etc) is not included in the URN standard at this time.
 
 
 == Composite phenomena ==
-
 Link: [http://code.google.com/p/ioostech/issues/detail?id=1]
 
 Although support of composite phenomena is OPTIONAL for IOOS service providers, the implementation of the composite phenomena shall comply with the following rules (these rules accommodate both true composite phenomena like winds, and ad-hoc requests for multiple properties like water and air temperature):
@@ -172,3 +171,10 @@ In order to keep up the interoperability with IOOS-compliant services, the follo
   * SWECommon version depends on the function:
     # in GetCapabilities and DescribeSensor – SWECommon 1.0.1 (prefix `<swe:>`)
     # in GetObservation – SWE 1.0.1 (prefix `<swe:>`) except for the contents of `<om:result>`, which shall use SWE 2.0 (prefix `<swe2:>`)
+
+
+==observedProperty support==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=4]
+
+In general, SOS server should only support what it advertises in the GetCapabilities document. Thus, an SOS server may support both fully qualified and unqualified observedProperty parameters as far as they are advertized in GetCapabilities.
+An IOOS-compliant SOS server shall advertise and accept fully qualified observedProperty parameters.
