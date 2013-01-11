@@ -182,5 +182,6 @@ IOOS-compliant SOS server shall advertise and accept fully qualified observedPro
 
 
 ==URN vs. URL==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=3]
 
 The use of both URNs and URLs are allowed for now, but it is recommended to use URLs where possible. URNs should be used only where a specific IOOS guideline has stipulated it (mainly for station id, sensor id, and "network" id).
