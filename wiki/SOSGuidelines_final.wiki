@@ -162,3 +162,13 @@ EXAMPLE 1 (single scalar property):
   </swe:CompositePhenomenon>
 </om:observedProperty>
 }}}
+
+
+==Versions of SOS, SWE and O&M==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=2]
+
+In order to keep up the interoperability with IOOS-compliant services, the following versions shall be used:
+  * Both SOS and O&M version 1.0
+  * SWECommon version depends on the function:
+    # in GetCapabilities and DescribeSensor – SWECommon 1.0.1 (prefix `<swe:>`)
+    # in GetObservation – SWE 1.0.1 (prefix `<swe:>`) except for the contents of `<om:result>`, which shall use SWE 2.0 (prefix `<swe2:>`)
