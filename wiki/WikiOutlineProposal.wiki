@@ -5,7 +5,7 @@
 
 The IOOS PO is attempting to organize the overall documentation of DMAC beginning with a reorganization (complete and from scratch) of  ioos.gov/data.  We recognize that the ioos.gov web site is not going to be the only or even primary source of information on IOOS DMAC, let alone all of the other observation and analysis activities across the enterprise.  This wiki is an important source of information but it also deserves some attention and reorganization but the purpose and organization of this wiki should be clarified so that it can grow to serve an important niche (or be abandoned in favor of something better if need be).
 
-The primary purpose of this wiki is to _______????? Please fill in the blank.  The list below is a starting point and keep in mind that the wiki may serve more than one purpose. (comments? votes? alternatives?):
+The primary purpose of this wiki is to  [fill in the blank]    ????? Please fill in the blank.  The list below is a starting point and keep in mind that the wiki may serve more than one purpose. (comments? votes? alternatives?):
  * to record the unorganized but important issues and solutions arrived at in the course of the SOS Reference Implementation Working group
  * to house an in progress, but always up to date version of the SOS Interface Description Document that contains all the technical information necessary for a developer to either a. write client software to consume IOOS SOS, b. write server software implementing the IOOS profile (what's the correct word? Ioos Specification? ) of SOS
  * to be a technical repository for projects and related activities that use SOS or other data access services? (list of libraries, client software, training materials, demos, presentations?)
