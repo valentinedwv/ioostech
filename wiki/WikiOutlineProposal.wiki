@@ -3,7 +3,9 @@
 
 = Purpose =
 
-The primary purpose of this wiki is (comments? votes? alternatives?):
+The IOOS PO is attempting to organize the overall documentation of DMAC beginning with a reorganization (complete and from scratch) of  ioos.gov/data.  We recognize that the ioos.gov web site is not going to be the only or even primary source of information on IOOS DMAC, let alone all of the other observation and analysis activities across the enterprise.  This wiki is an important source of information but it also deserves some attention and reorganization but the purpose and organization of this wiki should be clarified so that it can grow to serve an important niche (or be abandoned in favor of something better if need be).
+
+The primary purpose of this wiki is to _______????? Please fill in the blank.  The list below is a starting point and keep in mind that the wiki may serve more than one purpose. (comments? votes? alternatives?):
  * to record the unorganized but important issues and solutions arrived at in the course of the SOS Reference Implementation Working group
  * to house an in progress, but always up to date version of the SOS Interface Description Document that contains all the technical information necessary for a developer to either a. write client software to consume IOOS SOS, b. write server software implementing the IOOS profile (what's the correct word? Ioos Specification? ) of SOS
  * to be a technical repository for projects and related activities that use SOS or other data access services? (list of libraries, client software, training materials, demos, presentations?)
@@ -50,12 +52,12 @@ The primary purpose of this wiki is (comments? votes? alternatives?):
  * QualityControl
   
 Pieces to consider
-  # Record of the workshop
-  # More thorough crosswalk with CF Discrete Sampling Geometries (we  have many pages already
+  # Do we need to maintain a complete record of the workshop (preparation/proceedings/conclusions?)
+  # Do we need a more thorough crosswalk with CF Discrete Sampling Geometries or is this something better done by other groups or on other information portals and wikis?  CF wiki, [https://geo-ide.noaa.gov/wiki/ NOAA EDM wiki] (formerly geo-ide wiki), [http://wiki.esipfed.org ESIP Federation]?  
   # Filling out the other big pieces of DMAC (RCV, Regional Portals)
-  # Playing well with others (ocean.data.gov and company)
+  # Playing well with others.  How to register with ocean.data.gov, GEOSS Common Infrastructure, etc.?
   # Intersections with the international programs
-  # Observing System specific stuff (CF netCDF template for gliders is almost done)
+  # Observing System specific stuff.  The CF netCDF template for gliders is almost done and doesn't have an online home yet.
   # More direct intersections with HFR/Waves
   # Tools for anything (web harvesting resources, other clients)
   # Training, demos, movies, mashups, example scripts
