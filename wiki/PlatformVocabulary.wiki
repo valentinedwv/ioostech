@@ -1,6 +1,8 @@
 #summary References and information for use in developing a platform vocabulary.
 #labels Phase-Design
 
+<wiki:toc max_depth="3" />
+
 == Introduction ==
  
 The Platform Vocabulary is being developed to give oceanographic data users consistent terminology to use for their data sets.  The Platform Vocabulary is an essential part of fulfilling the development of the IOOS SOS templates.  However, version 1.0 of the templates were complete without final guidance on the controlled vocabulary used in the templates to describe platformType.  This was unavoidable as we had to make progress.  The immediate goal is to complete the platform vocabulary before release of the version 1.1 and it is expected the vocabulary will be resolved before that.  For the record, Emilio, John Ten Hoeve, Rob R. and Sara Haines, to date, have been most active in developing the vocabulary.  If you are interested please, contact Rob Ragsdale (Rob.Ragsdale@noaa.gov) or John Ten Hoeve (John.tenhoeve@noaa.gov).  
@@ -238,4 +240,3 @@ Another thought while reading regional progress reports: Since one mooring platf
 || Low cost devices with drogue designed to follow near surface currents.   || 
 || *Animals* || 
 || CTD, light, and other sensors may be attached to animals, such as elephant seals, that travel long distances || 
-
