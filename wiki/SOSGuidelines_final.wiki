@@ -173,7 +173,7 @@ In order to keep up the interoperability with IOOS-compliant services, the follo
     # in GetObservation – SWE 1.0.1 (prefix `<swe:>`) except for the contents of `<om:result>`, which shall use SWE 2.0 (prefix `<swe2:>`)
 
 
-==observedProperty support==
+==`observedProperty` support==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=4]
 
 In general, SOS servers should only support what it advertises in the GetCapabilities document. Thus, an SOS server may support both fully qualified and unqualified observedProperty parameters as far as they are advertized in GetCapabilities.
@@ -205,7 +205,7 @@ Link: [http://code.google.com/p/ioostech/issues/detail?id=17]
 In general, any IOOS-compliant SOS server shall follow the SOS version 1.0 specification requirements. However, in the case when SOS request does not contain any time filter, the SOS v1.0 fails to properly describe the server behavior. 
 In that specific case, the IOOS-compliant server shall follow the SOS v2.0 specification, which requires the server to return all records matching a user request, although a result limit may be employed, and `ResponseExceedsSizeLimit` exception code shall be returned if that limit is exceeded.
 
-==External link in DescribeSensor response==
+==External link in `DescribeSensor` response==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=18]
 
 To represent an external link in the contact information part of the DescribeSensor response, an IOOS-compliant service shall use `< xlink:href>` attribute of the `<sml:contact>` element as follows:
@@ -218,7 +218,7 @@ To represent an external link in the contact information part of the DescribeSen
 }}}
 
 
-==Representing `FeatureType` in GetObservation==
+==Representing `FeatureType` in `GetObservation`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=21]
 
 IOOS-compliant SOS server shall represent FeatureType (e.g., timeSeries, point, profile, etc)in GetObservation response as follows (this representation keeps the SWE elements the same between all FeatureTypes) 
