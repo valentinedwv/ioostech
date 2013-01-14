@@ -216,3 +216,30 @@ To represent an external link in the contact information part of the DescribeSen
   </sml:ResponsibleParty>
 </sml:contact>
 }}}
+
+
+==Representing FeatureType in GetObservation==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=21]
+
+IOOS-compliant SOS server shall represent FeatureType (e.g., timeSeries, point, profile, etc)in GetObservation response as follows (this representation keeps the SWE elements the same between all FeatureTypes) 
+
+{{{
+<om:featureOfInterest>
+  <gml:FeatureCollection>
+    <gml:metaDataProperty>
+      <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
+    </gml:metaDataProperty>
+    <gml:location>
+      ...
+    </gml:location>
+  </gml:FeatureCollection>
+</om:featureOfInterest>
+}}}
+
+Each unique CF feature type (discrete-sampling-geometries) shall be encoded in a separate `<om:member/om:Observation>` block that may contain multiple stations. Conversely, all stations corresponding to one feature type shall be returned in a single `<om:member/om:Observation>` block. The encoding of the reference to the CF feature type shall be done within `</om:ObservationCollection/om:member/om:Observation/om:featureOfInterest/gml:FeatureCollection>`:
+
+{{{
+<gml:metaDataProperty>
+	<gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
+</gml:metaDataProperty>
+}}}
