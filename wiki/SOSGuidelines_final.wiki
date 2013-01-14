@@ -152,7 +152,7 @@ EXAMPLE 1 (multiple scalar properties):
 </om:observedProperty>
 }}}
 
-EXAMPLE 1 (single scalar property): 
+EXAMPLE 2 (single scalar property): 
 {{{
 <om:observedProperty>
   <swe:CompositePhenomenon dimension="1" gml:id="observedproperties1">
