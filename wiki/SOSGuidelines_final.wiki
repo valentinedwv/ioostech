@@ -218,7 +218,7 @@ To represent an external link in the contact information part of the DescribeSen
 }}}
 
 
-==Representing FeatureType in GetObservation==
+==Representing `FeatureType` in GetObservation==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=21]
 
 IOOS-compliant SOS server shall represent FeatureType (e.g., timeSeries, point, profile, etc)in GetObservation response as follows (this representation keeps the SWE elements the same between all FeatureTypes) 
