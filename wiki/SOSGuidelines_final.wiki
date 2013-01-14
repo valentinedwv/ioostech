@@ -243,3 +243,29 @@ Each unique CF feature type (discrete-sampling-geometries) shall be encoded in a
 	<gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
 </gml:metaDataProperty>
 }}}
+
+==Child procedures in `DescribeSensor`==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=23]
+
+The IOOS-compliant SOS service shall encode in the `<sml:component>` the child procedure ID (asset identifier) and link to the child's DescribeSensor response using `<xlink:title>` and `<xlink:href>` respectively; any further child information is optional:
+{{{
+<sml:components>
+  <sml:ComponentList>
+    <!-- sml:component with name and xlink:href to DescribeSensor is required -->  
+    <sml:component name="component1" xlink:href="http://192.168.8.15:8080/sos?REQUEST=DescribeSensor&service=SOS&version=1.0.0&procedure=urn:ogc:object:feature:Sensor:IFGI:ifgi-sensor-1&outputFormat=text%2Fxml%3Bsubtype%3D%22sensorML%2F1.0.1%22 xlink:title="urn:ogc:object:feature:Sensor:IFGI:ifgi-sensor-1"/>
+    <sml:component name="component2" xlink:href="http://192.168.8.15:8080/sos?REQUEST=DescribeSensor&service=SOS&version=1.0.0&procedure=urn:ogc:object:feature:Sensor:IFGI:ifgi-sensor-2&outputFormat=text%2Fxml%3Bsubtype%3D%22sensorML%2F1.0.1%22 xlink:title="urn:ogc:object:feature:Sensor:IFGI:ifgi-sensor-2"/>
+     <!-- any further summary sml:System info is optional -->
+     <sml:System gml:id="station-bb0101">
+        <gml:description>OSTEP2</gml:description>
+        <sml:identification xlink:href="urn:ioos:station:NOAA.NOS.CO-OPS:bb0101" />
+        <sml:location>
+          <gml:Point srsName="urn:ogc:def:crs:epsg::4326" gml:id="LOCATION-bb0101">
+            <gml:coordinates>36.8572 -76.30833</gml:coordinates>
+          </gml:Point>
+        </sml:location>
+      </sml:System>
+    </sml:component>
+  ...
+  </sml:ComponentList>
+</sml:components>
+}}}
