@@ -203,4 +203,4 @@ The wmoID should be specified as a separate identifier even if the main stationI
 Link: [http://code.google.com/p/ioostech/issues/detail?id=17]
 
 In general, any IOOS-compliant SOS server shall follow the SOS version 1.0 specification requirements. However, in the case when SOS request does not contain any time filter, the SOS v1.0 fails to properly describe the server behavior. 
-In that specific case, the IOOS-compliant server shall follow the SOS v2.0 specification, which requires the server to return all records matching a user request, although a result limit may be employed, and ResponseExceedsSizeLimit exception code shall be returned if that limit is exceeded.
+In that specific case, the IOOS-compliant server shall follow the SOS v2.0 specification, which requires the server to return all records matching a user request, although a result limit may be employed, and `ResponseExceedsSizeLimit` exception code shall be returned if that limit is exceeded.
