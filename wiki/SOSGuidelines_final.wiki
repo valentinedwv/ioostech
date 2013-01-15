@@ -269,3 +269,26 @@ The IOOS-compliant SOS service shall encode in the `<sml:component>` the child p
   </sml:ComponentList>
 </sml:components>
 }}}
+
+== Station offerings in `GetCapabilities` and `GetObservation`==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=26]
+
+In `GetCapabilities`, the `<sos:ObservationOffering>` element for a network offerings shall contain just a single `<sos:procedure>` element with `<xlink:href="NETWORK ID URN">` attribute, whereas the individual station procedures encompassed by the network offering shall be obtained via a `DescribeSensor` request.
+
+A `GetObservation` request to IOOS-compliant SOS server shall include *ONLY* one offering, but may include multiple procedures.
+
+A `GetObservation` response shall conform to the following rules:
+  * The network offering URN shall be displayed just once, outside the `<om:Observation>` elements, as the content of a `</om:ObservationCollection/gml:name>` element. For single station offerings, `</om:ObservationCollection/gml:name>` may indicate the station URN.
+The `<om:ObservationCollection/om:member/om:Observation/gml:name>` shall follow the naming pattern <OFFERING ASSET URN>-<FEATURE TYPE>, e.g.: 
+{{{
+<gml:name>urn:ioos:network:noaa.nws.ndbc:all-timeSeries</gml:name>
+}}}
+  * The single `<om:procedure>` element shall list all the station URN's corresponding to the `<om:Observation>` feature type, and the station URNs shall be placed into individual `<gml:member>` elements within `<om:procedure>` as follows:
+{{{
+<om:procedure>
+  <om:Process>
+    <gml:member xlink:href="urn:ioos:station:wmo:41001" />
+    <gml:member xlink:href="urn:ioos:station:wmo:41002" />
+  </om:Process>
+</om:procedure>
+}}}
