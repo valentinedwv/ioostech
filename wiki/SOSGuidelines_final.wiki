@@ -173,12 +173,12 @@ In order to keep up the interoperability with IOOS-compliant services, the follo
     * in GetObservation – SWE 1.0.1 (prefix `<swe:>`) except for the contents of `<om:result>`, which shall use SWE 2.0 (prefix `<swe2:>`).
 
 
-==Support of observedProperty==
+==Support of `<observedProperty>`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=4]
 
-In general, SOS servers should only support what it advertises in the GetCapabilities document. Thus, an SOS server may support both fully qualified and unqualified observedProperty parameters as far as they are advertized in GetCapabilities.
+In general, SOS servers should only support what it advertises in the GetCapabilities document. Thus, an SOS server may support both fully qualified and unqualified `<observedProperty>` parameters as far as they are advertized in GetCapabilities.
 
-IOOS-compliant SOS server shall advertise and accept fully qualified observedProperty parameters.
+IOOS-compliant SOS server shall be able to advertise and accept fully qualified `<observedProperty>` parameters.
 
 
 ==URN vs. URL==
