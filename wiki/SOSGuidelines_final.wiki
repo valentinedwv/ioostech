@@ -186,19 +186,6 @@ Link: [http://code.google.com/p/ioostech/issues/detail?id=3]
 
 The use of both URNs and URLs are allowed for now, but it is recommended to use URLs where possible. URNs should be used only where a specific IOOS guideline has stipulated it (mainly for station id, sensor id, and "network" id).
 
-== WMO IDs==
-Link: [http://code.google.com/p/ioostech/issues/detail?id=41]
-
-Station WMO IDs should be specified (when available) in the identifier section of a DescribeSensor response as follows:
-{{{
-<sml:identifier name="wmoID">
-    <sml:Term definition="http://mmisw.org/ont/ioos/definition/wmoID">
-        <sml:value>41001</sml:value>
-    </sml:Term>
-</sml:identifier>
-}}}
-The wmoID should be specified as a separate identifier even if the main stationID URN uses the wmo authority.
-
 ==Requests with no time filtering==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=17]
 
@@ -270,6 +257,14 @@ The IOOS-compliant SOS service shall encode in the `<sml:component>` the child p
 </sml:components>
 }}}
 
+==XML header and namespace references==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=25]
+
+The IOOS-compliant SOS service shall conform to the following specific patterns for the namespace references in the `GetCapabilities` and `GetObservation` response XML headers:
+  #. In `GetCapabilities`, the `<swe:>` namespace definition may be omitted.
+  #. In `GetObservation`, the `<swe:> namespace definition shall be included, and shall refer to version 1.0.1.
+  #. In both `GetCapabilities’ and `GetObservation`, the `<gml:>` namespace definition may omit reference to a version number (because the O&M 1.0 schema already defines GML 3.1.1 as the version used).
+
 == Station offerings in `GetCapabilities` and `GetObservation`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=26]
 
@@ -292,3 +287,16 @@ The `<om:ObservationCollection/om:member/om:Observation/gml:name>` shall follow 
   </om:Process>
 </om:procedure>
 }}}
+
+== WMO IDs==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=41]
+
+Station WMO IDs should be specified (when available) in the identifier section of a DescribeSensor response as follows:
+{{{
+<sml:identifier name="wmoID">
+    <sml:Term definition="http://mmisw.org/ont/ioos/definition/wmoID">
+        <sml:value>41001</sml:value>
+    </sml:Term>
+</sml:identifier>
+}}}
+The _wmoID_ should be specified as a separate identifier even if the main _stationID_ URN uses the WMO authority.
