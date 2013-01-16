@@ -94,16 +94,16 @@ The versions of the international OGC standards and specifications used in the I
   * *SOS*: Sensor Observation Service
   * *SWE*: Sensor Web Enablement
 
-= Rules =
+=Rules=
 
 This section contains IOOS specific rules that have been distilled from resolved issues or mailing list discussions. The rule should have a human readable identifier, be concise, and include a link to the original discussion for background info. Developers writing SOS clients and validators should be able to use these rules to guide their coding.
 
-== Lower Camel Case Names ==
+==Lower Camel Case Names==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=31]
 
 Names, titles, gml ids, and other attribute values in SOS XML documents meant as human readable labels should use lower camel case (ex. sensorLocation). An exception is made for labels containing the short version of an identifier or definition URI that contains underscores (e.g. air_temperature, station_12, etc). Another exception is made for network-all. This rule does not apply to identifier values and terms from established vocabularies (e.g. http://mmisw.org/ont/cf/parameter/air_temperature or urn:ioos:station:xoos:the_station). Text containing acronyms should treat the acronym component as a normal word for readability (e.g. bprLocation instead of BPRLocation).
 
-== Asset URN identifiers ==
+==Asset URN identifiers==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=14]
 
 Link: [https://groups.google.com/forum/#!topic/ioostech_dev/F1SBuamGUrI/discussion]
@@ -127,7 +127,7 @@ Definitions:
 Version (deployment date, etc) is not included in the URN standard at this time.
 
 
-== Composite phenomena ==
+==Composite phenomena==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=1]
 
 Although support of composite phenomena is *OPTIONAL* for IOOS service providers, the implementation of the composite phenomena shall comply with the following rules (these rules accommodate both true composite phenomena like winds, and ad-hoc requests for multiple properties like water and air temperature):
@@ -173,7 +173,7 @@ In order to keep up the interoperability with IOOS-compliant services, the follo
     * in GetObservation – SWE 1.0.1 (prefix `<swe:>`) except for the contents of `<om:result>`, which shall use SWE 2.0 (prefix `<swe2:>`).
 
 
-==Support of `<observedProperty>`==
+==Support of <observedProperty>==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=4]
 
 In general, SOS servers should only support what it advertises in the GetCapabilities document. Thus, an SOS server may support both fully qualified and unqualified observedProperty parameters as far as they are advertized in GetCapabilities.
@@ -205,7 +205,7 @@ To represent an external link in the contact information part of the DescribeSen
 }}}
 
 
-==Representing `<FeatureType>` in GetObservation==
+==Representing feature type in `GetObservation`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=21]
 
 IOOS-compliant SOS server shall represent FeatureType (e.g., timeSeries, point, profile, etc)in GetObservation response as follows (this representation keeps the SWE elements the same between all FeatureTypes): 
@@ -231,7 +231,7 @@ Each unique CF feature type (discrete-sampling-geometries) shall be encoded in a
 </gml:metaDataProperty>
 }}}
 
-==Child procedures in DescribeSensor==
+==Child procedures in `DescribeSensor`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=23]
 
 The IOOS-compliant SOS service shall encode in the `<sml:component>` the child procedure ID (asset identifier) and link to the child's DescribeSensor response using `<xlink:title>` and `<xlink:href>` respectively; any further child information is optional:
@@ -265,7 +265,7 @@ The IOOS-compliant SOS service shall conform to the following specific patterns 
   #. In GetObservation, the `<swe:>` and `<swe2:>` namespace definitions shall be included, and shall refer to versions 1.0.1 and 2.0 respectively (for additional information look [SOSGuidelines_final#Versions_of_SOS,_SWE_and_O&M here]).
   #. In both GetCapabilities and GetObservation, the `<gml:>` namespace definition may omit reference to a version number (because the O&M 1.0 schema already defines GML 3.1.1 as the version used).
 
-== Station offerings in GetCapabilities and GetObservation==
+== Station offerings in `GetCapabilities` and `GetObservation`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=26]
 
 In GetCapabilities, the `<sos:ObservationOffering>` element for a network offerings shall contain just a single `<sos:procedure>` element with `<xlink:href="NETWORK ID URN">` attribute, whereas the individual station procedures encompassed by the network offering shall be obtained via a DescribeSensor request.
