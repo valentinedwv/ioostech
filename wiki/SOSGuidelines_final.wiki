@@ -169,7 +169,7 @@ Link: [http://code.google.com/p/ioostech/issues/detail?id=2]
 In order to keep up the interoperability with IOOS-compliant services, the following versions shall be used:
   #. Both SOS and O&M version 1.0.
   #. SWECommon version depends on the function:
-    * in GetCapabilities and DescribeSensor – SWECommon 1.0.1 (prefix `<swe:>`)(see also [SOSGuidelines_final#XML_header_and_namespace_references]);
+    * in GetCapabilities and DescribeSensor – SWECommon 1.0.1 (prefix `<swe:>`);
     * in GetObservation – SWE 1.0.1 (prefix `<swe:>`) except for the contents of `<om:result>`, which shall use SWE 2.0 (prefix `<swe2:>`).
 
 
@@ -262,7 +262,7 @@ Link: [http://code.google.com/p/ioostech/issues/detail?id=25]
 
 The IOOS-compliant SOS service shall conform to the following specific patterns for the namespace references in the GetCapabilities and GetObservation response XML headers:
   #. In GetCapabilities, the `<swe:>` namespace definition may be omitted.
-  #. In GetObservation, the `<swe:>` namespace definition shall be included, and shall refer to version 1.0.1.
+  #. In GetObservation, the `<swe:>` and `<swe2:>` namespace definitions shall be included, and shall refer to versions 1.0.1 and 2.0 respectively (for additional information look[SOSGuidelines_final#Versions_of_SOS,_SWE_and_O&M here]).
   #. In both GetCapabilities and GetObservation, the `<gml:>` namespace definition may omit reference to a version number (because the O&M 1.0 schema already defines GML 3.1.1 as the version used).
 
 == Station offerings in GetCapabilities and GetObservation==
