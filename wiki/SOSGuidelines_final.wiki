@@ -130,7 +130,7 @@ Version (deployment date, etc) is not included in the URN standard at this time.
 == Composite phenomena ==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=1]
 
-Although support of composite phenomena is OPTIONAL for IOOS service providers, the implementation of the composite phenomena shall comply with the following rules (these rules accommodate both true composite phenomena like winds, and ad-hoc requests for multiple properties like water and air temperature):
+Although support of composite phenomena is *OPTIONAL* for IOOS service providers, the implementation of the composite phenomena shall comply with the following rules (these rules accommodate both true composite phenomena like winds, and ad-hoc requests for multiple properties like water and air temperature):
   # IOOS-defined vector variables (namely winds, currents and waves) shall be advertized in GetCapabilities response as composite phenomena that contains scalar properties defined in the CF standard names vocabulary. 
   # The supported composite phenomena are defined in the IOOS Parameter Vocabulary (e.g.: http://mmisw.org/ont/ioos/parameter/wave).
   # The exact collection of individual scalar properties that is used by a service provider to form a certain composite phenomenon shall be a subset of the properties defined in the IOOS Parameter Vocabulary for that composite phenomenon.
@@ -167,13 +167,13 @@ EXAMPLE 2 (single scalar property):
 Link: [http://code.google.com/p/ioostech/issues/detail?id=2]
 
 In order to keep up the interoperability with IOOS-compliant services, the following versions shall be used:
-  * Both SOS and O&M version 1.0
-  * SWECommon version depends on the function:
-    # in GetCapabilities and DescribeSensor – SWECommon 1.0.1 (prefix `<swe:>`)
-    # in GetObservation – SWE 1.0.1 (prefix `<swe:>`) except for the contents of `<om:result>`, which shall use SWE 2.0 (prefix `<swe2:>`)
+  #. Both SOS and O&M version 1.0.
+  #. SWECommon version depends on the function:
+    * in GetCapabilities and DescribeSensor – SWECommon 1.0.1 (prefix `<swe:>`)(see also [SOSGuidelines_final#XML_header_and_namespace_references]);
+    * in GetObservation – SWE 1.0.1 (prefix `<swe:>`) except for the contents of `<om:result>`, which shall use SWE 2.0 (prefix `<swe2:>`).
 
 
-==`observedProperty` support==
+==Support of `<observedProperty>`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=4]
 
 In general, SOS servers should only support what it advertises in the GetCapabilities document. Thus, an SOS server may support both fully qualified and unqualified observedProperty parameters as far as they are advertized in GetCapabilities.
@@ -192,10 +192,10 @@ Link: [http://code.google.com/p/ioostech/issues/detail?id=17]
 In general, any IOOS-compliant SOS server shall follow the SOS version 1.0 specification requirements. However, in the case when SOS request does not contain any time filter, the SOS v1.0 fails to properly describe the server behavior. 
 In that specific case, the IOOS-compliant server shall follow the SOS v2.0 specification, which requires the server to return all records matching a user request, although a result limit may be employed, and `ResponseExceedsSizeLimit` exception code shall be returned if that limit is exceeded.
 
-==External link in `DescribeSensor` response==
+==External link in DescribeSensor response==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=18]
 
-To represent an external link in the contact information part of the DescribeSensor response, an IOOS-compliant service shall use `< xlink:href>` attribute of the `<sml:contact>` element as follows:
+To represent an external link in the contact information part of the DescribeSensor response, an IOOS-compliant service shall use `< xlink:href>` attribute of the `<sml:contact>` element in the following manner:
 {{{
 <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:publisher" xlink:href="http://sdf.ndbc.noaa.gov/">
   <sml:ResponsibleParty>
@@ -205,10 +205,10 @@ To represent an external link in the contact information part of the DescribeSen
 }}}
 
 
-==Representing `FeatureType` in `GetObservation`==
+==Representing `<FeatureType>` in GetObservation==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=21]
 
-IOOS-compliant SOS server shall represent FeatureType (e.g., timeSeries, point, profile, etc)in GetObservation response as follows (this representation keeps the SWE elements the same between all FeatureTypes) 
+IOOS-compliant SOS server shall represent FeatureType (e.g., timeSeries, point, profile, etc)in GetObservation response as follows (this representation keeps the SWE elements the same between all FeatureTypes): 
 
 {{{
 <om:featureOfInterest>
@@ -231,7 +231,7 @@ Each unique CF feature type (discrete-sampling-geometries) shall be encoded in a
 </gml:metaDataProperty>
 }}}
 
-==Child procedures in `DescribeSensor`==
+==Child procedures in DescribeSensor==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=23]
 
 The IOOS-compliant SOS service shall encode in the `<sml:component>` the child procedure ID (asset identifier) and link to the child's DescribeSensor response using `<xlink:title>` and `<xlink:href>` respectively; any further child information is optional:
@@ -260,19 +260,19 @@ The IOOS-compliant SOS service shall encode in the `<sml:component>` the child p
 ==XML header and namespace references==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=25]
 
-The IOOS-compliant SOS service shall conform to the following specific patterns for the namespace references in the `GetCapabilities` and `GetObservation` response XML headers:
-  #. In `GetCapabilities`, the `<swe:>` namespace definition may be omitted.
-  #. In `GetObservation`, the `<swe:> namespace definition shall be included, and shall refer to version 1.0.1.
-  #. In both `GetCapabilities’ and `GetObservation`, the `<gml:>` namespace definition may omit reference to a version number (because the O&M 1.0 schema already defines GML 3.1.1 as the version used).
+The IOOS-compliant SOS service shall conform to the following specific patterns for the namespace references in the GetCapabilities and GetObservation response XML headers:
+  #. In GetCapabilities, the `<swe:>` namespace definition may be omitted.
+  #. In GetObservation, the `<swe:>` namespace definition shall be included, and shall refer to version 1.0.1.
+  #. In both GetCapabilities and GetObservation, the `<gml:>` namespace definition may omit reference to a version number (because the O&M 1.0 schema already defines GML 3.1.1 as the version used).
 
-== Station offerings in `GetCapabilities` and `GetObservation`==
+== Station offerings in GetCapabilities and GetObservation==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=26]
 
-In `GetCapabilities`, the `<sos:ObservationOffering>` element for a network offerings shall contain just a single `<sos:procedure>` element with `<xlink:href="NETWORK ID URN">` attribute, whereas the individual station procedures encompassed by the network offering shall be obtained via a `DescribeSensor` request.
+In GetCapabilities, the `<sos:ObservationOffering>` element for a network offerings shall contain just a single `<sos:procedure>` element with `<xlink:href="NETWORK ID URN">` attribute, whereas the individual station procedures encompassed by the network offering shall be obtained via a DescribeSensor request.
 
-A `GetObservation` request to IOOS-compliant SOS server shall include *ONLY* one offering, but may include multiple procedures.
+A GetObservation request to IOOS-compliant SOS server shall include *ONLY* one offering, but may include multiple procedures.
 
-A `GetObservation` response shall conform to the following rules:
+A GetObservation response shall conform to the following rules:
   * The network offering URN shall be displayed just once, outside the `<om:Observation>` elements, as the content of a `</om:ObservationCollection/gml:name>` element. For single station offerings, `</om:ObservationCollection/gml:name>` may indicate the station URN.
 The `<om:ObservationCollection/om:member/om:Observation/gml:name>` shall follow the naming pattern <OFFERING ASSET URN>-<FEATURE TYPE>, e.g.: 
 {{{
