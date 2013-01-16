@@ -298,7 +298,7 @@ The IOOS SOS implementation treats `<om:featureOfInterest>` as the single contai
 
 The `<om:featureOfInterest>/<gml:FeatureCollection>/<gml:location>/<gml:MultiPoint>` structure shall be used to represent station location metadata in both multi-station and single-station GetObservation responses (see example below and GetObservation [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/GO-Station-SingleFT-timeSeries-MultiSensor.xml template]). 
 
-The `<gml:MultiPoint>/<gml:pointMembers>/<gml:Point>/<gml:name>` element shall be used to associate the `<stationID>` URN with the station coordinates.
+The `<gml:MultiPoint>/<gml:pointMembers>/<gml:Point>/<gml:name>` element shall be used to associate the _stationID_ URN with the station coordinates.
 
 EXAMPLE:
 {{{
