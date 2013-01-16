@@ -290,6 +290,7 @@ The `<om:ObservationCollection/om:member/om:Observation/gml:name>` shall follow 
 
 ==Representation of geospatial metadata in `GetObservation`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=27]
+
 Link: [http://code.google.com/p/ioostech/issues/detail?id=28] 
 
 
