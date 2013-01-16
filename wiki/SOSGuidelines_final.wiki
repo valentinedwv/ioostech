@@ -231,6 +231,31 @@ Each unique CF feature type (discrete-sampling-geometries) shall be encoded in a
 </gml:metaDataProperty>
 }}}
 
+
+==Definition of _stationID/sensorID_ in `GetObservation`==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=22]
+
+In the `<om:result>` block of the GetObservation response, the `<swe2:Text>` element rather than `<swe2:Category’> shall be used to define _stationID_ or _sensorID_, as shown below:
+{{{
+<om:result>
+    <swe2:DataStream>
+        <swe2:elementType name="components">
+            <swe2:DataRecord>
+                <swe2:field name="stationID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
+                        <swe2:value>urn:ioos:station:wmo:41001</swe2:value>
+                    </swe2:Text>
+                </swe2:field>
+                <swe2:field name="sensorID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID"/>
+                </swe2:field>
+            </swe2:DataRecord>
+        </swe2:elementType>
+    </swe2:DataStream>
+</om:result>
+}}}
+
+
 ==Child procedures in `DescribeSensor`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=23]
 
