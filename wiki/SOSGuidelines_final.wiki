@@ -292,6 +292,7 @@ The `<om:ObservationCollection/om:member/om:Observation/gml:name>` shall follow 
 Link: [http://code.google.com/p/ioostech/issues/detail?id=27]
 
 The IOOS SOS implementation treats `<om:featureOfInterest>` as the single container for all geospatial and feature-type response metadata (i.e., all information that is outside the `<om:result>` block). As the bounding box envelope is one such element, it shall be placed in the `<om:featureOfInterest/gml:FeatureCollection>` block of the GetObservation response; that allocation validates with the Oxygen XML Editor, so it's just as valid as having `<gml:boundedBy>` outside `<om:featureOfInterest>` as was previously done (i.e. at the same hierarchy level as `<om:procedure>`, `<om:samplingTime>`, etc.).
+
 For multi-station responses (e.g., from a `<network:all>` offering), the `<gml:envelope>` coordinates shall define an actual rectangle, while for single-station responses (as in the GetObservation [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/GO-Station-SingleFT-timeSeries-MultiSensor.xml template] ) the rectangle collapses to the single point of the station location.
 
 
