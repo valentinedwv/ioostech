@@ -288,8 +288,10 @@ The `<om:ObservationCollection/om:member/om:Observation/gml:name>` shall follow 
 </om:procedure>
 }}}
 
-==Allocation of geospatial metadata in `GetObservation`==
+==Representation of geospatial metadata in `GetObservation`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=27]
+Link: [http://code.google.com/p/ioostech/issues/detail?id=28] 
+
 
 The IOOS SOS implementation treats `<om:featureOfInterest>` as the single container for all geospatial and feature-type response metadata (i.e., all information that is outside the `<om:result>` block). As the bounding box envelope is one such element, it shall be placed in the `<om:featureOfInterest/gml:FeatureCollection>` block of the GetObservation response; that allocation validates with the Oxygen XML Editor, so it's just as valid as having `<gml:boundedBy>` outside `<om:featureOfInterest>` as was previously done (i.e. at the same hierarchy level as `<om:procedure>`, `<om:samplingTime>`, etc.).
 
