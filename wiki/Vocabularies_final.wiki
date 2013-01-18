@@ -60,7 +60,7 @@ For convenience and completeness, the IOOS Parameter Vocabulary incorporates CF 
 
 === Terms not found on either vocabulary ===
 
-If the desired parameter is not found on the CF and IOOS vocabularies, IOOS should be notified and engaged to discuss adding the term to the IOOS Parameter Vocabulary, following a publicized and accepted process that's reasonably fast and a reasonably small burden on participants. In parallel, IOOS will maintain an engagement with the CF community to discuss adding parameters that are not currently present. *(Need to provide instructions to service providers as to what to do in the short term: eg, include the observed property using a urn template similar to station identifiers, or the MMI IOOS url parameter reference? Or do not include the observed property until the term has been added to the IOOS vocabulary?)
+If the desired parameter is not found on the CF and IOOS vocabularies, IOOS should be notified and engaged to discuss adding the term to the IOOS Parameter Vocabulary, following a publicized and accepted process that's reasonably fast and a reasonably small burden on participants. In parallel, IOOS will maintain an engagement with the CF community to discuss adding parameters that are not currently present. *(TODO: Need to provide instructions to service providers as to what to do in the short term, e.g., include the observed property using a urn template similar to station identifiers, or the MMI IOOS url parameter reference? Or do not include the observed property until the term has been added to the IOOS vocabulary?)
 
 === Composite Properties ===
 
