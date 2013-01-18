@@ -313,19 +313,40 @@ The `<om:ObservationCollection>/<om:member>/<om:Observation>/<gml:name>` shall f
 </om:procedure>
 }}}
 
-==Representation of geospatial metadata in `GetObservation`==
+
+==Representation of geospatial metadata in `GetObservation` and `DescribeSensor`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=27]
+Link: [http://code.google.com/p/ioostech/issues/detail?id=28]
+Link: [http://code.google.com/p/ioostech/issues/detail?id=19] 
 
-Link: [http://code.google.com/p/ioostech/issues/detail?id=28] 
 
+The IOOS SOS implementation treats `<om:featureOfInterest>` as the single container for all geospatial and feature-type response metadata (i.e., all information that is outside the `<om:result>` block). As the station location information is one such element, it shall be placed in the `<om:featureOfInterest>/<gml:FeatureCollection>` block of the GetObservation response; that allocation validates with the Oxygen XML Editor, so it's just as valid as placing geospatial metadata outside `<om:featureOfInterest>` as was previously done (i.e. at the same hierarchy level as `<om:procedure>`, `<om:samplingTime>`, etc.). 
 
-The IOOS SOS implementation treats `<om:featureOfInterest>` as the single container for all geospatial and feature-type response metadata (i.e., all information that is outside the `<om:result>` block). As the station location information is one such element, it shall be placed in the `<om:featureOfInterest>/<gml:FeatureCollection>` block of the GetObservation response; that allocation validates with the Oxygen XML Editor, so it's just as valid as placing geospatial metadata outside `<om:featureOfInterest>` as was previously done (i.e. at the same hierarchy level as `<om:procedure>`, `<om:samplingTime>`, etc.).
+Despite having been “deprecated” (i.e., "not recommended to use") since GML 3.1.0, the `<gml:location>` remains the least complex and all-sufficient structure among many options of reporting station position. In addition, the use of “location” structure provides the pragmatic advantage of identical location encoding in GetObservation (`<gml:location>`) and DescribeSensor (`<sml:location>`).
 
-The `<om:featureOfInterest>/<gml:FeatureCollection>/<gml:location>/<gml:MultiPoint>` structure shall be used to represent station location metadata in both multi-station and single-station GetObservation responses (see example below and GetObservation [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/GO-Station-SingleFT-timeSeries-MultiSensor.xml template]). 
+The following rules encompass the geospatial metadata representation in IOOS-compliant GetObservation and DescribeSensor responses:
 
-The `<gml:MultiPoint>/<gml:pointMembers>/<gml:Point>/<gml:name>` element shall be used to associate the _stationID_ with the station coordinates.
+  * The `<om:featureOfInterest>/<gml:FeatureCollection>/<gml:location>/<gml:Point>` structure shall be used to represent station location metadata in a single-station GetObservation response (EXAMPLE 1 below).
 
-EXAMPLE:
+  * The `<om:featureOfInterest>/<gml:FeatureCollection>/<gml:location>/<gml:MultiPoint>` structure shall be used to represent station location metadata in a multi-station GetObservation response (EXAMPLE 2 below). 
+
+  * The `<sml:SensorML>/<sml:member>/<sml:System>/<sml:location>/<gml:Point>` structure shall be used to represent station location metadata in a single-station DescribeSensor response (EXAMPLE 3 below).
+
+  * The `<gml:Point>/<gml:name>` element shall be used to associate the _stationID_ with the station coordinates in both multi-station and single-station GetObservation, and in single-station DescribeSensor responses.
+
+  * The `<gml:boundedBy>` element shall be used to represent geospatial metadata in a multi-station (i.e. “network-al”) DescribeSensor response, where the `<gml:envelope>` coordinates shall define an actual rectangle(EXAMPLE 4 below).
+
+EXAMPLE 1 (single-station GetObservation):
+{{{
+<gml:location>
+    <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+       <gml:name>urn:ioos:station:wmo:41001</gml:name> 
+       <gml:pos>34.7 -72.73</gml:pos>
+    </gml:Point>
+</gml:location>
+}}}
+
+EXAMPLE 2 (multi-station GetObservation):
 {{{
 <gml:location>
   <gml:MultiPoint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -347,10 +368,28 @@ EXAMPLE:
 </gml:location>
 }}}
 
+EXAMPLE 3 (single-station DescribeSensor):
+{{{
+<sml:location>
+    <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+       <gml:name>urn:ioos:station:wmo:41001</gml:name> 
+       <gml:pos>34.7 -72.73</gml:pos>
+    </gml:Point>
+</sml:location>
+}}}
 
-Despite having been “deprecated” (i.e., "not recommended to use") since GML 3.1.0, the `<gml:location>` remains the least complex and all-sufficient structure among many options of reporting station position. In addition, the use of “location” structure provides the pragmatic advantage of identical location encoding in GetObservation (`<gml:location>`) and DescribeSensor (`<sml:location>`).
+EXAMPLE 4 (“network-all” DescribeSensor):
+{{{
+<sml:location>
+       <gml:boundedBy>
+                 <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:lowerCorner>-90.0 -180.0</gml:lowerCorner>
+                         <gml:upperCorner>90.0 180.0</gml:upperCorner>
+                 </gml:Envelope>
+       </gml:boundedBy>
+</sml:location>
+}}}
 
-A `<gml:boundedBy>` element may also be used. For multi-station responses (e.g., from a `<network:all>` offering), the `<gml:envelope>` coordinates shall define an actual rectangle, while for single-station responses (as in the GetObservation [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/GO-Station-SingleFT-timeSeries-MultiSensor.xml template] ) the rectangle collapses to the single point of the station location.
 
 == Observation values !TextEncoding separators==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=34]
