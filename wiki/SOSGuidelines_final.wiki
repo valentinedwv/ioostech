@@ -339,10 +339,10 @@ The following rules encompass the geospatial metadata representation in IOOS-com
 EXAMPLE 1 (single-station GetObservation):
 {{{
 <gml:location>
-    <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-       <gml:name>urn:ioos:station:wmo:41001</gml:name> 
-       <gml:pos>34.7 -72.73</gml:pos>
-    </gml:Point>
+  <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <gml:name>urn:ioos:station:wmo:41001</gml:name> 
+    <gml:pos>34.7 -72.73</gml:pos>
+  </gml:Point>
 </gml:location>
 }}}
 
@@ -371,22 +371,22 @@ EXAMPLE 2 (multi-station GetObservation):
 EXAMPLE 3 (single-station DescribeSensor):
 {{{
 <sml:location>
-    <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-       <gml:name>urn:ioos:station:wmo:41001</gml:name> 
-       <gml:pos>34.7 -72.73</gml:pos>
-    </gml:Point>
+  <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <gml:name>urn:ioos:station:wmo:41001</gml:name> 
+    <gml:pos>34.7 -72.73</gml:pos>
+  </gml:Point>
 </sml:location>
 }}}
 
 EXAMPLE 4 (“network-all” DescribeSensor):
 {{{
 <sml:location>
-       <gml:boundedBy>
-                 <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                        <gml:lowerCorner>-90.0 -180.0</gml:lowerCorner>
-                         <gml:upperCorner>90.0 180.0</gml:upperCorner>
-                 </gml:Envelope>
-       </gml:boundedBy>
+  <gml:boundedBy>
+    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+      <gml:lowerCorner>-90.0 -180.0</gml:lowerCorner>
+      <gml:upperCorner>90.0 180.0</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
 </sml:location>
 }}}
 
