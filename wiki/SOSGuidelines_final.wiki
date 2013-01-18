@@ -314,7 +314,7 @@ The `<om:ObservationCollection>/<om:member>/<om:Observation>/<gml:name>` shall f
 }}}
 
 
-==Representation of geospatial metadata in `GetObservation` and `DescribeSensor`==
+==Representation of horizontal coordinates in `GetObservation` and `DescribeSensor`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=27]
 Link: [http://code.google.com/p/ioostech/issues/detail?id=28]
 Link: [http://code.google.com/p/ioostech/issues/detail?id=19] 
@@ -390,6 +390,11 @@ EXAMPLE 4 (“network-all” DescribeSensor):
 </sml:location>
 }}}
 
+
+==Representation of vertical coordinate in `GetObservation` and `DescribeSensor`==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=16]
+
+_Still in discussion_
 
 == Observation values !TextEncoding separators==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=34]
