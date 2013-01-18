@@ -370,9 +370,13 @@ The _wmoID_ should be specified as a separate identifier even if the main _stati
 Link: [http://code.google.com/p/ioostech/issues/detail?id=34]
 
 Use XML entities in GetObs swe:TextEncoding to represent special characters. Use of standard CSV separators is strongly recommended:
+{{{
 <swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&#10"/>
+}}}
 
 Use unencoded separators (e.g. actual line feeds) in the values block, example:
-  25.41,10.23,320
-  25.43,10.23,300
-  25.39,11.51,310
+{{{
+25.41,10.23,320
+25.43,10.23,300
+25.39,11.51,310
+}}}
