@@ -30,8 +30,8 @@ Note that the outline items below appear to be the proposed wiki page ("file") n
        * SOSConcepts (definitions and common usage for observedProperty, featureOfInterest, procedure, and ObservationOffering)
        * Request Parameters and usage
        * Response types (aka Templates)
-       * SOSVocabularies (any SOS specific modifications or additions to the overall ControlledVocabularies page.
-     * SOSClients
+       * SOSVocabularies (any SOS specific modifications or additions to the overall [Vocabularies_final ControlledVocabularies] page.
+     * [SOSClients SOSClients]
        * EnvironmentalDataConnector
        * Proteus 
        * PyOOS
@@ -49,7 +49,7 @@ Note that the outline items below appear to be the proposed wiki page ("file") n
      * PyDAP
      * netCDF (Web Service agnostic discussion of file formats and data models relevant to them.  Mostly focused on netCDF and the so-called standards in use in that area (CF, Glider Files, Argo, OceanSITES, Discrete Sampling Geometries etc)
    * WMS
- * [Vocabularies_Final Controlled Vocabularies]
+ * [Vocabularies_final Controlled Vocabularies]
     * See the outline and content currently on that page
  * Metadata    
  * QualityControl
