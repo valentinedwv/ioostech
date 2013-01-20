@@ -14,10 +14,23 @@ The primary purpose of this wiki is to      ????? Please fill in the blank.  The
  * repository of code implementing various common functions such as a general Python/Java/Matlab/C library of QARTOD algorithms.
 
 
-= Suggested Outline for the High Level Wiki Navigation =
+= Outline for the High Level Wiki Navigation =
+
+=== Introduction ===
+
+> Text that provides an integrated, high-level description of how the pieces outlined below fit together. Should be relatively brief.
+
+Note that the outline items below appear to be the proposed wiki page ("file") name, right?
+
+=== Data Services and Content Standards ===
 
  * DataAccessServices
    * SOS
+     * [SOSGuidelines_final SOSGuidelines (IDD)]  (THE IDD OR WSDD MUST BE VERSIONED AND WILL REFER TO THE TEMPLATE MILESTONE VERSION.  KEEP LINKAGES FROM THIS PAGE MINIMAL TO KEEP APPLICABLE VERSIONS CLEAR)
+       * SOSConcepts (definitions and common usage for observedProperty, featureOfInterest, procedure, and ObservationOffering)
+       * Request Parameters and usage
+       * Response types (aka Templates)
+       * SOSVocabularies (any SOS specific modifications or additions to the overall ControlledVocabularies page.
      * SOSClients
        * EnvironmentalDataConnector
        * Proteus 
@@ -29,29 +42,29 @@ The primary purpose of this wiki is to      ????? Please fill in the blank.  The
        * DIF SOS (NDBC) Probably should be renamed.  Should these server pages be included underneatht the SOSGuidleines IDD so that the information can be version specific?
        * NANOOS Python SOS
        * OostethysSOS
-     * SOSGuidelines (IDD)  (THE IDD OR WSDD MUST BE VERSIONED AND WILL REFER TO THE TEMPLATE MILESTONE VERSION.  KEEP LINKAGES FROM THIS PAGE MINIMAL TO KEEP APPLICABLE VERSIONS CLEAR)
-       * SOSConcepts (definitions and common usage for observedProperty, featureOfInterest, procedure, and ObservationOffering)
-       * Request Parameters and usage
-       * Response types (aka Templates)
-       * SOSVocabularies (any SOS specific modifications or additions to the overall ControlledVocabularies page.
    * OPeNDAP based services (Guidelines for use, not necessarly an all encompassing technical documentation.  Only IOOS specifics)
      * ERDDAP
      * THREDDS
      * Hyrax
      * PyDAP
-     * netCDF(Web Service agnostic discussion of file formats and data models relevant to them.  Mostly focused on netCDF and the so-called standards in use in that area (CF, Glider Files, Argo, OceanSITES, Discrete Sampling Geometries etc)
+     * netCDF (Web Service agnostic discussion of file formats and data models relevant to them.  Mostly focused on netCDF and the so-called standards in use in that area (CF, Glider Files, Argo, OceanSITES, Discrete Sampling Geometries etc)
    * WMS
- * ServiceRegistry
- * DataCatalog
- * SystemMonitor
- * SystemViewer
- * ControlledVocabularies
-    * ObservedProperty (aka Parameter vocabularies.  Description and rules for choosing and managing terms)
-    * PlatformVocabulary (Description and crosswalk with other concepts)
+ * [Vocabularies_Final Controlled Vocabularies]
+    * See the outline and content currently on that page
  * Metadata    
  * QualityControl
-  
-Pieces to consider
+
+=== IOOS System Integration ===
+
+ * ServiceRegistry
+ * DataCatalog
+ * [AutomatedAssetInventory AssetInventory]
+ * SystemViewer
+ * SystemMonitor
+
+
+
+= Pieces to consider =
   # Do we need to maintain a complete record of the workshop (preparation/proceedings/conclusions?)
   # Do we need a more thorough crosswalk with CF Discrete Sampling Geometries or is this something better done by other groups or on other information portals and wikis?  CF wiki, [https://geo-ide.noaa.gov/wiki/ NOAA EDM wiki] (formerly geo-ide wiki), [http://wiki.esipfed.org ESIP Federation]?  
   # Filling out the other big pieces of DMAC (RCV, Regional Portals)
