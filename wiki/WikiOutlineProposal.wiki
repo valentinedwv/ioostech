@@ -1,6 +1,8 @@
 #summary Proposal for an organization structure for some components of this wiki.
 #labels Phase-Implementation
 
+<wiki:toc max_depth="4" />
+
 = Purpose =
 
 The IOOS PO is attempting to organize the overall documentation of DMAC beginning with a reorganization (complete and from scratch) of  ioos.gov/data.  We recognize that the ioos.gov web site is not going to be the only or even primary source of information on IOOS DMAC, let alone all of the other observation and analysis activities across the enterprise.  This wiki is an important source of information but it also deserves some attention and reorganization but the purpose and organization of this wiki should be clarified so that it can grow to serve an important niche (or be abandoned in favor of something better if need be).
