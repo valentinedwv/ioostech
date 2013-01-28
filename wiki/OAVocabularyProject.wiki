@@ -18,8 +18,9 @@ Our goal is to create an inter-agency ocean acidification parameter list, which 
 <h3>Parameter Submission Interface:</h3>
 https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0
 
-<h3>Instructions:</h3>
-   * An underlying Google spreadsheet will hold the submitted parameters before they can be input into the MMI. The Google spreadsheet will be shared within the committee members.
-      * To read submitted terms, Please click "Drive" on your Gmail and look for a Google spreadsheet with the name of "Parameter Submission Form"
+<h3>Temporary repository of submitted parameters</h3>
+https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0
+
+<h3>Proposed bylaws:</h3>
    * Committee members have up to two weeks to raise comments or objections on a submitted parameter. After that time, silence assumes consent.
    * After approval, the parameters will be published into the inter-agency OA parameter list.
