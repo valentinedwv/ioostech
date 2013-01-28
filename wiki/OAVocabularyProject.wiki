@@ -2,14 +2,19 @@
 Our goal is to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.
 
 <h3>Current committee members:</h3>
-Rob Ragsdale (IOOS)%BR%
-Hassan Moustahfid (IOOS)<br/>
-Emilio Mayoga (NANOOS/Univ. of Washington)<br/>
-Sara Haines (SECOORA/UNC - CH)<br/>
-Don Collins (NODC)<br/>
-Hernan Garcia (NODC)<br/>
-Liqing Jiang (NODC)<br/>
-
+   * Rob Ragsdale (IOOS)
+   * Hassan Moustahfid (IOOS)
+   * Emilio Mayoga (NANOOS/Univ. of Washington)
+   * Sara Haines (SECOORA/UNC - CH)
+   * Don Collins (NODC)
+   * Hernan Garcia (NODC)
+   * Liqing Jiang (NODC)
+   * Alex Kozyr (CDIAC)
+   * Cyndy Chandler (BCO-DMO) 
+   * Dwight Gledhill (OAP)
+   * Leticia Barbero (AOML)
+   * Cathy Cosca (PMEL)
+   
 <h3>Parameter Submission Interface:</h3>
 https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0
 
