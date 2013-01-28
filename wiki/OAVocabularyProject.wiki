@@ -23,4 +23,4 @@ https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xx
 
 <h3>Proposed bylaws:</h3>
    * Committee members have up to two weeks to raise comments or objections on a submitted parameter. After that time, silence assumes consent.
-   * After approval, the parameters will be published into the inter-agency OA parameter list.
+   * After approval, the parameters will be published into the inter-agency OA parameter list that resides in MMI.
