@@ -1,5 +1,5 @@
 <h3>Goal:</h3>
-We aim to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.
+Our goal is to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.
 
 <h3>Current committee members:</h3>
 Rob Ragsdale (IOOS)
@@ -14,13 +14,8 @@ Liqing Jiang (NODC)
 https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0
 
 <h3>Instructions:</h3>
-
-   * An underlying Google spreadsheet will hold the submitted parameters
-before they can be input into the MMI. The Google spreadsheet will be
-shared within the committee members.
-
-- Committee members have up to two weeks to raise comments on a
+   * An underlying Google spreadsheet will hold the submitted parameters before they can be input into the MMI. The Google spreadsheet will be shared within the committee members.
+   * Committee members have up to two weeks to raise comments on a
 submitted parameter. After that time, silence assumes consent.
-
-- After approval, the parameters will be published into the
+   * After approval, the parameters will be published into the
 inter-agency OA parameter list.
