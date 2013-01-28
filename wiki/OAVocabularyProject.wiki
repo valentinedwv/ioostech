@@ -1,7 +1,7 @@
----++ Goal
+=Goal=
 We aim to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.
 
-- Current committee members:
+=Current committee members:=
 Rob Ragsdale (IOOS)
 Hassan Moustahfid (IOOS)
 Emilio Mayoga (NANOOS/Univ. of Washington)
@@ -10,7 +10,7 @@ Don Collins (NODC)
 Hernan Garcia (NODC)
 Liqing Jiang (NODC)
 
-- Parameter Submission Interface:
+=Parameter Submission Interface:=
 https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0
 
 - An underlying Google spreadsheet will hold the submitted parameters
@@ -22,8 +22,6 @@ submitted parameter. After that time, silence assumes consent.
 
 - After approval, the parameters will be published into the
 inter-agency OA parameter list.
-
-
 
 
 
