@@ -15,7 +15,7 @@ Our goal is to create an inter-agency ocean acidification parameter list, which 
    * Leticia Barbero (AOML)
    * Cathy Cosca (PMEL)
    
-<h3>Parameter Submission Interface:</h3>
+<h3>Parameter Submission Form:</h3>
 https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0
 
 <h3>Repository of submitted parameters</h3>
@@ -24,3 +24,6 @@ https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xx
 <h3>Proposed bylaws:</h3>
    * Committee members have up to two weeks to raise comments or objections on a submitted parameter. After that time, silence assumes consent.
    * After approval, the parameters will be published into the inter-agency OA parameter list that resides in MMI.
+
+<h3>Inter-agency Ocean Acidification Parameter List</h3>
+url
