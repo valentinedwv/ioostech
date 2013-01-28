@@ -2,7 +2,7 @@
 Our goal is to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.
 
 <h3>Current committee members:</h3>
-Rob Ragsdale (IOOS)<br/>
+Rob Ragsdale (IOOS)%BR%
 Hassan Moustahfid (IOOS)<br/>
 Emilio Mayoga (NANOOS/Univ. of Washington)<br/>
 Sara Haines (SECOORA/UNC - CH)<br/>
