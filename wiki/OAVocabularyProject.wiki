@@ -15,7 +15,6 @@ https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxk
 
 <h3>Instructions:</h3>
    * An underlying Google spreadsheet will hold the submitted parameters before they can be input into the MMI. The Google spreadsheet will be shared within the committee members.
-      * Instructions on how to read submitted terms:
-         * Click "Drive" on your Gmail and look for a Google spreadsheet with the name of "Parameter Submission Form"
+      * To read submitted terms, Please click "Drive" on your Gmail and look for a Google spreadsheet with the name of "Parameter Submission Form"
    * Committee members have up to two weeks to raise comments or objections on a submitted parameter. After that time, silence assumes consent.
    * After approval, the parameters will be published into the inter-agency OA parameter list.
