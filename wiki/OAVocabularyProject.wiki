@@ -15,7 +15,5 @@ https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxk
 
 <h3>Instructions:</h3>
    * An underlying Google spreadsheet will hold the submitted parameters before they can be input into the MMI. The Google spreadsheet will be shared within the committee members.
-   * Committee members have up to two weeks to raise comments on a
-submitted parameter. After that time, silence assumes consent.
-   * After approval, the parameters will be published into the
-inter-agency OA parameter list.
+   * Committee members have up to two weeks to raise comments on a submitted parameter. After that time, silence assumes consent.
+   * After approval, the parameters will be published into the inter-agency OA parameter list.
