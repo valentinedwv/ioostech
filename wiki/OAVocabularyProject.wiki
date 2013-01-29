@@ -15,7 +15,7 @@ Our goal is to create an inter-agency ocean acidification parameter list, which 
    * Leticia Barbero (AOML)
    * Cathy Cosca (PMEL)
    
-<h3>Parameter Submission Form:</h3>
+<h3>Parameter submission form:</h3>
 https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0
 
 <h3>Repository of submitted parameters</h3>
