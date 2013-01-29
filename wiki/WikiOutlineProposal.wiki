@@ -77,4 +77,5 @@ Note that the outline items below appear to be the proposed wiki page ("file") n
   # More direct intersections with HFR/Waves
   # Tools for anything (web harvesting resources, other clients)
   # Training, demos, movies, mashups, example scripts
-  # Individual regional IDD noting difference with the generic IDD.
+  # Individual regional IDD noting difference with the generic IDD:
+    * ^AB: In my opinion the IDD should be a single document, and regional variety should be captured in the IDD sub-sectiones rather than in separate docs. Otherwise, the main IDD becomes just a notional document that will be replicated every time with regional specifics.  BTW, these specifics have to be relatively small aberrations of the main IDD or else the IOOS Profile term becomes vague.^
