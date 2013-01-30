@@ -33,7 +33,7 @@ Note that the outline items below appear to be the proposed wiki page ("file") n
        * SOSConcepts (definitions and common usage for observedProperty, featureOfInterest, procedure, and ObservationOffering)
        * Request Parameters and usage
        * Response types (aka Templates)
-       * SOSVocabularies (any SOS specific modifications or additions to the overall [Vocabularies_final] ControlledVocabularies page. TODO: Combine Vocabularies_final and ControlledVocabularies into one page (or more likely just delete ControlledVocabularies] and update links throughout wiki.  New page should be named Vocabularies.
+       * SOSVocabularies (any SOS specific modifications or additions to the overall [Vocabularies_final] ControlledVocabularies page. 
      * [SOSClients SOSClients]
        * EnvironmentalDataConnector
        * Proteus 
@@ -66,6 +66,7 @@ Note that the outline items below appear to be the proposed wiki page ("file") n
  * SystemMonitor
 
 
+TODO: Combine Vocabularies_final and ControlledVocabularies into one page (or more likely just delete ControlledVocabularies] and update links throughout wiki.  New page should be named Vocabularies.
 
 = Pieces to consider =
   # Do we need to maintain a complete record of the workshop (preparation/proceedings/conclusions?)
