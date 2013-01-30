@@ -26,4 +26,4 @@ https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xx
    * After approval, the parameters will be published into the inter-agency OA parameter list that resides in MMI.
 
 <h3>Inter-agency Ocean Acidification Parameter List</h3>
-url
+http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA
