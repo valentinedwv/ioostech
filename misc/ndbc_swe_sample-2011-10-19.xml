@@ -9,7 +9,7 @@
       <gml:upperCorner>30 -85</gml:upperCorner>
     </gml:Envelope>
   </gml:boundedBy>
-  <om:samplingTime>
+  <om:samplingTime> 
     <gml:TimePeriod gml:id="ST">
       <gml:beginPosition>2008-08-01T00:50:00Z</gml:beginPosition>
       <gml:endPosition>2008-08-01T23:50:00Z</gml:endPosition>
