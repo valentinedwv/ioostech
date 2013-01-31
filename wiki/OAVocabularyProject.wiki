@@ -17,7 +17,7 @@ Our goal is to create an inter-agency ocean acidification parameter list, which 
    
 <h3>Parameter submission form:</h3>
 This is the interface where you can submit new ocean acidification parameters. Once approved, the new parameters will be added to the interagency ocean acidification parameter list in the MMI. Please checked against the <a href=http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA>Interagency Ocean Acidification Parameter list</a> first, before you submit any new parameters, to make sure they are not already in the list. 
-<a href=https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0>Click here</a>to submit your parameters.
+<a href=https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0>Click here</a> to submit your parameters.
 
 <h3>Repository of submitted parameters</h3>
 Newly submitted parameters will be stored here temporarily before they are approved into the official interagency ocean acidification parameter list in the MMI. To check out the parameters that are just submitted please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0>click here</a>. 
