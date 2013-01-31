@@ -138,6 +138,16 @@ The background, IOOS use, and mappings of these vocabularies is partially descri
 
 Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. Versions should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2).
 
+== External resources of interest ==
+ * [http://www.eionet.europa.eu/gemet/ GEMET (GEneral Multilingual Environmental Thesaurus) ]
+
+ * [http://gcmd.nasa.gov/Resources/valids/archives/keyword_list.html NASA GCMD (Global Change Master Directory) Science keywords ]
+
+ * [http://www.scgcorp.com/urr/LexViewList.aspx GEOSS EO parameters ]
+
+ * NASA SWEET (Semantic Web for Earth and Environmental Terminology)
+
+ * [http://gmesdata.esa.int/OTE/navigateInfoDomain GMES Thesaurus ]
 
 = References =
 
