@@ -34,5 +34,3 @@ Newly submitted parameters will be stored here temporarily before they are appro
 <h3>Inter-agency Ocean Acidification Parameter List</h3>
 The approved ocean acidification parameters will be published in the <a href=http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA>Interagency Ocean Acidification Parameter list</a>, which resides in MMI's website.
 
-
-<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ" width="760" height="986" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
