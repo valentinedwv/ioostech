@@ -20,7 +20,7 @@ This is the interface where you can submit new ocean acidification parameters. O
 <a href=https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0>Click here</a> to submit your parameters.
 
 <h3>Repository of submitted parameters</h3>
-Newly submitted parameters will be stored here temporarily before they are approved into the Interagency Ocean Acidification Parameter List in the MMI. To check out the parameters that are just submitted please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0>click here</a>. 
+Newly submitted parameters will be stored here temporarily before they are approved into the Interagency Ocean Acidification Parameter List in the MMI. To check out the parameters that are just submitted please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0>click here</a>. Your will need to sign in using your Gmail.  
 
 <h3>Proposed bylaws:</h3>
    * Committee members have up to two weeks to raise comments or objections on a submitted parameter. After that time, silence assumes consent.
