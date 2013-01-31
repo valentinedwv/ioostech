@@ -16,16 +16,15 @@ Our goal is to create an inter-agency ocean acidification parameter list, which 
    * Cathy Cosca (PMEL)
    
 <h3>Parameter submission form:</h3>
-https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0
-
-<a href=https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0>Please click here to submit your parameters</a>.
+This is the interface where you can submit new ocean acidification parameters. Once approved, the new parameters will be added to the interagency ocean acidification parameter list in the MMI. Please checked against the <a href=http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA>Interagency Ocean Acidification Parameter list</a> first, before you submit any new parameters, to make sure they are not already in the list. 
+<a href=https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0>Click here</a>to submit your parameters.
 
 <h3>Repository of submitted parameters</h3>
-https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0
+Newly submitted parameters will be stored here temporarily before they are approved into the official interagency ocean acidification parameter list in the MMI. To check out the parameters that are just submitted please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0>click here</a>. 
 
 <h3>Proposed bylaws:</h3>
    * Committee members have up to two weeks to raise comments or objections on a submitted parameter. After that time, silence assumes consent.
    * After approval, the parameters will be published into the inter-agency OA parameter list that resides in MMI.
 
 <h3>Inter-agency Ocean Acidification Parameter List</h3>
-http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA
+The approved ocean acidification parameters will be stored in the <a href=http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA>Interagency Ocean Acidification Parameter list</a>, which resides in MMI's website.
