@@ -88,7 +88,7 @@
       </sml:classification>
       <!-- =================================================================== -->
 
-      <!-- sml:validTime represents the date range of observations in the SOS for this network -->
+      <!-- sml:validTime represents the date range of the validity of this document -->
       <sml:validTime>
         <gml:TimePeriod>
           <gml:beginPosition>2008-04-28T08:00:00.000Z</gml:beginPosition>
