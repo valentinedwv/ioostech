@@ -21,7 +21,7 @@ Please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=d
 This interface enables you to submit new ocean acidification parameters to us. Once approved, the new parameters will be added to the interagency ocean acidification parameter list in the MMI. Before you submit any new parameters, we strongly recommend you to check against the <a href=http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA>Interagency Ocean Acidification Parameter list</a> first, to make sure the parameters you are submitting are not already in the list. 
 
 <h3>Repository of submitted parameters</h3>
-To check out the parameters that are just submitted, please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0>click here</a>. Your will need to sign in using your Gmail.  
+To check out the parameters that are just submitted, please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0>click here</a>. Your will need to sign in using your official NOAA mail or Gmail if your work email is not Gmail based.  
 
 Newly submitted parameters will be stored here temporarily before they are approved into the Interagency Ocean Acidification Parameter List in the MMI. 
 
