@@ -3,7 +3,7 @@
 
 <wiki:toc max_depth="3" />
 
-== Introduction ==
+= Introduction =
  
 The Platform Vocabulary is being developed to give oceanographic data users consistent terminology to use for their data sets.  The Platform Vocabulary is an essential part of fulfilling the development of the IOOS SOS templates.  However, version 1.0 of the templates were complete without final guidance on the controlled vocabulary used in the templates to describe platformType.  This was unavoidable as we had to make progress.  The immediate goal is to complete the platform vocabulary before release of the version 1.1 and it is expected the vocabulary will be resolved before that.  For the record, Emilio, John Ten Hoeve, Rob R. and Sara Haines, to date, have been most active in developing the vocabulary.  If you are interested please, contact Rob Ragsdale (Rob.Ragsdale@noaa.gov) or John Ten Hoeve (John.tenhoeve@noaa.gov).  
 
@@ -18,7 +18,7 @@ The Platform Vocabulary is being developed to give oceanographic data users cons
 The vocabulary at http://mmisw.org/ont/ioos/platform does not yet exist.
 
 
-== Existing Platform Vocabularies ==
+= Existing Platform Vocabularies =
 MMI Platform Vocabulary: http://mmisw.org/ont/mmi/platform
 
 NDBC: 
@@ -27,7 +27,7 @@ SECOORA:
 
 Initial IOOS Vocab:  
 
-== Platform Vocabulary Use Cases ==
+= Platform Vocabulary Use Cases =
 IOOS has drafted use cases to help derive requirements for the IOOS Platform Vocabulary.  These use cases are draft examples and include an initial set of guidelines for the vocabulary.   
 
   # The Program Office has a requirement to report assets in broad categories (e.g. buoys, HF radars, fixed stations near or on the coasts) for data calls and budgetary reports.  The platform vocabulary should be hierarchical so that the assets may be reported according to few large classes (less than 10).
@@ -36,12 +36,12 @@ IOOS has drafted use cases to help derive requirements for the IOOS Platform Voc
   # The platform vocabulary must be able to handle mixed platforms (combined shore sensors measuring water temperature and met sensors measuring wind speed). Maybe this isn’t really a mixed platform and is instead should be called “Fixed Station”?
   # If a hierarchical structure is used for the vocabulary, the platform must be able to be uniquely identified using the MMI framework, and the structure should be transparent.  For example, if wave buoy is a subclass of buoy, and the Platform Type is listed as wave buoy, then the XPath provided should direct you to a page where wave buoy is noted as a subclass of buoy.  
 
-== Platform Vocabulary Guidelines ==
+= Platform Vocabulary Guidelines =
   # No capitalization
   # No acronyms (High Frequency Radar)
   # A procedure is described for how the hierarchy is structured.  
 
-== Example of Proposed Hierarchical Structure ==
+= Example of Proposed Hierarchical Structure =
 A hierarchical structure has been proposed for the Platform Vocabulary in order meet reporting requirements, for example from the IOOS Asset Inventory or IOOS Catalog.  Here is an example to provide context to this proposal: 
 
 || Platform Type            || Subclass                 || Subclass ||
@@ -74,7 +74,7 @@ A hierarchical structure has been proposed for the Platform Vocabulary in order 
 ||                          || Vehicle                  ||          ||
 ||                          || Vessel                   ||          ||
 
-== List of IOOS Platform Vocabulary Terms ==
+= List of IOOS Platform Vocabulary Terms =
 This is the complete list of IOOS Platform Vocabulary Terms used in the 2011 IOOS Asset Inventory.  
 
 || Acoustic Doppler Current Profiler            ||
@@ -142,13 +142,13 @@ This is the complete list of IOOS Platform Vocabulary Terms used in the 2011 IOO
 ||aircraft||
 ||satellite||
 
-==Animal Platform Terms==
+=Animal Platform Terms=
 
 Scientific name and common name.  For example, if common name = northern elephant seal and if scientific name = Mirounga angustirostris, the platform term would be a combination of the two.  We recommend to use both common names and scientific names so that it can be searched by either.
 The scientific and common name for animals can be found here URL: http://www.marinespecies.org/
 
 
-==Discussion Forum==
+=Discussion Forum=
 
 *Sara Haines - 11/28/12*
 
@@ -196,7 +196,7 @@ Some thoughts from the teleconference today:
 
 Another thought while reading regional progress reports: Since one mooring platform name can have surface and bottom nodes, there may be a need for a term that describes these types of platforms.
 
-=== Examples of Existing IOOS Regional Platform Definitions  (Extracted from IOOS Regional Build-Out Plans)===
+== Examples of Existing IOOS Regional Platform Definitions  (Extracted from IOOS Regional Build-Out Plans)==
 
 *SECOORA*
 
