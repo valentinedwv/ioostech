@@ -10,7 +10,7 @@
      * !GetCapabilities
      * !DescribeSensor
      * !GetObservation
-   * [Vocabularies_final Vocabularies]
+   * [ControlledVocabularies ControlledVocabularies]
    * Identifiers
  * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
    * [SOSRefImplementWorkshop_Day1Agenda Day One]
