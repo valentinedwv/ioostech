@@ -18,14 +18,7 @@ The Platform Vocabulary is being developed to give oceanographic data users cons
 The vocabulary at http://mmisw.org/ont/ioos/platform does not yet exist.
 
 
-= Existing Platform Vocabularies =
-MMI Platform Vocabulary: http://mmisw.org/ont/mmi/platform
-
-NDBC: 
-
-SECOORA: 
-
-Initial IOOS Vocab:  
+ 
 
 = Platform Vocabulary Use Cases =
 IOOS has drafted use cases to help derive requirements for the IOOS Platform Vocabulary.  These use cases are draft examples and include an initial set of guidelines for the vocabulary.   
@@ -264,10 +257,19 @@ Station Classifiers (in sml:classification/sml:ClassifierList) used in the NANOO
 
 A question I've had about this implementation is, _what the heck is "urn:ioos:def:classifier:NOAA:" referring to?_ I know these urn's don't have to correspond to anything that's documented (much less actual URL's), but are these instances referring to anything that's been discussed or decided before?
 
+= Existing Platform Vocabularies =
+MMI Platform Vocabulary: http://mmisw.org/ont/mmi/platform
+
+NDBC: 
+
+SECOORA: 
+
+Initial IOOS Vocab: 
   * [http://www.seadatanet.org/Standards-Software/Common-Vocabularies SeaDataNet Common Vocabularies]
     * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L06)%20SeaVoX+Platform+Categories&l=L06 L06 SeaVoX Platform Categories]
     * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L061)%20SeaVoX+Platform+Classes&l=L061 L061 SeaVoX Platform Classes]
     * [http://seadatanet.maris2.nl/v_bodc_vocab/search.asp?name=(L062)%20SeaVoX+Platform+Class+Categories&l=L062 L062 SeaVoX Platform Class Categories]
+
   * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
 
 _DPS Comment: There is a significant conflict in our use of station and platform as synonyms that will be especially evident when we get to the point of tracing lineage within SensorML.  In my mind a platform is a piece of equipment that hosts or carries one or more instruments or sensors.  It can be moved, it has a beginning and ending, and most importantly it's configuration can be modified which raises the requirement to trace the lineage of any data originating from a platform.  A station on the other hand is a fixed location at which a platform might be deployed for a finite period of time.  The station may persist longer than any one platform deployment at that site.  Think of the many different instruments that have derived CO2 at the Mauna Loa site where the [http://en.wikipedia.org/wiki/Keeling_Curve Keeling Curve] was observed as an example of this concept. What are the implications if we adopt this view of those two terms?_
