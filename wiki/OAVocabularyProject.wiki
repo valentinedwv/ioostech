@@ -17,6 +17,7 @@ Our goal is to create an inter-agency ocean acidification parameter list, which 
    
 <h3>Parameter submission form:</h3>
 https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0
+[[https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0][Please click here to submit your parameters]].
 
 <h3>Repository of submitted parameters</h3>
 https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0
