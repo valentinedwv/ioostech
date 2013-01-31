@@ -155,6 +155,10 @@ There's an [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html excellent 
  * NASA SWEET (Semantic Web for Earth and Environmental Terminology)
 
  * [http://gmesdata.esa.int/OTE/navigateInfoDomain GMES Thesaurus ]
+ * CF resources on MMI*. I've found several pages and resources at MMI that are directly focused on CF, but may not be well integrated or cross-linked and have different degrees of currency (out of date).
+    * [http://marinemetadata.org/references/cfstandardnames CF - Climate and Forecast Standard Names; Vocabulary for CF parameters] (a document, not a vocabulary resource per se)
+    * [http://marinemetadata.org/community/teams/vocdev/generaldocuments/orrcf Using the ORR CF Standard names Vocabulary]
+    * [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary]
 
 = References =
 
@@ -168,31 +172,6 @@ There's an [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html excellent 
 
 = Observed Property Vocabularies 22222 =
 
-*Guidelines:*
-  # _Use CF standard names when an appropriate name exists (but address issue of CF versions)._ 
-    * All CF parameter names should be referenced by URLs pointing to the [http://mmisw.org/orr/ MMI Ontology Registry and Repository]. For example, http://mmisw.org/ont/cf/parameter/air_temperature_anomaly
-    * Provide guidance when there are apparent synonyms
-    * Provide documentation listing the most commonly used CF names, for convenience
-  # _Adopt and manage the [http://mmisw.org/orr/#http://mmisw.org/ont/secoora/parameter SECOORA Parameter Vocabulary] when an appropriate CF standard name is not available._
-    * First need to discuss management of terms with Sarah Haines at UNC-CH.  Focus on most common terms.  Follow CF name construction patterns whenever possible (see SURA Modeling Testbed)
-    * As with CF names, reference by URL's pointing to MMI resource. Example: http://mmisw.org/ont/ioos/parameter/nitrate
-  # _If no appropriate IOOS Vocabulary name exists and a provider must use a custom term until an IOOS name is set up, provide a urn naming convention similar to the one for station identifiers.
-
-Given the adoption of CF names and their lack of support for vector properties (ie, properties made of up two or more scalars, such as winds), what is the long-term role for the original IOOS core variable names? Also, I've always found very helpful [http://www.pmel.noaa.gov/maillists/tmap/ioos_wsde/msg00699.html this 2010-1-26 email from Jeff DLB to the ioos_wsde list, describing the elements of adopting "MMI/CF phenomenon names for IOOS".]
-
-_DPS Comment: My proposed initial prioritization for observedProperty vocabularies is to use the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ Climate and Forecast Standard Names Table] everywhere it is appropriate.  Deviations from that can be handled on a case by case basis after the workshop._
-
-The SURA Modeling Testbed tool at http://testbedwww.sura.org/model-dev/ has a really interesting combination of models and data (I think) where controlled vocabularies for measurements are used. It's worth assessing these, chatting with people in that team (ASA, Kyle Wilcox??), etc. For example, it's clear to me that while many/most of the names used are in fact CF standard names, many must be made up, but using CF recommendations for building names. 
-
-That's a general approach that we've discussed and that I think we should follow: use CF when an appropriate parameter exist; provide a nimble, IOOS-controlled vocabulary on MMI for parameters not yet on the CF list, striving to follow CF naming patterns for these new parameters, and abundant documentation: names, definitions, linkages to other relevant vocabularies (such as those from [http://qwwebservices.usgs.gov/service-domains.html#CROSSWALK USGS], [http://his.cuahsi.org/mastercvreg.html CUAHSI]), most common units, etc; we have a great starting point already, in the form of the "IOOS-specific parameter vocabularies on MMI" I've listed below. For existing CF parameters, there's sometimes ambiguity and apparent redundancy; we can also provide guidance on preferred parameters, when such ambiguity exists (eg, for barometric pressure).
-
-In the case mentioned above, it would also be useful for us have an active role with the CF Standard Name process.  We can add a term to the IOOS vocabulary, but it would be worth also proposing that name to CF.  If CF approves the new term we would then have a choice to make in terms of which reference or identifier we should use.
-
-Other ontologies / controlled vocabularies (some less controlled than others...) directly relevant to IOOS DMAC:
-  # *CF resources on MMI*. I've found several pages and resources at MMI that are directly focused on CF, but may not be well integrated or cross-linked and have different degrees of currency (out of date).
-    * [http://marinemetadata.org/references/cfstandardnames CF - Climate and Forecast Standard Names; Vocabulary for CF parameters] (a document, not a vocabulary resource per se)
-    * [http://marinemetadata.org/community/teams/vocdev/generaldocuments/orrcf Using the ORR CF Standard names Vocabulary]
-    * [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary]
 
 == Existing Observed Property Vocabularies ==
 
@@ -208,13 +187,6 @@ Other ontologies / controlled vocabularies (some less controlled than others...)
 
 A list of tables with examples of how the various observed property vocabularies are used across example services can be found on the [ControlledVocabularyTables ControlledVocabularyTables Page]
 
-== Composite Properties ==
-
-Currently have at least three compound or composite properties in use.  
-
- * GML Dictionaries
- * CF like names 
- * How are composite properties used in SOS 1.0?
  
 ===Current NDBC usage of winds/waves/currents===
 From GetCapabilites OperationsMetadata section:
