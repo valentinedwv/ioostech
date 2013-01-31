@@ -2,7 +2,7 @@
 
 
 <h3>Goal:</h3>
-Our goal is to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.
+<span style ="font-size:30px">Our goal is to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.</span>
 
 <h3>Current committee members:</h3>
    * Rob Ragsdale (IOOS)
