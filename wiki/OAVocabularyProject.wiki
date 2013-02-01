@@ -1,5 +1,5 @@
 <h3>Goal:</h3>
-<span style ="font-size:30px">Our goal is to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.</span>
+Our goal is to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.
   
 <h3>Parameter submission form:</h3>
 Please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0>click here</a> to submit your parameters.
