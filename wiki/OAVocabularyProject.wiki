@@ -34,3 +34,63 @@ Newly submitted parameters will be stored here temporarily before they are appro
 <h3>Inter-agency Ocean Acidification Parameter List</h3>
 The approved ocean acidification parameters will be published in the <a href=http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA>Interagency Ocean Acidification Parameter list</a>, which resides in MMI's website.
 
+==Discussion==
+
+Emilio Mayorga 21 January 2013
+
+Sorry that I haven't contributed anything to these OA vocabulary
+discussions for a long time. It's great to see it moving forward --
+thanks for your continued efforts! I have some comments that follow on
+several OA email threads and activities from Liqing, Hernan and Sara
+over the last couple of months:
+
+- I think it'd be very helpful to ourselves and our ability to
+communicate what we're doing to have a wiki page where all relevant
+documents, rules and resources are described or linked from. I'd be
+happy to help with this. Any wiki will do, but I'd suggest using the
+IOOS Google Code wiki at http://code.google.com/p/ioostech/, only b/c
+Rob and I are already administrators and we know we can easily give
+anyone write permission. This wiki page or pages should include text
+from several of the great email exchanges we've had on this topic in
+the last ~6 months, including the thread I'm replying to. BTW, these
+pages don't have to be integrated with any other pages on that wiki
+just yet, so we're free to mold it as we see fit (but we're probably
+better off if we take advantage of other pages there).
+
+- The Google spreadsheet needs an attribute for term name in the
+vocabulary; this is not a name intended primarily for people, but
+rather one that follows naming conventions that are appropriate for
+computers. The CF parameter name is a great example. For example, it
+probably should be limited to lower case (and of course, no blank
+spaces). I think Sara and Rob have sent out some proposed naming
+conventions for IOOS parameter terms; that and CF rules would be a
+good place to start.
+
+- In the parameter Google spreadsheet, Sara (or someone else?) added
+this comment: "How should we deal with acronyms or chemical terms in
+the term ID on MMI??  Initially, acronyms and chemical formulas were
+frowned upon.  I can't remember the thinking.  Open to suggestions,
+and comments." That's a very appropriate question to ask, to come up
+with naming rules. Personally, I think forbidding molecular formulas
+would be too limiting, and would create the nightmare of huge names
+that CF has with many chemical parameters. Same goes for a variable as
+widespread and widely known as pH. BTW, a few months ago I looked at
+what variables existed for pH or acidity in CF and the IOOS parameter
+vocabulary. I'd be happy to forward what I found if there's interest.
+
+- We should start thinking of an MMI vocabulary mapping for OA. Some
+OA terms will be taken from CF, some from existing terms on the IOOS
+parameter vocabulary, and some will be added to the latter. The
+vocabulary mapping brings it all together in a convenient way. We
+could create a new one, or build on top of one of the mappings Sara
+has set up for IOOS. I think I gave examples of this I few months ago
+on an email. Something may already exist, I forget.
+
+- Great comments from Sara on the parameter spreadsheet entries added
+by Liqing. And very nice form for submitting parameter suggestions!
+
+And with that, I go into hibernation again. I'm off to a meeting
+pretty much all of this coming week (Delaware).
+
+Not too late to say Happy New Year... Cheers,
+-Emilio
