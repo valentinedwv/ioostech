@@ -3,19 +3,19 @@
 
 = Introduction =
 
-This page discusses how generic quality control tests could and/or should be recorded in the SOS responses.  This is a Mileswtone 1.0 issue and in no way depends on the results of QARTOD to address.  
+This page discusses how generic quality control tests could and/or should be recorded in the SOS responses.  This is a Milestone 1.0 issue and in no way depends on the results of QARTOD to address.  
 
 
 = Scenarios and QC Test Types =
 
 == Referencing an external document ==
 
-The simplest scenario for documenting QC is to reference an external document and give no specifics about the actual results of the test.  This is also useful for providing supplementary information.  It's a good practice overall.  See Issue 49 for discussion.  The example below is in use by NDBC 
+The simplest scenario for documenting QC is to reference an external document and give no specifics about the actual results of the test.  This is also useful for providing supplementary information.  It's a good practice overall.  See Issue 49 for discussion.   
 
 
 == One summary flag per data record ==
 
-
+Mostly Issue 15. 
 
 
 == Multiple tests per data record ==
@@ -24,3 +24,4 @@ The simplest scenario for documenting QC is to reference an external document an
 
 
 = References =
+http://www.oceandatastandards.org/index.php?option=com_content&task=view&id=46&Itemid=0
