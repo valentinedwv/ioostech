@@ -1,20 +1,7 @@
 <h3>Goal:</h3>
 Our goal is to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.
 
-<h3>Current committee members:</h3>
-   * Rob Ragsdale (IOOS)
-   * Hassan Moustahfid (IOOS)
-   * Emilio Mayoga (NANOOS/Univ. of Washington)
-   * Sara Haines (SECOORA/UNC - CH)
-   * Don Collins (NODC)
-   * Hernan Garcia (NODC)
-   * Liqing Jiang (NODC)
-   * Alex Kozyr (CDIAC)
-   * Cyndy Chandler (BCO-DMO) 
-   * Dwight Gledhill (OAP)
-   * Leticia Barbero (AOML)
-   * Cathy Cosca (PMEL)
-  
+ 
 <h3>Parameter submission form:</h3>
 Please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0>click here</a> to submit your parameters.
 
@@ -34,6 +21,20 @@ Newly submitted parameters will be stored here temporarily before they are appro
 
 <h3>Inter-agency Ocean Acidification Parameter List</h3>
 The approved ocean acidification parameters will be published in the <a href=http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA>Interagency Ocean Acidification Parameter list</a>, which resides in MMI's website.
+
+<h3>Current committee members:</h3>
+   * Rob Ragsdale (IOOS)
+   * Hassan Moustahfid (IOOS)
+   * Emilio Mayoga (NANOOS/Univ. of Washington)
+   * Sara Haines (SECOORA/UNC - CH)
+   * Don Collins (NODC)
+   * Hernan Garcia (NODC)
+   * Liqing Jiang (NODC)
+   * Alex Kozyr (CDIAC)
+   * Cyndy Chandler (BCO-DMO) 
+   * Dwight Gledhill (OAP)
+   * Leticia Barbero (AOML)
+   * Cathy Cosca (PMEL)
 
 ==Discussion==
 
