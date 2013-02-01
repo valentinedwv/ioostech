@@ -10,8 +10,7 @@ This interface enables you to submit new ocean acidification parameters to us. O
 After the submission is completed, please send an email to {{{<ioos_nodc_chemical_vocabulary@googlegroups.com>}}}. This will start the review process.  
 
 <h3>Repository of submitted parameters</h3>
-To check out the parameters that are just submitted, please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0>click here</a>. Your will need to sign in using your official NOAA mail or your personal Gmail if 
-your work email is not Gmail based.  
+To check out the parameters that are just submitted, please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0>click here</a>. Your will need to sign in using your official NOAA mail or your personal Gmail if your work email is not Gmail based.  
 
 Newly submitted parameters will be stored here temporarily before they are approved into the Interagency Ocean Acidification Parameter List in the MMI. 
 
