@@ -1,27 +1,31 @@
-<h3>Goal:</h3>
+=Inter-agency Ocean Acidification parameter vocabulary=
+
+<wiki:toc max_depth="3" />
+
+==Goal:==
 Our goal is to create an inter-agency ocean acidification parameter list, which will be shared by all participating agencies, to facilitate OA data sharing.
 
  
-<h3>Parameter submission form:</h3>
+==Parameter submission form:==
 Please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/viewform?formkey=dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E6MQ#gid=0>click here</a> to submit your parameters.
 
 This interface enables you to submit new ocean acidification parameters to us. Once approved, the new parameters will be added to the Interagency Ocean Acidification Parameter List in the MMI. Before you submit any new parameters, we strongly recommend you to check against the <a href=http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA>Interagency Ocean Acidification Parameter list</a> first, to make sure the parameters you are submitting are not already in the list. 
 
 After the submission is completed, please send an email to {{{<ioos_nodc_chemical_vocabulary@googlegroups.com>}}}. This will start the review process.  
 
-<h3>Repository of submitted parameters</h3>
+==Repository of submitted parameters==
 Please <a href=https://docs.google.com/a/noaa.gov/spreadsheet/ccc?key=0AkOD4kCLqux_dG1jN1RUY2xxSGxkMUdobzNvMkZ1d1E#gid=0>click here</a> to check out the parameters that are just submitted. 
 
 Your will need to sign in using your official NOAA mail or your personal Gmail if your work email is not Gmail based. Newly submitted parameters will be stored here temporarily before they are approved into the Interagency Ocean Acidification Parameter List in the MMI. 
 
-<h3>Proposed bylaws:</h3>
+==Proposed bylaws:==
    * Committee members have up to two weeks to raise comments or objections on a submitted parameter. After that time, silence assumes consent.
    * After approval, the parameters will be published into the inter-agency OA parameter list that resides in MMI.
 
-<h3>Inter-agency Ocean Acidification Parameter List</h3>
-The approved ocean acidification parameters will be published in the <a href=http://mmisw.org/orr/#http://mmisw.org/ont/ioos/OA>Interagency Ocean Acidification Parameter list</a>, which resides in MMI's website.
+==Inter-agency Ocean Acidification Parameter List==
+The approved ocean acidification parameters will be published in the [http://mmisw.org/ont/ioos/OA Interagency Ocean Acidification Parameter list], which resides in MMI's website.
 
-<h3>Current committee members:</h3>
+==Current committee members:==
    * Rob Ragsdale (IOOS)
    * Hassan Moustahfid (IOOS)
    * Emilio Mayoga (NANOOS/Univ. of Washington)
@@ -37,7 +41,7 @@ The approved ocean acidification parameters will be published in the <a href=htt
 
 ==Discussion==
 
-*Emilio Mayorga 21 January 2013*
+===Emilio Mayorga 21 January 2013===
 
 - The Google spreadsheet needs an attribute for term name in the
 vocabulary; this is not a name intended primarily for people, but
@@ -68,7 +72,7 @@ could create a new one, or build on top of one of the mappings Sara
 has set up for IOOS. I think I gave examples of this I few months ago
 on an email. Something may already exist, I forget.
 
-*Emilio Mayorga 18 November 2013*
+===Emilio Mayorga 18 November 2013===
 
 #1. That sounds reasonable. How about having as an additional
 requirement for submission, a brief email to a list (existing or new
@@ -88,7 +92,7 @@ rethinking existing terms, not just additions, right?
 wiki page that lists these members, for transparency. I assume the
 list won't be no larger than the cc list on this thread.
 
-*Liqing Jiang 06 November 2012*
+===Liqing Jiang 06 November 2012===
 
 I just had a brief meeting with Rob and John Ten Hoeve this Monday
 (11/5). To move things forward, below are some of our shared thinking
@@ -122,7 +126,7 @@ modified.
 
 5. Membership: Who are the members of this group?
 
-*Liqing Jiang 09 October 2012*
+===Liqing Jiang 09 October 2012===
 
 Several comments:
 
@@ -167,7 +171,7 @@ Carbon 13
 Carbon 14
 Oxygen18
 
-*Emilio Mayorga 04 October 2012*
+===Emilio Mayorga 04 October 2012===
 
 I should've included this, directly from Table 2 of Nisumaa et al (2010):
 NISUMAA ET AL. 2010. EPOCA/EUR-OCEANS data compilation on the
