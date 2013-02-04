@@ -72,7 +72,7 @@ could create a new one, or build on top of one of the mappings Sara
 has set up for IOOS. I think I gave examples of this I few months ago
 on an email. Something may already exist, I forget.
 
-===Emilio Mayorga 18 November 2013===
+===Emilio Mayorga 18 November 2012===
 
 #1. That sounds reasonable. How about having as an additional
 requirement for submission, a brief email to a list (existing or new
@@ -266,7 +266,7 @@ for observed properties. Proc. MTS/IEEE Oceans 2012, Hampton Roads,
 VA.
 http://ioostech.googlecode.com/files/IOOSVocabPaper_MTSOceans2012_HainesEtal_Final_copyrighted.pdf
 
-*Sara Haines 04 October 2012*
+===Sara Haines 04 October 2012===
 
 Comment to Liqing Jiang 04 October 2012 Discussion)
 
@@ -277,7 +277,7 @@ the CF list, correct errors, and take care of it.
 
 Just to clarify, my suggestion is to pass around the list of terms for Tier 1 objective (approx 25 maybe) amongst those of you (or others that should be) on this list to edit comment or add terms, perhaps provide definitions if there is concern about getting started.  This gets it started.  Then with some blessing of the group concerned in the list of terms place it on ORR either under IOOS. Don't let the lack of formal mechanisms stop you from getting your work done.  But doing something, we will be able to provide input for a formal mechanism.
 
-*Liqing Jiang 04 October 2012*
+===Liqing Jiang 04 October 2012===
 
 Kick off discussion summary
 
