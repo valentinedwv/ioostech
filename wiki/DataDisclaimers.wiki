@@ -22,6 +22,11 @@ NOTICE: These realtime data are considered provisional. Please read the definiti
 Which is linked to the "definition of provisional data"
 http://www.neracoos.org/data/provisional.html
 
+=GCOOS Wave Glider Portal=
+http://gcoos.org/products/maps/waveglider/usm/
+
+All products published on this website are prototype products and are not intended to be used for navigational or operational purposes. With respect to information available from this website, neither GCOOS nor any of its members, employees or agents makes any warranty, expressed or implied, including merchantability and fitness for a particular purpose, or assumes any legal liability or responsibility for the accuracy, completeness or usefulness of any information, apparatus, product or process disclosed, or represents that its use does not infringe privately owned rights. The user of these data and products assumes the entire risk related to use of these date and this web site. In no event will GCOOS, its agents, employees or members be liable to a user or any third party for any direct, indirect, incidental, consequential, special or exemplary damages, loss of life or lost profits resulting from any use, misuse or reliance on any of the data or information appearing on this website.
+
 
 =GLOS Short Disclaimer=
 Disclaimer: All products published on this website are prototype products and are not intended to be used for navigational or operational purposes. View full disclaimer.
