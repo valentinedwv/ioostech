@@ -1,6 +1,5 @@
 #summary Interface Description Document for the IOOS profile of SOS
 #labels Featured,SOS,IDD
-#sidebar SOSTableOfContents
 
 
 <wiki:toc max_depth="3" />
