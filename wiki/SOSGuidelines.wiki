@@ -14,6 +14,8 @@ IOOS data from fixed and mobile observing platforms can be obtained over the int
   * DescribeSensor provides descriptions of individual sensors, platforms supporting one or more sensors, and networks of related platforms.
   * GetObservation provides time-series data from one or more sensors on one or more platforms.
 
+= SOS Concepts =
+
 = SOS Requests (IDD) =
 
 _See the new, draft [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos-test/ IDD documentation from NOS/COOPS for their test SOS service]. It's a terrific, dynamic, rich example that we should strive to replicate._
