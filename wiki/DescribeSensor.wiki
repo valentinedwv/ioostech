@@ -1,14 +1,12 @@
 #summary Examples and links to information on the SensorML response to the DescribeSensor request for SOS.
 #labels Phase-Requirements,Phase-Design,SOS,Metadata
-#sidebar SOSTableOfContents
 
 
 <wiki:toc max_depth="3" />
 
 
-=Interface Definition Document (IDD)=
+=Request=
 
-DescribeSensor Request
 The attributes of the DescribeSensor request are detailed in the Table 3 of the Sensor Observation Service specification 1.0 ([https://portal.opengeospatial.org/files/?artifact_id=26667 OGC 06-009r6]).
 
 || *Parameter* || *Name* || *Definition	Data type and Values* || *Multiplicity and Use of the Parameter* ||
