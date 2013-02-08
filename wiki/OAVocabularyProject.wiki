@@ -254,7 +254,7 @@ them to reflect a clearer scope and more consistent naming convention.
 
 Finally, here's the URL for the IOOS Vocabularies wiki page. It's not
 quite final, but close:
-http://code.google.com/p/ioostech/wiki/Vocabularies_final
+http://code.google.com/p/ioostech/wiki/ControlledVocabularies
 Its scope is broader than observed-properties vocabularies. At the end
 you'll find a reference and link to the paper Sara wrote recently
 (with help from several of us), providing more background and
