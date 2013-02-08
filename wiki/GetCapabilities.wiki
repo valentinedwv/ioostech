@@ -12,7 +12,7 @@ GetCapabilities provides summary information about the service and about the pla
   * Go over guidelines, rules, and minimum requirements needed for ows:ServiceIdentification, ows:ServiceProvider, ows:OperationsMetadata, and sos:Contents
   * patterns and guides for title, keywords, and maybe abstract
 
-=Interface Definition Document (IDD)=
+=Request=
 
 Issuing the request: bla bla bla
 
