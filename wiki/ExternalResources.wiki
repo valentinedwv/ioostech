@@ -6,6 +6,17 @@
 == Example Files ==
 http://code.google.com/p/ioostech/source/browse/ndbc_swe_sample-2011-10-19.xml NDBC example of temperature observations from a collection of moored buoys.  There are several other examples in the source repository now [http://code.google.com/p/ioostech/source/browse/]
 
+==Resources of interest to the general IOOS DMAC community==
+  # *ioos_tech Google Group*  [https://groups.google.com/forum/?hl=en#!forum/ioos_tech https://groups.google.com/forum/?hl=en#!forum/ioos_tech] : Google Groups mailing list and forum for discussing a broad range of technical issues relating to the data management and communications goals of the Integrated Ocean Observing Systems. 
+  # *ioostech_dev Google Group* [https://groups.google.com/forum/?hl=en#!forum/ioostech_dev https://groups.google.com/forum/?hl=en#!forum/ioostech_dev] :  Google Groups mailing list and forum that is a spinoff of the Group above.  This second group is envisioned to be used for smaller task teams working on very short term and specific projects.  Currently this group represents the communications mechanism for the SOS Reference Implementation working group.
+  # *ncisometadata Google Group* [https://groups.google.com/forum/?hl=en#!forum/ncisometadata https://groups.google.com/forum/?hl=en#!forum/ncisometadata] : A group related to the discussion of ncISO.  Discussion topics include ncISO use, support, enhancements, and announcements of new releases. 
+  # *xeniavm Google Group* [https://groups.google.com/forum/?hl=en#!forum/xeniavm https://groups.google.com/forum/?hl=en#!forum/xeniavm]
+  # *ASA CFPointConventions* Github Site: [https://github.com/asascience-open/CFPointConventions https://github.com/asascience-open/CFPointConventions]
+  # *GEO-IDE Wiki* [https://geo-ide.noaa.gov/wiki/ https://geo-ide.noaa.gov/wiki/] Click Categories along the left to search for IOOS specific pages.
+  # *OOSTETHYS* Google Code site [http://code.google.com/p/oostethys/ http://code.google.com/p/oostethys/]
+  # *IOOS Data Catalog* [http://www.ioos.gov/catalog http://www.ioos.gov/catalog] and the description of the procedures to register data services in the catalog [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Catalog_Registration_Process https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Catalog_Registration_Process]
+  # http://code.google.com/p/swe-common-data-framework/
+
 == Reference Docs (Discussion Papers and Specifications) ==
 http://external.opengis.org/twiki_public/NREwg/GMESPHInstrumentCapabilities
 
