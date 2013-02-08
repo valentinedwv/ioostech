@@ -1,6 +1,5 @@
 #summary GetCapabilities Requests, Responses, and Conventions
 #labels SOS
-#sidebar SOSTableOfContents
 
 
 <wiki:toc max_depth="3" />
