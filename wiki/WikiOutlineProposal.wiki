@@ -5,25 +5,17 @@
 
 = Purpose =
 
-The IOOS PO is attempting to organize the overall documentation of DMAC beginning with a reorganization (complete and from scratch) of  ioos.gov/data.  We recognize that the ioos.gov web site is not going to be the only or even primary source of information on IOOS DMAC, let alone all of the other observation and analysis activities across the enterprise.  This wiki is an important source of information but it also deserves some attention and reorganization but the purpose and organization of this wiki should be clarified so that it can grow to serve an important niche (or be abandoned in favor of something better if need be).
+This wiki describes the architecture of the Data Management and Communications subsystem of the Integrated Ocean Observing System.  The information here shows the high level organization of DMAC with an emphasis on the Data Access Services.  The description will continue to evolve.  This wiki should be considered the developement version of the architecture description.  Occasionally material developed here on the wiki will be moved to more static locations to maintain some version control.  
 
-The primary purpose of this wiki is to      ????? Please fill in the blank.  The list below is a starting point and keep in mind that the wiki may serve more than one purpose. (comments? votes? alternatives?):
- * to record the unorganized but important issues and solutions arrived at in the course of the SOS Reference Implementation Working group
- * to house an in progress, but always up to date version of the SOS Interface Description Document that contains all the technical information necessary for a developer to either a. write client software to consume IOOS SOS, b. write server software implementing the IOOS profile (what's the correct word? Ioos Specification?) of SOS
+
+
  _AB:^IOOS Profile seems to be pretty adequate as^ [http://www.opengeospatial.org/ogc/glossary/p OGC Glossary of Terms] ^defines "profile" as "a collection of standards, with parameters, options, classes, or subsets, necessary for building a complete computer system, application, or function. An implementation case of a more general standard or set of standards."^_
- * to be a technical repository for projects and related activities that use SOS or other data access services? (list of libraries, client software, training materials, demos, presentations?)
- * any/all of the above for each IOOS data access service including SOS, WMS, DAP (all flavors)
- * repository of technical information documenting the entire IOOS architecture including Service Registry, Geoportal, Data Catalog, GTS distribution of data, relationships between major entities etc etc.
- * repository of code implementing various common functions such as a general Python/Java/Matlab/C library of QARTOD algorithms.
 
 
-= Outline for the High Level Wiki Navigation =
 
 === Introduction ===
 
-> Text that provides an integrated, high-level description of how the pieces outlined below fit together. Should be relatively brief.
 
-Note that the outline items below appear to be the proposed wiki page ("file") name, right?
 
 === Data Services and Content Standards ===
 
@@ -65,8 +57,6 @@ Note that the outline items below appear to be the proposed wiki page ("file") n
  * SystemViewer
  * SystemMonitor
 
-
-TODO: Combine Vocabularies_final and ControlledVocabularies into one page (or more likely just delete ControlledVocabularies] and update links throughout wiki.  New page should be named Vocabularies.
 
 = Pieces to consider =
   # Do we need to maintain a complete record of the workshop (preparation/proceedings/conclusions?)
