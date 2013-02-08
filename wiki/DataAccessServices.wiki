@@ -22,7 +22,7 @@
 <dd>Python based server maintained by Emilio Mayorga from [http://www.nanoos.org NANOOS] [NANOOSNVSPythonSOS].  Other related python tools can be found [PythonSOStools here.]  </dd>
 
 <dt>*NDBC   *</dt>
-<dd>PHP implementation of an SOS server written by the [http://www.ndbc.noaa.gov National Data Buoy Center] and  [http://sdf.ndbc.noaa.gov/sos/software/ available here]  </dd>
+<dd>PHP implementation of an SOS server written by the [http://www.ndbc.noaa.gov National Data Buoy Center] and  [http://sdf.ndbc.noaa.gov/sos/software/ available here].  The NDBC server implements the older DIF format and the current [NDBC_SWE_Implementation  SWE based observation response] </dd>
 
 
 </dl>
