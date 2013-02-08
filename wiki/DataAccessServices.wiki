@@ -13,8 +13,11 @@
  * Python SOS from NANOOS [NANOOSNVSPythonSOS]
  * NDBC PHP server http://sdf.ndbc.noaa.gov/sos/software/
 
-; item 1
-: definition
+<dl>
+<dt>Data Access Services</dt>
+<dd>definition</dd>
+</dl>
+<blockquote> Definition </blockquote>
 
 
 = OPeNDAP Based Services =
