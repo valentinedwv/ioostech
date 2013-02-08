@@ -2,6 +2,9 @@
 
 = OGC Sensor Observation Service =
 
+== Interface Description for the IOOS SOS Profile ==
+SOSGuidelines
+
 == Servers in use ==
 
  * 52North.org SOS modified to IOOS Profile http://ioossos.axiomalaska.com/
