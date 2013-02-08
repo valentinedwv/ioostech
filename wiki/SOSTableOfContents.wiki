@@ -1,7 +1,7 @@
 #summary Main Sidebar Navigation
 #labels SOS
 
- * [SOSGuidelines_final SOS Guidelines - DRAFT FINAL VERSION]
+ * [SOSGuidelines Guidelines for Implementing SOS]
    * Request Syntax (IDD)
      * !GetCapabilities
      * !DescribeSensor
