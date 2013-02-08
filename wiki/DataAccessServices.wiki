@@ -24,6 +24,8 @@
 <dt>*NDBC   *</dt>
 <dd>PHP implementation of an SOS server written by the [http://www.ndbc.noaa.gov National Data Buoy Center] and  [http://sdf.ndbc.noaa.gov/sos/software/ available here].  The NDBC server implements the older DIF format and the current [NDBC_SWE_Implementation  SWE based observation response] </dd>
 
+<dt>*CO-OPS*</dt>
+<dd>CO-OPS has implemented SOS but their software implementation is not easy to distribute.  Nevertheless they have modern services compliant with the IOOS Profile v1.0 and the older DIF formats and they have extensive documentation and examples [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos-test/  (test service)] [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/ (production service).  </dd>
 
 </dl>
 
