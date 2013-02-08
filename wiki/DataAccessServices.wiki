@@ -19,7 +19,7 @@
 <dd>[http://www.unidata.ucar.edu/projects/THREDDS/ THREDDS] plugin which provides an SOS interface to files served via the THREDDS data server v4.3 or greater.  The underlying files must conform to the CF Discrete Sampling Geometries.  [ncSOS http://asascience-open.github.com/ncSOS/]  was written by [http://www.asascience.com/ Applied Science Associates]</dd>
 
 <dt>*Python SOS  *</dt>
-<dd>Python based server maintained by Emilio Mayorga from [http://www.nanoos.org NANOOS] [NANOOSNVSPythonSOS].  Other related python tools can be found [PythonSOSTools here.]  </dd>
+<dd>Python based server maintained by Emilio Mayorga from [http://www.nanoos.org NANOOS] [NANOOSNVSPythonSOS].  Other related python tools can be found [PythonSOStools here.]  </dd>
 
 <dt>*NDBC   *</dt>
 <dd>PHP implementation of an SOS server written by the [http://www.ndbc.noaa.gov National Data Buoy Center] and  [http://sdf.ndbc.noaa.gov/sos/software/ available here]  </dd>
