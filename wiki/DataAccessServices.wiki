@@ -6,18 +6,26 @@
 [SOSGuidelines]
 
 == Server Software ==
+<dt>*  *</dt>
+<dd>  </dd>
 
-
- * 52North.org SOS modified to IOOS Profile http://ioossos.axiomalaska.com/
- * ncSOS THREDDS plugin http://asascience-open.github.com/ncSOS/
- * Python SOS from NANOOS [NANOOSNVSPythonSOS]
- * NDBC PHP server http://sdf.ndbc.noaa.gov/sos/software/
 
 <dl>
-<dt>Data *Access* Services</dt>
-<dd>definition</dd>
+<dt>*52North*</dt>
+<dd>  
+[www.52North.org 52North] SOS modified by Axiom Consulting and Design to conform to the IOOS Profile [SOS52North]</dd>
+
+<dt>*ncSOS   *</dt>
+<dd>[http://www.unidata.ucar.edu/projects/THREDDS/ THREDDS] plugin which provides an SOS interface to files served via the THREDDS data server v4.3 or greater.  The underlying files must conform to the CF Discrete Sampling Geometries.  [ncSOS http://asascience-open.github.com/ncSOS/]  was written by [http://www.asascience.com/ Applied Science Associates]</dd>
+
+<dt>*Python SOS  *</dt>
+<dd>Python based server maintained by Emilio Mayorga from [www.nanoos.org NANOOS] [NANOOSNVSPythonSOS]  </dd>
+
+<dt>*NDBC   *</dt>
+<dd>PHP implementation of an SOS server written by the National Data Buoy Center  http://sdf.ndbc.noaa.gov/sos/software/  </dd>
+
+
 </dl>
-<blockquote> Definition </blockquote>
 
 
 = OPeNDAP Based Services =
