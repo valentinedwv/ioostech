@@ -3,8 +3,8 @@
 <wiki:toc max_depth="2" />
 
 =Resources= 
-== Example Files ==
-http://code.google.com/p/ioostech/source/browse/ndbc_swe_sample-2011-10-19.xml NDBC example of temperature observations from a collection of moored buoys.  There are several other examples in the source repository now [http://code.google.com/p/ioostech/source/browse/]
+
+There are several other examples in the source repository now [http://code.google.com/p/ioostech/source/browse/trunk/templates/]
 
 ==Resources of interest to the general IOOS DMAC community==
   # *ioos_tech Google Group*  [https://groups.google.com/forum/?hl=en#!forum/ioos_tech https://groups.google.com/forum/?hl=en#!forum/ioos_tech] : Google Groups mailing list and forum for discussing a broad range of technical issues relating to the data management and communications goals of the Integrated Ocean Observing Systems. 
