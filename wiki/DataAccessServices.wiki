@@ -1,0 +1,25 @@
+#summary Information on the various types of data access services used in IOOS.
+
+= OGC Sensor Observation Service =
+
+== Servers in use ==
+
+ * 52North.org SOS modified to IOOS Profile http://ioossos.axiomalaska.com/
+ * ncSOS THREDDS plugin http://asascience-open.github.com/ncSOS/
+ * Python SOS from NANOOS [NANOOSNVSPythonSOS]
+ * NDBC PHP server http://sdf.ndbc.noaa.gov/sos/software/
+
+
+= OPeNDAP Based Services =
+
+== THREDDS==
+http://www.unidata.ucar.edu/projects/THREDDS/
+
+== ERDDAP ==
+http://coastwatch.pfeg.noaa.gov/erddap/index.html
+
+==PyDAP ==
+pydap.org
+
+==Hyrax ==
+opendap.org
