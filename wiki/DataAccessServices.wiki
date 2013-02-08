@@ -22,7 +22,7 @@ http://www.unidata.ucar.edu/projects/THREDDS/
 http://coastwatch.pfeg.noaa.gov/erddap/index.html
 
 ==PyDAP ==
-www.pydap.org
+http://www.pydap.org
 
 ==Hyrax ==
-www.opendap.org
+http://www.opendap.org
