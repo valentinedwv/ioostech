@@ -9,10 +9,12 @@
 
 
  * 52North.org SOS modified to IOOS Profile http://ioossos.axiomalaska.com/
- ** second level
  * ncSOS THREDDS plugin http://asascience-open.github.com/ncSOS/
  * Python SOS from NANOOS [NANOOSNVSPythonSOS]
  * NDBC PHP server http://sdf.ndbc.noaa.gov/sos/software/
+
+; item 1
+: definition
 
 
 = OPeNDAP Based Services =
