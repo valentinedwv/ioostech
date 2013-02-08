@@ -1,4 +1,4 @@
-#labels Featured,Resources,Examples
+#labels Resources,Examples
 = IOOS Portal Parsing Tools =
 || *Service* || *Info URL* || *Service URL* || *Developer* || *Examples or code repo* ||
 || Hydrometeorological Design Studies Center (HADS)  || http://dipper.nws.noaa.gov/hdsc/pfds/ || http://amazon.nws.noaa.gov/nexhads2/servlet/DecodedData ||  ||   ||
