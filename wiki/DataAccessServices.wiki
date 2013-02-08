@@ -3,7 +3,7 @@
 = OGC Sensor Observation Service =
 
 == Interface Description for the IOOS SOS Profile ==
-SOSGuidelines
+[SOSGuidelines]
 
 == Servers in use ==
 
