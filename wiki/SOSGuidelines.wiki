@@ -5,7 +5,7 @@
 
 <wiki:toc max_depth="3" />
 
-= Introduction =
+= Interface Definition Document =
 The materials on this page refer to Version 1.0 of the IOOS SOS profile.
 
 IOOS data from fixed and mobile observing platforms can be obtained over the internet using the Sensor Observation Service (SOS) specification published by the Open Geospatial Consortium. An SOS has three basic operations:
@@ -16,7 +16,7 @@ IOOS data from fixed and mobile observing platforms can be obtained over the int
 
 = SOS Concepts =
 
-= SOS Requests (IDD) =
+= SOS Requests =
 
 _See the new, draft [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos-test/ IDD documentation from NOS/COOPS for their test SOS service]. It's a terrific, dynamic, rich example that we should strive to replicate._
 
@@ -31,9 +31,9 @@ At OOSTethys we found that the GET request is very popular in the oceanographic 
 The document first presents the general structure of a GET request, notes about how to handle special characters and capitalization rules. Then, the document presents the GET request details for each of the Sensor Observation Service (SOS) supported by OOSTethys, which correspond to the three mandatory operations in a Sensor Observation Service (SOS):
 
 
-  * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]  returns general metadata about the service, operations supported and list of observation offerings;
-  * [DescribeSensor#Interface_Definition_Document_(IDD) DescribeSensor] returns metadata about a sensor system. It could be an observing system, platform or a simple device, such as a bin. The return is given as a SensorML or TML document; 
-  * [GetObservation#Interface_Definition_Document_(IDD) GetObservation] returns a collection of observations. each observation is composed of metadata, description of the phenomena being returned (parameter names, units of measure, reference systems) and values.
+  * [GetCapabilities#Request GetCapabilities]  returns general metadata about the service, operations supported and list of observation offerings;
+  * [DescribeSensor#Request DescribeSensor] returns metadata about a sensor system. It could be an observing system, platform or a simple device, such as a bin. The return is given as a SensorML or TML document; 
+  * [GetObservation#Request GetObservation] returns a collection of observations. each observation is composed of metadata, description of the phenomena being returned (parameter names, units of measure, reference systems) and values.
 
 
 ===Structure of the GET request===
