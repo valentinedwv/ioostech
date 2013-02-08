@@ -2,17 +2,6 @@
 #labels SOS
 
  * [SOSGuidelines Guidelines for Implementing SOS]
-   * Request Syntax (IDD)
-     * !GetCapabilities
-     * !DescribeSensor
-     * !GetObservation
-   * SOS Responses
-     * !GetCapabilities
-     * !DescribeSensor
-     * !GetObservation
-   * [ControlledVocabularies ControlledVocabularies]
-   * Identifiers
- * [SOSGuidelines SOS Guidelines]
    * [SOSGuidelines#SOS_Requests_(IDD) Request Syntax (IDD)]
      * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]
      * [DescribeSensor#Interface_Definition_Document_(IDD) DescribeSensor]
@@ -27,7 +16,8 @@
        * [TimeSeriesProfileTemplate TimeSeriesProfile]
        * [TrajectoryTemplate Trajectory]
        * [TrajectoryProfileTemplate TrajectoryProfile]
-   * [ControlledVocabularies]
+   * [ControlledVocabularies ControlledVocabularies]
+   * Identifiers
  * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
    * [SOSRefImplementWorkshop_Day1Agenda Day One]
    * [SOSRefImplementWorkshop_Day2Agenda Day Two]
