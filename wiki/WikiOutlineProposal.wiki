@@ -21,7 +21,7 @@ This wiki describes the architecture of the Data Management and Communications s
 
  * DataAccessServices
    * SOS
-     * [SOSGuidelines_final SOSGuidelines (IDD)]  (THE IDD OR WSDD MUST BE VERSIONED AND WILL REFER TO THE TEMPLATE MILESTONE VERSION.  KEEP LINKAGES FROM THIS PAGE MINIMAL TO KEEP APPLICABLE VERSIONS CLEAR)
+     * [SOSGuidelines SOSGuidelines (IDD v1.0)]  
        * SOSConcepts (definitions and common usage for observedProperty, featureOfInterest, procedure, and ObservationOffering)
        * Request Parameters and usage
        * Response types (aka Templates)
