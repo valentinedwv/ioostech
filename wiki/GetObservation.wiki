@@ -1,8 +1,12 @@
 #summary Data formats and errors associated with server responses to GetObservation request.
 #labels Phase-Implementation,IDD
-#sidebar SOSTableOfContents
 
-= Templates =
+
+=Request=
+
+TODO: Need plenty of examples here.
+
+=Response=
 
   * [PointTemplate Point]
   * [ProfileTemplate Profile]
