@@ -12,10 +12,6 @@
      * !GetObservation
    * [ControlledVocabularies ControlledVocabularies]
    * Identifiers
- * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
-   * [SOSRefImplementWorkshop_Day1Agenda Day One]
-   * [SOSRefImplementWorkshop_Day2Agenda Day Two]
-   * [SOSRefImplementWorkshop_Day3Agenda Day Three]
  * [SOSGuidelines SOS Guidelines]
    * [SOSGuidelines#SOS_Requests_(IDD) Request Syntax (IDD)]
      * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]
@@ -32,6 +28,10 @@
        * [TrajectoryTemplate Trajectory]
        * [TrajectoryProfileTemplate TrajectoryProfile]
    * [ControlledVocabularies]
+ * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
+   * [SOSRefImplementWorkshop_Day1Agenda Day One]
+   * [SOSRefImplementWorkshop_Day2Agenda Day Two]
+   * [SOSRefImplementWorkshop_Day3Agenda Day Three]
  * [CFFeatureTypes]
  * [SOSTesting]
    * [SOSSurvey]
