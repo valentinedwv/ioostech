@@ -72,6 +72,12 @@
             </sml:Term>
           </sml:classifier>
           
+          <sml:classifier name="sponsor">
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/sponsor">
+              <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
+              <sml:value>ACE</sml:value>
+            </sml:Term>
+          </sml:classifier>
           <!-- One or more parentNetwork elements are allowed.  
             At least one MUST reference an IOOS codespace and list the RA Acronym 
             COMMENT: THE USE OF THE LABEL "NETWORK" BOTH IN THIS ORGANIZATIONAL SENSE
