@@ -421,3 +421,17 @@ Station WMO IDs should be specified (when available) in the identifier section o
 </sml:identifier>
 }}}
 The _wmoID_ should be specified as a separate identifier even if the main _stationID_ URN uses the WMO authority.
+
+
+
+
+== Platform Vocabularies ==
+Platform vocabulary development is continuing but is not yet ready for publication.  The 1.0 templates will be completed before the vocabulary is published.  In the interim, please use the location reproduced below in the DS template to publish the platform name.  You may choose your own vocabulary or wait until the official vocabulary is published (by end of March). The link to MMI is active, but does not yet contain the vocabulary.
+{{{
+ <sml:classifier name="platformType">
+   <sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType">
+     <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/>
+     <sml:value>buoy</sml:value>
+   </sml:Term>
+  </sml:classifier>
+}}}
