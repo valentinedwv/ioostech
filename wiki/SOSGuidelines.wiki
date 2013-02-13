@@ -422,9 +422,6 @@ Station WMO IDs should be specified (when available) in the identifier section o
 }}}
 The _wmoID_ should be specified as a separate identifier even if the main _stationID_ URN uses the WMO authority.
 
-
-
-
 == Platform Vocabularies ==
 Platform vocabulary development is continuing but is not yet ready for publication.  The 1.0 templates will be completed before the vocabulary is published.  In the interim, please use the location reproduced below in the DS template to publish the platform name.  You may choose your own vocabulary or wait until the official vocabulary is published (by end of March). The link to MMI is active, but does not yet contain the vocabulary.
 {{{
@@ -435,3 +432,18 @@ Platform vocabulary development is continuing but is not yet ready for publicati
    </sml:Term>
   </sml:classifier>
 }}}
+
+
+== Sponsorship ==
+There has been a request by some of the RA Directors to have a metadata field that contains sponsorship of platforms.  Please insert all sponsoring parties (zero-many) in the DS field below:
+
+{{{
+<sml:classifier name="sponsor">
+  <sml:Term definition="http://mmisw.org/ont/ioos/definition/sponsor">
+    <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
+    <sml:value>ACE</sml:value>
+  </sml:Term>
+</sml:classifier>
+}}}
+
+IOOS-supported platforms should be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}  This way, the asset inventory can identify IOOS-sponsored platforms, and use this information.  In practice, there are probably few assets 100% supported by IOOS, so having IOOS as a sponsor can safely be interpreted as Partial IOOS support.
