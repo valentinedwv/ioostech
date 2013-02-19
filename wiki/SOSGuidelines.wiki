@@ -449,7 +449,7 @@ There has been a request by some of the RA Directors to have a metadata field th
 IOOS-supported platforms should be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}  This way, the asset inventory can identify IOOS-sponsored platforms, and use this information.  In practice, there are probably few assets 100% supported by IOOS, so having IOOS as a sponsor can safely be interpreted as Partial IOOS support.
 
 
-==The proper use of ‘<sml:validTime>’ in `DescribeSensor`==
+==The proper use of `<sml:validTime>` in DescribeSensor response==
 
 Link: [http://code.google.com/p/ioostech/issues/detail?id=48]
 
