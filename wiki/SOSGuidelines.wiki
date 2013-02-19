@@ -460,9 +460,9 @@ The `<sml:validTime>` shall not be used to represent the time range of observati
 
 Link: [http://code.google.com/p/ioostech/issues/detail?id=45]
 
-The missing or out of range values shall be specified strictly in accordance with the SWECommon standard requirements (see EXAMPLE below). However, the specification itself is completely optional, and `<swe:quantity>` may contain any number of `<swe:nilValue>` elements for any nilValue reason.
+Although specifying the missing or out of range values is completely optional, it shall follow the SWECommon standard requirements. In general, a `<swe:quantity>` may contain any number of `<swe:nilValue>` elements for any nilValue reason:
 
-EXAMPLE:
+
 {{{
 <swe:Quantity>
   ...
