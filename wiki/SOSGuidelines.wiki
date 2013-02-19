@@ -454,3 +454,27 @@ IOOS-supported platforms should be attributed with a sponsor entry that includes
 Link: [http://code.google.com/p/ioostech/issues/detail?id=48]
 
 The `<sml:validTime>` shall not be used to represent the time range of observations for a procedure but only to specify a time period, in which this specific sensor description is valid. The validity period may be different for various sensors on the same platform (station) if any of them had limited functionality due to some incident. When such incident occurs, a new DescribeSensor document shall be created with a validity period going from the date of that incident to the date of the next one (or "now" if there were no more incidents), while the old document shall be archived with a validity period ending at the date of the incident. 
+
+
+==Specifying missing/out of range values in `GetObservation`==
+
+Link: [http://code.google.com/p/ioostech/issues/detail?id=45]
+
+ The missing or out of range values shall be specified strictly in accordance with the SWECommon standard requirements (see EXAMPLE below). However, the specification itself is completely optional, and `<swe:quantity>` may contain any number of nilValues for any nilValue reason.
+
+EXAMPLE:
+{{{
+<swe:Quantity>
+  ...
+  <swe:nilValues>
+    <swe:NilValues>
+      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange">-9999</swe:nilValue>
+      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange">9999</swe:nilValue>
+      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/OutOfService">-1</swe:nilValue>
+      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/missing">8888</swe:nilValue>
+      
+    </swe:NilValues>
+  </swe:nilValues>
+  ...
+</swe:Quantity>
+}}}
