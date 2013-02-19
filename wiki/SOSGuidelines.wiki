@@ -447,3 +447,10 @@ There has been a request by some of the RA Directors to have a metadata field th
 }}}
 
 IOOS-supported platforms should be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}  This way, the asset inventory can identify IOOS-sponsored platforms, and use this information.  In practice, there are probably few assets 100% supported by IOOS, so having IOOS as a sponsor can safely be interpreted as Partial IOOS support.
+
+
+==The proper use of ‘<sml:validTime>’ in `DescribeSensor`==
+
+Link: [http://code.google.com/p/ioostech/issues/detail?id=48]
+
+The ‘<sml:validTime>’ shall not be used to represent the time range of observations for a procedure but only to specify a time period, in which this specific sensor description is valid. The validity period may be different for various sensors on the same platform (station) if any of them had limited functionality due to some incident. When such incident occurs, a new ‘DescribeSensor’ shall be created with a validity period going from the date of that incident to the date of the next one (or ‘now’ if there were no more incidents), while the old document shall be archived with a validity period ending at the date of the incident. 
