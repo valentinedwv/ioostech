@@ -20,6 +20,13 @@ Mostly Issue 15.
 
 == Multiple tests per data record ==
 
+
+
+This may not be possible using just swe:quality.  It looks like the cardinality is 1.
+
+See http://www.botts-inc.com/SensorML_1.0.1/schemaBrowser/SensorML_Boolean.html#Link1AB8BD20
+
+
 == One summary flag per file or data set ==
 
 
