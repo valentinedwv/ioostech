@@ -399,7 +399,7 @@ _*Final decision is required on the vertical axis direction and the use of "heig
 
 The description of the sensor position in `GetObservation` response shall consist of 3 parts: (1) description of a Compound CRS in use as a global Reference Frame; (2) description of the Local Frame for a platform; and (3) description of the sensor position relative to the platform Local Frame:
 
- 1. *for Compound CRS*, IOOS recommends combination of EPSG 4326 (horizontal axes) and EPSG 5113 (vertical axis). That allows the specification of a 3D CRS with WGS 84 for the horizontal reference frame (latitude/longitude), and Instantaneous Water Level for the vertical reference:
+ 1. *for Compound CRS*, IOOS recommendation is to use a combination of EPSG:4326 (horizontal axes) and EPSG:5113 (vertical axis). That allows the specification of a 3D CRS with WGS84 for the horizontal reference frame (latitude/longitude), and Instantaneous Water Level for the vertical reference:
 {{{
 </om:ObservationCollection>
   <om:member>
