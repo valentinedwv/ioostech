@@ -585,6 +585,38 @@ Link: [http://code.google.com/p/ioostech/issues/detail?id=48]
 
 The `<sml:validTime>` shall not be used to represent the time range of observations for a procedure but only to specify a time period, in which this specific sensor description is valid. The validity period may be different for various sensors on the same platform (station) if any of them had limited functionality due to some incident. When such incident occurs, a new DescribeSensor document shall be created with a validity period going from the date of that incident to the date of the next one (or "now" if there were no more incidents), while the old document shall be archived with a validity period ending at the date of the incident. 
 
+To support discovery and search the time bounds of the data provided in an offering is encoded into the GetCapabilities response in the ObservationOffering element.  For example, from NDBC 
+
+{{{
+<sos:ObservationOffering gml:id="station-23020">
+<gml:description>Red Sea</gml:description>
+<gml:name>urn:ioos:station:wmo:23020</gml:name>
+<gml:srsName>http://www.opengis.net/def/crs/EPSG/0/4326</gml:srsName>
+<gml:boundedBy>
+   <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+      <gml:lowerCorner>22.161 38.501</gml:lowerCorner>
+      <gml:upperCorner>22.161 38.501</gml:upperCorner>
+   </gml:Envelope>
+</gml:boundedBy>
+<sos:time>
+   <gml:TimePeriod>
+      <gml:beginPosition>2009-05-14T14:50:00Z</gml:beginPosition>
+      <gml:endPosition>2010-12-17T03:50:00Z</gml:endPosition>
+   </gml:TimePeriod>
+</sos:time>
+<sos:procedure xlink:href="urn:ioos:station:wmo:23020"/>
+<sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/waves"/>
+<sos:featureOfInterest xlink:href="urn:cgi:Feature:CGI:EarthOcean"/>
+<sos:responseFormat>text/xml;subtype="om/1.0.0"</sos:responseFormat>
+<sos:responseFormat>text/csv</sos:responseFormat>
+<sos:responseFormat>text/tab-separated-values</sos:responseFormat>
+<sos:responseFormat>application/vnd.google-earth.kml+xml</sos:responseFormat>
+<sos:responseFormat>text/xml;schema="ioos/0.6.1"</sos:responseFormat>
+<sos:responseFormat>application/ioos+xml;version=0.6.1</sos:responseFormat>
+<sos:resultModel>om:ObservationCollection</sos:resultModel>
+<sos:responseMode>inline</sos:responseMode>
+</sos:ObservationOffering>
+}}}
 
 ==Specifying missing/out of range values in `GetObservation`==
 
