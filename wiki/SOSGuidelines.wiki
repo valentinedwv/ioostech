@@ -394,7 +394,7 @@ EXAMPLE 4 (“network-all” DescribeSensor):
 ==Representation of platform/sensor vertical coordinate==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=16]
 
-_Final decision is required on the vertical axis direction, and use "height" vs. "depth"_
+_*Final decision is required on the vertical axis direction and the use of "height" vs. "depth"*_
 
 
 The description of the sensor position in `GetObservation` response shall consist of 3 parts: (1) description of a Compound CRS in use as a global Reference Frame; (2) description of the Local Frame for a platform; and (3) description of the sensor position relative to the platform Local Frame:
