@@ -478,3 +478,134 @@ Although specifying the missing or out of range values is completely optional, i
   ...
 </swe:Quantity>
 }}}
+
+
+==Specifying 3D CRS and sensor vertical position in `GetObservation`==
+
+Link: [http://code.google.com/p/ioostech/issues/detail?id=16]
+
+The description of the sensor position in `GetObservation` response shall consist of 3 parts: (1) description of a Compound CRS in use as a global Reference Frame; (2) description of the Local Frame for a platform; and (3) description of the sensor position relative to the platform Local Frame:
+
+ 1. *for Compound CRS*, IOOS recommends combination of EPSG 4326 (horizontal axes) and EPSG 5113 (vertical axis). That allows the specification of a 3D CRS with WGS 84 for the horizontal reference frame (latitude/longitude), and Instantaneous Water Level for the vertical reference:
+{{{
+</om:ObservationCollection>
+  <om:member>
+    <om:Observation>
+[…]
+      <gml:CompoundCRS gml:id="#IOOS_Buoy_CRS">        
+        <gml:validArea>
+          <gml:description> World wide for any floating sensor or platform </gml:description>
+        </gml:validArea>
+        <gml:includesCRS>
+            <GeographicCRS xlink:href="urn:ogc:def:crs:EPSG::4326" xlink:title="WGS 84"/>
+        </gml:includesCRS>
+        <gml:includesCRS>
+            <gml:VerticalCRS gml:id="IOOS_Vertical_CRS">
+                <gml:usesVerticalCS>
+                    <gml:VerticalCS gml:id="EPSG6499" xlink:href="urn:ogc:def:cs:EPSG::6499" xlink:title="Vertical CS. Axis: height (H). Orientation: up. UoM: m."/>
+                </gml:usesVerticalCS>
+                <gml:usesVerticalDatum>
+                    <gml:VerticalDatum gml:id="EPSG5113" xlink:href="urn:ogc:def:crs:EPSG::5113" xlink:title="Instantaneous Water Level"/>
+                </gml:usesVerticalDatum>
+            </gml:VerticalCRS>
+        </gml:includesCRS>
+      </gml:CompoundCRS>  
+[…]
+    </om:Observation>
+  </om:member>
+</om:ObservationCollection>
+}}}
+
+ 2. *definition of the platform location (Local Frame)* relative to the previously defined Compound CRS as the Reference Frame:
+{{{
+      <om:result>
+        <swe2:DataStream>
+          <swe2:elementType name="components">
+            <swe2:DataRecord>
+[…]
+              <swe2:field name="stationID">
+                <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
+                  <swe2:value>urn:ioos:station:wmo:41001</swe2:value>
+                </swe2:Text>
+              </swe2:field>
+              <swe2:field name="platformLocation">
+                <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
+                  referenceFrame="#IOOS_Buoy_CRS" localFrame="#PlatformFrame">
+                  <swe2:coordinate name="latitude">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
+                      <swe2:uom code="deg"/>
+                      <swe2:value>32.5</swe2:value>
+                    </swe2:Quantity>
+                  </swe2:coordinate>
+                  <swe2:coordinate name="longitude">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude" axisID="Lon">
+                      <swe2:uom code="deg"/>
+                      <swe2:value>-78.5</swe2:value>
+                    </swe2:Quantity>
+                  </swe2:coordinate>
+                  <swe2:coordinate name="height">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z">
+                      <swe2:uom code="m"/>
+                      <swe2:value>0</swe2:value>
+                    </swe2:Quantity>
+                  </swe2:coordinate>
+                </swe2:Vector>
+              </swe2:field>
+[…]
+            </swe2:DataRecord>
+          </swe2:elementType>
+[…]
+        </swe2:DataStream>
+      </om:result>
+}}}
+
+ 3. *description of the sensor position* relative to the platform Local Frame specifying a height/depth with the sensor observations:
+{{{
+      <om:result>
+        <swe2:DataStream>
+          <swe2:elementType name="components">
+            <swe2:DataRecord>
+[…]
+              <swe2:field name="sensorData">
+                <swe2:DataChoice>
+                  <swe2:item name="sensor1">
+                    <swe2:DataRecord>
+                      <swe2:field name="sensorID">
+                        <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                          <swe2:value>urn:ioos:station:wmo:41001:sensor1</swe2:value>
+                        </swe2:Text>
+                      </swe2:field>
+                      <swe2:field name="height">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" referenceFrame="#PlatformFrame">
+                          <swe2:uom code="m"/>
+                          <swe2:value>5</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:field>
+[…]
+                    </swe2:DataRecord>
+                  </swe2:item>
+
+                  <swe2:item name="sensor2">
+                    <swe2:DataRecord>
+                      <swe2:field name="sensorID">
+                        <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                          <swe2:value>urn:ioos:station:wmo:41001:sensor2</swe2:value>
+                        </swe2:Text>
+                      </swe2:field>
+                      <swe2:field name="height">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" referenceFrame="#PlatformFrame">
+                          <swe2:uom code="m"/>
+                          <swe2:value>-5</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:field>
+                  </swe2:item>
+[…]
+                </swe2:DataChoice>                
+              </swe2:field>
+            </swe2:DataRecord>
+          </swe2:elementType>
+}}}
+
+_*NOTE:*_
+
+Since the CF Standard Name definitions for height and depth do not preclude negative values, it is *strongly recommended* to use one vertical axis to indicate height and depth, and establish the orientation of that axis by encoding sensor’s position below (or above – TBD!!!) the water surface with NEGATIVE values.
