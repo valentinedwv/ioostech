@@ -608,4 +608,4 @@ The description of the sensor position in `GetObservation` response shall consis
 
 _*NOTE:*_
 
-Since the CF Standard Name definitions for height and depth do not preclude negative values, it is *strongly recommended* to use one vertical axis to indicate height and depth, and establish the orientation of that axis by encoding sensor’s position below (or above – TBD!!!) the water surface with NEGATIVE values.
+Since the CF Standard Name definitions for height and depth do not preclude negative values, it is *STRONGLY RECOMMENDED* to use one vertical axis to indicate height and depth, and establish the orientation of that axis by encoding sensor’s position below (or above – TBD!!!) the water surface with _*negative*_ values.
