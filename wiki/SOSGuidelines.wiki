@@ -312,9 +312,11 @@ The `<om:ObservationCollection>/<om:member>/<om:Observation>/<gml:name>` shall f
 }}}
 
 
-==Representation of horizontal coordinates in `GetObservation` and `DescribeSensor`==
+==Representation of platform/sensor horizontal coordinates==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=27]
+
 Link: [http://code.google.com/p/ioostech/issues/detail?id=28]
+
 Link: [http://code.google.com/p/ioostech/issues/detail?id=19] 
 
 
@@ -361,7 +363,7 @@ EXAMPLE 2 (multi-station GetObservation):
         <gml:name>urn:ioos:station:wmo:41008</gml:name> 
         <gml:pos>31.4 -80.87</gml:pos>
       </gml:Point>
-</gml:pointMembers>
+    </gml:pointMembers>
   </gml:MultiPoint>
 </gml:location>
 }}}
@@ -389,100 +391,11 @@ EXAMPLE 4 (“network-all” DescribeSensor):
 }}}
 
 
-==Representation of vertical coordinate in `GetObservation` and `DescribeSensor`==
+==Representation of platform/sensor vertical coordinate==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=16]
 
-_Still in discussion_
+_Final decision is required on the vertical axis direction, and use "height" vs. "depth"_
 
-== Observation values !TextEncoding separators==
-Link: [http://code.google.com/p/ioostech/issues/detail?id=34]
-
-Use XML entities in GetObservation `<swe:TextEncoding>` to represent special characters. Use of standard CSV separators is strongly recommended:
-{{{
-<swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&#10"/>
-}}}
-
-Use unencoded separators (e.g. actual line feeds) in the values block, example:
-{{{
-25.41,10.23,320
-25.43,10.23,300
-25.39,11.51,310
-}}}
-
-== WMO IDs==
-Link: [http://code.google.com/p/ioostech/issues/detail?id=41]
-
-Station WMO IDs should be specified (when available) in the identifier section of a DescribeSensor response as follows:
-{{{
-<sml:identifier name="wmoID">
-    <sml:Term definition="http://mmisw.org/ont/ioos/definition/wmoID">
-        <sml:value>41001</sml:value>
-    </sml:Term>
-</sml:identifier>
-}}}
-The _wmoID_ should be specified as a separate identifier even if the main _stationID_ URN uses the WMO authority.
-
-== Platform Vocabularies ==
-Platform vocabulary development is continuing but is not yet ready for publication.  The 1.0 templates will be completed before the vocabulary is published.  In the interim, please use the location reproduced below in the DS template to publish the platform name.  You may choose your own vocabulary or wait until the official vocabulary is published (by end of March). The link to MMI is active, but does not yet contain the vocabulary.
-{{{
- <sml:classifier name="platformType">
-   <sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType">
-     <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/>
-     <sml:value>buoy</sml:value>
-   </sml:Term>
-  </sml:classifier>
-}}}
-
-
-== Sponsorship ==
-There has been a request by some of the RA Directors to have a metadata field that contains sponsorship of platforms.  Please insert all sponsoring parties (zero-many) in the DS field below:
-
-{{{
-<sml:classifier name="sponsor">
-  <sml:Term definition="http://mmisw.org/ont/ioos/definition/sponsor">
-    <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
-    <sml:value>ACE</sml:value>
-  </sml:Term>
-</sml:classifier>
-}}}
-
-IOOS-supported platforms should be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}  This way, the asset inventory can identify IOOS-sponsored platforms, and use this information.  In practice, there are probably few assets 100% supported by IOOS, so having IOOS as a sponsor can safely be interpreted as Partial IOOS support.
-
-
-==The proper use of `<sml:validTime>` in `DescribeSensor` response==
-
-Link: [http://code.google.com/p/ioostech/issues/detail?id=48]
-
-The `<sml:validTime>` shall not be used to represent the time range of observations for a procedure but only to specify a time period, in which this specific sensor description is valid. The validity period may be different for various sensors on the same platform (station) if any of them had limited functionality due to some incident. When such incident occurs, a new DescribeSensor document shall be created with a validity period going from the date of that incident to the date of the next one (or "now" if there were no more incidents), while the old document shall be archived with a validity period ending at the date of the incident. 
-
-
-==Specifying missing/out of range values in `GetObservation`==
-
-Link: [http://code.google.com/p/ioostech/issues/detail?id=45]
-
-Although specifying the missing or out of range values is completely optional, it shall follow the SWECommon standard requirements. In general, a `<swe:quantity>` may contain any number of `<swe:nilValue>` elements for any nilValue reason:
-
-
-{{{
-<swe:Quantity>
-  ...
-  <swe:nilValues>
-    <swe:NilValues>
-      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange">-9999</swe:nilValue>
-      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange">9999</swe:nilValue>
-      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/OutOfService">-1</swe:nilValue>
-      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/missing">8888</swe:nilValue>
-      
-    </swe:NilValues>
-  </swe:nilValues>
-  ...
-</swe:Quantity>
-}}}
-
-
-==Specifying 3D CRS and sensor vertical position in `GetObservation`==
-
-Link: [http://code.google.com/p/ioostech/issues/detail?id=16]
 
 The description of the sensor position in `GetObservation` response shall consist of 3 parts: (1) description of a Compound CRS in use as a global Reference Frame; (2) description of the Local Frame for a platform; and (3) description of the sensor position relative to the platform Local Frame:
 
@@ -609,3 +522,89 @@ The description of the sensor position in `GetObservation` response shall consis
 _*NOTE:*_
 
 Since the CF Standard Name definitions for height and depth do not preclude negative values, it is *STRONGLY RECOMMENDED* to use one vertical axis to indicate height and depth, and establish the orientation of that axis by encoding sensor’s position below (or above – TBD!!!) the water surface with _*negative*_ values.
+
+
+== Observation values !TextEncoding separators==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=34]
+
+Use XML entities in GetObservation `<swe:TextEncoding>` to represent special characters. Use of standard CSV separators is strongly recommended:
+{{{
+<swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&#10"/>
+}}}
+
+Use unencoded separators (e.g. actual line feeds) in the values block, example:
+{{{
+25.41,10.23,320
+25.43,10.23,300
+25.39,11.51,310
+}}}
+
+== WMO IDs==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=41]
+
+Station WMO IDs should be specified (when available) in the identifier section of a DescribeSensor response as follows:
+{{{
+<sml:identifier name="wmoID">
+    <sml:Term definition="http://mmisw.org/ont/ioos/definition/wmoID">
+        <sml:value>41001</sml:value>
+    </sml:Term>
+</sml:identifier>
+}}}
+The _wmoID_ should be specified as a separate identifier even if the main _stationID_ URN uses the WMO authority.
+
+== Platform Vocabularies ==
+Platform vocabulary development is continuing but is not yet ready for publication.  The 1.0 templates will be completed before the vocabulary is published.  In the interim, please use the location reproduced below in the DS template to publish the platform name.  You may choose your own vocabulary or wait until the official vocabulary is published (by end of March). The link to MMI is active, but does not yet contain the vocabulary.
+{{{
+ <sml:classifier name="platformType">
+   <sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType">
+     <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/>
+     <sml:value>buoy</sml:value>
+   </sml:Term>
+  </sml:classifier>
+}}}
+
+
+== Sponsorship ==
+There has been a request by some of the RA Directors to have a metadata field that contains sponsorship of platforms.  Please insert all sponsoring parties (zero-many) in the DS field below:
+
+{{{
+<sml:classifier name="sponsor">
+  <sml:Term definition="http://mmisw.org/ont/ioos/definition/sponsor">
+    <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
+    <sml:value>ACE</sml:value>
+  </sml:Term>
+</sml:classifier>
+}}}
+
+IOOS-supported platforms should be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}  This way, the asset inventory can identify IOOS-sponsored platforms, and use this information.  In practice, there are probably few assets 100% supported by IOOS, so having IOOS as a sponsor can safely be interpreted as Partial IOOS support.
+
+
+==The proper use of `<sml:validTime>` in `DescribeSensor` response==
+
+Link: [http://code.google.com/p/ioostech/issues/detail?id=48]
+
+The `<sml:validTime>` shall not be used to represent the time range of observations for a procedure but only to specify a time period, in which this specific sensor description is valid. The validity period may be different for various sensors on the same platform (station) if any of them had limited functionality due to some incident. When such incident occurs, a new DescribeSensor document shall be created with a validity period going from the date of that incident to the date of the next one (or "now" if there were no more incidents), while the old document shall be archived with a validity period ending at the date of the incident. 
+
+
+==Specifying missing/out of range values in `GetObservation`==
+
+Link: [http://code.google.com/p/ioostech/issues/detail?id=45]
+
+Although specifying the missing or out of range values is completely optional, it shall follow the SWECommon standard requirements. In general, a `<swe:quantity>` may contain any number of `<swe:nilValue>` elements for any nilValue reason:
+
+
+{{{
+<swe:Quantity>
+  ...
+  <swe:nilValues>
+    <swe:NilValues>
+      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange">-9999</swe:nilValue>
+      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange">9999</swe:nilValue>
+      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/OutOfService">-1</swe:nilValue>
+      <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/missing">8888</swe:nilValue>
+      
+    </swe:NilValues>
+  </swe:nilValues>
+  ...
+</swe:Quantity>
+}}}
