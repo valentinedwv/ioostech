@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:CompoundCRS xmlns:gml="http://www.opengis.net/gml"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" gml:id="IOOS_Buoy_CRS">
+    <gml:srsName>3D Compound CRS 4326 2D geographic + vetrical height referenced to instantaneous water level </gml:srsName>
+    <gml:validArea>
+        <gml:description> World wide for any floating sensor or platform </gml:description>
+    </gml:validArea>
+    <gml:includesCRS xlink:href="urn:ogc:def:crs:EPSG::4326" xlink:title="WGS 84 Geoid"/>
+    <gml:includesCRS xlink:href="urn:ogc:def:crs:EPSG::5829" xlink:title=" Instantaneous Water Level height "/>
+</gml:CompoundCRS> 
