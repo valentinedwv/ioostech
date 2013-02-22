@@ -34,7 +34,26 @@ IOOS has drafted use cases to help derive requirements for the IOOS Platform Voc
   # No acronyms (High Frequency Radar)
   # A procedure is described for how the hierarchy is structured.  
 
-= Example of Proposed Hierarchical Structure =
+=SparQL Queries=
+
+Example sparQL queries have been created to show vocab hierarchies and mappings to other vocabs.
+
+In general, SPARQL queries can be done against the ORR SPARQL endpoint at http://mmisw.org/ont/?sparql using HTTP GET and POST requests.
+
+A form is accessible on the MMI Website for submitting Their is a form on the MMI website for submitting a SPARQL query.   MMI that provides space for submitting a SPARQL query.  You can exercise this functionality using the form at http://mmisw.org/ont/sparql.html
+
+The example queries below can be executed directly from this page by clicking the corresponding Submit button.
+
+Example Queries
+
+Find IOOS parameters that have exactMatch or closeMatch to CF terms
+List all matches between IOOS parameters and CF terms
+List all Categories
+List all Core Variables
+List Platform Terms
+List Platform Categories
+
+==Hierarchical structure==
 A hierarchical structure has been proposed for the Platform Vocabulary in order meet reporting requirements, for example from the IOOS Asset Inventory or IOOS Catalog.  Here is an example to provide context to this proposal: 
 
 || Platform Type            || Subclass                 || Subclass ||
