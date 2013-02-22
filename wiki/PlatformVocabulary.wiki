@@ -93,7 +93,7 @@ WHERE {?p a ioos:Platform .
       } 
 ORDER BY ?p
 
-==Hierarchical structure==
+==Proposed Hierarchical structure==
 A hierarchical structure has been proposed for the Platform Vocabulary in order meet reporting requirements, for example from the IOOS Asset Inventory or IOOS Catalog.  Here is an example to provide context to this proposal: 
 
 || Platform Type            || Subclass                 || Subclass ||
