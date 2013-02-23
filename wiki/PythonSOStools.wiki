@@ -9,7 +9,7 @@ _An initial scratchpad. I'll grow this incrementally. -Emilio_
 
 == Events and opportunities in the near future ==
 
-  * [http://conference.scipy.org/scipy2013/ SciPy 2013, Austin, June 24-29]. Could be good chance to meet with WOFpy/ulmo gang, and bring in Kyle from pyoos, too?! A *"Water Python services" mini summit*? Yeah!
+  * [http://conference.scipy.org/scipy2013/ SciPy 2013, Austin, June 24-29]. Could be good chance to meet with WOFpy/ulmo gang, and bring in Kyle from pyoos, too?! An opportunity to have a *"Water Python services" mini summit*? Yeah!
 
 == Key "high-level" libraries & code ==
 
