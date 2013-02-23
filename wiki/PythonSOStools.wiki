@@ -27,4 +27,4 @@ Roughly ordered from higher to lower level, in focus.
 
 == Events and opportunities in the near future ==
 
-  * [http://conference.scipy.org/scipy2013/ SciPy 2013, Austin, June 24-29]. Could be good chance to meet with WOFpy/ulmo gang, too.
+  * [http://conference.scipy.org/scipy2013/ SciPy 2013, Austin, June 24-29]. Could be good chance to meet with WOFpy/ulmo gang, and bring in Kyle from pyoos, too?! A *"Water Python services" mini summit*? Yeah!
