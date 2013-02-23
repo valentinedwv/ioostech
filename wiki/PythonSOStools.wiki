@@ -5,7 +5,7 @@
 
 = Python SOS Data Services =
 
-We're in the [Year of the Water http://en.wikipedia.org/wiki/Snake_%28zodiac%29 Snake] (Feb 2013 on). Big things are bound to happen in the world of Python services for [http://en.wikipedia.org/wiki/Sea_serpent marine] and [http://en.wikipedia.org/wiki/Giant_anaconda hydrological] data.
+We're in the [http://en.wikipedia.org/wiki/Snake_%28zodiac%29 Year of the Water Snake] (Feb 2013 on). Big things are bound to happen in the world of Python services for [http://en.wikipedia.org/wiki/Sea_serpent marine] and [http://en.wikipedia.org/wiki/Giant_anaconda hydrological] data.
 
 _An initial scratchpad. I'll grow this incrementally. -Emilio_
 
