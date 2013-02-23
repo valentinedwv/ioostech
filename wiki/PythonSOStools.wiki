@@ -13,7 +13,7 @@ Roughly ordered from higher to lower level, in focus.
 
   * [NANOOSNVSPythonSOS NANOOS SOS]. Server software.
   * *[https://github.com/swtools/ WOFpy/ulmo/pyhis group]. Based in Austin.*
-    * [https://github.com/swtools/WOFpy WOFpy]. Server software, for CUAHSI HIS water data services: WaterML 1.1 + WaterOneFlow (WOF) 1. Note that WOFpy implements HTTP GET requests (REST-like, but using parameter-argument pairs), unlike the original WOF 1 specifications and most implementations out there. [http://waterservices.usgs.gov/ FYI, USGS also has a GET WOF 1 implementation.]
+    * [https://github.com/swtools/WOFpy WOFpy]. Server software, for CUAHSI HIS water data services: WaterML 1.0 + WaterOneFlow (WOF) 1. Note that WOFpy implements HTTP GET requests (REST-like, but using parameter-argument pairs), unlike the original WOF 1 specifications and most implementations out there. [http://waterservices.usgs.gov/ FYI, USGS also has a GET WOF 1 implementation.]
     * [http://pypi.python.org/pypi/ulmo/ ulmo]. Client software. Don't know what happened to [ the github page that used to be there
     * [https://github.com/swtools/pyhis pyhis]. Client software. Deprecated, being replaced by ulmo
   * [https://github.com/asascience-open/pyoos pyoos]. Client software.
