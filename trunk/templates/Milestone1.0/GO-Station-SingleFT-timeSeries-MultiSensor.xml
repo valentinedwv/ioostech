@@ -4,15 +4,13 @@
  - gml: using an unversioned namespace has been confirmed to be ok;
    the om 1.0 schema defines GML 3.1.1 as the version used
 ================================================== -->
-<om:ObservationCollection 
-  xmlns:om="http://www.opengis.net/om/1.0"
-  xmlns:gml="http://www.opengis.net/gml" 
-  xmlns:swe="http://www.opengis.net/swe/1.0.1"
-  xmlns:swe2="http://www.opengis.net/swe/2.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" 
+<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0"
+  xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0.1"
+  xmlns:swe2="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.opengis.net/om/1.0 
-    http://schemas.opengis.net/om/1.0.0/observation.xsd">
+  xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/om.xsd">
+
+  <!-- Primary editor: Arliss Whiteside. Last updated 2004-01-26-->
 
   <!-- ==================================================================
        TOP-LEVEL METADATA
@@ -25,20 +23,20 @@
   </gml:metaDataProperty>
 
   <!-- IOOS SOS VERSION -->
-  <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
+  <gml:metaDataProperty xlink:title="ioosTemplateVersion"
+    xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
     <gml:version>1.0</gml:version>
   </gml:metaDataProperty>
-  
-  <!-- COMMENT: MAKE THIS MANDATORY FOR NETWORK OFFERINGS, B/C THE RESPONSE
-       MAY SPAN >1 FEATURE TYPE?
-       BUT THEN REMOVE IT FROM om:featureOfInterest ?? -->
+
+  <!-- Define the Bounding Box of all features in the response -->
+  <!-- The upper and lower corner are equal if the reponse contains a single point -->
   <gml:boundedBy>
     <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
       <gml:lowerCorner>34.7 -72.73</gml:lowerCorner>
       <gml:upperCorner>34.7 -72.73</gml:upperCorner>
     </gml:Envelope>
   </gml:boundedBy>
-  
+
   <!-- ===========================================================
     - For a station offering, the response will return one CF feature type,
       corresponding to one om:member/om:Observation block.
@@ -55,14 +53,14 @@
         *******             START OF "METADATA" BLOCK                 *******
         =====================================================================
         ===================================================================== -->
-      
+
       <!-- =========================================================== 
         gml:description
         Intended as fairly free-form text for human eyeballs.
         COMMENTS: COME UP WITH USAGE GUIDELINE FOR THIS ELEMENT'S CONTENT
         ============================================================== -->
-      <gml:description>Observations at point station urn:ioos:station:wmo:41001, 
-        150 NM East of Cape HATTERAS</gml:description>
+      <gml:description>Observations at point station urn:ioos:station:wmo:41001, 150 NM East of Cape
+        HATTERAS</gml:description>
 
       <!-- ===========================================================
         samplingTime  
@@ -86,7 +84,7 @@
           <gml:member xlink:href="urn:ioos:station:wmo:41001"/>
         </om:Process>
       </om:procedure>
-      
+
       <!-- ===========================================================
         observedProperty  
         This block contains a list of *scalar* properties only, referencing the 
@@ -109,19 +107,26 @@
         </swe:CompositePhenomenon>
       </om:observedProperty>
 
+      
+
       <!-- ===========================================================
         featureOfInterest  
         Encompasses *all* spatial and feature-type response metadata.
         ============================================================== -->
       <om:featureOfInterest>
         <gml:FeatureCollection>
+          
           <!-- CF Feature Type (discrete-sampling-geometry). COMMENT: Why vers. 1.6 specifically? -->
           <gml:metaDataProperty>
-            <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
+            <gml:name
+              codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries"
+              >timeSeries</gml:name>
           </gml:metaDataProperty>
 
-          <!-- Geographic (lat lon) Bounding Box -->
+          <!-- Geographic (lat lon) Bounding Box of this feature -->
           <gml:boundedBy>
+            <!-- For a single station the upper corner and lower corner are the same -->
+            <!-- For a multi station response define the bounding box of the stations -->
             <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:lowerCorner>34.7 -72.73</gml:lowerCorner>
               <gml:upperCorner>34.7 -72.73</gml:upperCorner>
@@ -137,6 +142,7 @@
           <gml:location>
             <gml:MultiPoint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pointMembers>
+                <!-- For each station in the result add an additional point -->
                 <gml:Point>
                   <gml:name>urn:ioos:station:wmo:41001</gml:name>
                   <gml:pos>34.7 -72.73</gml:pos>
@@ -146,6 +152,8 @@
           </gml:location>
         </gml:FeatureCollection>
       </om:featureOfInterest>
+      
+
       <!-- ==================================================================
         =====================================================================
         *******              END OF "METADATA" BLOCK                  *******
@@ -157,159 +165,10 @@
         om:result (THE "DATA" BLOCK)
         =========================================================== -->
       <om:result>
-        <swe2:DataStream>
-          <!-- EMILIO, 9/12/2012: IT'D BE USEFUL FOR PARSING TO DISTINGUISH BETWEEN 
-            *SCALAR* AND *AGGREGATED* FIELDS.
-          The attribute xlink:type apparently can only have a fixed value of "simple".
-          Maybe xlink:role="aggregated" vs xlink:role="scalar" ?? -->
-          <swe2:elementType name="components">
-            <swe2:DataRecord>
-              <!-- ==================== PLATFORM-WIDE FIELDS ======================= -->
-              <!-- stationID 
-              For consistency, "stationID" should always be spelled out this way, 
-              (and never as, say, "station_id") using the same case, for readability. -->
-              <swe2:field name="stationID">
-                <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
-                  <swe2:value>urn:ioos:station:wmo:41001</swe2:value>
-                </swe2:Text>
-              </swe2:field>
-              <!-- latitude and longitude, always in epsgs 4326 -->
-              <swe2:field name="location">
-                <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
-                  referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
-                  <!--  COMMENT: Removed axisID attributes on swe:Quantity; not strictly needed? -->
-                  <swe2:coordinate name="latitude">
-                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude">
-                      <swe2:uom code="deg"/>
-                      <swe2:value>32.5</swe2:value>
-                    </swe2:Quantity>
-                  </swe2:coordinate>
-                  <swe2:coordinate name="longitude">
-                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude">
-                      <swe2:uom code="deg"/>
-                      <swe2:value>-78.5</swe2:value>
-                    </swe2:Quantity>
-                  </swe2:coordinate>
-                </swe2:Vector>
-              </swe2:field>
-              <!-- date-time -->
-              <swe2:field name="time">
-                <swe2:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
-                  <swe2:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
-                </swe2:Time>
-              </swe2:field>
-              
-              <!-- ==================== SENSOR-SPECIFIC FIELDS ======================= -->
-              <swe2:field name="sensorData">
-                <swe2:DataChoice>
-                  <!-- ===========================================================
-                    sensorID urn
-                    COMMENTS: 
-                    - The sensorID urn may use a meaningful "component" name (eg, "sbe16"); or,
-                    if not available, a simple, constant string followed by an integer counter
-                    such as "sensor1", "sensor2", "salt1", etc.
-                    - swe:item name attribute should be globally unique within this response,
-                    at the very least within each om:member/om:Observation block.
-                    =========================================================== -->
-                  
-                  <!-- ===========================================================
-                    custom swe:item field definitions
-                    The swe:item@name value should be the same as the sensor urn "component"
-                    (the last urn element) below 
-                    =========================================================== -->
-                  <swe2:item name="sensor1">
-                    <swe2:DataRecord>
-                      <!-- sensorID and the "Z" dimension (eg, altitude) -->
-                      <swe2:field name="sensorID">
-                        <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
-                          <swe2:value>urn:ioos:station:wmo:41001:sensor1</swe2:value>
-                        </swe2:Text>
-                      </swe2:field>
-                      <swe2:field name="altitude">
-                        <!-- COMMENT: Looks like the alt swe:Quantity can have a referenceFrame attribute:
-                          <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude" 
-                          referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
-                          This attribute could point to a vertical datum. Look into Oostethys discussions
-                          on vertical datums, and Issue 16 -->
-                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude" referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
-                          <swe2:uom code="m"/>
-                          <swe2:value>5</swe2:value>
-                        </swe2:Quantity>
-                      </swe2:field>
-                      <!-- The "data" fields follow (measured quantities/properties) -->
-                      <swe2:field name="air_temperature">
-                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
-                          <swe2:uom code="Celsius"/>
-                        </swe2:Quantity>
-                      </swe2:field>
-                      <swe2:field name="wind_speed">
-                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_speed">
-                          <swe2:uom code="m/s"/>
-                        </swe2:Quantity>
-                      </swe2:field>
-                      <swe2:field name="wind_to_direction">
-                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_to_direction">
-                          <swe2:uom code="degrees"/>
-                        </swe2:Quantity>
-                      </swe2:field>
-                    </swe2:DataRecord>
-                  </swe2:item>
-                  
-                  <!-- ===========================================================
-                    custom swe:item field definitions
-                    =========================================================== -->
-                  <swe2:item name="sensor2">
-                    <swe2:DataRecord>
-                      <!-- sensorID and the "Z" dimension (eg, altitude) -->
-                      <swe2:field name="sensorID">
-                        <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
-                          <swe2:value>urn:ioos:station:wmo:41001:sensor2</swe2:value>
-                        </swe2:Text>
-                      </swe2:field>
-                      <swe2:field name="altitude">
-                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/altitude" referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
-                          <swe2:uom code="m"/>
-                          <swe2:value>-2</swe2:value>
-                        </swe2:Quantity>
-                      </swe2:field>
-                      <!-- The "data" fields follow (measured quantities/properties) -->
-                      <swe2:field name="sea_water_temperature">
-                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
-                          <swe2:uom code="Celsius"/>
-                        </swe2:Quantity>
-                      </swe2:field>
-                      <swe2:field name="dissolved_oxygen">
-                        <swe2:Quantity definition="http://mmisw.org/ont/ioos/parameter/dissolved_oxygen">
-                          <swe2:uom code="mg/L"/>
-                        </swe2:Quantity>
-                      </swe2:field>
-                    </swe2:DataRecord>
-                  </swe2:item>
-                </swe2:DataChoice>
-                
-              </swe2:field>
-            </swe2:DataRecord>
-          </swe2:elementType>
-          
-          <!-- ===========================================================
-              SWE encoding and data values
-              swe:encoding *must* be always specified exactly as described below,
-              to avoid the need to have fully general parsers that interpret
-              swe:TextEncoding. That is, parsers may hard-code this particular
-              swe:TextEncoding specification.
-              =========================================================== -->
-          <swe2:encoding>
-            <swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="\n"/>
-          </swe2:encoding>
-          <swe2:values> 
-            2009-05-23T00:00:00Z,sensor1,15.4,2.0,280
-            2009-05-23T01:00:00Z,sensor1,15.8,1.8,121
-            2009-05-23T02:00:00Z,sensor1,15.6,1.0,1.42
-            2009-05-23T00:00:00Z,sensor2,5.6,8.0
-            2009-05-23T01:00:00Z,sensor2,5.8,8.2
-            2009-05-23T02:00:00Z,sensor2,5.7,8.5
-          </swe2:values>
-        </swe2:DataStream>
+
+      <!-- This block can contain any of the various example SWE Result blocks defined in the -->
+      <!-- Milestone 1.0 templates as appropriate to the data described above -->
+
       </om:result>
 
     </om:Observation>
