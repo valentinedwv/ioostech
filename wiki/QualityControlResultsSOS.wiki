@@ -40,7 +40,7 @@ _AB: Again, it seems possible using Option 1 (see below)_.
 http://www.oceandatastandards.org/index.php?option=com_content&task=view&id=46&Itemid=0
 
 = Investigative Example =
-_I ran some investigation of the possible ways of indicating QC flags in SWECommon GetObservation response. For research, I used one of Janet Fredericks’ response templates referred by Sara Haines in Issue 15#c5. Here is the summary of my research:_
+_I ran some investigation of the possible ways of indicating QC flags in SWECommon GetObservation response. For research, I used one of Janet Fredericks’ response templates referred by Sara Haines in Issue 15 (http://code.google.com/p/ioostech/issues/detail?id=15#c5). Here is the summary of my research:_
 
   * _It is possible to insert the QC information into a GO response at least in three different ways:_
      # _in a form of the ISO 19115 Data Quality (DQ) package in the `<om:ObservationCollection>/<om:member>/<om:Observation>/<om:resultQuality>` (Option 1);_
