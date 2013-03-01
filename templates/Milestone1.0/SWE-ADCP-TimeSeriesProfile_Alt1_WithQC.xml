@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example ADCP TimeSeriesProfile with QAQC Flags-->
+<swe2:DataStream
+  xmlns:swe2="http://www.opengis.net/swe/2.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd">
+  <swe2:elementType
+    name="ioosStationData">
+    <swe2:DataRecord>
+      <swe2:field
+        name="time">
+        <swe2:Time
+          definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+          <swe2:uom
+            xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian" />
+        </swe2:Time>
+      </swe2:field>
+
+      <swe2:field
+        name="stationID">
+        <swe2:Text
+          definition="http://mmisw.org/ont/ioos/definition/stationID">
+          <swe2:value>urn:ioos:station:wmo:41001</swe2:value>
+        </swe2:Text>
+      </swe2:field>
+
+      <swe2:field
+        name="sensorID">
+        <swe2:Text
+          definition="http://mmisw.org/ont/ioos/definition/sensorID">
+          <swe2:value>urn:ioos:station:wmo:41001:sensor1</swe2:value>
+        </swe2:Text>
+      </swe2:field>
+
+
+      <swe2:field
+        name="sensorLocation">
+        <swe2:Vector
+          definition="http://www.opengis.net/def/property/OGC/0/SensorLocation"
+          referenceFrame="https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml"
+          localFrame="#SensorFrame">
+          <swe2:coordinate
+            name="latitude">
+            <swe2:Quantity
+              definition="http://mmisw.org/ont/cf/parameter/latitude"
+              axisID="Lat">
+              <swe2:uom
+                code="deg" />
+              <swe2:value>32.382</swe2:value>
+            </swe2:Quantity>
+          </swe2:coordinate>
+          <swe2:coordinate
+            name="longitude">
+            <swe2:Quantity
+              definition="http://mmisw.org/ont/cf/parameter/longitude"
+              axisID="Lon">
+              <swe2:uom
+                code="deg" />
+              <swe2:value>-75.415</swe2:value>
+            </swe2:Quantity>
+          </swe2:coordinate>
+          <swe2:coordinate
+            name="height">
+            <swe2:Quantity
+              definition="http://mmisw.org/ont/cf/parameter/height"
+              axisID="Z">
+              <swe2:uom
+                code="m" />
+              <swe2:value>0.0</swe2:value>
+            </swe2:Quantity>
+          </swe2:coordinate>
+        </swe2:Vector>
+      </swe2:field>
+
+      <swe2:field
+        name="attitude">
+        <swe2:Vector
+          definition="http://www.opengis.net/def/property/OGC/0/SensorOrientation"
+          referenceFrame="http://www.opengis.net/def/crs/OGC/0/ENU">
+          <swe2:coordinate
+            name="platform_orientation">
+            <swe2:Quantity
+              definition="http://mmisw.org/ont/cf/parameter/platform_orientation"
+              axisID="Z">
+              <swe2:uom
+                code="deg" />
+            </swe2:Quantity>
+          </swe2:coordinate>
+          <swe2:coordinate
+            name="platform_pitch_angle">
+            <swe2:Quantity
+              definition="http://mmisw.org/ont/cf/parameter/platform_pitch_angle"
+              axisID="X">
+              <swe2:uom
+                code="deg" />
+            </swe2:Quantity>
+          </swe2:coordinate>
+          <swe2:coordinate
+            name="platform_roll_angle">
+            <swe2:Quantity
+              definition="http://mmisw.org/ont/cf/parameter/platform_roll_angle"
+              axisID="Y">
+              <swe2:uom
+                code="deg" />
+            </swe2:Quantity>
+          </swe2:coordinate>
+        </swe2:Vector>
+      </swe2:field>
+
+      <swe2:field
+        name="sea_water_temperature">
+        <swe2:Quantity
+          definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
+          <swe2:uom
+            code="Cel" />
+        </swe2:Quantity>
+      </swe2:field>
+
+      <swe2:field
+        name="pressure">
+        <swe2:Quantity
+          definition="http://mmisw.org/ont/cf/parameter/air_pressure_at_sea_level">
+          <swe2:label>Atmospheric Pressure</swe2:label>
+          <swe2:uom
+            code="mbar" />
+        </swe2:Quantity>
+      </swe2:field>
+
+      <swe2:field
+        name="adcpProfileBins">
+        <swe2:DataArray
+          definition="http://www.opengis.net/def/property/OGC/0/SamplingLocation">
+          <swe2:description>Array of synchronous observations in a Profile</swe2:description>
+          <swe2:elementCount>
+            <swe2:Count id="binDimension">
+              <swe2:value>3</swe2:value>
+            </swe2:Count>
+          </swe2:elementCount>
+          <swe2:elementType
+            name="adcpBinLocations">
+            <swe2:DataRecord>
+              <swe2:field
+                name="binCenter">
+                <swe2:Quantity
+                  definition="http://mmisw.org/ont/cf/parameter/height"
+                  referenceFrame="#SensorFrame">
+                  <swe2:uom
+                    code="m" />
+                </swe2:Quantity>
+              </swe2:field>
+              <swe2:field
+                name="binEdges">
+                <swe2:QuantityRange
+                  definition="http://mmisw.org/ont/cf/parameter/height"
+                  referenceFrame="#SensorFrame">
+                  <swe2:uom
+                    code="m" />
+                </swe2:QuantityRange>
+              </swe2:field>
+            </swe2:DataRecord>
+          </swe2:elementType>
+          <swe2:encoding>
+            <swe2:TextEncoding
+              decimalSeparator="."
+              tokenSeparator=","
+              blockSeparator="&#10;"> </swe2:TextEncoding>
+          </swe2:encoding>
+          <swe2:values> 
+            1,0.5 1.5
+            2,1.5 2.5
+            3,2.5 3.5 </swe2:values>
+        </swe2:DataArray>
+      </swe2:field>
+
+      <swe2:field
+        name="adcpProfile">
+        <swe2:DataArray
+          definition="Definition of a Profile?">
+          <swe2:description>Array of synchronous observations in a Profile</swe2:description>
+          <swe2:elementCount xlink:href="#binDimension"/>
+          <swe2:elementType
+            name="adcpMeasurement">
+            <swe2:DataRecord>
+              <swe2:field
+                name="direction_of_sea_water_velocity">
+                <swe2:Quantity
+                  definition="http://mmisw.org/ont/cf/parameter/direction_of_sea_water_velocity">
+                  <swe2:uom
+                    code="deg" />
+                </swe2:Quantity>
+              </swe2:field>
+              <swe2:field
+                name="sea_water_speed">
+                <swe2:Quantity
+                  definition="http://mmisw.org/ont/cf/parameter/sea_water_speed">
+                  <swe2:uom
+                    code="cm/s" />
+                </swe2:Quantity>
+              </swe2:field>
+              
+              <!-- The 9 ADCP quality flags are added inside the data array for each bin -->
+              <swe2:field
+                name="overallBinStatus">
+                <swe2:Category
+                  definition="http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml">
+                  <swe2:label>Flag#1</swe2:label>
+                  <swe2:description>Overall Bin Status</swe2:description>
+                  <swe2:constraint >
+                    <!-- The first flag defines the allowed tokens-->
+                    <swe2:AllowedTokens id="adcpQcFlags">
+                      <swe2:value>0</swe2:value>
+                      <swe2:value>1</swe2:value>
+                      <swe2:value>2</swe2:value>
+                      <swe2:value>3</swe2:value>
+                      <swe2:value>9</swe2:value>
+                    </swe2:AllowedTokens>
+                  </swe2:constraint>
+                </swe2:Category>
+              </swe2:field>
+              
+              <swe2:field
+                name="adcpBuilt-InTestStatus">
+                <swe2:Category
+                  definition="http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml">
+                  <swe2:label>Flag#2</swe2:label>
+                  <swe2:description>ADCP Built-In Test (BIT) status</swe2:description>
+                  <swe2:constraint xlink:href="#adcpQcFlags"/>
+                  <!-- Each additional flag references the allowed tokens -->
+                </swe2:Category>
+              </swe2:field>
+              
+              <swe2:field
+                name="errorVelocityTestStatus">
+                <swe2:Category
+                  definition="http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml">
+                  <swe2:label>Flag#3</swe2:label>
+                  <swe2:description>Error Velocity test status</swe2:description>
+                  <swe2:constraint xlink:href="#adcpQcFlags"/>
+                </swe2:Category>
+              </swe2:field>
+              
+              <swe2:field
+                name="percentGoodTestStatus">
+                <swe2:Category
+                  definition="http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml">
+                  <swe2:label>Flag#4</swe2:label>
+                  <swe2:description>Percent Good test status</swe2:description>
+                  <swe2:constraint xlink:href="#adcpQcFlags"/>
+                </swe2:Category>
+              </swe2:field>
+              
+              <swe2:field
+                name="orrelationMagnitudeTestStatus">
+                <swe2:Category
+                  definition="http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml">
+                  <swe2:label>Flag#5</swe2:label>
+                  <swe2:description>Correlation Magnitude test status</swe2:description>
+                  <swe2:constraint xlink:href="#adcpQcFlags"/>
+                </swe2:Category>
+              </swe2:field>
+              
+              <swe2:field
+                name="verticalVelocityTestStatus">
+                <swe2:Category
+                  definition="http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml">
+                  <swe2:label>Flag#6</swe2:label>
+                  <swe2:description>Vertical Velocity test status</swe2:description>
+                  <swe2:constraint xlink:href="#adcpQcFlags"/>
+                </swe2:Category>
+              </swe2:field>
+              
+              <swe2:field
+                name="northHorizontalVelocityTestStatus">
+                <swe2:Category
+                  definition="http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml">
+                  <swe2:label>Flag#7</swe2:label>
+                  <swe2:description>North Horizontal Velocity test status</swe2:description>
+                  <swe2:constraint xlink:href="#adcpQcFlags"/>
+                </swe2:Category>
+              </swe2:field>
+              
+              <swe2:field
+                name="eastHorizontalVelocityTestStatus">
+                <swe2:Category
+                  definition="http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml">
+                  <swe2:label>Flag#8</swe2:label>
+                  <swe2:description>East Horizontal Velocity test status</swe2:description>
+                  <swe2:constraint xlink:href="#adcpQcFlags"/>
+                </swe2:Category>
+              </swe2:field>
+              
+              <swe2:field
+                name="echoIntensityTestStatus">
+                <swe2:Category
+                  definition="http://sdftest.ndbc.noaa.gov/sos/qcflags.shtml">
+                  <swe2:label>Flag#9</swe2:label>
+                  <swe2:description>Echo Intensity test status</swe2:description>
+                  <swe2:constraint xlink:href="#adcpQcFlags"/>
+                </swe2:Category>
+              </swe2:field>
+              
+              
+            </swe2:DataRecord>
+          </swe2:elementType>
+        </swe2:DataArray>
+      </swe2:field>
+    </swe2:DataRecord>
+  </swe2:elementType>
+
+  <swe2:encoding>
+    <!-- SWE encoding and data values -->
+    <!-- swe:encoding *must* be always specified exactly as described below, -->
+    <!-- to avoid the need to have fully general parsers that interpret -->
+    <!-- swe:TextEncoding. That is, parsers may hard-code this particular -->
+    <!-- swe:TextEncoding specification. -->
+    <swe2:TextEncoding
+      decimalSeparator="."
+      tokenSeparator=","
+      blockSeparator="&#10;" />
+  </swe2:encoding>
+  <swe2:values>
+    2009-05-23T00:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,1,2,3,9,1,2,3,9,1,359.9,24.0,,,,,,,,,,358.0,23.0,,,,,,,,,
+    2009-05-23T01:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,,,,,,,,,,000.0,24.0,,,,,,,,,,358.0,23.0,,,,,,,,,
+    2009-05-23T02:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,,,,,,,,,,000.0,24.0,,,,,,,,,,358.0,23.0,,,,,,,,,
+    2009-05-23T03:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,,,,,,,,,,359.9,24.0,,,,,,,,,,358.0,23.0,,,,,,,,,
+    2009-05-23T04:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,,,,,,,,,,359.9,24.0,,,,,,,,,,358.0,23.0,,,,,,,,,
+    2009-05-23T05:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,,,,,,,,,,359.9,24.0,,,,,,,,,,358.0,23.0,,,,,,,,,
+  </swe2:values>
+</swe2:DataStream>

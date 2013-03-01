@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This template is an example of a Data Stream that encodes a single-->
+<!-- station with a single sensor which measures temperature and wind velocity -->
+<!--  -->
+<!-- Description of data -->
+<!-- SWE DataStream containing a single station with a single sensor -->
+<swe2:DataStream
+  xmlns:swe2="http://www.opengis.net/swe/2.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd">
+  <!-- A Brief introduction to SWE2.0 Data Stream -->
+  <!-- See SWE 2.0 Common Data Model for details -->
+
+  <!-- This class should be used as the wrapper object to define a complete data stream. It defines a -->
+  <!-- data stream as containing a list of elements with an arbitrary complex structure. An important -->
+  <!-- feature is that the data stream can be open ended (i.e. the number of elements is not known in -->
+  <!-- advance) and is thus designed to support real time streaming of data. -->
+
+  <!-- Data Stream contains: -->
+  <!-- Identifier (optional) -->
+  <!-- Label (optional) -->
+  <!-- Description (Optional) -->
+
+  <!-- ElementCount (Optional - if you know the number of records in the stream) -->
+  <!-- ElementType (Required - the DataComponent which defines the stream) -->
+  <!-- Encoding (Required - the encoding defines the format of the values) -->
+  <!-- Values (Required - specifies the values in the stream using the encoding) -->
+
+  <swe2:elementType
+    name="ioosStationData">
+    <!-- elementType is a DataComponent that requires a name for the type it is describing. It -->
+    <!-- contains exactly one DataRecord -->
+
+    <swe2:DataRecord>
+      <!-- ==================== DATASTREAM-WIDE FIELDS ======================= -->
+      <!-- DataRecord is a DataComponent. It defines a list of elements (named fields) with -->
+      <!-- an arbitrary complex structure that are mapped to the encoded data stream. -->
+
+      <swe2:field
+        name="time">
+        <!-- Field: time -->
+        <!-- Time is always the first field in the Data Record. All other fields -->
+        <!-- may be nested in a data choice for multiple stations or sensors -->
+        <swe2:Time
+          definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+          <swe2:uom
+            xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian" />
+        </swe2:Time>
+        <!-- Note about Fields: -->
+        <!-- No value block is specified here so this element must be included in every record of the -->
+        <!-- DataStream Values block below. -->
+      </swe2:field>
+
+
+      <swe2:field
+        name="stationID">
+        <!-- Field: stationID; -->
+        <!-- For consistency, "stationID" should always be spelled out this way, -->
+        <!-- (and never as, say, "station_id") using the same case, for readability. -->
+        <swe2:Text
+          definition="http://mmisw.org/ont/ioos/definition/stationID">
+          <swe2:value>urn:ioos:station:wmo:41001</swe2:value>
+          <!-- Note about Fields: -->
+          <!-- Since a value block is specified here, it must not be included in any record of the DataStream -->
+          <!-- Values block below. -->
+        </swe2:Text>
+      </swe2:field>
+
+      <swe2:field
+        name="platformLocation">
+        <!-- Field: platformLocation; -->
+        <!-- The location of the platform relative to WGS 84 (Horizontal) and Instantaneous Water Level (Vertical). -->
+        <!-- Each sensor will specify a height relative to the platform location. If complete orientation and -->
+        <!-- relative position are available for a sensor, SWE 2.0 clearly defines how to record it. Generally, -->
+        <!-- for IOOS buoy instruments we believe just specifying the height is the appropriate solution. -->
+        <swe2:Vector
+          definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
+          referenceFrame="https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml"
+          localFrame="#PlatformFrame">
+          <!-- Vector: -->
+          <!-- The coordinate vector defining the station location in the specified reference frame. -->
+          <!-- For floating, surface buoys a new compound coordinate reference system has been developed -->
+          <!-- which combines the WGS84 for horizontal (GPS) latitude and longitude CRS with a vertical CRS -->
+          <!-- which uses height in above the Instantanious Water Level as a datum. -->
+
+          <!-- For a tide gauge or a station at a fixed location relative to the Geoid (MSL), the CRS should be: -->
+          <!-- EPSG::4979 referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4979" -->
+          <swe2:coordinate
+            name="latitude">
+            <swe2:Quantity
+              definition="http://mmisw.org/ont/cf/parameter/latitude"
+              axisID="Lat">
+              <swe2:uom
+                code="deg" />
+              <swe2:value>32.382</swe2:value>
+            </swe2:Quantity>
+          </swe2:coordinate>
+          <swe2:coordinate
+            name="longitude">
+            <swe2:Quantity
+              definition="http://mmisw.org/ont/cf/parameter/longitude"
+              axisID="Lon">
+              <swe2:uom
+                code="deg" />
+              <swe2:value>-75.415</swe2:value>
+            </swe2:Quantity>
+          </swe2:coordinate>
+          <swe2:coordinate
+            name="height">
+            <swe2:Quantity
+              definition="http://mmisw.org/ont/cf/parameter/height"
+              axisID="Z">
+              <swe2:uom
+                code="m" />
+              <swe2:value>0.5</swe2:value>
+              <!-- Zero height is at water level in the IOOS Buoy CRS. All sensors locations should be a height -->
+              <!-- (vertical upward) relative to this reference frame -->
+            </swe2:Quantity>
+          </swe2:coordinate>
+        </swe2:Vector>
+      </swe2:field>
+
+      <!-- ==================== SENSOR-SPECIFIC FIELDS ======================= -->
+      <swe2:field
+        name="sensorID">
+        <!-- Field: sensorID -->
+        <!-- The sensorID urn may use a meaningful "component" name (eg, "sbe16"); or, -->
+        <!-- if not available, a simple, constant string followed by an integer counter -->
+        <!-- such as "sensor1", "sensor2", "salt1", etc. -->
+        <swe2:Text
+          definition="http://mmisw.org/ont/ioos/definition/sensorID">
+          <swe2:value>urn:ioos:station:wmo:41001:sensor1</swe2:value>
+        </swe2:Text>
+      </swe2:field>
+
+      <swe2:field
+        name="height">
+        <!-- The location of the sensor relative to the platform  -->
+        <!-- We don't currently have enough information about orientation and relative position -->
+        <!-- of sensors on a platform to define a sensor reference frame, but it is certainly -->
+        <!-- possible to do if and when that is needed. -->
+        <swe2:Quantity
+          definition="http://mmisw.org/ont/cf/parameter/height"
+          referenceFrame="#PlatformFrame">
+          <swe2:uom
+            code="m" />
+          <swe2:value>5</swe2:value>
+        </swe2:Quantity>
+      </swe2:field>
+
+      <!-- The "data" fields follow (measured quantities/properties of this sensor) -->
+      <swe2:field
+        name="air_temperature">
+        <swe2:Quantity
+          definition="http://mmisw.org/ont/cf/parameter/air_temperature">
+          <swe2:uom
+            code="Celsius" />
+        </swe2:Quantity>
+      </swe2:field>
+
+      <swe2:field
+        name="wind_speed">
+        <swe2:Quantity
+          definition="http://mmisw.org/ont/cf/parameter/wind_speed">
+          <swe2:uom
+            code="m/s" />
+        </swe2:Quantity>
+      </swe2:field>
+      <swe2:field
+        name="wind_to_direction">
+        <swe2:Quantity
+          definition="http://mmisw.org/ont/cf/parameter/wind_to_direction">
+          <swe2:uom
+            code="degrees" />
+        </swe2:Quantity>
+      </swe2:field>
+
+      <!-- ////////////////// END DATASTREAM-WIDE FIELDS //////////////////////// -->
+    </swe2:DataRecord>
+  </swe2:elementType>
+
+
+  <swe2:encoding>
+    <!-- SWE encoding and data values -->
+    <!-- swe:encoding *must* be always specified exactly as described below, -->
+    <!-- to avoid the need to have fully general parsers that interpret -->
+    <!-- swe:TextEncoding. That is, parsers may hard-code this particular -->
+    <!-- swe:TextEncoding specification. -->
+    <swe2:TextEncoding
+      decimalSeparator="."
+      tokenSeparator=","
+      blockSeparator="&#10;" />
+  </swe2:encoding>
+  <swe2:values> 2009-05-23T00:00:00Z,15.4,2.0,280 2009-05-23T01:00:00Z,15.4,2.0,280
+    2009-05-23T02:00:00Z,15.4,2.0,280 2009-05-23T03:00:00Z,15.4,2.0,280
+    2009-05-23T04:00:00Z,15.4,2.0,280 2009-05-23T05:00:00Z,15.4,2.0,280  </swe2:values>
+</swe2:DataStream>
