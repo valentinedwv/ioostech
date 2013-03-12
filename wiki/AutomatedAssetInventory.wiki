@@ -11,7 +11,7 @@ A comprehensive inventory of observational assets is critical to the continued d
 
 [http://ioostech.googlecode.com/files/InventoryDevelopmentPlan_v1.0.doc Full Development and Implementation Plan]
 
-[http://ioostech.googlecode.com/files/AssetInventoryAdjudicationMatrix_v1.0.xlsx Excel File of Comments and Responses]
+[http://ioostech.googlecode.com/files/AssetInventoryCommentsResponses_v1.0.xlsx Excel File of Comments and Responses]
 
 
 = Draft Plan (12/12/2012) =
