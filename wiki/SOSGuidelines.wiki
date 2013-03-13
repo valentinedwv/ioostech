@@ -394,42 +394,30 @@ EXAMPLE 4 (“network-all” DescribeSensor):
 ==Representation of platform/sensor vertical coordinate==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=16]
 
-_*Final decision is required on the vertical axis direction and the use of "height" vs. "depth"*_
 
+The description of the sensor position in `GetObservation` response consists of 3 parts: (1) a 3D Compound CRS for use as a global Reference Frame; (2) description of the Local Frame for a platform; and (3) description of the sensor position relative to the platform Local Frame:
 
-The description of the sensor position in `GetObservation` response shall consist of 3 parts: (1) description of a Compound CRS in use as a global Reference Frame; (2) description of the Local Frame for a platform; and (3) description of the sensor position relative to the platform Local Frame:
+1. *3D Compound CRS*: 
+      * for floating, surface buoys, IOOS has specified a 3D CRS with EPSG::4326 (WGS84 Geoid) for the horizontal reference frame (latitude/longitude), and EPSG::5829 (Instantaneous water level uncorrected for tide with vertical axis upward direction) for the vertical reference (the definition is currently located in the google code repository but will be moved to a more appropriate repository in the future);
+      * for a tide gauge or a station at a fixed location relative to the Geoid (MSL), the 3D CRS should be EPSG::4979
 
- 1. *for Compound CRS*, IOOS recommendation is to use a combination of EPSG:4326 (horizontal axes) and EPSG:5113 (vertical axis). That allows the specification of a 3D CRS with WGS84 for the horizontal reference frame (latitude/longitude), and Instantaneous Water Level for the vertical reference:
 {{{
-</om:ObservationCollection>
-  <om:member>
-    <om:Observation>
-[…]
-      <gml:CompoundCRS gml:id="#IOOS_Buoy_CRS">        
-        <gml:validArea>
-          <gml:description> World wide for any floating sensor or platform </gml:description>
-        </gml:validArea>
-        <gml:includesCRS>
-            <GeographicCRS xlink:href="urn:ogc:def:crs:EPSG::4326" xlink:title="WGS 84"/>
-        </gml:includesCRS>
-        <gml:includesCRS>
-            <gml:VerticalCRS gml:id="IOOS_Vertical_CRS">
-                <gml:usesVerticalCS>
-                    <gml:VerticalCS gml:id="EPSG6499" xlink:href="urn:ogc:def:cs:EPSG::6499" xlink:title="Vertical CS. Axis: height (H). Orientation: up. UoM: m."/>
-                </gml:usesVerticalCS>
-                <gml:usesVerticalDatum>
-                    <gml:VerticalDatum gml:id="EPSG5113" xlink:href="urn:ogc:def:crs:EPSG::5113" xlink:title="Instantaneous Water Level"/>
-                </gml:usesVerticalDatum>
-            </gml:VerticalCRS>
-        </gml:includesCRS>
-      </gml:CompoundCRS>  
-[…]
-    </om:Observation>
-  </om:member>
-</om:ObservationCollection>
+<gml:CompoundCRS xmlns:gml="http://www.opengis.net/gml"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" gml:id="IOOS_Buoy_CRS">
+    <gml:srsName>3D Compound CRS 4326 2D geographic + vertical height referenced to instantaneous water level </gml:srsName>
+    <gml:validArea>
+        <gml:description> World wide for any floating sensor or platform </gml:description>
+    </gml:validArea>
+    <gml:includesCRS xlink:href="urn:ogc:def:crs:EPSG::4326" xlink:title="WGS 84 Geoid"/>
+    <gml:includesCRS xlink:href="urn:ogc:def:crs:EPSG::5829" xlink:title=" Instantaneous Water Level height "/>
+</gml:CompoundCRS> 
 }}}
 
- 2. *definition of the platform location (Local Frame)* relative to the previously defined Compound CRS as the Reference Frame:
+
+
+2. *Platform Local Frame* - the coordinate vector is specified that describes the station location in the 3D CRS Reference Frame:
+
 {{{
       <om:result>
         <swe2:DataStream>
@@ -442,8 +430,11 @@ The description of the sensor position in `GetObservation` response shall consis
                 </swe2:Text>
               </swe2:field>
               <swe2:field name="platformLocation">
-                <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
-                  referenceFrame="#IOOS_Buoy_CRS" localFrame="#PlatformFrame">
+                <swe2:Vector
+                  definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
+                  referenceFrame=https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml
+                  <!-- For a tide gauge the referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4979" -->
+                  localFrame="#PlatformFrame">
                   <swe2:coordinate name="latitude">
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
                       <swe2:uom code="deg"/>
@@ -472,7 +463,11 @@ The description of the sensor position in `GetObservation` response shall consis
       </om:result>
 }}}
 
- 3. *description of the sensor position* relative to the platform Local Frame specifying a height/depth with the sensor observations:
+3. *description of the sensor position* relative to the platform Local Frame specifying a height/depth:
+      * sensor’s position should always be reported as height (vertical upward);
+      * sensor’s position below the water surface should be reported as height with _*negative*_ value;
+      * zero height is at water level in the 3D CRS
+
 {{{
       <om:result>
         <swe2:DataStream>
@@ -519,9 +514,7 @@ The description of the sensor position in `GetObservation` response shall consis
           </swe2:elementType>
 }}}
 
-_*NOTE:*_
 
-Since the CF Standard Name definitions for height and depth do not preclude negative values, it is *STRONGLY RECOMMENDED* to use one vertical axis to indicate height and depth, and establish the orientation of that axis by encoding sensor’s position below (or above – TBD!!!) the water surface with _*negative*_ values.
 
 
 == Observation values !TextEncoding separators==
