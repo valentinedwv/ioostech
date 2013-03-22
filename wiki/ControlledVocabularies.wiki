@@ -3,21 +3,6 @@
 
 <wiki:toc max_depth="3" />
 
-= Introduction =
-
-In a collaboration between the IOOS Program Office and RA partners, a broad strategy addresses vocabulary needs across core components of the IOOS distributed observation systems, following IOOS guiding principles. This strategy encompasses vocabularies and vocabulary mappings (ontologies) for observation platforms; organization names, types and roles; and other characteristics. All such vocabularies are defined on the [https://marinemetadata.org/mmiswinfo/ MMI Ontology Registry and Repository (MMI ORR)], and existing community vocabularies and ontologies are being adopted as appropriate. [#References See also (2) below for additional MMI ORR background].
-
-IOOS service providers must use IOOS-approved, MMI-hosted vocabularies whenever appropriate. _All references to IOOS-approved vocabulary terms must be encoded via MMI term URL's_ (e.g., http://mmisw.org/ont/ioos/parameter/ammonia). MMI-hosted vocabularies and mappings managed by IOOS are available at http://mmisw.org/ont/ioos.
-
-This page describes the relevant controlled vocabularies that have been adopted or developed by the IOOS community, including context and specific instructions for use and implementation in data services. Currently they target SOS service requests (GetCapabilities, GetObservation and DescribeSensor), but are of general applicability in other services as well.
-
-The material presented here will evolve into a clearer policy. [http://code.google.com/p/ioostech/downloads/detail?name=Full%20page%20photo.jpg&can=2&q= For example, this diagram illustrates the decision process for identifying, using or proposing new terms to IOOS vocabularies, with a focus on observed properties terms from the CF Standard Names and IOOS Parameter Vocabulary].
-
-= Additional Background =
-
-For more details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see [#References (1)]; this paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings. Additional background materials may be found at [ControlledVocabularies this older wiki page on IOOS vocabulary strategies]. Current [http://www.unc.edu/~haines/orrioos.html IOOS vocabulary mappings and SPARQL querying demonstrations are available in this external page].
-
-
 = IOOS Controlled Vocabularies =
 
 IOOS has defined the use of specific vocabularies for the following categories or concepts tha are used directly in SOS services:
@@ -117,6 +102,22 @@ There has been a request by some of the RA Directors to have a metadata field th
 }}}
 
 IOOS-supported platforms should be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}  This way, the asset inventory can identify IOOS-sponsored platforms, and use this information.  In practice, there are probably few assets 100% supported by IOOS, so having IOOS as a sponsor can safely be interpreted as Partial IOOS support.
+
+= Introduction =
+
+In a collaboration between the IOOS Program Office and RA partners, a broad strategy addresses vocabulary needs across core components of the IOOS distributed observation systems, following IOOS guiding principles. This strategy encompasses vocabularies and vocabulary mappings (ontologies) for observation platforms; organization names, types and roles; and other characteristics. All such vocabularies are defined on the [https://marinemetadata.org/mmiswinfo/ MMI Ontology Registry and Repository (MMI ORR)], and existing community vocabularies and ontologies are being adopted as appropriate. [#References See also (2) below for additional MMI ORR background].
+
+IOOS service providers must use IOOS-approved, MMI-hosted vocabularies whenever appropriate. _All references to IOOS-approved vocabulary terms must be encoded via MMI term URL's_ (e.g., http://mmisw.org/ont/ioos/parameter/ammonia). MMI-hosted vocabularies and mappings managed by IOOS are available at http://mmisw.org/ont/ioos.
+
+This page describes the relevant controlled vocabularies that have been adopted or developed by the IOOS community, including context and specific instructions for use and implementation in data services. Currently they target SOS service requests (GetCapabilities, GetObservation and DescribeSensor), but are of general applicability in other services as well.
+
+The material presented here will evolve into a clearer policy. [http://code.google.com/p/ioostech/downloads/detail?name=Full%20page%20photo.jpg&can=2&q= For example, this diagram illustrates the decision process for identifying, using or proposing new terms to IOOS vocabularies, with a focus on observed properties terms from the CF Standard Names and IOOS Parameter Vocabulary].
+
+= Additional Background =
+
+For more details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see [#References (1)]; this paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings. Additional background materials may be found at [ControlledVocabularies this older wiki page on IOOS vocabulary strategies]. Current [http://www.unc.edu/~haines/orrioos.html IOOS vocabulary mappings and SPARQL querying demonstrations are available in this external page].
+
+
 
 
 = Additional Vocabularies And Concepts =
