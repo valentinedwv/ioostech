@@ -41,57 +41,6 @@ A web based [http://mmisw.org/ont/sparql.html form] is accessible on the MMI Web
 
 ===Example Queries===
 
-===Find IOOS parameters that have exactMatch or closeMatch to CF terms===
-
-PREFIX ioos: <http://mmisw.org/ont/ioos/parameter/>
-SELECT DISTINCT ?parameter ?definition ?unit ?property ?value 
-WHERE {?parameter a ioos:Parameter .
-       ?parameter ?property ?value .
-       ?parameter ioos:Term ?term . 
-       ?parameter ioos:Definition ?definition . 
-       ?parameter ioos:Units ?unit .
-       FILTER (regex(str(?property), "(exactMatch|closeMatch)", "i") && regex(str(?value), "cf", "i") )} 
-ORDER BY ?parameter
- 
-===Grouped by List all matches between IOOS parameters and CF terms===
-PREFIX ioos: <http://mmisw.org/ont/ioos/parameter/>
-SELECT DISTINCT ?cat ?parameter ?property ?value 
-WHERE {?parameter a ioos:Parameter .
-       ?parameter ?property ?value .
-       ?cat skos:narrowMatch ?parameter .
-       FILTER  (regex(str(?property), "Match", "i") && regex(str(?value), "cf", "i") )
-      } 
-ORDER BY ?cat ?parameter
-
-===List all Categories===
-PREFIX ioos: <http://mmisw.org/ont/ioos/category/>
-SELECT ?p 
-WHERE {?p a ioos:Category .
-      } 
-ORDER BY ?p
-
-===List all Core Variables===
-PREFIX ioos: <http://mmisw.org/ont/ioos/core_variable/>
-SELECT ?p 
-WHERE {?p a ioos:Core_Variable .
-      } 
-ORDER BY ?p
-
-===List Platform Terms===
-PREFIX ioos: <http://mmisw.org/ont/ioos_test/platform/>
-SELECT DISTINCT ?cat ?platform ?definition
-WHERE {?platform a ioos:Platform .
-       ?platform ioos:Definition ?definition .
-       ?cat skos:narrowMatch ?platform .
-      } 
-ORDER BY ?cat ?platform
-
-===List Platform Categories===
-PREFIX ioos: <http://mmisw.org/ont/ioos_test/platform_category/>
-SELECT DISTINCT ?p 
-WHERE {?p a ioos:Platform .
-      } 
-ORDER BY ?p
 
 =Proposed Hierarchical structure=
 A hierarchical structure has been proposed for the Platform Vocabulary in order meet reporting requirements, for example from the IOOS Asset Inventory or IOOS Catalog.  Here is an example to provide context to this proposal: 
