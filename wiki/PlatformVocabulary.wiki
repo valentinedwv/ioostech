@@ -35,7 +35,12 @@ Each term was researched and definitions provided. Many of the resources and ref
 
 One of the future tasks will be to be able to display Images saved within registered vocabulary.  For example it would be nice to display or show the images provided in the Images field such as this example.
 
-||[http://www.metoffice.gov.uk/weather/marine/observations/gathering_data/images/drifting_buoy.jpg]||[http://filemaker2-server.cbl.umces.edu/sensorimages/7265-SLDMB.gif]||
+||[http://www.metoffice.gov.uk/weather/marine/observations/gathering_data/images/drifting_buoy.jpg]||[http://filemaker2-server.cbl.umces.edu/sensorimages/7265-SLDMB.gif]|| 
+
+==Animal Platform Terms (STILL TO DO)==
+
+One main category of platform type not addressed in this version, is the "animal" (mammal, fish, etc) platform types.  This category covers using animals that are tagged and tracked and even carry micro-sensors, such as CTD. In this case data descriptors would identify an animal or the type of animal as the platform type.  We need to decide what granularity we should use to address the hierarchy or find how mapping can accomodate finding, and using recommended scientific name and common name.  For example, if common name = northern elephant seal and if scientific name = Mirounga angustirostris, the platform term would be a combination of the two.  We recommend to use both common names and scientific names so that it can be searched by either.
+The scientific and common name for animals can be found here URL: [http://www.marinespecies.org/]
 
 = Developing the Hierarchy (Mapping) = 
 
@@ -92,11 +97,6 @@ The following use cases help derive requirements for the IOOS Platform Vocabular
   # Definitions for the platform vocabulary must be prescriptive to avoid misclassification.  In the previous version of the IOOS Asset Inventory, similar assets were assigned different platforms across the Regional Associations.  
   # The platform vocabulary must be able to handle mixed platforms (combined shore sensors measuring water temperature and met sensors measuring wind speed). 
   # If a hierarchical structure is used for the vocabulary, the platform must be able to be uniquely identified using the MMI framework, and the structure should be transparent.  For example, if wave buoy is a subclass of buoy, and the Platform Type is listed as wave buoy, then the XPath provided should direct you to a page where wave buoy is noted as a subclass of buoy.  
-
-=Animal Platform Terms=
-
-Scientific name and common name.  For example, if common name = northern elephant seal and if scientific name = Mirounga angustirostris, the platform term would be a combination of the two.  We recommend to use both common names and scientific names so that it can be searched by either.
-The scientific and common name for animals can be found here URL: http://www.marinespecies.org/
 
 = Existing Platform Vocabularies =
 MMI Platform Vocabulary: 
