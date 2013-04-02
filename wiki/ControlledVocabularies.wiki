@@ -5,11 +5,12 @@
 
 = IOOS Controlled Vocabularies =
 
-====IOOS has specified vocabularies for categories or concepts to be used in IOOS data management services.  The IOOS controlled vocabularies are registered at the Marine Metadata Interoperability 
+====IOOS has specified vocabularies for categories or concepts to be used in IOOS data management services.  The IOOS controlled vocabularies are registered at the [http://mmisw.org/orr/#b Marine Metadata Interoperability]====
  * [#Observed_Property observed property (or "parameter")]
  * [#Station_Platform_Type station platform type]
  * [#IOOS_Partner_Organization IOOS partner organization]
  * [#Organization_Societal_Sector organization societal sector]
+
 
 [#Additional_Vocabularies_And_Concepts Additional, related concepts are also used in IOOS services], some of which have also been formally implemented as MMI vocabularies but may not be used yet or deliberately by service providers.
 
