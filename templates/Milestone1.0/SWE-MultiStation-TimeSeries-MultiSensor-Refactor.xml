@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This template is an example of a Data Stream using DataChoice to encode Multiple -->
+<!-- Stations with Multiple Sensors -->
+<!--  -->
+<!-- Description of data -->
+<!-- SWE DataStream containing 3 Stations: -->
+<!-- Station 1 has 2 sensors -->
+<!-- Station 2 has 2 sensors -->
+<!-- Station 3 has 1 sensors -->
+<swe2:DataRecord
+  xmlns:swe2="http://www.opengis.net/swe/2.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd">
+
+  <!-- STATIC DATA -->
+  <!-- This field and DataRecord contain static data for all stations and sensors in the response -->
+  <!-- Static data is linked to dynamic data (sensor observation values) via an abbreviated, -->
+  <!-- underscored sensor URN. For example, urn:ioos:station:wmo:41001:sensor1 becomes -->
+  <!-- wmo_41001_sensor1 -->
+  <!-- This abbreviated URN is used as the sensor's DataRecord id in the static block and the -->
+  <!-- DataChoice item name in the dynamic block. Consequently it also appears in the dynamic -->
+  <!-- swe:values encoding. -->
+  <!-- All fields in the static block must also include inline values. -->
+  <swe2:field name="stations">
+    <swe2:DataRecord>
+      <!-- Static data for the first station, urn:ioos:station:wmo:41001 -->
+      <swe2:field name="wmo_41001"> 
+        <swe2:DataRecord id="wmo_41001">
+          <!-- Field: stationID; -->
+          <!-- For consistency, "stationID" should always be spelled out this way, -->
+          <!-- (and never as, say, "station_id") using the same case, for readability. -->
+          <swe2:field name="stationID">
+            <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
+              <swe2:value>urn:ioos:station:wmo:41001</swe2:value>
+            </swe2:Text>
+          </swe2:field>
+
+          <swe2:field name="platformLocation">
+            <!-- Field: platformLocation; -->
+            <!-- The location of the platform relative to WGS 84 (Horizontal) and Instantaneous Water Level (Vertical). -->
+            <!-- Each sensor will specify a height relative to the platform location. If complete orientation and -->
+            <!-- relative position are available for a sensor, SWE 2.0 clearly defines how to record it. Generally, -->
+            <!-- for IOOS buoy instruments we believe just specifying the height is the appropriate solution. -->
+            <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
+              referenceFrame="https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml"
+              localFrame="#PlatformFrame">
+              <!-- Vector: -->
+              <!-- The coordinate vector defining the station location in the specified reference frame. -->
+              <!-- For floating, surface buoys a new compound coordinate reference system has been developed -->
+              <!-- which combines the WGS84 for horizontal (GPS) latitude and longitude CRS with a vertical CRS -->
+              <!-- which uses height in above the Instantanious Water Level as a datum. -->
+
+              <!-- For a tide gauge or a station at a fixed location relative to the Geoid (MSL), the CRS should be: -->
+              <!-- EPSG::4979 referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4979" -->
+              <swe2:coordinate name="latitude">
+                <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
+                  <swe2:uom code="deg" />
+                  <swe2:value>32.382</swe2:value>
+                </swe2:Quantity>
+              </swe2:coordinate>
+              <swe2:coordinate name="longitude">
+                <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude" axisID="Lon">
+                  <swe2:uom code="deg" />
+                  <swe2:value>-75.415</swe2:value>
+                </swe2:Quantity>
+              </swe2:coordinate>
+              <swe2:coordinate name="height">
+                <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z">
+                  <swe2:uom code="m" />
+                  <swe2:value>0.5</swe2:value>
+                  <!-- Zero height is at water level in the IOOS Buoy CRS. All sensors locations should be a height -->
+                  <!-- (vertical upward) relative to this reference frame -->
+                </swe2:Quantity>
+              </swe2:coordinate>
+            </swe2:Vector>
+          </swe2:field>
+
+          <!-- Static data for all sensors on this station -->
+          <swe2:field name="sensors">
+            <swe2:DataRecord>
+              <swe2:field name="wmo_41001_sensor1">
+              <!-- Reminder: the DataRecord id of a sensor in the static block matches the DataChoice item -->
+              <!-- name in the dynamic block --> 
+                <swe2:DataRecord id="wmo_41001_sensor1">
+                  <swe2:field name="sensorID">
+                    <!-- Field: sensorID -->
+                    <!-- The sensorID urn may use a meaningful "component" name (eg, "sbe16"); or, -->
+                    <!-- if not available, a simple, constant string followed by an integer counter -->
+                    <!-- such as "sensor1", "sensor2", "salt1", etc. -->
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                      <swe2:value>urn:ioos:station:wmo:41001:sensor1</swe2:value>
+                    </swe2:Text>
+                  </swe2:field>
+
+                  <swe2:field name="height">
+                    <!-- The location of the sensor relative to the platform  -->
+                    <!-- We don't currently have enough information about orientation and relative position -->
+                    <!-- of sensors on a platform to define a sensor reference frame, but it is certainly -->
+                    <!-- possible to do if and when that is needed. -->
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      referenceFrame="#PlatformFrame">
+                      <swe2:uom code="m" />
+                      <swe2:value>5</swe2:value>
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:field>
+              <swe2:field name="wmo_41001_sensor2">
+                <swe2:DataRecord id="wmo_41001_sensor2">
+                  <swe2:field name="sensorID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                      <swe2:value>urn:ioos:station:wmo:41001:sensor2</swe2:value>
+                    </swe2:Text>
+                  </swe2:field>
+                  <swe2:field name="height">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      referenceFrame="#PlatformFrame">
+                      <swe2:uom code="m" />
+                      <swe2:value>-2</swe2:value>
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:field>
+            </swe2:DataRecord>
+          </swe2:field>
+        </swe2:DataRecord>
+      </swe2:field>
+
+      <!-- Station 2 static data -->
+      <swe2:field name="wmo_41002">
+        <swe2:DataRecord id="wmo_41002">
+          <swe2:field name="stationID">
+            <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
+              <swe2:value>urn:ioos:station:wmo:41002</swe2:value>
+            </swe2:Text>
+          </swe2:field>
+
+          <swe2:field name="platformLocation">
+            <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
+              referenceFrame="https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml"
+              localFrame="#PlatformFrame">
+              <swe2:coordinate name="latitude">
+                <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
+                  <swe2:uom code="deg" />
+                  <swe2:value>32.5</swe2:value>
+                </swe2:Quantity>
+              </swe2:coordinate>
+              <swe2:coordinate name="longitude">
+                <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude" axisID="Lon">
+                  <swe2:uom code="deg" />
+                  <swe2:value>-78.5</swe2:value>
+                </swe2:Quantity>
+              </swe2:coordinate>
+              <swe2:coordinate name="height">
+                <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z">
+                  <swe2:uom code="m" />
+                  <swe2:value>0</swe2:value>
+                </swe2:Quantity>
+              </swe2:coordinate>
+            </swe2:Vector>
+          </swe2:field>
+
+          <swe2:field name="sensors">
+            <swe2:DataRecord> 
+              <swe2:field name="wmo_41002_sensor1">
+                <swe2:DataRecord id="wmo_41002_sensor1">
+                  <swe2:field name="sensorID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                      <swe2:value>urn:ioos:station:wmo:41002:sensor1</swe2:value>
+                    </swe2:Text>
+                  </swe2:field>
+                  <swe2:field name="height">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      referenceFrame="#PlatformFrame">
+                      <swe2:uom code="m" />
+                      <swe2:value>3</swe2:value>
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:field>
+
+              <swe2:field name="wmo_41002_sensor2">
+                <swe2:DataRecord id="wmo_41002_sensor2">
+                  <swe2:field name="sensorID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                      <swe2:value>urn:ioos:station:wmo:41002:sensor2</swe2:value>
+                    </swe2:Text>
+                  </swe2:field>
+                  <swe2:field name="height">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      referenceFrame="#PlatformFrame">
+                      <swe2:uom code="m" />
+                      <swe2:value>-5</swe2:value>
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:field>
+            </swe2:DataRecord>
+          </swe2:field>
+        </swe2:DataRecord>
+      </swe2:field>
+
+      <!-- Station 3 static data -->
+      <swe2:field name="wmo_41003">
+        <swe2:DataRecord id="wmo_41003">
+          <swe2:field name="stationID">
+            <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
+              <swe2:value>urn:ioos:station:wmo:41003</swe2:value>
+            </swe2:Text>
+          </swe2:field>
+
+          <swe2:field name="platformLocation">
+            <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
+              referenceFrame="https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml"
+              localFrame="#PlatformFrame">
+              <swe2:coordinate name="latitude">
+                <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
+                  <swe2:uom code="deg" />
+                  <swe2:value>33.5</swe2:value>
+                </swe2:Quantity>
+              </swe2:coordinate>
+              <swe2:coordinate name="longitude">
+                <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude" axisID="Lon">
+                  <swe2:uom code="deg" />
+                  <swe2:value>-79.5</swe2:value>
+                </swe2:Quantity>
+              </swe2:coordinate>
+              <swe2:coordinate name="height">
+                <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z">
+                  <swe2:uom code="m" />
+                  <swe2:value>0</swe2:value>
+                </swe2:Quantity>
+              </swe2:coordinate>
+            </swe2:Vector>
+          </swe2:field>
+          <swe2:field name="sensors">
+            <swe2:DataRecord>
+              <swe2:field name="wmo_41003_sensor1">
+                <swe2:DataRecord id="wmo_41003_sensor1">
+                  <swe2:field name="sensorID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                      <swe2:value>urn:ioos:station:wmo:41003:sensor1</swe2:value>
+                    </swe2:Text>
+                  </swe2:field>
+                  <swe2:field name="height">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      referenceFrame="#PlatformFrame">
+                      <swe2:uom code="m" />
+                      <swe2:value>3</swe2:value>
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:field>
+            </swe2:DataRecord>
+          </swe2:field>
+        </swe2:DataRecord>
+      </swe2:field>
+    </swe2:DataRecord>
+  </swe2:field>
+
+  <!-- DYNAMIC DATA (SENSOR OBSERVATIONS) -->
+  <!-- All measurements made by sensors and any other dynamic data (e.g. location for mobile sensors) -->
+  <!-- are encoded in a DataArray. Again, sensor field name in the static DataRecord above corresponds to -->
+  <!-- DataChoice item name in the dynamic DataArray -->
+  <swe2:field name="observationData">	
+    <swe2:DataArray>
+      <!-- Mandatory count of records in swe:values -->
+      <swe2:elementCount>
+        <swe2:Count>
+          <swe2:value>13</swe2:value>
+        </swe2:Count>
+      </swe2:elementCount>
+      <!-- Definition of fields in the DataArray -->
+      <swe2:elementType name="observations">
+        <swe2:DataRecord>
+          <!-- Time is included for all sensor so it is listed first and is outside of DataChoice -->
+          <swe2:field name="time">
+            <swe2:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+              <swe2:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian" />
+            </swe2:Time>
+          </swe2:field>
+
+          <!-- Since different observations are made by each sensor, DataChoice is used to select -->
+          <!-- a sensor and set of observation fields for each record in swe:values -->
+          <swe2:field name="sensor">
+            <swe2:DataChoice>
+              <!-- DataChoice for wmo 41001's sensor1 -->
+              <!-- Dynamic sensor observations are linked to static data using the DataChoice -->
+              <!-- item name: wmo_41001_sensor1 -->
+              <swe2:item name="wmo_41001_sensor1">
+                <swe2:DataRecord>
+                  <!-- wmo_41001_sensor1's observed properties -->
+                  <swe2:field name="air_temperature">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
+                      <swe2:uom code="Celsius" />
+                    </swe2:Quantity>
+                  </swe2:field>
+
+                  <swe2:field name="wind_speed">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_speed">
+                      <swe2:uom code="m/s" />
+                    </swe2:Quantity>
+                  </swe2:field>
+
+                  <swe2:field name="wind_to_direction">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_to_direction">
+                      <swe2:uom code="degrees" />
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:item>
+
+              <swe2:item name="wmo_41001_sensor2">
+                <swe2:DataRecord>
+                  <swe2:field name="sea_water_temperature">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
+                      <swe2:uom code="Celsius" />
+                    </swe2:Quantity>
+                  </swe2:field>
+
+                  <swe2:field name="dissolved_oxygen">
+                    <swe2:Quantity definition="http://mmisw.org/ont/ioos/parameter/dissolved_oxygen">
+                      <swe2:uom code="mg/L" />
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:item>
+
+              <swe2:item name="wmo_41002_sensor1">
+                <swe2:DataRecord>
+                  <swe2:field name="air_temperature">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
+                      <swe2:uom code="Celsius" />
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:item>
+
+              <swe2:item name="wmo_41002_sensor2">
+                <swe2:DataRecord>
+                  <swe2:field name="sea_water_temperature">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
+                      <swe2:uom code="Celsius" />
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:item>
+
+              <swe2:item name="wmo_41003_sensor1">
+                <swe2:DataRecord>
+                  <swe2:field name="air_temperature">
+                    <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
+                      <swe2:uom code="Celsius" />
+                    </swe2:Quantity>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:item>
+
+            </swe2:DataChoice>
+          </swe2:field>
+        </swe2:DataRecord>
+      </swe2:elementType>	
+      <swe2:encoding>
+        <!-- SWE encoding and data values -->
+        <!-- swe:encoding *must* be always specified exactly as described below, -->
+        <!-- to avoid the need to have fully general parsers that interpret -->
+        <!-- swe:TextEncoding. That is, parsers may hard-code this particular -->
+        <!-- swe:TextEncoding specification. -->
+        <!--  -->
+        <!-- About DataChoice from SWE Common 2.0: -->
+        <!-- 9.2.5	Rules for DataChoice -->
+        <!-- A “DataChoice” is encoded with the text method by providing the name of the selected item -->
+        <!-- before the item values themselves. The name used shall correspond to the “name” attribute -->
+        <!-- of the “item” property element that describes the structure of the selected item. -->
+        <!--  -->
+        <!-- This data stream interleaves different types of messages separated by the block separator -->
+        <!-- character. The element type is a “DataChoice” which means that each block is composed of -->
+        <!-- the item name, followed by values of the item. This example also demonstrates that items -->
+        <!-- of a choice can be of different types and length. -->
+        <swe2:TextEncoding
+          decimalSeparator="."
+          tokenSeparator=","
+          blockSeparator="&#10;" />
+      </swe2:encoding>
+      <swe2:values>
+        2009-05-23T00:00:00Z,wmo_41001_sensor1,15.4,2.0,280
+        2009-05-23T01:00:00Z,wmo_41001_sensor1,15.8,1.8,121
+        2009-05-23T02:00:00Z,wmo_41001_sensor1,15.6,1.0,142
+        2009-05-23T00:00:00Z,wmo_41001_sensor2,5.6,8.0
+        2009-05-23T01:00:00Z,wmo_41001_sensor2,5.8,8.2
+        2009-05-23T02:00:00Z,wmo_41001_sensor2,5.7,8.5
+        2009-05-23T00:00:00Z,wmo_41002_sensor1,16.2
+        2009-05-23T01:00:00Z,wmo_41002_sensor1,16.4
+        2009-05-23T02:00:00Z,wmo_41002_sensor1,16.5
+        2009-05-23T00:00:00Z,wmo_41002_sensor2,6.1
+        2009-05-23T01:00:00Z,wmo_41002_sensor2,6.3
+        2009-05-23T02:00:00Z,wmo_41002_sensor2,6.5
+        2009-05-23T01:00:00Z,wmo_41003_sensor1,15.8
+      </swe2:values>
+    </swe2:DataArray>
+  </swe2:field>
+</swe2:DataRecord>
