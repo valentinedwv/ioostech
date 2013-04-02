@@ -5,7 +5,7 @@
 
 = IOOS Controlled Vocabularies =
 
-====IOOS has defined the use of specific vocabularies for the following categories or concepts that are used directly in SOS services:====
+====IOOS has specified vocabularies for categories or concepts to be used in IOOS data management services.  The IOOS controlled vocabularies are registered at the Marine Metadata Interoperability 
  * [#Observed_Property observed property (or "parameter")]
  * [#Station_Platform_Type station platform type]
  * [#IOOS_Partner_Organization IOOS partner organization]
