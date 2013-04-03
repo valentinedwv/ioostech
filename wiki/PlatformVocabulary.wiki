@@ -113,7 +113,7 @@ BODC (SeaDataNet):
 
 = Who to Contact =
 
-John Ten Hoeve, Rob Ragdale. and Sara Haines, to date, have been most active in developing the Platform Vocabulary.  If you are interested please or have comments or addtions, contact Rob Ragsdale (Rob.Ragsdale@noaa.gov) or John Ten Hoeve (John.tenhoeve@noaa.gov).  
+John Ten Hoeve, Rob Ragdale, Hassan Moustahfid. and Sara Haines, to date, have been most active in developing the Platform Vocabulary.  If you are interested please or have comments or addtions, contact Rob Ragsdale (Rob.Ragsdale@noaa.gov), Hassan Moustahfid (Hassan.Moustahfid@noaa.gov) or John Ten Hoeve (John.tenhoeve@noaa.gov).  
 
 =Appendices=
 ==Appendix A Proposed Hierarchical structure==
