@@ -37,6 +37,7 @@ The approved ocean acidification parameters will be published in the [http://mmi
    * Dwight Gledhill (OAP)
    * Leticia Barbero (AOML)
    * Cathy Cosca (PMEL)
+   * Simone Alin (PMEL) 
 
 ==Discussion==
 
