@@ -16,7 +16,7 @@
   <!-- STATIC DATA -->
   <!-- This field and DataRecord contain static data for all stations and sensors in the response -->
   <!-- Static data is linked to dynamic data (sensor observation values) via an abbreviated, -->
-  <!-- underscored sensor URN. For example, urn:ioos:station:wmo:41001:sensor1 becomes -->
+  <!-- underscored sensor URN. For example, urn:ioos:sensor:wmo:41001:sensor1 becomes -->
   <!-- wmo_41001_sensor1 -->
   <!-- This abbreviated URN is used as the sensor's DataRecord id in the static block and the -->
   <!-- DataChoice item name in the dynamic block. Consequently it also appears in the dynamic -->
@@ -89,7 +89,7 @@
                     <!-- if not available, a simple, constant string followed by an integer counter -->
                     <!-- such as "sensor1", "sensor2", "salt1", etc. -->
                     <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
-                      <swe2:value>urn:ioos:station:wmo:41001:sensor1</swe2:value>
+                      <swe2:value>urn:ioos:sensor:wmo:41001:sensor1</swe2:value>
                     </swe2:Text>
                   </swe2:field>
 
@@ -110,7 +110,7 @@
                 <swe2:DataRecord id="wmo_41001_sensor2">
                   <swe2:field name="sensorID">
                     <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
-                      <swe2:value>urn:ioos:station:wmo:41001:sensor2</swe2:value>
+                      <swe2:value>urn:ioos:sensor:wmo:41001:sensor2</swe2:value>
                     </swe2:Text>
                   </swe2:field>
                   <swe2:field name="height">
@@ -167,7 +167,7 @@
                 <swe2:DataRecord id="wmo_41002_sensor1">
                   <swe2:field name="sensorID">
                     <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
-                      <swe2:value>urn:ioos:station:wmo:41002:sensor1</swe2:value>
+                      <swe2:value>urn:ioos:sensor:wmo:41002:sensor1</swe2:value>
                     </swe2:Text>
                   </swe2:field>
                   <swe2:field name="height">
@@ -184,7 +184,7 @@
                 <swe2:DataRecord id="wmo_41002_sensor2">
                   <swe2:field name="sensorID">
                     <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
-                      <swe2:value>urn:ioos:station:wmo:41002:sensor2</swe2:value>
+                      <swe2:value>urn:ioos:sensor:wmo:41002:sensor2</swe2:value>
                     </swe2:Text>
                   </swe2:field>
                   <swe2:field name="height">
@@ -240,7 +240,7 @@
                 <swe2:DataRecord id="wmo_41003_sensor1">
                   <swe2:field name="sensorID">
                     <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
-                      <swe2:value>urn:ioos:station:wmo:41003:sensor1</swe2:value>
+                      <swe2:value>urn:ioos:sensor:wmo:41003:sensor1</swe2:value>
                     </swe2:Text>
                   </swe2:field>
                   <swe2:field name="height">
