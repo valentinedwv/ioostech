@@ -34,6 +34,6 @@ Roughly ordered from higher to lower level, in focus.
   * [http://code.google.com/p/waterpython/ Water Python Google Code group]. Never really got off the ground after a bit of enthusiasm back in early 2010 (Chris Barker, Rob Hetland, etc). But could be repurposed....
 
 
-== Other relevant, but somewhat tangential efforts ==
+= Other relevant, but somewhat tangential efforts =
 
-  * [http://scitools.org.uk Scitools]. Run by the UK Met Office. Python libraries intended to interact with CF datasets (IRIS package) and generate commonly needed oceanographic data plots more readily (CartoPy). Very cool stuff. [https://groups.google.com/d/topic/ioos_tech/91VLT0GLXKE/discussion Here's a 4/12/2013 thread on ioos_tech list, where Derrick mentioned this].
+  * [http://scitools.org.uk Scitools]. Run by the UK Met Office. Python libraries intended to interact with CF datasets (Iris package) and generate commonly needed oceanographic data plots more readily (Cartopy package). Very cool stuff. [https://groups.google.com/d/topic/ioos_tech/91VLT0GLXKE/discussion Here's a 4/12/2013 thread on ioos_tech list, where Derrick mentioned this].
