@@ -10,7 +10,7 @@ The IOOS Program has developed specific vocabularies and mappings that should be
 The IOOS Program has written steps to determine and select an approved IOOS variable term and definition for your data and metadata.  
 
   # The first step is to identify the variable type(s) needed.
-  # The first vocabularies referenced should be the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/23/cf-standard-name-table.html Climate and Forecast (CF) Standard Name Table] and Darwin Core Term List [http://rs.tdwg.org/dwc/terms/] to determine a term name.  These two vocabularies are applicable for physical, chemical, and biological terms.  
+  # The first vocabularies referenced should be the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/23/cf-standard-name-table.html Climate and Forecast (CF) Standard Name Table] and  [http://rs.tdwg.org/dwc/terms/ Darwin Core Term List] to determine a term name.  These two vocabularies are applicable for physical, chemical, and biological terms.  
   # If an acceptable term is found, then the data provider should adopt this term.
   # The [http://mmisw.org/ont/ioos IOOS controlled vocabularies] should be referenced when a desired term is not found in the CF or Darwin Core vocabularies.
   # When a desired term is found in the IOOS controlled vocabularies, the term should be adopted.  
@@ -19,20 +19,7 @@ The IOOS Program has written steps to determine and select an approved IOOS vari
   # The term will be added by the IOOS Program Office to the appropriate IOOS controlled vocabulary.
   # The term should be adopted by the data provider. 
   # The IOOS Program Office will initiate the process to submit the new terms on behalf of the data provider to CF, Darwin Core, or other as appropriate standard terms list for approval. 
-  #
   
-
-  1. The first step is to identify the variable type(s) needed.  
-  2.   
-3.	If an acceptable term is found, then the data provider should adopt this term.  
-4.	The IOOS controlled vocabularies [http://mmisw.org/ont/ioos] should be referenced when a desired term is not found in the CF or Darwin Core vocabularies.   
-5.	When a desired term is found in the IOOS controlled vocabularies, the term should be adopted.  
-6.	The data provider should contact the IOOS Program Office if a term cannot be found in any of the IOOS controlled vocabularies.  
-7.	A new term may need to be developed by the data provider and IOOS Program Office.  
-8.	The term will be added by the IOOS Program Office to the appropriate IOOS controlled vocabulary. 
-9.	The term should be adopted by the data provider.  
-10.	The IOOS Program Office will initiate the process to submit the new terms on behalf of the data provider to CF, Darwin Core, or other as appropriate standard terms list for approval.  
-
 
 ====IOOS has specified vocabularies for categories or concepts to be used in IOOS data management services.  The IOOS controlled vocabularies are registered at the [http://mmisw.org/orr/#b Marine Metadata Interoperability Ontology Registry and Repository] site.====
 
