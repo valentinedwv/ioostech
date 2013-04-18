@@ -24,9 +24,6 @@ The IOOS Program has developed specific vocabularies and mappings that should be
   # The term should be adopted by the data provider. 
   # The IOOS Program Office will initiate the process to submit the new terms on behalf of the data provider to CF, Darwin Core, or other as appropriate standard terms list for approval. 
   
-
-====IOOS has specified vocabularies for categories or concepts to be used in IOOS data management services.  The IOOS controlled vocabularies are registered at the [http://mmisw.org/orr/#b Marine Metadata Interoperability Ontology Registry and Repository] site.====
-
 The U.S. IOOS registered vocabularies are found under the IOOS authority and can be linked from this url: http://mmisw.org/ont/ioos/
 
 The list of vocabularies includes:
