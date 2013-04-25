@@ -13,7 +13,7 @@ The IOOS Program has developed specific vocabularies and mappings that should be
 
 A process was developed to help IOOS data managers and data providers determine and select terms from one of the IOOS accepted vocabularies and improve the terms contained within the vocabularies.  For more information or questions, contact Rob.Ragsdale@noaa.gov in the IOOS Program Office.     
 
-==The steps to selecting an IOOS terms==
+===Steps to selecting terms from the IOOS controlled vocabularies===
 
   # The first step is to identify the variable type(s) needed.
   # The first vocabularies referenced should be the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/23/cf-standard-name-table.html Climate and Forecast (CF) Standard Name Table] and  [http://rs.tdwg.org/dwc/terms/ Darwin Core Term List] to determine a term name.  These two vocabularies are applicable for physical, chemical, and biological terms.  
@@ -25,8 +25,6 @@ A process was developed to help IOOS data managers and data providers determine 
   # The term will be added by the IOOS Program Office to the appropriate IOOS controlled vocabulary.
   # The term should be adopted by the data provider. 
   # The IOOS Program Office will initiate the process to submit the new terms on behalf of the data provider to CF, Darwin Core, or other as appropriate standard terms list for approval.
-
- 
   
 The U.S. IOOS registered vocabularies are found under the IOOS authority and can be linked from this url: http://mmisw.org/ont/ioos/
 
