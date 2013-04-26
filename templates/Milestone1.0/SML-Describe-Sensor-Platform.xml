@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Template document for a generic (independant of feature type) Describe Sensor Platform -->
+<!-- Work in progress... Content and structure are final. Cleaning up formatting and comments  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
 <sml:SensorML 
   xmlns:sml="http://www.opengis.net/sensorML/1.0.1" 
   xmlns:gml="http://www.opengis.net/gml" 
@@ -227,10 +234,23 @@
       "Server implementations can include each station's location in child components if they 
       choose, and clients can still get each child's location from its own DescribeSensor response." -->
       <sml:location>
-        <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-          <gml:pos>34.7 -72.73</gml:pos>
+        <gml:Point>
+        <gml:pos>34.7 -72.73</gml:pos>
         </gml:Point>
       </sml:location>
+
+      <!-- Example location for more complex platform types. Several GML types are possible including
+        points lines and curves
+        <sml:location>
+          <gml:LineString srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:name>Sensor Location</gml:name>
+            <gml:pos>34.7 -72.73</gml:pos>
+            <gml:pos>34.8 -72.74</gml:pos>
+            <gml:pos>34.9 -72.75</gml:pos>
+          </gml:LineString>
+        </sml:location>
+      -->
+      
       <!-- =================================================================== -->
             
       <!-- ============================================================================= 

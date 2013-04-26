@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sos:Capabilities 
+<!-- Template Document for a Generic (independant of feature type) Get Capabilites -->
+<!-- Work in progress... Content and structure are final. Cleaning up formatting and comments  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  --><sos:Capabilities 
   xmlns:sos="http://www.opengis.net/sos/1.0" 
   xmlns:ows="http://www.opengis.net/ows/1.1" 
   xmlns:gml="http://www.opengis.net/gml" 
