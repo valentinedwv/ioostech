@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This template is an example of a Data Stream that encodes a single-->
-<!-- station with a single sensor which measures a time series of profiles -->
-<!-- at specific depth bins. -->
-<!--  -->
-<!-- Description of data -->
+<!-- This template is an example of a Data Stream that encodes a single           -->
+<!-- station with a single sensor which measures a time series of profiles        -->
+<!-- at specific depth bins.                                                      -->
+<!--                                                                              -->
+<!-- Description of data                                                          -->
 <!-- SWE DataStream containing a single station with a single time series profile -->
 <swe2:DataStream
   xmlns:swe2="http://www.opengis.net/swe/2.0"

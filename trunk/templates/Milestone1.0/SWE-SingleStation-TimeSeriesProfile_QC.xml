@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This template is an example of a Data Stream that encodes a single-->
-<!-- station with a single sensor which measures a time series of profiles -->
-<!-- at specific depth bins. -->
-<!--  -->
-<!-- Description of data -->
+<!-- This template is an example of a Data Stream that encodes a single           -->
+<!-- station with a single sensor which measures a time series of profiles        -->
+<!-- at specific depth bins.                                                      -->
+<!--                                                                              -->
+<!-- Description of data                                                          -->
 <!-- SWE DataStream containing a single station with a single time series profile -->
 <swe2:DataStream
   xmlns:swe2="http://www.opengis.net/swe/2.0"
@@ -21,7 +21,7 @@
             xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian" />
         </swe2:Time>
       </swe2:field>
-
+      
       <swe2:field
         name="stationID">
         <swe2:Text
@@ -29,7 +29,7 @@
           <swe2:value>urn:ioos:station:wmo:41001</swe2:value>
         </swe2:Text>
       </swe2:field>
-
+      
       <!-- ==================== SENSOR-SPECIFIC FIELDS ======================= -->
       <swe2:field
         name="sensorID">
@@ -38,8 +38,7 @@
           <swe2:value>urn:ioos:station:wmo:41001:sensor1</swe2:value>
         </swe2:Text>
       </swe2:field>
-
-
+      
       <swe2:field
         name="sensorLocation">
         <!-- For an ADCP instrument it is probably best to specify its location relative to a CRS -->
@@ -81,7 +80,7 @@
           </swe2:coordinate>
         </swe2:Vector>
       </swe2:field>
-
+      
       <swe2:field
         name="attitude">
         <!-- If available for an ADCP, record the sensor orientation as part of the time series record -->
@@ -117,7 +116,7 @@
           </swe2:coordinate>
         </swe2:Vector>
       </swe2:field>
-
+      
       <!-- The "data" fields follow (measured quantities/properties of this sensor) -->
       <swe2:field
         name="sea_water_temperature">
@@ -128,7 +127,7 @@
             code="Cel" />
         </swe2:Quantity>
       </swe2:field>
-
+      
       <swe2:field
         name="pressure">
         <swe2:Quantity
@@ -138,74 +137,86 @@
             code="mbar" />
         </swe2:Quantity>
       </swe2:field>
-
+      
       <swe2:field
-        name="adcpProfileBins">
-        <swe2:DataArray
-          definition="http://www.opengis.net/def/property/OGC/0/SamplingLocation">
+        name="adcpProfile">
+        <swe2:DataArray definition="Definition of a Profile?">
           <swe2:description>Array of synchronous observations in a Profile</swe2:description>
           <swe2:elementCount>
-            <swe2:Count id="binDimension">
+            <swe2:Count>
               <swe2:value>3</swe2:value>
             </swe2:Count>
           </swe2:elementCount>
           <swe2:elementType
-            name="adcpBinLocations">
-            <swe2:DataRecord>
-              <swe2:field
-                name="binCenter">
-                <!-- The location of the sensor relative to the platform  -->
-                <!-- We don't currently have enough information about orientation and relative position -->
-                <!-- of sensors on a platform to define a sensor reference frame, but it is certainly -->
-                <!-- possible to do if and when that is needed. -->
-                <swe2:Quantity
-                  definition="http://mmisw.org/ont/cf/parameter/height"
-                  referenceFrame="#SensorFrame">
-                  <swe2:uom
-                    code="m" />
-                </swe2:Quantity>
-              </swe2:field>
-              <swe2:field
-                name="binEdges">
-                <!-- The location of the sensor relative to the platform  -->
-                <!-- We don't currently have enough information about orientation and relative position -->
-                <!-- of sensors on a platform to define a sensor reference frame, but it is certainly -->
-                <!-- possible to do if and when that is needed. -->
-                <swe2:QuantityRange
-                  definition="http://mmisw.org/ont/cf/parameter/height"
-                  referenceFrame="#SensorFrame">
-                  <swe2:uom
-                    code="m" />
-                </swe2:QuantityRange>
-              </swe2:field>
-            </swe2:DataRecord>
-          </swe2:elementType>
-          <swe2:encoding>
-            <!-- These valuese are encoded within the DataArray block because they need not be -->
-            <!-- repeated in the time series of data records -->
-            <!-- It appears that this is not compliant with 08-094r1 SWE 2.0 Common Data Model -->
-            <!-- requirements for Data Block encoding. Only the parent block may contain values. -->
-            <swe2:TextEncoding
-              decimalSeparator="."
-              tokenSeparator=","
-              blockSeparator="&#10;"> </swe2:TextEncoding>
-          </swe2:encoding>
-          <swe2:values> 
-            1,0.5 1.5
-            2,1.5 2.5
-            3,2.5 3.5 </swe2:values>
-        </swe2:DataArray>
-      </swe2:field>
-
-      <swe2:field
-        name="adcpProfile">
-        <swe2:DataArray
-          definition="Definition of a Profile?">
-          <swe2:description>Array of synchronous observations in a Profile</swe2:description>
-          <swe2:elementCount xlink:href="#binDimension"/>
-          <swe2:elementType
             name="adcpMeasurement">
             <swe2:DataRecord>
+              <swe2:field name="adcpProfileBin">
+                <swe2:DataChoice>
+                  <swe2:item name="bin1">
+                    <swe2:DataRecord>
+                      <swe2:field
+                        name="binCenter">
+                        <swe2:Quantity
+                          definition="http://mmisw.org/ont/cf/parameter/height"
+                          referenceFrame="#SensorFrame">
+                          <swe2:uom code="m" />
+                          <swe2:value>1</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:field>
+                      <swe2:field name="binEdges">
+                        <swe2:QuantityRange
+                          definition="http://mmisw.org/ont/cf/parameter/height"
+                          referenceFrame="#SensorFrame">
+                          <swe2:uom code="m" />
+                          <swe2:value>.5 1.5</swe2:value>
+                        </swe2:QuantityRange>
+                      </swe2:field>
+                    </swe2:DataRecord>
+                  </swe2:item>
+                  <swe2:item name="bin2">
+                    <swe2:DataRecord>
+                      <swe2:field
+                        name="binCenter">
+                        <swe2:Quantity
+                          definition="http://mmisw.org/ont/cf/parameter/height"
+                          referenceFrame="#SensorFrame">
+                          <swe2:uom code="m" />
+                          <swe2:value>2</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:field>
+                      <swe2:field name="binEdges">
+                        <swe2:QuantityRange
+                          definition="http://mmisw.org/ont/cf/parameter/height"
+                          referenceFrame="#SensorFrame">
+                          <swe2:uom code="m" />
+                          <swe2:value>1.5 2.5</swe2:value>
+                        </swe2:QuantityRange>
+                      </swe2:field>
+                    </swe2:DataRecord>
+                  </swe2:item>
+                  <swe2:item name="bin3">
+                    <swe2:DataRecord>
+                      <swe2:field
+                        name="binCenter">
+                        <swe2:Quantity
+                          definition="http://mmisw.org/ont/cf/parameter/height"
+                          referenceFrame="#SensorFrame">
+                          <swe2:uom code="m" />
+                          <swe2:value>3</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:field>
+                      <swe2:field name="binEdges">
+                        <swe2:QuantityRange
+                          definition="http://mmisw.org/ont/cf/parameter/height"
+                          referenceFrame="#SensorFrame">
+                          <swe2:uom code="m" />
+                          <swe2:value>2.5 3.5</swe2:value>
+                        </swe2:QuantityRange>
+                      </swe2:field>
+                    </swe2:DataRecord>
+                  </swe2:item>
+                </swe2:DataChoice>
+              </swe2:field>
               <swe2:field
                 name="direction_of_sea_water_velocity">
                 <swe2:Quantity
@@ -224,14 +235,12 @@
               </swe2:field>
             </swe2:DataRecord>
           </swe2:elementType>
-
         </swe2:DataArray>
       </swe2:field>
-
-      <!-- ////////////////// END DATASTREAM-WIDE FIELDS //////////////////////// -->
+      
     </swe2:DataRecord>
   </swe2:elementType>
-
+  
   <swe2:encoding>
     <!-- SWE encoding and data values -->
     <!-- swe:encoding *must* be always specified exactly as described below, -->
@@ -244,11 +253,11 @@
       blockSeparator="&#10;" />
   </swe2:encoding>
   <swe2:values>
-    2009-05-23T00:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,359.9,24.0,358.0,23.0
-    2009-05-23T01:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,000.0,24.0,358.0,23.0
-    2009-05-23T02:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,000.0,24.0,358.0,23.0
-    2009-05-23T03:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,359.9,24.0,358.0,23.0
-    2009-05-23T04:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,359.9,24.0,358.0,23.0
-    2009-05-23T05:00:00Z,0.002,0.005,0.017,18.02,11928,360.0,25.0,359.9,24.0,358.0,23.0
+    2009-05-23T00:00:00Z,0.002,0.005,0.017,18.02,11928,bin1,360.0,25.0,bin2,359.0,24.0,bin3,358.0,23.0
+    2009-05-23T01:00:00Z,0.002,0.005,0.017,18.02,11928,bin1,360.0,25.0,bin2,000.0,24.0,bin3,358.0,23.0
+    2009-05-23T02:00:00Z,0.002,0.005,0.017,18.02,11928,bin1,360.0,25.0,bin2,000.0,24.0,bin3,358.0,23.0
+    2009-05-23T03:00:00Z,0.002,0.005,0.017,18.02,11928,bin1,360.0,25.0,bin2,359.9,24.0,bin3,358.0,23.0
+    2009-05-23T04:00:00Z,0.002,0.005,0.017,18.02,11928,bin1,360.0,25.0,bin2,359.9,24.0,bin3,358.0,23.0
+    2009-05-23T05:00:00Z,0.002,0.005,0.017,18.02,11928,bin1,360.0,25.0,bin2,359.9,24.0,bin3,358.0,23.0
   </swe2:values>
 </swe2:DataStream>

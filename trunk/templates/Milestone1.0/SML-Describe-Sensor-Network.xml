@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Template document for a generic (independant of feature type) Describe Sensor Network -->
+<!-- Work in progress... Content and structure are final. Cleaning up formatting and comments  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
 <sml:SensorML 
   xmlns:sml="http://www.opengis.net/sensorML/1.0.1" 
   xmlns:gml="http://www.opengis.net/gml" 
@@ -8,7 +15,6 @@
   xsi:schemaLocation="http://www.opengis.net/sensorML/1.0.1 http://schemas.opengis.net/sensorML/1.0.1/sensorML.xsd" 
   version="1.0.1">
   
-  <!-- *** ADDED 9/18/2012 *** IOOS SOS VERSION. TWEAKED 9/28/2012 -->
   <sml:capabilities name="ioosServiceMetadata">
     <swe:SimpleDataRecord>
       <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0">
@@ -18,10 +24,6 @@
   </sml:capabilities>
   
   <sml:member>
-    <!-- COMMENT: 
-      - Looks like sml:System gml:id is *not* required
-      - Added gml:name. Recommend its use?
-      -->
     <sml:System>
       <gml:description>urn:ioos:network:nanoos:all Collection of all station assets available via the NANOOS SOS service</gml:description>
       <gml:name>urn:ioos:network:nanoos:all</gml:name>

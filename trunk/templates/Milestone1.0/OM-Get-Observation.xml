@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ==================================================
-** COMMENTS on namespace specifications:
- - gml: using an unversioned namespace has been confirmed to be ok;
-   the om 1.0 schema defines GML 3.1.1 as the version used
-================================================== -->
-<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0"
-  xmlns:gml="http://www.opengis.net/gml" xmlns:swe="http://www.opengis.net/swe/1.0.1"
-  xmlns:swe2="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+<!-- Template Document for a Generic (independant of feature type) Get Observation -->
+<!-- Work in progress... Content and structure are final. Cleaning up formatting and comments  -->
+<!-- The GO contains one member observation per feature type in the response.  -->
+<!-- The result block in the template is empty. Examples of the result block are in the SWE -->
+<!-- templates defined seperately for each strucutre and concept. Any of these SWE results could -->
+<!-- be expressed in the result block of this document with the appropriate matching metadata. -->
+<!--  -->
+<!-- ================================================== -->
+<!-- COMMENTS on namespace specifications: -->
+<!-- - gml: using an unversioned namespace has been confirmed to be ok; -->
+<!--   the om 1.0 schema defines GML 3.1.1 as the version used -->
+<!-- ================================================== -->
+<om:ObservationCollection
+  xmlns:om="http://www.opengis.net/om/1.0"
+  xmlns:gml="http://www.opengis.net/gml"
+  xmlns:swe="http://www.opengis.net/swe/1.0.1"
+  xmlns:swe2="http://www.opengis.net/swe/2.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/om.xsd">
-
-  <!-- Primary editor: Arliss Whiteside. Last updated 2004-01-26-->
 
   <!-- ==================================================================
        TOP-LEVEL METADATA
        =============================================================== -->
   <!-- DISCLAIMER -->
-  <gml:metaDataProperty xlink:title="disclaimer">
+  <gml:metaDataProperty
+    xlink:title="disclaimer">
     <gml:GenericMetaData>
       <gml:description>DISCLAIMER</gml:description>
     </gml:GenericMetaData>
   </gml:metaDataProperty>
 
   <!-- IOOS SOS VERSION -->
-  <gml:metaDataProperty xlink:title="ioosTemplateVersion"
+  <gml:metaDataProperty
+    xlink:title="ioosTemplateVersion"
     xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
     <gml:version>1.0</gml:version>
   </gml:metaDataProperty>
@@ -31,7 +41,8 @@
   <!-- Define the Bounding Box of all features in the response -->
   <!-- The upper and lower corner are equal if the reponse contains a single point -->
   <gml:boundedBy>
-    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+    <gml:Envelope
+      srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
       <gml:lowerCorner>34.7 -72.73</gml:lowerCorner>
       <gml:upperCorner>34.7 -72.73</gml:upperCorner>
     </gml:Envelope>
@@ -81,7 +92,8 @@
         as additional gml:member elements -->
       <om:procedure>
         <om:Process>
-          <gml:member xlink:href="urn:ioos:station:wmo:41001"/>
+          <gml:member
+            xlink:href="urn:ioos:station:wmo:41001" />
         </om:Process>
       </om:procedure>
 
@@ -97,17 +109,24 @@
         returns a single observed property.
         ============================================================== -->
       <om:observedProperty>
-        <swe:CompositePhenomenon dimension="5" gml:id="observedproperties1">
+        <swe:CompositePhenomenon
+          dimension="5"
+          gml:id="observedproperties1">
           <gml:name>Response Observed Properties</gml:name>
-          <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/>
-          <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed"/>
-          <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_direction"/>
-          <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
-          <swe:component xlink:href="http://mmisw.org/ont/ioos/parameter/dissolved_oxygen"/>
+          <swe:component
+            xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature" />
+          <swe:component
+            xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed" />
+          <swe:component
+            xlink:href="http://mmisw.org/ont/cf/parameter/wind_direction" />
+          <swe:component
+            xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_temperature" />
+          <swe:component
+            xlink:href="http://mmisw.org/ont/ioos/parameter/dissolved_oxygen" />
         </swe:CompositePhenomenon>
       </om:observedProperty>
 
-      
+
 
       <!-- ===========================================================
         featureOfInterest  
@@ -115,19 +134,18 @@
         ============================================================== -->
       <om:featureOfInterest>
         <gml:FeatureCollection>
-          
+
           <!-- CF Feature Type (discrete-sampling-geometry). COMMENT: Why vers. 1.6 specifically? -->
           <gml:metaDataProperty>
-            <gml:name
-              codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries"
-              >timeSeries</gml:name>
+            <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
           </gml:metaDataProperty>
 
           <!-- Geographic (lat lon) Bounding Box of this feature -->
           <gml:boundedBy>
             <!-- For a single station the upper corner and lower corner are the same -->
             <!-- For a multi station response define the bounding box of the stations -->
-            <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:Envelope
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:lowerCorner>34.7 -72.73</gml:lowerCorner>
               <gml:upperCorner>34.7 -72.73</gml:upperCorner>
             </gml:Envelope>
@@ -140,7 +158,8 @@
             This is analogous to our use of om:observedProperty/swe:CompositePhenomenon 
             even for single-property responses. -->
           <gml:location>
-            <gml:MultiPoint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:MultiPoint
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pointMembers>
                 <!-- For each station in the result add an additional point -->
                 <gml:Point>
@@ -152,7 +171,7 @@
           </gml:location>
         </gml:FeatureCollection>
       </om:featureOfInterest>
-      
+
 
       <!-- ==================================================================
         =====================================================================
@@ -165,10 +184,8 @@
         om:result (THE "DATA" BLOCK)
         =========================================================== -->
       <om:result>
-
-      <!-- This block can contain any of the various example SWE Result blocks defined in the -->
-      <!-- Milestone 1.0 templates as appropriate to the data described above -->
-
+        <!-- This block can contain any of the various example SWE Result blocks defined in the -->
+        <!-- Milestone 1.0 templates as appropriate to the data described above -->
       </om:result>
 
     </om:Observation>
