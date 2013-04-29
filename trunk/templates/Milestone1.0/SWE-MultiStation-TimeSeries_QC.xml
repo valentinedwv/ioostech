@@ -31,6 +31,9 @@
   <!-- All fields in the static block must include inline values. -->
   <!-- All fields in the dynamic block must not include inline values. -->
   <swe2:field name="stations">
+    <!-- IoosTech Convention: -->
+    <!-- The field containing the static data for each station shall be called "stations" -->
+    
     <swe2:DataRecord>
       <!-- Static data for the first station, urn:ioos:station:wmo:41001 -->
       <!-- Required elements include for each station: stationID, platformLocation, sensors -->
@@ -92,6 +95,9 @@
 
           <!-- Static data for all sensors on this station -->
           <swe2:field name="sensors">
+            <!-- IoosTech Convention: -->
+            <!-- The field containing the static data for each sensor shall be called "sensors" -->
+            
             <swe2:DataRecord>
               <swe2:field name="wmo_41001_sensor1">
               <!-- Reminder: the DataRecord id of a sensor in the static block matches the DataChoice item -->
@@ -114,6 +120,7 @@
                     <!-- of sensors on a platform to define a sensor reference frame, but it is certainly -->
                     <!-- possible to do if and when that is needed. -->
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      axisID="Z"
                       referenceFrame="#wmo_41001_frame">
                       <swe2:uom code="m" />
                       <swe2:value>5</swe2:value>
@@ -130,6 +137,7 @@
                   </swe2:field>
                   <swe2:field name="height">
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      axisID="Z"
                       referenceFrame="#wmo_41001_frame">
                       <swe2:uom code="m" />
                       <swe2:value>-2</swe2:value>
@@ -177,6 +185,9 @@
           </swe2:field>
 
           <swe2:field name="sensors">
+            <!-- IoosTech Convention: -->
+            <!-- The field containing the static data for each sensor shall be called "sensors" -->
+            
             <swe2:DataRecord> 
               <swe2:field name="wmo_41002_sensor1">
                 <swe2:DataRecord id="wmo_41002_sensor1">
@@ -187,6 +198,7 @@
                   </swe2:field>
                   <swe2:field name="height">
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      axisID="Z"
                       referenceFrame="#wmo_41002_frame">
                       <swe2:uom code="m" />
                       <swe2:value>3</swe2:value>
@@ -204,6 +216,7 @@
                   </swe2:field>
                   <swe2:field name="height">
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      axisID="Z"
                       referenceFrame="#wmo_41002_frame">
                       <swe2:uom code="m" />
                       <swe2:value>-5</swe2:value>
@@ -250,6 +263,9 @@
             </swe2:Vector>
           </swe2:field>
           <swe2:field name="sensors">
+            <!-- IoosTech Convention: -->
+            <!-- The field containing the static data for each sensor shall be called "sensors" -->
+            
             <swe2:DataRecord>
               <swe2:field name="wmo_41003_sensor1">
                 <swe2:DataRecord id="wmo_41003_sensor1">
@@ -260,6 +276,7 @@
                   </swe2:field>
                   <swe2:field name="height">
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height"
+                      axisID="Z"
                       referenceFrame="#wmo_41003_frame">
                       <swe2:uom code="m" />
                       <swe2:value>3</swe2:value>
@@ -278,7 +295,10 @@
   <!-- All measurements made by sensors and any other dynamic data (e.g. location for mobile sensors) -->
   <!-- are encoded in a DataArray. Again, sensor field name in the static DataRecord above corresponds to -->
   <!-- DataChoice item name in the dynamic DataArray -->
-  <swe2:field name="observationData">	
+  <swe2:field name="observationData">
+    <!-- IoosTech Convention: -->
+    <!-- The field containing the dynamic data from each sensor shall be called "observationData" -->
+    
     <swe2:DataArray>
       <!-- Mandatory count of records in swe:values -->
       <swe2:elementCount>
@@ -302,6 +322,9 @@
           <!-- a sensor and the set of observation fields for each record from that sensor in the -->
           <!-- block encoded values of the data array. -->
           <swe2:field name="sensor">
+            <!-- IoosTech Convention: -->
+            <!-- The field containing the data choice items for each sensor shall be called "sensor" -->
+            
             <swe2:DataChoice>
               <!-- DataChoice for wmo 41001's sensor1 -->
               <!-- Dynamic sensor observations are linked to static data using the DataChoice -->
