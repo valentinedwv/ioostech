@@ -27,6 +27,8 @@ Roughly ordered from higher to lower level, in focus.
   * [http://geopython.github.com/OWSLib/ OWSLib]. Mostly client.
   * [http://code.google.com/p/netcdf4-python/ netcdf4-python]. Mostly client.
   * [http://pydap.org Pydap]. Server/Client.
+  * [http://cfpython.bitbucket.org/ cf-python]. Package that implements the CF data model for reading, writing and processing of data and its metadata. Installation also deploys these two shell utilities (built on cf-python) for inspecting and combining datasets: _cfdump_ (view CF fields) and _cfa_ (create aggregated CF datasets).
+
 
 == Mailing lists and groups ==
 
