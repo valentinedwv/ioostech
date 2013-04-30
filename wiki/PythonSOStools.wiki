@@ -24,7 +24,7 @@ Roughly ordered from higher to lower level, in focus.
     * [https://github.com/twdb/ulmo ulmo]. Client software. (Replaces the now-deprecated "pyhis" package, developed by the same group)
   * [http://code.google.com/p/istsos/ istSOS]. Server software.
   * [https://github.com/asascience-open/pyoos pyoos]. Client software.
-  * [http://geopython.github.com/OWSLib/ OWSLib]. Mostly client.
+  * [http://geopython.github.com/OWSLib/ OWSLib]. Mostly client. Thanks to Kyle Wilcox (ASA), it now includes SOS & SensorML requests and parsing, and WaterML 1.0/1.1 parsing.
   * [http://code.google.com/p/netcdf4-python/ netcdf4-python]. Mostly client.
   * [http://pydap.org Pydap]. Server/Client.
   * [http://cfpython.bitbucket.org/ cf-python]. Package that implements the CF data model for reading, writing and processing of data and its metadata. Installation also deploys these two shell utilities (built on cf-python) for inspecting and combining datasets: _cfdump_ (view CF fields) and _cfa_ (create aggregated CF datasets). [https://groups.google.com/d/msg/ioos_tech/yNSDQw1vWkA/h8JuEhjiOzgJ Derrick mentioned these tools on an ioos_tech email from 4/24/2013.]
