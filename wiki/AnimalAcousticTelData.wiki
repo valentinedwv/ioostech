@@ -16,13 +16,13 @@ To ensure relevance and future extensibility, this project will involve potentia
 
 This project will build on existing [http://www.ioos.noaa.gov/data/welcome.html IOOS DMAC guidance and activities regarding biological and broader oceanographic data access].
 
-*Project documents. These documents are currently in draft form:*
-  * Statement of Work
-  * [http://ioostech.googlecode.com/files/POST_DataSystemDescription_DRAFT1.0.doc POST Data System Description]
-  * Requirements: Survey results and initial requirements synthesis
-  * Brief comparison of some existing systems
-  * Content Standard: A metadata convention for animal acoustic telemetry data (document and tables)
-  * System Design, including diagrams
+*Project documents. These documents are currently in various stages, from draft to completed.*
+  # Statement of Work
+  # [http://ioostech.googlecode.com/files/POST_DataSystemDescription_DRAFT1.0.doc POST Data System Description]
+  # Requirements: Survey results and initial requirements synthesis
+  # Brief comparison of some existing systems
+  # Content Standard: A metadata convention for animal acoustic telemetry data (document and tables)
+  # System Design, including diagrams
 
 *Data Services being implemented by this project are based on:*
   * [http://coastwatch.pfeg.noaa.gov/erddap/index.html ERDDAP]
