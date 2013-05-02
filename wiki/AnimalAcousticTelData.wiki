@@ -7,6 +7,7 @@
 
 The purpose of this project is to engage in small-scale collaboration with important emerging data providers of both physical and biological observations-the Pacific Ocean Shelf Tracking (POST) project.
 
+
 == Objectives and Tasks to be addressed in this project ==
 The project objectives are to:
   # Extend, adopt and implement data and metadata standards and data services for animal acoustic telemetry observations.
@@ -16,7 +17,9 @@ To ensure relevance and future extensibility, this project will involve potentia
 
 This project will build on existing [http://www.ioos.noaa.gov/data/welcome.html IOOS DMAC guidance and activities regarding biological and broader oceanographic data access].
 
-*Project documents. These documents are currently in various stages, from draft to completed.*
+
+== Project Documents and Reports ==
+These documents are currently in various stages, from draft to completed.*
   # Statement of Work
   # [http://ioostech.googlecode.com/files/POST_DataSystemDescription_DRAFT1.0.doc POST Data System Description]
   # Requirements: Survey results and initial requirements synthesis
@@ -24,11 +27,12 @@ This project will build on existing [http://www.ioos.noaa.gov/data/welcome.html 
   # Content Standard: A metadata convention for animal acoustic telemetry data (document and tables)
   # System Design, including diagrams
 
-*Data Services being implemented by this project are based on:*
-  * [http://coastwatch.pfeg.noaa.gov/erddap/index.html ERDDAP]
-  * [http://geoserver.org GeoServer]
-Configuration files and instructions to set up ERDDAP and GeoServer instances for AAT data will be provided at the end of the project.
 
+== Project Data Services ==
+Data Services being implemented by this project are based on [http://coastwatch.pfeg.noaa.gov/erddap/index.html ERDDAP] and [http://geoserver.org GeoServer]. Configuration files and instructions to set up ERDDAP and GeoServer instances for AAT data will be provided at the end of the project.
+
+
+== Other Resources ==
 *Data Services used by animal acoustic telemetry groups:*
   * [http://oceantrackingnetwork.org/ OTN]: Geoserver, OGC WMS, KML
 
