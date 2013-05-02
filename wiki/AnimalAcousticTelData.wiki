@@ -1,9 +1,9 @@
-#summary One-sentence summary of this page.
+#summary IOOS Animal Acoustic Telemetry (AAT) Data Project
 #labels AATDataProject
 
 = Improving Access to Animal Acoustic Telemetry Observations =
 
-[http://www.ioos.gov IOOS] - [http://www.nanoos.org NANOOS] - [http://www.postprogram.org/ POST]
+[http://www.ioos.gov IOOS] - [http://www.nanoos.org NANOOS] - [http://oceantrackingnetwork.org/ OTN] - POST (Pacific Ocean Shelf Tracking Network)
 
 The purpose of this project is to engage in small-scale collaboration with important emerging data providers of both physical and biological observations-the Pacific Ocean Shelf Tracking (POST) project.
 
@@ -24,12 +24,16 @@ This project will build on existing IOOS DMAC guidance and activities regarding 
   * Content Standard
   * System Design, including diagrams
 
+*Data Services being implemented by this project are based on:*
+  * [http://coastwatch.pfeg.noaa.gov/erddap/index.html ERDDAP]
+  * [http://geoserver.org GeoServer]
+
 *Data Services used by animal acoustic telemetry groups:*
-  * OTN (URL?): Geoserver, OGC WMS, KML
+  * [http://oceantrackingnetwork.org/ OTN]: Geoserver, OGC WMS, KML
 
 *IOOS Biology Data projects:*
-  * http://www.ioos.gov/dmac/biology/welcome.html
-  * http://www.ioos.gov/observing/animal_telemetry/welcome.html
+  * http://www.ioos.noaa.gov/dmac/biology/welcome.html
+  * http://www.ioos.noaa.gov/observing/animal_telemetry/welcome.html
 
 *Other relevant systems:*
   * http://hydra3.sound-data.com
