@@ -19,7 +19,7 @@ This project will build on existing [http://www.ioos.noaa.gov/data/welcome.html 
 
 
 == Project Documents and Reports ==
-These documents are currently in various stages, from draft to completed.*
+These documents are currently in various stages, from draft to completed.
   # Statement of Work
   # [http://ioostech.googlecode.com/files/POST_DataSystemDescription_DRAFT1.0.doc POST Data System Description]
   # Requirements: Survey results and initial requirements synthesis
