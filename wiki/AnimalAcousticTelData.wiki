@@ -33,12 +33,15 @@ Data Services being implemented by this project are based on [http://coastwatch.
 
 
 == Other Resources ==
-*Data Services used by animal acoustic telemetry groups:*
-  * [http://oceantrackingnetwork.org/ OTN]: Geoserver, OGC WMS, KML
-
 *IOOS Biology Data projects:*
   * http://www.ioos.noaa.gov/dmac/biology/welcome.html
   * http://www.ioos.noaa.gov/observing/animal_telemetry/welcome.html
+
+*POST and relevant OTN Data repository:*
+  * [http://members.oceantrack.org/data/discovery/NEPACIFIC.htm Ocean Tracking Network NE PACIFIC Ocean Data Series]
+
+*Data Services used by animal acoustic telemetry groups:*
+  * [http://oceantrackingnetwork.org/ OTN]: Geoserver, OGC WMS, KML
 
 *Other relevant systems:*
   * http://hydra3.sound-data.com
