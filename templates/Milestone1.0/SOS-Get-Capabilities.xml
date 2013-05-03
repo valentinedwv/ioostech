@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Template Document for a Generic (independant of feature type) Get Capabilites -->
-<!-- Work in progress... Content and structure are final. Cleaning up formatting and comments  -->
+<!-- Template Document for a generic (independant of feature type) Get Capabilites -->
 <!--  -->
+<!-- Template includes the following required metadata elements: -->
+<!--    ServiceIdentification -->
+<!--    ServiceProvider -->
+<!--    OperationMetadata -->
+<!--    Contents - specifically the network offerings-->
 <!--  -->
-<!--  -->
-<!--  -->
-<!--  --><sos:Capabilities 
+<sos:Capabilities 
   xmlns:sos="http://www.opengis.net/sos/1.0" 
   xmlns:ows="http://www.opengis.net/ows/1.1" 
   xmlns:gml="http://www.opengis.net/gml" 
@@ -16,6 +18,8 @@
     http://schemas.opengis.net/sos/1.0.0/sosAll.xsd" version="1.0.0">
   <ows:ServiceIdentification>
     <ows:Title>TITLE</ows:Title>
+    <!-- Note to implementer: if any metadata value is missing for a data source use "UNKNOWN" -->
+    <!-- Missing values should be logged and reported so that the provider fix it. -->
     <ows:Abstract>ABSTRACT</ows:Abstract>
     <ows:Keywords>
       <ows:Keyword>KEYWORD 1</ows:Keyword>
@@ -102,12 +106,16 @@
       </ows:AllowedValues>
     </ows:Parameter>
     <ows:ExtendedCapabilities>
-      <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
+      <gml:metaDataProperty xlink:title="ioosTemplateVersion" 
+        xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
         <gml:version>1.0</gml:version>
       </gml:metaDataProperty>
     </ows:ExtendedCapabilities>    
   </ows:OperationsMetadata>
   <sos:Contents>
+    <!-- IoosTech Convention: -->
+    <!-- Please list only network groupings not idividual platforms or sensors -->
+    <!-- Use describe sensor network to get a listing of the platforms in a network -->
     <sos:ObservationOfferingList>
     
       <!-- NETWORK_ALL -->
@@ -115,6 +123,7 @@
         <gml:description>All stations</gml:description>
         <gml:name>urn:ioos:network:AUTHORITY:all</gml:name>
         <gml:srsName>EPSG:4326</gml:srsName>
+        <!-- Always use EPSG:4326 as CRS for 2D coordinates -->
         <gml:boundedBy>
           <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
             <gml:lowerCorner>-90 -180</gml:lowerCorner>
@@ -123,12 +132,13 @@
         </gml:boundedBy>
         <sos:time>
           <gml:TimePeriod>
+            <!-- Time period allows a variety of fixed (ISO 8601) and evaluated (now) expressions -->
             <gml:beginPosition>BEGINNING</gml:beginPosition>
             <gml:endPosition indeterminatePosition="now"/>
           </gml:TimePeriod>
         </sos:time>
-        <sos:procedure xlink:href="URN:STATION_1"/>
-        <sos:procedure xlink:href="URN:STATION_2"/>
+        <!-- SOS 2.0 only allows one procedure list only one for future compatibility -->
+        <sos:procedure xlink:href="urn:ioos:network:AUTHORITY:all"/>
         <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/VALUE"/>
         <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/COMPOSITE_VALUE"/>
         <sos:featureOfInterest xlink:href="FEATURE"/>
@@ -137,58 +147,40 @@
         <sos:resultModel>om:ObservationCollection</sos:resultModel>
         <sos:responseMode>inline</sos:responseMode>
       </sos:ObservationOffering>
-      
-      <!-- STATION_1 -->
-      <sos:ObservationOffering gml:id="STATION_1">
-        <gml:description>DESCRIPTION</gml:description>
-        <gml:name>urn:ioos:station:AUTHORITY:STATION_1</gml:name>
+
+      <!-- NETWORK_FAVORITES -->
+      <!-- It is not scalable to list individual platforms or sensors here however -->
+      <!-- listing additional logical groupings by provide, region, measurement type etc -->
+      <!-- is encouraged! -->
+      <sos:ObservationOffering gml:id="network-favorites">
+        <gml:description>All stations</gml:description>
+        <gml:name>urn:ioos:network:AUTHORITY:favorites</gml:name>
         <gml:srsName>EPSG:4326</gml:srsName>
+        <!-- Always use EPSG:4326 as CRS for 2D coordinates -->
         <gml:boundedBy>
           <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-            <gml:lowerCorner>-90 -180</gml:lowerCorner>
-            <gml:upperCorner>90 180</gml:upperCorner>
+            <gml:lowerCorner>30 -130</gml:lowerCorner>
+            <gml:upperCorner>45 -110</gml:upperCorner>
           </gml:Envelope>
         </gml:boundedBy>
         <sos:time>
           <gml:TimePeriod>
+            <!-- Time period allows a variety of fixed (ISO 8601) and evaluated (now) expressions -->
             <gml:beginPosition>BEGINNING</gml:beginPosition>
             <gml:endPosition indeterminatePosition="now"/>
           </gml:TimePeriod>
         </sos:time>
-        <sos:procedure xlink:href="urn:ioos:station:AUTHORITY:STATION_1"/>
+        <!-- SOS 2.0 only allows one procedure list only one for future compatibility -->
+        <sos:procedure xlink:href="urn:ioos:network:AUTHORITY:favorites"/>
         <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/VALUE"/>
+        <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/COMPOSITE_VALUE"/>
         <sos:featureOfInterest xlink:href="FEATURE"/>
         <sos:responseFormat>text/xml;schema="om/1.0.0"</sos:responseFormat>
         <sos:responseFormat>text/csv</sos:responseFormat>
         <sos:resultModel>om:ObservationCollection</sos:resultModel>
         <sos:responseMode>inline</sos:responseMode>
       </sos:ObservationOffering>
-      
-      <!-- STATION_2 -->
-      <sos:ObservationOffering gml:id="STATION_2">
-        <gml:description>DESCRIPTION</gml:description>
-        <gml:name>urn:ioos:station:AUTHORITY:STATION_2</gml:name>
-        <gml:srsName>EPSG:4326</gml:srsName>
-        <gml:boundedBy>
-          <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-            <gml:lowerCorner>-90 -180</gml:lowerCorner>
-            <gml:upperCorner>90 180</gml:upperCorner>
-          </gml:Envelope>
-        </gml:boundedBy>
-        <sos:time>
-          <gml:TimePeriod>
-            <gml:beginPosition>BEGINNING</gml:beginPosition>
-            <gml:endPosition indeterminatePosition="now"/>
-          </gml:TimePeriod>
-        </sos:time>
-        <sos:procedure xlink:href="urn:ioos:station:AUTHORITY:STATION_2"/>
-        <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/VALUE"/>
-        <sos:featureOfInterest xlink:href="FEATURE"/>
-        <sos:responseFormat>text/xml;schema="om/1.0.0"</sos:responseFormat>
-        <sos:responseFormat>text/csv</sos:responseFormat>
-        <sos:resultModel>om:ObservationCollection</sos:resultModel>
-        <sos:responseMode>inline</sos:responseMode>
-      </sos:ObservationOffering>
+
     </sos:ObservationOfferingList>
   </sos:Contents>
 </sos:Capabilities>
