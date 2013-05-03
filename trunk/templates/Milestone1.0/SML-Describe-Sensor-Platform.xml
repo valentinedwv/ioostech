@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Template document for a generic (independant of feature type) Describe Sensor Platform -->
-<!-- Work in progress... Content and structure are final. Cleaning up formatting and comments  -->
 <!--  -->
-<!--  -->
-<!--  -->
+<!-- Since Milestone 1.0 really only addresses timeSeries and timeSeriesProfile, station -->
+<!-- is the default platform. In Milestone1.0 everything included here should be formally -->
+<!-- generalized to platform or this example should be broken into multiple platforms. -->
 <!--  -->
 <!--  -->
 <sml:SensorML 
@@ -14,19 +14,25 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
   xsi:schemaLocation="http://www.opengis.net/sensorML/1.0.1 http://schemas.opengis.net/sensorML/1.0.1/sensorML.xsd" 
   version="1.0.1">
+  
+  <!-- SERVICE VERSION METADATA -->
+  <sml:capabilities name="ioosServiceMetadata">
+    <swe:SimpleDataRecord>
+      <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
+        <gml:version>1.0</gml:version>
+      </gml:metaDataProperty>
+    </swe:SimpleDataRecord>
+  </sml:capabilities> 
+  
   <sml:member>
-    <!-- COMMENT: 
-      - Looks like sml:System gml:id is *not* required
-      - Added gml:name. Recommend its use?
-      -->
     <sml:System>
       <gml:description>Observations at urn:ioos:station:wmo:41001 buoy station, 
         150 NM East of Cape HATTERAS</gml:description>
       <gml:name>urn:ioos:station:wmo:41001</gml:name>
       
-      <!-- ===============================================================
-        STATION IDENTIFIERS
-        ================================================================== -->
+      <!-- ==================================================================== -->
+      <!-- PLATFORM IDENTIFIERS                                                 -->
+      <!-- ==================================================================== -->
       <sml:identification>
         <sml:IdentifierList>
           <!-- The 3 identifiers listed below are MANDATORY -->
@@ -54,12 +60,24 @@
         </sml:IdentifierList>
       </sml:identification>
       
-      <!-- ===============================================================
-        STATION CLASSIFIERS
-        ================================================================== -->
+      <!-- ==================================================================== -->
+      <!-- PLATFORM CLASSIFIERS                                                 -->
+      <!-- Manditory classifiers for all platforms:                             -->
+      <!--   platformType                                                       -->
+      <!--   operatorSector                                                     -->
+      <!--   publisher                                                          -->
+      <!--   parentNetwork                                                      -->
+      <!-- List as many as needed for the platform                              -->
+      <!-- ==================================================================== -->
       <sml:classification>
         <sml:ClassifierList>
-          <!-- MANDATORY: platformType, operatorSector, publisher -->
+          <!-- At least one parent network must reference an IOOS codespace and list the RA Acronym -->
+          <sml:classifier name="parentNetwork">
+            <sml:Term definition="http://mmisw.org/ont/ioos/definition/parentNetwork">
+              <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
+              <sml:value>NANOOS</sml:value>
+            </sml:Term>
+          </sml:classifier>
           <sml:classifier name="platformType">
             <sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType">
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/>
@@ -78,26 +96,14 @@
               <sml:value>NANOOS</sml:value>
             </sml:Term>
           </sml:classifier>
-          
           <sml:classifier name="sponsor">
             <sml:Term definition="http://mmisw.org/ont/ioos/definition/sponsor">
               <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
               <sml:value>ACE</sml:value>
             </sml:Term>
           </sml:classifier>
-          <!-- One or more parentNetwork elements are allowed.  
-            At least one MUST reference an IOOS codespace and list the RA Acronym 
-            COMMENT: THE USE OF THE LABEL "NETWORK" BOTH IN THIS ORGANIZATIONAL SENSE
-                     AND IN THE SENSE OF NETWORK OFFERING MAY BE CONFUSING! -->
-          <sml:classifier name="parentNetwork">
-            <sml:Term definition="http://mmisw.org/ont/ioos/definition/parentNetwork">
-              <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/organization"/>
-              <sml:value>NANOOS</sml:value>
-            </sml:Term>
-          </sml:classifier>
         </sml:ClassifierList>
       </sml:classification>
-      <!-- =================================================================== -->
 
       <!-- sml:validTime represents the date range of the validity of this document -->
       <sml:validTime>
@@ -107,66 +113,68 @@
         </gml:TimePeriod>
       </sml:validTime>
 
-      <!-- SERVICE METADATA -->
-      <sml:capabilities name="ioosServiceMetadata">
-        <swe:SimpleDataRecord>
-          <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
-            <gml:version>1.0</gml:version>
-          </gml:metaDataProperty>
-        </swe:SimpleDataRecord>
-      </sml:capabilities> 
-      
       <!-- MANDATORY IF NETWORK OFFERINGS ARE AVAILABLE -->
       <!-- COMMENT: SHANE'S PROPOSAL FOR NETWORK OFFERING, INSTEAD OF USING sml:classifier 
            possible alternate sml:capabilities name attribute values:
            networkOfferings, parentProcedures, networkProcedures -->
+      <!-- ??????? WHY IS THIS HERE - Why is it useful? ?????? -->
       <sml:capabilities name="networkProcedures">
         <swe:SimpleDataRecord>
-          <gml:metaDataProperty xlink:title="network-all" xlink:href="urn:ioos:network:nanoos:all" />
+          <gml:metaDataProperty xlink:href="urn:ioos:network:nanoos:all" />
         </swe:SimpleDataRecord>
       </sml:capabilities>
       
-      <!-- CONTACTS
-        MANDATORY: operator, publisher -->
-      <sml:contact xlink:role="http://mmisw.org/ont/ioos/definition/operator">
-        <sml:ResponsibleParty>
-          <sml:organizationName>PNW Buoys</sml:organizationName>
-          <sml:contactInfo>
-            <sml:address>
-              <!-- MANDATORY ELEMENTS: 
-                   country [Values: USA|<COUNTRY NAME>|NON-USA],
-                   electronicMailAddress
-                Other elements are optional, but "city" is strongly encouraged
-                for USA operators. -->
-              <sml:deliveryPoint>1007 Balch Blvd.</sml:deliveryPoint>
-              <sml:city>Fremont</sml:city>
-              <sml:administrativeArea>WA</sml:administrativeArea>
-              <sml:postalCode>98195</sml:postalCode>
-              <sml:country>USA</sml:country>
-              <sml:electronicMailAddress>contact@buoys.com</sml:electronicMailAddress>
-            </sml:address>
-            <!-- sml:onlineResource is optional but strongly encouraged for operator --> 
-            <sml:onlineResource xlink:href="http://pnw.buoyoperator.org"/>
-          </sml:contactInfo>
-        </sml:ResponsibleParty>
+      <!-- =============================================================== -->
+      <!-- CONTACTS                                                        -->
+      <!-- List all publisher and operator contacts that apply to this     -->
+      <!-- platform                                                        -->
+      <!-- Mandatory contacts for all platforms:                           -->
+      <!--   operator                                                      -->
+      <!--   publisher                                                     -->
+      <!-- Consider using xlink:href to external document for concision    -->
+      <!-- =============================================================== -->
+      <sml:contact>
+        <sml:ContactList>
+          <sml:member xlink:role="http://mmisw.org/ont/ioos/definition/operator">
+            <sml:ResponsibleParty>
+              <sml:organizationName>PNW Buoys</sml:organizationName>
+              <sml:contactInfo>
+                <sml:address>
+                  <sml:deliveryPoint>1007 Balch Blvd.</sml:deliveryPoint>
+                  <!-- Optional: City; but strongly encouraged  -->
+                  <sml:city>Fremont</sml:city>
+                  <sml:administrativeArea>WA</sml:administrativeArea>
+                  <sml:postalCode>98195</sml:postalCode>
+                  <!-- Required: country [Values: USA|<COUNTRY NAME>|NON-USA] -->
+                  <sml:country>USA</sml:country>
+                  <!-- Required: electronicMailAddress -->
+                  <sml:electronicMailAddress>contact@buoys.com</sml:electronicMailAddress>
+                </sml:address>
+                <!-- Optional: onlineResource; but strongly encouraged for operator --> 
+                <sml:onlineResource xlink:href="http://pnw.buoyoperator.org"/>
+              </sml:contactInfo>
+            </sml:ResponsibleParty>
+          </sml:member>
+          <sml:member xlink:role="http://mmisw.org/ont/ioos/definition/publisher">
+            <sml:ResponsibleParty>
+              <sml:organizationName>NANOOS</sml:organizationName>
+              <sml:contactInfo>
+                <sml:address>
+                  <sml:country>USA</sml:country>
+                  <sml:electronicMailAddress>mayorga@apl.washington.edu</sml:electronicMailAddress>
+                </sml:address>
+                <sml:onlineResource xlink:href="http://nanoos.org"/>
+              </sml:contactInfo>
+            </sml:ResponsibleParty>
+          </sml:member>
+        </sml:ContactList>
       </sml:contact>
-      <sml:contact xlink:role="http://mmisw.org/ont/ioos/definition/publisher">
-        <sml:ResponsibleParty>
-          <sml:organizationName>NANOOS</sml:organizationName>
-          <sml:contactInfo>
-            <sml:address>
-              <sml:country>USA</sml:country>
-              <sml:electronicMailAddress>mayorga@apl.washington.edu</sml:electronicMailAddress>
-            </sml:address>
-            <sml:onlineResource xlink:href="http://nanoos.org"/>
-          </sml:contactInfo>
-        </sml:ResponsibleParty>
-      </sml:contact>
-      <!-- =================================================================== -->
       
-      <!-- DOCUMENTATION (OPTIONAL) -->
-      <!-- COMMENTS:
-           - Need to replace "qualityControlDocument with a MMI URI when it is available -->
+      <!-- =============================================================== -->
+      <!-- DOCUMENTATION (Optional: experimental in Milestone1.0)          -->
+      <!-- External resources for human consumption about this platform    -->
+      <!-- and the observation data it produces                            -->
+      <!-- =============================================================== -->
       <sml:documentation>
         <sml:DocumentList>
           <sml:member name="qc" xlink:arcrole="qualityControlDocument">
@@ -193,13 +201,11 @@
         </sml:DocumentList>
       </sml:documentation>
       
-      <!-- HISTORY (OPTIONAL)
-        WE HAVEN'T DISCUSSED THIS EXTENSIVELY. Discuss with group and decide 
-        what recommendation to make (conventions, etc) -->
-      <!-- Per discussion at IOOS DMAC meeting, from comment by Lisa H., 9/11/2012:
-        Use this scheme to include "status" messages (in the <gml:description> tag?), 
-        like NVS' status updates!! This is doable! Maybe we'd want to implement a set 
-        of standardized "event types" vocabulary, for sml:member@name? -->
+      <!-- =============================================================== -->
+      <!-- HISTORY (Optional: experimental in Milestone1.0)                -->
+      <!-- Events and status changes of the platform such as deployment    -->
+      <!-- and recovery                                                    -->
+      <!-- =============================================================== -->
       <sml:history>
         <sml:EventList>
           <sml:member name="deployment_start">
@@ -226,49 +232,35 @@
         </sml:EventList>
       </sml:history>
       
-      <!-- =================================================================== -->
-      <!-- LOCATION 
-      Station geographic location (lat & lon only, no z). Always use epsg 4326.
-      COMMENT: sml:location will not work for network procedures. It's been suggested
-      that for network procedures we use a gml:boundedBy/gml:Envelope instead, as
-      "Server implementations can include each station's location in child components if they 
-      choose, and clients can still get each child's location from its own DescribeSensor response." -->
+      <!-- =============================================================== -->
+      <!-- LOCATION                                                        -->
+      <!-- Station geographic location (lat & lon only, no z)              -->
+      <!-- Always use epsg 4326.                                           -->
+      <!-- For moving platforms use <gml:LineString>                       -->
+      <!-- =============================================================== -->
       <sml:location>
-        <gml:Point>
+        <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
         <gml:pos>34.7 -72.73</gml:pos>
         </gml:Point>
       </sml:location>
-
-      <!-- Example location for more complex platform types. Several GML types are possible including
-        points lines and curves
-        <sml:location>
-          <gml:LineString srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-            <gml:name>Sensor Location</gml:name>
-            <gml:pos>34.7 -72.73</gml:pos>
-            <gml:pos>34.8 -72.74</gml:pos>
-            <gml:pos>34.9 -72.75</gml:pos>
-          </gml:LineString>
-        </sml:location>
-      -->
       
-      <!-- =================================================================== -->
-            
-      <!-- ============================================================================= 
-        COMPONENTS 
-        ================================================================================ -->
-      <!-- COMMENTS
-        - Can a sensor altitude element be included in components?
-        - sml:component/sml:System/sml:documentation is optional.
-          To be used only if there's a relevant documentation or SensorML response.
-          Provide guidance on what to use there (eg, another describe sensor, metadata doc, etc)
-        - sml:System gml:id seems to be optional (not mandated by the schema)
-        - What convention should be used for gml:description?
-        - Use an sml:outputs block per sensor to specify the parameter and uom -->
+      <!-- =============================================================== -->
+      <!-- COMPONENTS                                                      -->
+      <!-- List all component platforms in the network offering            -->
+      <!-- Manditory Elements:                                             -->
+      <!--   identification - the names by with the platform is called     -->
+      <!--   validTime      - the time bounds of the platform data         -->
+      <!--   location*      - the location of the platform                 -->
+      <!--   outputs        - the quantities observed by this platform     -->
+      <!-- *location may be large but useful for platforms which move      -->
+      <!-- =============================================================== -->
       <sml:components>
         <sml:ComponentList>
-          <sml:component name="Sensor watertemp1">
-            <sml:System gml:id="sensor-watertemp1">
-              <gml:description>SENSOR DESCRIPTION</gml:description>
+          <!-- name should be a human readable label -->
+          <sml:component name="WatertempSensor1">
+            <sml:System >
+              <!-- Description is strongly suggested, but if it will not be useful omit it. -->
+              <gml:description>Surface water temperature sensor on WMO platform 41001</gml:description>
               <sml:identification xlink:href="urn:ioos:sensor:wmo:41001:watertemp1"/>
               <sml:documentation xlink:href="http://sdftest.ndbc.noaa.gov/sos/server.php?service=SOS&amp;request=DescribeSensor&amp;version=1.0.0&amp;outputformat=text/xml;subtype=&quot;sensorML/1.0.1&quot;&amp;procedure=urn:ioos:sensor:wmo:41001:watertemp1"/>
               <sml:outputs>
@@ -283,7 +275,6 @@
             </sml:System>
           </sml:component>
           <sml:component name="Sensor ct1">
-            <!-- ADD A SENSOR ALTITUDE ELEMENT SOMEWHERE HERE -->
             <sml:System gml:id="sensor-ct1">
               <gml:description/>
               <sml:identification xlink:href="urn:ioos:sensor:wmo:41001:ct1"/>
