@@ -61,7 +61,7 @@
           </sml:identifier>
           <sml:identifier name="longName">
             <sml:Term definition="http://mmisw.org/ont/ioos/definition/longName">
-              <sml:value>urn:ioos:network:nanoos:all Collection of all station assets available via the NANOOS SOS service</sml:value>
+              <sml:value>Collection of all station assets available via the NANOOS SOS service</sml:value>
             </sml:Term>
           </sml:identifier>
         </sml:IdentifierList>
