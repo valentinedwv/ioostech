@@ -181,6 +181,8 @@ Definitions:
 Version (deployment date, etc) is not included in the URN standard at this time.
 
 
+<div style="background-color:yellow;border:1px solid black;padding:10px;">
+
 ==Representing quality flags in `GetObservation` (need more editing)==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=15]
 
@@ -192,6 +194,7 @@ https://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SW
 
 The data array in the timeSeriesProfile provides additional structure on which to put a QC (quality) element for each timestep or profile. It is unfortunate that there is no obvious way to do the same for a timeSeries. Suggestions are welcome.
 
+</div>
 
 ==Requests with no time filtering==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=17]
