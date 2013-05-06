@@ -96,34 +96,6 @@ The versions of the international OGC standards and specifications used in the I
 
 This section contains IOOS specific rules that have been distilled from resolved issues or mailing list discussions. The rule should have a human readable identifier, be concise, and include a link to the original discussion for background info. Developers writing SOS clients and validators should be able to use these rules to guide their coding.
 
-==Lower Camel Case Names==
-Link: [http://code.google.com/p/ioostech/issues/detail?id=31]
-
-Names, titles, gml ids, and other attribute values in SOS XML documents meant as human readable labels should use lower camel case (ex. sensorLocation). An exception is made for labels containing the short version of an identifier or definition URI that contains underscores (e.g. air_temperature, station_12, etc). Another exception is made for network-all. This rule does not apply to identifier values and terms from established vocabularies (e.g. http://mmisw.org/ont/cf/parameter/air_temperature or urn:ioos:station:xoos:the_station). Text containing acronyms should treat the acronym component as a normal word for readability (e.g. bprLocation instead of BPRLocation).
-
-==Asset URN identifiers==
-Link: [http://code.google.com/p/ioostech/issues/detail?id=14]
-
-Link: [https://groups.google.com/forum/#!topic/ioostech_dev/F1SBuamGUrI/discussion]
-
-Asset URN identifiers generally follow the convention explained at [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers], although this page needs to be updated.
-
-Supported asset URN ids are network, sensor, and station. Platform is not a supported id.
-
-Formats:
-
-  * Station: urn:ioos:station:wmo:41001
-  * Sensor: urn:ioos:sensor:wmo:41001:baro1
-  * Network: urn:ioos:network:aoos:all-barometric
-
-Definitions:
-
-  * Station: http://mmisw.org/ont/ioos/definition/stationID
-  * Sensor: http://mmisw.org/ont/ioos/definition/sensorID
-  * Network: http://mmisw.org/ont/ioos/definition/networkID
-
-Version (deployment date, etc) is not included in the URN standard at this time.
-
 
 ==Composite phenomena==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=1]
@@ -171,6 +143,12 @@ In order to keep up the interoperability with IOOS-compliant services, the follo
     * in GetObservation – SWE 1.0.1 (prefix `<swe:>`) except for the contents of `<om:result>`, which shall use SWE 2.0 (prefix `<swe2:>`).
 
 
+==URN vs. URL==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=3]
+
+The use of both URNs and URLs are allowed for now, but it is recommended to use URLs where possible. URNs should be used only where a specific IOOS guideline has stipulated it (mainly for station id, sensor id, and "network" id).
+
+
 ==Support of `<observedProperty>`==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=4]
 
@@ -179,10 +157,41 @@ In general, SOS servers should only support what it advertises in the GetCapabil
 IOOS-compliant SOS server shall be able to advertise and accept fully qualified `<observedProperty>` parameters.
 
 
-==URN vs. URL==
-Link: [http://code.google.com/p/ioostech/issues/detail?id=3]
+==Asset URN identifiers==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=14]
 
-The use of both URNs and URLs are allowed for now, but it is recommended to use URLs where possible. URNs should be used only where a specific IOOS guideline has stipulated it (mainly for station id, sensor id, and "network" id).
+Link: [https://groups.google.com/forum/#!topic/ioostech_dev/F1SBuamGUrI/discussion]
+
+Asset URN identifiers generally follow the convention explained at [https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers], although this page needs to be updated.
+
+Supported asset URN ids are network, sensor, and station. Platform is not a supported id.
+
+Formats:
+
+  * Station: urn:ioos:station:wmo:41001
+  * Sensor: urn:ioos:sensor:wmo:41001:baro1
+  * Network: urn:ioos:network:aoos:all-barometric
+
+Definitions:
+
+  * Station: http://mmisw.org/ont/ioos/definition/stationID
+  * Sensor: http://mmisw.org/ont/ioos/definition/sensorID
+  * Network: http://mmisw.org/ont/ioos/definition/networkID
+
+Version (deployment date, etc) is not included in the URN standard at this time.
+
+
+==Representing quality flags in `GetObservation` (need more editing)==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=15]
+
+The QC framework is significantly simplified using the new data structure with separate records for static and dynamic data. 
+In a timeSeries feature it becomes straight forward to add static QC metadata to a station or sensor and dynamic metadata to each quantity. There is still no good solution for QC metadata for all fields in a sensor record at a single timestep.
+https://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SWE-MultiStation-TimeSeries_QC.xml
+In a timeSeriesProfile feature it is possible to apply static QC metadata to a station or sensor and dynamic QC metadata to a profile, a bin or a quantity.
+https://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SWE-SingleStation-TimeSeriesProfile_QC.xml
+
+The data array in the timeSeriesProfile provides additional structure on which to put a QC (quality) element for each timestep or profile. It is unfortunate that there is no obvious way to do the same for a timeSeries. Suggestions are welcome.
+
 
 ==Requests with no time filtering==
 Link: [http://code.google.com/p/ioostech/issues/detail?id=17]
@@ -515,6 +524,10 @@ The description of the sensor position in `GetObservation` response consists of 
 }}}
 
 
+==Lower Camel Case Names==
+Link: [http://code.google.com/p/ioostech/issues/detail?id=31]
+
+Names, titles, gml ids, and other attribute values in SOS XML documents meant as human readable labels should use lower camel case (ex. sensorLocation). An exception is made for labels containing the short version of an identifier or definition URI that contains underscores (e.g. air_temperature, station_12, etc). Another exception is made for network-all. This rule does not apply to identifier values and terms from established vocabularies (e.g. http://mmisw.org/ont/cf/parameter/air_temperature or urn:ioos:station:xoos:the_station). Text containing acronyms should treat the acronym component as a normal word for readability (e.g. bprLocation instead of BPRLocation).
 
 
 == Observation values !TextEncoding separators==
