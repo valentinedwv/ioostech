@@ -10,6 +10,7 @@
 <!-- Most any element may be static or dynamic, but the static fields must be encoded inline, while -->
 <!-- The dyamic elements must be block encoded in the data array. -->
 <!--  -->
+<!-- TODO: Finalize some vocabulary issues.  See http://wiki.esipfed.org/index.php/Proposing_Standard_Names_for_data_from_Current_Meters_and_Profilers for some helpful information. -->
 <!-- Description of data -->
 <!-- SWE DataRecord containing 1 Station: -->
 <!-- Station 1 has 2 sensors -->
