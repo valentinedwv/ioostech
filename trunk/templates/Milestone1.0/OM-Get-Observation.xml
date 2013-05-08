@@ -48,8 +48,11 @@
       <!-- Should include station(s) name and location as well as      -->
       <!-- sensor or procedure information if possible                 -->
       <!-- =========================================================== -->
-      <gml:description>Observations at point station urn:ioos:station:wmo:41001, 150 NM East of Cape
-        HATTERAS</gml:description>
+      <gml:description>
+        Observations at point station urn:ioos:station:wmo:41001, 150 NM East of Cape
+        HATTERAS. Observations at point station urn:ioos:station:wmo:41002, S HATTERAS 
+        - 250 NM East of Charleston, SC
+      </gml:description>
 
       <!-- =========================================================== -->
       <!-- samplingTime                                                -->
@@ -115,7 +118,7 @@
           <!-- Geographic (lat lon) Bounding Box of this feature -->
           <gml:boundedBy>
             <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-              <gml:lowerCorner>34.7 -72.73</gml:lowerCorner>
+              <gml:lowerCorner>32.38 -75.42</gml:lowerCorner>
               <gml:upperCorner>34.7 -72.73</gml:upperCorner>
             </gml:Envelope>
           </gml:boundedBy>
@@ -142,6 +145,10 @@
                 <gml:Point>
                   <gml:name>urn:ioos:station:wmo:41001</gml:name>
                   <gml:pos>34.7 -72.73</gml:pos>
+                </gml:Point>
+                <gml:Point>
+                <gml:name>urn:ioos:station:wmo:41002</gml:name>
+                  <gml:pos>32.382 -75.415</gml:pos>
                 </gml:Point>
               </gml:pointMembers>
             </gml:MultiPoint>
