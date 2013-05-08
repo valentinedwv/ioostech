@@ -359,6 +359,17 @@
       <!-- Count of records in swe:values -->
       <swe2:elementCount>
         <swe2:Count>
+          <swe2:quality>
+            <swe2:Category>
+              <swe2:constraint>
+                <swe2:AllowedTokens>
+                  <swe2:value>a</swe2:value>
+                  <swe2:value>b</swe2:value>
+                  <swe2:value>c</swe2:value>
+                </swe2:AllowedTokens>
+              </swe2:constraint>
+            </swe2:Category>
+          </swe2:quality>
           <swe2:value>13</swe2:value>
         </swe2:Count>
       </swe2:elementCount>
@@ -587,19 +598,19 @@
       </swe2:encoding>
       <swe2:values>
         <!-- The first three records are from wmo_41001_sensor1 and contain quality values -->
-        2009-05-23T00:00:00Z,wmo_41001_sensor1,15.4,T,a,r,2.0,280
-        2009-05-23T01:00:00Z,wmo_41001_sensor1,15.8,M,j,j,1.8,121
-        2009-05-23T02:00:00Z,wmo_41001_sensor1,15.6,M,,,1.0,142
-        2009-05-23T00:00:00Z,wmo_41001_sensor2,5.6,8.0
-        2009-05-23T01:00:00Z,wmo_41001_sensor2,5.8,8.2
-        2009-05-23T02:00:00Z,wmo_41001_sensor2,5.7,8.5
-        2009-05-23T00:00:00Z,wmo_41002_sensor1,16.2
-        2009-05-23T01:00:00Z,wmo_41002_sensor1,16.4
-        2009-05-23T02:00:00Z,wmo_41002_sensor1,16.5
-        2009-05-23T00:00:00Z,wmo_41002_sensor2,6.1
-        2009-05-23T01:00:00Z,wmo_41002_sensor2,6.3
-        2009-05-23T02:00:00Z,wmo_41002_sensor2,6.5
-        2009-05-23T01:00:00Z,wmo_41003_sensor1,15.8
+        2009-05-23T00:00:00Z,a,wmo_41001_sensor1,15.4,T,a,r,2.0,280
+        2009-05-23T01:00:00Z,b,wmo_41001_sensor1,15.8,M,j,j,1.8,121
+        2009-05-23T02:00:00Z,c,wmo_41001_sensor1,15.6,M,,,1.0,142
+        2009-05-23T00:00:00Z,a,wmo_41001_sensor2,5.6,8.0
+        2009-05-23T01:00:00Z,b,wmo_41001_sensor2,5.8,8.2
+        2009-05-23T02:00:00Z,c,wmo_41001_sensor2,5.7,8.5
+        2009-05-23T00:00:00Z,a,wmo_41002_sensor1,16.2
+        2009-05-23T01:00:00Z,b,wmo_41002_sensor1,16.4
+        2009-05-23T02:00:00Z,c,wmo_41002_sensor1,16.5
+        2009-05-23T00:00:00Z,a,wmo_41002_sensor2,6.1
+        2009-05-23T01:00:00Z,b,wmo_41002_sensor2,6.3
+        2009-05-23T02:00:00Z,c,wmo_41002_sensor2,6.5
+        2009-05-23T01:00:00Z,a,wmo_41003_sensor1,15.8
       </swe2:values>
     </swe2:DataArray>
   </swe2:field>
