@@ -14,7 +14,8 @@
   xmlns:swe2="http://www.opengis.net/swe/2.0"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd">
+  xsi:schemaLocation="http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd"
+  definition="DEFINE_ME_http://mmisw.org/ont/ioos/definition/ObservationRecord">
 
   <!-- STATIC DATA -->
   <!-- This field "stations" contains static data for all stations and sensors in the response -->
@@ -57,6 +58,7 @@
             <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
               referenceFrame="https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml"
               localFrame="#wmo_41001_frame">
+              
               <!-- Vector: -->
               <!-- The coordinate vector defining the station location in the specified reference frame. -->
               <!--  -->
