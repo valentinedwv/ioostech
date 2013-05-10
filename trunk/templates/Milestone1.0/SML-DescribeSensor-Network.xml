@@ -87,31 +87,6 @@
               <sml:value>NANOOS</sml:value>
             </sml:Term>
           </sml:classifier>
-          <sml:classifier name="platformType">
-            <sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType">
-              <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/>
-              <sml:value>buoy</sml:value>
-            </sml:Term>
-          </sml:classifier>
-          <sml:classifier name="platformType">
-            <sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType">
-              <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/>
-              <sml:value>dock</sml:value>
-            </sml:Term>
-          </sml:classifier>
-          <sml:classifier name="platformType">
-            <sml:Term definition="http://mmisw.org/ont/ioos/definition/platformType">
-              <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/platform"/>
-              <sml:value>boat</sml:value>
-            </sml:Term>
-          </sml:classifier>
-          <sml:classifier name="operatorSector">
-            <sml:Term definition="http://mmisw.org/ont/ioos/definition/operatorSector">
-              <sml:codeSpace xlink:href="http://mmisw.org/ont/ioos/sector"/>
-              <sml:value>academic</sml:value>
-            </sml:Term>
-          </sml:classifier>          
-        
         </sml:ClassifierList>
       </sml:classification>
 

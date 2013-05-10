@@ -91,7 +91,8 @@
       </ows:DCP>
       <ows:Parameter name="outputFormat">
         <ows:AllowedValues>
-          <ows:Value>text/xml;subtype="sensorML/1.0.0"</ows:Value>
+          <!-- Specify the flavor of SML described by these templates -->
+          <ows:Value>text/xml;subtype="sensorML/1.0.1/profiles/ioos_sos/1.0"</ows:Value>
         </ows:AllowedValues>
       </ows:Parameter>
     </ows:Operation>

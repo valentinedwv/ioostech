@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Template document for a generic (independant of feature type) Describe Sensor Platform -->
+<!-- Template document for a generic (independant of feature type) Describe Sensor Station -->
 <!--  -->
-<!-- Since Milestone 1.0 really only addresses timeSeries and timeSeriesProfile, station -->
-<!-- is the default platform. In Milestone1.0 everything included here should be formally -->
-<!-- generalized to platform or this example should be broken into multiple platforms. -->
-<!--  -->
+<!-- Since Milestone 1.0 really only addresses timeSeries and timeSeriesProfile, only station -->
+<!-- is addressed here.
 <!--  -->
 <sml:SensorML 
   xmlns:sml="http://www.opengis.net/sensorML/1.0.1" 
@@ -113,14 +111,21 @@
         </gml:TimePeriod>
       </sml:validTime>
 
-      <!-- MANDATORY IF NETWORK OFFERINGS ARE AVAILABLE -->
-      <!-- COMMENT: SHANE'S PROPOSAL FOR NETWORK OFFERING, INSTEAD OF USING sml:classifier 
-           possible alternate sml:capabilities name attribute values:
-           networkOfferings, parentProcedures, networkProcedures -->
-      <!-- ??????? WHY IS THIS HERE - Why is it useful? ?????? -->
+
+      <!-- =============================================================== -->
+      <!-- CAPABILITIES                                                    -->
+      <!-- It is mandatory to list the networks to with this station       -->
+      <!-- belongs. DescribeSensor Sensor will list the parent station.    -->
+      <!-- =============================================================== -->
       <sml:capabilities name="networkProcedures">
         <swe:SimpleDataRecord>
           <gml:metaDataProperty xlink:href="urn:ioos:network:nanoos:all" />
+        </swe:SimpleDataRecord>
+        <swe:SimpleDataRecord>
+          <gml:metaDataProperty xlink:href="urn:ioos:network:nanoos:network1" />
+        </swe:SimpleDataRecord>
+        <swe:SimpleDataRecord>
+          <gml:metaDataProperty xlink:href="urn:ioos:network:nanoos:network2" />
         </swe:SimpleDataRecord>
       </sml:capabilities>
       
