@@ -65,7 +65,7 @@
             <!-- relative position are available for a sensor, SWE 2.0 clearly defines how to record it. Generally, -->
             <!-- for IOOS buoy instruments we believe just specifying the height is the appropriate solution. -->
             <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
-              referenceFrame="https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml"
+              referenceFrame="http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&amp;2=http://www.opengis.net/def/crs/EPSG/0/5829"
               localFrame="#wmo_41001_frame">
               <!-- Vector: -->
               <!-- The coordinate vector defining the station location in the specified reference frame. -->
@@ -196,7 +196,7 @@
 
           <swe2:field name="platformLocation">
             <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
-              referenceFrame="https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml"
+              referenceFrame="http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&amp;2=http://www.opengis.net/def/crs/EPSG/0/5829"
               localFrame="#wmo_41002_frame">
               <swe2:coordinate name="latitude">
                 <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
@@ -291,7 +291,7 @@
 
           <swe2:field name="platformLocation">
             <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
-              referenceFrame="https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml"
+              referenceFrame="http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&amp;2=http://www.opengis.net/def/crs/EPSG/0/5829"
               localFrame="#wmo_41003_frame">
               <swe2:coordinate name="latitude">
                 <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
