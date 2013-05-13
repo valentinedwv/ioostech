@@ -115,8 +115,11 @@
   </ows:OperationsMetadata>
   <sos:Contents>
     <!-- IoosTech Convention: -->
-    <!-- Please list only network groupings not idividual platforms or sensors -->
-    <!-- Use describe sensor network to get a listing of the platforms in a network -->
+    <!-- NetworkAll is a required grouping of stations. -->
+    <!-- Individual stations and other networks may be offered as well. -->
+    <!-- It is recomended to use DescribeSensor-Network to get a listing -->
+    <!-- of the platforms in a network rather than list them as offerings -->
+    <!-- in the GetCaps. -->
     <sos:ObservationOfferingList>
     
       <!-- NETWORK_ALL -->

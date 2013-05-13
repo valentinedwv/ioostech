@@ -2,7 +2,7 @@
 <!-- Template document for a generic (independant of feature type) Describe Sensor Station -->
 <!--  -->
 <!-- Since Milestone 1.0 really only addresses timeSeries and timeSeriesProfile, only station -->
-<!-- is addressed here.
+<!-- is addressed here. -->
 <!--  -->
 <sml:SensorML 
   xmlns:sml="http://www.opengis.net/sensorML/1.0.1" 
@@ -104,12 +104,15 @@
       </sml:classification>
 
       <!-- sml:validTime represents the date range of the validity of this document -->
-      <sml:validTime>
-        <gml:TimePeriod>
-          <gml:beginPosition>2010-07-14T10:00:00.000Z</gml:beginPosition>
-          <gml:endPosition>2012-12-27T19:00:00.000Z</gml:endPosition>
-        </gml:TimePeriod>
-      </sml:validTime>
+      <sml:capabilities name="observationTimeRange">
+        <swe:DataRecord>
+          <swe:field name="observationTimeRange">
+            <swe:TimeRange definition="DEFINE_ME_http://mmisw.org/ont/ioos/definition/observationTimeRange">
+              <swe:value>2008-04-28T08:00:00.000Z 2012-12-27T19:00:00.000Z</swe:value>
+            </swe:TimeRange>
+          </swe:field>
+        </swe:DataRecord>
+      </sml:capabilities>     
 
 
       <!-- =============================================================== -->
@@ -119,13 +122,21 @@
       <!-- =============================================================== -->
       <sml:capabilities name="networkProcedures">
         <swe:SimpleDataRecord>
-          <gml:metaDataProperty xlink:href="urn:ioos:network:nanoos:all" />
-        </swe:SimpleDataRecord>
-        <swe:SimpleDataRecord>
-          <gml:metaDataProperty xlink:href="urn:ioos:network:nanoos:network1" />
-        </swe:SimpleDataRecord>
-        <swe:SimpleDataRecord>
-          <gml:metaDataProperty xlink:href="urn:ioos:network:nanoos:network2" />
+          <swe:field name="network1">
+            <swe:Text definition="http://mmsiw.org/ont/ioos/definition/networkID">
+              <swe:value>urn:ioos:network:nanoos:all</swe:value>
+            </swe:Text>
+          </swe:field>
+          <swe:field name="network2">
+            <swe:Text definition="http://mmsiw.org/ont/ioos/definition/networkID">
+              <swe:value>urn:ioos:network:nanoos:network1</swe:value>
+            </swe:Text>
+          </swe:field>
+          <swe:field name="network3">
+            <swe:Text definition="http://mmsiw.org/ont/ioos/definition/networkID">
+              <swe:value>urn:ioos:network:nanoos:network2</swe:value>
+            </swe:Text>
+          </swe:field>
         </swe:SimpleDataRecord>
       </sml:capabilities>
       
@@ -253,9 +264,9 @@
       <!-- COMPONENTS                                                      -->
       <!-- List all component platforms in the network offering            -->
       <!-- Manditory Elements:                                             -->
+      <!--   description    - describe the instrument/sensor               -->
       <!--   identification - the names by with the platform is called     -->
-      <!--   validTime      - the time bounds of the platform data         -->
-      <!--   location*      - the location of the platform                 -->
+      <!--   documentation  - reference to docuemtation about the sensor   -->
       <!--   outputs        - the quantities observed by this platform     -->
       <!-- *location may be large but useful for platforms which move      -->
       <!-- =============================================================== -->
