@@ -124,24 +124,24 @@ All schemas used for validation in these tests can be found at: http://schemas.o
 ==What is tested==
 
  * GetCapabilities, GET method
- * DescribeSenor, POST method
+ * DescribeSensor, POST method
  * GetObservation, POST method
 
 ==What is not tested==
 
- * DescribeSenor, GET method
+ * DescribeSensor, GET method
  * GetObservation, GET method
  * GetObservation with "result" parameters/filters
  * Optional operations: 
-   ** DescribeFeatureType
-   ** DescribeObservationType
-   ** DescribeResultModel
-   ** GetObservationById
-   ** GetResult
-   ** GetFeatureOfInterest
-   ** GetFeatureOfInterestTime
-   ** InsertObservation
-   ** RegisterSensor
+   ** `DescribeFeatureType`
+   ** `DescribeObservationType`
+   ** `DescribeResultModel`
+   ** `GetObservationById`
+   ** `GetResult`
+   ** `GetFeatureOfInterest`
+   ** `GetFeatureOfInterestTime`
+   ** `InsertObservation`
+   ** `RegisterSensor`
 
 
 ==Test Decomposition==
