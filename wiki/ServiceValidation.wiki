@@ -1,5 +1,5 @@
-#summary One-sentence summary of this page.
-
+#summary Draft brief on OGC Services Validation
+#sidebar SOSTableOfContents
 
 =Service Validation=
 
