@@ -24,6 +24,7 @@
    * [SOSRefImplementWorkshop_Day3Agenda Day Three]
  * [CFFeatureTypes]
  * [SOSTesting]
+   * [ServiceValidation]
    * [SOSSurvey]
    * [SOSComponentVersions]
    * [SOSVersions]
