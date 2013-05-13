@@ -89,7 +89,7 @@ Some aspects of validation, and questions that validation should provide answers
  # etc.
 
 
-=OGC SOS 1.0.0 r4 Compliance Testing=
+=`OGC SOS 1.0.0 r4 Compliance Testing`=
 
 ==Overview==
 
@@ -133,15 +133,15 @@ All schemas used for validation in these tests can be found at: http://schemas.o
  * GetObservation, GET method
  * GetObservation with "result" parameters/filters
  * Optional operations: 
-   ** `DescribeFeatureType`
-   ** `DescribeObservationType`
-   ** `DescribeResultModel`
-   ** `GetObservationById`
-   ** `GetResult`
-   ** `GetFeatureOfInterest`
-   ** `GetFeatureOfInterestTime`
-   ** `InsertObservation`
-   ** `RegisterSensor`
+   ** DescribeFeatureType
+   ** DescribeObservationType
+   ** DescribeResultModel
+   ** GetObservationById
+   ** GetResult
+   ** GetFeatureOfInterest
+   ** GetFeatureOfInterestTime
+   ** InsertObservation
+   ** RegisterSensor
 
 
 ==Test Decomposition==
