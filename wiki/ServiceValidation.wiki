@@ -61,7 +61,7 @@ For the purposes of this testing, the controlling documents for the DMAC service
    ** [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SWE-MultiStation-TimeSeries_QC.xml SWE-MultiStation-TimeSeries_QC.xml]
    ** [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SWE-SingleStation-SingleProperty-TimeSeries.xml SWE-SingleStation-SingleProperty-TimeSeries.xml]
    ** [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SWE-SingleStation-TimeSeriesProfile.xml SWE-SingleStation-TimeSeriesProfile.xml]
-   ** [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SWE-SingleStation-TimeSeriesProfile_QC.xml SWE-SingleStation-TimeSeriesProfile_QC.xml]
+   ** [SWE-SingleStation-TimeSeriesProfile_QC.xml]
  * List of entry points, and schedule of IOOS SOS implementation at the National Data Buoy Center (NDBC), Center for Operational Oceanographic Products and Services (CO-OPS), and 11 regions.
 
 
