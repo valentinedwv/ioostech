@@ -411,8 +411,7 @@ Link: [http://code.google.com/p/ioostech/issues/detail?id=16]
 The description of the sensor position in `GetObservation` response consists of 3 parts: (1) a 3D Compound CRS for use as a global Reference Frame; (2) description of the Local Frame for a platform; and (3) description of the sensor position relative to the platform Local Frame:
 
 1. *3D Compound CRS*: 
-      * for floating, surface buoys, IOOS has specified a 3D CRS with EPSG::4326 (WGS84 Geoid) for the horizontal reference frame (latitude/longitude), and EPSG::5829 (Instantaneous water level uncorrected for tide with vertical axis upward direction) for the vertical reference (the definition is currently located in the google code repository but will be moved to a more appropriate repository in the future);
-      * for a tide gauge or a station at a fixed location relative to the Geoid (MSL), the 3D CRS should be EPSG::4979
+      * the GML definition of the 3D Compound CRS looks as follows:
 
 {{{
 <gml:CompoundCRS xmlns:gml="http://www.opengis.net/gml"
@@ -427,7 +426,13 @@ The description of the sensor position in `GetObservation` response consists of 
 </gml:CompoundCRS> 
 }}}
 
+      * for floating, surface buoys, IOOS has specified a 3D CRS with EPSG::4326 (WGS84 Geoid) for the horizontal reference frame (latitude/longitude), and EPSG::5829 (Instantaneous water level uncorrected for tide with vertical axis upward direction) for the vertical reference;
+      * for a tide gauge or a station at a fixed location relative to the Geoid (MSL), the 3D CRS should be EPSG::4979
+      * if both horizontal and vertical CRSs are registered with the EPSG Register, the Compound CRS shall be resolved via single URI by the OGC CRS resolver; for example, the IOOS 3D Compound CRS defined above, shall use the following URI (the axes order shall be exact):
 
+{{{
+http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&2=http://www.opengis.net/def/crs/EPSG/0/5829
+}}}
 
 2. *Platform Local Frame* - the coordinate vector is specified that describes the station location in the 3D CRS Reference Frame:
 
@@ -445,7 +450,7 @@ The description of the sensor position in `GetObservation` response consists of 
               <swe2:field name="platformLocation">
                 <swe2:Vector
                   definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation"
-                  referenceFrame=https://ioostech.googlecode.com/svn/trunk/IoosCRS/IoosBuoyCRS.xml
+                  referenceFrame=http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&2=http://www.opengis.net/def/crs/EPSG/0/5829
                   <!-- For a tide gauge the referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4979" -->
                   localFrame="#PlatformFrame">
                   <swe2:coordinate name="latitude">
