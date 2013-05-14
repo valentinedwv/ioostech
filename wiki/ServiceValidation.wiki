@@ -1,6 +1,8 @@
 #summary Draft brief on OGC Services Validation
 #sidebar SOSTableOfContents
 
+<wiki:toc max_depth="3" />
+
 =Service Validation=
 
 The US IOOS is developing and deploying the DMAC standards in order to ensure interoperable, quality-controlled ocean data that comes from various sources such as academia, federal agencies, private sector industries, or local governments. The standards shall be applied to the IOOS partners within the framework of the partners’ offerings quality verification process that should finally result in formal certification. 
