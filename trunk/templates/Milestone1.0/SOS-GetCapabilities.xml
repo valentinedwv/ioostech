@@ -146,8 +146,7 @@
         <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/VALUE"/>
         <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/COMPOSITE_VALUE"/>
         <sos:featureOfInterest xlink:href="FEATURE"/>
-        <sos:responseFormat>text/xml;schema="om/1.0.0"</sos:responseFormat>
-        <sos:responseFormat>text/csv</sos:responseFormat>
+        <sos:responseFormat>text/xml;schema="om/1.0.0/profiles/ioos_sos/1.0"</sos:responseFormat>
         <sos:resultModel>om:ObservationCollection</sos:resultModel>
         <sos:responseMode>inline</sos:responseMode>
       </sos:ObservationOffering>
@@ -179,8 +178,7 @@
         <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/VALUE"/>
         <sos:observedProperty xlink:href="http://mmisw.org/ont/cf/parameter/COMPOSITE_VALUE"/>
         <sos:featureOfInterest xlink:href="FEATURE"/>
-        <sos:responseFormat>text/xml;schema="om/1.0.0"</sos:responseFormat>
-        <sos:responseFormat>text/csv</sos:responseFormat>
+        <sos:responseFormat>text/xml;schema="om/1.0.0/profiles/ioos_sos/1.0"</sos:responseFormat>
         <sos:resultModel>om:ObservationCollection</sos:resultModel>
         <sos:responseMode>inline</sos:responseMode>
       </sos:ObservationOffering>
