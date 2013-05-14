@@ -163,7 +163,7 @@
                   <sml:city>Fremont</sml:city>
                   <sml:administrativeArea>WA</sml:administrativeArea>
                   <sml:postalCode>98195</sml:postalCode>
-                  <!-- Required: country [Values: USA|<COUNTRY NAME>|NON-USA] -->
+                  <!-- Required: country [Values: USA|(COUNTRY NAME)|NON-USA] -->
                   <sml:country>USA</sml:country>
                   <!-- Required: electronicMailAddress -->
                   <sml:electronicMailAddress>contact@buoys.com</sml:electronicMailAddress>
@@ -254,7 +254,7 @@
       <!-- LOCATION                                                        -->
       <!-- Station geographic location (lat & lon only, no z)              -->
       <!-- Always use epsg 4326.                                           -->
-      <!-- For moving platforms use <gml:LineString>                       -->
+      <!-- For moving platforms use gml:LineString                         -->
       <!-- =============================================================== -->
       <sml:location>
         <gml:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
