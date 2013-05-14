@@ -89,7 +89,7 @@ Some aspects of validation, and questions that validation should provide answers
  # etc.
 
 
-=`OGC SOS 1.0.0 r4 Compliance Testing`=
+=`OGC SOS 1.0.0 r6 Compliance Testing`=
 
 ==Overview==
 
@@ -120,6 +120,10 @@ Service being tested must use these namespaces:
 
 All schemas used for validation in these tests can be found at: http://schemas.opengis.net/ 
 
+
+==Release Notes==
+
+Release notes are available from the [https://svn.opengeospatial.org/ogc-projects/cite/scripts/sos/1.0.0/tags/r6/web/relnotes.txt relnotes.txt].
 
 ==What is tested==
 
