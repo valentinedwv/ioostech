@@ -3,7 +3,7 @@
 
  * [SOSGuidelines Guidelines for Implementing SOS]
    * [SOSGuidelines#SOS_Requests Request Syntax]
-   * [GetCapabilities#Request GetCapabilities]
+     * [GetCapabilities#Request GetCapabilities]
      * [DescribeSensor#Request DescribeSensor]
      * [GetObservation#Request GetObservation]
    * [SOSGuidelines#SOS_Requests SOS Response Formats]
