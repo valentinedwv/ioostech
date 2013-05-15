@@ -2,10 +2,10 @@
 #labels SOS
 
  * [SOSGuidelines Guidelines for Implementing SOS]
-   * [SOSGuidelines#SOS_Requests_(IDD) Request Syntax (IDD)]
-     * [GetCapabilities#Interface_Definition_Document_(IDD) GetCapabilities]
-     * [DescribeSensor#Interface_Definition_Document_(IDD) DescribeSensor]
-     * [GetObservation#Interface_Definition_Document_(IDD) GetObservation ]
+   * [SOSGuidelines Request Syntax]
+   * [GetCapabilities#Request GetCapabilities]
+     * [DescribeSensor#Request]
+     * [GetObservation#Request]
    * SOS Responses
      * [GetCapabilities#Response GetCapabilities]
      * [DescribeSensor#Response DescribeSensor]
