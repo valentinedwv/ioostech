@@ -2,11 +2,11 @@
 #labels SOS
 
  * [SOSGuidelines Guidelines for Implementing SOS]
-   * [SOSGuidelines Request Syntax]
+   * [SOSGuidelines#SOS_Requests Request Syntax]
    * [GetCapabilities#Request GetCapabilities]
-     * [DescribeSensor#Request]
-     * [GetObservation#Request]
-   * SOS Responses
+     * [DescribeSensor#Request DescribeSensor]
+     * [GetObservation#Request GetObservation]
+   * [SOSGuidelines#SOS_Requests SOS Response Formats]
      * [GetCapabilities#Response GetCapabilities]
      * [DescribeSensor#Response DescribeSensor]
      * [GetObservation#Response GetObservation ]
@@ -18,10 +18,6 @@
        * [TrajectoryProfileTemplate TrajectoryProfile]
    * [ControlledVocabularies ControlledVocabularies]
    * Identifiers
- * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
-   * [SOSRefImplementWorkshop_Day1Agenda Day One]
-   * [SOSRefImplementWorkshop_Day2Agenda Day Two]
-   * [SOSRefImplementWorkshop_Day3Agenda Day Three]
  * [CFFeatureTypes]
  * [SOSTesting]
    * [ServiceValidation]
@@ -29,3 +25,7 @@
    * [SOSComponentVersions]
    * [SOSVersions]
  * [ExternalResources References & Links]
+ * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
+   * [SOSRefImplementWorkshop_Day1Agenda Day One]
+   * [SOSRefImplementWorkshop_Day2Agenda Day Two]
+   * [SOSRefImplementWorkshop_Day3Agenda Day Three]
