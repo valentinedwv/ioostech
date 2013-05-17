@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:gml="http://www.opengis.net/gml"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:sml="http://www.opengis.net/sensorML/1.0.1" attributeFormDefault="unqualified"
+  elementFormDefault="qualified" targetNamespace="http://www.opengis.net/sensorML/1.0.1"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="swe101.xsd" namespace="http://www.opengis.net/swe/1.0.1"/>
+  <xs:import schemaLocation="gml31.xsd" namespace="http://www.opengis.net/gml"/>
+  <xs:import schemaLocation="xlink.xsd" namespace="http://www.w3.org/1999/xlink"/>
+  <xs:element name="SensorML">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="capabilities">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" ref="swe:SimpleDataRecord"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="member">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="System">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" ref="gml:description"/>
+                    <xs:element minOccurs="0" ref="gml:name"/>
+                    <xs:element minOccurs="0" name="identification">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="IdentifierList">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="Term">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="value" type="xs:string"
+                                            />
+                                          </xs:sequence>
+                                          <xs:attribute name="definition" type="xs:string"
+                                            use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="classification">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="ClassifierList">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="classifier">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="Term">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="codeSpace">
+                                              <xs:complexType>
+                                                <xs:attribute ref="xlink:href" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element minOccurs="0" name="value" type="xs:string"
+                                            />
+                                          </xs:sequence>
+                                          <xs:attribute name="definition" type="xs:string"
+                                            use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="capabilities">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" ref="swe:SimpleDataRecord"/>
+                          <xs:element minOccurs="0" ref="swe:DataRecord"/>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="ContactList">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="member">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="ResponsibleParty">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="organizationName"
+                                              type="xs:string"/>
+                                            <xs:element minOccurs="0" name="contactInfo">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="address">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" name="deliveryPoint"
+                                                  type="xs:string"/>
+                                                  <xs:element minOccurs="0" name="city"
+                                                  type="xs:string"/>
+                                                  <xs:element minOccurs="0"
+                                                  name="administrativeArea" type="xs:string"/>
+                                                  <xs:element minOccurs="0" name="postalCode"
+                                                  type="xs:unsignedInt"/>
+                                                  <xs:element minOccurs="0" name="country"
+                                                  type="xs:string"/>
+                                                  <xs:element minOccurs="0"
+                                                  name="electronicMailAddress" type="xs:string"/>
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="0" name="onlineResource">
+                                                  <xs:complexType>
+                                                  <xs:attribute ref="xlink:href" use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute ref="xlink:role" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="documentation">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="DocumentList">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="member">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="Document">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" ref="gml:description"/>
+                                            <xs:element minOccurs="0" name="format" type="xs:string"/>
+                                            <xs:element minOccurs="0" name="onlineResource">
+                                              <xs:complexType>
+                                                <xs:attribute ref="xlink:href" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="optional"/>
+                                    <xs:attribute ref="xlink:arcrole" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="history">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="EventList">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="member">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="Event">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="date" type="xs:date"/>
+                                            <xs:element minOccurs="0" ref="gml:description"/>
+                                            <xs:element minOccurs="0" name="documentation">
+                                              <xs:complexType>
+                                                <xs:attribute ref="xlink:href" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="location">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" ref="gml:Point"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="components">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="ComponentList">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="component">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="System">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" ref="gml:description"/>
+                                            <xs:element minOccurs="0" name="identification">
+                                              <xs:complexType>
+                                                <xs:attribute ref="xlink:href" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element minOccurs="0" name="documentation">
+                                              <xs:complexType>
+                                                <xs:attribute ref="xlink:href" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element minOccurs="0" name="outputs">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="OutputList">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" maxOccurs="unbounded"
+                                                  name="output">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" ref="swe:Quantity"/>
+                                                  </xs:sequence>
+                                                  <xs:attribute name="name" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute ref="gml:id" use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

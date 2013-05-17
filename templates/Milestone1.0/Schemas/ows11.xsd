@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.opengis.net/ows/1.1" attributeFormDefault="unqualified"
+  elementFormDefault="qualified" targetNamespace="http://www.opengis.net/ows/1.1"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="xlink.xsd" namespace="http://www.w3.org/1999/xlink"/>
+  <xs:import schemaLocation="gml31.xsd" namespace="http://www.opengis.net/gml"/>
+  <xs:element name="ServiceIdentification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Title" type="xs:string"/>
+        <xs:element minOccurs="0" name="Abstract" type="xs:string"/>
+        <xs:element minOccurs="0" name="Keywords">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Keyword" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="ServiceType">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="codeSpace" type="xs:string" use="optional"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="ServiceTypeVersion" type="xs:string"/>
+        <xs:element minOccurs="0" name="Fees" type="xs:string"/>
+        <xs:element minOccurs="0" name="AccessConstraints" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceProvider">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ProviderName" type="xs:string"/>
+        <xs:element minOccurs="0" name="ProviderSite">
+          <xs:complexType>
+            <xs:attribute xmlns:q1="http://www.w3.org/1999/xlink" ref="q1:href" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="ServiceContact">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="IndividualName" type="xs:string"/>
+              <xs:element minOccurs="0" name="ContactInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="Phone">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="Voice" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="DeliveryPoint" type="xs:string"/>
+                          <xs:element minOccurs="0" name="City" type="xs:string"/>
+                          <xs:element minOccurs="0" name="AdministrativeArea" type="xs:string"/>
+                          <xs:element minOccurs="0" name="PostalCode" type="xs:string"/>
+                          <xs:element minOccurs="0" name="Country" type="xs:string"/>
+                          <xs:element minOccurs="0" name="ElectronicMailAddress" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OperationsMetadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Operation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="DCP">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="HTTP">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="Get">
+                            <xs:complexType>
+                              <xs:attribute xmlns:q2="http://www.w3.org/1999/xlink" ref="q2:href"
+                                use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Post">
+                            <xs:complexType>
+                              <xs:attribute xmlns:q3="http://www.w3.org/1999/xlink" ref="q3:href"
+                                use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Parameter">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="AllowedValues">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Value"
+                            type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Parameter">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AllowedValues">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="Value" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="ExtendedCapabilities">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" xmlns:q4="http://www.opengis.net/gml"
+                ref="q4:metaDataProperty"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

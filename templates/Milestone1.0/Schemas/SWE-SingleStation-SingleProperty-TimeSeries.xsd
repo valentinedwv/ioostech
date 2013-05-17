@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:swe2="http://www.opengis.net/swe/2.0"
+  attributeFormDefault="unqualified" elementFormDefault="qualified"
+  targetNamespace="http://www.opengis.net/swe/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="xlink.xsd" namespace="http://www.w3.org/1999/xlink"/>
+  <xs:element name="DataRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="field">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="DataArray">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="elementCount">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="Count">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="value" type="xs:unsignedByte"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="elementType">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="DataRecord">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="field">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="DataChoice">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" maxOccurs="unbounded"
+                                              name="item">
+                                              <xs:complexType>
+                                                <xs:sequence minOccurs="0">
+                                                  <xs:element minOccurs="0" name="DataRecord">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" maxOccurs="unbounded"
+                                                  name="field">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" name="Quantity">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" name="uom">
+                                                  <xs:complexType>
+                                                  <xs:attribute name="code" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  </xs:sequence>
+                                                  <xs:attribute name="definition" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  </xs:sequence>
+                                                  <xs:attribute name="name" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  </xs:sequence>
+                                                  <xs:attribute name="definition" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="name" type="xs:string"
+                                                  use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="definition" type="xs:string"
+                                            use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="Time">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="uom">
+                                              <xs:complexType>
+                                                <xs:attribute ref="xlink:href" use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="definition" type="xs:string"
+                                            use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="definition" type="xs:string" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="encoding">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="TextEncoding">
+                            <xs:complexType>
+                              <xs:attribute name="decimalSeparator" type="xs:string" use="optional"/>
+                              <xs:attribute name="tokenSeparator" type="xs:string" use="optional"/>
+                              <xs:attribute name="blockSeparator" type="xs:string" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="values" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="definition" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="DataRecord">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="field">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="DataRecord">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="field">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" name="DataRecord">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="field">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="DataRecord">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" maxOccurs="unbounded"
+                                                  name="field">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" name="Quantity">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" name="uom">
+                                                  <xs:complexType>
+                                                  <xs:attribute name="code" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="0" name="value"
+                                                  type="xs:unsignedByte"/>
+                                                  </xs:sequence>
+                                                  <xs:attribute name="definition" type="xs:string"
+                                                  use="optional"/>
+                                                  <xs:attribute name="axisID" type="xs:string"
+                                                  use="optional"/>
+                                                  <xs:attribute name="referenceFrame"
+                                                  type="xs:string" use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="0" name="Text">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" name="value"
+                                                  type="xs:string"/>
+                                                  </xs:sequence>
+                                                  <xs:attribute name="definition" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  </xs:sequence>
+                                                  <xs:attribute name="name" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  </xs:sequence>
+                                                  <xs:attribute name="id" type="xs:string"
+                                                  use="optional"/>
+                                                  <xs:attribute name="definition" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="name" type="xs:string"
+                                                  use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="definition" type="xs:string"
+                                            use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="Vector">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" maxOccurs="unbounded"
+                                              name="coordinate">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="Quantity">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element minOccurs="0" name="uom">
+                                                  <xs:complexType>
+                                                  <xs:attribute name="code" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="0" name="value"
+                                                  type="xs:decimal"/>
+                                                  </xs:sequence>
+                                                  <xs:attribute name="definition" type="xs:string"
+                                                  use="optional"/>
+                                                  <xs:attribute name="axisID" type="xs:string"
+                                                  use="optional"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="name" type="xs:string"
+                                                  use="optional"/>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="definition" type="xs:string"
+                                            use="optional"/>
+                                          <xs:attribute name="referenceFrame" type="xs:string"
+                                            use="optional"/>
+                                          <xs:attribute name="localFrame" type="xs:string"
+                                            use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="Text">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="value" type="xs:string"
+                                            />
+                                          </xs:sequence>
+                                          <xs:attribute name="definition" type="xs:string"
+                                            use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:string" use="optional"/>
+                              <xs:attribute name="definition" type="xs:string" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="definition" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="definition" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

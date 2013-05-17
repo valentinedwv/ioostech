@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.opengis.net/gml" attributeFormDefault="unqualified"
+  elementFormDefault="qualified" targetNamespace="http://www.opengis.net/gml"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="xlink.xsd" namespace="http://www.w3.org/1999/xlink"/>
+  <xs:element name="metaDataProperty">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="version" type="xs:decimal"/>
+        <xs:element minOccurs="0" name="GenericMetaData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="description" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute xmlns:q1="http://www.w3.org/1999/xlink" ref="q1:title" use="optional"/>
+      <xs:attribute xmlns:q2="http://www.w3.org/1999/xlink" ref="q2:href" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="description" type="xs:string"/>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="srsName" type="xs:string"/>
+  <xs:attribute name="id" type="xs:string"/>
+  <xs:element name="FeatureCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="metaDataProperty">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="name">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="codeSpace" type="xs:string" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="boundedBy">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Envelope">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="lowerCorner" type="xs:string"/>
+                    <xs:element minOccurs="0" name="upperCorner" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="srsName" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="location">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="MultiPoint">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="pointMembers">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Point">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="name" type="xs:string"/>
+                                <xs:element minOccurs="0" name="pos" type="xs:string"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="srsName" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="member">
+    <xs:complexType>
+      <xs:attribute xmlns:q3="http://www.w3.org/1999/xlink" ref="q3:href" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Point">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pos" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="srsName" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="boundedBy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Envelope">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="lowerCorner" type="xs:string"/>
+              <xs:element minOccurs="0" name="upperCorner" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="srsName" type="xs:string" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimePeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="beginPosition" type="xs:string"/>
+        <xs:element minOccurs="0" name="endPosition">
+          <xs:complexType>
+            <xs:attribute name="indeterminatePosition" type="xs:string" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

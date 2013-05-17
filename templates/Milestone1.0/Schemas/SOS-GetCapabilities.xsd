@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ows="http://www.opengis.net/ows/1.1"
+  xmlns:om="http://www.opengis.net/om/1.0" xmlns:sos="http://www.opengis.net/sos/1.0"
+  attributeFormDefault="unqualified" elementFormDefault="qualified"
+  targetNamespace="http://www.opengis.net/sos/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="ows11.xsd" namespace="http://www.opengis.net/ows/1.1"/>
+  <xs:import schemaLocation="gml31.xsd" namespace="http://www.opengis.net/gml"/>
+  <xs:import schemaLocation="xlink.xsd" namespace="http://www.w3.org/1999/xlink"/>
+  <xs:element name="Capabilities">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="ows:ServiceIdentification"/>
+        <xs:element minOccurs="0" ref="ows:ServiceProvider"/>
+        <xs:element minOccurs="0" ref="ows:OperationsMetadata"/>
+        <xs:element minOccurs="0" name="Contents">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ObservationOfferingList">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="ObservationOffering">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" ref="gml:description"/>
+                          <xs:element minOccurs="0" ref="gml:name"/>
+                          <xs:element minOccurs="0" ref="gml:srsName"/>
+                          <xs:element minOccurs="0" ref="gml:boundedBy"/>
+                          <xs:element minOccurs="0" name="time">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" ref="gml:TimePeriod"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="procedure">
+                            <xs:complexType>
+                              <xs:attribute ref="xlink:href" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="observedProperty">
+                            <xs:complexType>
+                              <xs:attribute ref="xlink:href" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="featureOfInterest">
+                            <xs:complexType>
+                              <xs:attribute ref="xlink:href" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="responseFormat" type="xs:string"/>
+                          <xs:element minOccurs="0" name="resultModel" type="xs:string"/>
+                          <xs:element minOccurs="0" name="responseMode" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute ref="gml:id" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
