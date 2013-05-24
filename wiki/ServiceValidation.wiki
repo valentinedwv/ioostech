@@ -32,16 +32,23 @@ _TODO: Add text describing the differences between tests that are specific to OG
 ||Web Map Service (WMS)||1.1.1||`r3` ||Final||
 ||Web Map Service (WMS)||1.3.0||`r4` ||Final||
 
-   2. SWECommon – the proper test tool should be investigated; no OGC CITE test is currently available
+No OGC CITE test for SWECommon is currently available, and probably will not been developed any time soon.
   
-   3. OPeNDAP – the proper test tool should be investigated; in case of ERDDAP no extensive testing may be necessary
+   2. OPeNDAP – no standard tests are available; verification may be done with simple tools like [http://www.opendap.org/faq2#testMyServers Web browser and telnet client]. 
 
- * Metadata conformance testing – verifies compliance of metadata included in or accompanying requested datasets (files) with the IOOS endorsed standards (e.g. CF Conventions, SensorML, MMI, IOOS DCS, etc.):
-   # netCDF – the CF-Convention compliance checker for NetCDF format developed at the Hadley Centre for Climate Prediction and Research, UK Met Office
-   # MMI – the proper test tool should be investigated; possibly just visual observation of the data samples and comparison with the specs
-   # IOOS Data Content Specification – observation of the data samples and comparison with the IOOS specs (NOTE: DCS is not formalized.  Do we need it?)
-
- * Data quality – methods and test tools should be developed
+ * Metadata conformance testing – verifies compliance of metadata included in or accompanying requested datasets (files) with the IOOS endorsed standards (e.g. ISO-19115/19119/19139, CF Conventions, SensorML, vocabularies, etc.):
+   # observations and model results in netCDF 
+      ** visual analysis vs. [http://www.nodc.noaa.gov/data/formats/netcdf/ NODC templates] for each featureType;
+      ** threddsISO or ncISO service (rubric)
+      ** [http://puma.nerc.ac.uk/cgi-bin/cf-checker.pl CF-Convention Compliance Checker];
+      ** else?
+   # observations in SWECommon (SOS Response) 
+      ** visual comparison with [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%253Fstate%253Dclosed IOOS SOS templates Milestone 1.0];
+      ** validation against [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed formal XML schemas] using XML Editor like Oxygen or specially developed validator;
+      ** [https://www.ngdc.noaa.gov/metadata/published/NOAA/IOOS/iso/index-secure.html Rubric service at NGDC] or IOOS RCV
+      ** else?
+   # MMI-hosted ontology – proper ontology test tool (?); possibly just visual observation of the data samples and comparison with the vocabularies
+ * Data quality – methods and test tools are not clear at the moment
 
 
 ==Documents and specifications==
@@ -53,7 +60,7 @@ For the purposes of this testing, the controlling documents for the DMAC service
  * OGC Web Services Common Specification, Version 1.1.0 `[OGC 06-121r3]`
  * OGC SensorML v1.0 Specification
  * OGC SWECommon Data Model v2.0 (mostly for Milestone 2.0)
- * XML schemas for all services and metadata
+ * OGC OWS, O&M, SOS, etc. XML schemas
  * Ontologies (vocabularies, definitions, etc.) ([http://mmisw.org/orr/#b-http://mmisw.org/orr/] and [https://marinemetadata.org/references/ioosparameter-https://marinemetadata.org/references/ioosparameter])
  * SOS response templates (Milestone 1.0):
    ** [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/OM-GetObservation.xml OM-GetObservation.xml]
@@ -65,6 +72,7 @@ For the purposes of this testing, the controlling documents for the DMAC service
    ** [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SWE-SingleStation-SingleProperty-TimeSeries.xml SWE-SingleStation-SingleProperty-TimeSeries.xml]
    ** [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SWE-SingleStation-TimeSeriesProfile.xml SWE-SingleStation-TimeSeriesProfile.xml]
    ** [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SWE-SingleStation-TimeSeriesProfile_QC.xml SWE-SingleStation-TimeSeriesProfile_QC.xml]
+ * [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schemas for SOS Milestone 1.0 responses]
  * List of entry points, and schedule of IOOS SOS implementation at the National Data Buoy Center (NDBC), Center for Operational Oceanographic Products and Services (CO-OPS), and 11 regions.
 
 
@@ -76,86 +84,32 @@ For the purposes of this testing, the controlling documents for the DMAC service
 
 ==Elements of Service Validation==
 
-Some aspects of validation, and questions that validation should provide answers to:
- # Server normalcy 
-   ** Is the server online and sending out products?
- # Data format and metadata syntactic and semantic validity 
-   ** Does the data the service is sending out have the expected and agreed structure and metadata?
-   ** Does the metadata conform to the metadata from the source datasets?  To reality?
- # Data missing values 
-   ** Do the products contain missing values?  
-   ** Does the count and geographic distribution of these values match what is expected?  
- # Data values validity 
-   ** Are the quantitative values in the data right? 
-   ** Are the values retrieved from the service traceable to the calculations (if any has been done)?
-   ** How do the values compare to the expected distribution? Are they believable?
-   ** How do the values compare to values from other services (if available)?
-   ** 
- # etc.
+Open list of questions that validation should provide answers to, and available options of doing so:
+ # Service state, i.e. “Is the service online and sending out products?”
+   ** OGC CITE standard test
+ # Service reaction to correct/incorrect requests, i.e. “To what degree is the service compliant with the OGC specification?”
+   ** OGC CITE standard test ([http://cite.opengeospatial.org/te2/about/sos/1.0.0/web/ some requests are not tested])
+ # Syntactic validity of the service response, i.e. “Does the service response contain all expected elements and attributes in the order that is prescribed by the OGC specification *AND* IOOS Milestone 1.0 templates?”
+   ** OGC CITE standard test ([http://cite.opengeospatial.org/te2/about/sos/1.0.0/web/ some operations are not tested])
+    ** Visual comparison between IOOS SOS XML response document and respective Milestone 1.0 template, or
+   ** Validation of IOOS SOS XML response document with the respective XML Schema document (Schematron document?) – either manually with XML editor (e.g. Oxygen) or automatically with some scripts
+ # Semantic validity of the service response, i.e. “Does the response metadata conform to standards, conventions, vocabularies, definitions, etc.?”
+   ** Visual evaluation of the response
+   ** Rubric tool at [https://www.ngdc.noaa.gov/metadata/published/NOAA/IOOS/iso/index-secure.html NGDC] or IOOS RCV (?) 
+   ** else?
+ # Validity of data provided by the service, i.e. “Are the quantitative values retrieved from the service and their distribution as expected (believable), and comparable to values from other services (if applicable)?”
+   ** Manual analysis of the “result” section of the GetObservation response
+   ** Automatic analysis (no automatic tool is available at the moment) (?)
+ # Data missing values provided by the service, i.e. “Does the data in response products contain missing values, and do the count and geographic distribution of these values match what is expected (original data product)?”
+   ** Manual analysis of the “result” section of the GetObservation response, or
+   ** Automatic analysis (no automatic tool is available at the moment) (?)
+ # else?
 
 
-=`OGC SOS 1.0.0 r6 Compliance Testing`=
 
-==Overview==
+==List of test included into OGC CITE standard test of the SOS v1.0.0==
 
-This test suite is based on the following OGC specifications:
- * OpenGIS Web Services Common Specification, Version 1.1.0 `[OGC 06-121r3`]
- * Definition Identifier URNs in OGC Namespace, Version 1.1.0 `[OGC 06-023r1`] (ISO/CD 19136, OGC 03-105r1)
- * OpenGIS Sensor Observation Service Implementation Specification, Version 1.0 `[OGC 06-009r6`]
-
-==Test Data==
-
-   n/a
-
-==Namespaces==
-
-Service being tested must use these namespaces:
-
-||gml||http://www.opengis.net/gml||
-||ows||http://www.opengis.net/ows/1.1||
-||ogc||http://www.opengis.net/ogc||
-||om||http://www.opengis.net/om/1.0||
-||sensorML v1.0.1||http://www.opengis.net/sensorML/1.0.1||
-||sensorML v1.0||http://www.opengis.net/sensorML/1.0||
-||sos||http://www.opengis.net/sos/1.0||
-||tml||http://www.opengis.net/tml||
-
-
-==Schemas==
-
-All schemas used for validation in these tests can be found at: http://schemas.opengis.net/ 
-
-
-==Release Notes==
-
-Release notes are available from the [https://svn.opengeospatial.org/ogc-projects/cite/scripts/sos/1.0.0/tags/r6/web/relnotes.txt relnotes.txt].
-
-==What is tested==
-
- * GetCapabilities, GET method
- * DescribeSensor, POST method
- * GetObservation, POST method
-
-==What is not tested==
-
- * DescribeSensor, GET method
- * GetObservation, GET method
- * GetObservation with "result" parameters/filters
- * Optional operations: 
-   ** DescribeFeatureType
-   ** DescribeObservationType
-   ** DescribeResultModel
-   ** GetObservationById
-   ** GetResult
-   ** GetFeatureOfInterest
-   ** GetFeatureOfInterestTime
-   ** InsertObservation
-   ** RegisterSensor
-
-
-==Test Decomposition==
-
-The following test break-down may not be completely relevant as it was done for previous revision of the test; however, it may be used for reference anyway.
+*NOTE*: The following test break-down list is for reference only. It was completed for v4 of the test; therefore, it may not be completely relevant for the latest version.
 
 *OWS Common Tests*
  *sos:ows-main 
@@ -216,4 +170,4 @@ The following test break-down may not be completely relevant as it was done for 
  *getObservation:core-SOS.GetObservation-ResponseMatchingEventTimeData.1 
  *getObservation:core-SOS.GetObservation-ResponseMatchingFeatureOfInterestData.1 
  *getObservation:core-SOS.GetObservation-ResponseMatchingResultData.1 
- *getObservation:core-SOS.GetObservation-ResponseMatchingResponseFormatData.1 
+ *getObservation:core-SOS.GetObservation-ResponseMatchingResponseFormatData.1
