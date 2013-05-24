@@ -4,12 +4,11 @@
 
 <wiki:toc max_depth="3" />
 
-=Service Validation=
 
 The US IOOS is developing and deploying the DMAC standards in order to ensure interoperable, quality-controlled ocean data that comes from various sources such as academia, federal agencies, private sector industries, or local governments. The standards shall be applied to the IOOS partners within the framework of the partners’ offerings quality verification process that should finally result in formal certification. 
 Both federal and non-federal partners’ offerings need to be verified for compliance with DMAC standards in order for the provided data to be included into the US IOOS system. Non-federal partners may use the DMAC compliance for civil liability protection or just to ensure interoperability, and the formal certification process may be an identified means of verifying compliance.
 
-==Service testing scope==
+=Scope=
 
 The DMAC service development is in progress, and is almost completed. The implementations are about to start. This regimen is intended to examine the service and content of the DMAC implementation. 
 The service validation seems to be an all-sufficient task, and can be done irrespective of other IOOS activity; however, since IOOS has carried out a development and implementation of the IOOS Registry, which among other functions is supposed to periodically probe partners’ services and harvest offered data, it would be highly beneficial to coordinate all testing activities (and especially any development of test tools) with IOOS Registry developers.
@@ -51,7 +50,7 @@ No OGC CITE test for SWECommon is currently available, and probably will not bee
  * *Data quality* – methods and test tools are not clear at the moment
 
 
-==Documents and specifications==
+=Relevant documents and specifications=
 
 For the purposes of this testing, the controlling documents for the DMAC services are (the list is open):
  * OGC SOS 1.0.0 Specification
@@ -76,15 +75,13 @@ For the purposes of this testing, the controlling documents for the DMAC service
  * List of entry points, and schedule of IOOS SOS implementation at the National Data Buoy Center (NDBC), Center for Operational Oceanographic Products and Services (CO-OPS), and 11 regions.
 
 
-==Process==
+=Test procedure and options=
 
- * The US IOOS test entity will use a test tool – either online or local desktop – to make appropriate queries of the services. The NBDC, CO-OPS, and RAs will be consulted to insure the requests are reasonable and appropriate within the context of the DMAC Milestone.
- * The service requests and responses will be documented and analyzed in order to demonstrate the consistency, or lack thereof, of the responses from the services.
+The US IOOS test entity will use test tools – either standard and publicly available, or specifically developed for IOOS – to send requests to the services. The NBDC, CO-OPS, and RAs will be consulted to ensure that requests are reasonable and appropriate within the context of the DMAC Milestone 1.0.
 
+Service requests and responses will be documented and analyzed in order to demonstrate the consistency, or lack thereof, of the responses from the services.
 
-==Elements of Service Validation==
-
-Open list of questions that validation should provide answers to, and available options of doing so:
+The following is the list of questions that validation should provide answers to, and available options of doing so. The list is by no means explicit, and should be revised and altered as needed:
  # Service state, i.e. “Is the service online and sending out products?”
    ** OGC CITE standard test
  # Service reaction to correct/incorrect requests, i.e. “To what degree is the service compliant with the OGC specification?”
@@ -104,70 +101,3 @@ Open list of questions that validation should provide answers to, and available 
    ** Manual analysis of the “result” section of the GetObservation response, or
    ** Automatic analysis (no automatic tool is available at the moment) (?)
  # else?
-
-
-
-==List of test included into OGC CITE standard test of the SOS v1.0.0==
-
-*NOTE*: The following test break-down list is for reference only. It was completed for v4 of the test; therefore, it may not be completely relevant for the latest version.
-
-*OWS Common Tests*
- *sos:ows-main 
- *owsTests:ows-main 
- *owsTests:ows-OWS.GetCapabilities.1 
- *owsTests:ows-OWS.ContentType.1 
- *owsTests:ows-OWS.GetCapabilities-Exceptions.1 
- *owsTests:ows-OWS.GetCapabilities-Exceptions.2 
- *owsTests:ows-OWS.GetCapabilities-Exceptions.3 
- *owsTests:ows-OWS.GetCapabilities-Exceptions.5 
- *owsTests:ows-OWS.CaseInsensitiveKvpNames.1 
- *owsTests:ows-OWS.GetCapabilities-AcceptVersions.1 
- *owsTests:ows-OWS.GetCapabilities-AcceptVersions.2 
- *owsTests:ows-OWS.GetCapabilities-AcceptVersions.3 
-
-*General SOS Tests*
- *sos:general-main 
- *sos:general-SOS.General-InvalidRequest.1 
- *sos:general-SOS.General-ValidResponse.1 
-
-*Core SOS Tests*
- *sos:core-main 
-
-*GetCapabilities Tests*
- *getCapabilities:core-SOS.GetCapabilities-KVPRequestParameterHandling.1 
- *getCapabilities:core-SOS.GetCapabilities-KVPRequestServiceParameterHandling.1 
- *getCapabilities:core-SOS.GetCapabilities-KVPRequestRequestParameterHandling.1 
- *getCapabilities:core-SOS.GetCapabilities-OperationsMetadataMandatoryOperations.1 
- *getCapabilities:core-SOS.GetCapabilities-OperationsMetadaOptionalOperations.1 
- *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidTime.1 
- *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidProcedure.1 
- *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidObservedProperty.1 
- *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidResponseFormat.1
- *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidResultModel.1 
- *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidResponseMode.1 
-
-*Describe Sensor Tests*
- *describeSensor:core-SOS.DescribeSensor-RequestInvalidMIMEType.1 
- *describeSensor:core-SOS.DescribeSensor-RequestInvalidProcedure.1 
- *describeSensor:core-SOS.DescribeSensor-ResponseMatchingResponseFormat.1 
- *describeSensor:core-SOS.DescribeSensor-ResponseMatchingProcedure.1 
-
-*GetObservation Tests*
- *getObservation:core-SOS.GetObservation-RequestInvalidSRSName.1 
- *getObservation:core-SOS.GetObservation-RequestInvalidOffering.1 
- *getObservation:core-SOS.GetObservation-RequestInvalidEventTime.1 
- *getObservation:core-SOS.GetObservation-RequestInvalidProcedure.1 
- *getObservation:core-SOS.GetObservation-RequestInvalidFeatureOfInterest.1 
- *getObservation:core-SOS.GetObservation-RequestInvalidObservedProperty.1 
- *getObservation:core-SOS.GetObservation-RequestInvalidResult.1 
- *getObservation:core-SOS.GetObservation-RequestInvalidResponseFormat.1 
- *getObservation:core-SOS.GetObservation-RequestInvalidResultModel.1 
- *getObservation:core-SOS.GetObservation-RequestInvalidResponseMode.1 
- *getObservation:core-SOS.GetObservation-ResponseMatchingSRSData.1 
- *getObservation:core-SOS.GetObservation-ResponseMatchingProcedureData.1 
- *getObservation:core-SOS.GetObservation-ResponseMatchingObservedPropertyData.1 
- *getObservation:core-SOS.GetObservation-ResponseAdvertisedEventTimeData.1 
- *getObservation:core-SOS.GetObservation-ResponseMatchingEventTimeData.1 
- *getObservation:core-SOS.GetObservation-ResponseMatchingFeatureOfInterestData.1 
- *getObservation:core-SOS.GetObservation-ResponseMatchingResultData.1 
- *getObservation:core-SOS.GetObservation-ResponseMatchingResponseFormatData.1
