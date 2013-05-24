@@ -33,3 +33,68 @@
 ||  ||  || no ||  ||
 ||  ||  || no ||  ||
 ||  ||  || no ||  ||
+
+==List of test scripts included into OGC SOS v1.0 test ==
+
+*NOTE*: The following test break-down list is for reference only. It was completed for v4 of the test; therefore, it may not be completely relevant for the latest version.
+
+*OWS Common Tests*
+ *sos:ows-main 
+ *owsTests:ows-main 
+ *owsTests:ows-OWS.GetCapabilities.1 
+ *owsTests:ows-OWS.ContentType.1 
+ *owsTests:ows-OWS.GetCapabilities-Exceptions.1 
+ *owsTests:ows-OWS.GetCapabilities-Exceptions.2 
+ *owsTests:ows-OWS.GetCapabilities-Exceptions.3 
+ *owsTests:ows-OWS.GetCapabilities-Exceptions.5 
+ *owsTests:ows-OWS.CaseInsensitiveKvpNames.1 
+ *owsTests:ows-OWS.GetCapabilities-AcceptVersions.1 
+ *owsTests:ows-OWS.GetCapabilities-AcceptVersions.2 
+ *owsTests:ows-OWS.GetCapabilities-AcceptVersions.3 
+
+*General SOS Tests*
+ *sos:general-main 
+ *sos:general-SOS.General-InvalidRequest.1 
+ *sos:general-SOS.General-ValidResponse.1 
+
+*Core SOS Tests*
+ *sos:core-main 
+
+*GetCapabilities Tests*
+ *getCapabilities:core-SOS.GetCapabilities-KVPRequestParameterHandling.1 
+ *getCapabilities:core-SOS.GetCapabilities-KVPRequestServiceParameterHandling.1 
+ *getCapabilities:core-SOS.GetCapabilities-KVPRequestRequestParameterHandling.1 
+ *getCapabilities:core-SOS.GetCapabilities-OperationsMetadataMandatoryOperations.1 
+ *getCapabilities:core-SOS.GetCapabilities-OperationsMetadaOptionalOperations.1 
+ *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidTime.1 
+ *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidProcedure.1 
+ *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidObservedProperty.1 
+ *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidResponseFormat.1
+ *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidResultModel.1 
+ *getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidResponseMode.1 
+
+*Describe Sensor Tests*
+ *describeSensor:core-SOS.DescribeSensor-RequestInvalidMIMEType.1 
+ *describeSensor:core-SOS.DescribeSensor-RequestInvalidProcedure.1 
+ *describeSensor:core-SOS.DescribeSensor-ResponseMatchingResponseFormat.1 
+ *describeSensor:core-SOS.DescribeSensor-ResponseMatchingProcedure.1 
+
+*GetObservation Tests*
+ *getObservation:core-SOS.GetObservation-RequestInvalidSRSName.1 
+ *getObservation:core-SOS.GetObservation-RequestInvalidOffering.1 
+ *getObservation:core-SOS.GetObservation-RequestInvalidEventTime.1 
+ *getObservation:core-SOS.GetObservation-RequestInvalidProcedure.1 
+ *getObservation:core-SOS.GetObservation-RequestInvalidFeatureOfInterest.1 
+ *getObservation:core-SOS.GetObservation-RequestInvalidObservedProperty.1 
+ *getObservation:core-SOS.GetObservation-RequestInvalidResult.1 
+ *getObservation:core-SOS.GetObservation-RequestInvalidResponseFormat.1 
+ *getObservation:core-SOS.GetObservation-RequestInvalidResultModel.1 
+ *getObservation:core-SOS.GetObservation-RequestInvalidResponseMode.1 
+ *getObservation:core-SOS.GetObservation-ResponseMatchingSRSData.1 
+ *getObservation:core-SOS.GetObservation-ResponseMatchingProcedureData.1 
+ *getObservation:core-SOS.GetObservation-ResponseMatchingObservedPropertyData.1 
+ *getObservation:core-SOS.GetObservation-ResponseAdvertisedEventTimeData.1 
+ *getObservation:core-SOS.GetObservation-ResponseMatchingEventTimeData.1 
+ *getObservation:core-SOS.GetObservation-ResponseMatchingFeatureOfInterestData.1 
+ *getObservation:core-SOS.GetObservation-ResponseMatchingResultData.1 
+ *getObservation:core-SOS.GetObservation-ResponseMatchingResponseFormatData.1
