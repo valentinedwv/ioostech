@@ -1,0 +1,31 @@
+#summary One-sentence summary of this page.
+
+
+= Test tool availability =
+
+|| *Test* || * Required * || * Tested by OGC tool * || *Comments*||
+|| GetCapabilities, GET method|| yes || yes || ||
+|| GetCapabilities, POST method|| yes || no || [https://wiki.52north.org/bin/view/SensorWeb/SosTutorial various options available for 52North] ||
+|| DescribeSensor, GET method || yes || no ||  ||
+|| DescribeSensor, POST method || yes || yes || [http://sensorweb.demo.52north.org/52nSOSv3.2.1 test available for 52North] ||
+|| GetObservation, GET method || ? || no ||  ||
+|| GetObservation, POST method || yes || yes || [http://sensorweb.demo.52north.org/52nSOSv3.2.1 various options available for 52North] ||
+|| GetObservation with "result" parameters/filters || yes || no || [http://sensorweb.demo.52north.org/52nSOSv3.2.1 various options available for 52North] ||
+|| DescribeFeatureType || ? || no ||  ||
+|| DescribeObservationType || ? || no ||  ||
+|| DescribeResultModel || no || no ||  ||
+|| GetObservationById || no || no ||  ||
+|| GetResult || no || no ||  ||
+|| GetFeatureOfInterest || no || no ||  ||
+|| GetFeatureOfInterestTime || no || no ||  ||
+|| InsertObservation || no || no ||  ||
+|| RegisterSensor || no || no ||  ||
+||  ||  || no ||  ||
+||  ||  || no ||  ||
+||  ||  || no ||  ||
+||  ||  || no ||  ||
+||  ||  || no ||  ||
+||  ||  || no ||  ||
+||  ||  || no ||  ||
+||  ||  || no ||  ||
+||  ||  || no ||  ||
