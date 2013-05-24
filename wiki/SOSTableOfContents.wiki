@@ -21,6 +21,7 @@
  * [CFFeatureTypes]
  * [SOSTesting]
    * [ServiceValidation]
+   * [TestToolAvailability]
    * [SOSSurvey]
    * [SOSComponentVersions]
    * [SOSVersions]
