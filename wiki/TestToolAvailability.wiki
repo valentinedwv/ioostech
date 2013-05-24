@@ -1,4 +1,8 @@
-#summary One-sentence summary of this page.
+#summary Discussion of SOS Service validation tools availability and necessity
+#sidebar SOSTableOfContents
+
+<wiki:toc max_depth="3" />
+
 
 
 = Test tool availability =
