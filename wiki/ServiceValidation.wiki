@@ -17,8 +17,8 @@ Formal verification of interoperability of data offerings is the core part of th
 
 _TODO: Add text describing the differences between tests that are specific to OGC requiremenst and hence may be carried out by the OGC CITE tools and tests that are specific to IOOS requirements (e.g. use of vocabularies or use of correct identifier scheme).  Create another page for contributions of IOOS specific test._
 
- * Data access service conformance testing – verifies compliance with the OGC specification for SOS, SensorML, SWECommon, WMS, WCS, and OPeNDAP specification for DAP access service (it is assumed that both 52North and ncSOS varieties should be tested with the same tool): 
-   1. *SOS, WCS, WMS, and SensorML* – test engine and scripts developed by the OGC Compliance and Interoperability Testing Initiative (CITE); currently goes through an extensive modification and enhancement process; its growing popularity results in a rapid errors and bugs identification and correction. The CITE scripts do not test all features of the services (see below OGC SOS 1.0.0 `r4` Compliance Testing – what is tested and what is not); thus, some development is needed to fully cover the IOOS services functionality.<br>The following is list of currently available tests and their status:
+ * *Data access service conformance* – verifies compliance with the OGC specification for SOS, SensorML, SWECommon, WMS, WCS, and OPeNDAP specification for DAP access service (it is assumed that both 52North and ncSOS varieties should be tested with the same tool): 
+   1. _SOS, WCS, WMS, and SensorML_ – test engine and scripts developed by the OGC Compliance and Interoperability Testing Initiative (CITE); currently goes through an extensive modification and enhancement process; its growing popularity results in a rapid errors and bugs identification and correction. The CITE scripts do not test all features of the services (see below OGC SOS 1.0.0 `r4` Compliance Testing – what is tested and what is not); thus, some development is needed to fully cover the IOOS services functionality.<br>The following is list of currently available tests and their status:
 || *Specification* || *Version* || *Revision* || *Status* ||
 ||Geography Markup Language (GML)||3.2.1||3.2.1-`r2` ||Beta||
 ||Sensor Model Language (SensorML)||1.0.1||`r2` ||Beta||
@@ -34,7 +34,7 @@ _TODO: Add text describing the differences between tests that are specific to OG
 
 No OGC CITE test for SWECommon is currently available, and probably will not been developed any time soon.
   
-   2. *OPeNDAP* – no standard tests are available; verification may be done with simple tools like [http://www.opendap.org/faq2#testMyServers Web browser and telnet client]. 
+   2. _OPeNDAP_ – no standard tests are available; verification may be done with simple tools like [http://www.opendap.org/faq2#testMyServers Web browser and telnet client]. 
 
  * *Metadata conformance* – verifies compliance of metadata included in or accompanying requested datasets (files) with the IOOS endorsed standards (e.g. ISO-19115/19119/19139, CF Conventions, SensorML, vocabularies, etc.):
    # observations and model results in netCDF 
@@ -45,10 +45,10 @@ No OGC CITE test for SWECommon is currently available, and probably will not bee
    # observations in SWECommon (SOS Response) 
       ** visual comparison with [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%253Fstate%253Dclosed IOOS SOS templates Milestone 1.0];
       ** validation against [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed formal XML schemas] using XML Editor like Oxygen or specially developed validator;
-      ** [https://www.ngdc.noaa.gov/metadata/published/NOAA/IOOS/iso/index-secure.html Rubric service at NGDC] or IOOS RCV
+      ** [https://www.ngdc.noaa.gov/metadata/published/NOAA/IOOS/iso/index-secure.html rubric service at NGDC] or IOOS RCV
       ** else?
    # MMI-hosted ontology – proper ontology test tool (?); possibly just visual observation of the data samples and comparison with the vocabularies
- * Data quality – methods and test tools are not clear at the moment
+ * *Data quality* – methods and test tools are not clear at the moment
 
 
 ==Documents and specifications==
@@ -92,7 +92,7 @@ Open list of questions that validation should provide answers to, and available 
  # Syntactic validity of the service response, i.e. “Does the service response contain all expected elements and attributes in the order that is prescribed by the OGC specification *AND* IOOS Milestone 1.0 templates?”
    ** OGC CITE standard test ([http://cite.opengeospatial.org/te2/about/sos/1.0.0/web/ some operations are not tested])
     ** Visual comparison between IOOS SOS XML response document and respective Milestone 1.0 template, or
-   ** Validation of IOOS SOS XML response document with the respective XML Schema document (Schematron document?) – either manually with XML editor (e.g. Oxygen) or automatically with some scripts
+    ** Validation of IOOS SOS XML response document with the respective XML Schema document (Schematron document?) – either manually with XML editor (e.g. Oxygen) or automatically with some scripts
  # Semantic validity of the service response, i.e. “Does the response metadata conform to standards, conventions, vocabularies, definitions, etc.?”
    ** Visual evaluation of the response
    ** Rubric tool at [https://www.ngdc.noaa.gov/metadata/published/NOAA/IOOS/iso/index-secure.html NGDC] or IOOS RCV (?) 
