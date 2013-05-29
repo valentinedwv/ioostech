@@ -154,12 +154,6 @@ For more details and background discussions on the IOOS vocabulary strategy pert
 
 [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions] is an MMI vocabulary used for clarifying the meaning of roles, classifiers and other general terms used throughout the SOS web services, particularly the DescribeSensor SensorML response.
 
-== Other Organization Roles ==
-
-Mainly in SensorML: service provider, data publisher, asset operator
-Also: IOOS Regional Association
-See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions].
-
 == Keywords ==
 
 Including geographical regions? RA in GetCapabilities Keywords?
@@ -171,10 +165,27 @@ The background, IOOS use, and mappings of these vocabularies is partially descri
   * [http://mmisw.org/ont/ioos/societal_areas IOOS Societal Benefit Areas]
   * [http://mmisw.org/ont/ioos/category IOOS Category Vocabulary]
 
-== IOOS Biology Data projects (adopted terms) == 
+== IOOS Biology Data projects == 
 
-  * [http://www.ioos.gov/dmac/biology/welcome.html Biological Data Terminology]
-  * [http://www.ioos.gov/observing/animal_telemetry/welcome.html Animal Telemetry Network, ATN]
+  * [http://www.ioos.noaa.gov/dmac/biology/welcome.html Biological Data Terminology]
+  * [http://www.ioos.noaa.gov/observing/animal_telemetry/welcome.html Animal Telemetry Network, ATN]
+
+Hassan Moustahfid from the IOOS PO led a project with three agencies in Hawaii aimed at developing a common exchange data format for exchanging reef fish survey data (presence, absence, abundance of reef fish as determined by visual sampling procedures).  A large part of that development involved agreeing on vocabularies to be used by all three agencies.  The solution was an extension of the Darwin Core standard for biological observations and was developed in conjunction with OBIS USA.  
+[http://www.ioos.gov/ecosystem_observations/welcome.html Click Projects tab on this page]
+How do we use this?  Is it extensible?  What about the overlap with existing standards like CF and the IOOS Param Voc?  
+
+Biodiversity Information Standards (formerly known as Taxonomic Data Working Group) http://www.tdwg.org/
+
+Schema Terminology will be based on ratified [http://rs.tdwg.org/dwc/ Darwin core], Dublin core and proposed IOOS vocabularies. XML guide will also based on Darwin core XML guidance.
+
+  * CF Conventions had been applied to biological data definition at the field level. This is to assure that IOOS Biological Project will be compatible with other geophysical datasets.
+  * FGDC and ISO 19115-2 are the adopted Metadata standards.
+  * ERDDAP is the main webservice for this project.
+  * EDC is the client developed to connect directly to ERDDAP and access data using customer application tools such as ARCGIS and R Project.
+  * To learn more about the Biological data standards implemented at the Pacific Islands Region please follow the following links:
+Biological data services at the Pacific Islands Region website
+FGDC and ISO Metadata
+
 
 == Units of Measure ==
 
@@ -201,7 +212,7 @@ There's an [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html excellent 
 
 See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
 
-(Regional Association, Provider/Owner, etc)
+== Regional Association, Provider/Owner, etc ==
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
 
@@ -223,6 +234,11 @@ Example:
   * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
   * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
   * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
+
+== Other Organization Roles ==
+
+Mainly in SensorML: service provider, data publisher, asset operator
+Also: IOOS Regional Association. See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions].
 
 
 =Links and yet to be organized errata=
@@ -277,21 +293,3 @@ http://www.whoi.edu/page.do?pid=49656
 Workshop report is available from the page above or directly from http://www.whoi.edu/fileserver.do?id=77984&pt=2&p=84468
 
 There was useful information gathered prior to the meeting and included in the appendices of the report on existing Crosswalks, Repositories, Metadtaa Standards, Tools, and Vocabularies in use.  Most important for IOOS, are some firm recommendations on how to choose vocabularies and the importance of a mature process for extending/updating vocabularies when they do not meet our exact needs.  
-
-==IOOS Biological Data Project==
-
-Hassan Moustahfid from the IOOS PO led a project with three agencies in Hawaii aimed at developing a common exchange data format for exchanging reef fish survey data (presence, absence, abundance of reef fish as determined by visual sampling procedures).  A large part of that development involved agreeing on vocabularies to be used by all three agencies.  The solution was an extension of the Darwin Core standard for biological observations and was developed in conjunction with OBIS USA.  
-[http://www.ioos.gov/ecosystem_observations/welcome.html Click Projects tab on this page]
-How do we use this?  Is it extensible?  What about the overlap with existing standards like CF and the IOOS Param Voc?  
-
-Biodiversity Information Standards (formerly known as Taxonomic Data Working Group) http://www.tdwg.org/
-
-Schema Terminology will be based on ratified [http://rs.tdwg.org/dwc/ Darwin core], Dublin core and proposed IOOS vocabularies. XML guide will also based on Darwin core XML guidance.
-
-  * CF Conventions had been applied to biological data definition at the field level. This is to assure that IOOS Biological Project will be compatible with other geophysical datasets.
-  * FGDC and ISO 19115-2 are the adopted Metadata standards.
-  * ERDDAP is the main webservice for this project.
-  * EDC is the client developed to connect directly to ERDDAP and access data using customer application tools such as ARCGIS and R Project.
-  * To learn more about the Biological data standards implemented at the Pacific Islands Region please follow the following links:
-Biological data services at the Pacific Islands Region website
-FGDC and ISO Metadata
