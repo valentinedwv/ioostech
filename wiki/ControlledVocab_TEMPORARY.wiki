@@ -211,26 +211,6 @@ There's an [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html excellent 
 
 
 
-
-
-= Observed Property Vocabularies 22222 =
-
-
-== Existing Observed Property Vocabularies ==
-
-|| Controlled Vocabulary || URL for information || URL for reference ||
-|| Climate and Forecast Standard Names || http://cf-pcmdi.llnl.gov/ and http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ || http://mmisw.org/ont/cf/parameter/PROPERTYNAME ||
-|| IOOS Parameter Vocabulary v1.0 || ?? || http://mmisw.org/ont/ioos/parameter/PROPERTYNAME ||
-|| IOOS DIF GML Dictionary || ?? || http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#PROPERTYNAME  ||
-|| SWEET || http://sweet.jpl.nasa.gov/ || http://sweet.jpl.nasa.gov/2.2/VOCAB.owl#PROPERTYNAME ||
-|| OGC Terms (URL) || ?? || ?? ||
-|| OGC Terms (URN) || ?? || ogc:def:phenomenon:mmisw.org:cf:PROPERTYNAME || 
-|| GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/ ||
-|| SECOORA || ?? || http://mmisw.org/ont/secoora/parameter/ ||
-
-A list of tables with examples of how the various observed property vocabularies are used across example services can be found on the [ControlledVocabularyTables ControlledVocabularyTables Page]
-
-
 = Organization Types and Roles  =
 
 See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
@@ -264,6 +244,21 @@ Example:
 == IOOS Vars RDF ==
 
 Dictionaries and Ontologies, such as those hosted at MMI allow machine mapping's between controlled vocabularies.  The IOOS Catalog adopted a simple Ontology which allows the User Interface to map IOOS variables, e.g. Winds to the CF Terms used by some of the regional SOS's.  This is a very simple ontology, see below, which only makes use of the NarrowMatch triple store's thus Winds is mapped to wind_speed, wind_direction, etc.  [ControlledVocabularyTables#IOOS_Vars_RDF See the XML listing here.]
+
+== Existing Observed Property Vocabularies ==
+
+|| Controlled Vocabulary || URL for information || URL for reference ||
+|| Climate and Forecast Standard Names || http://cf-pcmdi.llnl.gov/ and http://cf-pcmdi.llnl.gov/documents/cf-standard-names/ || http://mmisw.org/ont/cf/parameter/PROPERTYNAME ||
+|| IOOS Parameter Vocabulary v1.0 || ?? || http://mmisw.org/ont/ioos/parameter/PROPERTYNAME ||
+|| IOOS DIF GML Dictionary || ?? || http://www.ioos.gov/gml/IOOS/0.6.1/dictionaries/phenomenaDictionary.xml#PROPERTYNAME  ||
+|| SWEET || http://sweet.jpl.nasa.gov/ || http://sweet.jpl.nasa.gov/2.2/VOCAB.owl#PROPERTYNAME ||
+|| OGC Terms (URL) || ?? || ?? ||
+|| OGC Terms (URN) || ?? || ogc:def:phenomenon:mmisw.org:cf:PROPERTYNAME || 
+|| GCOOS || ?? || http://mmisw.org/ont/gcoos/parameter/ ||
+|| SECOORA || ?? || http://mmisw.org/ont/secoora/parameter/ ||
+
+A list of tables with examples of how the various observed property vocabularies are used across example services can be found on the [ControlledVocabularyTables ControlledVocabularyTables Page]
+
 
 ==Various potentially useful resources==
 
