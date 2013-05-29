@@ -394,7 +394,7 @@
               </swe2:item>
 
               <swe2:item name="wmo_41001_sensor2">
-                <swe2:DataRecord>
+                <swe2:DataRecord definition="http://mmisw.org/ont/ioos/definition/sensor">
                   <swe2:field name="sea_water_temperature">
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
                       <swe2:uom code="Celsius" />
@@ -410,7 +410,7 @@
               </swe2:item>
 
               <swe2:item name="wmo_41002_sensor1">
-                <swe2:DataRecord>
+                <swe2:DataRecord definition="http://mmisw.org/ont/ioos/definition/sensor">
                   <swe2:field name="air_temperature">
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
                       <swe2:uom code="Celsius" />
@@ -420,7 +420,7 @@
               </swe2:item>
 
               <swe2:item name="wmo_41002_sensor2">
-                <swe2:DataRecord>
+                <swe2:DataRecord definition="http://mmisw.org/ont/ioos/definition/sensor"
                   <swe2:field name="sea_water_temperature">
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
                       <swe2:uom code="Celsius" />
@@ -430,7 +430,7 @@
               </swe2:item>
 
               <swe2:item name="wmo_41003_sensor1">
-                <swe2:DataRecord>
+                <swe2:DataRecord definition="http://mmisw.org/ont/ioos/definition/sensor">
                   <swe2:field name="air_temperature">
                     <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
                       <swe2:uom code="Celsius" />

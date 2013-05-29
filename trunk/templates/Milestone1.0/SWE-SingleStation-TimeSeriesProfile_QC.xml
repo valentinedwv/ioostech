@@ -493,7 +493,7 @@
               </swe2:item>
 
               <swe2:item name="wmo_41001_sensor2">
-                <swe2:DataRecord>
+                <swe2:DataRecord definition="http://mmisw.org/ont/ioos/definition/sensor">
                   <swe2:field name="thermisterProfile">
                     <swe2:DataArray definition="http://mmisw.org/ont/ioos/definition/profile">
                       <swe2:elementCount>
