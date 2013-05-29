@@ -38,19 +38,38 @@
 
 *NOTE*: The following test break-down list is for reference only. It was completed for v4 of the test; therefore, it may not be completely relevant for the latest version.
 
+
 *OWS Common Tests*
  *sos:ows-main 
  *owsTests:ows-main 
- *owsTests:ows-OWS.GetCapabilities.1 
- *owsTests:ows-OWS.ContentType.1 
- *owsTests:ows-OWS.GetCapabilities-Exceptions.1 
+   **Assertion: Run test group for GetCapabilities requests using the GET method. Target endpoint is {$serviceURL//ows:OperationsMetadata/ows:Operation[@name='GetCapabilities']/ows:DCP/ows:HTTP/ows:Get/@xlink:href}
+ *owsTests:ows-OWS.GetCapabilities.1
+   **Assertion: The GET method request must be supported (using HTTP GET). Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root element matches the provided root element. 
+ *owsTests:ows-OWS.ContentType.1
+   **Assertion: A response message containing an entity body must contain a Content-Type entity header field that correctly indicates the media type of the message body. Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root document matches the root element name; (3) the response Content-Type header must be "text/xml" for XML entities. 
+ *owsTests:ows-OWS.GetCapabilities-Exceptions.1
+   **Assertion: In the event that a GetCapabilities request cannot be processed for any reason, the response entity shall include an exception report. The exception code must be one of those listed in Table 5 in the specification document. GetCapabilities with no _*service*_ parameter and _*version*_ parameter equal to 1.0.0. Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root document is an ows:ExceptionReport document; (3) the ExceptionReport shall have the "MissingParameterValue" exception code; (4) the ExceptionReport @locator value shall be that of the missing parameter.
  *owsTests:ows-OWS.GetCapabilities-Exceptions.2 
+   **Assertion: In the event that a GetCapabilities request cannot be processed for any reason, the response entity shall include an exception report. The exception code must be one of those listed in Table 5. GetCapabilities with a bogus _*service*_ parameter value (ADSF), and _*version*_ parameter equal to 1.0.0.  Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root document is an ows:ExceptionReport document; (3) the ExceptionReport shall have the 'InvalidParameterValue' exception code; (4) theExceptionReport @locator value shall be that of the invalid parameter.
  *owsTests:ows-OWS.GetCapabilities-Exceptions.3 
- *owsTests:ows-OWS.GetCapabilities-Exceptions.5 
- *owsTests:ows-OWS.CaseInsensitiveKvpNames.1 
+   **Assertion: In the event that a GetCapabilities request cannot be processed for any reason, the response entity shall include an exception report. The exception code must be one of those listed in Table 5. GetCapabilities with _*service*_ parameter SOS, _*version*_ parameter 1.0.0, and bogus _*AcceptVersions*_ parameter 2000-01-01.
+ *owsTests:ows-OWS.GetCapabilities-Exceptions.5
+   **Assertion: In the event that a GetCapabilities request cannot be processed for any reason, the response entity shall include an exception report. The exception code must be one of those listed in Table 5. GetCapabilities with an incorrect KVP query string `http://SOS-server-URL/sos?request~GetCapabilities!service~!SOS`, triggering the missing parameter value exception.  Pass if all of the following conditions are true: (1) the response is schema 
+valid; (2) the root document is an ows:ExceptionReport document; (3) the ExceptionReport shall have the "MissingParameterValue" exception code, for both the request and service.
+ *owsTests:ows-OWS.CaseInsensitiveKvpNames.1
+   **Assertion: Parameter names in KVP strings shall be handled in a case-insensitive manner. GetCapabilities with the KVP parameter names in all uppercase, lower-case and mixed-case.  Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root element matches the provided root element.
  *owsTests:ows-OWS.GetCapabilities-AcceptVersions.1 
+   **Assertion: If AcceptVersion is not specified, the service must respond with highest supported version. GetCapabilities with no version and service of "SOS". Without AcceptVersion, using version negotiation, sends latest copy.  Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root document is an sos:SOS_Capabilities document; (3) the response version must be what was requested
  *owsTests:ows-OWS.GetCapabilities-AcceptVersions.2 
+   **Assertion: Version negotiation using AcceptVersions parameter (preference ordering) must return service metadata corresponding to the most preferred version that is supported. If none of the requested versions are supported, the server must generate an exception with code 'VersionNegotiationFailed'. GetCapabilities with no version and service of "SOS".  With AcceptVersion, expecting one of the versions listed $acceptVersions.  Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root document is an sos:SOS_Capabilities document; (3) the response version must be what was requested. The AcceptVersion element is used with a number of versions, one is expected to return ('1.1.0').
  *owsTests:ows-OWS.GetCapabilities-AcceptVersions.3 
+   **Assertion: Version negotiation using AcceptVersions parameter (preference ordering) must return service metadata corresponding to the most preferred version that is supported. If none of the requested versions are supported, the server must generate an exception with code 'VersionNegotiationFailed'. GetCapabilities with no _*version*_, _*service*_ of "SOS", and bogus _*AcceptVersion*_ number "2000-01-01" `http://SOS-server-URL/sos?request=GetCapabilities&service=SOS&acceptversions=2000-01-01`. Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root document is an ows:ExceptionReport document; (3) the ExceptionReport shall have the "VersionNegotiationFailed" exception code.
+ *owsTests:ows-OWS.GetCapabilities-Sections.1 
+   **Assertion: The response to a GetCapabilities request that includes a sections parameter with NO VALUE provided shall include an abbreviated capabilities document that omits all optional sections `http://SOS-server-URL/sos?service=SOS&request=GetCapabilities&sections=`. Pass if the response is schema valid and omits all optional top-level elements.
+ *owsTests:ows-OWS.GetCapabilities-Sections.2
+   **Assertion: The response to a GetCapabilities request that includes a sections parameter listing optional elements _*ServiceIdentification*_ and _*OperationsMetadata*_ shall include only the requested elements in the response entity `http://SOS-server-URL/sos?service=SOS&request=GetCapabilities&sections=ServiceIdentification,OperationsMetadata`. Pass if the response is schema valid and includes only the requested optional elements.
+ *owsTests:ows-OWS.GetCapabilities-AcceptFormats.1 
+   **Assertion: The response to a GetCapabilities request containing an _*AcceptVersions*_ parameter specifying a supported format must include a response entity that corresponds to the requested media type `http://SOS-server-URL/sos?service=SOS&request=GetCapabilities&acceptformats=text/xml` and `http://SOS-server-URL/sos?service=SOS&request=GetCapabilities&acceptformats=application/zip`.
 
 *General SOS Tests*
  *sos:general-main 
