@@ -200,19 +200,11 @@ Relevant links:
 There's an [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html excellent comparison of UDUNITS and UCUM at this page ERDDAP / NOAA CoastWatch page (thanks, Jeremy!)]. It also includes converters among the units systems, and discussion of UDUNITS-1 and UDUNITS-2.
 
 
-= References =
-
-(1) Haines, S., V. Subramanian, E. Mayorga, D. Snowden, R. Ragsdale, C. Rueda and M. Howard. _Submitted_. IOOS vocabulary and ontology strategy for observed properties. [http://www.oceans12mtsieeehamptonroads.org Proc. MTS/IEEE Oceans 2012], Hampton Roads, VA. Final, submitted paper [http://ioostech.googlecode.com/files/IOOSVocabPaper_MTSOceans2012_HainesEtal_Final_copyrighted.pdf is available here as pdf.]
-
-(2) [https://marinemetadata.org/news/mmisemanticpaper2011 Graybeal, J., A. W. Isenor, and C. Rueda. 2012. Semantic mediation of vocabularies for ocean observing systems. Computers & Geosciences 40: 120-131, doi:10.1016/j.cageo.2011.08.002]
-
-
-
-= Organization Types and Roles  =
+== Organization Types and Roles  ==
 
 See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
 
-== Regional Association, Provider/Owner, etc ==
+=== Regional Association, Provider/Owner, etc ===
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
 
@@ -235,10 +227,16 @@ Example:
   * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
   * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
 
-== Other Organization Roles ==
-
+=== Other Organization Roles ===
 Mainly in SensorML: service provider, data publisher, asset operator
 Also: IOOS Regional Association. See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions].
+
+
+= References =
+
+(1) Haines, S., V. Subramanian, E. Mayorga, D. Snowden, R. Ragsdale, C. Rueda and M. Howard. _Submitted_. IOOS vocabulary and ontology strategy for observed properties. [http://www.oceans12mtsieeehamptonroads.org Proc. MTS/IEEE Oceans 2012], Hampton Roads, VA. Final, submitted paper [http://ioostech.googlecode.com/files/IOOSVocabPaper_MTSOceans2012_HainesEtal_Final_copyrighted.pdf is available here as pdf.]
+
+(2) [https://marinemetadata.org/news/mmisemanticpaper2011 Graybeal, J., A. W. Isenor, and C. Rueda. 2012. Semantic mediation of vocabularies for ocean observing systems. Computers & Geosciences 40: 120-131, doi:10.1016/j.cageo.2011.08.002]
 
 
 =Links and yet to be organized errata=
