@@ -17,8 +17,9 @@ The guidance is described to help IOOS data managers and data providers determin
 
 ===Guidance Process for Referencing IOOS controlled Vocabulary Terms===
 
-  # The IOOSname should be the first name table referenced.   
-The standard_name attribute for the variable name in your data set can be determined from the CF standard_name table.       
+  # The IOOS Parameter Vocabulary (v2.0) can be used to specify a variable name in your database.    
+  # A standard_name attribute that describes the content of the variable 
+The standard_name attribute for the variable name in your data set can be determined from the CF standard_name table.  
 
 The first vocabularies referenced should be the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/23/cf-standard-name-table.html Climate and Forecast (CF) Standard Name Table] and  [http://rs.tdwg.org/dwc/terms/ Darwin Core Term List] to determine a term name.  These two vocabularies are applicable for physical, chemical, and biological terms.  
   # If an acceptable term is found, then the data provider should adopt the term(s).
