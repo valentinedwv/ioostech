@@ -247,21 +247,16 @@ A list of tables with examples of how the various observed property vocabularies
 
 == External resources of interest ==
  * [http://www.eionet.europa.eu/gemet/ GEMET (GEneral Multilingual Environmental Thesaurus) ]
-
  * [http://gcmd.nasa.gov/Resources/valids/archives/keyword_list.html NASA GCMD (Global Change Master Directory) Science keywords ]
-
  * [http://www.scgcorp.com/urr/LexViewList.aspx GEOSS EO parameters ]
-
  * NASA SWEET (Semantic Web for Earth and Environmental Terminology)
-
  * [http://gmesdata.esa.int/OTE/navigateInfoDomain GMES Thesaurus ]
- * CF resources on MMI*. I've found several pages and resources at MMI that are directly focused on CF, but may not be well integrated or cross-linked and have different degrees of currency (out of date).
+ * CF resources on MMI. I've found several pages and resources at MMI that are directly focused on CF, but may not be well integrated or cross-linked and have different degrees of currency (out of date).
     * [http://marinemetadata.org/references/cfstandardnames CF - Climate and Forecast Standard Names; Vocabulary for CF parameters] (a document, not a vocabulary resource per se)
     * [http://marinemetadata.org/community/teams/vocdev/generaldocuments/orrcf Using the ORR CF Standard names Vocabulary]
     * [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary]
 
 == Other, Various potentially useful resources==
-
   * http://marinemetadata.org/conventions/vocabularies
   * Work on water quality (?) vocabularies that Matt Howard and Cyndy Chandler are starting up (no URL that I know of). Matt is also leading a vocabulary effort focused on Gulf of Mexico, related to Deepwater Horizon recovery efforts.
   * [http://www.bco-dmo.org/ BCO-DMO] and [http://cdmo.baruch.sc.edu/ NERRS CDMO] are also excellent resources for water quality and biogeochemistry. [http://cdmo.baruch.sc.edu/data/parameters.cfm For NERRS, this "Parameters" page is very relevant].
