@@ -598,9 +598,9 @@
       </swe2:encoding>
       <swe2:values>
         <!-- The first three records are from wmo_41001_sensor1 and contain quality values -->
-        2009-05-23T00:00:00Z,a,wmo_41001_sensor1,15.4,T,a,r,2.0,280
-        2009-05-23T01:00:00Z,b,wmo_41001_sensor1,15.8,M,j,j,1.8,121
-        2009-05-23T02:00:00Z,c,wmo_41001_sensor1,15.6,M,,,1.0,142
+        2009-05-23T00:00:00Z,a,wmo_41001_sensor1,15.4,T,a,r,2.0,m,280
+        2009-05-23T01:00:00Z,b,wmo_41001_sensor1,15.8,M,j,j,1.8,m,121
+        2009-05-23T02:00:00Z,c,wmo_41001_sensor1,15.6,M,,,1.0,m,142
         2009-05-23T00:00:00Z,a,wmo_41001_sensor2,5.6,8.0
         2009-05-23T01:00:00Z,b,wmo_41001_sensor2,5.8,8.2
         2009-05-23T02:00:00Z,c,wmo_41001_sensor2,5.7,8.5
