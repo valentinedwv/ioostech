@@ -6,24 +6,37 @@
 = IOOS Controlled Vocabularies =
 
 == Controlled Vocabulary Usage Policy ==
+NOTE: We must choose whether or not the descriptions of how to use vocabs are going to be specific to SOS or general enough to apply to other services.  Referencing in a O&M/SWE document is very different than referencing in a CF compliant netCDF file.  I hope both are addressed.
 
 === Background ===
+NOTE: Just a pet peeve.  IOOS is mentioned 4 times in the span of three sentences.  I prefer to turn the focus toward vocabularies, why they are important and how they are used and away from IOOS IOOS IOOS.  
 
-The IOOS Program has developed guidance to encourage the use of vocabularies and mappings that should be used by anyone providing IOOS coastal, ocean, and Great Lakes environmental data through IOOS adopted data services.  The purpose of developing controlled vocabularies for the IOOS community is to curtail individual development of new lists and instead rally around a set of vocabularies that can be used by the whole community.  
+The IOOS Program has developed guidance to encourage the use of vocabularies and mappings that should be used by anyone providing IOOS coastal, ocean, and Great Lakes environmental data through IOOS adopted data services.  The purpose of developing controlled vocabularies for the IOOS community is to curtail individual development of new lists and instead rally around a set of vocabularies that can be used by the whole community.  NOTE: The final sentence is a bit awkward and not the point in my opinion.  The purpose of developing controlled vocabularies is to clarify the meaning of common concepts and to enable more interoperable data systems through more precise definitions, and machine readable online references.  The goal of less rework is a side benefit.
 
 The controlled vocabularies will be managed by the IOOS Program on the Marine Metadata Interoperability Ontology Registry and Repository (MMI ORR) Web site. The IOOS controlled vocabularies are an elastic set of reference-able terms and definitions for parameter names (e.g. physical, chemical, biological), platform types (e.g. buoys, gliders, floats), organizations (e.g. IOOS RAs, Federal Agencies) and other domains. 
 
-The guidance is described to help IOOS data managers and data providers determine and select terms from one of the IOOS accepted vocabularies and improve the terms contained within the vocabularies. For more information or questions, contact Rob.Ragsdale@noaa.gov in the IOOS Program Office. 
+The _guidance is described_ (NOTE: Awkward.  What are we writing?  I think it is policy and I think it needs a little more teeth than "guidance".  Suggest something like: This policy describes which parameter vocabularies should be referenced in a few common cases, and how to address gaps when current vocabularies are insufficient.)  to help IOOS data managers and data providers determine and select terms from one of the IOOS accepted vocabularies and improve the terms contained within the vocabularies. For more information or questions, contact Rob.Ragsdale@noaa.gov in the IOOS Program Office. 
 
 ===Guidance Process for Referencing IOOS controlled Vocabulary Terms===
 
-  # The IOOS Parameter Vocabulary (v2.0) can be used to specify a variable name in your database.    
+NOTE: This section is mis-titled.  The guidance or process as written only applies to parameter vocabularies and not controlled vocabularies generally.  Suggested new title, (some variation of) "Selecting a Parameter Vocabulary".
+ 
+NOTE: Before jumping right in to the steps as bullets I think we need some prep material.  What does it mean to "select".  Where are they used?  How are they referenced.  It's likely this material exists on the MMI wiki (not the ORR)
+
+NOTE: Need to describe the various DwC derivatives.  Like it or not we have DwC, the OBIS MBG (sp?), and the IOOS Bio Project derivative.  We need to clarify the landscape.  Can Hassan help by providing a roadmap to the many choices?
+
+  # The IOOS Parameter Vocabulary (v2.0) can be used to specify a variable name in your database.    (NOTE: Add link whenever they apply and are stable, eg v2.0)
   # A standard_name attribute that describes the content of the variable 
-The standard_name attribute for the variable name in your data set can be determined from the CF standard_name table.  
+The standard_name attribute for the variable name in your data set can be determined from the CF standard_name table.  (NOTE: This phrasing is unclear and the first sentence is a fragment.  Please define standard_name if you will introduce it in a bullet.  I think it is unnecessary at this point)
 
 The first vocabularies referenced should be the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/23/cf-standard-name-table.html Climate and Forecast (CF) Standard Name Table] and  [http://rs.tdwg.org/dwc/terms/ Darwin Core Term List] to determine a term name.  These two vocabularies are applicable for physical, chemical, and biological terms.  
+
+(NOTE: Suggest we make this hierarchical or at least separate the CF description from the DwC description.  For example, in a case where equivalent or nearly equivalent terms exist we probably prefer CF over DwC, esp if the data set is encoded in CF netCDF files (or their OPeNDAP equivalent))
+
+(NOTE: We do not want to imply that it is ok to use DwC terms in the standard_name attribute of a variable encoded in a CF compliant (allegedly) netCDF file.  In that specific case, the CF standard_name list is the ONLY appropriate vocabulary.)
+
   # If an acceptable term is found, then the data provider should adopt the term(s).
-  # The [http://mmisw.org/ont/ioos IOOS controlled vocabularies] should be referenced when a desired term is not found in the CF or Darwin Core vocabularies.
+  # The [http://mmisw.org/ont/ioos IOOS controlled vocabularies] (NOTE: I think this is an incorrect link.  This points to a group of vocabularies that includes maps to CF and DwC. Maybe the link is fine but more guidance on what they should do when they go to that URL and are confronted with a list of 12-15 other vocabularies) and should be referenced when a desired term is not found in the CF or Darwin Core vocabularies.
   # When a desired term is found in the IOOS controlled vocabularies, the term should be adopted.  
   # The data provider should contact the IOOS Program Office if a term cannot be found in any of the IOOS controlled vocabularies before developing own.  
   # A new term may need to be developed by the data provider and IOOS Program Office.
@@ -33,6 +46,7 @@ The first vocabularies referenced should be the [http://cf-pcmdi.llnl.gov/docume
   
 The U.S. IOOS registered vocabularies are found under the IOOS authority and can be linked from this url: http://mmisw.org/ont/ioos/
 
+(NOTE: The list below is fine, but it isn't inclusive.  Not sure what to do here because there are actually much more than four lists at the above URL)
 The list of vocabularies includes:
  * [#Observed_Property observed property (or "parameter")]
  * [#Station_Platform_Type station platform type]
