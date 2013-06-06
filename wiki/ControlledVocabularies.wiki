@@ -9,11 +9,11 @@
 
 === Background ===
 
-The IOOS Program has developed guidance to encourage the use of vocabularies and mappings that should be used by anyone providing IOOS coastal, ocean, and Great Lakes environmental data through IOOS adopted data services.  The purpose of developing controlled vocabularies for the IOOS community is to curtail individual development of new lists and instead rally around a set of vocabularies that can be used by the whole community.  
+The IOOS Program has developed guidance to encourage the use of vocabularies and mappings that should be used by anyone providing coastal, ocean, and Great Lakes environmental data through adopted data services.  The purpose of developing controlled vocabularies for the community is to curtail individual development of new lists and instead rally around a set of vocabularies that can be used by the whole community.  
 
-The controlled vocabularies will be managed by the IOOS Program on the Marine Metadata Interoperability Ontology Registry and Repository (MMI ORR) Web site. The IOOS controlled vocabularies are an elastic set of reference-able terms and definitions for parameter names (e.g. physical, chemical, biological), platform types (e.g. buoys, gliders, floats), organizations (e.g. IOOS RAs, Federal Agencies) and other domains. 
+The controlled vocabularies will be managed by the IOOS Program on the Marine Metadata Interoperability Ontology Registry and Repository (MMI ORR) Web site. The vocabularies should be viewed as an elastic set of terms and definitions for parameter names (e.g. physical, chemical, biological), platform types (e.g. buoys, gliders, floats), organizations (e.g. IOOS RAs, Federal Agencies) and other domains that are referenceable in web service documentation (O&M/SWE) and files (CF compliant netCDF). 
 
-The guidance is described to help IOOS data managers and data providers determine and select terms from one of the IOOS accepted vocabularies and improve the terms contained within the vocabularies. For more information or questions, contact Rob.Ragsdale@noaa.gov in the IOOS Program Office. 
+The guidance is described to help data managers and data providers determine and select terms from one of the IOOS accepted vocabularies and improve the terms contained within the vocabularies. For more information or questions, contact Rob.Ragsdale@noaa.gov in the IOOS Program Office. 
 
 ===Guidance Process for Referencing IOOS controlled Vocabulary Terms===
 
