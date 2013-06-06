@@ -98,7 +98,7 @@ The CF standard names vocabulary only defines scalar properties. Previously, IOO
 The [http://mmisw.org/ont/ioos/platform IOOS Platform Vocabulary (http://mmisw.org/ont/ioos/platform)] references and defines platform types used to describe each station asset. This vocabulary was developed by IOOS (with guidance from MMI) in 2012-2013 through a concerted effort drawing from current needs and previous IOOS and MMI experiences. [http://code.google.com/p/ioostech/wiki/PlatformVocabulary This effort, the vocabulary itself, and instructions for usage are described elsewhere.] The vocabulary of approximately 35 terms provides a consistent terminology to describe a wide array of platform types on which sensors are attached and data sets collected. These terms must be used as [http://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0/SML-DescribeSensor-Station.xml classifier entries in SOS DescribeSensor SensorML responses].
 
 
-== Organization Descriptors ==
+== Organization Descriptors and Roles ==
 
 IOOS has implemented as MMI vocabularies two kinds of organization or institutional descriptors (classifiers): *IOOS Partner Organization* and *Organization Societal Sector*.
 
@@ -141,6 +141,34 @@ There has been a request by some of the RA Directors to have a metadata field th
 
 IOOS-supported platforms should be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}  This way, the asset inventory can identify IOOS-sponsored platforms, and use this information.  In practice, there are probably few assets 100% supported by IOOS, so having IOOS as a sponsor can safely be interpreted as Partial IOOS support.
 
+
+==== OLDER STUFF regarding RA, Provider/Owner, and other background and organization roles ====
+Mainly in SensorML: service provider, data publisher, asset operator. Also: IOOS Regional Association. See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions].
+
+Example:
+{{{
+<sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner">
+    <sml:ResponsibleParty>
+        <sml:organizationName>ORCA-UW</sml:organizationName>
+        <sml:contactInfo>
+            <sml:address>
+                <sml:country>USA</sml:country>
+            </sml:address>
+            <sml:onlineResource xlink:href="http://orca.ocean.washington.edu" />
+        </sml:contactInfo>
+    </sml:ResponsibleParty>
+</sml:contact>
+}}}
+
+  * See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
+  * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
+  * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
+  * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
+  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
+
+
+
+
 = Introduction =
 
 In a collaboration between the IOOS Program Office and RA partners, a broad strategy addresses vocabulary needs across core components of the IOOS distributed observation systems, following IOOS guiding principles. This strategy encompasses vocabularies and vocabulary mappings (ontologies) for observation platforms; organization names, types and roles; and other characteristics. All such vocabularies are defined on the [https://marinemetadata.org/mmiswinfo/ MMI Ontology Registry and Repository (MMI ORR)], and existing community vocabularies and ontologies are being adopted as appropriate. [#References See also (2) below for additional MMI ORR background].
@@ -154,7 +182,6 @@ The material presented here will evolve into a clearer policy. [http://code.goog
 = Additional Background =
 
 For more details and background discussions on the IOOS vocabulary strategy pertaining observed-properties in particular, see [#References (1)]; this paper also presents examples of mapping across IOOS vocabularies, including query tools to exploit such mappings. Additional background materials may be found at [ControlledVocabularies this older wiki page on IOOS vocabulary strategies]. Current [http://www.unc.edu/~haines/orrioos.html IOOS vocabulary mappings and SPARQL querying demonstrations are available in this external page].
-
 
 
 
@@ -201,36 +228,6 @@ FGDC and ISO Metadata
 
 Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. Versions should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP / NOAA CoastWatch has a very useful page that compares UDUNITS and UCUM, and includes converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2.]
 
-== Organization Types and Roles  ==
-
-See these wiki pages for earlier discussions [RepresentingRAAffiliationInServiceMetadata] and [RepresentingRolesinServiceMetadata].
-
-=== Regional Association, Provider/Owner, etc ===
-  * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
-  * _Describe convention used by Eric in the IOOS Catalog, and also [NANOOSNVSPythonSOS adopted by the NANOOS SOS service]_ It's the name from XPath /sml:member/sml:System/sml:contact/sml:ResponsibleParty/sml:organizationName, but I can't remember which "contactType role" is being used (eg, <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner"> below) when multiple roles are listed in the response.
-
-Example:
-{{{
-<sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner">
-    <sml:ResponsibleParty>
-        <sml:organizationName>ORCA-UW</sml:organizationName>
-        <sml:contactInfo>
-            <sml:address>
-                <sml:country>USA</sml:country>
-            </sml:address>
-            <sml:onlineResource xlink:href="http://orca.ocean.washington.edu" />
-        </sml:contactInfo>
-    </sml:ResponsibleParty>
-</sml:contact>
-}}}
-
-  * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
-  * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
-  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
-
-=== Other Organization Roles ===
-Mainly in SensorML: service provider, data publisher, asset operator
-Also: IOOS Regional Association. See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions].
 
 
 = References =
