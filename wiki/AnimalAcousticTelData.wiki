@@ -39,6 +39,7 @@ Data Services being implemented by this project are based on [http://coastwatch.
 === IOOS Biology Data projects ===
   * http://www.ioos.noaa.gov/dmac/biology/welcome.html
   * http://www.ioos.noaa.gov/observing/animal_telemetry/welcome.html
+  * [http://oceanservice.noaa.gov/podcast/p0413.html#dd46 NOAA National Ocean Service Podcast (April 2013): Today on Diving Deeper, we explore the world of animal tagging with Zdenka Willis from the U.S. Integrated Ocean Observing System.]
 
 === POST and relevant OTN Data repository ===
   * [http://members.oceantrack.org/data/discovery/NEPACIFIC.htm Ocean Tracking Network NE PACIFIC Ocean Data Series]
