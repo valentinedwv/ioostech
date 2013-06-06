@@ -203,16 +203,7 @@ FGDC and ISO Metadata
 
 == Units of Measure ==
 
-Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. Versions should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2).
-
-Relevant links:
-  * [http://unitsofmeasure.org/ Universal Code for Units of Measure]
-  * [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]
-  * OGC Best Practices circa 2002 [http://portal.opengeospatial.org/files/?artifact_id=11498 OpenGIS© Recommendation Paper — Units of Measure Use and Definition Recommendations] may be outdated??
-  * [https://portal.opengeospatial.org/files/?artifact_id=8814 OGC URN definitions with some reference to units of measure]
-
-There's an [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html excellent comparison of UDUNITS and UCUM at this page ERDDAP / NOAA CoastWatch page (thanks, Jeremy!)]. It also includes converters among the units systems, and discussion of UDUNITS-1 and UDUNITS-2.
-
+Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. Versions should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP / NOAA CoastWatch has a very useful page that compares UDUNITS and UCUM, and includes converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2.]
 
 == Organization Types and Roles  ==
 
