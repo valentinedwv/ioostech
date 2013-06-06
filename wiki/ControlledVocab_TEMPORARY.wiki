@@ -103,7 +103,6 @@ The [http://mmisw.org/ont/ioos/platform IOOS Platform Vocabulary (http://mmisw.o
 IOOS has implemented as MMI vocabularies two kinds of organization or institutional descriptors (classifiers): *IOOS Partner Organization* and *Organization Societal Sector*.
 
 === IOOS Partner Organization ===
-
 IOOS data providers, including IOOS Regional Associations (RAs) and Federal Agencies, should be referenced using terms corresponding to standard RA and agency acronyms (eg, GLOS, SECOORA, USACE) as listed in the MMI-hosted IOOS Partner Organization vocabulary at http://mmisw.org/ont/ioos/organization. Note that the organization term in the URL is case-sensitive.
 
 *Usage in SOS XML responses: [TO-DO: the Response entries will be linked to SOS response templates, so that full usage details are readily accessible]*
@@ -119,17 +118,8 @@ IOOS data providers, including IOOS Regional Associations (RAs) and Federal Agen
 
 `*` _Preceded by /sml:SensorML/sml:member/sml:System_
 
-=== IOOS Organization Societal Sector ===
-
-The [http://mmisw.org/ont/ioos/sector IOOS Organizational Societal Sector vocabulary (http://mmisw.org/ont/ioos/sector)] distinguishes between different segments of government (eg, federal, state, municipal), and academic, tribal, industry and other divisions. It is currently used primarily to specify the operator sector.
-
-The vocabulary does not distinguish international, non-US organizations as such, and should be applicable within their national contexts; for example, a Canadian provincial agency should be described with the term "gov_state". International providers are handled via the specification of a country name in the SensorML Operator role contact information.
-
-/sml:SensorML/sml:member/sml:System/sml:classification/sml:ClassifierList/sml:classifier/[@name="operatorSector"]
-
 === Sponsorship ===
-There has been a request by some of the RA Directors to have a metadata field that contains sponsorship of platforms. The definition of sponsorship is located at http://mmisw.org/ont/ioos/definition/sponsor.  This information will be included in the SOS DS response:
-
+The definition of platform sponsorship (financial or other kinds of support) is located at http://mmisw.org/ont/ioos/definition/sponsor. Asset platforms that are partially or fully supported by IOOS must be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}. This information is encoded as a classifier on the SOS DescribeSensor response:
 {{{
 <sml:classifier name="sponsor">
   <sml:Term definition="http://mmisw.org/ont/ioos/definition/sponsor">
@@ -139,13 +129,16 @@ There has been a request by some of the RA Directors to have a metadata field th
 </sml:classifier>
 }}}
 
-IOOS-supported platforms should be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}  This way, the asset inventory can identify IOOS-sponsored platforms, and use this information.  In practice, there are probably few assets 100% supported by IOOS, so having IOOS as a sponsor can safely be interpreted as Partial IOOS support.
+=== IOOS Organization Societal Sector ===
+The [http://mmisw.org/ont/ioos/sector IOOS Organizational Societal Sector vocabulary (http://mmisw.org/ont/ioos/sector)] distinguishes between different segments of government (eg, federal, state, municipal), and academic, tribal, industry and other divisions. It is currently used primarily to specify the operator sector.
+
+The vocabulary does not distinguish international, non-US organizations as such, and should be applicable within their national contexts; for example, a Canadian provincial agency should be described with the term "gov_state". International providers are handled via the specification of a country name in the SensorML Operator role contact information.
+
+/sml:SensorML/sml:member/sml:System/sml:classification/sml:ClassifierList/sml:classifier/[@name="operatorSector"]
 
 
 === OLDER STUFF regarding RA, Provider/Owner and other background/organization roles ===
-Mainly in SensorML: service provider, data publisher, asset operator. Also: IOOS Regional Association. See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions].
-
-Example:
+Mainly in SensorML: service provider, data publisher, asset operator. Also: IOOS Regional Association. See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions]. Example from sml:contact elements:
 {{{
 <sml:contact xlink:role="urn:ogc:def:classifiers:OGC:contactType:owner">
     <sml:ResponsibleParty>
@@ -164,8 +157,6 @@ Example:
   * [https://groups.google.com/d/msg/ioostech_dev/aAsiZta7mVs/WUfVKMalZf0J Relevant discussion thread from ioostech_dev, from Oct 2011 (_Institution roles in SOS & IOOS Catalog: "Organization" vs "Data Provider"_)]
   * See also [DescribeSensorMetadataForIOOSSOS discussion by Micah, in wiki page DescribeSensorMetadataForIOOSSOS].
   * And [https://geo-ide.noaa.gov/wiki/index.php?title=Sensor_Observation_Service_Capabilities_and_ISO_Metadata Ted Habermann's synopsis on the GEO-IDE wiki]
-  * The work on an IOOS Non-Federal Asset Inventory in mid 2011 (previously led by Sam Walker) also used some relevant semi-controlled vocabularies; these should be examined.
-
 
 
 
