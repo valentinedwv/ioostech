@@ -359,17 +359,6 @@
       <!-- Count of records in swe:values -->
       <swe2:elementCount>
         <swe2:Count>
-          <swe2:quality>
-            <swe2:Category>
-              <swe2:constraint>
-                <swe2:AllowedTokens>
-                  <swe2:value>a</swe2:value>
-                  <swe2:value>b</swe2:value>
-                  <swe2:value>c</swe2:value>
-                </swe2:AllowedTokens>
-              </swe2:constraint>
-            </swe2:Category>
-          </swe2:quality>
           <swe2:value>13</swe2:value>
         </swe2:Count>
       </swe2:elementCount>
@@ -383,6 +372,23 @@
           <!-- but this is uncommon. -->
           <swe2:field name="time">
             <swe2:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+
+              <!-- IoosTech Convention: -->
+              <!-- This is an optional quality element used to express QC data that applies to an -->
+              <!-- entire record. The definition of the Category element spcifies that it applies -->
+              <!-- to the entire record, not to the time element. -->
+              <swe2:quality>
+                <swe2:Category definition="http://mmisw.org/ont/ioos/definition/recordQuality">
+                  <swe2:constraint>
+                    <swe2:AllowedTokens>
+                      <swe2:value>a</swe2:value>
+                      <swe2:value>b</swe2:value>
+                      <swe2:value>c</swe2:value>
+                    </swe2:AllowedTokens>
+                  </swe2:constraint>
+                </swe2:Category>
+              </swe2:quality>
+              
               <swe2:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian" />
             </swe2:Time>
           </swe2:field>
