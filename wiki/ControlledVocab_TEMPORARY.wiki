@@ -119,9 +119,9 @@ IOOS data providers, including IOOS Regional Associations (RAs) and Federal Agen
 
 `*` _Preceded by /sml:SensorML/sml:member/sml:System_
 
-=== Organization Societal Sector ===
+=== IOOS Organization Societal Sector ===
 
-The Organizational Societal Sector vocabulary distinguishes between different segments of government (eg, federal, state, municipal), and academic, tribal, industry and other divisions.    It is currently used primarily to specify the operator sector. This IOOS vocabulary is located at http://mmisw.org/ont/ioos/sector
+The [http://mmisw.org/ont/ioos/sector IOOS Organizational Societal Sector vocabulary (http://mmisw.org/ont/ioos/sector)] distinguishes between different segments of government (eg, federal, state, municipal), and academic, tribal, industry and other divisions. It is currently used primarily to specify the operator sector.
 
 The vocabulary does not distinguish international, non-US organizations as such, and should be applicable within their national contexts; for example, a Canadian provincial agency should be described with the term "gov_state". International providers are handled via the specification of a country name in the SensorML Operator role contact information.
 
@@ -142,7 +142,7 @@ There has been a request by some of the RA Directors to have a metadata field th
 IOOS-supported platforms should be attributed with a sponsor entry that includes: {{{<sml:value>IOOS</sml:value>}}}  This way, the asset inventory can identify IOOS-sponsored platforms, and use this information.  In practice, there are probably few assets 100% supported by IOOS, so having IOOS as a sponsor can safely be interpreted as Partial IOOS support.
 
 
-==== OLDER STUFF regarding RA, Provider/Owner, and other background and organization roles ====
+=== OLDER STUFF regarding RA, Provider/Owner and other background/organization roles ===
 Mainly in SensorML: service provider, data publisher, asset operator. Also: IOOS Regional Association. See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions].
 
 Example:
