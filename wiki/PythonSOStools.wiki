@@ -32,6 +32,16 @@ Roughly ordered from higher to lower level, in focus.
 
   * [http://librelist.com/browser/pywaterdata/ pywaterdata email list]. Currently limited to the WOFpy/ulmo/pyhis group (ie, mainly CUAHSI HIS hydro data services)
   * [http://code.google.com/p/waterpython/ Water Python Google Code group]. Never really got off the ground after a bit of enthusiasm back in early 2010 (Chris Barker, Rob Hetland, etc). But could be repurposed....
+  * [http://oceanpython.org/ oceanpython.org], from OTN
+
+
+= Sketch of a Code Architecture for a Python SOS server =
+
+== Core elements ==
+  * [http://pycsw.org/ pycsw] (already supports GET(KVP), POST(XML) and SOAP requests)
+  * [https://github.com/swtools/WOFpy WOFpy] (In collaboration with WOFpy/ulmo TWDB group, support WaterML 1.x (and WOF services) and WaterML 2.0 + SOS 2)
+  * [https://github.com/asascience-open/paegan paegan]
+  * [http://geopython.github.com/OWSLib/ OWSLib]
 
 
 = Other relevant, but somewhat tangential efforts =
