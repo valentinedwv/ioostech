@@ -184,14 +184,23 @@ Mainly in SensorML: service provider, data publisher, asset operator. Also: IOOS
 
 Including geographical regions? RA in GetCapabilities Keywords?
 
-== Other IOOS categories and high-level concepts ==
+
+
+= Other vocabularies and vocabulary-related concepts =
+
+== Higher-level categories and vocabulary mappings ==
 
 The background, IOOS use, and mappings of these vocabularies is partially described in [#References (1)]. Though this has not been discussed at length, terms from these vocabularies may become useful as service Keywords and for other data-discovery uses.
   * [http://mmisw.org/ont/ioos/core_variable IOOS Core Variable Vocabulary]. "The 26 core variables"
   * [http://mmisw.org/ont/ioos/societal_areas IOOS Societal Benefit Areas]
   * [http://mmisw.org/ont/ioos/category IOOS Category Vocabulary]
 
-= IOOS Biology Data projects ==
+== Units of Measure ==
+
+Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. Versions should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP / NOAA CoastWatch has a very useful page that compares UDUNITS and UCUM, and includes converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2.]
+
+
+== IOOS Biology Data projects ==
 
   * [http://www.ioos.noaa.gov/dmac/biology/welcome.html Biological Data Terminology]
   * [http://www.ioos.noaa.gov/observing/animal_telemetry/welcome.html Animal Telemetry Network, ATN]
@@ -212,10 +221,6 @@ Schema Terminology will be based on ratified [http://rs.tdwg.org/dwc/ Darwin cor
 Biological data services at the Pacific Islands Region website
 FGDC and ISO Metadata
 
-
-= Units of Measure =
-
-Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. Versions should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP / NOAA CoastWatch has a very useful page that compares UDUNITS and UCUM, and includes converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2.]
 
 
 = References and Additional Materials =
