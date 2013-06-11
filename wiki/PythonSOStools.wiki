@@ -41,6 +41,7 @@ Roughly ordered from higher to lower level, in focus.
   * [http://pycsw.org/ pycsw] can serve as the template and pattern for building an OWSLib-based SOS server. pycsw already supports GET (KVP), POST (XML) and SOAP requests.
   * [https://github.com/swtools/WOFpy WOFpy]. In collaboration with WOFpy/ulmo TWDB group, support WaterML 1.x (and WOF services) and WaterML 2.0 + SOS 2.
   * [https://github.com/asascience-open/paegan paegan] "attempts to fill the need for a high level common data model (CDM) library for array based met/ocean data". (See [http://www.unidata.ucar.edu/software/netcdf-java/CDM/ this] and [http://www.unidata.ucar.edu/projects/THREDDS/CDM/CDM-TDS.htm that] for info on the CDM).
+  * [NANOOSNVSPythonSOS NANOOS Python SOS] server software. Currently it has a limited scope and is not highly generalizable, but it will provide guidance (and some code) for how all the components should come together.
   * [http://geopython.github.com/OWSLib/ OWSLib]. pycsw already uses OWSLib "for CSW client and metadata parser". [http://geopython.github.io/OWSLib/#sos SOS 1.0 and 2.0 (SWE/SensorML) parsing and encoding is already included in OWSLib.]
   * [http://www.sqlalchemy.org/ SQLAchemy] for database bindings. Both pycsw and WOFpy already rely on SQLAlchemy.
 
