@@ -3,6 +3,13 @@
 
 <wiki:toc max_depth="3" />
 
+= Goals and Status =
+
+_(A single, brief paragraph. Short and to the point. For now, I've pasted in a paragraph from a section farther down, and added a bit more text.)_
+
+This document describes the relevant controlled vocabularies that have been adopted or developed by the IOOS community, including policies, context and specific instructions for use and implementation in data services. They primarily target SOS service requests, but are of general applicability in other services and IOOS DMAC areas as well. The content is intended primarily to service consumers and providers, including software developers and data managers. If you can't find the answers you need quickly and easily, we haven't done our job...
+
+
 = Introduction/Background/Policy =
 
 NOTE: We must choose whether or not the descriptions of how to use vocabs are going to be specific to SOS or general enough to apply to other services.  Referencing in a O&M/SWE document is very different than referencing in a CF compliant netCDF file.  I hope both are addressed.
