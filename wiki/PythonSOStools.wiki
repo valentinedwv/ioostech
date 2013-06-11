@@ -37,6 +37,8 @@ Roughly ordered from higher to lower level, in focus.
 
 = Sketch of a Code Architecture for a Python SOS server =
 
+Initial goal is to support only the mandatory _core_ operations (GetCapabilities, DescribeSensor and GetObservation). Additional data-consumer oriented _enhanced_ requests may be targeted in the future, particularly GetFeatureOfInterest, GetResult and DescribeResultModel. There are no plans to support _transactional_ operations (RegisterSensor and InsertObservation).
+
 == Core elements ==
   * [http://pycsw.org/ pycsw] can serve as the template and pattern for building an OWSLib-based SOS server. pycsw already supports GET (KVP), POST (XML) and SOAP requests.
   * [https://github.com/swtools/WOFpy WOFpy]. In collaboration with WOFpy/ulmo TWDB group, support WaterML 1.x (and WOF services) and WaterML 2.0 + SOS 2.
