@@ -227,8 +227,11 @@ Units of Measure are not actually a vocabulary per se, but are rather a mix of v
 
 (2) [https://marinemetadata.org/news/mmisemanticpaper2011 Graybeal, J., A. W. Isenor, and C. Rueda. 2012. Semantic mediation of vocabularies for ocean observing systems. Computers & Geosciences 40: 120-131, doi:10.1016/j.cageo.2011.08.002]
 
+----
 
-=Links and yet to be organized errata=
+= BACKGROUND MATERIALS TO BE DELETED OR MOVED TO A SUPPLEMENTARY PAGE =
+
+None of this material is essential or directly useful to IOOS users of this main vocabulary page.
 
 == IOOS Vars RDF ==
 
