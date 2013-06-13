@@ -58,3 +58,7 @@ The NOAA Geo-IDE site [https://geo-ide.noaa.gov/wiki/index.php?title=ISO_FAQ#Wha
   * http://hydra3.sound-data.com
   * http://data.glos.us/glatos
   * http://aatams.emii.org.au/aatams/
+
+=== Miscellaneous ===
+  * From Bob Simons, Regarding "Xtracto scripts": The R and Matlab scripts which make it easy to get the physical oceanography data (e.g., sea surface temperature, chlorophyll a) related to each point of an animal's track are available from
+http://coastwatch.pfel.noaa.gov/xtracto/ . The author is Dave Foley, dave.foley[at]noaa.gov
