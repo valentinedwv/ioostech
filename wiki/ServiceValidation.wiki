@@ -105,8 +105,8 @@ The following is the list of questions that validation should provide answers to
 
 ==Immediately Possible Test Activities==
 
- # Run OGC SOS compliance test scripts
- # Run 52North SOS compliance test scripts (these assumed to work on either ncSOS or 52N, and generally these are more flexible than OGCs test tools/scripts).
- # Perform validation of IOOS SOS responses using the schemas developed from the Milestone 1.0 templates.
+ # Run OGC SOS compliance [TestToolAvailability test scripts]
+ # In addition, run 52North SOS [http://sensorweb.demo.52north.org/52nSOSv3.2.1 test tool] (assumed that this tool will work on either ncSOS or 52North implementations).
+ # Perform validation of IOOS SOS responses using the [http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas schemas] developed from the Milestone 1.0 templates.
  # If possible, determine how real data offerings match data advertisement - use GetCapabilities and GetObservation responses - and then query the DMAC coordinator if that matches their intent.
  # If the RA is running both 52N and ncSOS, verify that both services behave the same way
