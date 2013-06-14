@@ -75,7 +75,7 @@ For the purposes of this testing, the controlling documents for the DMAC service
  * List of entry points, and schedule of IOOS SOS implementation at the National Data Buoy Center (NDBC), Center for Operational Oceanographic Products and Services (CO-OPS), and 11 regions.
 
 
-=Test procedure and options=
+=Test goals=
 
 The US IOOS test entity will use test tools – either standard and publicly available, or specifically developed for IOOS – to send requests to the services. The NBDC, CO-OPS, and RAs will be consulted to ensure that requests are reasonable and appropriate within the context of the DMAC Milestone 1.0.
 
@@ -101,3 +101,12 @@ The following is the list of questions that validation should provide answers to
    ** Manual analysis of the “result” section of the GetObservation response, or
    ** Automatic analysis (no automatic tool is available at the moment) (?)
  # else?
+
+
+==Immediately Possible Test Activities==
+
+ # Run OGC SOS compliance test scripts
+ # Run 52North SOS compliance test scripts (these assumed to work on either ncSOS or 52N, and generally these are more flexible than OGCs test tools/scripts).
+ # Perform validation of IOOS SOS responses using the schemas developed from the Milestone 1.0 templates.
+ # If possible, determine how real data offerings match data advertisement - use GetCapabilities and GetObservation responses - and then query the DMAC coordinator if that matches their intent.
+ # If the RA is running both 52N and ncSOS, verify that both services behave the same way
