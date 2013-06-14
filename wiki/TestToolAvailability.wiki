@@ -1,7 +1,7 @@
 #summary Discussion of SOS Service validation tools availability and necessity
 #sidebar SOSTableOfContents
 
-<wiki:toc max_depth="3" />
+<wiki:toc max_depth="5" />
 
 
 
