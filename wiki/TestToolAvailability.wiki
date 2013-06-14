@@ -107,7 +107,7 @@ A request for a valid capabilities document is made with the optional "version" 
  * getCapabilities:core-SOS.GetCapabilities-ResponseContentsValidResponseMode.1 
    ** Assertion: If an ObservationOffering provides the _*responseMode*_ element, then the _*responseMode*_ element contains a value that is one of the valid responseMode values.
 
-====Describe Sensor Tests====
+====`DescribeSensor Tests`====
 
  * describeSensor:core-SOS.DescribeSensor-RequestInvalidMIMEType.1 
    ** Assertions: A DescribeSensor request with no _*outputFormat*_ parameter as well as with a bogus _*outputFormat*_ parameter value that is not advertised in the capabilities document (e.g. “text/xml;subtype="sensorML/A.B.C"”) produces a valid error report message. Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root document is an ows:ExceptionReport document; (3) the ExceptionReport shall have the "MissingParameterValue " exception code for missing _*outputFormat*_; (4) the ExceptionReport shall have the "InvalidParameterValue" exception code for bogus _*outputFormat*_ value.
@@ -118,7 +118,7 @@ A request for a valid capabilities document is made with the optional "version" 
  * describeSensor:core-SOS.DescribeSensor-ResponseMatchingProcedure.1 
    ** Assertion: The unique identifier in the response document matches the procedure URN specified in the request.
 
-====GetObservation Tests====
+====`GetObservation Tests`====
 
 All GetObservation tests use the "Post" method at the URL obtained from the GetCapabilities response.
 
