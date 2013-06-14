@@ -103,7 +103,7 @@ The following is the list of questions that validation should provide answers to
  # else?
 
 
-==Immediately Possible Test Activities==
+=Immediately Possible Test Activities=
 
  # Run OGC SOS compliance [TestToolAvailability test scripts]
  # In addition, run 52North SOS [http://sensorweb.demo.52north.org/52nSOSv3.2.1 test tool] (assumed that this tool will work on either ncSOS or 52North implementations).
