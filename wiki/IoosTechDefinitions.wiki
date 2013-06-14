@@ -1,7 +1,11 @@
 #summary Proposed terms for IoosTech SWE element definitions
 #labels Definitions,SWE,Featured
 
-= Introduction =
+= Introduction - Deprecated (Moved to [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/swe_element_type MMI!])=
+
+[http://mmisw.org/orr/#http://mmisw.org/ont/ioos/swe_element_type]
+
+
 The following table contains the proposed terms used to indicate specific ioosTech conventions for the use of standard SWE elements. For instance what to expect in a given dataRecord based on the elements definition. The links give examples where the term is used in the mileStone1.0 templates but line numbers may be approximate. 
 
 = Element Definitions* =
