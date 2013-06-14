@@ -82,7 +82,7 @@
 
 A request for a valid capabilities document is made with the optional "version" parameter omitted, and a response is validated with the schema. Further tests are performed on the GetCapabilities response only if the response passes schema validation.
 
-====GetCapabilities Tests====
+====`GetCapabilities Tests`====
 
  * getCapabilities:core-SOS.GetCapabilities-KVPRequestParameterHandling.1 
    ** Assertion: GetCapabilities request with missing mandatory parameters _*service*_ and _*version*_ returns a valid error report message.  Pass if all of the following conditions are true: (1) the response is schema valid; (2) the root document is an ows:ExceptionReport document; (3) the ExceptionReport shall have the "MissingParameterValue" exception code. 
