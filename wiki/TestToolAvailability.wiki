@@ -36,7 +36,7 @@
 
 
 
-==List of test scripts included into OGC SOS v1.0 test ==
+==List of OGC SOS v1.0 r6 tests==
 
 ===OWS Common Tests===
 
