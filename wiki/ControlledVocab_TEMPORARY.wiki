@@ -33,9 +33,9 @@ The IOOS registered controlled vocabularies are alternative vocabularies to sear
 How should the parameter vocabularies be referenced?
 The parameter vocabulary terms should be referenced in the SWE element:field in the GetObservation IOOS SOS template v1.0 schema.  SWE element:field reference example:
 
-<swe: field name="temp">
+<swe:field name="temp">
             <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
-            <swe:upom cod="Cel"/>              
+              <swe:uom code="Cel"/>
 
 How to address gaps when current vocabularies are insufficient?
 
