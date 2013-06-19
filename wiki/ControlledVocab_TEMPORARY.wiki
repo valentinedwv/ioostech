@@ -158,7 +158,10 @@ The vocabulary does not distinguish international, non-US organizations as such,
 
 /sml:SensorML/sml:member/sml:System/sml:classification/sml:ClassifierList/sml:classifier/[@name="operatorSector"]
 
+===SWE Definitions===
 
+Vocabulary terms reflecting specific IOOS conventions for use in standards SOS SWE elements are found on the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/swe_element_type MMI Ontology Registry and Repository]
+ 
 === OLDER STUFF regarding RA, Provider/Owner and other background/organization roles ===
 Mainly in SensorML: service provider, data publisher, asset operator. Also: IOOS Regional Association. See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions]. Example from sml:contact elements:
 {{{
