@@ -189,7 +189,7 @@ The vocabulary does not distinguish international, non-US organizations as such,
 
 ===SWE Definitions===
 
-Ans SOS SWE element definition was developed to be used in the IOOS SOS v1.0 templates.  The vocabulary terms reflect specific IOOS conventions for use in standard SOS SWE elements found on the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/swe_element_type MMI Ontology Registry and Repository].   
+An SOS SWE element definition vocabulary was developed to be used in the IOOS SOS v1.0 templates.  The vocabulary terms reflect specific IOOS conventions for use in standard SOS SWE elements found on the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/swe_element_type MMI Ontology Registry and Repository].   
 
 References available on the MMI website give examples of where to use the terms in the IOOS SWE SOS template v1.0.
  
