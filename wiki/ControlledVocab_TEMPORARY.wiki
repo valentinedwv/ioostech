@@ -14,6 +14,9 @@ This document describes the relevant controlled vocabularies that have been adop
 
 NOTE: We must choose whether or not the descriptions of how to use vocabs are going to be specific to SOS or general enough to apply to other services.  Referencing in a O&M/SWE document is very different than referencing in a CF compliant netCDF file.  I hope both are addressed.
 
+
+NOTE: Revised Policy Description
+
 Controlled vocabularies clarify the meaning of common concepts and enable more interoperable data systems through more precise definitions, and machine readable online references.  This is a controlled vocabulary usage policy to describe how to select and reference parameter vocabularies and how to address gaps when current vocabularies are insufficient.  The policy is written in context of the Sensor Observation Service; although, when relevant will make references to netCDF/CF practice.  
 
 The Marine Metadata Interoperability Ontology Registry and Repository is a host of controlled vocabularies and is the repository for IOOS adopted controlled vocabularies.  There are many types of controlled vocabularies on the MMI ORR Website that cover different domains.  This document will describe the specific controlled vocabularies that are managed under the IOOS authority.  The vocabulary usage process described will use parameter terms as an example.
@@ -38,27 +41,7 @@ How to address gaps when current vocabularies are insufficient?
 
 When current vocabularies are insufficient, term names should be suggested, and the development of terms must follow the “Guidance for Construction of CF Standard Names”.  Terms developed or adopted outside of the cf standard names parameter vocabulary or IOOS registered vocabularies must coordinate with the IOOS Program Office on the new names.  The IOOS Program can facilitate a process for the data provider to include the new term to one of the current controlled vocabularies or cf standard names parameters and inform the data provider when the term is registered.   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+End (of revised policy description)
 
 The IOOS Program has developed guidance to encourage the use of vocabularies and mappings that should be used by anyone providing coastal, ocean, and Great Lakes environmental data through adopted data services.  The purpose of developing controlled vocabularies for the community is to curtail individual development of new lists and instead rally around a set of vocabularies that can be used by the whole community.  
 
