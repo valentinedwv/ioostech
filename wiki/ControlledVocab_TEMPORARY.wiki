@@ -160,7 +160,10 @@ The vocabulary does not distinguish international, non-US organizations as such,
 
 ===SWE Definitions===
 
-Vocabulary terms reflecting specific IOOS conventions for use in standards SOS SWE elements are found on the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/swe_element_type MMI Ontology Registry and Repository]
+
+Vocabulary terms reflecting specific IOOS conventions for use in standards SOS SWE elements are found on the [http://mmisw.org/orr/#http://mmisw.org/ont/ioos/swe_element_type MMI Ontology Registry and Repository.  
+
+References available on the MMI website give examples of where to use the terms in the IOOS SWE SOS template v1.0.
  
 === OLDER STUFF regarding RA, Provider/Owner and other background/organization roles ===
 Mainly in SensorML: service provider, data publisher, asset operator. Also: IOOS Regional Association. See [http://mmisw.org/ont/ioos/definition IOOS Vocabulary and Category Definitions]. Example from sml:contact elements:
