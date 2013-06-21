@@ -14,7 +14,6 @@ This document describes the relevant controlled vocabularies that have been adop
 
 NOTE: We must choose whether or not the descriptions of how to use vocabs are going to be specific to SOS or general enough to apply to other services.  Referencing in a O&M/SWE document is very different than referencing in a CF compliant netCDF file.  I hope both are addressed.
 
-
 *NOTE: Revised Policy Description*
 
 Controlled vocabularies clarify the meaning of common concepts and enable more interoperable data systems through more precise definitions, and machine readable online references.  This is a controlled vocabulary usage policy to describe how to select and reference parameter vocabularies and how to address gaps when current vocabularies are insufficient.  The policy is written in context of the Sensor Observation Service; although, when relevant will make references to netCDF/CF practice.  
@@ -32,6 +31,13 @@ The IOOS registered controlled vocabularies are alternative vocabularies to sear
 
 How should the parameter vocabularies be referenced?
 The parameter vocabulary terms should be referenced in the SWE element:field in the GetObservation IOOS SOS template v1.0 schema.  SWE element:field reference example:
+
+{{{
+</swe:field>
+          <swe:field name="air_pressure">
+            <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_pressure">
+              <swe:uom code="hPa"/>
+}}}
 
 How to address gaps when current vocabularies are insufficient?
 
