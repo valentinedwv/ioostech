@@ -7,30 +7,25 @@
 
 _(A single, brief paragraph. Short and to the point. For now, I've pasted in a paragraph from a section farther down, and added a bit more text.)_
 
-This document describes the relevant controlled vocabularies that have been adopted or developed by the IOOS community, including policies, context and specific instructions for use and implementation in data services. They primarily target SOS service requests, but are of general applicability in other services and IOOS DMAC areas as well. The content is intended primarily to service consumers and providers, including software developers and data managers. If you can't find the answers you need quickly and easily, we haven't done our job...
-
+This document describes the relevant controlled vocabularies that have been adopted or developed by the IOOS community, including policies, context and specific instructions for use and implementation in data services. They primarily target SOS service requests, but are of general applicability in other services and IOOS DMAC areas as well. The content is intended primarily to service consumers and providers, including software developers and data managers. 
 
 = Introduction/Background/Policy =
 
-NOTE: We must choose whether or not the descriptions of how to use vocabs are going to be specific to SOS or general enough to apply to other services.  Referencing in a O&M/SWE document is very different than referencing in a CF compliant netCDF file.  I hope both are addressed.
+Controlled vocabularies clarify the meaning of common concepts and enable more interoperable data systems through more precise definitions, and machine readable online references.  This is a controlled vocabulary usage policy to describe how to select and reference parameter vocabularies and how to address gaps when current vocabularies are insufficient.  All such controlled vocabularies developed or adopted, which include parameter and platform terms and definitions are hosted on the [http://mmisw.org/orr/#b The Marine Metadata Interoperability Ontology Registry and Repository Website].  Vocabularies and ontologies are adopted as appropriate. 
 
-*NOTE: Revised Policy Description*
+This page describes the relevant controlled vocabularies that have been adopted or developed by the IOOS community and are manged on the MMI ORR Website, including context for us and implementation in data services. They primarily target SOS service requests (GetCapabilities, GetObservation and DescribeSensor), but are of general applicability in other services as well. 
 
-Controlled vocabularies clarify the meaning of common concepts and enable more interoperable data systems through more precise definitions, and machine readable online references.  This is a controlled vocabulary usage policy to describe how to select and reference parameter vocabularies and how to address gaps when current vocabularies are insufficient.  The policy is written in context of the Sensor Observation Service; although, when relevant will make references to netCDF/CF practice.  
-
-The Marine Metadata Interoperability Ontology Registry and Repository is a host of controlled vocabularies and is the repository for IOOS adopted controlled vocabularies.  There are many types of controlled vocabularies on the MMI ORR Website that cover different domains.  This document will describe the specific controlled vocabularies that are managed under the IOOS authority.  The vocabulary usage process described will use parameter terms as an example.
-
-Use of CF standard names from the cf standard names parameter vocabulary is preferred.  The CF standard name vocabulary may not contain the term that you need and in such instances other vocabularies will have to be referenced.  The IOOS Parameter Vocabulary v2.0 encompasses parameter terms, mostly physical and chemical terms, used in the IOOS Regional Associations.  The IOOS Biological Terms list is another vocabulary to reference for biological terms.      
+Use of CF standard names from the [http://mmisw.org/ont/cf/parameter cf standard names parameter vocabulary] is preferred.  The [ http://mmisw.org/ont/cf/parameter CF standard name vocabulary] may not contain the term that you need and in such instances other vocabularies will have to be referenced.  The [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v2.0] encompasses parameter terms, mostly physical and chemical terms, used in the IOOS Regional Associations.  The IOOS Biological Terms list is another vocabulary to reference for biological terms.      
 
 The first step to using controlled vocabularies is finding the right one.  The registered controlled vocabularies should contain a large breadth of terms for parameters that are collected.  The terms in these vocabularies must be used if suitable terms and definitions exist.  The next part of this document will describe the steps to using controlled vocabularies.  
 
 First, selecting a vocabulary term: 
-The cf standard names parameter vocabulary contains the preferred list of terms for use and if an acceptable term is found, then it should be adopted.
+The [http://mmisw.org/ont/cf/parameter cf standard names parameter vocabulary] contains the preferred list of terms for use and if an acceptable term is found, then it should be adopted.
 
-The IOOS registered controlled vocabularies are other vocabularies to search when terms cannot be found in the cf standard names parameter vocabulary.  The registered IOOS vocabularies, and including mappings between vocabularies, can be referenced from the MMI ORR Website.  For example, the referenced definition for “wind_speed,” taken from the IOOS Parameter Vocabulary v2.0, is http://mmisw.org/ont/ioos/parameter/wind_speed, where http://mmisw.org/ont/ioos/parameter is the vocabulary URI.    
+The IOOS registered controlled vocabularies are other vocabularies to search when terms cannot be found in the [http://mmisw.org/ont/cf/parametercf standard names parameter vocabulary].  The registered IOOS vocabularies, and including mappings between vocabularies, can be referenced from the MMI ORR Website.  For example, the referenced definition for “wind_speed,” taken from the [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v2.0], is http://mmisw.org/ont/ioos/parameter/wind_speed, where http://mmisw.org/ont/ioos/parameter is the vocabulary URI.    
 
 How should the parameter vocabularies be referenced?
-The parameter vocabulary terms should be referenced in the SWE element:field in the GetObservation IOOS SOS template v1.0 schema.  SWE element:field reference example:
+The parameter vocabulary terms should be referenced in the SWE element:field in the GetObservation [http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates IOOS SOS template v1.0 schema].  SWE element:field reference example:
 
 {{{
 </swe:field>
@@ -41,16 +36,9 @@ The parameter vocabulary terms should be referenced in the SWE element:field in 
 
 How to address gaps when current vocabularies are insufficient?
 
-When current vocabularies are insufficient, term names should be suggested, and the development of terms must follow the “Guidance for Construction of CF Standard Names”.  Terms developed or adopted outside of the cf standard names parameter vocabulary or IOOS registered vocabularies must coordinate with the IOOS Program Office on the new names.  The IOOS Program can facilitate a process for the data provider to include the new term to one of the current controlled vocabularies or cf standard names parameters and inform the data provider when the term is registered.   
+When current vocabularies are insufficient, term names should be suggested, and the development of terms must follow the “Guidance for Construction of CF Standard Names”.  Terms developed or adopted outside of the [http://mmisw.org/ont/cf/parameter cf standard names parameter vocabulary] or IOOS registered vocabularies must coordinate with the IOOS Program Office on the new names.  The IOOS Program can facilitate a process for the data provider to include the new term to one of the current controlled vocabularies or cf standard names parameters and inform the data provider when the term is registered. 
 
 *End (of revised policy description)*
-
-The IOOS Program has developed guidance to encourage the use of vocabularies and mappings that should be used by anyone providing coastal, ocean, and Great Lakes environmental data through adopted data services.  The purpose of developing controlled vocabularies for the community is to curtail individual development of new lists and instead rally around a set of vocabularies that can be used by the whole community.  
-
-The controlled vocabularies will be managed by the IOOS Program on the Marine Metadata Interoperability Ontology Registry and Repository (MMI ORR) Web site. The vocabularies should be viewed as an elastic set of terms and definitions for parameter names (e.g. physical, chemical, biological), platform types (e.g. buoys, gliders, floats), organizations (e.g. IOOS RAs, Federal Agencies) and other domains that are referenceable in web service documentation (O&M/SWE) and files (CF compliant netCDF). 
-
-The guidance is described to help data managers and data providers determine and select terms from one of the IOOS accepted vocabularies and improve the terms contained within the vocabularies. For more information or questions, contact Rob.Ragsdale@noaa.gov in the IOOS Program Office.
-
 
 == (This is a former Introduction section to be merged with the above) ==
 
