@@ -28,14 +28,15 @@ The first step to using controlled vocabularies is finding the right one.  The r
 First, selecting a vocabulary term: 
 The cf standard names parameter vocabulary contains the preferred list of terms for use and if an acceptable term is found, then it should be adopted.
 
-The IOOS registered controlled vocabularies are alternative vocabularies to search when terms cannot be found in the cf standard names parameter vocabulary.  The registered IOOS vocabularies, and including mappings between vocabularies, can be referenced from the MMI ORR Website.  For example, the referenced definition for “wind_speed,” taken from the IOOS Parameter Vocabulary v2.0, is http://mmisw.org/ont/ioos/parameter/wind_speed, where http://mmisw.org/ont/ioos/parameter is the vocabulary URI.      
+The IOOS registered controlled vocabularies are alternative vocabularies to search when terms cannot be found in the cf standard names parameter vocabulary.  The registered IOOS vocabularies, and including mappings between vocabularies, can be referenced from the MMI ORR Website.  For example, the referenced definition for “wind_speed,” taken from the IOOS Parameter Vocabulary v2.0, is http://mmisw.org/ont/ioos/parameter/wind_speed, where http://mmisw.org/ont/ioos/parameter is the vocabulary URI.    
+
+<swe:field name=”temp” 
+	<swe:Quanity definition http://mmisw.org/ont/cf/parameter/air_temperature> 
+	<swe:uom code=”Cel”/>
+  
 
 How should the parameter vocabularies be referenced?
 The parameter vocabulary terms should be referenced in the SWE element:field in the GetObservation IOOS SOS template v1.0 schema.  SWE element:field reference example:
-
-<swe:field name="temp">
-            <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
-              <swe:uom code="Cel"/>
 
 How to address gaps when current vocabularies are insufficient?
 
