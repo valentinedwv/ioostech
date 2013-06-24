@@ -34,7 +34,7 @@ The parameter vocabulary terms should be referenced in the SWE element:field in 
 
 How to address gaps when current vocabularies are insufficient?
 
-When current vocabularies are insufficient, term names should be suggested, and the development of terms must follow the “Guidance for Construction of CF Standard Names”.  Terms developed or adopted outside of the [http://mmisw.org/ont/cf/parameter cf standard names parameter vocabulary] or IOOS registered vocabularies must coordinate with the IOOS Program Office on the new names.  The IOOS Program can facilitate a process for the data provider to include the new term to one of the current controlled vocabularies or cf standard names parameters and inform the data provider when the term is registered. 
+  * When current vocabularies are insufficient, term names should be suggested, and the development of terms must follow the “Guidance for Construction of CF Standard Names”.  Terms developed or adopted outside of the [http://mmisw.org/ont/cf/parameter cf standard names parameter vocabulary] or IOOS registered vocabularies must coordinate with the IOOS Program Office on the new names.  The IOOS Program can facilitate a process for the data provider to include the new term to one of the current controlled vocabularies or cf standard names parameters and inform the data provider when the term is registered. 
 
 -------------------------------------------------------
 
