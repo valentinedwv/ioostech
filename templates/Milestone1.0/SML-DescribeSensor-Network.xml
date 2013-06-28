@@ -96,7 +96,7 @@
       <sml:capabilities name="observationTimeRange">
         <swe:DataRecord>
           <swe:field name="observationTimeRange">
-            <swe:TimeRange definition="http://mmisw.org/ont/ioos/definition/observationTimeRange">
+            <swe:TimeRange definition="http://mmisw.org/ont/ioos/swe_element_type/observationTimeRange">
               <swe:value>2008-04-28T08:00:00.000Z 2012-12-27T19:00:00.000Z</swe:value>
             </swe:TimeRange>
           </swe:field>
@@ -186,7 +186,7 @@
               <sml:capabilities name="observationTimeRange">
                 <swe:DataRecord>
                   <swe:field name="observationTimeRange">
-                    <swe:TimeRange definition="http://mmisw.org/ont/ioos/definition/observationTimeRange">
+                    <swe:TimeRange definition="http://mmisw.org/ont/ioos/swe_element_type/observationTimeRange">
                       <swe:value>2006-02-12T00:00:00.000Z 2013-04-21T00:00:00.000Z</swe:value>
                     </swe:TimeRange>
                   </swe:field>
@@ -247,7 +247,7 @@
               <sml:capabilities name="observationTimeRange">
                 <swe:DataRecord>
                   <swe:field name="observationTimeRange">
-                    <swe:TimeRange definition="http://mmisw.org/ont/ioos/definition/observationTimeRange">
+                    <swe:TimeRange definition="http://mmisw.org/ont/ioos/swe_element_type/observationTimeRange">
                       <swe:value>2006-02-12T00:00:00.000Z 2013-04-21T00:00:00.000Z</swe:value>
                     </swe:TimeRange>
                   </swe:field>
