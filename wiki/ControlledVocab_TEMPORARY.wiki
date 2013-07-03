@@ -179,7 +179,7 @@ The background, IOOS use, and mappings of these vocabularies is partially descri
 
 == Units of Measure ==
 
-Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. Versions should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP / NOAA CoastWatch has a very useful page that compares UDUNITS and UCUM, and includes converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2.]
+Units of Measure are not actually a vocabulary per se, but are rather a mix of vocabulary terms and syntax for combinations. At this time, IOOS encourages but does not require the use of [http://unitsofmeasure.org/ UCUM] or [http://www.unidata.ucar.edu/software/udunits/ UDUNITS]. Versions should be kept in mind (eg, UDUNITS-1 vs UDUNITS-2). [http://coastwatch.pfeg.noaa.gov/erddap/convert/units.html ERDDAP / NOAA CoastWatch has a very useful page that compares UDUNITS and UCUM, and includes converters among the units systems, and a discussion of UDUNITS-1 and UDUNITS-2]. Another effort to watch for is [http://www.qudt.org/ QUDT], previously sponsored by NASA; Simon Cox (of O&M fame) is now involved in this, in some way.
 
 
 == IOOS Biology Data projects ==
