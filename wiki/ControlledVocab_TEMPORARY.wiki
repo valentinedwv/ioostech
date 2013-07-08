@@ -12,20 +12,26 @@ All such controlled vocabularies developed or adopted, which include parameter a
 
 =Parameter Vocabulary Use Policy= 
 
-For resolving terms for parameter names, CF standard names used from the [http://mmisw.org/ont/cf/parameter CF standard names parameter vocabulary] is preferred.  *In the netCDF file, the use of CF standard name vocabulary terms for the standard_name attribute is required.*  In some cases, the [http://mmisw.org/ont/cf/parameter CF standard name vocabulary] may not contain the term that you need and in such instances you should reference other vocabularies.  
+The first step to using controlled vocabularies is finding the right one.  Selecting a controlled vocabulary should be based on criteria:
+
+ * content
+ * community-maintained
+ * Well-managed
+ * Interoperable 
+
+[From https://marinemetadata.org/guides/vocabs/cvchooseimplement/cvchoosing accessed 08 July 2013]
+
+The use of CF standard names from the [http://mmisw.org/ont/cf/parameter CF standard names parameter vocabulary] is preferred, but not always acceptabl
+
+but may not have a term that you need.    *In the netCDF file, the use of CF standard name vocabulary terms for the standard_name attribute is required.*  There may be terms  [http://mmisw.org/ont/cf/parameter CF standard name vocabulary] may not contain the term that you need and in such instances you should reference other vocabularies.  
 
 Two parameter vocabularies registered at MMI by IOOS are: 
  * The [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v2.0] is vocabulary of mostly physical and chemical terms used in the IOOS Regional Associations.  
- * The IOOS Biological Terms list for biological terms.  For other biological terms, the [http://rs.tdwg.org/dwc/terms/index Darwin Core Term List] should be used.  
-
-The first step to using controlled vocabularies is finding the right one.    
- * Their should be a large breadth of terms for parameters collected.  
- * The terms in these vocabularies must be used if suitable and definitions exist.  
-
-The next part of this document will describe the steps to using controlled vocabularies.
-
-First, selecting a vocabulary term: 
+ * The IOOS Biological Terms list for biological terms.  For other biological terms, the [http://rs.tdwg.org/dwc/terms/index Darwin Core Term List] should be used.
+ 
 The [http://mmisw.org/ont/cf/parameter cf standard names parameter vocabulary] contains the preferred list of terms for use and if an acceptable term is found, then it should be adopted.
+
+Once the right vocabulary has been found, the next step is to use the controlled vocabulary:   
 
 The IOOS registered controlled vocabularies are other vocabularies to search when terms cannot be found in the [http://mmisw.org/ont/cf/parametercf standard names parameter vocabulary].  The registered IOOS vocabularies, and including mappings between vocabularies, can be referenced from the MMI ORR Website.  For example, the referenced definition for “wind_speed,” taken from the [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v2.0], is http://mmisw.org/ont/ioos/parameter/wind_speed, where http://mmisw.org/ont/ioos/parameter is the vocabulary URI.    
 
