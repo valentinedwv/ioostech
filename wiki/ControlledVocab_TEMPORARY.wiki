@@ -1,21 +1,28 @@
 #summary NEW, VERY TEMPORARY/DRAFT PAGE IOOS Instructions and Guidelines for use of Controlled Vocabularies in IOOS-compliant data services
-#labels Vocabularies
 
 <wiki:toc max_depth="3" />
 
 =Introduction= 
 
-This document describes the policies and relevant controlled vocabularies that have been adopted or developed by the IOOS community, including, context and specific instructions for use and implementation in data services. They primarily target SOS service requests, but are of general applicability in other services and IOOS DMAC areas as well. The content is intended primarily to service consumers and providers, including software developers and data managers. 
+This document describes the policies and relevant controlled vocabularies that have been adopted or developed by the IOOS community, including, context and specific instructions for use and implementation in data services. They primarily target SOS service requests, but are of general applicability in other services and IOOS DMAC areas as well. The content is intended primarily to serve consumers and providers, including software developers and data managers. 
 
 Controlled vocabularies clarify the meaning of common concepts and enable more interoperable data systems through more precise definitions, and machine readable online references.  This is a controlled vocabulary usage policy to describe how to select and reference parameter vocabularies and how to address gaps when current vocabularies are insufficient.  
 
-=Parameter Vocabulary Use Policy= 
-
 All such controlled vocabularies developed or adopted, which include parameter and platform terms and definitions are hosted on the [http://mmisw.org/orr/#b The Marine Metadata Interoperability Ontology Registry and Repository Website]. 
 
-Use of CF standard names from the [http://mmisw.org/ont/cf/parameter CF standard names parameter vocabulary] is preferred.  The [http://mmisw.org/ont/cf/parameter CF standard name vocabulary] may not contain the term that you need and in such instances other vocabularies will have to be referenced.  The [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v2.0] encompasses parameter terms, mostly physical and chemical terms, used in the IOOS Regional Associations.  The IOOS Biological Terms list is another vocabulary to reference for biological terms.      
+=Parameter Vocabulary Use Policy= 
 
-The first step to using controlled vocabularies is finding the right one.  The registered controlled vocabularies should contain a large breadth of terms for parameters that are collected.  The terms in these vocabularies must be used if suitable terms and definitions exist.  The next part of this document will describe the steps to using controlled vocabularies.  
+For resolving terms for parameter names, CF standard names used from the [http://mmisw.org/ont/cf/parameter CF standard names parameter vocabulary] is preferred.  *In the netCDF file, the use of CF standard name vocabulary terms for the standard_name attribute is required.*  In some cases, the [http://mmisw.org/ont/cf/parameter CF standard name vocabulary] may not contain the term that you need and in such instances you should reference other vocabularies.  
+
+Two parameter vocabularies registered at MMI by IOOS are: 
+ * The [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v2.0] is vocabulary of mostly physical and chemical terms used in the IOOS Regional Associations.  
+ * The IOOS Biological Terms list for biological terms.  For other biological terms, the [http://rs.tdwg.org/dwc/terms/index Darwin Core Term List] should be used.  
+
+The first step to using controlled vocabularies is finding the right one.    
+ * Their should be a large breadth of terms for parameters collected.  
+ * The terms in these vocabularies must be used if suitable and definitions exist.  
+
+The next part of this document will describe the steps to using controlled vocabularies.
 
 First, selecting a vocabulary term: 
 The [http://mmisw.org/ont/cf/parameter cf standard names parameter vocabulary] contains the preferred list of terms for use and if an acceptable term is found, then it should be adopted.
