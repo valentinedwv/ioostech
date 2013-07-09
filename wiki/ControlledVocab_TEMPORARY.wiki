@@ -4,11 +4,9 @@
 
 =Introduction= 
 
-This document describes the policies and relevant controlled vocabularies that have been adopted or developed by the IOOS community, including, context and specific instructions for use and implementation in data services. They primarily target SOS service requests, but are of general applicability in other services and IOOS DMAC areas as well. The content is intended primarily to serve consumers and providers, including software developers and data managers. 
+Controlled vocabularies clarify the meaning of common concepts and enable more interoperable data systems through more precise definitions, and machine readable online references.  This document describes the policies and relevant controlled vocabularies that have been adopted or developed by the IOOS community, including, context and specific instructions for use and implementation in data services. They primarily target SOS service requests, but are of general applicability in other services and IOOS DMAC areas as well. The content is intended primarily to serve consumers and providers, including software developers and data managers. 
 
-Controlled vocabularies clarify the meaning of common concepts and enable more interoperable data systems through more precise definitions, and machine readable online references.  This is a controlled vocabulary usage policy to describe how to select and reference parameter vocabularies and how to address gaps when current vocabularies are insufficient.  
-
-All such controlled vocabularies developed or adopted, which include parameter and platform terms and definitions are hosted on the [http://mmisw.org/orr/#b The Marine Metadata Interoperability Ontology Registry and Repository Website]. 
+All such controlled vocabularies developed or adopted, which include parameter and platform terms and definitions are hosted on the [http://mmisw.org/orr/#b Marine Metadata Interoperability Ontology Registry and Repository] Website. 
 
 =Parameter Vocabulary Use Policy= 
 
