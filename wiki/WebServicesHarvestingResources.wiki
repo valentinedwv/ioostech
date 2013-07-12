@@ -25,10 +25,6 @@
 || Snow telemetry (SNOTEL)  || http://www.wcc.nrcs.usda.gov/ || http://www.wcc.nrcs.usda.gov/nwcc/site || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester ||
 || U.S. Geological Survey water (USGS Water/NWIS)  || http://waterdata.usgs.gov/ak/nwis/uv || http://waterservices.usgs.gov/nwis/iv || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester ||
 || NERRS ||http://cdmo.baruch.sc.edu/webservices.cfm  || http://cdmo.baruch.sc.edu/webservices2/requests.cfc?wsdl || AOOS/Axiom || https://github.com/axiomalaska/sensor-web-harvester ||
-|| HRECOS || http://www.hrecos.org/joomla/ ||  ||  ||  ||
-|| Drifters (NEFSC only) || http://www.nefsc.noaa.gov/drifter/  ||  ||  ||  ||
-|| Ships and drifting buoys from MADIS || http://madis.noaa.gov/madis_sfc.html ||  ||  ||  || 
-|| HFRadar ground stations || http://maracoos.org/hfradar ||  ||  ||
 
 {{{[1]}}} AOOS' sensor-web-harvester currently uses http://www.ndbc.noaa.gov/to_station.shtml and http://www.ndbc.noaa.gov/data/5day2/ for NDBC sensors because these endpoints tend to be more up-to-date and complete.
 
