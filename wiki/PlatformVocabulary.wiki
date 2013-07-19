@@ -1,4 +1,4 @@
-#summary References and information used in developing the IOOS Platform Vocabulary.
+#summary References and information about the IOOS Platform Vocabulary.
 #labels Phase-Design
 
 <wiki:toc max_depth="3" />
