@@ -10,14 +10,16 @@ All such controlled vocabularies developed or adopted, which include parameter a
 
 =Parameter Vocabulary Use Policy= 
 
-The first step to using controlled vocabularies is finding the right one.  Selecting a controlled vocabulary should be based on criteria:
+The first step to using controlled vocabularies is finding the best one.  Criteria for selecting the best controlled vocabulary should be based on:
 
- * content
- * community-maintained
- * Well-managed
- * Interoperable 
+ * the content
+ * Is it community-maintained?
+ * Is it well-managed?
+ * Is it interoperable? 
 
 [From https://marinemetadata.org/guides/vocabs/cvchooseimplement/cvchoosing accessed 08 July 2013]
+
+
 
 The use of CF standard names from the [http://mmisw.org/ont/cf/parameter CF standard names parameter vocabulary] is preferred, but not always acceptabl
 
