@@ -76,11 +76,13 @@ In general, SPARQL queries can be done against the MMI Ontology Registry and Rep
     * [http://mmisw.org/ont/?sparql=PREFIX+ioos%3A+%3Chttp%3A%2F%2Fmmisw.org%2Font%2Fioos%2Fplatform%2F%3E%0D%0ASELECT+DISTINCT+%3Fcat+%3Fplatform+%3Fdefinition%0D%0AWHERE%0D%0A++++{%3Fplatform+a+ioos%3APlatform+.%0D%0A+++++%3Fplatform+ioos%3ADefinition+%3Fdefinition+.%0D%0A+++++%3Fcat+skos%3AnarrowMatch+%3Fplatform+.%0D%0A+++++}%0D%0AORDER+BY+%3Fcat+%3Fplatform%0D%0A List Platform Terms by General Platform Types]
 {{{
 PREFIX ioos: <http://mmisw.org/ont/ioos/platform/>
-SELECT DISTINCT ?cat
-WHERE {?p a ioos:Platform .
-       ?cat skos:narrowMatch ?p .
-      } 
-ORDER BY ?cat
+SELECT DISTINCT ?cat ?platform ?definition
+WHERE
+    {?platform a ioos:Platform .
+     ?platform ioos:Definition ?definition .
+     ?cat skos:narrowMatch ?platform .
+     }
+ORDER BY ?cat ?platform
 }}}
     * [http://mmisw.org/ont/?sparql=PREFIX+ioos%3A+%3Chttp%3A%2F%2Fmmisw.org%2Font%2Fioos%2Fplatform%2F%3E%0D%0ASELECT+DISTINCT+%3Fcat%0D%0AWHERE+{%3Fp+a+ioos%3APlatform+.%0D%0A+++++++%3Fcat+skos%3AnarrowMatch+%3Fp+.%0D%0A++++++}+%0D%0AORDER+BY+%3Fcat%0D%0A List General Platform Types]
 {{{
