@@ -6,9 +6,16 @@
 Most catalog services provide some search mechanisms of the metadata fields.  However, these tend to be limited to exact matches but not able to find data that is somewhat related or same data that is labeled differently.  Searching for like or similar terms is an important step towards improving the search capability within data catalogs like THREDDS or geoportal catalog services.  In this section, IOOS is testing automated search and discovery of terms based on relationships established in mapping vocabulary.  
 
 
-= Details =
+= SPARQL Endpoint =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Numerous examples exist in PERL, Python, and HTML Forms that illustrate how to issue SPARQL queries to vocabulary search services.  SPARQL Endpoints can return the data in different formats (HTML, JSON, CSV, RDF, N3), but not all endpoints can return all these formats.  Unfortunately, in creating these examples, it became clear that JSON returned from MMI Endpoint is not the same in structure and does not comply with SPARQL-JSON W3 Standard that was found on other endpoints (e.g. dbpedia). ven the same format (e.g. JSON) is not consistent in structure 
+
+=== Python Examples MMI SPARQL Endpoint ===
+
+  * using urllib2 (example_sparql_urllib.py)
+  * using SPARQLWrapper (example_sparql_wrapper.py)
+
+=== Python Examples DBPedia SPARQL Endpoint ===
+
+  * using urllib2 (example_sparql_urllib.py)
+  * using SPARQLWrapper (example_sparql_wrapper.py)
