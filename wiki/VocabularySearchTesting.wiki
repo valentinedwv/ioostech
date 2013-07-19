@@ -21,5 +21,5 @@ Unfortunately, in creating these examples, it became clear that JSON returned fr
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_sparql_urllib2.ipynb using urllib2 (example_sparql_urllib2.ipynb)]
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_sparql_wrapper.ipynb using SPARQLWrapper (example_sparql_wrapper.py)]
 
-  DBPedia SPARQL Endpoint
-   * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_sparql_dbpedia.ipynb using urllib2 (example_sparql_dbpedia.py)]
+  W3 Standard SPARQL Endpoint
+   * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/ex361.ipynb  (ex361.py)]
