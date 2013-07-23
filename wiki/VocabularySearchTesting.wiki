@@ -15,11 +15,8 @@ Numerous examples exist in PERL, Python, and HTML Forms that illustrate how to i
 
 As a proof-of-concept, a python script examples were created to show how to submit a SPARQL query with a JSON return, being the easiest format of response to work with python.  
 
-
   == SPARQL-Python Examples  ==
-
-   MMI SPARQL Endpoint 
+ 
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_sparql_urllib2.ipynb using urllib2 (example_sparql_urllib2.ipynb)]
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_sparql_wrapper.ipynb using SPARQLWrapper (example_sparql_wrapper.py)]
-   W3 Standard SPARQL Endpoint
-   * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/ex361.ipynb O'Reilly Example (ex361.py)]
+   
