@@ -34,7 +34,7 @@ SWE element:field reference example:
               <swe:uom code="hPa"/>
 }}}
 
-Vocabulary Selection Process
+* Vocabulary Selection Process
 
 In a hierarchical process designed for selecting observed property terms, the  [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary] is intended to be the primary source for observed property names and definitions to be referenced in the SOS service requests.  In the specific case that a term is used in the standard_name attribute of a variable encoded in a CF compliant netCDF file, the CF standard names parameter vocabulary is the only appropriate vocabulary to use.
 
@@ -42,6 +42,13 @@ The CF standard names parameter vocabulary is limited and will not be always be 
 
 The next option is to develop or propose terms when the “IOOS” vocabularies are not enough.  Terms that are developed must follow the “Guidance for Construction of CF Standard Names”.   It is the responsibility of the data provider to confer with the IOOS Program on new used to ensure coordination.  The IOOS Program can facilitated a process to include new terms in one of the IOOS developed controlled vocabularies or seek approval of the term with the CF standard community or another accepted vocabulary standards group.  The IOOS Program will notify the data provider when the term has been registered.  
 
+* Process Steps 
+
+The Climate and Forecast (CF) standard names parameter vocabulary http://mmisw.org/ont/cf/parameter is a principal vocabulary to search for terms and definitions.  
+
+A search for biological related parameters should be made in the Darwin Core (DwC) Term List http://rs.tdwg.org/dwc/ terms/index. htm#theterms.    
+
+In cases where equivalent or nearly equivalent terms exist, the preference is to use CF terms over DwC terms especially if the data set is encoded in CF netCDF files (or OPeNDAP equivalent).  
 
 
 
