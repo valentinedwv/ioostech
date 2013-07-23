@@ -15,51 +15,11 @@ Numerous examples exist in PERL, Python, and HTML Forms that illustrate how to i
 
 As a proof-of-concept, a python script examples were created to show how to submit a SPARQL query with a JSON return, being the easiest format of response to work with python.  
 
-Unfortunately, in creating these examples, it became clear that JSON returned from MMI Endpoint is not the same in structure and does not comply with [http://www.w3.org/TR/sparql11-results-json/ SPARQL-JSON W3 Standard] that was found on other endpoints (e.g. dbpedia). 
 
   == SPARQL-Python Examples  ==
 
-  MMI SPARQL Endpoint 
+   MMI SPARQL Endpoint 
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_sparql_urllib2.ipynb using urllib2 (example_sparql_urllib2.ipynb)]
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_sparql_wrapper.ipynb using SPARQLWrapper (example_sparql_wrapper.py)]
-
- Example Output
-{{{
-{u'names': [u'parameter', u'definition', u'unit', u'property', u'value'],
- u'values': [[u'<http://mmisw.org/ont/ioos/parameter/air_pressure>',
-   u'"Pressure exerted by overlying air"',
-   u'"hPa"',
-   u'<http://www.w3.org/2004/02/skos/core#exactMatch>',
-   u'<http://mmisw.org/ont/cf/parameter/air_pressure>'],
-  [u'<http://mmisw.org/ont/ioos/parameter/air_temperature>',
-   u'"Temperature of air in situ."',
-   u'"celcius"',
-   u'<http://www.w3.org/2004/02/skos/core#exactMatch>',
-   u'<http://mmisw.org/ont/cf/parameter/air_temperature>'],
-  [u'<http://mmisw.org/ont/ioos/parameter/altitude>',
-   u'"Z-coordinate of observation in vertical distance above reference. Up is positive.  (sea surface | geiod | ellipsoid | MSL | MLLW | AGL)"',
-   u'"meter"',
-   u'<http://www.w3.org/2004/02/skos/core#exactMatch>',
-   u'<http://mmisw.org/ont/cf/parameter/altitude>'],
-  [u'<http://mmisw.org/ont/ioos/parameter/bottom_tracking_velocity>',
-   u'"In vessel-mounted ADCP applications, bottom tracking can be used to accurately remove platform velocity from profile velocities. When the sea-floor bottom is within range of the ADCP, a special ping can be transmitted to measure the Doppler shift of the signal return from the bottom, providing a very accurate measurement of ship velocity.  When bottom-tracking is unavailable (too deep for ADCP to sense sea-floor), ship navigation data is used to estimate ship velocity."',
-   u'"degrees"',
-   u'<http://www.w3.org/2004/02/skos/core#closeMatch>',
-   u'<http://mmisw.org/ont/cf/parameter/platform_speed_wrt_ground>'],
-}}}
-
- W3 Standard SPARQL Endpoint
+   W3 Standard SPARQL Endpoint
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/ex361.ipynb O'Reilly Example (ex361.py)]
-
-Example Output
-{{{
-{u'head': {u'vars': [u'actorName']},
- u'results': {u'bindings': [{u'actorName': {u'type': u'literal',
-     u'value': u'Wolf Kahler'}},
-   {u'actorName': {u'type': u'literal', u'value': u'Slim Pickens'}},
-   {u'actorName': {u'type': u'literal', u'value': u'Tom Cruise'}},
-   {u'actorName': {u'type': u'literal', u'value': u'Arliss Howard'}},
-   {u'actorName': {u'type': u'literal', u'value': u'Ben Johnson'}},
-   {u'actorName': {u'type': u'literal', u'value': u'Scatman Crothers'}},
-   {u'actorName': {u'type': u'literal', u'value': u'Philip Stone'}}]}}
-}}}
