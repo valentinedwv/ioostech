@@ -42,7 +42,7 @@ Roughly ordered from higher to lower level, in focus.
 Initial goal is to support only the mandatory _core_ operations (GetCapabilities, DescribeSensor and GetObservation). Additional data-consumer oriented _enhanced_ requests may be targeted in the future, particularly GetFeatureOfInterest, GetResult and DescribeResultModel. There are no plans to support _transactional_ operations (RegisterSensor and InsertObservation).
 
 == Core elements ==
-  * [http://pycsw.org/ pycsw] can serve as the template and pattern for building an OWSLib-based SOS server. pycsw already supports GET (KVP), POST (XML) and SOAP requests. Important new version ([http://geopython.github.io/pycsw-workshop/docs/future.html 1.6]) is planned for release in June/July.
+  * [http://pycsw.org/ pycsw] can serve as the template and pattern for building an OWSLib-based SOS server. pycsw already supports GET (KVP), POST (XML) and SOAP requests. [https://github.com/geopython/pycsw/wiki/Code-Architecture An overview of the pycsw code architecture is available].
   * [https://github.com/swtools/WOFpy WOFpy]. In collaboration with WOFpy/ulmo TWDB group, support WaterML 1.x (and WOF services) and WaterML 2.0 + SOS 2.
   * [https://github.com/asascience-open/paegan paegan] "attempts to fill the need for a high level common data model (CDM) library for array based met/ocean data". (See [http://www.unidata.ucar.edu/software/netcdf-java/CDM/ this] and [http://www.unidata.ucar.edu/projects/THREDDS/CDM/CDM-TDS.htm that] for info on the CDM).
   * [NANOOSNVSPythonSOS NANOOS Python SOS] server software. Currently it has a limited scope and is not highly generalizable, but it will provide guidance (and some code) for how all the components should come together.
