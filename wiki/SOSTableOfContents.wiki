@@ -23,7 +23,6 @@
    * [ServiceValidation]
    * [TestToolAvailability]
    * [SOSSurvey]
-   * [SOSComponentVersions]
    * [SOSVersions]
  * [ExternalResources References & Links]
  * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
