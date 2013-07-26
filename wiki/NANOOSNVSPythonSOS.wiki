@@ -1,5 +1,6 @@
 #summary Python SOS for NANOOS NVS
 #labels NANOOS,SOS,Python
+#sidebar SOSTableOfContents
 
 <wiki:toc max_depth="2" />
 
