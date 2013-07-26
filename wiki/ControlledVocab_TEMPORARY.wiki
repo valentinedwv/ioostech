@@ -17,7 +17,7 @@ The first step to using controlled vocabularies is finding the best one.  Criter
  * Is it well-managed?
  * Is it interoperable? 
 
-[From https://marinemetadata.org/guides/vocabs/cvchooseimplement/cvchoosing accessed 08 July 2013]
+From the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about CF Metadata NetCDF Climate and Forecast Metadata Convention Website] Accessed on 22 July 2013.
 
 IOOS vocabulary policy has evolved to require users search terms from registered vocabularies and ontologies on the MMI site or other well-established, community maintained vocabularies before developing new terms.  The preferred use of terms from the list of vocabularies IOOS supports includes references to a large set of observed properties (sometimes referred to as a phenomena, parameters, or variables).  Any property encompassed in the parameter vocabularies named in this document is supported.               
 
@@ -44,7 +44,7 @@ The next option is to develop or propose terms when the “IOOS” vocabularies 
 
 * Process Steps 
 
-The Climate and Forecast (CF) standard names parameter vocabulary http://mmisw.org/ont/cf/parameter is a principal vocabulary to search for terms and definitions.  
+The Climate and Forecast (CF) standard names parameter vocabulary [http://mmisw.org/ont/cf/parameter] is a principal vocabulary to search for terms and definitions.  
 
 A search for biological related parameters should be made in the Darwin Core (DwC) Term List http://rs.tdwg.org/dwc/ terms/index. htm#theterms.    
 
