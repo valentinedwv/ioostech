@@ -44,7 +44,7 @@ The next option is to develop or propose terms when the “IOOS” vocabularies 
 
 * Process Steps 
 
-The Climate and Forecast (CF) standard names parameter vocabulary [http://mmisw.org/ont/cf/parameter] is a principal vocabulary to search for terms and definitions.  
+[http://mmisw.org/ont/cf/parameter The Climate and Forecast (CF) standard names parameter vocabulary] is a principal vocabulary to search for terms and definitions.  
 
 A search for biological related parameters should be made in the Darwin Core (DwC) Term List http://rs.tdwg.org/dwc/ terms/index. htm#theterms.    
 
