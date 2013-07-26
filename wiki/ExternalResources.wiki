@@ -1,4 +1,5 @@
 #summary References and Useful External Links for use across the wiki
+#sidebar SOSTableOfContents
 
 <wiki:toc max_depth="2" />
 
