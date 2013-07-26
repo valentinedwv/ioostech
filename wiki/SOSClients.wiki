@@ -1,14 +1,8 @@
 #summary Collection of links to various SOS clients.
 #labels Phase-Design
+#sidebar SOSTableOfContents
 
 
-= Thoughts on Needs for Clients = 
-
-Mostly excerpted from [https://groups.google.com/d/msg/ioostech_dev/Z5smNTb9yQc/zqK5PRRcbggJ an email] from Mohamed C at CO-OPS.
-
-_I think we should encourage the development of software components that are specialized in solving one piece of this puzzle and have those available for all. Examples of such components would be client software to parser SOS responses in various languages and flavors. Others would be translation clients that read in one format and output another. Also, other examples would be components that can be used by the data providers to tackle areas of developing SOS services. Validation .. etc
-
-As a starting point we may need a survey for such stand alone components, where the most need is? what was developed so far? , and we can all pitch in or at least encourage all entities to write code on the identified areas in such a way that can be reused by others with minimum changes if any._
 
 = 52North =
 
@@ -58,3 +52,12 @@ An initial perl script to get the GetCapabilites document and had to manually tw
 The perl script is at http://neptune.baruch.sc.edu/xenia/ioos/get_sos.pl and the resultant GetCapabilities documents and processed files are at http://neptune.baruch.sc.edu/xenia/ioos/out
 
 Each organization in the current array list below like 'secoora' has a 'latest.txt.secoora' response corresponding to the getCapabilites response a summary file 'out_secoora' which is listed in a way for further post-processing - including platform locations and obs types, summary platform and observation type counts and kml/kmz file like 'secoora.kml' 'secoora.kmz' showing the platform locations and obs types at each location.
+
+
+= Thoughts on Needs for Clients = 
+
+Mostly excerpted from [https://groups.google.com/d/msg/ioostech_dev/Z5smNTb9yQc/zqK5PRRcbggJ an email] from Mohamed C at CO-OPS.
+
+_I think we should encourage the development of software components that are specialized in solving one piece of this puzzle and have those available for all. Examples of such components would be client software to parser SOS responses in various languages and flavors. Others would be translation clients that read in one format and output another. Also, other examples would be components that can be used by the data providers to tackle areas of developing SOS services. Validation .. etc
+
+As a starting point we may need a survey for such stand alone components, where the most need is? what was developed so far? , and we can all pitch in or at least encourage all entities to write code on the identified areas in such a way that can be reused by others with minimum changes if any._
