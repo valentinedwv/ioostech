@@ -21,7 +21,7 @@ The first step to using controlled vocabularies is finding the best one.  Criter
 
 IOOS vocabulary policy has evolved to require users search terms from registered vocabularies and ontologies on the MMI site or other well-established, community maintained vocabularies before developing new terms.  The preferred use of terms from the list of vocabularies IOOS supports includes references to a large set of observed properties (sometimes referred to as a phenomena, parameters, or variables).  Any property encompassed in the parameter vocabularies named in this document is supported.               
 
-Vocabularies reference 
+How to Reference Vocabulary Terms
 
 URLs automatically assigned by MMI based on content should be referenced in the SWE element:field in the GetObservation [http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates IOOS SOS template v1.0 schema].  
 
@@ -36,11 +36,11 @@ SWE element:field reference example:
 
 * Vocabulary Selection Process
 
-In a hierarchical process designed for selecting observed property terms, the  [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary] is intended to be the primary source for observed property names and definitions to be referenced in the SOS service requests.  In the specific case that a term is used in the standard_name attribute of a variable encoded in a CF compliant netCDF file, the CF standard names parameter vocabulary is the only appropriate vocabulary to use.
+In a hierarchical process designed for selecting observed parameter terms, the  [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary] is intended to be the primary source for observed property names and definitions to be referenced in the SOS service requests (see How to Reference Vocabulary Terms section).  In the specific case that a term is used in the standard_name attribute of a variable encoded in a CF compliant netCDF file, the CF standard names parameter vocabulary is the only appropriate vocabulary to use.
 
-The CF standard names parameter vocabulary is limited and will not be always be sufficient to use.  The first option is to consult a list of ontologies and vocabularies registered under the IOOS authority in the MMI ORR.  The full list including mappings can be found here [add link].  
+The CF standard names parameter vocabulary is limited and will not be always be sufficient to use.  The first option is to consult a list of ontologies and vocabularies registered under the IOOS authority in the MMI ORR.  The full list including mappings can be found [here http://mmisw.org/ont/ioos].
 
-The next option is to develop or propose terms when the “IOOS” vocabularies are not enough.  Terms that are developed must follow the “Guidance for Construction of CF Standard Names”.   It is the responsibility of the data provider to confer with the IOOS Program on new used to ensure coordination.  The IOOS Program can facilitated a process to include new terms in one of the IOOS developed controlled vocabularies or seek approval of the term with the CF standard community or another accepted vocabulary standards group.  The IOOS Program will notify the data provider when the term has been registered.  
+The next option is to develop or propose terms when the “IOOS” vocabularies are not enough.  Terms that are developed must follow the “Guidance for Construction of CF Standard Names”.  It is the responsibility of the data provider to confer with the IOOS Program on new used to ensure coordination.  The IOOS Program can facilitated a process to include new terms in one of the IOOS developed controlled vocabularies or seek approval of the term with the CF standard community or another accepted vocabulary standards group.  The IOOS Program will notify the data provider when the term has been registered.  
 
 * Process Steps 
 
@@ -50,61 +50,38 @@ A search for biological related parameters should be made in the Darwin Core (Dw
 
 In cases where equivalent or nearly equivalent terms exist, the preference is to use CF terms over DwC terms especially if the data set is encoded in CF netCDF files (or OPeNDAP equivalent).  
 
+Detailed Steps for Vocabulary Selection Process: 
+
+Part A - Search Primary Vocabularies 
+
+1.	Search the [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary] for atmospheric, climate, ocean and surface parameters. * 
+
+2.	Use the [http://rs.tdwg.org/dwc/terms/  Darwin Core terms list] to search for reference definitions that describe biodiversity data.*
+
+3.      Terms found in either the CF vocabulary or DwC Terms List must be used if acceptable. 
+
+*In cases where equivalent or nearly equivalent terms exist, the preference is to use CF terms over DwC terms especially if the data set is encoded in CF netCDF files (or OPeNDAP equivalent). 
+
+Part B - Search Secondary Vocabularies 
+
+3. 	Search for terms in the IOOS authoritative vocabularies ([http://mmisw.org/ont/mmi/resourcetype/parameterIOOS Parameter Vocabulary v2.0], [http://mmisw.org/ont/ioos/biological IOOS Biological Terms]) registered in the MMI ORR.
+
+4.	Use any terms found that are acceptable.  New terms may need to be developed or suggested.
+
+Part C - Develop or adopt New Terms
+
+5.	New terms can be adopted from other lists for addition to one of the IOOS registered vocabularies; or alternatively
+
+6.      New terms can be developed, but must follow the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/guidelines Guidance for Construction of CF Standard Names].
 
 
+Part D - Conclusion Steps
 
+7.      The data provider does not need IOOS approval before implementing new terms.  But, the data provider must confer with the Program on terms that they use through development or adoption from other vocabularies in order to maintain the highest level of interoperability.      
 
+8.	The IOOS Program will facilitate the process to include new terms in the appropriate IOOS registered vocabulary or seek approval of term with the CF standard community or another accepted vocabulary standards group.  
 
-
-
-
-
-
-
-
-
-
-The use of CF standard names from the [http://mmisw.org/ont/cf/parameter CF standard names parameter vocabulary] is preferred, but not always acceptab
-
-but may not have a term that you need.    *In the netCDF file, the use of CF standard name vocabulary terms for the standard_name attribute is required.*  There may be terms  [http://mmisw.org/ont/cf/parameter CF standard name vocabulary] may not contain the term that you need and in such instances you should reference other vocabularies.  
-
-Two parameter vocabularies registered at MMI by IOOS are: 
- * The [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v2.0] is vocabulary of mostly physical and chemical terms used in the IOOS Regional Associations.  
- * The IOOS Biological Terms list for biological terms.  For other biological terms, the [http://rs.tdwg.org/dwc/terms/index Darwin Core Term List] should be used.
- 
-The [http://mmisw.org/ont/cf/parameter cf standard names parameter vocabulary] contains the preferred list of terms for use and if an acceptable term is found, then it should be adopted.
-
-Once the right vocabulary has been found, the next step is to use the controlled vocabulary:   
-
-The IOOS registered controlled vocabularies are other vocabularies to search when terms cannot be found in the [http://mmisw.org/ont/cf/parametercf standard names parameter vocabulary].  The registered IOOS vocabularies, and including mappings between vocabularies, can be referenced from the MMI ORR Website.  For example, the referenced definition for “wind_speed,” taken from the [http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v2.0], is http://mmisw.org/ont/ioos/parameter/wind_speed, where http://mmisw.org/ont/ioos/parameter is the vocabulary URI.    
-
-How should the parameter vocabularies be referenced?
-Selected vocabulary terms, the MMI generated URL should be referenced in the SWE element:field in the GetObservation [http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates IOOS SOS template v1.0 schema].  
-
-SWE element:field reference example:
-	
-{{{
-</swe:field>
-          <swe:field name="air_pressure">
-            <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_pressure">
-              <swe:uom code="hPa"/>
-}}}
-
-
-
-The parameter vocabulary terms should be referenced in the SWE element:field in the GetObservation [http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates IOOS SOS template v1.0 schema].  SWE element:field reference example:
-
-{{{
-</swe:field>
-          <swe:field name="air_pressure">
-            <swe:Quantity definition="http://mmisw.org/ont/cf/parameter/air_pressure">
-              <swe:uom code="hPa"/>
-}}}
-
-How to address gaps when current vocabularies are insufficient?
-
-  * When current vocabularies are insufficient, term names should be suggested, and the development of terms must follow the “Guidance for Construction of CF Standard Names”.  Terms developed or adopted outside of the [http://mmisw.org/ont/cf/parameter cf standard names parameter vocabulary] or IOOS registered vocabularies must coordinate with the IOOS Program Office on the new names.  The IOOS Program can facilitate a process for the data provider to include the new term to one of the current controlled vocabularies or cf standard names parameters and inform the data provider when the term is registered.
-
+9.	The IOOS Program will notify the data provider when the term has been registered.  
 
 -------------------------------------------------------
 
