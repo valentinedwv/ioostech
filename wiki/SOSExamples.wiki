@@ -23,4 +23,4 @@ NOAA Center for Operational Oceanographic Products and Services [http://opendap.
 
 NOAA National Data Buoy Center [http://sdf.ndbc.noaa.gov/sos/ NDBC]
 
-Alaska Ocean Observing System [http:/sos2.axiomalaska.com AOOS beta test server]
+Alaska Ocean Observing System [http://sos2.axiomalaska.com AOOS beta test server]
