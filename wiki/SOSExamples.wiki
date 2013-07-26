@@ -11,9 +11,9 @@ Add your content here.
 
 = Servers =
 
-SOS52North
-SOSncSOS
-NANOOSNVSPythonSOS
+[SOS52North]
+[SOSncSOS]
+[NANOOSNVSPythonSOS]
 
 
 = Examples = 
