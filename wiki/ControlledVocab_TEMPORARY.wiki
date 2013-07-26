@@ -21,11 +21,11 @@ The first step to using controlled vocabularies is finding the best one.  Criter
 
 IOOS vocabulary policy has evolved to require users search terms from registered vocabularies and ontologies on the MMI site or other well-established, community maintained vocabularies before developing new terms.  The preferred use of terms from the list of vocabularies IOOS supports includes references to a large set of observed properties (sometimes referred to as a phenomena, parameters, or variables).  Any property encompassed in the parameter vocabularies named in this document is supported.               
 
-How to Reference Vocabulary Terms
+* How to Reference Vocabulary Terms
 
 URLs automatically assigned by MMI based on content should be referenced in the SWE element:field in the GetObservation [http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates IOOS SOS template v1.0 schema].  
 
-SWE element:field reference example:
+* SWE element:field reference example:
 	
 {{{
 </swe:field>
@@ -50,7 +50,7 @@ A search for biological related parameters should be made in the Darwin Core (Dw
 
 In cases where equivalent or nearly equivalent terms exist, the preference is to use CF terms over DwC terms especially if the data set is encoded in CF netCDF files (or OPeNDAP equivalent).  
 
-Detailed Steps for Vocabulary Selection Process: 
+* Detailed Steps for Vocabulary Selection Process: 
 
 * Part A - Search Primary Vocabularies 
 
