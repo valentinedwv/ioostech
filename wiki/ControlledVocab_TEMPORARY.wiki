@@ -52,7 +52,7 @@ In cases where equivalent or nearly equivalent terms exist, the preference is to
 
 Detailed Steps for Vocabulary Selection Process: 
 
-Part A - Search Primary Vocabularies 
+* Part A - Search Primary Vocabularies 
 
 1.	Search the [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary] for atmospheric, climate, ocean and surface parameters. * 
 
@@ -62,20 +62,20 @@ Part A - Search Primary Vocabularies
 
 *In cases where equivalent or nearly equivalent terms exist, the preference is to use CF terms over DwC terms especially if the data set is encoded in CF netCDF files (or OPeNDAP equivalent). 
 
-Part B - Search Secondary Vocabularies 
+* Part B - Search Secondary Vocabularies 
 
 3. 	Search for terms in the IOOS authoritative vocabularies ([http://mmisw.org/ont/mmi/resourcetype/parameterIOOS Parameter Vocabulary v2.0], [http://mmisw.org/ont/ioos/biological IOOS Biological Terms]) registered in the MMI ORR.
 
 4.	Use any terms found that are acceptable.  New terms may need to be developed or suggested.
 
-Part C - Develop or adopt New Terms
+* Part C - Develop or adopt New Terms
 
 5.	New terms can be adopted from other lists for addition to one of the IOOS registered vocabularies; or alternatively
 
 6.      New terms can be developed, but must follow the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/guidelines Guidance for Construction of CF Standard Names].
 
 
-Part D - Conclusion Steps
+* Part D - Conclusion Steps
 
 7.      The data provider does not need IOOS approval before implementing new terms.  But, the data provider must confer with the Program on terms that they use through development or adoption from other vocabularies in order to maintain the highest level of interoperability.      
 
