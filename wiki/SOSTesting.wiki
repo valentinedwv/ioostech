@@ -3,6 +3,20 @@
 
 <wiki:toc max_depth="6" />
 
+new material cut/paste from the internal google site page.  1st step toward consolidating and simplifying the material.
+
+[https://github.com/axiomalaska/ioos-sos-validator SOS Validator Tool]  Shane can make it run all the tests suggested by Alex:
+# OGC compliance
+  # Test output files for template compliance
+# "Rules" from [SOSGuidelines#Rules wiki] (We need to determine the mandatory/optional tests.)
+# For automation, how do we know which services to test?  Shane prefers to get SOS endpoints from the Service Registry via CSW, but may not be possible.  May need to manually populate a list of services to be tested.  Shane would have to be in the loop to add/delete services.
+# Need to document Tool Requirements in the following form: [Name of Test] [xpath of element] [feature type] [Request] [expected outcome] [severity of failure]
+  # List of tests should be a google spreadsheet with the fields defined above.
+  # Only IOOS-specific tests need to be in this spreadsheet (not OGC stuff)
+  # Also need to define format/location of Test Report.  Probably just a list of tests and pass/fail.  If fail, what severity of failure.
+  # Wiki will maintain the list of tests that are to be executed with the validator.
+
+Material below to be reworked.
 = Introduction =
 
 Initial testing is designed more towards a survey of existing SOS GetCapabilities, DescribeSensor and GetObservation services that have been submitted to the CatalogEndpoints document/spreadsheet.  For initial purposes, just looking at one (hopefully representative) SOS from each RA or other agency.  Also for initial purposes only considering single in-situ representations and not profiles or trajectories.
