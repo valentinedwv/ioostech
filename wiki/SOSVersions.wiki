@@ -1,4 +1,5 @@
 #summary Information about the versions and development history of various SOS's
+#sidebar SOSTableOfContents
 
 Please if possible provide information on how the SOS you are using was developed or its origins(Oostethys,NDBC,etc)  If your SOS is altered from a reference implementation(Oostethys,NDBC,52 North,etc) please describe or provide documentation link(s) to how and why it is different(additional features,work with existing skills/environment,etc).
 
