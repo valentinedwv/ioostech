@@ -1,26 +1,27 @@
 #summary Documentation for the IOOS SOS developed by Axiom based on 52North.org
 #labels SOS
 
-
+=Introduction=
 This project, carried out by Axiom Consulting and Design, in collaboration with IOOS, aims to augment the 52North.org SOS server code base with modifications that IOOS has deemed important.  To accomplish this, Axiom developers have [https://svn.52north.org/svn/swe/main/SOS/Service/branches/ioos-sos/  created an SVN branch of the 52North SOS code] and are adding new capabilities.  Changes that are applicable to all user groups (i.e. not specific to IOOS needs) are submitted back to the [https://svn.52north.org/svn/swe/main/SOS/Service/trunk/ 52North SOS trunk].
 
 [http://ioossos.axiomalaska.com/ Main project site] and documentation site for the IOOS modifications to the 52North SOS service:
 
 http://ioossos.axiomalaska.com/
 
-
+=Example Deployments=
 Continuous integration (always up to date) sandboxed instance of the 52n IOOS branch:
 
 http://ioossostest.axiomalaska.com/
 
 Feel free to experiment with example requests. Data is reset whenever new code is checked in.
 
-Lance's SOS injection code is available here:
+AOOS test instance: http://sos2.axiomalaska.com/
 
-https://github.com/axiomalaska/sos-injection
+=Populating the SOS Database=
+SOS injection code is available here:
 
-sos-injection is the Java toolkit for pushing data into the SOS via RegisterSensor and InsertObservation requests.
+[https://github.com/axiomalaska/sos-injector sos-injector] is the Java toolkit for pushing data into the SOS via RegisterSensor and InsertObservation requests.
 
-https://github.com/axiomalaska/source-sos-injectors
+[https://github.com/axiomalaska/sensor-web-harvester  sensor-web-harvestor] is a Scala project that harvests sensor data from web sources and uses the sos-injection module to push the data to an SOS.
 
-source-sos-injectors is a Scala project that harvests sensor data from web sources and uses the sos-injection module to push the data to an SOS.
+[https://github.com/axiomalaska/sos-injector-example sos-injector-example] Example usage of the sos-injector with tips on creating your own specialized injector for your back end data store.
