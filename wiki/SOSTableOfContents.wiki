@@ -17,7 +17,7 @@
        * [TrajectoryTemplate Trajectory]
        * [TrajectoryProfileTemplate TrajectoryProfile]
    * [ControlledVocabularies ControlledVocabularies]
-   * Identifiers
+   * [SOSExamples Software Implementations and Examples]
  * [CFFeatureTypes]
  * [SOSTesting]
    * [ServiceValidation]
