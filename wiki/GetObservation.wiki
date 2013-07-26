@@ -1,6 +1,6 @@
 #summary Data formats and errors associated with server responses to GetObservation request.
 #labels Phase-Implementation,IDD
-
+#sidebar SOSTableOfContents
 
 =Request=
 
