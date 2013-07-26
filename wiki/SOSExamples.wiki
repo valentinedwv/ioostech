@@ -9,11 +9,18 @@
 Add your content here.
 
 
-= Servers =
+= Software Implementing the IOOS SOS Profile =
 
 [SOS52North]
 [SOSncSOS]
 [NANOOSNVSPythonSOS]
 
 
-= Examples = 
+= Examples of Actual Implementations = 
+Other examples of installations can be found on the RABuildout wiki page.
+
+NOAA Center for Operational Oceanographic Products and Services [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/ CO-OPS]
+
+NOAA National Data Buoy Center [http://sdf.ndbc.noaa.gov/sos/ NDBC]
+
+Alaska Ocean Observing System [http:/sos2.axiomalaska.com AOOS beta test server]
