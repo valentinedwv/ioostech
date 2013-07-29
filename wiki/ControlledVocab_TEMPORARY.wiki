@@ -40,7 +40,7 @@ In a hierarchical process designed for selecting observed parameter terms, the  
 
 The CF standard names parameter vocabulary is limited and will not be always be sufficient to use.  The first option is to consult a list of ontologies and vocabularies registered under the IOOS authority in the MMI ORR.  The full list including mappings can be found [here http://mmisw.org/ont/ioos].
 
-The next option is to develop or propose terms when the “IOOS” vocabularies are not enough.  Terms that are developed must follow the “Guidance for Construction of CF Standard Names”.  It is the responsibility of the data provider to confer with the IOOS Program on new used to ensure coordination.  The IOOS Program can facilitated a process to include new terms in one of the IOOS developed controlled vocabularies or seek approval of the term with the CF standard community or another accepted vocabulary standards group.  The IOOS Program will notify the data provider when the term has been registered.  
+The next option is to develop or propose terms when the “IOOS” vocabularies are not enough.  Terms that are developed must follow the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/guidelines “Guidance for Construction of CF Standard Names”].  It is the responsibility of the data provider to confer with the IOOS Program on new used to ensure coordination.  The IOOS Program can facilitated a process to include new terms in one of the IOOS developed controlled vocabularies or seek approval of the term with the CF standard community or another accepted vocabulary standards group.  The IOOS Program will notify the data provider when the term has been registered.  
 
 * Detailed Steps for Vocabulary Selection Process: 
 
