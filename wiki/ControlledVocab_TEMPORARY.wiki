@@ -6,7 +6,7 @@
 
 Controlled vocabularies clarify the meaning of common concepts and enable more interoperable data systems through more precise definitions, and machine readable online references.  This document describes the policies and relevant controlled vocabularies that have been adopted or developed by the IOOS community, including, context and specific instructions for use and implementation in data services. They primarily target SOS service requests, but are of general applicability in other services and IOOS DMAC areas as well. The content is intended primarily to serve consumers and providers, including software developers and data managers. 
 
-All such controlled vocabularies developed or adopted, which include parameter and platform terms and definitions are hosted on the [http://mmisw.org/orr/#b Marine Metadata Interoperability Ontology Registry and Repository] Website. 
+All such controlled vocabularies developed or adopted, which include parameter and platform terms and definitions are hosted on the [http://mmisw.org/orr/#b Marine Metadata Interoperability Ontology Registry and Repository] Website.  
 
 =Parameter Vocabulary Use Policy= 
 
@@ -77,7 +77,9 @@ The next option is to develop or propose terms when the “IOOS” vocabularies 
 
 -------------------------------------------------------
 
-= Specific Controlled Vocabularies by Type =
+= Select Controlled Vocabularies =
+
+The controlled vocabularies IOOS supports and/or have been registered at the MMI ORR Website includes: 
 
 (NOTE: The list below is fine, but it isn't inclusive.  Not sure what to do here because there are actually much more than four lists at the above URL)
 The list of vocabularies includes:
@@ -93,6 +95,7 @@ The list of vocabularies includes:
 IOOS supports the inclusion and standard referencing of a large set of observed properties (sometimes referred to as phenomena, parameters, or variables). Any property encompassed by the following two vocabularies is supported:
   # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI vocabulary is located at http://mmisw.org/ont/cf/parameter . CF standard names focus on physical and chemical terms and pays only limited attention to areas like biology and ecology.
   # *[TODO_IOOSVocabPage IOOS Parameter Vocabulary.]* A vocabulary created via an IOOS community polling of terms in use by the 11 RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
+  # *[http://rs.tdwg.org/dwc/terms/  Darwin Core terms list]
 
 The background and IOOS use of these vocabularies is described in detail in [#References (1)].
 
