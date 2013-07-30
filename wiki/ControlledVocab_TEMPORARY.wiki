@@ -77,7 +77,7 @@ The next option is to develop or propose terms when the “IOOS” vocabularies 
 
 -------------------------------------------------------
 
-= Specific controlled vocabularies =
+= Specific Controlled Vocabularies by Type =
 
 (NOTE: The list below is fine, but it isn't inclusive.  Not sure what to do here because there are actually much more than four lists at the above URL)
 The list of vocabularies includes:
