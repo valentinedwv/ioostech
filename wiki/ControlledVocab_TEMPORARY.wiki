@@ -81,10 +81,10 @@ The next option is to develop or propose terms when the “IOOS” vocabularies 
 
 (NOTE: The list below is fine, but it isn't inclusive.  Not sure what to do here because there are actually much more than four lists at the above URL)
 The list of vocabularies includes:
- * [#Observed_Property observed property (or "parameter")]
- * [#Station_Platform_Type station platform type]
+ * [#Observed_Property Observed property (or "parameter")]
+ * [#Station_Platform_Type Station platform type]
  * [#IOOS_Partner_Organization IOOS partner organization]
- * [#Organization_Societal_Sector organization societal sector]
+ * [#Organization_Societal_Sector Organization societal sector]
 
 [#Additional_Vocabularies_And_Concepts Additional, related concepts are also used in IOOS services], some of which have also been formally implemented as MMI vocabularies but may not be used yet or deliberately by service providers.
 
