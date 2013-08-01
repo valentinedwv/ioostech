@@ -68,15 +68,13 @@ The next option is to develop or propose terms when the “IOOS” vocabularies 
 
 6.      New terms can be developed, but must follow the [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/guidelines Guidance for Construction of CF Standard Names].
 
-
-* Part D - Conclusion Steps
-
-7.      The data provider does not need IOOS approval before implementing new terms.  But, the data provider must confer with the Program on terms that they use through development or adoption from other vocabularies in order to maintain the highest level of interoperability.      
+7.      The data provider does not need approval before implementing new terms.  But, the data provider must confer with the Program on terms that they use through development or adoption from other vocabularies in order to maintain the highest level of interoperability.      
 
 8.	The IOOS Program will facilitate the process to include new terms in the appropriate IOOS registered vocabulary or seek approval of term with the CF standard community or another accepted vocabulary standards group.  
 
 9.	The IOOS Program will notify the data provider when the term has been registered.  
 
+The IOOS Program Office [Rob.Ragsdale@noaa.gov Rob Ragsdale]  should be consulted at any step in the process if there are questions.  
 -------------------------------------------------------
 
 = Select Controlled Vocabularies =
