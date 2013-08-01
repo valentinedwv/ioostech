@@ -74,7 +74,7 @@ The next option is to develop or propose terms when the “IOOS” vocabularies 
 
 9.	The IOOS Program will notify the data provider when the term has been registered.  
 
-The IOOS Program Office (Rob.Ragsdale@noaa.gov) should be consulted at any step in the process if there are questions.  
+* The IOOS Program Office (Rob.Ragsdale@noaa.gov) should be consulted at any step in the process if there are questions.  
 -------------------------------------------------------
 
 = Select Controlled Vocabularies =
