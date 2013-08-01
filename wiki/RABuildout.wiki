@@ -8,4 +8,4 @@
 
 = Project Progress Dashboard =
 
-https://ioostech.googlecode.com/files/SOS%201.0%20Fielding%20Plan.png
+https://ioostech.googlecode.com/files/SOS%201.0%20Fielding%20Plan-2013-08-01.png
