@@ -4,6 +4,8 @@
 = Introduction =
 
 
+The graphic below is a high level progress indicator which provides the status of RA progress toward installing one or more SOS services at the RA Data Assembly Centers.  We will do our best to maintain this document here but the status may not reflect recent activity.  If you feel that your RA efforts are misrepresented please contact Derrick.  Similarly, if you have suggestions for improvement I'm happy to hear them.  
+
 
 
 = Project Progress Dashboard =
