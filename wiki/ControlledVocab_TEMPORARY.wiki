@@ -94,8 +94,9 @@ The list of vocabularies includes:
 
 IOOS supports the inclusion and standard referencing of a large set of observed properties (sometimes referred to as phenomena, parameters, or variables). Any property encompassed by the following two vocabularies is supported:
   # *[http://cf-pcmdi.llnl.gov/documents/cf-standard-names/about Climate & Forecast (CF) Standard Names Parameter Vocabulary.]* The MMI vocabulary is located at http://mmisw.org/ont/cf/parameter . CF standard names focus on physical and chemical terms and pays only limited attention to areas like biology and ecology.
-  # *[http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v.2.0].* A vocabulary created via an IOOS community polling of terms in use by the 11 RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
   # *[http://rs.tdwg.org/dwc/terms/  Darwin Core terms list]
+  # *[http://mmisw.org/ont/ioos/parameter IOOS Parameter Vocabulary v.2.0].* A vocabulary created via an IOOS community polling of terms in use by the 11 RA's in 2009-2010, and a follow-up process of QA/QC, refinement and consolidation of duplicates. The MMI vocabulary location is: http://mmisw.org/ont/ioos/parameter
+  # *[http://mmisw.org/ont/ioos/biological IOOS Biological Terms].  The IOOS Biological Data Terminology is a list of data fields with names, descriptions, and format notes. It was based on ratified Darwin core, Dublin core and proposed IOOS vocabularies. XML guide was based on Darwin core XML guidance. CF Conventions had been applied to biological data definition at the field level. 
 
 The background and IOOS use of these vocabularies is described in detail in [#References (1)].
 
