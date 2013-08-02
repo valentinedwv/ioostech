@@ -38,7 +38,7 @@ URLs automatically assigned by MMI based on content should be referenced in the 
 
 In a hierarchical process designed for selecting observed parameter terms, the  [http://mmisw.org/ont/cf/parameter Climate and Forecast (CF) standard names parameter vocabulary] is intended to be the primary source for observed property names and definitions to be referenced in the SOS service requests (see How to Reference Vocabulary Terms section).  In the specific case that a term is used in the standard_name attribute of a variable encoded in a CF compliant netCDF file, the CF standard names parameter vocabulary is the only appropriate vocabulary to use.
 
-The CF standard names parameter vocabulary is limited and will not be always be sufficient to use.  The first option is to consult a list of ontologies and vocabularies registered under the IOOS authority in the MMI ORR.  The full list including mappings can be found [ http://mmisw.org/ont/ioos here].
+The CF standard names parameter vocabulary is limited and will not be always be sufficient to use.  The first option is to consult a list of ontologies and vocabularies registered under the IOOS authority in the MMI ORR.  The full list including mappings can be found [http://mmisw.org/ont/ioos here].
 
 For convenience and completeness, the IOOS Parameter Vocabulary incorporates CF terms that are widely used in IOOS. [http://mmisw.org/ont/ioos/map_ioos_cf An MMI-based ontological mapping has been created between IOOS and CF terms], such that a reference to a term in one vocabulary is automatically linked to an appropriate term on the other vocabulary if such a match exists.
 
