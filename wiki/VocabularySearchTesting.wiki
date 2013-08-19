@@ -16,7 +16,6 @@ Numerous examples exist in PERL, Python, and HTML Forms that illustrate how to i
 As a proof-of-concept, a python script examples were created to show how to submit a SPARQL query with a JSON return, being the easiest format of response to work with python.  
 
   == SPARQL-Python Examples  ==
- 
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_sparql_urllib2.ipynb using urllib2 (example_sparql_urllib2.ipynb)]
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_sparql_wrapper.ipynb using SPARQLWrapper (example_sparql_wrapper.py)]
 
@@ -24,6 +23,5 @@ As a proof-of-concept, a python script examples were created to show how to subm
 = Geoportal CSW Endpoint =
 
   == CSW-Python Examples ==
-
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/example_csw_ngdc_geoportal.ipynb Using OWSLIB-CSW to access NGDC Geoportal CSW (example_csw_ngdc_geoportal.ipynb)]
    
