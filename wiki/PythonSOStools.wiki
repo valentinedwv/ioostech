@@ -32,7 +32,7 @@ Roughly ordered from higher to lower level, in focus.
 
 == Mailing lists and groups ==
 
-  * [http://librelist.com/browser/pywaterdata/ pywaterdata email list]. Currently limited to the WOFpy/ulmo/pyhis group (ie, mainly CUAHSI HIS hydro data services)
+  * [http://librelist.com/browser/pywaterdata/ pywaterdata email list]. Limited to the WOFpy/ulmo/pyhis group. Deprecated in favor of an [https://groups.google.com/forum/?hl=en#!forum/ulmo ulmo-focused Google Group] in Aug. 2013, but the list archive is still available and is still useful.
   * [http://code.google.com/p/waterpython/ Water Python Google Code group]. Never really got off the ground after a bit of enthusiasm back in early 2010 (Chris Barker, Rob Hetland, etc). But could be repurposed....
   * [http://oceanpython.org/ oceanpython.org], from OTN
 
