@@ -19,7 +19,7 @@ We're in the [http://en.wikipedia.org/wiki/Snake_%28zodiac%29 Year of the Water 
 Roughly ordered from higher to lower level, in focus.
 
   * [NANOOSNVSPythonSOS NANOOS SOS]. Server software.
-  * [https://github.com/swtools/ WOFpy/ulmo/pyhis group]. Based in Austin. Centered around the CUAHSI HIS stack (WOF/WaterML), though not exclusively.
+  * [https://github.com/twdb/ WOFpy/ulmo/pyhis group]. Based in Austin. Centered around the CUAHSI HIS stack (WOF/WaterML), though not exclusively.
     * [https://github.com/swtools/WOFpy WOFpy]. Server software, for CUAHSI HIS water data services: WaterML 1.0 + WaterOneFlow (WOF) 1. Note that WOFpy implements HTTP GET requests (REST-like, but using parameter-argument pairs), unlike the original WOF 1 specifications and most implementations out there. [http://waterservices.usgs.gov/ FYI, USGS also has a GET WOF 1 implementation.]
     * [https://github.com/twdb/ulmo ulmo]. Client software. (Replaces the now-deprecated "pyhis" package, developed by the same group)
   * [http://code.google.com/p/istsos/ istSOS]. Server software.
