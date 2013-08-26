@@ -46,9 +46,9 @@ Should Derrick have a role here, like ultimate authority on pass-fail?
 
 The general process is as follows:
   # Data provider POC announces a service endpoint is ready for testing, supplies the following information:
-  ## Endpoint URL
-  ## Software release or version number
-  ## Point of contact for test-related issues
+    # Endpoint URL
+    # Software release or version number
+    # Point of contact for test-related issues
   # Tester(s) execute tests on service. Defects are identified and logged in defect reporting system (Issues portion of ioostech).
   # Defects are investigated and addressed by appropriate individual.
   # Software or system updates are performed as needed to correct issues identified during testing.
