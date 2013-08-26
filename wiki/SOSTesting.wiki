@@ -40,11 +40,23 @@ See Tests and Success Criteria for more detailed info on specific tests to be co
 ||Installation or data-related Issues||RA or Fed DMAC POC||
 ||Test Reports||Alex Birger||
 
-?Odd that Derrick does not appear here.
+Should Derrick have a role here, like ultimate authority on pass-fail?
 
 = Process and Test Tools =
 
-  # 
+The general process is as follows:
+  # Data provider POC announces a service endpoint is ready for testing, supplies the following information:
+  ## Endpoint URL
+  ## Software release or version number
+  ## Point of contact for test-related issues
+  # Tester(s) execute tests on service. Defects are identified and logged in defect reporting system (Issues portion of ioostech).
+  # Defects are investigated and addressed by appropriate individual.
+  # Software or system updates are performed as needed to correct issues identified during testing.
+  # Test Manager determines which tests need to be re-run, testing is re-done.
+  # Process continues until Test Manager determines:
+  ## Service passed tests
+  ## Service cannot be further tested
+  # Test results are documented in Test Report.
 
 = Tests and Success Criteria =
 
