@@ -62,7 +62,7 @@ The general process is as follows:
 
 = SOS Service Test States = 
 
-Throughout the test process, services will transition through several states, as defined below.
+Throughout the test process, services will transition through several states, as defined below.  The Fielding Plan (dashboard) will be updated weekly to reflect the latest state of each service.
 
 ||State||Meaning||
 ||Pending||Service is not ready for testing||
