@@ -5,7 +5,9 @@
 
 = Overview and Test Plan Objectives =
 
-The IOOS SOS software reference implementations based on 52North and ncSOS are now complete, and other implementations are in progress.  IOOS data providers that serve in situ data are making plans to implement one or more of these solutions at their locations.  Once these services are installed within an IOOS data provider's domain, they will need to be tested to ensure the SOS responses and data formats conform to specifications.  
+The IOOS SOS software reference implementations based on 52North and ncSOS are now complete, and other implementations are in progress.  IOOS data providers that serve in situ data are making plans to implement one or more of these solutions at their locations.  Once these services are installed within an IOOS data provider's domain, they will need to be tested to ensure the SOS responses and data formats conform to specifications.
+
+*_For now, these tests are intended to be initial service deployment tests, and are not intended to be automated or recurring service validation tests.  Based on the results of these tests we may choose to build automated and/or recurring service validation tests._*
 
 The objective of this test plan is to describe the overall testing strategy and to define how each data provider's service endpoint will be tested. This test plan will describe the following:
 
@@ -40,7 +42,7 @@ See Tests and Success Criteria for more detailed info on specific tests to be co
 ||Installation or data-related Issues||RA or Fed DMAC POC||
 ||Test Reports||Alex Birger||
 
-Should Derrick have a role here, like ultimate authority on pass-fail?
+_Should Derrick have a role here, like ultimate authority on pass-fail?_
 
 = Process and Test Tools =
 
@@ -54,19 +56,32 @@ The general process is as follows:
   # Software or system updates are performed as needed to correct issues identified during testing.
   # Test Manager determines which tests need to be re-run, testing is re-done.
   # Process continues until Test Manager determines:
-  ## Service passed tests
-  ## Service cannot be further tested
+    # Service passed tests
+    # Service cannot be further tested
   # Test results are documented in Test Report.
 
 = Tests and Success Criteria =
 
 = Defect Reporting =
 
+Any issues encountered during testing will be logged in the Issues section of ioostech: https://code.google.com/p/ioostech/issues/list
+
+The defect list will be reviewed weekly by the Test Manager and IOOS DMAC personnel at the weekly DMAC Project Management meeting.
+
+_How do we "assign" a defect to an individual?_
+_Should we use Labels as a way to categorize the issues?_
+
 = Configuration Management =
+
+The software implementations have version numbers that are provided when the service endpoint is reported to be ready for test.  Testers will track software versions when running tests and reporting defects or issues.  
+
+_When provided with just a service endpoint, is it possible to verify the software version?_
 
 = Test Report Format =
 
 = Risks and Issues =
+
+
 
 new material cut/paste from the internal google site page.  1st step toward consolidating and simplifying the material.
 
