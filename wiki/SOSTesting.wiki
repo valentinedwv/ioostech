@@ -3,9 +3,33 @@
 
 <wiki:toc max_depth="6" />
 
-= Overview and Objectives =
+= Overview and Test Plan Objectives =
+
+The IOOS SOS software reference implementations based on 52North and ncSOS are now complete, and other implementations are in progress.  IOOS data providers that serve in situ data are making plans to implement one or more of these solutions at their locations.  Once these services are installed within an IOOS data provider's domain, they will need to be tested to ensure the SOS responses and data formats conform to specifications.  
+
+The objective of this test plan is to describe the overall testing strategy and to define how each data provider's service endpoint will be tested. This test plan will describe the following:
+
+* Scope of the tests to be conducted
+* Roles and responsibilities 
+* Testing process and required tools
+* Success criteria for each test performed
+* Methodology for reporting defects or anomalies
+* Methodology for configuration management and version control
+* Format and content of Test Reports
+
 
 = Scope =
+
+SOS implementations at each data provider will be tested to ensure the service:
+
+# Is online and capable of responding to requests
+# Is compliant with applicable OGC specifications
+# Has a service response which is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the OGC specification AND IOOS Milestone 1.0 templates
+# Has a service response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc.
+# Contains an appropriate quantity of a data provider's in situ data offerings 
+# Exhibits the same behavior as other SOS implementations in the case where a data provider is operating more than one SOS implementation (i.e. 52N and ncSOS)
+
+See Tests and Success Criteria for more detailed info on specific tests to be conducted.
 
 = Roles and Responsibilities =
 
