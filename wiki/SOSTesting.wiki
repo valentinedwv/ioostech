@@ -3,6 +3,22 @@
 
 <wiki:toc max_depth="6" />
 
+= Overview and Objectives =
+
+= Scope =
+
+= Roles and Responsibilities =
+
+= Process and Test Tools =
+
+= Tests and Success Criteria =
+
+= Defect Reporting =
+
+= Configuration Management =
+
+= Test Report Format =
+
 new material cut/paste from the internal google site page.  1st step toward consolidating and simplifying the material.
 
 [https://github.com/axiomalaska/ioos-sos-validator SOS Validator Tool]  Shane can make it run all the tests suggested by Alex:
