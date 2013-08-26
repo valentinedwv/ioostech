@@ -33,8 +33,14 @@ See Tests and Success Criteria for more detailed info on specific tests to be co
 
 = Roles and Responsibilities =
 
-||Role||Responsible Org/Individual||
-||Software-related Issues||52N-Shane, ncSOS-Kyle||
+||*Role*||*Responsible Org/Individual*||
+||Test Manager||Alex Birger||
+||Tester||Varies based on test?||
+||Software-related Issues||52N-Shane, ncSOS-Kyle, python-Emilio||
+||Installation or data-related Issues||RA or Fed DMAC POC||
+||Test Reports||Alex Birger||
+
+?Odd that Derrick does not appear here.
 
 = Process and Test Tools =
 
