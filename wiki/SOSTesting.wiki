@@ -44,7 +44,7 @@ See Tests and Success Criteria for more detailed info on specific tests to be co
 
 _Should Derrick have a role here, like ultimate authority on pass-fail?_
 
-= Process and Test Tools =
+= Process =
 
 The general process is as follows:
   # Data provider POC announces a service endpoint is ready for testing, supplies the following information:
@@ -60,7 +60,19 @@ The general process is as follows:
     # Service cannot be further tested
   # Test results are documented in Test Report.
 
-= Tests and Success Criteria =
+= SOS Service Test States = 
+
+Throughout the test process, services will transition through several states, as defined below.
+
+||State||Meaning||
+||Pending||Service is not ready for testing||
+||Ready||Service is available for test, testing has not begun||
+||In Progress||Testing is underway||
+||Hold||Testing identified defects; awaiting resolution before testing can continue||
+||Complete-Success||Testing is complete and success criteria was met||
+||Complete-Fail||Testing is complete, service did not meet success criteria||
+
+= Tests, Tools and Success Criteria =
 
 = Defect Reporting =
 
