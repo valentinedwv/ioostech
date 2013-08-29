@@ -123,6 +123,8 @@ validation against formal XML schemas using XML Editor like Oxygen
 
 
 Has a service response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc:  adheres to the "rules" on the wiki.   need to determine which of those rules are important to test. answer should be based on which ones are needed for auto asset inventory.
+"Rules" from [SOSGuidelines#Rules wiki] (We need to determine the mandatory/optional tests.)
+
 
 Contains an appropriate quantity of a data provider's in situ data offerings (80% of applicable data types): Determine what/how many datasets are served - use GetCapabilities - and then query the DMAC coordinator if that matches their intent.
 
