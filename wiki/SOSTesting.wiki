@@ -42,7 +42,7 @@ See Tests and Success Criteria for more detailed info on specific tests to be co
 ||*Role*||*Responsible Org/Individual*||
 ||Test Authority||Derrick Snowden||
 ||Test Manager||Alex Birger||
-||Tester||Varies based on test?||
+||Tester||Varies based on test, likely Alex Birger will do majority||
 ||Software-related Issues||52N-Shane, ncSOS-Kyle, python-Emilio||
 ||Installation or data-related Issues||RA or Fed DMAC POC||
 ||Test Reports||Alex Birger||
@@ -79,63 +79,67 @@ Throughout the test process, services will transition through several states, as
 
 = Test Methods and Success Criteria =
 
-==Test: Basic Service Response==
+The sections below provide a high level description of the tests to be conducted.  A individual test is considered successful if the test outcome matches the Expected Result.
+
+==Test 1: Basic Service Response==
     
-Test Goal: Verify that the service is online and capable of responding to requests
+Test Goal: Verify that the service is online and capable of responding to requests.
 
 Test Method:
 
-||Method||Expected Result||Success Criteria||
-||Issue GetCapabilities request from browser||Capabilities XML received||Capabilities XML response received, no exception errors||
+Issue the following requested from a web browser:
+  *GetCapabilities
+  *DescribeSensor
+  *GetObservation
 
-Success Criteria:  Success criteria met for all test methods.
+Expected Result: Response XML received for each operation, with no exception errors.
 
 
-==Test: Service Registered in IOOS Service Registry==
+==Test 2: Service Registered in IOOS Service Registry==
 
-Is registered in the IOOS Service Registry.  Service passes the NGDC registration process and is successfully harvested.
+Test Goal: Verify that the service is registered in the IOOS Service Registry.
 
-==Test: OGC Compliance==
+Test Method:  Find service in NGDC service registry using the existing web interface.
 
-Is compliant with selected OGC specifications
+Expected Result: Service under test is in the service registry and can be harvested.
 
-|| *Test* || * Required * || * Tested by OGC tool * || *Comments*||
-|| GetCapabilities, GET method|| yes || yes || ||
-|| GetCapabilities, POST method|| yes || no || [https://wiki.52north.org/bin/view/SensorWeb/SosTutorial various options available for 52North] ||
-|| DescribeSensor, GET method || yes || no ||  ||
-|| DescribeSensor, POST method || yes || yes || [http://sensorweb.demo.52north.org/52nSOSv3.2.1 test available for 52North] ||
-|| GetObservation, GET method || ? || no ||  ||
-|| GetObservation, POST method || yes || yes || [http://sensorweb.demo.52north.org/52nSOSv3.2.1 various options available for 52North] ||
-|| GetObservation with "result" parameters/filters || yes || no || [http://sensorweb.demo.52north.org/52nSOSv3.2.1 various options available for 52North] ||
-|| DescribeFeatureType || ? || no ||  ||
-|| DescribeObservationType || ? || no ||  ||
-|| DescribeResultModel || no || no ||  ||
-|| GetObservationById || no || no ||  ||
-|| GetResult || no || no ||  ||
-|| GetFeatureOfInterest || no || no ||  ||
-|| GetFeatureOfInterestTime || no || no ||  ||
-|| InsertObservation || no || no ||  ||
-|| RegisterSensor || no || no ||  ||
 
-==Test: IOOS SOS Milestone 1.0 Template Compliance==
+==Test 3: OGC Compliance==
 
-Has a service response which is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the OGC specification AND IOOS Milestone 1.0 templates
-(Perform schema validation on output files using the schemas that Alex developed based on 1.0 templates)
-visual comparison with IOOS SOS templates Milestone 1.0
-validation against formal XML schemas using XML Editor like Oxygen
+Test Goal: Ensure that the service is compliant with selected OGC specifications.
 
-[https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schemas for SOS Milestone 1.0 responses]
+Test Method:  
 
-==Test: Compliance With IOOS Conventions==
+The following operations will be tested using the OGC CITE test scripts:
+  *GetCapabilities
+  *DescribeSensor
+  *GetObservation
+
+Expected Result: No catastrophic errors encountered.
+_*Need to come up with a list of errors/exceptions and deteriment which ones would result in failure of the test.*_
+
+
+==Test 4: IOOS SOS Milestone 1.0 Template Compliance==
+
+Test Goal:  Validate that the service response is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the IOOS Milestone 1.0 templates.
+
+Test Method:
+For each SOS Milestone 1.0 Template -
+  # Issue command and capture XML response
+  # Using Oxygen, perform schema validation on the response files using the [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schemas for SOS Milestone 1.0 responses] that Alex developed based on 1.0 templates
+
+Expected Result: Output files validate against schemas.
+
+==Test 5: Compliance With IOOS Conventions==
 
 Has a service response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc:  adheres to the "rules" on the wiki.   need to determine which of those rules are important to test. answer should be based on which ones are needed for auto asset inventory.
 "Rules" from [SOSGuidelines#Rules wiki] (We need to determine the mandatory/optional tests.)
 
-==Test: Quantity of Offerings==
+==Test 6: Quantity of Offerings==
 
 Contains an appropriate quantity of a data provider's in situ data offerings (80% of applicable data types): Determine what/how many datasets are served - use GetCapabilities - and then query the DMAC coordinator if that matches their intent.
 
-==Test: Consistency of Behavior Across Implementations==
+==Test 7: Consistency of Behavior Across Implementations==
 
 Exhibits the same behavior as other SOS implementations in the case where a data provider is operating more than one SOS implementation (i.e. 52N and ncSOS)
 
