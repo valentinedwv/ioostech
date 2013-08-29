@@ -21,6 +21,7 @@ The objective of this test plan is to describe the overall testing strategy and 
   * Methodology for configuration management and version control
   * Format and content of Test Reports
 
+The final section of the plan is intended to be used as a repository for ideas for additional test tools, scripts, etc.  This section should be augmented during test execution, and will potentially be used as requirements for future tool development.
 
 = Scope =
 
@@ -95,9 +96,11 @@ _When provided with just a service endpoint, is it possible to verify the softwa
 
 = Test Report Format =
 
-= Risks and Issues =
+= Future Test Tool Needs/Requirements =
 
+Include here ideas for test tools, scripts, utilities, etc that would enhance or automate the testing process.
 
+----
 
 new material cut/paste from the internal google site page.  1st step toward consolidating and simplifying the material.
 
