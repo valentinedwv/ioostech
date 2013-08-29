@@ -65,7 +65,7 @@ The general process is as follows:
 
 Throughout the test process, services will transition through several states, as defined below.  The Fielding Plan (dashboard) will be updated weekly to reflect the latest state of each service.
 
-||State||Meaning||
+||*State*||*Meaning*||
 ||Pending||Service is not ready for testing||
 ||Ready||Service is available for test, testing has not begun||
 ||In Progress||Testing is underway||
