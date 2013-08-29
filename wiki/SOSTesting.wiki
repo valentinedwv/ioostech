@@ -23,6 +23,7 @@ The objective of this test plan is to describe the overall testing strategy and 
 
 The final section of the plan is intended to be used as a repository for ideas for additional test tools, scripts, etc.  This section should be augmented during test execution, and will potentially be used as requirements for future tool development.
 
+
 = Scope =
 
 SOS implementations at each data provider will be tested to ensure the service:
@@ -36,6 +37,7 @@ SOS implementations at each data provider will be tested to ensure the service:
   # Exhibits the same behavior as other SOS implementations in the case where a data provider is operating more than one SOS implementation (i.e. 52N and ncSOS)
 
 See Tests and Success Criteria for more detailed info on specific tests to be conducted.
+
 
 = Roles and Responsibilities =
 
@@ -65,6 +67,7 @@ The general process is as follows:
   # Test results are documented in Test Report.
   # Test Authority makes final determination of service Pass or Fail.
 
+
 = SOS Service Test States = 
 
 Throughout the test process, services will transition through several states, as defined below.  The Fielding Plan (dashboard) will be updated weekly to reflect the latest state of each service.
@@ -77,70 +80,87 @@ Throughout the test process, services will transition through several states, as
 ||Complete-Success||Testing is complete and success criteria was met||
 ||Complete-Fail||Testing is complete, service did not meet success criteria||
 
+
 = Test Methods and Success Criteria =
 
 The sections below provide a high level description of the tests to be conducted.  A individual test is considered successful if the test outcome matches the Expected Result.
 
+
 ==Test 1: Basic Service Response==
     
-Test Goal: Verify that the service is online and capable of responding to requests.
+*Test Goal:* Verify that the service is online and capable of responding to requests.
 
-Test Method:
+*Test Method:*
 
 Issue the following requested from a web browser:
-  *GetCapabilities
-  *DescribeSensor
-  *GetObservation
+  * GetCapabilities
+  * DescribeSensor
+  * GetObservation
 
-Expected Result: Response XML received for each operation, with no exception errors.
+*Expected Result:* Response XML received for each operation, with no exception errors.
 
 
 ==Test 2: Service Registered in IOOS Service Registry==
 
-Test Goal: Verify that the service is registered in the IOOS Service Registry.
+*Test Goal:* Verify that the service is registered in the IOOS Service Registry.
 
-Test Method:  Find service in NGDC service registry using the existing web interface.
+*Test Method:*  Find service in NGDC service registry using the existing web interface.
 
-Expected Result: Service under test is in the service registry and can be harvested.
+*Expected Result:* Service under test is in the service registry and can be harvested.
 
 
 ==Test 3: OGC Compliance==
 
-Test Goal: Ensure that the service is compliant with selected OGC specifications.
+*Test Goal:* Ensure that the service is compliant with selected OGC specifications.
 
-Test Method:  
+*Test Method:*  
 
 The following operations will be tested using the OGC CITE test scripts:
-  *GetCapabilities
-  *DescribeSensor
-  *GetObservation
+  * GetCapabilities
+  * DescribeSensor
+  * GetObservation
 
-Expected Result: No catastrophic errors encountered.
+*Expected Result:* No catastrophic errors encountered.
 _*Need to come up with a list of errors/exceptions and deteriment which ones would result in failure of the test.*_
 
 
 ==Test 4: IOOS SOS Milestone 1.0 Template Compliance==
 
-Test Goal:  Validate that the service response is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the IOOS Milestone 1.0 templates.
+*Test Goal:*  Validate that the service response is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the IOOS Milestone 1.0 templates.
 
-Test Method:
+*Test Method:*
 For each SOS Milestone 1.0 Template -
   # Issue command and capture XML response
   # Using Oxygen, perform schema validation on the response files using the [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schemas for SOS Milestone 1.0 responses] that Alex developed based on 1.0 templates
 
-Expected Result: Output files validate against schemas.
+*Expected Result:* Output files validate against schemas.
+
 
 ==Test 5: Compliance With IOOS Conventions==
 
-Has a service response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc:  adheres to the "rules" on the wiki.   need to determine which of those rules are important to test. answer should be based on which ones are needed for auto asset inventory.
-"Rules" from [SOSGuidelines#Rules wiki] (We need to determine the mandatory/optional tests.)
+*Test Goal:* Validate that the service has a response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc codified on the ioostech [SOSGuidelines#Rules wiki].
+
+*Test Method:*
+For each "rule" on the [SOSGuidelines#Rules wiki] -
+  * Observe the appropriate service behavior for compliance with the rules
+
+*Expected Result:* Service behaves according to rule.  
+
+_*Need to determine which of those rules are important to test. Answer should be based on which ones are needed for auto asset inventory.*_
+
 
 ==Test 6: Quantity of Offerings==
 
-Contains an appropriate quantity of a data provider's in situ data offerings (80% of applicable data types): Determine what/how many datasets are served - use GetCapabilities - and then query the DMAC coordinator if that matches their intent.
+*Test Goal:* Verify that the service contains an appropriate quantity of a data provider's in situ data offerings.  The goal is to have 80% of available offerings accessible from the service. 
+
+*Test Method:* Execute GetCapabilities operation on the service to determine how many datasets are served.  Report results to the appropriate DMAC coordinator and determine percentage of offerings that are served through the SOS.
+
+*Expected Result:* At least 80% of data provider's offerings are served through the SOS.
+
 
 ==Test 7: Consistency of Behavior Across Implementations==
 
+*Test Goal:*
 Exhibits the same behavior as other SOS implementations in the case where a data provider is operating more than one SOS implementation (i.e. 52N and ncSOS)
 
 
