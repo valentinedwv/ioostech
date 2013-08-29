@@ -15,7 +15,7 @@ The objective of this test plan is to describe the overall testing strategy and 
 
   * Scope of the tests to be conducted
   * Roles and responsibilities 
-  * Testing process and required tools
+  * Testing process, methods and required tools
   * Success criteria for each test performed
   * Methodology for reporting defects or anomalies
   * Methodology for configuration management and version control
@@ -77,7 +77,22 @@ Throughout the test process, services will transition through several states, as
 ||Complete-Success||Testing is complete and success criteria was met||
 ||Complete-Fail||Testing is complete, service did not meet success criteria||
 
-= Tests, Tools and Success Criteria =
+= Test Methods and Success Criteria =
+
+  # Requirement: *Basic Service Response*
+    Test Goal: Verify that the service is online and capable of responding to requests
+    Test Method:
+    Success Criteria:
+
+
+  Is online and capable of responding to requests
+  Is registered in the IOOS Service Registry
+  Is compliant with selected OGC specifications
+  Has a service response which is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the OGC specification AND IOOS Milestone 1.0 templates
+  Has a service response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc.
+  Contains an appropriate quantity of a data provider's in situ data offerings (80% of applicable data types)
+  Exhibits the same behavior as other SOS implementations in the case where a data provider is operating more than one SOS implementation (i.e. 52N and ncSOS)
+
 
 = Defect Reporting =
 
