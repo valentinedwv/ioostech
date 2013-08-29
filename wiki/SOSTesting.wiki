@@ -25,10 +25,11 @@ The objective of this test plan is to describe the overall testing strategy and 
 SOS implementations at each data provider will be tested to ensure the service:
 
   # Is online and capable of responding to requests
-  # Is compliant with applicable OGC specifications
+  # Is registered in the IOOS Service Registry
+  # Is compliant with selected OGC specifications
   # Has a service response which is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the OGC specification AND IOOS Milestone 1.0 templates
   # Has a service response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc.
-  # Contains an appropriate quantity of a data provider's in situ data offerings 
+  # Contains an appropriate quantity of a data provider's in situ data offerings (80% of applicable data types)
   # Exhibits the same behavior as other SOS implementations in the case where a data provider is operating more than one SOS implementation (i.e. 52N and ncSOS)
 
 See Tests and Success Criteria for more detailed info on specific tests to be conducted.
