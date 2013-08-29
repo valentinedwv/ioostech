@@ -37,13 +37,13 @@ See Tests and Success Criteria for more detailed info on specific tests to be co
 = Roles and Responsibilities =
 
 ||*Role*||*Responsible Org/Individual*||
+||Test Authority||Derrick Snowden||
 ||Test Manager||Alex Birger||
 ||Tester||Varies based on test?||
 ||Software-related Issues||52N-Shane, ncSOS-Kyle, python-Emilio||
 ||Installation or data-related Issues||RA or Fed DMAC POC||
 ||Test Reports||Alex Birger||
 
-_Should Derrick have a role here, like ultimate authority on pass-fail?_
 
 = Process =
 
@@ -60,6 +60,7 @@ The general process is as follows:
     # Service passed tests
     # Service cannot be further tested
   # Test results are documented in Test Report.
+  # Test Authority makes final determination of service Pass or Fail.
 
 = SOS Service Test States = 
 
