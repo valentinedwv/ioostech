@@ -79,10 +79,16 @@ Throughout the test process, services will transition through several states, as
 
 = Test Methods and Success Criteria =
 
-  # Requirement: *Basic Service Response*
-    Test Goal: Verify that the service is online and capable of responding to requests
-    Test Method:
-    Success Criteria:
+==Test: Basic Service Response==
+    
+Test Goal: Verify that the service is online and capable of responding to requests
+
+Test Method:
+
+||Method||Expected Result||Success Criteria||
+||Issue GetCapabilities request from browser||Capabilities XML received||Capabilities XML response received, no exception errors||
+
+Success Criteria:  Success criteria met for all test methods.
 
 
   Is online and capable of responding to requests
