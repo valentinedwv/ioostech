@@ -7,7 +7,9 @@
 
 The IOOS SOS software reference implementations based on 52North and ncSOS are now complete, and other implementations are in progress.  IOOS data providers that serve in situ data are making plans to implement one or more of these solutions at their locations.  Once these services are installed within an IOOS data provider's domain, they will need to be tested to ensure the SOS responses and data formats conform to specifications.
 
-*_For now, these tests are intended to be initial service deployment tests, and are not intended to be automated or recurring service validation tests.  Based on the results of these tests we may choose to build automated and/or recurring service validation tests._*
+*_For now, these tests are intended to be initial service deployment tests, and are not intended to be automated or recurring service validation tests.  Based on the results of these tests we may choose to build automated and/or recurring service validation tests.
+
+Further, this Test Plan will not be applied to the initial 'system test surrogate' installations. Rather, a series of more basic operations will be applied to determine whether that 'system testing' has passed._*
 
 The objective of this test plan is to describe the overall testing strategy and to define how each data provider's service endpoint will be tested. This test plan will describe the following:
 
