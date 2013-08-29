@@ -91,8 +91,11 @@ Test Method:
 Success Criteria:  Success criteria met for all test methods.
 
 
-Other tests....
+==Test: Service Registered in IOOS Service Registry==
+
 Is registered in the IOOS Service Registry.  Service passes the NGDC registration process and is successfully harvested.
+
+==Test: OGC Compliance==
 
 Is compliant with selected OGC specifications
 
@@ -114,6 +117,8 @@ Is compliant with selected OGC specifications
 || InsertObservation || no || no ||  ||
 || RegisterSensor || no || no ||  ||
 
+==Test: IOOS SOS Milestone 1.0 Template Compliance==
+
 Has a service response which is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the OGC specification AND IOOS Milestone 1.0 templates
 (Perform schema validation on output files using the schemas that Alex developed based on 1.0 templates)
 visual comparison with IOOS SOS templates Milestone 1.0
@@ -121,12 +126,16 @@ validation against formal XML schemas using XML Editor like Oxygen
 
 [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schemas for SOS Milestone 1.0 responses]
 
+==Test: Compliance With IOOS Conventions==
 
 Has a service response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc:  adheres to the "rules" on the wiki.   need to determine which of those rules are important to test. answer should be based on which ones are needed for auto asset inventory.
 "Rules" from [SOSGuidelines#Rules wiki] (We need to determine the mandatory/optional tests.)
 
+==Test: Quantity of Offerings==
 
 Contains an appropriate quantity of a data provider's in situ data offerings (80% of applicable data types): Determine what/how many datasets are served - use GetCapabilities - and then query the DMAC coordinator if that matches their intent.
+
+==Test: Consistency of Behavior Across Implementations==
 
 Exhibits the same behavior as other SOS implementations in the case where a data provider is operating more than one SOS implementation (i.e. 52N and ncSOS)
 
