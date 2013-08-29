@@ -134,6 +134,7 @@ For each SOS Milestone 1.0 Template -
   # Using Oxygen, perform schema validation on the response files using the [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schemas for SOS Milestone 1.0 responses] that Alex developed based on 1.0 templates
 
 *Expected Result:* Output files validate against schemas.
+_*Need to determine which of fields are mandatory versus optional. Answer should be based on which ones are needed for auto asset inventory.*_
 
 
 ==Test 5: Compliance With IOOS Conventions==
@@ -145,8 +146,6 @@ For each "rule" on the [SOSGuidelines#Rules wiki] -
   * Observe the appropriate service behavior for compliance with the rules
 
 *Expected Result:* Service behaves according to rule.  
-
-_*Need to determine which of those rules are important to test. Answer should be based on which ones are needed for auto asset inventory.*_
 
 
 ==Test 6: Quantity of Offerings==
