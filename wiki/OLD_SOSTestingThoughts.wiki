@@ -2,8 +2,7 @@
 #sidebar SOSTableOfContents
 
 
-
-new material cut/paste from the internal google site page.  1st step toward consolidating and simplifying the material.
+The material here was moved from the SOSTesting page once the Milestone 1.0 Test Plan was put there.
 
 [https://github.com/axiomalaska/ioos-sos-validator SOS Validator Tool]  Shane can make it run all the tests suggested by Alex:
 # OGC compliance
