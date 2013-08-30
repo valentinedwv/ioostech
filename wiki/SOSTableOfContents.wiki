@@ -25,6 +25,7 @@
    * [TestToolAvailability]
    * [SOSSurvey]
    * [SOSVersions]
+   * [OLD_SOSTestingThoughts]
  * [ExternalResources References & Links]
  * [CFFeatureTypes]
  * [SOSReferenceImplementationWorkshop Baltimore Feb 2012 Workshop]
