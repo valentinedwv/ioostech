@@ -82,7 +82,7 @@ Throughout the test process, services will transition through several states, as
 
 || *State* || *Meaning* ||
 ||Pending||Service is not ready for testing||
-||Ready||Service is available for test, testing has not begun||
+||Ready for Test||Service is available for test, testing has not begun||
 ||In Progress||Testing is underway||
 ||Hold||Testing identified defects; awaiting resolution before testing can continue||
 ||Complete-Success||Testing is complete and success criteria was met||
