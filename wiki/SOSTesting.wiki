@@ -38,9 +38,9 @@ SOS implementations at each data provider will be tested to ensure the service:
 See Tests and Success Criteria for more detailed info on specific tests to be conducted.
 
 
-= Action Items =
+= Prerequisites =
 
-Before this Test Plan can be used effectively, the following actions needs to be completed:
+Before this Test Plan can be used effectively, the following items need to be in place:
 
   # Reference implementation developers need to go through the 1.0 template schemas and review/correct anything that would cause problems during validation.
   # Complete the asset_sos_map
