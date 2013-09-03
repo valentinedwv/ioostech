@@ -49,7 +49,7 @@ Before this Test Plan can be used effectively, the following items need to be in
 
 = Roles and Responsibilities =
 
-||*Role*||*Responsible Org/Individual*||
+|| *Role* || *Responsible Org/Individual* ||
 ||Test Authority||Derrick Snowden||
 ||Test Manager||Alex Birger||
 ||Tester||Varies based on test, likely Alex Birger will do majority||
@@ -80,7 +80,7 @@ The general process is as follows:
 
 Throughout the test process, services will transition through several states, as defined below.  The Fielding Plan (dashboard) will be updated weekly to reflect the latest state of each service.
 
-||*State*||*Meaning*||
+|| *State* || *Meaning* ||
 ||Pending||Service is not ready for testing||
 ||Ready||Service is available for test, testing has not begun||
 ||In Progress||Testing is underway||
