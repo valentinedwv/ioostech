@@ -32,7 +32,7 @@ SOS implementations at each data provider will be tested to ensure the service:
   # Is compliant with selected OGC specifications
   # Has a service response which is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the OGC specification AND IOOS Milestone 1.0 templates
   # Has a service response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc.
-  # Contains an appropriate quantity of a data provider's in situ data offerings (80% of applicable data types)
+  # Contains an appropriate quantity of a data provider's in situ data offerings (at least 80% of applicable data types)
 
 
 See Tests and Success Criteria for more detailed info on specific tests to be conducted.
