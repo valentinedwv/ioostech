@@ -9,10 +9,6 @@
 
 Latest  [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.8.docx IOOS SOS Milestone 1.0 WSDD].
 
-Email WSDD comments to:
-Derrick.Snowden@noaa.gov
-Alexander.Birger@noaa.gov
-Carmel.Ortiz@noaa.gov
 
 = Interface Definition Document =
 The materials on this page refer to Version 1.0 of the IOOS SOS profile.
