@@ -154,19 +154,13 @@ Units of Measure do not make up a vocabulary per se, but rather a mix of vocabul
 
 Hassan Moustahfid from the IOOS PO led a project with three agencies in Hawaii aimed at developing a common exchange data format for exchanging reef fish survey data (presence, absence, abundance of reef fish as determined by visual sampling procedures).  A large part of that development involved agreeing on vocabularies to be used by all three agencies.  The solution was an extension of the Darwin Core standard for biological observations and was developed in conjunction with OBIS USA.  
 [http://www.ioos.gov/ecosystem_observations/welcome.html Click Projects tab on this page]
-How do we use this?  Is it extensible?  What about the overlap with existing standards like CF and the IOOS Param Voc?  
-
-Biodiversity Information Standards (formerly known as Taxonomic Data Working Group) http://www.tdwg.org/
-
-Schema Terminology will be based on ratified [http://rs.tdwg.org/dwc/ Darwin core], Dublin core and proposed IOOS vocabularies. XML guide will also based on Darwin core XML guidance.
+How do we use this?  Is it extensible?  What about the overlap with existing standards like CF and the IOOS Param Vocabulary?  Biodiversity Information Standards (formerly known as Taxonomic Data Working Group) http://www.tdwg.org/  Schema Terminology will be based on ratified [http://rs.tdwg.org/dwc/ Darwin core], Dublin core and proposed IOOS vocabularies. XML guide will also based on Darwin core XML guidance.
 
   * CF Conventions had been applied to biological data definition at the field level. This is to assure that IOOS Biological Project will be compatible with other geophysical datasets.
   * FGDC and ISO 19115-2 are the adopted Metadata standards.
   * ERDDAP is the main webservice for this project.
   * EDC is the client developed to connect directly to ERDDAP and access data using customer application tools such as ARCGIS and R Project.
-  * To learn more about the Biological data standards implemented at the Pacific Islands Region please follow the following links:
-Biological data services at the Pacific Islands Region website
-FGDC and ISO Metadata
+  * Biological data services at the Pacific Islands Region website
 
 
 
