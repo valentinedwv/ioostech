@@ -41,7 +41,7 @@ The steps below provide an *outline of the general term identification and selec
 
 
 
-= Selecting Controlled Vocabularies and Terms =
+= Selecting Controlled Vocabularies and Terms by Category =
 
 This section describes the categories and specific instances of controlled vocabularies IOOS currently supports. Brief instructions for usage are provided, including links to more detailed resources. [#Other_vocabularies_and_vocabulary-related_concepts Additional, related concepts are also used in IOOS services], some of which have also been implemented as MMI vocabularies but have not been fully endorsed and described by IOOS.
 
