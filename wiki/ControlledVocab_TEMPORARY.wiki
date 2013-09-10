@@ -43,7 +43,7 @@ The steps below provide an *outline of the general term identification and selec
 
 = Selecting Controlled Vocabularies and Terms =
 
-This section describes the categories and specific instances of controlled vocabularies IOOS currently supports. Brief instructions for usage are provided, including links to more detailed resources. [#Additional_Vocabularies_And_Concepts Additional, related concepts are also used in IOOS services], some of which have also been implemented as MMI vocabularies but have not been fully endorsed and described by IOOS.
+This section describes the categories and specific instances of controlled vocabularies IOOS currently supports. Brief instructions for usage are provided, including links to more detailed resources. [#Other_Vocabularies Additional, related concepts are also used in IOOS services], some of which have also been implemented as MMI vocabularies but have not been fully endorsed and described by IOOS.
 
 
 == Observed Properties ==
@@ -170,7 +170,7 @@ FGDC and ISO Metadata
 
 
 
-= References and Additional Materials =
+= References =
 
 (1) Haines, S., V. Subramanian, E. Mayorga, D. Snowden, R. Ragsdale, C. Rueda and M. Howard. _Submitted_. IOOS vocabulary and ontology strategy for observed properties. [http://www.oceans12mtsieeehamptonroads.org Proc. MTS/IEEE Oceans 2012], Hampton Roads, VA. Final, submitted paper [http://ioostech.googlecode.com/files/IOOSVocabPaper_MTSOceans2012_HainesEtal_Final_copyrighted.pdf is available here as pdf.]
 
