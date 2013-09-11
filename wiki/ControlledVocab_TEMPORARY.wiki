@@ -79,7 +79,7 @@ The term identification and selection procedure [#Vocabulary_Selection_and_Use d
 If the desired parameter is not found on primary or secondary vocabularies, IOOS should be notified and engaged to discuss adding the term to the IOOS Parameter Vocabulary, following a publicized and accepted process that's reasonably fast and a reasonably small burden on participants. In parallel, IOOS will maintain an engagement with the CF community to discuss adding parameters that are not currently present.
 
 === Composite Properties ===
-The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary and should be referenced like any other term there, eg:  http://mmisw.org/ont/ioos/parameter/wave
+The CF standard names vocabulary only defines scalar properties. Previously, IOOS defined three composite ("vector") properties made up of two or more scalar properties: *winds*, *waves* and *currents*. These composite properties are supported via the IOOS Parameter Vocabulary and should be referenced like any other term there (eg: http://mmisw.org/ont/ioos/parameter/wave). [https://code.google.com/p/ioostech/wiki/SOSGuidelines#Composite_phenomena Additional descriptions of IOOS guidance regarding composite properties are available elsewhere].
 
 
 == Station Platform Types ==
