@@ -11,7 +11,7 @@ But what is returned is only as good as the SPARQL query and the mappings in the
 
 = SPARQL Endpoint =
 
-Numerous examples exist in PERL, Python, and HTML Forms that illustrate how to issue SPARQL queries to vocabulary search services.  SPARQL Endpoints can return the data in different formats (HTML, JSON, CSV, RDF, N3), but not all endpoints can return all these formats.  The MMI Endpoint returns CSV, JSON, and HTML.  
+Numerous examples exist in PERL, Python, and HTML Forms that illustrate how to issue SPARQL queries to vocabulary search services.  SPARQL Endpoints can return the data in different formats (HTML, JSON, CSV, RDF, N3), but accessing all these formats is not always obvious.  The MMI Endpoint returns XML, CSV, JSON, and HTML.  
 
 As a proof-of-concept, a python script examples were created to show how to submit a SPARQL query with a JSON return, being the easiest format of response to work with python.  
 
