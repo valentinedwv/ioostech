@@ -98,7 +98,7 @@ All organizations, including IOOS, IOOS Regional Associations (RAs) and Federal 
 
 [http://mmisw.org/ont/ioos/definition/sponsor Asset platform sponsorship] is defined as financial or other kinds of support. Platforms that are partially or fully supported by IOOS must be attributed with a sponsor classifier entry of "IOOS" on the SOS DescribeSensor response; more than one sponsor organizations may be listed, as appropriate.
 
-*Usage in IOOS SOS responses. See the response templates and IOOS SOS documentation for complete details: [TO-DO: the Response entries will be linked to SOS response templates, so that full usage details are readily accessible]*
+Usage in SOS request parameters and XML responses. See the IOOS SOS Milestone 1.0 response templates for complete implementation details and direct reference. 
 
 || *SOS Operation* || *Response: XML block (XPath)* || *Comment* ||
 || GetCapabilities || /sos:Capabilities/ows:ServiceIdentification/ows:Keywords/ows:Keyword  || *Required*. Keywords. ||
