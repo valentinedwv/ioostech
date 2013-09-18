@@ -5,22 +5,15 @@
 <wiki:toc max_depth="3" />
 
 = Introduction =
-
 Add your content here.
 
 
 = Software Implementing the IOOS SOS Profile =
-
-[SOS52North]
-[SOSncSOS]
-[NANOOSNVSPythonSOS]
-
+  * [SOS52North]
+  * [https://github.com/asascience-open/ncSOS/wiki ncSOS]
 
 = Examples of Actual Implementations = 
 Other examples of installations can be found on the RABuildout wiki page.
-
-NOAA Center for Operational Oceanographic Products and Services [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/ CO-OPS]
-
-NOAA National Data Buoy Center [http://sdf.ndbc.noaa.gov/sos/ NDBC]
-
-Alaska Ocean Observing System [http://sos2.axiomalaska.com AOOS beta test server]
+  * [http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/ NOAA Center for Operational Oceanographic Products and Services (CO-OPS)]
+  * [http://sdf.ndbc.noaa.gov/sos/ NOAA National Data Buoy Center (NDBC)]
+  * [http://sos2.axiomalaska.com Alaska Ocean Observing System (AOOS) beta test server]
