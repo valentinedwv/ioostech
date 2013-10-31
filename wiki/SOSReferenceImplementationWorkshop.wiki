@@ -1,5 +1,5 @@
 #summary Logistics and other details supporting the Feb 2012 Reference Implementation workshop in Baltimore.
-#labels Phase-Design,SOS,Featured
+#labels Phase-Design,SOS
 #sidebar SOSTableOfContents
 
 <wiki:toc max_depth="2" />
