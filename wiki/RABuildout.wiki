@@ -14,3 +14,24 @@ https://ioostech.googlecode.com/files/SOS%201.0%20Fielding%20Plan%202013-11-04.p
 
 
 Last updated 2013-11-04
+
+= RA Servers =
+==PacIOOS ==
+ncSOS: http://oos.soest.hawaii.edu/thredds/idd/wqb.html
+
+== SECOORA ==
+ncSOS: http://129.252.139.124/thredds/catalog_platforms.html
+
+==SCCOOS==
+ncSOS: http://sccoos-obs0.ucsd.edu/thredds/SASS/catalog.html
+ncSOS: http://sccoos-obs0.ucsd.edu/thredds/MSS/catalog.html
+
+
+==GLOS==
+52North: http://sos.glos.us
+
+==CeNCOOS==
+52North: http://sos.cencoos.org
+
+==AOOS==
+52North: http://sos.aoos.org
