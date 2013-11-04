@@ -10,7 +10,7 @@ The graphic below is a high level progress indicator which provides the status o
 
 = Project Progress Dashboard =
 
-https://ioostech.googlecode.com/files/SOS%201.0%20Fielding%20Plan-2013-11-04.png
-https://code.google.com/p/ioostech/downloads/detail?name=SOS%201.0%20Fielding%20Plan%202013-11-04.png&can=2&q=
+https://ioostech.googlecode.com/files/SOS%201.0%20Fielding%20Plan%202013-11-04.png
+
 
 Last updated 2013-11-04
