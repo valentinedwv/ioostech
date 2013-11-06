@@ -33,9 +33,7 @@ These documents are currently in various stages, from draft to completed.
 == Project Data Services ==
 Data Services being implemented by this project are based on [http://coastwatch.pfeg.noaa.gov/erddap/index.html ERDDAP] and [http://geoserver.org GeoServer]. Configuration files and instructions to set up ERDDAP and GeoServer instances for AAT data will be provided at the end of the project.
 
-A collection of Python data access and visualization scripts that illustrated these services are [https://www.mygists.info/emiliom/tags/animalacoustictelem accessible as IPython notebooks at https://www.mygists.info/emiliom/tags/animalacoustictelem]. Here are two that access data from ERDDAP:
-  * [http://nbviewer.ipython.org/6767422 Example 1]
-  * [http://nbviewer.ipython.org/6767450 Example 2]
+A collection of Python data access and visualization scripts that illustrated these services are [https://www.mygists.info/emiliom/tags/animalacoustictelem accessible as IPython notebooks at https://www.mygists.info/emiliom/tags/animalacoustictelem]. Here are two that access data from ERDDAP: [http://nbviewer.ipython.org/6767422 Example 1] and [http://nbviewer.ipython.org/6767450 Example 2].
 
 
 == Other Resources ==
