@@ -7,7 +7,7 @@
 
 = Web Service Description Document (WSDD) =
 
-Latest  [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.9.docx IOOS SOS Milestone 1.0 WSDD].
+Latest  [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.91.docx IOOS SOS Milestone 1.0 WSDD].
 
 
 = Interface Definition Document =
