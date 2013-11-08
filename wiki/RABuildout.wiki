@@ -15,6 +15,15 @@ https://ioostech.googlecode.com/files/SOS%201.0%20Fielding%20Plan%202013-11-04.p
 
 Last updated 2013-11-04
 
+= Server Development Status =
+== 52North ==
+Project site: http://ioossos.axiomalaska.com/
+Stable demo: http://ioossos.axiomalaska.com/52n-sos-ioos-stable/
+Bleeding edge demo: http://ioossos.axiomalaska.com/52n-sos-ioos-dev/
+
+==ncSOS==
+http://github.com/asascience-open/ncSOS
+
 = RA Servers =
 ==PacIOOS ==
 ncSOS: http://oos.soest.hawaii.edu/thredds/idd/wqb.html
