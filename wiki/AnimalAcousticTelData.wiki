@@ -18,7 +18,7 @@ The project objectives are to:
 To ensure relevance and future extensibility, this project will involve potential customers drawn from POST and NANOOS stakeholders (particularly fisheries state agencies) as well as NOAA partners. We will seek broad community participation in technical discussions and priority-setting exercises related to the execution of project objectives. IOOS and NANOOS leadership will ensure adherence to IOOS DMAC recommendations and extensibility to other groups, datasets and regions.
 
 This project will build on existing [http://www.ioos.noaa.gov/data/welcome.html IOOS DMAC guidance and activities regarding biological and broader oceanographic data access].
- # [http://ioostech.googlecode.com/files/POST_DataSystemDescription_DRAFT1.0.doc POST Data System Description]
+ 
 
 == Project Documents and Reports ==
 These documents are currently in various stages, from draft to completed.
