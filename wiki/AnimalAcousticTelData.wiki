@@ -71,10 +71,9 @@ The NOAA Geo-IDE site [https://geo-ide.noaa.gov/wiki/index.php?title=ISO_FAQ#Wha
  * The AAT Metadata Convention is based on data input forms from Pacific Ocean Shelf Tracking (POST), Ocean Tracking Network (OTN), Great Lakes Acoustic Telemetry Observation System (GLATOS), HYDRA, and The Integrated Marine Observing System (IMOS, the Australian Animal Tagging and Monitoring System (AATAMS), with additional feedback from other individual researchers and database operators such as Tagging Of Pacific Predators (TOPP) and Kintama Research.
 
 ====Purpose of the Convention====
- * The purpose of the community standard is to ensure that: 
-•	Enough information is transmitted to make data understandable (hence “required” fields)
-•	The origin of the data is clear, and credit (attribution) is maintained
-•	The receiving system can interpret the transmitted data without human intervention, including if necessary how flat files can be reassembled into a structure such as linked database tables.
+The purpose of the community standard is to ensure that: 
+  * Enough information is transmitted to make data understandable (hence “required” fields)
+  * The origin of the data is clear, and credit (attribution) is maintained
+  * The receiving system can interpret the transmitted data without human intervention, including if necessary how flat files can be reassembled into a structure such as linked database tables.
  
-Download AAT Metadata Convention here: 
-[http://ioostech.googlecode.com/files/AAT%20Metadata%20Convention%20v1.2.pdf AAT Metadata Convention] 
+  * Download AAT Metadata Convention here:[http://ioostech.googlecode.com/files/AAT%20Metadata%20Convention%20v1.2.pdf AAT Metadata Convention] 
