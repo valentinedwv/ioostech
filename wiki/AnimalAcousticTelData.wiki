@@ -74,4 +74,6 @@ The NOAA Geo-IDE site [https://geo-ide.noaa.gov/wiki/index.php?title=ISO_FAQ#Wha
 * The purpose of the community standard is to ensure that: 
 •	Enough information is transmitted to make data understandable (hence “required” fields)
 •	The origin of the data is clear, and credit (attribution) is maintained
-•	The receiving system can interpret the transmitted data without human intervention, including if necessary how flat files can be reassembled into a structure such as linked database tables.  
+•	The receiving system can interpret the transmitted data without human intervention, including if necessary how flat files can be reassembled into a structure such as linked database tables. 
+ 
+[http://ioostech.googlecode.com/files/AAT Metadata Convention v1.2.pdf  AAT Metadata Convention] 
