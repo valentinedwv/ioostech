@@ -64,16 +64,18 @@ The NOAA Geo-IDE site [https://geo-ide.noaa.gov/wiki/index.php?title=ISO_FAQ#Wha
 === Miscellaneous ===
   * From Bob Simons, Regarding "Xtracto scripts": The R and Matlab scripts which make it easy to get the physical oceanography data (e.g., sea surface temperature, chlorophyll a) related to each point of an animal's track are available from http://coastwatch.pfel.noaa.gov/xtracto/ The author is Dave Foley, dave.foley(at)noaa.gov
   * From Derrick Snowden: [https://gist.github.com/rsignell-usgs Here are a bunch of ipython notebook examples put together by Rich Signell]. Many of them are focused on accessing netCDF/OPeNDAP datasets.
+
+
 === AAT Metadata Convention ===
 
 ====Origin of the Convention====
 
- * The AAT Metadata Convention is based on data input forms from Pacific Ocean Shelf Tracking (POST), Ocean Tracking Network (OTN), Great Lakes Acoustic Telemetry Observation System (GLATOS), HYDRA, and The Integrated Marine Observing System (IMOS, the Australian Animal Tagging and Monitoring System (AATAMS), with additional feedback from other individual researchers and database operators such as Tagging Of Pacific Predators (TOPP) and Kintama Research.
+The AAT Metadata Convention is based on data input forms from Pacific Ocean Shelf Tracking (POST), Ocean Tracking Network (OTN), Great Lakes Acoustic Telemetry Observation System (GLATOS), HYDRA, and The Integrated Marine Observing System (IMOS, the Australian Animal Tagging and Monitoring System (AATAMS), with additional feedback from other individual researchers and database operators such as Tagging Of Pacific Predators (TOPP) and Kintama Research.
 
 ====Purpose of the Convention====
 The purpose of the community standard is to ensure that: 
   * Enough information is transmitted to make data understandable (hence “required” fields)
   * The origin of the data is clear, and credit (attribution) is maintained
   * The receiving system can interpret the transmitted data without human intervention, including if necessary how flat files can be reassembled into a structure such as linked database tables.
- 
-  * Download AAT Metadata Convention here:[http://ioostech.googlecode.com/files/AAT%20Metadata%20Convention%20v1.2.pdf AAT Metadata Convention] 
+  * Download AAT Metadata Convention here:[http://ioostech.googlecode.com/files/AAT%20Metadata%20Convention%20v1.2.pdf AAT Metadata Convention]
+  * The [http://mmisw.org/ont/ioos/animal_acoustic_telemetry vocabulary defined by the AAT Metadata Convention is hosted on the MMI ontological repository]. Individual terms may be referenced from it via URL's, such as http://mmisw.org/ont/ioos/animal_acoustic_telemetry/animal_origin
