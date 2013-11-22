@@ -13,7 +13,7 @@ But what is returned is only as good as the SPARQL query and the mappings in the
 
 Numerous examples exist in PERL, Python, and HTML Forms that illustrate how to issue SPARQL queries to vocabulary search services.  SPARQL Endpoints can return the data in different formats (HTML, JSON, CSV, RDF, N3), but accessing all these formats is not always obvious.  Of the Python code, [http://sparql-wrapper.sourceforge.net/ SparqlWrapper] seems to be the most robust [https://github.com/tatiana/SPARQLWrapper (note: a github fork is also available)]. The MMI Endpoint returns XML, CSV, JSON, and HTML.  
 
-As a proof-of-concept, a python script examples were created to show how to submit a SPARQL query with a JSON return, being the easiest format of response to work with python.  
+As a proof-of-concept, python script examples were created to show how to submit a SPARQL query with a JSON return, being the easiest format of response to work with python.  
 
   == SPARQL-Python Examples  ==
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/examples/example_sparql_urllib2.ipynb using urllib2 (example_sparql_urllib2.ipynb)]
@@ -24,4 +24,10 @@ As a proof-of-concept, a python script examples were created to show how to subm
 
   == CSW-Python Examples ==
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/examples/example_csw_ngdc_geoportal.ipynb Using OWSLIB-CSW to access NGDC Geoportal CSW (example_csw_ngdc_geoportal.ipynb)]
+
+
+= Visualizing Vocabularies, Mappings, and Search Results =
+
+Developing recipes for geoportal programmers to issue SPARQL queries to MMI ORR is one key to demonstrating how MMI ORR can enhance catalog search.  Another key to this development is to visualize what the search results are. Visualizing the terms and their mappings will be the next step in making registered vocabs on MMI ORR more useful.
+
    
