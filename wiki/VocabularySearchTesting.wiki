@@ -19,9 +19,6 @@ As a proof-of-concept, python script examples were created to show how to submit
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/examples/example_sparql_urllib2.ipynb using urllib2 (example_sparql_urllib2.ipynb)]
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/examples/example_sparql_wrapper.ipynb using SPARQLWrapper (example_sparql_wrapper.py)]
 
-
-= Geoportal CSW Endpoint =
-
   == CSW-Python Examples ==
    * [http://nbviewer.ipython.org/urls/raw.github.com/nccoos/ioos-vocabulary-search/master/examples/example_csw_ngdc_geoportal.ipynb Using OWSLIB-CSW to access NGDC Geoportal CSW (example_csw_ngdc_geoportal.ipynb)]
 
