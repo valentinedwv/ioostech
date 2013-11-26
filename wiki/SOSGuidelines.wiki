@@ -10,6 +10,11 @@
 Latest  [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.91.docx IOOS SOS Milestone 1.0 WSDD].
 
 
+= DEPRECATED MATERIAL =
+Pleae note that all of the text below this point is to be considered out of date.  The sole source of information on the implementation of the IOOS SOS profile version 1.0 is the web services description document above.  We will be in the process of cleaning this wiki in early 2014.
+
+
+
 = Interface Definition Document =
 The materials on this page refer to Version 1.0 of the IOOS SOS profile.
 
