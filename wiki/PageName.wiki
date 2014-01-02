@@ -1,3 +1,4 @@
+#labels Deprecated
 #A deprecated IOOS SOS guidelines
 
 #sidebar SOSTableOfContents
