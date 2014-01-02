@@ -2,11 +2,12 @@
 #labels SOS
 
  * [SOSGuidelines Guidelines for Implementing SOS]
-   * [SOSGuidelines#SOS_Requests Request Syntax]
+ * [OutdatedSOSguidelines Old deprecated Guidelines for implementing SOS]
+   * [OutdatedSOSguidelines#SOS_Requests Request Syntax]
      * [GetCapabilities#Request GetCapabilities]
      * [DescribeSensor#Request DescribeSensor]
      * [GetObservation#Request GetObservation]
-   * [SOSGuidelines#SOS_Requests SOS Response Formats]
+   * [OutdatedSOSguidelines#SOS_Requests SOS Response Formats]
      * [GetCapabilities#Response GetCapabilities]
      * [DescribeSensor#Response DescribeSensor]
      * [GetObservation#Response GetObservation ]
@@ -16,7 +17,7 @@
        * [TimeSeriesProfileTemplate TimeSeriesProfile]
        * [TrajectoryTemplate Trajectory]
        * [TrajectoryProfileTemplate TrajectoryProfile]
-   * [ControlledVocabularies ControlledVocabularies]
+ * [ControlledVocabularies IOOS Controlled Vocabularies]
  * [RABuildout Progress on SOS Installations at Regional Associations]
  * [SOSExamples Server Software Implementations and Examples]
  * [SOSClients Clients that interact with SOS services]
