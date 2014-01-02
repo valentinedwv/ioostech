@@ -1,6 +1,5 @@
 #summary IOOS Instructions and Guidelines for use of Controlled Vocabularies in IOOS-compliant data services
 #labels Phase-Requirements,Phase-Design,Vocabularies
-
 #sidebar SOSTableOfContents
 
 <wiki:toc max_depth="3" />
