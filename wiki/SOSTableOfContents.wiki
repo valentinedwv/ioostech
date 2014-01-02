@@ -19,7 +19,7 @@
    * [SOSRefImplementWorkshop_Day2Agenda Day Two]
    * [SOSRefImplementWorkshop_Day3Agenda Day Three]
 ----
- * [OutdatedSOSguidelines Old version of the Guidelines for Implementing SOS (DEPRECATED)]
+ * [OutdatedSOSguidelines Wiki version of the Guidelines for Implementing SOS (OBSOLETE)]
    * [OutdatedSOSguidelines#SOS_Requests Request Syntax]
      * [GetCapabilities#Request GetCapabilities]
      * [DescribeSensor#Request DescribeSensor]
