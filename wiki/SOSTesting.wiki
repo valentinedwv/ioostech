@@ -6,7 +6,7 @@
 
 = Overview and Test Plan Objectives =
 
-The IOOS SOS software reference implementations based on 52North and ncSOS are now complete, and other implementations are in progress.  IOOS data providers that serve in situ data are making plans to implement one or more of these solutions at their locations.  Once these services are installed within an IOOS data provider's domain, they will need to be tested to ensure the SOS responses and data formats conform to specifications.
+The IOOS SOS software reference implementations based on [http://ioossos.axiomalaska.com/ 52North] and [https://github.com/asascience-open/ncSOS/wiki ncSOS] are now complete, and other implementations are in progress.  IOOS data providers that serve in situ data are making plans to implement one or more of these solutions at their locations.  Once these services are installed within an IOOS data provider's domain, they will need to be tested to ensure the SOS responses and data formats conform to specifications.
 
 *_For now, these tests are intended to be initial service deployment tests, and are not intended to be automated or recurring service validation tests.  Based on the results of these tests we may choose to build automated and/or recurring service validation tests._*
 
