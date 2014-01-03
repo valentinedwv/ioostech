@@ -5,11 +5,10 @@
 <wiki:toc max_depth="3" />
 
 = Introduction =
-Add your content here.
-
+TODO: Add links to dynamic queries of the IOOS Service Registry and Catalog rather than listing examples.  
 
 = Software Implementing the IOOS SOS Profile =
-  * [SOS52North]
+  * [http://ioossos.axiomalaska.com SOS52North]
   * [https://github.com/asascience-open/ncSOS/wiki ncSOS]
 
 = Examples of Actual Implementations = 
