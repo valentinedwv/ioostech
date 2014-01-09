@@ -25,29 +25,6 @@ The objective of this test plan is to describe the overall testing strategy and 
 The final section of the plan is intended to be used as a repository for ideas for additional test tools, scripts, etc.  This section should be augmented during test execution, and will potentially be used as requirements for future tool development.
 
 
-= Scope =
-
-SOS implementations at each data provider will be tested to ensure the service:
-
-  # Has a service response which is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the OGC specification AND IOOS Milestone 1.0 templates as described in the [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.91.docx Web Services Description Document v1.0]
-  # Has a service response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, (again, see [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.91.docx WSDD 1.0])
-  # Is registered in the IOOS Service Registry
-  # Is compliant with selected OGC specifications
-  # Contains an appropriate quantity of a data provider's in situ data offerings (at least 80% of applicable data types)
-
-
-See Tests and Success Criteria for more detailed info on specific tests to be conducted.
-
-
-= Prerequisites =
-
-Before this Test Plan can be used effectively, the following items need to be in place:
-
-
-  # Complete the asset_sos_map
-
-
-
 = Roles and Responsibilities =
 
 || *Role* || *Responsible Org/Individual* ||
@@ -66,7 +43,7 @@ The general process is as follows:
     # Endpoint URL
     # Software release or version number
     # Point of contact for test-related issues
-  # Tester(s) execute tests on service. Defects are identified and logged in defect reporting system (Issues portion of ioostech).
+  # Tester(s) execute tests on service. Defects are identified and logged in defect reporting system ([https://code.google.com/p/ioostech/issues/list Issues] portion of ioostech).
   # Defects are investigated and addressed by appropriate individual.
   # Software or system updates are performed as needed to correct issues identified during testing.
   # Test Manager determines which tests need to be re-run, testing is re-done.
@@ -120,7 +97,7 @@ The following operations will be tested using the OGC CITE test scripts:
 
 ==Test 3: IOOS SOS Milestone 1.0 Template Compliance==
 
-*Test Goal:*  Validate that the service response is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the IOOS Milestone 1.0 templates.
+*Test Goal:*  Validate that the service response is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the IOOS Milestone 1.0 templates as described in the [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.91.docx Web Services Description Document].
 
 *Test Method:*
 For each SOS Milestone 1.0 Template -
@@ -129,20 +106,7 @@ For each SOS Milestone 1.0 Template -
 
 *Expected Result:* Output files validate against schemas.
 
-
-
-==Test 4: Compliance With IOOS Conventions==
-
-*Test Goal:* Validate that the service has a response which is semantically valid, i.e. the response metadata conforms to standards, conventions, vocabularies, definitions, etc codified on the ioostech [SOSGuidelines#Rules wiki].  *Note: some of these rules are already codified as part of the Milestone 1.0 templates.  So we need to define which rules would be tested here.*
-
-*Test Method:*
-For each "rule" on the [SOSGuidelines#Rules wiki] -
-  * Observe the appropriate service behavior for compliance with the rules.  This will likely initially be done by "eyeballing" the response.
-
-*Expected Result:* Service behaves according to rule.  
-
-
-==Test 5: Quantity of Offerings==
+==Test 4: Quantity of Offerings==
 
 *Test Goal:* Verify that the service contains an appropriate quantity of a data provider's in situ data offerings.  The goal is to have 80% of available offerings accessible from the service. 
 
