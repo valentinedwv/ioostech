@@ -89,11 +89,12 @@ The sections below provide a high level description of the tests to be conducted
 
 The following tests will be performed using the OGC CITE test scripts:
   * [https://docs.google.com/a/noaa.gov/document/d/1i9sW5qlhDobhzrKQ7NsIgVnaQKbKz4UglcYZyUNO9gE/edit#heading=h.4t6g7t2i0ts OWS Common Tests]
-  * GetCapabilities
-  * DescribeSensor
-  * GetObservation
+  * [https://docs.google.com/a/noaa.gov/document/d/1i9sW5qlhDobhzrKQ7NsIgVnaQKbKz4UglcYZyUNO9gE/edit#heading=h.n13jktub3gj3 General SOS Tests]
+  * [https://docs.google.com/a/noaa.gov/document/d/1i9sW5qlhDobhzrKQ7NsIgVnaQKbKz4UglcYZyUNO9gE/edit#heading=h.yuryrq48gjg8 GetCapabilities Tests]
+  * [https://docs.google.com/a/noaa.gov/document/d/1i9sW5qlhDobhzrKQ7NsIgVnaQKbKz4UglcYZyUNO9gE/edit#heading=h.9koffxsy1enw DescribeSensor Tests]
+  * [https://docs.google.com/a/noaa.gov/document/d/1i9sW5qlhDobhzrKQ7NsIgVnaQKbKz4UglcYZyUNO9gE/edit#heading=h.ph4xhxsb1s0f GetObservation Tests]
 
-*Expected Result:* No catastrophic errors encountered.
+*Expected Result:* No catastrophic errors encountered; the tests marked as "IOOS Optional" may fail altogether.
 
 
 ==Test 3: IOOS SOS Milestone 1.0 Template Compliance==
