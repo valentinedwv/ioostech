@@ -88,7 +88,7 @@ The sections below provide a high level description of the tests to be conducted
 *Test Method:*  
 
 The following tests will be performed using the OGC CITE test scripts:
-  * [https://docs.google.com/a/noaa.gov/document/d/1i9sW5qlhDobhzrKQ7NsIgVnaQKbKz4UglcYZyUNO9gE/edit#heading=h.4t6g7t2i0ts OWS Common Tests]
+  * [http://ioostech.googlecode.com/files/List%20of%20tests%20for%20IOOS%20SOS%201.0.html#h.4t6g7t2i0ts OWS Common Tests]
   * [https://docs.google.com/a/noaa.gov/document/d/1i9sW5qlhDobhzrKQ7NsIgVnaQKbKz4UglcYZyUNO9gE/edit#heading=h.n13jktub3gj3 General SOS Tests]
   * [https://docs.google.com/a/noaa.gov/document/d/1i9sW5qlhDobhzrKQ7NsIgVnaQKbKz4UglcYZyUNO9gE/edit#heading=h.yuryrq48gjg8 GetCapabilities Tests]
   * [https://docs.google.com/a/noaa.gov/document/d/1i9sW5qlhDobhzrKQ7NsIgVnaQKbKz4UglcYZyUNO9gE/edit#heading=h.9koffxsy1enw DescribeSensor Tests]
