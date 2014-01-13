@@ -99,16 +99,21 @@ The following tests will be performed using the OGC CITE test scripts:
    * Tests marked as "IOOS Optional" may fail altogether.
 
 
-==Test 3: IOOS SOS Milestone 1.0 Template Compliance==
+==Test 3: IOOS SOS Convention (Profile) Compliance==
 
-*Test Goal:*  Validate that the service response is syntactically valid, i.e. the service response contain all expected elements and attributes in the order that is prescribed by the IOOS Milestone 1.0 templates as described in the [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.91.docx Web Services Description Document].
+*Test Goals:*  
+
+ * Validate that the service response is syntactically valid, i.e. the service response contain the expected elements and attributes in the order that is prescribed by the IOOS Milestone 1.0 templates as described in the [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.91.docx Web Services Description Document].
+ * Validate that the service response semantically conforms to the IOOS SOS Convention, i.e. the meaning of variables, elements, attributes, etc. matches the description in the [http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html CF Conventions v1.6], [https://ioostech.googlecode.com/files/IOOS%20SOS%20WSDD%20Draft%20v0.91.docx Web Services Description Document], and [ControlledVocabularies IOOS Controlled Vocabularies].
 
 *Test Method:*
-For each SOS Milestone 1.0 Template -
-  # Issue command and capture XML response
-  # Using Oxygen, perform schema validation on the response files using the [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schemas for SOS Milestone 1.0 responses] that Alex developed based on 1.0 templates
+For each SOS Milestone 1.0 implementation -
+   # Issue GetCapabilities, DescribeSensor, or GetObservation request and capture XML response document.
+   # Using Oxygen XML Editor (or similar tool), perform validation of the response document against the [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schema], and verify that the response passes a series of the syntactic and semantic [http://ioostech.googlecode.com/files/List%20of%20tests%20for%20IOOS%20SOS%201.0.html IOOS-specific tests] for SOS Milestone 1.0.
 
-*Expected Result:* Output files validate against schemas.
+*Expected Result:* 
+  * Output files validate against schema.
+  * Output files pass the IOOS-specific tests.
 
 ==Test 4: Quantity of Offerings==
 
