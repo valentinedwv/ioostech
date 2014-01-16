@@ -37,7 +37,7 @@ _*This document contains a list of required and optional tests that have to be r
 = 3 Core SOS Tests =
 *(_A request for a valid capabilities document is made with the optional “version” parameter omitted, and a response is validated with the schema. Further tests are performed on the GetCapabilities response only if the response passes schema validation._)*
 
-== 3.1 GetCapabilities Tests ==
+== 3.1 !GetCapabilities Tests ==
 
 === 3.1.1 OGC General Tests ===
 
@@ -76,7 +76,7 @@ _*This document contains a list of required and optional tests that have to be r
 || || || ||
 || || || ||
 
-== 3.2 Describe Sensor Tests ==
+== 3.2 !DescribeSensor Tests ==
 
 === 3.2.1 OGC General Tests ===
 
@@ -111,7 +111,8 @@ _*This document contains a list of required and optional tests that have to be r
 || || || ||
 || || || ||
 
-== 3.3 GetObservation Tests ==
+== 3.3 !GetObservation Tests ==
+
 *(_All GetObservation tests use “POST” method, and URL obtained from the GetCapabilities response._)*
 
 === 3.3.1 OGC General Tests ===
