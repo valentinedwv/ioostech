@@ -1,4 +1,4 @@
----#summary This document contains a list of required and optional tests that have to be run in order to ensure full compliance with IOOS SOS Profile 1.0 (Milestone 1.0), and currently sufficient level of compliance with the OGC SOS 1.0.0 specification. 
+#summary This document contains a list of required and optional tests that have to be run in order to ensure full compliance with IOOS SOS Profile 1.0 (Milestone 1.0), and currently sufficient level of compliance with the OGC SOS 1.0.0 specification.
 
 =List of tests for IOOS SOS 1.0=
 ==(OGC generic CITE tests for SOS v1.0 & IOOS-specific tests for Milestone 1.0)==
