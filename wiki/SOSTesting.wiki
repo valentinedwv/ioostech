@@ -88,11 +88,11 @@ The sections below provide a high level description of the tests to be conducted
 *Test Method:*  
 
 The following tests will be performed using the OGC CITE test scripts:
-  * [http://ioostech.googlecode.com/files/List%20of%20tests%20for%20IOOS%20SOS%201.0.html#h.4t6g7t2i0ts OWS Common Tests]
-  * [http://ioostech.googlecode.com/files/List%20of%20tests%20for%20IOOS%20SOS%201.0.html#h.n13jktub3gj3 General SOS Tests]
-  * [http://ioostech.googlecode.com/files/List%20of%20tests%20for%20IOOS%20SOS%201.0.html#h.yuryrq48gjg8 GetCapabilities Tests]
-  * [http://ioostech.googlecode.com/files/List%20of%20tests%20for%20IOOS%20SOS%201.0.html#h.9koffxsy1enw DescribeSensor Tests]
-  * [http://ioostech.googlecode.com/files/List%20of%20tests%20for%20IOOS%20SOS%201.0.html#h.ph4xhxsb1s0f GetObservation Tests]
+  * [ListofTestsIOOSSOS#1.1_OWS_Common_Tests OWS Common Tests]
+  * [ListofTestsIOOSSOS#2_General_SOS_Tests General SOS Tests]
+  * [ListofTestsIOOSSOS#3.1_GetCapabilities_Tests GetCapabilities Tests]
+  * [ListofTestsIOOSSOS#3.2_DescribeSensor_Tests DescribeSensor Tests]
+  * [ListofTestsIOOSSOS#3.3_GetObservation_Tests GetObservation Tests]
 
 *Expected Results:* 
    * No catastrophic errors encountered
