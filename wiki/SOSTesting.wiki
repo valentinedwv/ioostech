@@ -109,7 +109,7 @@ The following tests will be performed using the OGC CITE test scripts:
 *Test Method:*
 For each SOS Milestone 1.0 implementation -
    # Issue GetCapabilities, DescribeSensor, or GetObservation request and capture XML response document.
-   # Using Oxygen XML Editor (or similar tool), perform validation of the response document against the [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schema], and verify that the response passes a series of the syntactic and semantic [http://ioostech.googlecode.com/files/List%20of%20tests%20for%20IOOS%20SOS%201.0.html IOOS-specific tests] for SOS Milestone 1.0.
+   # Using Oxygen XML Editor (or similar tool), perform validation of the response document against the [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schema], and verify that the response passes a series of the syntactic and semantic [ListofTestsIOOSSOS IOOS-specific tests] for SOS Milestone 1.0.
 
 *Expected Result:* 
   * Output files validate against schema.
@@ -117,7 +117,7 @@ For each SOS Milestone 1.0 implementation -
 
 ==Test 4: Quantity of Offerings==
 
-*Test Goal:* Verify that the service contains an appropriate quantity of a data provider's in situ data offerings.  The goal is to have 80% of available offerings accessible from the service. 
+*Test Goal:* Verify that the service contains an appropriate quantity of a data provider's _in situ_ data offerings.  The goal is to have 80% of available offerings accessible from the service. 
 
 *Test Method:* Execute GetCapabilities operation on the service to determine how many datasets are served.  Report results to the appropriate DMAC coordinator and determine percentage of offerings that are served through the SOS.
 
