@@ -25,6 +25,8 @@ Bleeding edge demo: http://ioossos.axiomalaska.com/52n-sos-ioos-dev/
 ==ncSOS==
 http://github.com/asascience-open/ncSOS
 
+Test service: http://64.72.74.102/stable/catalog.html
+
 = RA Servers =
 ==PacIOOS ==
 ncSOS: http://oos.soest.hawaii.edu/thredds/idd/wqb.html
