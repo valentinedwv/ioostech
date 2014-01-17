@@ -31,7 +31,6 @@ Test service: http://64.72.74.102/stable/catalog.html
 ==PacIOOS ==
 ncSOS: http://oos.soest.hawaii.edu/thredds/idd/wqb.html
 
-
 John Mauer offered some of their [https://groups.google.com/d/msg/ioos_tech/xoYbbBCPR2Y/lEn8I7GbhOsJ sample files] related to ncSOS implementation at their site.
 
 == SECOORA ==
@@ -42,13 +41,13 @@ ncSOS: http://sccoos-obs0.ucsd.edu/thredds/SASS/catalog.html
 ncSOS: http://sccoos-obs0.ucsd.edu/thredds/MSS/catalog.html
 
 ==GLOS==
-52North: http://sos.glos.us
+52North: http://sos.glos.us/52n/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
 
 ==CeNCOOS==
-52North: http://sos.cencoos.org
+52North: http://sos.cencoos.org/sos/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
 
 ==AOOS==
-52North: http://sos.aoos.org
+52North: http://sos.aoos.org/sos/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
 
 == MARACOOS ==
 Test service with Weatherflow public stations: http://64.72.74.102/dev/catalog/weatherflow/catalog.html
