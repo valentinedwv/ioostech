@@ -3,7 +3,7 @@
 
 <wiki:toc max_depth="3" />
 
-= Improving Access to Animal Acoustic Telemetry Observations =
+= Improving Access to Animal Acoustic Telemetry (AAT) Observations =
 
 [http://www.ioos.gov IOOS] - [http://www.nanoos.org NANOOS] - [http://oceantrackingnetwork.org/ OTN] - POST (Pacific Ocean Shelf Tracking Network)
 
