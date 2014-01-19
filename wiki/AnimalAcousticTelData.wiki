@@ -18,11 +18,11 @@ This project will build on existing [http://www.ioos.noaa.gov/data/welcome.html 
   # [http://habu.apl.washington.edu/mayorga/aat/Animal%20Acoustic%20Telemetry%20Obs_SOW.pdf Statement of Work]
   # [http://habu.apl.washington.edu/mayorga/aat/POST_DataSystemDescription_DRAFT1.0.pdf POST Data System Description]
   # Customer Requirements Assessment
-    # [http://habu.apl.washington.edu/mayorga/aat/AAT_CustomerRequirementsQuestionnaire.pdf Survey Questionnaire]
-    # [http://habu.apl.washington.edu/mayorga/aat/AAT_CustomerRequirements_2012Sep4.pdf Survey results and requirements synthesis]. This document includes a brief comparison of some existing systems
+    * [http://habu.apl.washington.edu/mayorga/aat/AAT_CustomerRequirementsQuestionnaire.pdf Survey Questionnaire]
+    * [http://habu.apl.washington.edu/mayorga/aat/AAT_CustomerRequirements_2012Sep4.pdf Survey results and requirements synthesis]. This document includes a brief comparison of some existing systems
   # [http://ioostech.googlecode.com/files/AAT%20Metadata%20Convention%20v1.2.pdf Content Standard: A metadata convention for animal acoustic telemetry data (document and tables)]
   # [http://habu.apl.washington.edu/mayorga/aat/AAT_DataSystemArchitectureImplementationPlan_FINAL.pdf Data System Architecture Implementation Plan]
-    # [http://habu.apl.washington.edu/mayorga/aat/Emilio_Presentation_AATworkshop_2013Jun13.pdf Presentation by Emilio at the Final meeting, June 2013]
+    * [http://habu.apl.washington.edu/mayorga/aat/Emilio_Presentation_AATworkshop_2013Jun13.pdf Presentation by Emilio at the Final meeting, June 2013]
 
 
 == Project Data Services ==
@@ -38,12 +38,12 @@ A collection of Python data access and visualization scripts that illustrated th
 The AAT Metadata Convention is based on data input forms from Pacific Ocean Shelf Tracking (POST), Ocean Tracking Network (OTN), Great Lakes Acoustic Telemetry Observation System (GLATOS), HYDRA, and The Integrated Marine Observing System (IMOS, the Australian Animal Tagging and Monitoring System (AATAMS), with additional feedback from other individual researchers and database operators such as Tagging Of Pacific Predators (TOPP) and Kintama Research.
 
 ===Purpose of the Convention===
-The purpose of the community standard is to ensure that: 
+The purpose of the [http://ioostech.googlecode.com/files/AAT%20Metadata%20Convention%20v1.2.pdf AAT Metadata Convention (pdf)] is to ensure that: 
   * Enough information is transmitted to make data understandable (hence “required” fields)
   * The origin of the data is clear, and credit (attribution) is maintained
   * The receiving system can interpret the transmitted data without human intervention, including if necessary how flat files can be reassembled into a structure such as linked database tables.
-  * Download AAT Metadata Convention here:[http://ioostech.googlecode.com/files/AAT%20Metadata%20Convention%20v1.2.pdf AAT Metadata Convention]
-  * The [http://mmisw.org/ont/ioos/animal_acoustic_telemetry vocabulary defined by the AAT Metadata Convention is hosted on the MMI ontological repository]. Individual terms may be referenced from it via URL's, such as http://mmisw.org/ont/ioos/animal_acoustic_telemetry/animal_origin
+
+The [http://mmisw.org/ont/ioos/animal_acoustic_telemetry vocabulary defined by the AAT Metadata Convention is hosted on the MMI ontological repository]. Individual terms may be referenced from it via MMI URL's, such as http://mmisw.org/ont/ioos/animal_acoustic_telemetry/animal_origin
 
 == Other Resources ==
 
