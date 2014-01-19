@@ -15,13 +15,14 @@ This project will build on existing [http://www.ioos.noaa.gov/data/welcome.html 
  
 
 == Project Documents and Reports ==
-These documents are currently in various stages, from draft to completed.
-  # Statement of Work
-  # [http://ioostech.googlecode.com/files/POST_DataSystemDescription_DRAFT1.0.doc POST Data System Description]
-  # Requirements: Survey results and initial requirements synthesis
-  # Brief comparison of some existing systems
-  # Content Standard: A metadata convention for animal acoustic telemetry data (document and tables)
-  # System Design, including diagrams
+  # [http://habu.apl.washington.edu/mayorga/aat/Animal%20Acoustic%20Telemetry%20Obs_SOW.pdf Statement of Work]
+  # [http://habu.apl.washington.edu/mayorga/aat/POST_DataSystemDescription_DRAFT1.0.pdf POST Data System Description]
+  # Customer Requirements Assessment
+    # [http://habu.apl.washington.edu/mayorga/aat/AAT_CustomerRequirementsQuestionnaire.pdf Survey Questionnaire]
+    # [http://habu.apl.washington.edu/mayorga/aat/AAT_CustomerRequirements_2012Sep4.pdf Survey results and requirements synthesis]. This document includes a brief comparison of some existing systems
+  # [http://ioostech.googlecode.com/files/AAT%20Metadata%20Convention%20v1.2.pdf Content Standard: A metadata convention for animal acoustic telemetry data (document and tables)]
+  # [http://habu.apl.washington.edu/mayorga/aat/AAT_DataSystemArchitectureImplementationPlan_FINAL.pdf Data System Architecture Implementation Plan]
+    # [http://habu.apl.washington.edu/mayorga/aat/Emilio_Presentation_AATworkshop_2013Jun13.pdf Presentation by Emilio at the Final meeting, June 2013]
 
 
 == Project Data Services ==
