@@ -109,11 +109,11 @@ The following tests will be performed using the OGC CITE test scripts:
 *Test Method:*
 For each SOS Milestone 1.0 implementation -
    # Issue GetCapabilities, DescribeSensor, or GetObservation request and capture XML response document.
-   # Using Oxygen XML Editor (or similar tool), perform validation of the response document against the [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schema], and verify that the response passes a series of the syntactic and semantic [ListofTestsIOOSSOS IOOS-specific tests] for SOS Milestone 1.0.
+   # Using Oxygen XML Editor (or similar tool), perform validation of the response document against the [https://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0%2FSchemas%253Fstate%253Dclosed IOOS XML Schema], and verify that the response passes a series of the syntactic and semantic [ListofTestsIOOSSOS IOOS-specific tests for SOS Milestone 1.0].
 
 *Expected Result:* 
   * Output files validate against schema.
-  * Output files pass the [ListofTestsIOOSSOS IOOS-specific tests] for SOS Milestone 1.0.
+  * Output files pass the [ListofTestsIOOSSOS IOOS-specific tests for SOS Milestone 1.0].
 
 ==Test 4: Quantity of Offerings==
 
