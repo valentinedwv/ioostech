@@ -113,7 +113,7 @@ For each SOS Milestone 1.0 implementation -
 
 *Expected Result:* 
   * Output files validate against schema.
-  * Output files pass the IOOS-specific tests.
+  * Output files pass the [ListofTestsIOOSSOS IOOS-specific tests] for SOS Milestone 1.0.
 
 ==Test 4: Quantity of Offerings==
 
