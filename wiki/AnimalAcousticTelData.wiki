@@ -36,8 +36,7 @@ A collection of Python data access and visualization scripts that illustrated th
     * [http://habu.apl.washington.edu/mayorga/aat/ISOMetadataFinalExamplePackage/xslt_client.html Live-rendering (as HTML) example, in javascript]
     * [http://habu.apl.washington.edu/mayorga/aat/ISOMetadataFinalExamplePackage/otnnepMOSERAnTags_iso19115.xml XML] and [http://habu.apl.washington.edu/mayorga/aat/ISOMetadataFinalExamplePackage/OTNmetadata_Emilio.xsl XSL] documents used in the example. The XML document is static and was pre-fetched from ERDDAP.
   * AAT NANOOS PostgreSQL/PostGIS database and ERDDAP service configuration
-    * [http://habu.apl.washington.edu/mayorga/aat/AAT_NANOOSConfigurations_FinalPackageDocs.pdf
- Package documentation]
+    * [http://habu.apl.washington.edu/mayorga/aat/AAT_NANOOSConfigurations_FinalPackageDocs.pdf Package documentation]
     * [http://habu.apl.washington.edu/mayorga/aat/AAT_NANOOSpg2erddap_exchange.zip Zip file with documentation, code, and configuration files]
   * [http://habu.apl.washington.edu/mayorga/aat/AAT_ERDDAP_datasets_listing_and_properties.xls AAT_ERDDAP_datasets_listing_and_properties.xls]
   * [http://habu.apl.washington.edu/mayorga/aat/ERDDAPDatasetMetadata-UseAndStatus-FINAL.pdf ERDDAPDatasetMetadata-UseAndStatus-FINAL.pdf]
