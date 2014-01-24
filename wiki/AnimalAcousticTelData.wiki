@@ -30,6 +30,15 @@ Data Services being implemented by this project are based on [http://coastwatch.
 
 A collection of Python data access and visualization scripts that illustrated these services are [https://www.mygists.info/emiliom/tags/animalacoustictelem accessible as IPython notebooks at https://www.mygists.info/emiliom/tags/animalacoustictelem]. Here are two that access data from ERDDAP: [http://nbviewer.ipython.org/6767422 Example 1] and [http://nbviewer.ipython.org/6767450 Example 2].
 
+*IN PROGRESS RIGHT NOW: Other documents and configuration files that will be made available here.*
+
+  * ISOMetadataFinalExamplePackage dir, including a link to the HTML page
+  * AAT_NANOOSConfigurations_FinalPackageDocs.pdf
+  * AAT_NANOOSpg2erddap_exchange.zip
+  * AAT_ERDDAP_datasets_listing_and_properties.xls
+  * ERDDAPDatasetMetadata-UseAndStatus-FINAL.pdf
+  * QGIS project file
+  * GS WMS & WFS GetCapabilities (pre-made XML's)
 
 == AAT Metadata Convention ==
 
