@@ -123,7 +123,7 @@
     <sos:ObservationOfferingList>
     
       <!-- NETWORK_ALL -->
-      <sos:ObservationOffering gml:id="network-all">
+      <sos:ObservationOffering gml:id="network_all">
         <gml:description>All stations</gml:description>
         <gml:name>urn:ioos:network:AUTHORITY:all</gml:name>
         <gml:srsName>EPSG:4326</gml:srsName>
@@ -155,7 +155,7 @@
       <!-- It is not scalable to list individual platforms or sensors here however -->
       <!-- listing additional logical groupings by provide, region, measurement type etc -->
       <!-- is encouraged! -->
-      <sos:ObservationOffering gml:id="network-favorites">
+      <sos:ObservationOffering gml:id="network_favorites">
         <gml:description>All stations</gml:description>
         <gml:name>urn:ioos:network:AUTHORITY:favorites</gml:name>
         <gml:srsName>EPSG:4326</gml:srsName>
