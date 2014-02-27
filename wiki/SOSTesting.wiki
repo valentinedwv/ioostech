@@ -85,9 +85,9 @@ The sections below provide a high level description of the tests to be conducted
 
 *Test Goal:* Ensure that the service is compliant with selected OGC specifications.
 
-*Test Method:*  
+*Test Object:* All installations of the 52N software. The ncSOS installations are excluded from the OGC Compliance testing process because a variety of OGC test components use HTTP POST method for requests while ncSOS does not support HTTP POST binding.
 
-The following tests will be performed using the OGC CITE test scripts:
+*Test Method:* The following tests will be performed using the OGC CITE test scripts:
   * [ListofTestsIOOSSOS#1.1_OWS_Common_Tests OWS Common Tests]
   * [ListofTestsIOOSSOS#2_General_SOS_Tests General SOS Tests]
   * [ListofTestsIOOSSOS#3.1_GetCapabilities_Tests GetCapabilities Tests]
