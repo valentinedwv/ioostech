@@ -8,46 +8,62 @@ The graphic below is a high level progress indicator which provides the status o
 
 
 
-= Project Progress Dashboard =
 
-https://ioostech.googlecode.com/files/SOS%201.0%20Fielding%20Plan%202013-11-04.png
-
-
-Last updated 2013-11-04
 
 
 = Server Development Status =
 == 52North ==
-Project site: http://ioossos.axiomalaska.com/
-Stable demo: http://ioossos.axiomalaska.com/52n-sos-ioos-stable/
-Bleeding edge demo: http://ioossos.axiomalaska.com/52n-sos-ioos-dev/
+Project Site: http://ioossos.axiomalaska.com/
+
+Stable Demo: http://ioossos.axiomalaska.com/52n-sos-ioos-stable/
+
+Bleeding edge Demo: http://ioossos.axiomalaska.com/52n-sos-ioos-dev/
 
 ==ncSOS==
-http://github.com/asascience-open/ncSOS
+Project Site: http://github.com/asascience-open/ncSOS
 
-Test service: http://64.72.74.102/stable/catalog.html
 
 = RA Servers =
+==AOOS==
+52North: http://sos.aoos.org/sos/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
+
+==CariCOOS==
+Not every data set has ncSOS...
+http://dm1.caricoos.org/thredds/catalog.html
+ http://dm2.caricoos.org/thredds/catalog.html
+
+==CeNCOOS==
+52North: http://sos.cencoos.org/sos/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
+
+
+==GCOOS==
+
+
+==GLOS==
+52North: http://sos.glos.us/52n/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
+
+
+
+== MARACOOS ==
+Test service with Weatherflow public stations: http://64.72.74.102/dev/catalog/weatherflow/catalog.html
+
+==NANOOS==
+
+http://data.nanoos.org/52nsos/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
+
+==NERACOOS==
+http://www.neracoos.org:8180/thredds/UMO_historical_realtime_agg.xml
+
+
 ==PacIOOS ==
 ncSOS: http://oos.soest.hawaii.edu/thredds/idd/wqb.html
 
 John Mauer offered some of their [https://groups.google.com/d/msg/ioos_tech/xoYbbBCPR2Y/lEn8I7GbhOsJ sample files] related to ncSOS implementation at their site.
 
-== SECOORA ==
-ncSOS: http://129.252.139.124/thredds/catalog_platforms.html
 
 ==SCCOOS==
 ncSOS: http://sccoos-obs0.ucsd.edu/thredds/SASS/catalog.html
 ncSOS: http://sccoos-obs0.ucsd.edu/thredds/MSS/catalog.html
 
-==GLOS==
-52North: http://sos.glos.us/52n/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
-
-==CeNCOOS==
-52North: http://sos.cencoos.org/sos/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
-
-==AOOS==
-52North: http://sos.aoos.org/sos/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
-
-== MARACOOS ==
-Test service with Weatherflow public stations: http://64.72.74.102/dev/catalog/weatherflow/catalog.html
+== SECOORA ==
+ncSOS: http://129.252.139.124/thredds/catalog_platforms.html
