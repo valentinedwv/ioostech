@@ -213,7 +213,7 @@
                         </swe2:Count>
                       </swe2:elementCount>
                       <swe2:elementType name="profileBinDescription">
-                        <swe2:DataRecord>
+                        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/profileBin">
                           <swe2:field name="binCenter">
                             <!-- IoosTech Convention: -->
                             <!-- binCenters shall be represented by a defined quantity -->
@@ -324,7 +324,7 @@
                       </swe2:elementCount>
                       <swe2:elementType
                         name="profileDefinition">
-                        <swe2:DataRecord>
+                        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/profileHeight">
                           <swe2:field name="height">
                             <!-- IoosTech Convention: -->
                             <!-- Profile depth shall be represented by a defined quantity -->
