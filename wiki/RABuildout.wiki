@@ -13,11 +13,11 @@ The graphic below is a high level progress indicator which provides the status o
 
 = Server Development Status =
 == 52North ==
-Project Site: http://ioossos.axiomalaska.com/
+Project site: http://ioos.github.io/i52n-sos/
 
-Stable Demo: http://ioossos.axiomalaska.com/52n-sos-ioos-stable/
+Stable (latest release) demo: http://ioossos.axiomalaska.com/52n-sos-ioos-stable/
 
-Bleeding edge Demo: http://ioossos.axiomalaska.com/52n-sos-ioos-dev/
+Bleeding edge (development) demo: http://ioossos.axiomalaska.com/52n-sos-ioos-dev/
 
 ==ncSOS==
 Project Site: http://github.com/asascience-open/ncSOS
