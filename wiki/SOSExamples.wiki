@@ -8,7 +8,7 @@
 TODO: Add links to dynamic queries of the IOOS Service Registry and Catalog rather than listing examples.  
 
 = Software Implementing the IOOS SOS Profile =
-  * [http://ioossos.axiomalaska.com SOS52North]
+  * [http://ioos.github.io/i52n-sos i52n-sos]
   * [https://github.com/asascience-open/ncSOS/wiki ncSOS]
 
 = Examples of Actual Implementations = 
