@@ -37,7 +37,7 @@ http://dm1.caricoos.org/thredds/catalog.html
 
 
 ==GCOOS==
-
+52North: http://data.gcoos.org:8080/52nSOS/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
 
 ==GLOS==
 52North: http://sos.glos.us/52n/sos/kvp?service=SOS&request=GetCapabilities&AcceptVersions=1.0.0
