@@ -2,7 +2,7 @@
 #labels SOS
 ----
 *WARNING: The official repository of the IOOS SOS documentation has moved to [http://ioos.github.io IOOS GitHub Pages], which from now on are the entry point for all IOOS technical documentation.
-This Wiki will not be updated and will be shut down as soon as all documentation is moved to the GitHub.*
+This Wiki will not be updated and will be shut down as soon as all documentation is moved to the `GitHub`.*
 ----
  * [SOSGuidelines Guidelines for Implementing SOS]
  * [ControlledVocabularies IOOS Controlled Vocabularies]
