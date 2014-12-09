@@ -1,5 +1,9 @@
 #summary List of OGC CITE general tests for SOS v1.0.0 & IOOS-specific tests for Milestone 1.0
 
+*WARNING: The IOOS SOS Application Profile v1.0 Test Suite along with the WSDD and SOS XML templates is now located on [http://ioos.github.io/sos-guidelines GitHub Web site], which is currently the sole source of the IOOS SOS Profile v1.0 information.*
+
+
+
 <wiki:toc max_depth="3" />
 
 <br>
